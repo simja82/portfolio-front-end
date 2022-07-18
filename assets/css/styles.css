@@ -36,9 +36,13 @@ div#pills-full {
 }
 section.draft,
 section.about-me {
-   margin-top: 7rem !important;
-   margin-bottom: 5rem !important;
- }
+   margin-top: 12rem !important;
+   margin-bottom: 2rem !important;
+}
+section.full {
+   margin-top: 2rem !important;
+   margin-bottom: 12rem !important;
+}
 p.first-draft {
    margin-top: 4rem !important;
 }
@@ -263,4 +267,10 @@ h2.text-center {
    100% {
       opacity: 1;
    }
+}
+button.btn-close {
+   overflow: hidden;
+}
+.modal-body.text-white {
+   text-align: start;
 }
