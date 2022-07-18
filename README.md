@@ -1,1 +1,1 @@
-# portfolio-front-end
+Repositorio para el desarrollo front-end del Portfolio
