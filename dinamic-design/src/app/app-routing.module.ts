@@ -1,7 +1,43 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { AudiovisualComponent } from './pages/audiovisual/audiovisual.component';
+import { BloopersComponent } from './pages/bloopers/bloopers.component';
+import { CreditsComponent } from './pages/credits/credits.component';
+import { CVComponent } from './pages/cv/cv.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { DataComponent } from './pages/data/data.component';
+import { DeveloperComponent } from './pages/developer/developer.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { IndexComponent } from './pages/index/index.component';
+import { IntroComponent } from './pages/intro/intro.component';
+import { LinksComponent } from './pages/links/links.component';
+import { LoginComponent } from './pages/login/login.component';
+import { PlusComponent } from './pages/plus/plus.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { SamplesComponent } from './pages/samples/samples.component';
+
+const routes: Routes = [
+  { path: '', component:IndexComponent },
+  { path: 'intro', component:IntroComponent },
+  { path: 'login', component:LoginComponent },
+  { path: 'register', component:RegisterComponent },
+  { path: 'credits', component:CreditsComponent },
+  { path: 'bloopers', component:BloopersComponent },
+  { path: 'plus', component:PlusComponent },
+  { path: 'audiovisual/intro', component:AudiovisualComponent },
+  { path: 'audiovisual/projects', component:ProjectsComponent },
+  { path: 'audiovisual/project/:title', component:ProjectComponent },
+  { path: 'audiovisual/samples', component:SamplesComponent },
+  { path: 'audiovisual/data', component:DataComponent },
+  { path: 'audiovisual/links', component:LinksComponent },
+  { path: 'developer/intro', component:DeveloperComponent },
+  { path: 'developer/cv', component:CVComponent },
+  { path: 'admin/dashboard', component:DashboardComponent },
+  { path: '**', component:ErrorComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
