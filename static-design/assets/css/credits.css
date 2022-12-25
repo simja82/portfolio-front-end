@@ -1,0 +1,62 @@
+/* Credits */
+.wrapper {
+    overflow: hidden;
+    height: 150rem;
+    margin-bottom: 10rem;
+    margin-top: 0rem;
+}
+
+.credit {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    animation: 200s credits linear infinite;
+    display: inline;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.feedback {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+.name {
+    margin-bottom: 5rem;
+    font-size: 1.05rem;
+}
+
+.quote {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.blooppers {
+    margin: 25rem 0 10rem 0;
+}
+
+.silence {
+    height: 9rem !important;
+}
+
+.cut {
+    height: 30rem !important;
+}
+
+.ending {
+    height: 25rem !important;
+}
+
+@keyframes credits {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500%;
+    }
+}
