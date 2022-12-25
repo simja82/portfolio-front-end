@@ -1,7 +1,3 @@
-html {
-    overflow: hidden;
-}
-
 /* Navbar y Footer*/
 .navbar,
 footer {
@@ -174,4 +170,29 @@ a:hover {
 /* Section Top */
 .section-top {
     padding-top: 10rem;
+}
+
+section.general,
+section.audiovisual,
+section.developer {
+    margin-top: 7rem;
+}
+
+/* Colors */
+.text-orange {
+    color: #fd7e14;
+}
+
+.orange:hover {
+    color: #fd7e14;
+}
+
+/* Go Back */
+.fa-rotate {
+    transform: rotateY(-180deg);
+}
+
+/* Width */
+.w-65 {
+    width: 65% !important;
 }
