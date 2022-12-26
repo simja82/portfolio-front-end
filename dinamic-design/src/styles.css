@@ -44,7 +44,6 @@ h4.hero {
 ul.social-listing li {
     margin-bottom: 90%;
     font-size: 0.8rem;
-    color: #000;
 }
 
 /* Plus */
@@ -125,4 +124,9 @@ a:hover {
     border-color: #dee2e6;
     outline: 0;
     box-shadow: none;
+}
+
+/* Img Black */
+.img-black{
+    filter:invert(1) !important;
 }

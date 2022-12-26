@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-white-general',
-  templateUrl: './whitegeneral.component.html',
-  styleUrls: ['./whitegeneral.component.css']
+  templateUrl: './white-general.component.html',
+  styleUrls: ['./white-general.component.css']
 })
 export class WhiteGeneralComponent {
 

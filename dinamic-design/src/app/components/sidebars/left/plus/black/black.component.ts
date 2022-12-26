@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-plus-black',
+  selector: 'app-black-plus',
   templateUrl: './black.component.html',
   styleUrls: ['./black.component.css']
 })
-export class PlusBlackComponent {
+export class BlackPlusComponent {
 
 }
