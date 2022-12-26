@@ -130,3 +130,8 @@ a:hover {
 .img-black{
     filter:invert(1) !important;
 }
+
+/* Section Top */
+.section-top {
+    padding-top: 10rem;
+}

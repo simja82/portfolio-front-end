@@ -1,1 +1,45 @@
-<p>login works!</p>
+<section class="background login">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+        <app-white-logo></app-white-logo>
+        <app-white-session></app-white-session>
+    </nav>
+    
+    <!-- Plus -->
+    <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
+        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+            <app-white-plus></app-white-plus>
+        </a>   
+    </div>
+
+    <!-- Form Login -->
+    <div class="col-8 m-auto section-top">
+        <div class="card text-bg-light text-center">
+            <div class="card-header">Login</div>
+            <div class="card-body col-10 m-auto pb-4 mt-1">
+                <form>
+                    <div class="mb-3">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Tu email no será compartido con nadie jamás.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark  btn-width">Entrar</button>
+                </form>
+                <div id="registerHelp" class="form-text mt-4">Aún no tienes una cuenta? <a href="/register.html">Más.</a></div>
+            </div>
+        </div>            
+    </div>
+
+    <!-- Redes -->
+    <app-white-general></app-white-general>
+    
+    <!-- Footer -->
+    <footer class="footer d-flex justify-content-between container-fluid">
+        <app-white-back></app-white-back>
+        <app-white-fast-forward></app-white-fast-forward>
+    </footer>
+</section>
