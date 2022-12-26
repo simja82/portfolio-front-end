@@ -1,0 +1,7 @@
+html {
+    overflow: hidden;
+}
+
+.more {
+	background-image: url('./../../../assets/img/background/plus.jpg');
+}

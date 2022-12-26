@@ -1,3 +1,7 @@
+html {
+	overflow: hidden;
+}
+
 .register {
 	background-image: url('./../../../assets/img/background/register.jpg');
 }
