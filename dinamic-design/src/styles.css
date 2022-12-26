@@ -207,3 +207,8 @@ a:hover {
 .orange:hover {
     color: #fd7e14;
 }
+
+/* Go Back */
+.fa-rotate {
+    transform: rotateY(-180deg);
+}

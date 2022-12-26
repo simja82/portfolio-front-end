@@ -1,1 +1,53 @@
-<p>cv works!</p>
+    <!-- Plus -->
+    <app-camera></app-camera>
+
+    <h3 class="text-center pt-5 mt-5">Este es mi CV dentro de IT...</h3>
+
+    <div class="container border w-65 my-5">
+        <div class="row">
+            <div class="col-4 border-end bg-light pb-4 text-center">
+                <app-cv-profile></app-cv-profile>
+                <hr>
+                <app-cv-education></app-cv-education>
+                <hr>
+                <app-cv-technical-skills></app-cv-technical-skills>
+                <hr class="w-50 m-auto">
+                <app-cv-soft-skills></app-cv-soft-skills>
+                <hr>
+                <app-cv-languages></app-cv-languages>
+                <hr>
+                <app-cv-hobbies></app-cv-hobbies>
+            </div>
+            <div class="col-8">
+                <div class="m-3 pt-5">
+                    <h2>Nombre y Apellido</h2>
+                    <h4>Puesto</h4>
+                    <app-cv-contact></app-cv-contact>
+                    <hr>
+                    <app-cv-social></app-cv-social>
+                    <hr>
+                    <app-cv-experience></app-cv-experience>
+                    <hr>
+                    <app-cv-projects></app-cv-projects>
+                    <hr>
+                    <app-cv-references></app-cv-references>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="justify-content-center d-flex pt-5 mt-5"><span class="me-3 pe-5">Imprimir</span> / <span class="ms-3 ps-5">Descargar</span></h4>
+    <h3 class="justify-content-center d-flex py-3"><i class="fa-solid fa-print me-5 pe-5 orange"></i> <i class="fa-solid fa-download ms-5 ps-5 orange"></i> </h3>
+    <div class="text-center pb-5">
+        <span>Por favor, si no es necesario <i class="fa-solid fa-leaf text-success"></i></span>
+        <br>
+        <app-cv-to-developer></app-cv-to-developer>
+    </div>
+
+    <footer class="position-fixed">
+        <div class="d-flex justify-content-end me-4">
+            <a href="/developer/intro.html">
+                <h3><i class="fa-solid fa-chevron-left orange"></i></h3>
+            </a>
+        </div>
+    </footer>

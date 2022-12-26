@@ -54,6 +54,18 @@ import { DeveloperContactComponent } from './components/sections/developer/devel
 import { DeveloperToCvComponent } from './components/sections/developer/developer-to-cv/developer-to-cv.component';
 import { BlackDeveloperComponent } from './components/sidebars/right/black/developer/black-developer/black-developer.component';
 import { OrangeSessionComponent } from './components/navbar/session/orange/orange-session/orange-session.component';
+import { CvEducationComponent } from './components/sections/developer/cv-education/cv-education.component';
+import { CvProfileComponent } from './components/sections/developer/cv-profile/cv-profile.component';
+import { CvExperienceComponent } from './components/sections/developer/cv-experience/cv-experience.component';
+import { CvSocialComponent } from './components/sections/developer/cv-social/cv-social.component';
+import { CvHobbiesComponent } from './components/sections/developer/cv-hobbies/cv-hobbies.component';
+import { CvContactComponent } from './components/sections/developer/cv-contact/cv-contact.component';
+import { CvProjectsComponent } from './components/sections/developer/cv-projects/cv-projects.component';
+import { CvReferencesComponent } from './components/sections/developer/cv-references/cv-references.component';
+import { CvLanguagesComponent } from './components/sections/developer/cv-languages/cv-languages.component';
+import { CvTechnicalSkillsComponent } from './components/sections/developer/cv-technical-skills/cv-technical-skills.component';
+import { CvSoftSkillsComponent } from './components/sections/developer/cv-soft-skills/cv-soft-skills.component';
+import { CvToDeveloperComponent } from './components/sections/developer/cv-to-developer/cv-to-developer.component';
 
 @NgModule({
     declarations: [
@@ -110,7 +122,19 @@ import { OrangeSessionComponent } from './components/navbar/session/orange/orang
         DeveloperContactComponent,
         DeveloperToCvComponent,
         BlackDeveloperComponent,
-        OrangeSessionComponent
+        OrangeSessionComponent,
+        CvEducationComponent,
+        CvProfileComponent,
+        CvExperienceComponent,
+        CvSocialComponent,
+        CvHobbiesComponent,
+        CvContactComponent,
+        CvProjectsComponent,
+        CvReferencesComponent,
+        CvLanguagesComponent,
+        CvTechnicalSkillsComponent,
+        CvSoftSkillsComponent,
+        CvToDeveloperComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
