@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-back',
+  selector: 'app-black-back',
   templateUrl: './back.component.html',
   styleUrls: ['./back.component.css']
 })
-export class BackComponent {
+export class BlackBackComponent {
 
 }
