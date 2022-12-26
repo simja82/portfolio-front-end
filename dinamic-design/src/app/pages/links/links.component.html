@@ -1,1 +1,49 @@
-<p>links works!</p>
+<section class="background links">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+        <app-white-logo></app-white-logo>
+        <app-white-session></app-white-session>
+    </nav>
+    
+    <!-- Plus -->
+    <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
+        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+            <app-white-plus></app-white-plus>
+        </a>   
+    </div>
+
+    <!-- Enlace -->
+    <div class="text-center pt-5 text-white">
+        <div class="col-12 mt-5 pt-5 mb-4">
+            <h1 class="hero pt-5">Epa...</h1>
+        </div>
+        <div class="col-6 m-auto mb-5">
+            <h5 class="hero">Parece que encontraste un atajo... Adonde te gustaría ir?</h5>
+        </div>
+        <a href="/audiovisual/projects/projects.html">
+            <button type="button" class="btn btn-outline-white btn-lg me-5">Proyectos</button>
+        </a>   
+        <a href="/audiovisual/samples/samples.html">
+            <button type="button" class="btn btn-outline-white btn-lg ms-5 me-5">Muestras</button>
+        </a>      
+        <a href="/audiovisual/data/data.html">
+            <button type="button" class="btn btn-outline-white btn-lg ms-5">Data</button>
+        </a>   
+    </div>
+
+    <p class="container w-75 m-auto pt-3 text-white text-center">
+        En Proyectos vas a poder ver mis Proyectos, <br>
+        en Muestras descargar archivos que son parte de Proyectos <br>
+        y en Data vas a encontrar documentos de Presentación y Muestras <br>
+        -esto es algo así como un CV pero de la Industria Audiovisual-
+    </p>
+
+    <!-- Redes -->
+    <app-white-audiovisual></app-white-audiovisual>
+
+    <!-- Footer -->
+    <footer class="footer d-flex justify-content-between container-fluid">
+        <app-white-back></app-white-back>
+        <app-white-fast-forward></app-white-fast-forward>
+    </footer>
+</section>

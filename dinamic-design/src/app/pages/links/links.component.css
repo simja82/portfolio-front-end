@@ -1,0 +1,7 @@
+html {
+    overflow: hidden;
+}
+
+.links {
+	background-image: url('./../../../assets/img/background/links.jpg');
+}

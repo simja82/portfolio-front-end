@@ -38,6 +38,7 @@ import { BlackPlusComponent } from './components/sidebars/left/plus/black/black.
 import { BlackLogoComponent } from './components/navbar/logo/black/black.component';
 import { BlackGeneralComponent } from './components/sidebars/right/black/general/black-general/black-general.component';
 import { WhiteGeneralComponent } from './components/sidebars/right/white/general/white-general/white-general.component';
+import { WhiteAudiovisualComponent } from './components/sidebars/right/black/audiovisual/white-audiovisual/white-audiovisual.component';
 
 @NgModule({
     declarations: [
@@ -78,7 +79,8 @@ import { WhiteGeneralComponent } from './components/sidebars/right/white/general
         WhiteBackComponent,
         BlackBackComponent,
         WhiteSessionComponent,
-        BlackGeneralComponent
+        BlackGeneralComponent,
+        WhiteAudiovisualComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
