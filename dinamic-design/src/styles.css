@@ -198,3 +198,12 @@ a:hover {
         top: -500%;
     }
 }
+
+/* Colors */
+.text-orange {
+    color: #fd7e14;
+}
+
+.orange:hover {
+    color: #fd7e14;
+}

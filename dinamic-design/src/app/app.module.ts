@@ -40,6 +40,20 @@ import { BlackGeneralComponent } from './components/sidebars/right/black/general
 import { WhiteGeneralComponent } from './components/sidebars/right/white/general/white-general/white-general.component';
 import { WhiteAudiovisualComponent } from './components/sidebars/right/black/audiovisual/white-audiovisual/white-audiovisual.component';
 import { WhiteFooterPlusComponent } from './components/footer/right/white/plus/plus.component';
+import { DeveloperIntroComponent } from './components/sections/developer/developer-intro/developer-intro.component';
+import { DeveloperProfileComponent } from './components/sections/developer/developer-profile/developer-profile.component';
+import { DeveloperEducationComponent } from './components/sections/developer/developer-education/developer-education.component';
+import { DeveloperExperienceComponent } from './components/sections/developer/developer-experience/developer-experience.component';
+import { DeveloperProjectsComponent } from './components/sections/developer/developer-projects/developer-projects.component';
+import { DeveloperTechnicalSkillsComponent } from './components/sections/developer/developer-technical-skills/developer-technical-skills.component';
+import { DeveloperSoftSkillsComponent } from './components/sections/developer/developer-soft-skills/developer-soft-skills.component';
+import { DeveloperLanguagesComponent } from './components/sections/developer/developer-languages/developer-languages.component';
+import { DeveloperHobbiesComponent } from './components/sections/developer/developer-hobbies/developer-hobbies.component';
+import { DeveloperReferencesComponent } from './components/sections/developer/developer-references/developer-references.component';
+import { DeveloperContactComponent } from './components/sections/developer/developer-contact/developer-contact.component';
+import { DeveloperToCvComponent } from './components/sections/developer/developer-to-cv/developer-to-cv.component';
+import { BlackDeveloperComponent } from './components/sidebars/right/black/developer/black-developer/black-developer.component';
+import { OrangeSessionComponent } from './components/navbar/session/orange/orange-session/orange-session.component';
 
 @NgModule({
     declarations: [
@@ -82,7 +96,21 @@ import { WhiteFooterPlusComponent } from './components/footer/right/white/plus/p
         WhiteSessionComponent,
         BlackGeneralComponent,
         WhiteAudiovisualComponent,
-        WhiteFooterPlusComponent
+        WhiteFooterPlusComponent,
+        DeveloperIntroComponent,
+        DeveloperProfileComponent,
+        DeveloperEducationComponent,
+        DeveloperExperienceComponent,
+        DeveloperProjectsComponent,
+        DeveloperTechnicalSkillsComponent,
+        DeveloperSoftSkillsComponent,
+        DeveloperLanguagesComponent,
+        DeveloperHobbiesComponent,
+        DeveloperReferencesComponent,
+        DeveloperContactComponent,
+        DeveloperToCvComponent,
+        BlackDeveloperComponent,
+        OrangeSessionComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
