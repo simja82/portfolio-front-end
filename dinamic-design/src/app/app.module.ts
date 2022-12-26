@@ -21,54 +21,60 @@ import { LinksComponent } from './pages/links/links.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { DataComponent } from './pages/data/data.component';
 import { BlackComponent } from './components/navbar/logo/black/black.component';
-import { WhiteComponent } from './components/navbar/logo/white/white.component';
-import { GeneralComponent } from './components/sidebars/right/general/general.component';
+import { LogoWhiteComponent } from './components/navbar/logo/white/white.component';
+import { WhiteGeneralComponent } from './components/sidebars/right/general/whitegeneral.component';
 import { CameraComponent } from './components/sidebars/left/camera/camera.component';
 import { CodeComponent } from './components/sidebars/left/code/code.component';
 import { BackComponent } from './components/footer/left/black/back/back.component';
 import { BugComponent } from './components/footer/right/white/bug/bug.component';
-import { FastForwardComponent } from './components/footer/right/white/fast-forward/fast-forward.component';
+import { WhiteFastForwardComponent } from './components/footer/right/white/fast-forward/fast-forward.component';
 import { MinibioComponent } from './modals/audiovisual/minibio/minibio.component';
 import { IWantComponent } from './modals/audiovisual/i-want/i-want.component';
 import { MyWorkComponent } from './modals/audiovisual/my-work/my-work.component';
+import { SessionWhiteComponent } from "./components/navbar/session/white/white.component";
+import { PlusBlackComponent } from './components/sidebars/left/plus/black/black.component';
+import { PlusWhiteComponent } from './components/sidebars/left/plus/white/white.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    IndexComponent,
-    IntroComponent,
-    LoginComponent,
-    RegisterComponent,
-    DashboardComponent,
-    ErrorComponent,
-    CreditsComponent,
-    BloopersComponent,
-    AudiovisualComponent,
-    DeveloperComponent,
-    CVComponent,
-    ProjectsComponent,
-    SamplesComponent,
-    PlusComponent,
-    LinksComponent,
-    ProjectComponent,
-    DataComponent,
-    BlackComponent,
-    WhiteComponent,
-    GeneralComponent,
-    CameraComponent,
-    CodeComponent,
-    BackComponent,
-    BugComponent,
-    FastForwardComponent,
-    MinibioComponent,
-    IWantComponent,
-    MyWorkComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        IndexComponent,
+        IntroComponent,
+        LoginComponent,
+        RegisterComponent,
+        DashboardComponent,
+        ErrorComponent,
+        CreditsComponent,
+        BloopersComponent,
+        AudiovisualComponent,
+        DeveloperComponent,
+        CVComponent,
+        ProjectsComponent,
+        SamplesComponent,
+        PlusComponent,
+        LinksComponent,
+        ProjectComponent,
+        DataComponent,
+        BlackComponent,
+        LogoWhiteComponent,
+        SessionWhiteComponent,
+        WhiteGeneralComponent,
+        CameraComponent,
+        CodeComponent,
+        BackComponent,
+        BugComponent,
+        WhiteFastForwardComponent,
+        MinibioComponent,
+        IWantComponent,
+        MyWorkComponent,
+        PlusBlackComponent,
+        PlusWhiteComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule
+    ]
 })
 export class AppModule { }
