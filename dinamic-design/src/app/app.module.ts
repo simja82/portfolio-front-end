@@ -85,6 +85,11 @@ import { AudiovisualProjectsComponent } from './components/sections/audiovisual/
 import { AudiovisualFeedbackComponent } from './components/sections/audiovisual/audiovisual-feedback/audiovisual-feedback.component';
 import { AudiovisualQuotesComponent } from './components/sections/audiovisual/audiovisual-quotes/audiovisual-quotes.component';
 import { AudiovisualClosingComponent } from './components/sections/audiovisual/audiovisual-closing/audiovisual-closing.component';
+import { ProjectsIntroComponent } from './components/sections/audiovisual/projects-intro/projects-intro.component';
+import { ProjectsSeriesComponent } from './components/sections/audiovisual/projects-series/projects-series.component';
+import { ProjectsLongshotsComponent } from './components/sections/audiovisual/projects-longshots/projects-longshots.component';
+import { ProjectsOthersComponent } from './components/sections/audiovisual/projects-others/projects-others.component';
+import { ProjectsToIntroComponent } from './components/sections/audiovisual/projects-to-intro/projects-to-intro.component';
 
 @NgModule({
     declarations: [
@@ -172,7 +177,12 @@ import { AudiovisualClosingComponent } from './components/sections/audiovisual/a
         AudiovisualProjectsComponent,
         AudiovisualFeedbackComponent,
         AudiovisualQuotesComponent,
-        AudiovisualClosingComponent
+        AudiovisualClosingComponent,
+        ProjectsIntroComponent,
+        ProjectsSeriesComponent,
+        ProjectsLongshotsComponent,
+        ProjectsOthersComponent,
+        ProjectsToIntroComponent
    ],
     providers: [],
     bootstrap: [AppComponent],
