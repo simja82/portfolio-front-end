@@ -208,6 +208,10 @@ a:hover {
     color: #fd7e14;
 }
 
+.white {
+    color: #fff;
+}
+
 /* Go Back */
 .fa-rotate {
     transform: rotateY(-180deg);

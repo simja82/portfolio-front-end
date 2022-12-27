@@ -66,6 +66,25 @@ import { CvLanguagesComponent } from './components/sections/developer/cv-languag
 import { CvTechnicalSkillsComponent } from './components/sections/developer/cv-technical-skills/cv-technical-skills.component';
 import { CvSoftSkillsComponent } from './components/sections/developer/cv-soft-skills/cv-soft-skills.component';
 import { CvToDeveloperComponent } from './components/sections/developer/cv-to-developer/cv-to-developer.component';
+import { BlackAudiovisualComponent } from './components/sidebars/right/black/audiovisual/black-audiovisual/black-audiovisual.component';
+import { OrangeCreditsComponent } from './components/footer/right/orange/orange-credits/orange-credits.component';
+import { OrangeIndexComponent } from './components/footer/left/orange/orange-index/orange-index.component';
+import { OrangeTotopComponent } from './components/footer/right/orange/orange-totop/orange-totop.component';
+import { BlackOrangeSessionComponent } from './components/navbar/session/black-orange/black-orange.component';
+import { BlackOrangeBackComponent } from './components/footer/left/black-orange-back/black-orange-back.component';
+import { AudiovisualIntroComponent } from './components/sections/audiovisual/audiovisual-intro/audiovisual-intro.component';
+import { AudiovisualNextComponent } from './components/sections/audiovisual/audiovisual-next/audiovisual-next.component';
+import { AudiovisualOneComponent } from './components/sections/audiovisual/audiovisual-one/audiovisual-one.component';
+import { AudiovisualTwoComponent } from './components/sections/audiovisual/audiovisual-two/audiovisual-two.component';
+import { AudiovisualThreeComponent } from './components/sections/audiovisual/audiovisual-three/audiovisual-three.component';
+import { AudiovisualFourComponent } from './components/sections/audiovisual/audiovisual-four/audiovisual-four.component';
+import { AudiovisualFiveComponent } from './components/sections/audiovisual/audiovisual-five/audiovisual-five.component';
+import { AudiovisualProfileComponent } from './components/sections/audiovisual/audiovisual-profile/audiovisual-profile.component';
+import { AudiovisualDocumentsComponent } from './components/sections/audiovisual/audiovisual-documents/audiovisual-documents.component';
+import { AudiovisualProjectsComponent } from './components/sections/audiovisual/audiovisual-projects/audiovisual-projects.component';
+import { AudiovisualFeedbackComponent } from './components/sections/audiovisual/audiovisual-feedback/audiovisual-feedback.component';
+import { AudiovisualQuotesComponent } from './components/sections/audiovisual/audiovisual-quotes/audiovisual-quotes.component';
+import { AudiovisualClosingComponent } from './components/sections/audiovisual/audiovisual-closing/audiovisual-closing.component';
 
 @NgModule({
     declarations: [
@@ -134,8 +153,27 @@ import { CvToDeveloperComponent } from './components/sections/developer/cv-to-de
         CvLanguagesComponent,
         CvTechnicalSkillsComponent,
         CvSoftSkillsComponent,
-        CvToDeveloperComponent
-    ],
+        CvToDeveloperComponent,
+        BlackAudiovisualComponent,
+        OrangeCreditsComponent,
+        OrangeIndexComponent,
+        OrangeTotopComponent,
+        BlackOrangeSessionComponent,
+        BlackOrangeBackComponent,
+        AudiovisualIntroComponent,
+        AudiovisualNextComponent,
+        AudiovisualOneComponent,
+        AudiovisualTwoComponent,
+        AudiovisualThreeComponent,
+        AudiovisualFourComponent,
+        AudiovisualFiveComponent,
+        AudiovisualProfileComponent,
+        AudiovisualDocumentsComponent,
+        AudiovisualProjectsComponent,
+        AudiovisualFeedbackComponent,
+        AudiovisualQuotesComponent,
+        AudiovisualClosingComponent
+   ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
