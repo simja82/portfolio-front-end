@@ -5,8 +5,8 @@
     font-family: 'Courier Prime', monospace;
 }
 
-/* Sections */
-section.empty-footer {
+/* Section */
+.empty-footer {
     margin-top: 7rem ;
 }
 
