@@ -1,0 +1,10 @@
+.btn.btn-black-mini,
+.btn.btn-black-mini:hover {
+    color: #fff !important;
+    border: 0.05rem solid #000 !important;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    width: 7rem;
+    height: 3rem;
+    background: #000;
+}

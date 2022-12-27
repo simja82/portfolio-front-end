@@ -108,6 +108,19 @@ width: 12rem;
     width: 12rem;
 }
 
+/* Actives Buttons */
+.btn-check:checked+.btn, 
+.btn.active, 
+.btn.show, 
+.btn:first-child:active, 
+:not(.btn-check)+.btn:active {
+    border-color: transparent;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
 /* Enlaces */
 a {
     color:#000 !important;
