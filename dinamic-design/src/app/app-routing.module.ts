@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'plus', component:PlusComponent },
   { path: 'audiovisual/intro', component:AudiovisualComponent },
   { path: 'audiovisual/projects', component:ProjectsComponent },
-  { path: 'audiovisual/project/:title', component:ProjectComponent },
+  { path: 'audiovisual/projects/project', component:ProjectComponent },
   { path: 'audiovisual/samples', component:SamplesComponent },
   { path: 'audiovisual/data', component:DataComponent },
   { path: 'audiovisual/links', component:LinksComponent },

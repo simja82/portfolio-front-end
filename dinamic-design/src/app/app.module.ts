@@ -90,6 +90,8 @@ import { ProjectsSeriesComponent } from './components/sections/audiovisual/proje
 import { ProjectsLongshotsComponent } from './components/sections/audiovisual/projects-longshots/projects-longshots.component';
 import { ProjectsOthersComponent } from './components/sections/audiovisual/projects-others/projects-others.component';
 import { ProjectsToIntroComponent } from './components/sections/audiovisual/projects-to-intro/projects-to-intro.component';
+import { ProjectIntroComponent } from './components/sections/audiovisual/project-intro/project-intro.component';
+import { ProjectToProjectsComponent } from './components/sections/audiovisual/project-to-projects/project-to-projects.component';
 
 @NgModule({
     declarations: [
@@ -182,7 +184,9 @@ import { ProjectsToIntroComponent } from './components/sections/audiovisual/proj
         ProjectsSeriesComponent,
         ProjectsLongshotsComponent,
         ProjectsOthersComponent,
-        ProjectsToIntroComponent
+        ProjectsToIntroComponent,
+        ProjectIntroComponent,
+        ProjectToProjectsComponent
    ],
     providers: [],
     bootstrap: [AppComponent],
