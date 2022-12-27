@@ -99,6 +99,29 @@ width: 12rem;
     border: 0.05rem solid #000 !important;
 }
 
+/* Button Black Medium */
+.btn.btn-black-medium{
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    width: 33.33%;
+    height: auto;
+}
+
+.btn.btn-black-medium:hover,
+.btn.btn-black-medium:active,
+.btn.btn-black-medium:focus-visible,
+.btn-check.btn-black-medium:checked+.btn, 
+.btn.btn-black-mediumactive, .btn.btn-black-medium.show, 
+.btn.btn-black-medium:first-child:active, 
+:not(.btn-check)+.btn.btn-black-medium:active {
+    color: #fff;
+    background-color: rgb(238, 231, 231);
+    border-color: transparent;
+}
+
 /* Button Sizes */
 .btn-lg {
     font-size: 1.25rem;
@@ -119,6 +142,11 @@ width: 12rem;
 
 .btn-close:focus {
     box-shadow: none;
+}
+
+/* Button Behavior */
+.download {
+    border: none !important;
 }
 
 /* Enlaces */
