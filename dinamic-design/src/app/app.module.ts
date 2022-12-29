@@ -98,6 +98,37 @@ import { SamplesListComponent } from './components/sections/audiovisual/samples-
 import { DataToIntroComponent } from './components/sections/audiovisual/data-to-intro/data-to-intro.component';
 import { DataIntroComponent } from './components/sections/audiovisual/data-intro/data-intro.component';
 import { DataListComponent } from './components/sections/audiovisual/data-list/data-list.component';
+import { LogoutComponent } from './components/navbar/session/logout/logout.component';
+import { LogoutModalComponent } from './modals/dashboard/logout-modal/logout-modal.component';
+import { DashboardGeneralComponent } from './components/dashboard/dashboard-general/dashboard-general.component';
+import { DashboardAudiovisualComponent } from './components/dashboard/dashboard-audiovisual/dashboard-audiovisual.component';
+import { DashboardDeveloperComponent } from './components/dashboard/dashboard-developer/dashboard-developer.component';
+import { SocialModalComponent } from './modals/dashboard/social-modal/social-modal.component';
+import { BannersModalComponent } from './modals/dashboard/banners-modal/banners-modal.component';
+import { HeroesModalComponent } from './modals/dashboard/heroes-modal/heroes-modal.component';
+import { CreditsModalComponent } from './modals/dashboard/credits-modal/credits-modal.component';
+import { BloopersModalComponent } from './modals/dashboard/bloopers-modal/bloopers-modal.component';
+import { EditSocialModalComponent } from './modals/dashboard/social-modal/edit-social-modal/edit-social-modal.component';
+import { DeleteSocialModalComponent } from './modals/dashboard/social-modal/delete-social-modal/delete-social-modal.component';
+import { CreateSocialModalComponent } from './modals/dashboard/social-modal/create-social-modal/create-social-modal.component';
+import { EditBannerModalComponent } from './modals/dashboard/banners-modal/edit-banner-modal/edit-banner-modal.component';
+import { EditHeroesModalComponent } from './modals/dashboard/heroes-modal/edit-heroes-modal/edit-heroes-modal.component';
+import { EditTitleCreditModalComponent } from './modals/dashboard/credits-modal/edit-title-credit-modal/edit-title-credit-modal.component';
+import { EditCreditModalComponent } from './modals/dashboard/credits-modal/edit-credit-modal/edit-credit-modal.component';
+import { DeleteCreditModalComponent } from './modals/dashboard/credits-modal/delete-credit-modal/delete-credit-modal.component';
+import { CreateSingleCreditModalComponent } from './modals/dashboard/credits-modal/create-single-credit-modal/create-single-credit-modal.component';
+import { CreateDoubleCreditModalComponent } from './modals/dashboard/credits-modal/create-double-credit-modal/create-double-credit-modal.component';
+import { CreateTripleCreditModalComponent } from './modals/dashboard/credits-modal/create-triple-credit-modal/create-triple-credit-modal.component';
+import { EditThanksModalComponent } from './modals/dashboard/credits-modal/edit-thanks-modal/edit-thanks-modal.component';
+import { CreateThanksModalComponent } from './modals/dashboard/credits-modal/create-thanks-modal/create-thanks-modal.component';
+import { EditMadeModalComponent } from './modals/dashboard/credits-modal/edit-made-modal/edit-made-modal.component';
+import { EditMusicCreditModalComponent } from './modals/dashboard/credits-modal/edit-music-credit-modal/edit-music-credit-modal.component';
+import { EditBloopersCreditModalComponent } from './modals/dashboard/credits-modal/edit-bloopers-credit-modal/edit-bloopers-credit-modal.component';
+import { EditTitleBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-title-blooper-modal/edit-title-blooper-modal.component';
+import { EditBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-blooper-modal/edit-blooper-modal.component';
+import { DeleteBlooperModalComponent } from './modals/dashboard/bloopers-modal/delete-blooper-modal/delete-blooper-modal.component';
+import { EditDivisorBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-divisor-blooper-modal/edit-divisor-blooper-modal.component';
+import { EditEndBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-end-blooper-modal/edit-end-blooper-modal.component';
 
 @NgModule({
     declarations: [
@@ -198,7 +229,38 @@ import { DataListComponent } from './components/sections/audiovisual/data-list/d
         SamplesListComponent,
         DataToIntroComponent,
         DataIntroComponent,
-        DataListComponent
+        DataListComponent,
+        LogoutComponent,
+        LogoutModalComponent,
+        DashboardGeneralComponent,
+        DashboardAudiovisualComponent,
+        DashboardDeveloperComponent,
+        SocialModalComponent,
+        BannersModalComponent,
+        HeroesModalComponent,
+        CreditsModalComponent,
+        BloopersModalComponent,
+        EditSocialModalComponent,
+        DeleteSocialModalComponent,
+        CreateSocialModalComponent,
+        EditBannerModalComponent,
+        EditHeroesModalComponent,
+        EditTitleCreditModalComponent,
+        EditCreditModalComponent,
+        DeleteCreditModalComponent,
+        CreateSingleCreditModalComponent,
+        CreateDoubleCreditModalComponent,
+        CreateTripleCreditModalComponent,
+        EditThanksModalComponent,
+        CreateThanksModalComponent,
+        EditMadeModalComponent,
+        EditMusicCreditModalComponent,
+        EditBloopersCreditModalComponent,
+        EditTitleBlooperModalComponent,
+        EditBlooperModalComponent,
+        DeleteBlooperModalComponent,
+        EditDivisorBlooperModalComponent,
+        EditEndBlooperModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

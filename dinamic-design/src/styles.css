@@ -84,7 +84,7 @@ border-radius: 0.25rem;
 width: 12rem;
 }
 
-/* Button White */
+/* Button Outline White */
 .btn.btn-outline-white,
 .btn.btn-outline-white:hover {
     color: #fff !important;
@@ -120,6 +120,42 @@ width: 12rem;
     color: #fff;
     background-color: rgb(238, 231, 231);
     border-color: transparent;
+}
+
+/* Dashboard Buttons */
+.btn.btn-black,
+.btn.btn-black:hover {
+    color: #fff !important;
+    border: 0.05rem solid #000 !important;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    width: 12rem;
+    height: 7rem;
+    background: #000;
+}
+
+/* Dashboard Modals Buttons */
+.btn.btn-black-mini,
+.btn.btn-black-mini:hover {
+    color: #fff !important;
+    border: 0.05rem solid #000 !important;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    width: 7rem;
+    height: 3rem;
+    background: #000;
+}
+
+/* Dashboard Modal Edition Buttons */
+.btn.btn-black-extra-mini,
+.btn.btn-black-extra-mini:hover {
+    color: #fff !important;
+    border: 0.05rem solid #000 !important;
+    padding: 0.75rem 0.75rem;
+    border-radius: 0.25rem;
+    width: 3rem;
+    height: 3rem;
+    background: #000;
 }
 
 /* Button Sizes */
