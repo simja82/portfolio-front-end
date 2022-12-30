@@ -1,0 +1,83 @@
+    <!-- Modal Data Page -->
+    <div class="modal fade" id="audiovisualDataPageModal" tabindex="-1" aria-labelledby="audiovisualDataPageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="audiovisualDataPageModalLabel">Data</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Back"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Data</span></h4>
+                        <p class="text-center">
+                            Esta es una parte que resume un poco todo lo que hay en una sola carpeta de presentación... 
+                            <br><br>    
+                            Contiene Minibio, My Work, Proyectos, Muestras, Certificados de Registro y Contacto
+                            <br><br>
+                            Está en formato digital... Aunque no lo creas, mi Arte va sobre muchos papeles pero si puedo no imprimir no lo hago...
+                            <br><br>
+                            Espero que te guste lo que vas a encontrar... Tené en cuenta que periódicamente actualizo todo esto así que siempre está cambiando...
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button class="btn btn-black-extra-mini" data-bs-target="#editAudiovisualDataPagePresentationModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    </div>
+                    <hr class="w-75 m-auto mt-3 pb-3">
+                    <div class="container text-center">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="d-flex justify-content-between">
+                                        <a class="btn btn-black-medium download arrow">
+                                            <div class="d-flex justify-content-end">
+                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                                            </div>
+                                            <h5 class="my-1">Documentos</h5>
+                                            <small class="text-muted mb-4">2022 <i class="fa-regular fa-copyright"></i></small>
+                                        </a>
+                                        <a class="btn btn-black-medium download arrow">
+                                            <div class="d-flex justify-content-end">
+                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                                            </div>
+                                            <h5 class="my-1">Proyectos</h5>
+                                            <small class="text-muted mb-4">2022 <i class="fa-regular fa-copyright"></i></small>
+                                        </a>
+                                        <a class="btn btn-black-medium download arrow">
+                                            <div class="d-flex justify-content-end">
+                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                                            </div>
+                                            <h5 class="my-1">Muestras</h5>
+                                            <small class="text-muted mb-4">2022 <i class="fa-regular fa-copyright"></i></small>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="mt-2 pt-3 pb-3 d-flex justify-content-between">      
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableDocumentsModal" data-bs-toggle="modal">Documentos</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableProjectsModal" data-bs-toggle="modal">Proyectos</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableSamplesModal" data-bs-toggle="modal">Muestras</button>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Close">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-edit-audiovisual-data-page-presentation-modal></app-edit-audiovisual-data-page-presentation-modal>
+    <app-edit-audiovisual-downloadable-documents-modal></app-edit-audiovisual-downloadable-documents-modal>
+    <app-edit-audiovisual-downloadable-projects-modal></app-edit-audiovisual-downloadable-projects-modal>
+    <app-edit-audiovisual-downloadable-samples-modal></app-edit-audiovisual-downloadable-samples-modal>
+    

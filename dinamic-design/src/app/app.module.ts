@@ -129,6 +129,52 @@ import { EditBlooperModalComponent } from './modals/dashboard/bloopers-modal/edi
 import { DeleteBlooperModalComponent } from './modals/dashboard/bloopers-modal/delete-blooper-modal/delete-blooper-modal.component';
 import { EditDivisorBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-divisor-blooper-modal/edit-divisor-blooper-modal.component';
 import { EditEndBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-end-blooper-modal/edit-end-blooper-modal.component';
+import { AudiovisualIntroModalComponent } from './modals/dashboard/audiovisual-intro-modal/audiovisual-intro-modal.component';
+import { AudiovisualProfileModalComponent } from './modals/dashboard/audiovisual-profile-modal/audiovisual-profile-modal.component';
+import { AudiovisualDivisorsModalComponent } from './modals/dashboard/audiovisual-divisors-modal/audiovisual-divisors-modal.component';
+import { AudiovisualPresentationModalComponent } from './modals/dashboard/audiovisual-presentation-modal/audiovisual-presentation-modal.component';
+import { AudiovisualProjectsModalComponent } from './modals/dashboard/audiovisual-projects-modal/audiovisual-projects-modal.component';
+import { AudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisual-feedback-modal/audiovisual-feedback-modal.component';
+import { AudiovisualQuotesModalComponent } from './modals/dashboard/audiovisual-quotes-modal/audiovisual-quotes-modal.component';
+import { AudiovisualClosingModalComponent } from './modals/dashboard/audiovisual-closing-modal/audiovisual-closing-modal.component';
+import { AudiovisualLinksModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-links-modal.component';
+import { EditAudiovisualIntroModalComponent } from './modals/dashboard/audiovisual-intro-modal/edit-audiovisual-intro-modal/edit-audiovisual-intro-modal.component';
+import { EditAudiovisualProfileModalComponent } from './modals/dashboard/audiovisual-profile-modal/edit-audiovisual-profile-modal/edit-audiovisual-profile-modal.component';
+import { EditAudiovisualDivisorOneModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-one-modal/edit-audiovisual-divisor-one-modal.component';
+import { EditAudiovisualDivisorTwoModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-two-modal/edit-audiovisual-divisor-two-modal.component';
+import { EditAudiovisualDivisorThreeModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-three-modal/edit-audiovisual-divisor-three-modal.component';
+import { EditAudiovisualDivisorFourModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-four-modal/edit-audiovisual-divisor-four-modal.component';
+import { EditAudiovisualDivisorFiveModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-five-modal/edit-audiovisual-divisor-five-modal.component';
+import { EditAudiovisualPresentationModalComponent } from './modals/dashboard/audiovisual-presentation-modal/edit-audiovisual-presentation-modal/edit-audiovisual-presentation-modal.component';
+import { EditAudiovisualMinibioModalComponent } from './modals/dashboard/audiovisual-presentation-modal/edit-audiovisual-minibio-modal/edit-audiovisual-minibio-modal.component';
+import { EditAudiovisualWorkModalComponent } from './modals/dashboard/audiovisual-presentation-modal/edit-audiovisual-work-modal/edit-audiovisual-work-modal.component';
+import { EditAudiovisualWantModalComponent } from './modals/dashboard/audiovisual-presentation-modal/edit-audiovisual-want-modal/edit-audiovisual-want-modal.component';
+import { EditAudiovisualProjectsModalComponent } from './modals/dashboard/audiovisual-projects-modal/edit-audiovisual-projects-modal/edit-audiovisual-projects-modal.component';
+import { EditAudiovisualLinksModalComponent } from './modals/dashboard/audiovisual-links-modal/edit-audiovisual-links-modal/edit-audiovisual-links-modal.component';
+import { AudiovisualProjectsPageModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/audiovisual-projects-page-modal.component';
+import { AudiovisualSamplesPageModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-samples-page-modal/audiovisual-samples-page-modal.component';
+import { AudiovisualDataPageModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-data-page-modal/audiovisual-data-page-modal.component';
+import { EditAudiovisualProjectsPagePresentationModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/edit-audiovisual-projects-page-presentation-modal/edit-audiovisual-projects-page-presentation-modal.component';
+import { CreateAudiovisualProjectModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/create-audiovisual-project-modal/create-audiovisual-project-modal.component';
+import { EditAudiovisualProjectModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/edit-audiovisual-project-modal/edit-audiovisual-project-modal.component';
+import { DeleteAudiovisualProjectModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/delete-audiovisual-project-modal/delete-audiovisual-project-modal.component';
+import { EditAudiovisualSamplesPagePresentationModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-samples-page-modal/edit-audiovisual-samples-page-presentation-modal/edit-audiovisual-samples-page-presentation-modal.component';
+import { CreateAudiovisualSampleModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-samples-page-modal/create-audiovisual-sample-modal/create-audiovisual-sample-modal.component';
+import { EditAudiovisualSampleModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-samples-page-modal/edit-audiovisual-sample-modal/edit-audiovisual-sample-modal.component';
+import { DeleteAudiovisualSampleModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-samples-page-modal/delete-audiovisual-sample-modal/delete-audiovisual-sample-modal.component';
+import { EditAudiovisualDataPagePresentationModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-data-page-modal/edit-audiovisual-data-page-presentation-modal/edit-audiovisual-data-page-presentation-modal.component';
+import { EditAudiovisualDownloadableDocumentsModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-data-page-modal/edit-audiovisual-downloadable-documents-modal/edit-audiovisual-downloadable-documents-modal.component';
+import { EditAudiovisualDownloadableProjectsModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-data-page-modal/edit-audiovisual-downloadable-projects-modal/edit-audiovisual-downloadable-projects-modal.component';
+import { EditAudiovisualDownloadableSamplesModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-data-page-modal/edit-audiovisual-downloadable-samples-modal/edit-audiovisual-downloadable-samples-modal.component';
+import { EditIntroAudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisual-feedback-modal/edit-intro-audiovisual-feedback-modal/edit-intro-audiovisual-feedback-modal.component';
+import { CreateAudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisual-feedback-modal/create-audiovisual-feedback-modal/create-audiovisual-feedback-modal.component';
+import { EditAudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisual-feedback-modal/edit-audiovisual-feedback-modal/edit-audiovisual-feedback-modal.component';
+import { DeleteAudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisual-feedback-modal/delete-audiovisual-feedback-modal/delete-audiovisual-feedback-modal.component';
+import { EditIntroAudiovisualQuotesModalComponent } from './modals/dashboard/audiovisual-quotes-modal/edit-intro-audiovisual-quotes-modal/edit-intro-audiovisual-quotes-modal.component';
+import { CreateAudiovisualQuoteModalComponent } from './modals/dashboard/audiovisual-quotes-modal/create-audiovisual-quote-modal/create-audiovisual-quote-modal.component';
+import { EditAudiovisualQuoteModalComponent } from './modals/dashboard/audiovisual-quotes-modal/edit-audiovisual-quote-modal/edit-audiovisual-quote-modal.component';
+import { DeleteAudiovisualQuoteModalComponent } from './modals/dashboard/audiovisual-quotes-modal/delete-audiovisual-quote-modal/delete-audiovisual-quote-modal.component';
+import { EditAudiovisualClosingModalComponent } from './modals/dashboard/audiovisual-closing-modal/edit-audiovisual-closing-modal/edit-audiovisual-closing-modal.component';
 
 @NgModule({
     declarations: [
@@ -260,7 +306,53 @@ import { EditEndBlooperModalComponent } from './modals/dashboard/bloopers-modal/
         EditBlooperModalComponent,
         DeleteBlooperModalComponent,
         EditDivisorBlooperModalComponent,
-        EditEndBlooperModalComponent
+        EditEndBlooperModalComponent,
+        AudiovisualIntroModalComponent,
+        AudiovisualProfileModalComponent,
+        AudiovisualDivisorsModalComponent,
+        AudiovisualPresentationModalComponent,
+        AudiovisualProjectsModalComponent,
+        AudiovisualFeedbackModalComponent,
+        AudiovisualQuotesModalComponent,
+        AudiovisualClosingModalComponent,
+        AudiovisualLinksModalComponent,
+        EditAudiovisualIntroModalComponent,
+        EditAudiovisualProfileModalComponent,
+        EditAudiovisualDivisorOneModalComponent,
+        EditAudiovisualDivisorTwoModalComponent,
+        EditAudiovisualDivisorThreeModalComponent,
+        EditAudiovisualDivisorFourModalComponent,
+        EditAudiovisualDivisorFiveModalComponent,
+        EditAudiovisualPresentationModalComponent,
+        EditAudiovisualMinibioModalComponent,
+        EditAudiovisualWorkModalComponent,
+        EditAudiovisualWantModalComponent,
+        EditAudiovisualProjectsModalComponent,
+        EditAudiovisualLinksModalComponent,
+        AudiovisualProjectsPageModalComponent,
+        AudiovisualSamplesPageModalComponent,
+        AudiovisualDataPageModalComponent,
+        EditAudiovisualProjectsPagePresentationModalComponent,
+        CreateAudiovisualProjectModalComponent,
+        EditAudiovisualProjectModalComponent,
+        DeleteAudiovisualProjectModalComponent,
+        EditAudiovisualSamplesPagePresentationModalComponent,
+        CreateAudiovisualSampleModalComponent,
+        EditAudiovisualSampleModalComponent,
+        DeleteAudiovisualSampleModalComponent,
+        EditAudiovisualDataPagePresentationModalComponent,
+        EditAudiovisualDownloadableDocumentsModalComponent,
+        EditAudiovisualDownloadableProjectsModalComponent,
+        EditAudiovisualDownloadableSamplesModalComponent,
+        EditIntroAudiovisualFeedbackModalComponent,
+        CreateAudiovisualFeedbackModalComponent,
+        EditAudiovisualFeedbackModalComponent,
+        DeleteAudiovisualFeedbackModalComponent,
+        EditIntroAudiovisualQuotesModalComponent,
+        CreateAudiovisualQuoteModalComponent,
+        EditAudiovisualQuoteModalComponent,
+        DeleteAudiovisualQuoteModalComponent,
+        EditAudiovisualClosingModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

@@ -1,0 +1,66 @@
+    <!-- Modal Links -->
+    <div class="modal fade" id="audiovisualLinksModal" tabindex="-1" aria-labelledby="audiovisualLinksModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="audiovisualLinksModalLabel">Links</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">                                   
+                                        <div class="container mt-2 pt-3 pb-3 d-flex justify-content-between">      
+                                            <div class="col-4 text-center">
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Proyectos</button>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Muestras</button>
+                                            </div>
+                                            <div class="col-4 text-center">
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Data</button>
+                                            </div>
+                                        </div>   
+                                        <p class="container w-75 m-auto pt-3 text-center">
+                                            En Proyectos vas a poder ver mis Proyectos, <br>
+                                            en Muestras descargar archivos que son parte de Proyectos <br>
+                                            y en Data vas a encontrar documentos de Presentación y Muestras <br>
+                                            -esto es algo así como un CV pero de la Industria Audiovisual-
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <button class="btn btn-black-extra-mini" data-bs-target="#editAudiovisualLinksModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                </div>
+                                <hr class="w-75 m-auto mt-3 pb-3">
+                                <div class="card">
+                                    <div class="container mt-2 pt-3 pb-3 d-flex justify-content-between">      
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal">Proyectos</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal">Muestras</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal">Data</button>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-edit-audiovisual-links-modal></app-edit-audiovisual-links-modal>
+    <app-audiovisual-projects-page-modal></app-audiovisual-projects-page-modal>
+    <app-audiovisual-samples-page-modal></app-audiovisual-samples-page-modal>
+    <app-audiovisual-data-page-modal></app-audiovisual-data-page-modal>
