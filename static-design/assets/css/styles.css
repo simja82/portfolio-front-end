@@ -19,7 +19,7 @@ footer {
     z-index: 1;
 }
 
-/* Logo con Filtro */
+/* Img Black */
 .img-black{
     filter:invert(1) !important;
 }
@@ -110,7 +110,7 @@ h4.hero {
     margin-top: 6rem;
 }
 
-/* Buttons */
+/* Buttons Outline */
 .btn.btn-outline-white,
 .btn.btn-outline-white:hover,
 .btn.btn-outline-black,
