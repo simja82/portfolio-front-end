@@ -1,0 +1,66 @@
+    <!-- Modal HobbiesCV -->
+    <div class="modal fade" id="hobbiesCVModal" tabindex="-1" aria-labelledby="hobbiesCVModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="hobbiesCVModalLabel">Hobbies CV</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="card mb-3">
+                        <div class="row g-4">
+                            <div class="col-3">
+                                <div class="text-center">
+                                    <h6 class="mt-3"><i class="fa-solid fa-volleyball fa-2x pt-s"></i></h6>
+                                    <div class="d-flex justify-content-center my-3">
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-center">
+                                    <h6 class="mt-3"><i class="fa-solid fa-bicycle fa-2x pt-s"></i></h6>
+                                    <div class="d-flex justify-content-center my-3">
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-center">
+                                    <h6 class="mt-3"><i class="fa-solid fa-chess-queen fa-2x pt-s"></i></h6>
+                                    <div class="d-flex justify-content-center my-3">
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="text-center">
+                                    <h6 class="mt-3"><i class="fa-solid fa-train fa-2x pt-s"></i></h6>
+                                    <div class="d-flex justify-content-center my-3">
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteHobbyCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <hr class="w-75 my-2 m-auto">
+                <div class="d-flex justify-content-center my-2">
+                    <button class="btn btn-black-extra-mini" data-bs-target="#createHobbyCVModal" data-bs-toggle="modal" aria-label="Create"><i class="fa-solid fa-circle-plus"></i></button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-target="#developerCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-create-hobby-cv-modal></app-create-hobby-cv-modal>
+    <app-edit-hobby-cv-modal></app-edit-hobby-cv-modal>
+    <app-delete-hobby-cv-modal></app-delete-hobby-cv-modal>
+    

@@ -175,6 +175,80 @@ import { CreateAudiovisualQuoteModalComponent } from './modals/dashboard/audiovi
 import { EditAudiovisualQuoteModalComponent } from './modals/dashboard/audiovisual-quotes-modal/edit-audiovisual-quote-modal/edit-audiovisual-quote-modal.component';
 import { DeleteAudiovisualQuoteModalComponent } from './modals/dashboard/audiovisual-quotes-modal/delete-audiovisual-quote-modal/delete-audiovisual-quote-modal.component';
 import { EditAudiovisualClosingModalComponent } from './modals/dashboard/audiovisual-closing-modal/edit-audiovisual-closing-modal/edit-audiovisual-closing-modal.component';
+import { DeveloperIntroModalComponent } from './modals/dashboard/developer-intro-modal/developer-intro-modal.component';
+import { DeveloperProfileModalComponent } from './modals/dashboard/developer-profile-modal/developer-profile-modal.component';
+import { DeveloperProjectsModalComponent } from './modals/dashboard/developer-projects-modal/developer-projects-modal.component';
+import { DeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/developer-education-modal.component';
+import { DeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/developer-experience-modal.component';
+import { DeveloperSkillsModalComponent } from './modals/dashboard/developer-skills-modal/developer-skills-modal.component';
+import { DeveloperCommentsModalComponent } from './modals/dashboard/developer-comments-modal/developer-comments-modal.component';
+import { DeveloperHobbiesModalComponent } from './modals/dashboard/developer-hobbies-modal/developer-hobbies-modal.component';
+import { DeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/developer-cv-modal.component';
+import { EditDeveloperIntroModalComponent } from './modals/dashboard/developer-intro-modal/edit-developer-intro-modal/edit-developer-intro-modal.component';
+import { EditDeveloperProfileModalComponent } from './modals/dashboard/developer-profile-modal/edit-developer-profile-modal/edit-developer-profile-modal.component';
+import { CreateDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/create-developer-project-modal/create-developer-project-modal.component';
+import { EditDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/edit-developer-project-modal/edit-developer-project-modal.component';
+import { DeleteDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/delete-developer-project-modal/delete-developer-project-modal.component';
+import { CreateDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/create-developer-education-modal/create-developer-education-modal.component';
+import { EditDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/edit-developer-education-modal/edit-developer-education-modal.component';
+import { DeleteDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/delete-developer-education-modal/delete-developer-education-modal.component';
+import { CreateDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/create-developer-experience-modal/create-developer-experience-modal.component';
+import { EditDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/edit-developer-experience-modal/edit-developer-experience-modal.component';
+import { DeleteDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/delete-developer-experience-modal/delete-developer-experience-modal.component';
+import { CreateDeveloperTechnicalSkillModalComponent } from './modals/dashboard/developer-skills-modal/create-developer-technical-skill-modal/create-developer-technical-skill-modal.component';
+import { EditDeveloperTechnicalSkillModalComponent } from './modals/dashboard/developer-skills-modal/edit-developer-technical-skill-modal/edit-developer-technical-skill-modal.component';
+import { CreateDeveloperSoftSkillModalComponent } from './modals/dashboard/developer-skills-modal/create-developer-soft-skill-modal/create-developer-soft-skill-modal.component';
+import { EditDeveloperSoftSkillModalComponent } from './modals/dashboard/developer-skills-modal/edit-developer-soft-skill-modal/edit-developer-soft-skill-modal.component';
+import { CreateDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/create-developer-language-skill-modal/create-developer-language-skill-modal.component';
+import { EditDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/edit-developer-language-skill-modal/edit-developer-language-skill-modal.component';
+import { DeleteDeveloperSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-skill-modal/delete-developer-skill-modal.component';
+import { CreateDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/create-developer-hobby-modal/create-developer-hobby-modal.component';
+import { EditDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/edit-developer-hobby-modal/edit-developer-hobby-modal.component';
+import { DeleteDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/delete-developer-hobby-modal/delete-developer-hobby-modal.component';
+import { CreateDeveloperCommentModalComponent } from './modals/dashboard/developer-comments-modal/create-developer-comment-modal/create-developer-comment-modal.component';
+import { EditDeveloperCommentModalComponent } from './modals/dashboard/developer-comments-modal/edit-developer-comment-modal/edit-developer-comment-modal.component';
+import { DeleteDeveloperCommentModalComponent } from './modals/dashboard/developer-comments-modal/delete-developer-comment-modal/delete-developer-comment-modal.component';
+import { PhotoCvModalComponent } from './modals/dashboard/developer-cv-modal/photo-cv-modal/photo-cv-modal.component';
+import { InfoCvModalComponent } from './modals/dashboard/developer-cv-modal/info-cv-modal/info-cv-modal.component';
+import { EducationCvModalComponent } from './modals/dashboard/developer-cv-modal/education-cv-modal/education-cv-modal.component';
+import { SkillsCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/skills-cv-modal.component';
+import { HobbiesCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/hobbies-cv-modal.component';
+import { NameCvModalComponent } from './modals/dashboard/developer-cv-modal/name-cv-modal/name-cv-modal.component';
+import { PositionCvModalComponent } from './modals/dashboard/developer-cv-modal/position-cv-modal/position-cv-modal.component';
+import { ContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/contact-cv-modal.component';
+import { SocialCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/social-cv-modal.component';
+import { ExperienceCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/experience-cv-modal.component';
+import { ProjectsCvModalComponent } from './modals/dashboard/developer-cv-modal/projects-cv-modal/projects-cv-modal.component';
+import { ReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/references-cv-modal.component';
+import { EditPhotoCvModalComponent } from './modals/dashboard/developer-cv-modal/photo-cv-modal/edit-photo-cv-modal/edit-photo-cv-modal.component';
+import { EditInfoCvModalComponent } from './modals/dashboard/developer-cv-modal/info-cv-modal/edit-info-cv-modal/edit-info-cv-modal.component';
+import { CreateEducationCvModalComponent } from './modals/dashboard/developer-cv-modal/education-cv-modal/create-education-cv-modal/create-education-cv-modal.component';
+import { EditEducationCvModalComponent } from './modals/dashboard/developer-cv-modal/education-cv-modal/edit-education-cv-modal/edit-education-cv-modal.component';
+import { DeleteEducationCvModalComponent } from './modals/dashboard/developer-cv-modal/education-cv-modal/delete-education-cv-modal/delete-education-cv-modal.component';
+import { CreateTechnicalSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/create-technical-skill-cv-modal/create-technical-skill-cv-modal.component';
+import { EditTechnicalSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/edit-technical-skill-cv-modal/edit-technical-skill-cv-modal.component';
+import { CreateSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/create-soft-skill-cv-modal/create-soft-skill-cv-modal.component';
+import { EditSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/edit-soft-skill-cv-modal/edit-soft-skill-cv-modal.component';
+import { CreateLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/create-language-skill-cv-modal/create-language-skill-cv-modal.component';
+import { EditLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/edit-language-skill-cv-modal/edit-language-skill-cv-modal.component';
+import { DeleteSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-skill-cv-modal/delete-skill-cv-modal.component';
+import { CreateHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/create-hobby-cv-modal/create-hobby-cv-modal.component';
+import { EditHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/edit-hobby-cv-modal/edit-hobby-cv-modal.component';
+import { DeleteHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/delete-hobby-cv-modal/delete-hobby-cv-modal.component';
+import { EditNameCvModalComponent } from './modals/dashboard/developer-cv-modal/name-cv-modal/edit-name-cv-modal/edit-name-cv-modal.component';
+import { EditPositionCvModalComponent } from './modals/dashboard/developer-cv-modal/position-cv-modal/edit-position-cv-modal/edit-position-cv-modal.component';
+import { EditPhoneContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-phone-contact-cv-modal/edit-phone-contact-cv-modal.component';
+import { EditEmailContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-email-contact-cv-modal/edit-email-contact-cv-modal.component';
+import { EditAvailabilityContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-availability-contact-cv-modal/edit-availability-contact-cv-modal.component';
+import { EditSocialOneCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-one-cv-modal/edit-social-one-cv-modal.component';
+import { EditSocialTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-two-cv-modal/edit-social-two-cv-modal.component';
+import { EditSocialThreeCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-three-cv-modal/edit-social-three-cv-modal.component';
+import { EditExperienceOneCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-one-cv-modal/edit-experience-one-cv-modal.component';
+import { EditExperienceTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-two-cv-modal/edit-experience-two-cv-modal.component';
+import { EditProjectsCvModalComponent } from './modals/dashboard/developer-cv-modal/projects-cv-modal/edit-projects-cv-modal/edit-projects-cv-modal.component';
+import { EditNameReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-name-references-cv-modal/edit-name-references-cv-modal.component';
+import { EditPhoneReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-phone-references-cv-modal/edit-phone-references-cv-modal.component';
+import { EditEmailReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-email-references-cv-modal/edit-email-references-cv-modal.component';
 
 @NgModule({
     declarations: [
@@ -352,7 +426,81 @@ import { EditAudiovisualClosingModalComponent } from './modals/dashboard/audiovi
         CreateAudiovisualQuoteModalComponent,
         EditAudiovisualQuoteModalComponent,
         DeleteAudiovisualQuoteModalComponent,
-        EditAudiovisualClosingModalComponent
+        EditAudiovisualClosingModalComponent,
+        DeveloperIntroModalComponent,
+        DeveloperProfileModalComponent,
+        DeveloperProjectsModalComponent,
+        DeveloperEducationModalComponent,
+        DeveloperExperienceModalComponent,
+        DeveloperSkillsModalComponent,
+        DeveloperCommentsModalComponent,
+        DeveloperHobbiesModalComponent,
+        DeveloperCvModalComponent,
+        EditDeveloperIntroModalComponent,
+        EditDeveloperProfileModalComponent,
+        CreateDeveloperProjectModalComponent,
+        EditDeveloperProjectModalComponent,
+        DeleteDeveloperProjectModalComponent,
+        CreateDeveloperEducationModalComponent,
+        EditDeveloperEducationModalComponent,
+        DeleteDeveloperEducationModalComponent,
+        CreateDeveloperExperienceModalComponent,
+        EditDeveloperExperienceModalComponent,
+        DeleteDeveloperExperienceModalComponent,
+        CreateDeveloperTechnicalSkillModalComponent,
+        EditDeveloperTechnicalSkillModalComponent,
+        CreateDeveloperSoftSkillModalComponent,
+        EditDeveloperSoftSkillModalComponent,
+        CreateDeveloperLanguageSkillModalComponent,
+        EditDeveloperLanguageSkillModalComponent,
+        DeleteDeveloperSkillModalComponent,
+        CreateDeveloperHobbyModalComponent,
+        EditDeveloperHobbyModalComponent,
+        DeleteDeveloperHobbyModalComponent,
+        CreateDeveloperCommentModalComponent,
+        EditDeveloperCommentModalComponent,
+        DeleteDeveloperCommentModalComponent,
+        PhotoCvModalComponent,
+        InfoCvModalComponent,
+        EducationCvModalComponent,
+        SkillsCvModalComponent,
+        HobbiesCvModalComponent,
+        NameCvModalComponent,
+        PositionCvModalComponent,
+        ContactCvModalComponent,
+        SocialCvModalComponent,
+        ExperienceCvModalComponent,
+        ProjectsCvModalComponent,
+        ReferencesCvModalComponent,
+        EditPhotoCvModalComponent,
+        EditInfoCvModalComponent,
+        CreateEducationCvModalComponent,
+        EditEducationCvModalComponent,
+        DeleteEducationCvModalComponent,
+        CreateTechnicalSkillCvModalComponent,
+        EditTechnicalSkillCvModalComponent,
+        CreateSoftSkillCvModalComponent,
+        EditSoftSkillCvModalComponent,
+        CreateLanguageSkillCvModalComponent,
+        EditLanguageSkillCvModalComponent,
+        DeleteSkillCvModalComponent,
+        CreateHobbyCvModalComponent,
+        EditHobbyCvModalComponent,
+        DeleteHobbyCvModalComponent,
+        EditNameCvModalComponent,
+        EditPositionCvModalComponent,
+        EditPhoneContactCvModalComponent,
+        EditEmailContactCvModalComponent,
+        EditAvailabilityContactCvModalComponent,
+        EditSocialOneCvModalComponent,
+        EditSocialTwoCvModalComponent,
+        EditSocialThreeCvModalComponent,
+        EditExperienceOneCvModalComponent,
+        EditExperienceTwoCvModalComponent,
+        EditProjectsCvModalComponent,
+        EditNameReferencesCvModalComponent,
+        EditPhoneReferencesCvModalComponent,
+        EditEmailReferencesCvModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

@@ -1,0 +1,40 @@
+    <!-- Modal Profile -->
+    <div class="modal fade" id="developerProfileModal" tabindex="-1" aria-labelledby="developerProfileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="developerProfileModalLabel">Perfil</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <h3 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed"></i> <span class="text-orange text-center ms-3"> Sobre mí</span></h3>                                    
+                                    <h4 class="text-center my-3">Mi nombre es</h4>
+                                    <h2 class="text-orange text-center">Gabriela García de la Mata</h2>
+                                    <p class="w-75 text-center m-auto mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
+                                    <div class="card-body d-flex justify-content-center">      
+                                        <img src="./../assets/img/developer/profile/profile.jpg" class="rounded-circle w-25 mb-2">
+                                    </div>      
+                                    <div class="text-center mb-4">
+                                        <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button class="btn btn-black-extra-mini" data-bs-target="#editDeveloperProfileModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-edit-developer-profile-modal></app-edit-developer-profile-modal>

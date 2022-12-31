@@ -1,0 +1,61 @@
+    <!-- Modal Create Project Developer -->
+    <div class="modal fade" id="createDeveloperProjectModal" aria-hidden="true" aria-labelledby="createDeveloperProjectModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createDeveloperProjectModal">Nuevo Proyecto</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerProjectsModal" data-bs-toggle="modal" aria-label="Back"></i>
+                </div>
+                <form class="needs-validation">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="validationCustom01" class="form-label">Título</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Título" required>
+                                <div class="valid-feedback">
+                                    Parece correcto!!!
+                                </div>
+                                <div class="invalid-feedback">
+                                    No puede quedar vacío!!!
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="validationCustom03" class="form-label">Imagen</label>
+                                <input type="url" class="form-control" id="validationCustom03" placeholder="URL" required>
+                                <div class="valid-feedback">
+                                    Parece correcto!!!
+                                </div>
+                                <div class="invalid-feedback">
+                                    No puede quedar vacío!!!
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-12 pt-3">
+                            <label for="validationCustom03" class="form-label">Enlace</label>
+                            <input type="url" class="form-control" id="validationCustom03" placeholder="URL" required>
+                            <div class="valid-feedback">
+                                Parece correcto!!!
+                            </div>
+                            <div class="invalid-feedback">
+                                No puede quedar vacío!!!
+                            </div>
+                        </div>  
+                        <div class="col-md-12 pt-3">
+                            <label for="validationCustom05" class="form-label">Descripción</label>
+                            <textarea type="text" class="form-control" id="validationCustom05" placeholder="Descripción" required></textarea>
+                            <div class="valid-feedback">
+                                Parece correcto!!!
+                            </div>
+                            <div class="invalid-feedback">
+                                No puede quedar vacío!!!
+                            </div>
+                        </div>                            
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-black-mini" data-bs-target="#developerProjectsModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
+                        <button class="btn btn-black-mini">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
