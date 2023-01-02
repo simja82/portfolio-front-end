@@ -4,7 +4,16 @@
         {
             "hero" : "Hola!!!",
             "subhero" : "Me ves?",
-            "button" : "Entrar"
+            "enter" : "Entrar"
+        }
+    ],
+    "intro" :
+    [
+        {
+            "hero" : "Llegaste!!!",
+            "subhero" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla cum illum maxime et error doloribus excepturi quae minima ipsum similique ratione voluptatibus magnam deleniti, odio voluptatum quaerat magni quis laborum?",
+            "audiovisual" : "Audiovisual",
+            "developer" : "Developer"
         }
     ]
 }

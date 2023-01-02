@@ -1,4 +1,4 @@
-<section class="background intro">
+<section class="background" [class.intro] = "photo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -15,16 +15,19 @@
     <!-- Enlace -->
     <div class="text-center pt-5 text-white">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero pt-5">Llegaste</h1>
+            <h1 *ngFor="let title of intro" class="hero pt-5">{{title.hero}}</h1>
         </div>
+        
         <div class="col-6 m-auto mb-5">
-            <h5 class="hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla cum illum maxime et error doloribus excepturi quae minima ipsum similique ratione voluptatibus magnam deleniti, odio voluptatum quaerat magni quis laborum?</h5>
+            <h5 *ngFor="let subtitle of intro" class="hero">{{subtitle.subhero}}</h5>
         </div>
-        <a href="/audiovisual/intro.html">
-            <button type="button" class="btn btn-outline-white btn-lg me-3">Audiovisual</button>
+        
+        <a routerLink="/audiovisual/intro">
+            <button *ngFor="let button of intro" type="button" class="btn btn-outline-white btn-lg me-3">{{button.audiovisual}}</button>
         </a>   
-        <a href="/developer/intro.html">
-            <button type="button" class="btn btn-outline-white btn-lg ms-3">Developer</button>
+        
+        <a routerLink="/developer/intro">
+            <button *ngFor="let button of intro" type="button" class="btn btn-outline-white btn-lg ms-3">{{button.developer}}</button>
         </a>      
     </div>
 
