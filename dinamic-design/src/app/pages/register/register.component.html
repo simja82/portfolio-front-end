@@ -1,5 +1,5 @@
 
-<section class="background register">   
+<section class="background" [class.register] = "photo">   
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
@@ -17,13 +17,13 @@
     <!-- Enlace -->
     <div class="text-center pt-5">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero text-black mt-5 pt-5">Próximamente</h1>
+            <h1 *ngFor="let title of register" class="hero text-black mt-5 pt-5">{{title.hero}}</h1>
         </div>
         <div class="col-12 mb-5">
-            <h4 class="hero text-black">Vas a poder registrarte y hacer uso de varios servicios disponibles...</h4>
+            <h4 *ngFor="let subtitle of register" class="hero text-black">{{subtitle.subhero}}</h4>
         </div>
-        <a href="/">
-            <button type="button" class="btn btn-outline-black btn-width btn-lg">Volver</button>
+        <a routerLink="/">
+            <button *ngFor="let button of register" type="button" class="btn btn-outline-black btn-width btn-lg">{{button.return}}</button>
         </a>         
     </div>
 

@@ -27,5 +27,13 @@
             "registerHelp" : "Aún no tienes una cuenta?",
             "more" : "Más."
         }
+    ],
+    "register" :
+    [
+        {
+            "hero" : "Próximamente",
+            "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles...",
+            "return" : "Volver"
+        }
     ]
 }

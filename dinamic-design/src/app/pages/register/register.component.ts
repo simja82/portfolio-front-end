@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { GeneralService } from 'src/assets/services/general.service';
 
 @Component({
   selector: 'app-register',
@@ -7,10 +8,23 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  constructor (private title:Title) {
+//Array Index
+register : any = [];
+
+//Image Background
+photo = true;
+
+//Inyección de Title y Service
+  constructor (private title:Title, private generalService:GeneralService) {
     title.setTitle('Register | Point of View')
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.generalService.getData().subscribe(data => {
+      //Información a mostrar
+      this.register = data.register;
+    })
+  }
 
 }
