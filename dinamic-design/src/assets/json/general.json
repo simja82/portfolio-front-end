@@ -57,5 +57,13 @@
             "three" : "y en Data vas a encontrar documentos de Presentación y Muestras ",
             "four" : "-esto es algo así como un CV pero de la Industria Audiovisual-"
         }
+    ],
+    "plus" :
+    [
+        {
+            "hero" : "¿Le diste click al ícono de más?",
+            "subhero" : "Escribime y dejame saber qué puedo ofrecerte...",
+            "return" : "Volver"
+        }
     ]
 }

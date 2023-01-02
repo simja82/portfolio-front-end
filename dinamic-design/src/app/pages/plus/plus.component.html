@@ -1,4 +1,4 @@
-<section class="background more">
+<section class="background" [class.more] = "photo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-black-logo></app-black-logo>
@@ -15,13 +15,13 @@
     <!-- Enlace -->
     <div class="text-center pt-5">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero text-top">¿Le diste click al ícono de más?</h1>
+            <h1 *ngFor="let title of plus" class="hero text-top">{{title.hero}}</h1>
         </div>
         <div class="col-12 mb-5">
-            <h4 class="hero">Escribime y dejame saber qué puedo ofrecerte...</h4>
+            <h4 *ngFor="let subtitle of plus" class="hero">{{subtitle.subhero}}</h4>
         </div>
-        <a href="/">
-            <button type="button" class="btn btn-outline-black btn-lg btn-width">Volver</button>
+        <a routerLink="/">
+            <button *ngFor="let button of plus" type="button" class="btn btn-outline-black btn-lg btn-width">{{button.return}}</button>
         </a>         
     </div>
 
