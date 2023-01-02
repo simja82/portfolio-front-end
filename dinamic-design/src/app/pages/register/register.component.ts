@@ -16,6 +16,7 @@ photo = true;
 
 //Inyección de Title y Service
   constructor (private title:Title, private generalService:GeneralService) {
+    //Seteo de Title
     title.setTitle('Register | Point of View')
   }
 
