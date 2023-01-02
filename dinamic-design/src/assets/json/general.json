@@ -15,5 +15,17 @@
             "audiovisual" : "Audiovisual",
             "developer" : "Developer"
         }
+    ],
+    "login" :
+    [
+        {
+            "login" : "Login",
+            "email" : "Email",
+            "password" : "Password",
+            "enter" : "Entrar",
+            "emailHelp" : "Tu email no será compartido con nadie jamás.",
+            "registerHelp" : "Aún no tienes una cuenta?",
+            "more" : "Más."
+        }
     ]
 }

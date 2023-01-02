@@ -1,4 +1,4 @@
-<section class="background login">
+<section class="background" [class.login] = "photo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -15,21 +15,21 @@
     <!-- Form Login -->
     <div class="col-8 m-auto section-top">
         <div class="card text-bg-light text-center">
-            <div class="card-header">Login</div>
+            <div *ngFor="let title of login" class="card-header">{{title.login}}</div>
             <div class="card-body col-10 m-auto pb-4 mt-1">
                 <form>
                     <div class="mb-3">
-                        <label for="inputEmail" class="form-label">Email</label>
+                        <label *ngFor="let label of login" for="inputEmail" class="form-label">{{label.email}}</label>
                         <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">Tu email no será compartido con nadie jamás.</div>
+                        <div *ngFor="let helper of login" id="emailHelp" class="form-text">{{helper.emailHelp}}</div>
                     </div>
                     <div class="mb-3">
-                        <label for="inputPassword" class="form-label">Password</label>
+                        <label *ngFor="let label of login" for="inputPassword" class="form-label">{{label.password}}</label>
                         <input type="password" class="form-control" id="inputPassword">
                     </div>
-                    <button type="submit" class="btn btn-outline-dark  btn-width">Entrar</button>
+                    <button *ngFor="let button of login" type="submit" class="btn btn-outline-dark btn-width">{{button.enter}}</button>
                 </form>
-                <div id="registerHelp" class="form-text mt-4">Aún no tienes una cuenta? <a href="/register.html">Más.</a></div>
+                <div *ngFor="let helper of login" id="registerHelp" class="form-text mt-4">{{helper.registerHelp}} <a *ngFor="let more of login" routerLink="/register">{{more.more}}</a></div>
             </div>
         </div>            
     </div>

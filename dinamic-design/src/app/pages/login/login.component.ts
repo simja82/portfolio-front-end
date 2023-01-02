@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { GeneralService } from 'src/assets/services/general.service';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +8,24 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  constructor (private title:Title) {
+//Array Index
+login : any = [];
+
+//Image Background
+photo = true;
+
+//Inyección de Title y Service
+  constructor (private title:Title, private generalService:GeneralService) {
+    //Seteo de Title
     title.setTitle('Login | Point of View')
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.generalService.getData().subscribe(data => {
+      //Información a mostrar
+      this.login = data.login;
+    })
+  }
 
 }
