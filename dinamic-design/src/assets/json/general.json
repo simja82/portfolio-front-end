@@ -35,5 +35,13 @@
             "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles...",
             "return" : "Volver"
         }
+    ],
+    "error" :
+    [
+        {
+            "hero" : "Oops!!!",
+            "subhero" : "Algo no salió bien...",
+            "return" : "Volver"
+        }
     ]
 }

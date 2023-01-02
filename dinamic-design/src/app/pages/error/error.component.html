@@ -1,4 +1,4 @@
-<section class="background error">   
+<section class="background" [class.error] = "photo">   
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
@@ -16,13 +16,13 @@
     <!-- Enlace -->
     <div class="text-center pt-5">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero">Oops!!!</h1>
+            <h1 *ngFor="let title of error" class="hero">{{title.hero}}</h1>
         </div>
         <div class="col-12 mb-5">
-            <h4 class="hero">Algo no salió bien...</h4>
+            <h4 *ngFor="let subtitle of error" class="hero">{{subtitle.subhero}}</h4>
         </div>
-        <a href="/">
-            <button type="button" class="btn btn-outline-black btn-lg">Volver</button>
+        <a routerLink="/">
+            <button *ngFor="let button of error" type="button" class="btn btn-outline-black btn-lg">{{button.return}}</button>
         </a>         
     </div>
 
