@@ -1,0 +1,10 @@
+{
+    "index" :
+    [
+        {
+            "hero" : "Hola!!!",
+            "subhero" : "Me ves?",
+            "button" : "Entrar"
+        }
+    ]
+}

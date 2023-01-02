@@ -1,4 +1,4 @@
-<section class="background index">
+<section class="background" [class.index] = "photo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -15,14 +15,15 @@
     <!-- Enlace -->
     <div class="text-center pt-5 text-white">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero text-top">Hola!!!</h1>
+            <h1 *ngFor="let title of index" class="hero text-top">{{title.hero}}</h1>
         </div>
+
         <div class="col-12 mb-5">
-            <h4 class="hero">Me ves?</h4>
+            <h4 *ngFor="let subtitle of index" class="hero">{{subtitle.subhero}}</h4>
         </div>
-        <a href="/intro.html">
-            <button type="button" class="btn btn-outline-white btn-lg">Entrar</button>
-        </a>         
+        <a routerLink="/intro">
+            <button *ngFor="let button of index" type="button" class="btn btn-outline-white btn-lg">{{button.button}}</button>
+        </a>  
     </div>
 
     <!-- Redes -->
