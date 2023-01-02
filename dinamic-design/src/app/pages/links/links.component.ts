@@ -8,7 +8,7 @@ import { GeneralService } from 'src/assets/services/general.service';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
-  //Array Index
+//Array Index
 links : any = [];
 
 //Image Background
