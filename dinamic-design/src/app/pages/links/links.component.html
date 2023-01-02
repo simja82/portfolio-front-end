@@ -1,4 +1,4 @@
-<section class="background links">
+<section class="background" [class.links] = "photo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -15,27 +15,27 @@
     <!-- Enlace -->
     <div class="text-center pt-5 text-white">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 class="hero pt-5">Epa...</h1>
+            <h1 *ngFor="let title of links" class="hero pt-5">{{title.hero}}</h1>
         </div>
         <div class="col-6 m-auto mb-5">
-            <h5 class="hero">Parece que encontraste un atajo... Adonde te gustaría ir?</h5>
+            <h5 *ngFor="let subtitle of links" class="hero">{{subtitle.subhero}}</h5>
         </div>
-        <a href="/audiovisual/projects/projects.html">
-            <button type="button" class="btn btn-outline-white btn-lg me-5">Proyectos</button>
+        <a routerLink="/audiovisual/projects">
+            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg me-5">{{button.projects}}</button>
         </a>   
-        <a href="/audiovisual/samples/samples.html">
-            <button type="button" class="btn btn-outline-white btn-lg ms-5 me-5">Muestras</button>
+        <a routerLink="/audiovisual/samples">
+            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg ms-5 me-5">{{button.samples}}</button>
         </a>      
-        <a href="/audiovisual/data/data.html">
-            <button type="button" class="btn btn-outline-white btn-lg ms-5">Data</button>
+        <a routerLink="/audiovisual/data">
+            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg ms-5">{{button.data}}</button>
         </a>   
     </div>
 
-    <p class="container w-75 m-auto pt-3 text-white text-center">
-        En Proyectos vas a poder ver mis Proyectos, <br>
-        en Muestras descargar archivos que son parte de Proyectos <br>
-        y en Data vas a encontrar documentos de Presentación y Muestras <br>
-        -esto es algo así como un CV pero de la Industria Audiovisual-
+    <p *ngFor="let line of links" class="container w-75 m-auto pt-3 text-white text-center">
+        {{line.one}}<br>
+        {{line.two}}<br>
+        {{line.three}}<br>
+        {{line.four}}
     </p>
 
     <!-- Redes -->
