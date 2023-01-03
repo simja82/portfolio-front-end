@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-audiovisual-profile-modal',
-  templateUrl: './audiovisual-profile-modal.component.html',
-  styleUrls: ['./audiovisual-profile-modal.component.css']
+  templateUrl: './audiovisual-profile-modal.component.html'
 })
 export class AudiovisualProfileModalComponent {
 

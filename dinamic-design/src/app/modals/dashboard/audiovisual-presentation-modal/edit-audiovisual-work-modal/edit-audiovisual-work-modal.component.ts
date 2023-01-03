@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-edit-audiovisual-work-modal',
-  templateUrl: './edit-audiovisual-work-modal.component.html',
-  styleUrls: ['./edit-audiovisual-work-modal.component.css']
+  templateUrl: './edit-audiovisual-work-modal.component.html'
 })
 export class EditAudiovisualWorkModalComponent {
 

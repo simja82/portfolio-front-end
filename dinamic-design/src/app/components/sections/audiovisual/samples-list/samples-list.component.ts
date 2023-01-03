@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-samples-list',
-  templateUrl: './samples-list.component.html',
-  styleUrls: ['./samples-list.component.css']
+  templateUrl: './samples-list.component.html'
 })
 export class SamplesListComponent {
 

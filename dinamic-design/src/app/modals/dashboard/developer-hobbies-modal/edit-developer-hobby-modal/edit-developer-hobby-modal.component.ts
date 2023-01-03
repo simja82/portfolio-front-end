@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-edit-developer-hobby-modal',
-  templateUrl: './edit-developer-hobby-modal.component.html',
-  styleUrls: ['./edit-developer-hobby-modal.component.css']
+  templateUrl: './edit-developer-hobby-modal.component.html'
 })
 export class EditDeveloperHobbyModalComponent {
 

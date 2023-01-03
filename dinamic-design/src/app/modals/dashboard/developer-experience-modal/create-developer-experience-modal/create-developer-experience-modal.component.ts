@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create-developer-experience-modal',
-  templateUrl: './create-developer-experience-modal.component.html',
-  styleUrls: ['./create-developer-experience-modal.component.css']
+  templateUrl: './create-developer-experience-modal.component.html'
 })
 export class CreateDeveloperExperienceModalComponent {
 

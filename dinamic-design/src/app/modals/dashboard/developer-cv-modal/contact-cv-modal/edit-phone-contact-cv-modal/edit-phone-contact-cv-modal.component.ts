@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-edit-phone-contact-cv-modal',
-  templateUrl: './edit-phone-contact-cv-modal.component.html',
-  styleUrls: ['./edit-phone-contact-cv-modal.component.css']
+  templateUrl: './edit-phone-contact-cv-modal.component.html'
 })
 export class EditPhoneContactCvModalComponent {
 

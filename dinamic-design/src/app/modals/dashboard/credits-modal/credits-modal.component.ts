@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-credits-modal',
-  templateUrl: './credits-modal.component.html',
-  styleUrls: ['./credits-modal.component.css']
+  templateUrl: './credits-modal.component.html'
 })
 export class CreditsModalComponent {
 

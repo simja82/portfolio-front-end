@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-white-plus',
-  templateUrl: './white.component.html',
-  styleUrls: ['./white.component.css']
+  templateUrl: './white.component.html'
 })
 export class WhitePlusComponent {
 

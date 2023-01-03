@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-audiovisual-quotes',
-  templateUrl: './audiovisual-quotes.component.html',
-  styleUrls: ['./audiovisual-quotes.component.css']
+  templateUrl: './audiovisual-quotes.component.html'
 })
 export class AudiovisualQuotesComponent {
 

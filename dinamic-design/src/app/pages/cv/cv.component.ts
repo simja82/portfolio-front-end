@@ -3,8 +3,7 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cv',
-  templateUrl: './cv.component.html',
-  styleUrls: ['./cv.component.css']
+  templateUrl: './cv.component.html'
 })
 export class CVComponent implements OnInit {
   constructor (private title:Title) {

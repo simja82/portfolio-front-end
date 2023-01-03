@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create-developer-technical-skill-modal',
-  templateUrl: './create-developer-technical-skill-modal.component.html',
-  styleUrls: ['./create-developer-technical-skill-modal.component.css']
+  templateUrl: './create-developer-technical-skill-modal.component.html'
 })
 export class CreateDeveloperTechnicalSkillModalComponent {
 

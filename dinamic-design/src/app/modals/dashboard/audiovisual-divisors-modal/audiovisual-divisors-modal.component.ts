@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-audiovisual-divisors-modal',
-  templateUrl: './audiovisual-divisors-modal.component.html',
-  styleUrls: ['./audiovisual-divisors-modal.component.css']
+  templateUrl: './audiovisual-divisors-modal.component.html'
 })
 export class AudiovisualDivisorsModalComponent {
 

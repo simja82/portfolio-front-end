@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-developer-education',
-  templateUrl: './developer-education.component.html',
-  styleUrls: ['./developer-education.component.css']
+  templateUrl: './developer-education.component.html'
 })
 export class DeveloperEducationComponent {
 
