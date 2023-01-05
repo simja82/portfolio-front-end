@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -6,9 +6,9 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   constructor (private title:Title) {
-    title.setTitle('Audivisual Projects | Point of View')
+    title.setTitle('Audiovisual Projects | Point of View')
   }
 
   ngOnInit(): void { }

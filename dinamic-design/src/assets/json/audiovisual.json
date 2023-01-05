@@ -133,7 +133,182 @@
             "three" : "Y está, en este caso, diferenciada por formatos...",
             "series" : "Series",
             "longshots" : "Largometrajes",
-            "others" : "Otros"
+            "others" : "Otros",
+            "four" : "Me gustaría que conozcas todo lo posible de mí por medio de este pedacito de \"mundo\"",
+            "five" : "En la Industria Audiovisual estoy \"above the line\" (soy de los Creativos)", 
+            "six" : "En \"des\"orden escribo Guión, hago Dirección y Producción -digo en desorden porque no es el orden en el cual se realizan las actividades....-",
+            "seven" : "Los que siguen son todos Proyectos que tengo preparados, en diferentes etapas de Producción..."
+        }
+    ],
+    "series" :
+    [
+        {
+            "id" : "0",
+            "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Broken",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "4x10x50",
+            "genre" : "Drama Thriller",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "1",
+            "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Canon",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "5x8x45",
+            "genre" : "Drama",            
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "2",
+            "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Code: Criminal",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "5x20x60",
+            "genre" : "Social Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "3",
+            "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Eigth Grade",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "4x12x50",
+            "genre" : "Youth Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "4",
+            "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Flowers into the sea",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "1x8x120",
+            "genre" : "Historial Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "5",
+            "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Gen",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "4x15x45",
+            "genre" : "Thriller Suspense",
+            "icon" : "fa-solid fa-eye orange"
+        }
+    ],
+    "longshots" :
+    [
+        {
+            "id" : "0",
+            "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Broken",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "2h20m",
+            "genre" : "Drama Thriller",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "1",
+            "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Canon",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "1h58m",
+            "genre" : "Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "2",
+            "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Code: Criminal",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "2h31m",
+            "genre" : "Social Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "3",
+            "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Eigth Grade",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "2h15m",
+            "genre" : "Youth Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "4",
+            "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Flowers into the sea",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "2h24m",
+            "genre" : "Historial Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "5",
+            "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Gen",
+            "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "duration" : "2h37m",
+            "genre" : "Thriller Suspense",
+            "icon" : "fa-solid fa-eye orange"
+        }
+    ],
+    "others" :
+    [
+        {
+            "id" : "0",
+            "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Broken",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Drama Thriller",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "1",
+            "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Canon",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "2",
+            "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Code: Criminal",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Social Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "3",
+            "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Eigth Grade",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Youth Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "4",
+            "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Flowers into the sea",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Historial Drama",
+            "icon" : "fa-solid fa-eye orange"
+        },
+        {
+            "id" : "5",
+            "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "title" : "Gen",
+            "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "format" : "Special",
+            "genre" : "Thriller Suspense",
+            "icon" : "fa-solid fa-eye orange"
         }
     ],
     "samples" :
