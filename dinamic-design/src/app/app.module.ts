@@ -39,7 +39,6 @@ import { BlackPlusComponent } from './components/sidebars/left/plus/black/black.
 import { BlackLogoComponent } from './components/navbar/logo/black/black.component';
 import { BlackGeneralComponent } from './components/sidebars/right/black/general/black-general/black-general.component';
 import { WhiteGeneralComponent } from './components/sidebars/right/white/general/white-general/white-general.component';
-import { WhiteAudiovisualComponent } from './components/sidebars/right/black/audiovisual/white-audiovisual/white-audiovisual.component';
 import { WhiteFooterPlusComponent } from './components/footer/right/white/plus/plus.component';
 import { DeveloperIntroComponent } from './components/sections/developer/developer-intro/developer-intro.component';
 import { DeveloperProfileComponent } from './components/sections/developer/developer-profile/developer-profile.component';
@@ -250,6 +249,7 @@ import { EditProjectsCvModalComponent } from './modals/dashboard/developer-cv-mo
 import { EditNameReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-name-references-cv-modal/edit-name-references-cv-modal.component';
 import { EditPhoneReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-phone-references-cv-modal/edit-phone-references-cv-modal.component';
 import { EditEmailReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-email-references-cv-modal/edit-email-references-cv-modal.component';
+import { WhiteAudiovisualComponent } from './components/sidebars/right/white/audiovisual/white-audiovisual/white-audiovisual.component';
 
 @NgModule({
     declarations: [

@@ -213,6 +213,11 @@ a:hover {
     padding-top: 10rem;
 }
 
+/* Section Overview */
+.overview {
+    margin: 2rem 0 0 0;
+}
+
 /* Credits */
 .wrapper {
     overflow: hidden;

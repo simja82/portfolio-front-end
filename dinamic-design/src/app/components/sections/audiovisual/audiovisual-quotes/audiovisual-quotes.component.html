@@ -1,12 +1,12 @@
-<section class="quotes d-flex justify-content-center w-75 m-auto text-center">
+<section class="quotes d-flex justify-content-center w-75 m-auto text-center mb-5">
     <div class="container">
         <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Quotes</span></h3>                                    
-        <h6>
-            Entonces... para cerrar esta brevísima introducción a la historia de mi vida...    
+        <h6 *ngFor="let line of quotes">
+            {{line.one}}
             <br><br>
-            Te dejo algunas frases de la Industria Audiovisual que me gustan...
+            {{line.two}}
             <br><br>    
-            Espero que te gusten también y que hayas podido conocerme...
+            {{line.three}}
         </h6>
     </div>        
 </section>
@@ -14,27 +14,11 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12 mt-5 mb-3">
+            <div *ngFor="let phrase of phrases" class="col-12 mt-2 mb-1">
                 <div class="card">
-                    <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
-                    <div class="text-center mb-4">
-                        <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-3">
-                <div class="card">
-                    <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
-                    <div class="text-center mb-4">
-                        <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 mb-3">
-                <div class="card">
-                    <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
-                    <div class="text-center mb-4">
-                        <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
+                    <h4 class="d-flex justify-content-center mt-4"><i [class]="phrase.icon"></i></h4>                                                                     
+                    <div class="text-center mb-2">
+                        <span class="text-center">{{phrase.one}}<br>{{phrase.two}}<br><i>{{phrase.author}}</i><br>{{phrase.credit}}</span>    
                     </div>
                 </div>
             </div>

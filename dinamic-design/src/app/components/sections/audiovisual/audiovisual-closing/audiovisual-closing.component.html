@@ -1,11 +1,11 @@
 <section class="signature d-flex justify-content-center w-75 m-auto text-center mt-5 pt-5">
-    <h5 class="mt-5 mb-5 pb-5">
-        Si querés trabajar conmigo podés contactarme...  
+    <h5 *ngFor="let line of closing" class="mt-5 mb-5 pb-5">
+        {{line.one}}
         <br><br>
-        Al alcance de unos pocos clicks, estoy en las redes sociales... 
+        {{line.two}}
         <br><br>
-        Gracias por visitarme!!!
+        {{line.three}}
         <br><br>
-        <i class="fa-solid fa-signature fa-7x"></i>
+        <i [class]="line.icon"></i>
     </h5>
 </section>

@@ -1,13 +1,13 @@
 <section class="overview d-flex justify-content-center w-75 m-auto text-center">
-    <h5>
-        Y si, esta es la historia de mi vida aunque... 
+    <h5 *ngFor="let line of one">
+        {{line.one}} 
         <br><br>
-        ¿Por qué contarla de esta forma y no como tradicionalmente se cuenta por medio de una "hoja de vida" o "CV"?
-        <br><br>    
-        Un secreto... En la Industria Audiovisual no usamos nada de eso... En general... 
+        {{line.two}}
         <br><br>
-        Es cierto que puede haber listados de créditos que se parecen a una "hoja de vida" pero, no es lo mismo... 
+        {{line.three}}
         <br><br>
-        Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de la Industria Audiovisual...            
+        {{line.four}}
+        <br><br>
+        {{line.five}}
     </h5>
 </section>
