@@ -1,0 +1,104 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid position-fixed bg-black">
+    <app-white-logo></app-white-logo>
+    <app-orange-session></app-orange-session>
+</nav>
+
+<!-- Plus -->
+<app-code></app-code>
+
+<!-- Social -->
+<app-black-audiovisual></app-black-audiovisual>
+
+<!-- Intro -->
+<app-project-intro></app-project-intro>
+
+<section class="mb-5">
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col">
+                <h2 class="text-center text-orange mb-3 pb-5 ">{{other.title}}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center pb-5">
+        <div class="row align-items-center">
+            <div class="col">
+                <h5>{{other.format}}</h5>
+            </div>
+            <div class="col">
+                <h5>{{other.genre}}</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center pb-5">
+        <div class="row align-items-center">
+            <div class="col">
+                <h4><span class="badge bg-black">{{other.stage}}</span></h4>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="d-flex justify-content-center pb-4"><span class="text-orange text-center mb-3"> Portada</span></h3>
+
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-6 m-auto">
+                <div class="card">
+                    <img [src]="other.card" class="card-img-top">
+                </div>
+            </div>
+
+            <div class="col-">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Logline</h5>                                        
+                        <p class="card-text">{{other.logline}}</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Storyline</h5>                                        
+                        <p class="card-text">{{other.storyline.one}}</p>
+                        <p class="card-text">{{other.storyline.two}}</p>
+                        <p class="card-text">{{other.storyline.three}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Synopsis</h5>                                        
+                        <p class="card-text">{{other.synopsis.one}}</p>
+                        <p class="card-text">{{other.synopsis.two}}</p>
+                        <p class="card-text">{{other.synopsis.three}}</p>
+                        <p class="card-text">{{other.synopsis.four}}</p>
+                        <p class="card-text">{{other.synopsis.five}}</p>
+                        <p class="card-text">{{other.synopsis.six}}</p>
+                        <p class="card-text">{{other.synopsis.seven}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <i class="fa-regular fa-copyright"></i> {{other.rights}} Todo lo que contiene esta página está debidamente registrado con sus Derechos de Autor al día.
+</div>
+
+<app-project-to-projects></app-project-to-projects>
+
+<section class="empty-footer"></section>
+
+<footer class="bg-black">
+    <div class="d-flex justify-content-between ms-4 me-4">
+        <app-orange-index></app-orange-index>
+        <app-orange-credits></app-orange-credits>
+    </div>
+</footer>

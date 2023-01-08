@@ -218,6 +218,10 @@ a:hover {
     margin: 2rem 0 0 0;
 }
 
+.empty-footer {
+    margin-top: 7rem ;
+}
+
 /* Credits */
 .wrapper {
     overflow: hidden;

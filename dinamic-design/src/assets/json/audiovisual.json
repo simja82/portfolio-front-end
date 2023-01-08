@@ -143,64 +143,70 @@
     "series" :
     [
         {
-            "id" : "0",
+            "id" : 0,
             "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Broken",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "4x10x50",
             "genre" : "Drama Thriller",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "broken"
         },
         {
-            "id" : "1",
+            "id" : 1,
             "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Canon",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "5x8x45",
             "genre" : "Drama",            
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "canon"
         },
         {
-            "id" : "2",
+            "id" : 2,
             "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Code: Criminal",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "5x20x60",
             "genre" : "Social Drama",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "code-criminal"
         },
         {
-            "id" : "3",
+            "id" : 3,
             "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Eigth Grade",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "4x12x50",
             "genre" : "Youth Drama",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "eight-grade"
         },
         {
-            "id" : "4",
+            "id" : 4,
             "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Flowers into the sea",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "1x8x120",
             "genre" : "Historial Drama",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "flowers-into-the-sea"
         },
         {
-            "id" : "5",
+            "id" : 5,
             "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Gen",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "4x15x45",
             "genre" : "Thriller Suspense",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "gen"
         }
     ],
     "longshots" :
     [
         {
-            "id" : "0",
+            "id" : 0,
             "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Broken",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -209,7 +215,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "1",
+            "id" : 1,
             "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Canon",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -218,7 +224,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "2",
+            "id" : 2,
             "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Code: Criminal",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -227,7 +233,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "3",
+            "id" : 3,
             "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Eigth Grade",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -236,7 +242,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "4",
+            "id" : 4,
             "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Flowers into the sea",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -245,7 +251,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "5",
+            "id" : 5,
             "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Gen",
             "logline" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -257,16 +263,17 @@
     "others" :
     [
         {
-            "id" : "0",
+            "id" : 0,
             "card" : "https://images.pexels.com/photos/15014725/pexels-photo-15014725.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Broken",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "format" : "Special",
             "genre" : "Drama Thriller",
-            "icon" : "fa-solid fa-eye orange"
+            "icon" : "fa-solid fa-eye orange",
+            "slug" : "broken"
         },
         {
-            "id" : "1",
+            "id" : 1,
             "card" : "https://images.pexels.com/photos/15014730/pexels-photo-15014730.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Canon",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -275,7 +282,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "2",
+            "id" : 2,
             "card" : "https://images.pexels.com/photos/15014726/pexels-photo-15014726.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Code: Criminal",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -284,7 +291,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "3",
+            "id" : 3,
             "card" : "https://images.pexels.com/photos/15014732/pexels-photo-15014732.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Eigth Grade",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -293,7 +300,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "4",
+            "id" : 4,
             "card" : "https://images.pexels.com/photos/15014734/pexels-photo-15014734.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Flowers into the sea",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -302,7 +309,7 @@
             "icon" : "fa-solid fa-eye orange"
         },
         {
-            "id" : "5",
+            "id" : 5,
             "card" : "https://images.pexels.com/photos/15014733/pexels-photo-15014733.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "title" : "Gen",
             "detail" : "Some quick example text to build on the card title and make up the bulk of the card's content.",

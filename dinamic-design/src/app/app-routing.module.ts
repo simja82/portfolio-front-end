@@ -14,10 +14,12 @@ import { IntroComponent } from './pages/intro/intro.component';
 import { LinksComponent } from './pages/links/links.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PlusComponent } from './pages/plus/plus.component';
-import { ProjectComponent } from './pages/project/project.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { SamplesComponent } from './pages/samples/samples.component';
+import { SerieComponent } from './components/sections/audiovisual/projects-series/serie/serie.component';
+import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
+import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
 
 const routes: Routes = [
   { path: '', component:IndexComponent },
@@ -29,7 +31,9 @@ const routes: Routes = [
   { path: 'plus', component:PlusComponent },
   { path: 'audiovisual/intro', component:AudiovisualComponent },
   { path: 'audiovisual/projects', component:ProjectsComponent },
-  { path: 'audiovisual/projects/project', component:ProjectComponent },
+  { path: 'audiovisual/projects/series/serie/:id', component: SerieComponent },
+  { path: 'audiovisual/projects/others/other/:id', component: OtherComponent },
+  { path: 'audiovisual/projects/longshots/longshot/:id', component: LongshotComponent },
   { path: 'audiovisual/samples', component:SamplesComponent },
   { path: 'audiovisual/data', component:DataComponent },
   { path: 'audiovisual/links', component:LinksComponent },

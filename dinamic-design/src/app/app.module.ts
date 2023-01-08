@@ -19,7 +19,6 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { SamplesComponent } from './pages/samples/samples.component';
 import { PlusComponent } from './pages/plus/plus.component';
 import { LinksComponent } from './pages/links/links.component';
-import { ProjectComponent } from './pages/project/project.component';
 import { DataComponent } from './pages/data/data.component';
 import { WhiteLogoComponent } from './components/navbar/logo/white/white.component';
 import { CameraComponent } from './components/sidebars/left/camera/camera.component';
@@ -250,6 +249,9 @@ import { EditNameReferencesCvModalComponent } from './modals/dashboard/developer
 import { EditPhoneReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-phone-references-cv-modal/edit-phone-references-cv-modal.component';
 import { EditEmailReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-email-references-cv-modal/edit-email-references-cv-modal.component';
 import { WhiteAudiovisualComponent } from './components/sidebars/right/white/audiovisual/white-audiovisual/white-audiovisual.component';
+import { SerieComponent } from './components/sections/audiovisual/projects-series/serie/serie.component';
+import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
+import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
 
 @NgModule({
     declarations: [
@@ -269,7 +271,6 @@ import { WhiteAudiovisualComponent } from './components/sidebars/right/white/aud
         SamplesComponent,
         PlusComponent,
         LinksComponent,
-        ProjectComponent,
         DataComponent,
         BlackSessionComponent,
         WhiteLogoComponent,
@@ -501,7 +502,10 @@ import { WhiteAudiovisualComponent } from './components/sidebars/right/white/aud
         EditProjectsCvModalComponent,
         EditNameReferencesCvModalComponent,
         EditPhoneReferencesCvModalComponent,
-        EditEmailReferencesCvModalComponent
+        EditEmailReferencesCvModalComponent,
+        SerieComponent,
+        OtherComponent,
+        LongshotComponent
    ],
     providers: [],
     bootstrap: [AppComponent],
