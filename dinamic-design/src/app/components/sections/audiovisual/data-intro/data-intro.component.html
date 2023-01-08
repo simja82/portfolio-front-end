@@ -1,14 +1,14 @@
 <section class="data section-top d-flex justify-content-center pb-5">
     <div class="container">
-        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Data</span></h3>
-        <h5 class="text-center pb-5">
-            Esta es una parte que resume un poco todo lo que hay en una sola carpeta de presentación... 
+        <h3 *ngFor="let title of data" class="d-flex justify-content-center"><span class="text-orange text-center mb-3">{{title.title}}</span></h3>
+        <h5 *ngFor="let line of data" class="text-center pb-5">
+            {{line.one}}
             <br><br>    
-            Contiene Minibio, My Work, Proyectos, Muestras, Certificados de Registro y Contacto
+            {{line.two}}
             <br><br>
-            Está en formato digital... Aunque no lo creas, mi Arte va sobre muchos papeles pero si puedo no imprimir no lo hago...
+            {{line.three}}
             <br><br>
-            Espero que te guste lo que vas a encontrar... Tené en cuenta que periódicamente actualizo todo esto así que siempre está cambiando...
+            {{line.four}}
         </h5>
     </div>
 </section>
