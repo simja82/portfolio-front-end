@@ -1,14 +1,14 @@
 <section class="samples section-top d-flex justify-content-center pb-5">
     <div class="container">
-        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Muestras</span></h3>
-        <h5 class="text-center pb-5">
-            Así como tengo Proyectos en distintas etapas de desarrollo también tengo Muestras que se pueden compartir...
+        <h3 *ngFor="let title of samples" class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{title.title}}</span></h3>
+        <h5 *ngFor="let line of samples" class="text-center pb-5">
+            {{line.four}}
             <br><br>    
-            Esto sirve para sumar a la parte de Presentación, para dar a conocer acerca de los estilos con los cuales se trabaja...
+            {{line.five}}
             <br><br>
-            Algo muy particular dentro de la Industria Audiovisual es que podemos elegir qué hacer y qué no hacer... 
+            {{line.six}} 
             <br><br>
-            En mi caso hay Géneros que no trabajo porque no son lo mío... 
+            {{line.seven}} 
         </h5>
     </div>
 </section>
