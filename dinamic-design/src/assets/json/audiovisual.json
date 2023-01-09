@@ -472,5 +472,22 @@
             "saying" : "Dicen de mí...",
             "rights" : "2022"
         }
+    ],
+    "bloopers" :
+    [
+        {
+            "one" : "Hay que reconocer",
+            "two" : "que no se es perfecto...",
+            "three" : "Todo lo que puede fallar...",
+            "four" : "falla...",
+            "five" : "La vida es un carnaval...",
+            "six" : "Por eso ¡¡¡no hay que llorar!!!",
+            "seven" : "A imposible conmigo...",
+            "eight" : "le están sobrando dos letras...",
+            "nine" : "Yo pude...",
+            "ten" : "vos también podés...",
+            "thanks" : "Muchas gracias por haberme visitado!!!",
+            "rights" : "2022"
+        }
     ]
 }

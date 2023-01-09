@@ -1,0 +1,129 @@
+<div class="container col-8 m-auto mt-5 pt-5 mb-5 pb-5">
+    <div *ngFor="let item of one" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+    </div>
+    <div *ngFor="let line of be" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}} 
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of two" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>                  
+    </div>
+    <div *ngFor="let line of break" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}} 
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of three" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+    </div>
+    <div *ngFor="let line of time" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}}
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of four" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+    </div>
+    <div *ngFor="let line of win" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}}
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of five" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+    </div>
+    <div *ngFor="let line of memory" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}} 
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of six" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+    </div>
+    <div *ngFor="let line of spaces" class='feedback text-700 mt-5 pt-5'>
+        {{line.one}} 
+        <br>
+        {{line.two}}
+    </div>
+    <div class="silence"></div>
+    <div *ngFor="let item of seven" class="row mt-5 pt-5">
+        <div class="col-6">
+            <div class='quote'>
+                <blockquote class='text-700'>{{item.blooper}}</blockquote>
+            </div>
+            <div class='name text-uppercase text-700'>{{item.mistake}}</div>
+        </div>
+        <div class="col-6">
+            <div class='quote'>
+                <i [class]="item.icon"></i>
+            </div>
+        </div>
+    </div>
+</div>

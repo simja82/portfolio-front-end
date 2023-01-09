@@ -261,6 +261,7 @@ import { AudiovisualMadeCreditsComponent } from './components/sections/audiovisu
 import { AudiovisualMusicCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-music-credits/audiovisual-music-credits.component';
 import { AudiovisualMoreCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-more-credits/audiovisual-more-credits.component';
 import { AudiovisualBloopersCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-bloopers-credits/audiovisual-bloopers-credits.component';
+import { AudiovisualBloopersComponent } from './components/sections/audiovisual/audiovisual-bloopers/audiovisual-bloopers.component';
 
 @NgModule({
     declarations: [
@@ -523,7 +524,8 @@ import { AudiovisualBloopersCreditsComponent } from './components/sections/audio
         AudiovisualMadeCreditsComponent,
         AudiovisualMusicCreditsComponent,
         AudiovisualMoreCreditsComponent,
-        AudiovisualBloopersCreditsComponent
+        AudiovisualBloopersCreditsComponent,
+        AudiovisualBloopersComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

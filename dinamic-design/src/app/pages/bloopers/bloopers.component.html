@@ -12,135 +12,52 @@
 
     <!-- Bloopers -->
     <div class="wrapper bg-black text-white">
-        <div class='credit'>
+        <div *ngFor="let line of bloopers" class='credit'>
             <div class="row mb-5 pb-5">
-                <div class='title text-700'>Hay que reconocer<br>que no se es perfecto...</div>
+                <div class='title text-700'>
+                    {{line.one}}
+                    <br>
+                    {{line.two}}
+                </div>
             </div>
-            <div class='feedback text-700 mt-5 pt-5'>Todo lo que puede fallar...<br>falla...</div>
-            <div class="container col-8 m-auto mt-5 pt-5 mb-5 pb-5">
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>Estuve casi dos semanas sin encontrarle la vuelta al routing de Angular...</blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Al final era parecido a las rutas de CodeIgniter4</div>
-                    </div>
-                    
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-route fa-5x text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>No será frustrante... <br>decían...</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-burst fa-5x text-white"></i>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>Al llegar a Java estuve no solo días sino más de un mes tratando de entender algo...</blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Creo que en ningún momento supe cómo buscar las cosas o posiblemente no sabía qué debía buscar...</div>
-                    </div>                  
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>Tomate un descanso, <br>vas a ver que es sencillo...</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>Todo bien con Stackoverflow... Jamás voy a entender cómo es que a algunos les funciona eso de preguntar cosas...</blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Me quedo con GitHub y Codepen que son más amigables...</div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-brands fa-stack-overflow fa-5x text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>Es cuestión de dedicarle tiempo... <br>¿más tiempo?</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-pause fa-5x text-white"></i>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>Cerca de diez días pasé intentando saber cómo era el tema de rutas dinámicas con slug... </blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Me dí por vencida... Me ganó Angular... </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>¡¡¡Pero no te des por vencida!!! <br>Hasta en ruso busqué respuestas... (no es broma)</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>¿Pueden creer que no recuerdo un tema importante de Base de Datos que era eliminación lógica?</blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Me parece que SQL y yo no nos estamos llevando del todo bien últimamente...</div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-xmark fa-5x text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>No fue por escasez de memoria mía... <br>Creo que ya estoy quemada...</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-calendar fa-5x text-white"></i>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>NetBeans... Delicado NetBeans... Lo quiero tanto como lo detesto... Creo que no existe nada más sensible que NetBeans...</blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>Horas estuve demorada por un espacio... Sí por un espacio... </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>Siempre hay que estar atento a todo... <br>O escribir sin espacios entre palabras...</div>
-                <div class="silence"></div>
-                <div class="row mt-5 pt-5">
-                    <div class="col-6">
-                        <div class='quote'>
-                            <blockquote class='text-700'>Es posible que muchos ya lo sepan... Yo no sé JS... No lo puse en los créditos... </blockquote>
-                        </div>
-                        <div class='name text-uppercase text-700'>En su reemplazo utilicé CSS3 para hacer animaciones...</div>
-                    </div>
-                    <div class="col-6">
-                        <div class='quote'>
-                            <i class="fa-solid fa-box-tissue fa-5x text-white"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class='feedback text-700 mt-5 pt-5'>La vida es un carnaval... <br>Por eso ¡¡¡no hay que llorar!!!</div>
-                <div class="silence"></div>
-                <div class='feedback text-700 mt-5 pt-5'>A imposible conmigo... <br>le están sobrando dos letras...</div>
-                <div class="silence"></div>
-                <div class='feedback text-700 mt-5 pt-5'>Yo pude... <br>vos también podés...</div>
-                <div class="cut"></div>
-                <div class="row mt-5 pt-5 mb-5 pb-5">
-                    <div class="bloopers">
-                        <div class='feedback text-700 mt-5 pt-5'>Muchas gracias por haberme visitado!!!</div>
-                        <div class="col-12">
-                            <div class='quote'>
-                                <span><i class="fa-solid fa-signature fa-3x text-white"></i></span>
-                            </div>
-                        </div>                                        
-                    </div>
-                </div>
-                <div class="ending"></div>
-                <div class='name text-uppercase pb-5'><i class="fa-regular fa-copyright text-700"></i> 2022</div>
+            <div class='feedback text-700 mt-5 pt-5'>
+                {{line.three}}
+                <br>
+                {{line.four}}
             </div>
+            <app-audiovisual-bloopers></app-audiovisual-bloopers>
+            <div class='feedback text-700 mt-5 pt-5'>
+                {{line.five}}
+                <br>
+                {{line.six}}
+            </div>
+            <div class="silence"></div>
+            <div class='feedback text-700 mt-5 pt-5'>
+                {{line.seven}} 
+                <br>
+                {{line.eight}}
+            </div>
+            <div class="silence"></div>
+            <div class='feedback text-700 mt-5 pt-5'>
+                {{line.nine}} 
+                <br>
+                {{line.ten}}
+            </div>
+            <div class="cut"></div>
+            <div class="row mt-5 pt-5 mb-5 pb-5">
+                <div class="bloopers">
+                    <div class='feedback text-700 mt-5 pt-5'>
+                        {{line.thanks}}
+                    </div>
+                    <div class="col-12">
+                        <div class='quote'>
+                            <span><i class="fa-solid fa-signature fa-3x text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ending"></div>
+            <div class='name text-uppercase pb-5'><i class="fa-regular fa-copyright text-700"></i> {{line.rights}}</div>
         </div>
     </div>
 
