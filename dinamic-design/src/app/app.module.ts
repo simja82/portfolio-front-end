@@ -252,6 +252,15 @@ import { WhiteAudiovisualComponent } from './components/sidebars/right/white/aud
 import { SerieComponent } from './components/sections/audiovisual/projects-series/serie/serie.component';
 import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
 import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
+import { AudiovisualCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-credits.component';
+import { AudiovisualSingleCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-single-credits/audiovisual-single-credits.component';
+import { AudiovisualDoubleCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-double-credits/audiovisual-double-credits.component';
+import { AudiovisualTripleCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-triple-credits/audiovisual-triple-credits.component';
+import { AudiovisualThanksCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-thanks-credits/audiovisual-thanks-credits.component';
+import { AudiovisualMadeCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-made-credits/audiovisual-made-credits.component';
+import { AudiovisualMusicCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-music-credits/audiovisual-music-credits.component';
+import { AudiovisualMoreCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-more-credits/audiovisual-more-credits.component';
+import { AudiovisualBloopersCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-bloopers-credits/audiovisual-bloopers-credits.component';
 
 @NgModule({
     declarations: [
@@ -505,7 +514,16 @@ import { LongshotComponent } from './components/sections/audiovisual/projects-lo
         EditEmailReferencesCvModalComponent,
         SerieComponent,
         OtherComponent,
-        LongshotComponent
+        LongshotComponent,
+        AudiovisualCreditsComponent,
+        AudiovisualSingleCreditsComponent,
+        AudiovisualDoubleCreditsComponent,
+        AudiovisualTripleCreditsComponent,
+        AudiovisualThanksCreditsComponent,
+        AudiovisualMadeCreditsComponent,
+        AudiovisualMusicCreditsComponent,
+        AudiovisualMoreCreditsComponent,
+        AudiovisualBloopersCreditsComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

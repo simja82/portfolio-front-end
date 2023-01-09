@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { AudiovisualService } from 'src/assets/services/audiovisual.service';
 
 @Component({
   selector: 'app-credits',
@@ -7,10 +8,19 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./credits.component.css']
 })
 export class CreditsComponent implements OnInit {
-  constructor (private title:Title) {
+
+credits : any = [];
+
+  constructor (private title:Title, private audiovisualService: AudiovisualService) {
     title.setTitle('Credits | Point of View')
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.audiovisualService.getData().subscribe(data => {
+      //Información a mostrar
+      this.credits = data.credits;
+    })
+  }
 
 }

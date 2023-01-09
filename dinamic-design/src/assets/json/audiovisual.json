@@ -462,5 +462,20 @@
             "three" : "Gracias por visitarme!!!",
             "icon" : "fa-solid fa-signature fa-7x"
         }
+    ],
+    "credits" :
+    [
+        {
+            "title" : "Point of View",
+            "type" : "Portfolio Creativo",
+            "based" : "Basado en una historia real",
+            "saying" : "Dicen de mí...",
+            "rights" : "2022",
+            "made" : "Hecho con",
+            "more" : "Y muchísimas",
+            "music" : "Música",
+            "bloopers" : "¿Ya viste los bloopers?",
+            "link" : "Dale click al ícono que está al pie..."
+        }
     ]
 }

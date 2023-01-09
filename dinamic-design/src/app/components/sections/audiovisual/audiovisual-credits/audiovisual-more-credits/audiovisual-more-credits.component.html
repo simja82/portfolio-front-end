@@ -1,0 +1,9 @@
+<div class="row mb-5 pb-5">
+    <div class='feedback text-700'>{{title}}</div>
+    <div *ngFor="let item of more" class="col-4">
+        <div class='quote'>
+            <span><i [class]="item.icon"></i></span>
+        </div>
+        <div class='name text-uppercase text-700'>{{item.thing}}</div>
+    </div>
+</div>  
