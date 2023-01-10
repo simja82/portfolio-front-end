@@ -263,6 +263,8 @@ import { AudiovisualMoreCreditsComponent } from './components/sections/audiovisu
 import { AudiovisualBloopersCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-bloopers-credits/audiovisual-bloopers-credits.component';
 import { AudiovisualBloopersComponent } from './components/sections/audiovisual/audiovisual-bloopers/audiovisual-bloopers.component';
 import { DeveloperSkillsComponent } from './components/sections/developer/developer-skills/developer-skills.component';
+import { CvNameComponent } from './components/sections/developer/cv-profile/cv-name/cv-name.component';
+import { CvPositionComponent } from './components/sections/developer/cv-profile/cv-position/cv-position.component';
 
 @NgModule({
     declarations: [
@@ -527,7 +529,9 @@ import { DeveloperSkillsComponent } from './components/sections/developer/develo
         AudiovisualMoreCreditsComponent,
         AudiovisualBloopersCreditsComponent,
         AudiovisualBloopersComponent,
-        DeveloperSkillsComponent
+        DeveloperSkillsComponent,
+        CvNameComponent,
+        CvPositionComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

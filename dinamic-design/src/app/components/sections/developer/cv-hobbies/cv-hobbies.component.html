@@ -1,5 +1,2 @@
-<h5 class="pt-2 text-orange">Hobbies</h5>
-<i class="fa-solid fa-volleyball mx-1"></i>
-<i class="fa-solid fa-bicycle mx-1"></i>
-<i class="fa-solid fa-chess-queen mx-1"></i>
-<i class="fa-solid fa-train mx-1"></i>
+<h5 class="pt-2 text-orange">{{title}}</h5>
+<i *ngFor="let hobby of hobbiesCV" [class]="hobby.icon"></i>

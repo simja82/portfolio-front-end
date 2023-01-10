@@ -1,8 +1,6 @@
 <div class="pt-2 pb-3">
-    <h5 class="pb-3 text-orange text-uppercase">Redes</h5>
+    <h5 class="pb-3 text-orange text-uppercase">{{title}}</h5>
     <h5 class="text-center d-flex justify-content-between px-5 mx-2">
-        <span class="px-1"><i class="fa-brands fa-linkedin"></i> /simja82</span>
-        <span class="px-1"><i class="fa-brands fa-codepen"></i> /simja82</span>
-        <span class="px-1"><i class="fa-brands fa-github"></i> /simja82</span>
+        <span *ngFor="let social of socialCV" class="px-1"><i [class]="social.icon"></i> {{social.user}}</span>
     </h5>
 </div>

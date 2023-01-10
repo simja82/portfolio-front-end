@@ -1,16 +1,7 @@
-<h5><span class="text-orange">Educación </span> <i class="fa-solid fa-graduation-cap"></i></h5>
-<div>
-    <span>yyyy</span> - <span>yyyy</span><br>
-    <strong>TÍTULO</strong>
-    <p>Institución</p> 
+<h5><span class="text-orange">{{title}} </span> <i class="fa-solid fa-graduation-cap"></i></h5>
+<div *ngFor="let line of educationCV">
+    <span>{{line.starting}}</span> - <span>{{line.ending}}</span><br>
+    <strong>{{line.title}}</strong>
+    <p>{{line.institution}}</p>
 </div>
-<div>
-    <span>yyyy</span> - <span>yyyy</span><br>
-    <strong>TÍTULO</strong>
-    <p>Institución</p> 
-</div>
-<div>
-    <span>yyyy</span> - <span>yyyy</span><br>
-    <strong>TÍTULO</strong>
-    <p>Institución</p> 
-</div>
+

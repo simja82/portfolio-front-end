@@ -1,7 +1,2 @@
-<h5 class="pb-2 text-orange">Habilidades</h5>
-<p><i class="fa-brands fa-bootstrap"></i> Bootstrap</p>
-<p><i class="fa-brands fa-angular"></i> Angular</p>
-<p><i class="fa-brands fa-html5"></i> HTML</p>
-<p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-<p><i class="fa-solid fa-leaf"></i> SpringBoot</p>
-<p><i class="fa-brands fa-java"></i> Java</p>
+<h5 class="pb-2 text-orange">{{title}}</h5>
+<p *ngFor="let skill of technicalCV"><i [class]="skill.icon"></i> {{skill.technology}}</p>

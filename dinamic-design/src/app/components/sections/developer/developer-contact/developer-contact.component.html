@@ -2,7 +2,7 @@
     <div class="container w-75">
         <h3 class="d-flex justify-content-center mt-4 py-4"><i class="fa-solid fa-info"></i> <span class="text-orange text-center ms-3"> {{title}}</span></h3>
         <div *ngFor="let data of contact" class="text-center">
-            <h4 class="pb-2"><i class="fa-solid fa-phone"></i> {{data.phone}}</h4>
+            <h4 class="pb-2"><i class="fa-solid fa-phone"></i> +{{data.phone}}</h4>
             <h4 class="pb-2"><i class="fa-solid fa-envelope"></i> {{data.email}}</h4>
             <h4 class="pb-2"><i class="fa-solid fa-user-clock"></i> {{data.availability}}</h4>
         </div>

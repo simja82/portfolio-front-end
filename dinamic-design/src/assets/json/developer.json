@@ -363,5 +363,224 @@
             "email" : "info@gocode.ar",
             "availability" : "Availability"
         }
+    ],
+    "cv" :
+    [
+        {
+            "intro" : "Este es mi CV dentro de IT...",
+            "print" : "Imprimir",
+            "download" : "Descargar",
+            "please" : "Por favor, si no es necesario, ",
+            "dont" : "no imprimas",
+            "fileCV" : "https://google.com"
+        }
+    ],
+    "profileCV" :
+    [
+        {
+            "photo" : "https://i.ibb.co/VttzbX8/profile.jpg",
+            "title" : "Sobre mí",
+            "one" : "\"Si tienes un sueño,",
+            "two" :  "debes conservarlo.",
+            "three" : "Si quieres algo", 
+            "four" : "sal a buscarlo,",
+            "five" : "y punto.\"",
+            "author" : "Chris Gardner",
+            "credit" : "En busca de la Felicidad"
+        }
+    ],
+    "educationCV" :
+    [
+        {
+            "id" : 0,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        },
+        {
+            "id" : 1,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        },
+        {
+            "id" : 2,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        }
+    ],
+    "technicalCV" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-brands fa-bootstrap",
+            "technology" : "Bootstrap"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-angular",
+            "technology" : "Angular"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-html5",
+            "technology" : "HTML"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-css3",
+            "technology" : "CSS"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-leaf",
+            "technology" : "SpringBoot"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-brands fa-java",
+            "technology" : "Java"
+        }
+    ],
+    "softsCV" :
+    [
+        {
+            "id" : 0,
+            "skill" : "Liderazgo"
+        },
+        {
+            "id" : 1,
+            "skill" : "Proactividad"
+        },
+        {
+            "id" : 2,
+            "skill" : "Comunicación"
+        }
+    ],
+    "languagesCV" :
+    [
+        {
+            "id" : 0,
+            "language" : "Francés",
+            "level" : "C1"
+        },
+        {
+            "id" : 1,
+            "language" : "Inglés",
+            "level" : "B1"
+        }
+    ],
+    "hobbiesCV" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-volleyball mx-1"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-bicycle mx-1"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-chess-queen mx-1"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-train mx-1"
+        }
+    ],
+    "contactCV" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-phone",
+            "data" : "+5492342546373"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-envelope",
+            "data" : "info@gocode.ar"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-user-clock",
+            "data" : "Availability"
+        }
+    ],
+    "socialCV" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-brands fa-linkedin",
+            "user" : "/simja82"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-codepen",
+            "user" : "/simja82"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-github",
+            "user" : "/simja82"
+        }
+    ],
+    "experiencesCV" :
+    [
+        {
+            "id" : 0,
+            "place" : "Lugar",
+            "position" : "Puesto",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Some quick example text to build on the card title",
+            "tasksTitle" : "Tareas:",
+            "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+        },
+        {
+            "id" : 1,
+            "place" : "Lugar",
+            "position" : "Puesto",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Some quick example text to build on the card title",
+            "tasksTitle" : "Tareas:",
+            "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+        }
+    ],
+    "projectsCV" :
+    [
+        {
+            "id" : 0,
+            "place" : "Lugar",
+            "position" : "Puesto",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Some quick example text to build on the card title",
+            "tasksTitle" : "Tareas:",
+            "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+        }
+    ],
+    "referencesCV" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-user",
+            "data" : "Nombre y Apellido"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-phone",
+            "data" : "+0000000000000"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-envelope",
+            "data" : "email@domain.com"
+        }
     ]
 }

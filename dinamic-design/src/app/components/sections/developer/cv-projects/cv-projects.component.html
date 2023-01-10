@@ -1,14 +1,13 @@
 <div class="pt-2">
-    <h5 class="text-orange text-uppercase">Proyectos</h5>
-    <strong>Lugar</strong>, <span>Puesto</span>
-    <p>MES de yyyy - MES de yyyy</p>
-    <span>Descripción Breve</span>
+    <h5 class="text-orange text-uppercase">{{title}}</h5>
+</div>
+<div *ngFor="let info of projectsCV">
+    <strong>{{info.place}}</strong>, <span>{{info.position}}</span>
+    <p>{{info.starting}} - {{info.ending}}</p>
+    <span>{{info.description}}</span>
     <p>
-        Tareas:
+        {{info.tasksTitle}}
         <br>
-        Comunicación Interna, Construcción de Documentación General no específica
-        de Áreas para todos los Integrantes Proveeduría de Formación Grupal en
-        General, Toma de Decisiones de Nivel Superior y Coordinación de todas las
-        Áreas en su conjunto.
+        {{info.tasks}}
     </p>
 </div>

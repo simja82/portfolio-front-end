@@ -1,6 +1,4 @@
 <div class="pt-4">
-    <h5 class="text-orange text-uppercase">Contacto</h5>
-    <p><i class="fa-solid fa-phone"></i> Teléfono</p>
-    <p><i class="fa-solid fa-envelope"></i> E-mail</p>
-    <p><i class="fa-solid fa-user-clock"></i> Disponibilidad</p>
+    <h5 class="text-orange text-uppercase">{{title}}</h5>
+    <p *ngFor="let item of contactCV"><i [class]="item.icon"></i> {{item.data}}</p>
 </div>
