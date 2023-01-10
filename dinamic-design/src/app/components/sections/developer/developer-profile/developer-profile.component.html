@@ -1,16 +1,16 @@
 <section class="profile mt-5 pt-5" id="profile">
     <div class="container">
-        <div class="row">
+        <div *ngFor="let line of profile" class="row">
             <div class="col-10 m-auto">
-                <h3 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed"></i> <span class="text-orange text-center ms-3"> Sobre mí</span></h3>
-                <h4 class="text-center my-3">Mi nombre es</h4>
-                <h2 class="text-orange text-center">Gabriela García de la Mata</h2>
-                <p class="w-75 text-center m-auto py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
+                <h3 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed"></i> <span class="text-orange text-center ms-3"> {{line.title}}</span></h3>
+                <h4 class="text-center my-3">{{line.name}}</h4>
+                <h2 class="text-orange text-center">{{line.fullname}}</h2>
+                <p class="w-75 text-center m-auto py-2">{{line.one}}</p>
                 <div class="container d-flex justify-content-center py-2">      
-                    <img src="./../assets/img/developer/profile/profile.jpg" class="rounded-circle w-25 mb-2">
+                    <img [src]="line.photo" class="rounded-circle w-25 mb-2">
                 </div>      
                 <div class="text-center mb-4">
-                    <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
+                    <span class="text-center">{{line.two}}<br>{{line.three}}<br><i>{{line.author}}</i><br>{{line.credit}}</span>    
                 </div>
             </div>
         </div>

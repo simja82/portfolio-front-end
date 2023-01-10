@@ -1,77 +1,29 @@
 <section class="experience mt-5 pt-5">
     <div class="container w-75">
-        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-wrench"></i> <span class="text-orange text-center ms-3"> Trabajos que hice y hago...</span></h3>
-        <div class="card ms-auto me-auto my-3">          
+        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-wrench"></i> <span class="text-orange text-center ms-3"> {{title}}</span></h3>
+        <div *ngFor="let job of experiences" class="card ms-auto me-auto my-3">          
             <div class="row">
                 <div class="col-md-5">
-                    <img src="./../assets/img/developer/projects/overlay.png" class="img-fluid rounded-start" alt="...">
+                    <img [src]="job.image" class="img-fluid rounded-start" [alt]="job.alt">
                     <div class="text-center mt-4">
-                        <h5>Puesto</h5>
-                        <h6>Lugar</h6>
-                        <p>Inicio - Fin</p>      
+                        <h5>{{job.position}}</h5>
+                        <h6>{{job.place}}</h6>
+                        <p>{{job.starting}} - {{job.ending}}</p>      
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="card-body ms-2 mt-2">
-                        <h6>Descripción:</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h6>Tareas:</h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                        <h6>{{job.description}}</h6>
+                        <p class="card-text">{{job.textDescription}}</p>
+                        <h6>{{job.tasks}}</h6>
+                        <ul class="list-group mt-4 pt-2">
+                            <li class="list-group-item">{{job.one}}</li>
+                            <li class="list-group-item">{{job.two}}</li>
+                            <li class="list-group-item">{{job.three}}</li>
                         </ul>
                     </div>
                 </div>  
             </div>  
         </div>
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="./../assets/img/developer/projects/zazimut.png" class="img-fluid rounded-start" alt="...">
-                    <div class="text-center mt-4">
-                        <h5>Puesto</h5>
-                        <h6>Lugar</h6>
-                        <p>Inicio - Fin</p>      
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body ms-2 mt-2">
-                        <h6>Descripción:</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h6>Tareas:</h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
-                    </div>
-                </div>  
-            </div>  
-        </div>              
-        <div class="card mb-3">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="./../assets/img/developer/projects/login.png" class="img-fluid rounded-start" alt="...">
-                    <div class="text-center mt-4">
-                        <h5>Puesto</h5>
-                        <h6>Lugar</h6>
-                        <p>Inicio - Fin</p>      
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body ms-2 mt-2">
-                        <h6>Descripción:</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <h6>Tareas:</h6>
-                        <ul class="list-group">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
-                    </div>
-                </div>  
-            </div>  
-        </div>  
     </div>
 </section>

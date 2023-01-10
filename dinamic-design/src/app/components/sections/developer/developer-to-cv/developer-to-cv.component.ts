@@ -5,5 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './developer-to-cv.component.html'
 })
 export class DeveloperToCvComponent {
-
+  //Variable del Componente
+  title = "De esto tengo una versión más corta...";
 }

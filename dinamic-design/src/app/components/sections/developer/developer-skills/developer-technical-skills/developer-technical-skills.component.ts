@@ -2,12 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { DeveloperService } from 'src/assets/services/developer.service';
 
 @Component({
-  selector: 'app-developer-intro',
-  templateUrl: './developer-intro.component.html'
+  selector: 'app-developer-technical-skills',
+  templateUrl: './developer-technical-skills.component.html',
+  styleUrls: ['./developer-technical-skills.component.css']
 })
-export class DeveloperIntroComponent implements OnInit {
+export class DeveloperTechnicalSkillsComponent implements OnInit {
   //Declaración de Array
-  intro : any = [];
+  technicals : any = [];
+
+  //Variable del Componente
+  title = "Técnicas"
   
   //Inyección de Service
     constructor (private developerService:DeveloperService) {
@@ -17,9 +21,9 @@ export class DeveloperIntroComponent implements OnInit {
       //Almacenamiento de datos
       this.developerService.getData().subscribe(data => {
         //Información a mostrar
-        this.intro = data.intro;
+        this.technicals = data.technicals;
       })
     }
-  
+
   }
   

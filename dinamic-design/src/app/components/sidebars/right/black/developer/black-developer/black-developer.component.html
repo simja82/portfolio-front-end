@@ -1,24 +1,9 @@
 <div class="position-fixed top-50 end-0 translate-middle-y me-4 d-flex align-items-center">
     <div class="social-icons">
         <ul class="social-listing list-unstyled">
-            <li>
-                <a href="https://github.com" target="_blank">
-                    <i class="fa-brands fa-github fa-2x orange"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://codepen.com" target="_blank">
-                    <i class="fa-brands fa-codepen fa-2x orange"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin-in fa-2x orange"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram fa-2x orange"></i>
+            <li *ngFor="let social of social">
+                <a [href]="social.link" target="_blank">
+                    <i [class]="social.icon"></i>
                 </a>
             </li>
         </ul>

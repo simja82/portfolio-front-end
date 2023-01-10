@@ -44,8 +44,8 @@ import { DeveloperProfileComponent } from './components/sections/developer/devel
 import { DeveloperEducationComponent } from './components/sections/developer/developer-education/developer-education.component';
 import { DeveloperExperienceComponent } from './components/sections/developer/developer-experience/developer-experience.component';
 import { DeveloperProjectsComponent } from './components/sections/developer/developer-projects/developer-projects.component';
-import { DeveloperTechnicalSkillsComponent } from './components/sections/developer/developer-technical-skills/developer-technical-skills.component';
-import { DeveloperSoftSkillsComponent } from './components/sections/developer/developer-soft-skills/developer-soft-skills.component';
+import { DeveloperTechnicalSkillsComponent } from './components/sections/developer/developer-skills/developer-technical-skills/developer-technical-skills.component';
+import { DeveloperSoftSkillsComponent } from './components/sections/developer/developer-skills/developer-soft-skills/developer-soft-skills.component';
 import { DeveloperLanguagesComponent } from './components/sections/developer/developer-languages/developer-languages.component';
 import { DeveloperHobbiesComponent } from './components/sections/developer/developer-hobbies/developer-hobbies.component';
 import { DeveloperReferencesComponent } from './components/sections/developer/developer-references/developer-references.component';
@@ -262,6 +262,7 @@ import { AudiovisualMusicCreditsComponent } from './components/sections/audiovis
 import { AudiovisualMoreCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-more-credits/audiovisual-more-credits.component';
 import { AudiovisualBloopersCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-bloopers-credits/audiovisual-bloopers-credits.component';
 import { AudiovisualBloopersComponent } from './components/sections/audiovisual/audiovisual-bloopers/audiovisual-bloopers.component';
+import { DeveloperSkillsComponent } from './components/sections/developer/developer-skills/developer-skills.component';
 
 @NgModule({
     declarations: [
@@ -525,7 +526,8 @@ import { AudiovisualBloopersComponent } from './components/sections/audiovisual/
         AudiovisualMusicCreditsComponent,
         AudiovisualMoreCreditsComponent,
         AudiovisualBloopersCreditsComponent,
-        AudiovisualBloopersComponent
+        AudiovisualBloopersComponent,
+        DeveloperSkillsComponent
    ],
     providers: [],
     bootstrap: [AppComponent],
