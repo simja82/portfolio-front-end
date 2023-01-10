@@ -2,40 +2,14 @@
     <!-- General -->
     <div class="container text-center">
         <div class="row">
-            <h3 class="col justify-content-center d-flex"><b>General</b></h3>
+            <h3 class="col justify-content-center d-flex"><b>{{title}}</b></h3>
         </div>
         <div class="row pt-4">
-            <div class="col-6 col-md-3 col-lg-4">
-                <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#socialModal">
-                    <i class="fa-solid fa-share-nodes fa-2x text-white"></i>
+            <div *ngFor="let button of general" class="col-6 col-md-3 col-lg-4 pb-5">
+                <button type="button" class="btn btn-black" data-bs-toggle="modal" [attr.data-bs-target]="'#'+button.target">
+                    <i [class]="button.icon"></i>
                 </button>
-                <h5 class="mt-3">Social</h5>
-            </div>
-            <div class="col-6 col-md-3 col-lg-4">
-                <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#bannersModal">
-                    <i class="fa-solid fa-images fa-2x text-white"></i>
-                </button>
-                <h5 class="mt-3">Banners</h5>
-            </div>
-            <div class="col-6 col-md-3 col-lg-4">
-                <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#heroesModal">
-                    <i class="fa-solid fa-align-center fa-2x text-white"></i>
-                </button>
-                <h5 class="mt-3">Heroes</h5>
-            </div>
-        </div>
-        <div class="row pt-4">
-            <div class="col-6 col-md-3 col-lg-4">
-                <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#creditsModal">
-                    <i class="fa-solid fa-comments fa-2x text-white"></i>
-                </button>
-                <h5 class="mt-3">Credits</h5>
-            </div>
-            <div class="col-6 col-md-3 col-lg-4">
-                <button type="button" class="btn btn-black" data-bs-toggle="modal" data-bs-target="#bloopersModal">
-                    <i class="fa-solid fa-bug fa-2x text-white"></i>
-                </button>
-                <h5 class="mt-3">Bloopers</h5>
+                <h5 class="mt-3">{{button.section}}</h5>
             </div>
         </div>
     </div>

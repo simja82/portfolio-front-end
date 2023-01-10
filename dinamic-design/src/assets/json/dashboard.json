@@ -1,0 +1,149 @@
+{
+    "general" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-share-nodes fa-2x text-white",
+            "section" : "Social",
+            "target" : "socialModal"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-images fa-2x text-white",
+            "section" : "Banners",
+            "target" : "bannersModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-align-center fa-2x text-white",
+            "section" : "Heroes",
+            "target" : "heroesModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-comments fa-2x text-white",
+            "section" : "Credits",
+            "target" : "creditsModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-bug fa-2x text-white",
+            "section" : "Bloopers",
+            "target" : "bloopersModal"
+        }
+    ],
+    "audiovisual" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-align-center fa-2x text-white",
+            "section" : "Intro",
+            "target" : "audiovisualIntroModal"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-user fa-2x text-white",
+            "section" : "Perfil",
+            "target" : "audiovisualProfileModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-file-lines fa-2x text-white",
+            "section" : "Divisores",
+            "target" : "audiovisualDivisorsModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-file fa-2x text-white",
+            "section" : "Presentación",
+            "target" : "audiovisualPresentationModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-film fa-2x text-white",
+            "section" : "Proyectos",
+            "target" : "audiovisualProjectsModal"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-link fa-2x text-white",
+            "section" : "Links",
+            "target" : "audiovisualLinksModal"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-signature fa-2x text-white",
+            "section" : "Feedback",
+            "target" : "audiovisualFeedbackModal"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-quote-right fa-2x text-white",
+            "section" : "Quotes",
+            "target" : "audiovisualQuotesModal"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-stop fa-2x text-white",
+            "section" : "Closing",
+            "target" : "audiovisualClosingModal"
+        }
+    ],
+    "developer" :
+    [
+        {
+            "id" : 0,
+            "icon" : "fa-solid fa-align-center fa-2x text-white",
+            "section" : "Intro",
+            "target" : "developerIntroModal"
+        },
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-user fa-2x text-white",
+            "section" : "Perfil",
+            "target" : "developerProfileModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-code fa-2x text-white",
+            "section" : "Proyectos",
+            "target" : "developerProjectsModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-graduation-cap fa-2x text-white",
+            "section" : "Educación",
+            "target" : "developerEducationModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-wrench fa-2x text-white",
+            "section" : "Experiencia",
+            "target" : "developerExperienceModal"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-cogs fa-2x text-white",
+            "section" : "Skills",
+            "target" : "developerSkillsModal"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-star fa-2x text-white",
+            "section" : "Hobbies",
+            "target" : "developerHobbiesModal"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-comment fa-2x text-white",
+            "section" : "Comentarios",
+            "target" : "developerCommentsModal"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-file fa-2x text-white",
+            "section" : "CV",
+            "target" : "developerCVModal"
+        }
+    ]
+}
