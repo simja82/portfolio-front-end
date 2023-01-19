@@ -18,16 +18,31 @@
         <div class="card text-bg-light text-center">
             <div class="card-header">{{banners[6].banner}}</div>
             <div class="card-body col-10 m-auto pb-4 mt-1">
-                <form>
-                    <div class="mb-3">
+                <!-- Reactive Form -->
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <!-- Form Group-->
+                    <div class="form-group mb-3">
                         <label for="inputEmail" class="form-label">{{forms.email}}</label>
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                        <!-- Form Control Name and Validation -->
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
                         <div id="emailHelp" class="form-text">{{helpers.emailHelp}}</div>
+                        <!-- Validation Feedback -->
+                        <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                            <div *ngIf="f['email'].errors['required']">Debes ingresar un email</div>
+                            <div *ngIf="f['email'].errors['email']">El email ingresado es inválido</div>
+                        </div>
                     </div>
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
                         <label for="inputPassword" class="form-label">{{forms.password}}</label>
-                        <input type="password" class="form-control" id="inputPassword">
-                    </div>
+                        <!-- Form Control Name and Validation -->
+                        <input type="password" class="form-control" id="inputPassword" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+                        <!-- Validation Feedback -->
+                        <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                            <div *ngIf="f['password'].errors['required']">Debes ingresar una contraseña</div>
+                            <div *ngIf="f['password'].errors['minlength']">La contraseña debe tener un mínimo de 8 caracteres</div>
+                            <div *ngIf="f['password'].errors['maxlength']">La contraseña no debe tener más de 20 caracteres</div>
+                        </div>
+                    </div>  
                     <button type="submit" class="btn btn-outline-dark btn-width">{{buttons.enter}}</button>
                 </form>
                 <div id="registerHelp" class="form-text mt-4">{{helpers.registerHelp}} <a routerLink="/register">{{phrases.more}}</a></div>
