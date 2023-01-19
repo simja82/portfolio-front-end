@@ -1,26 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-cv-education',
   templateUrl: './cv-education.component.html'
 })
 export class CvEducationComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Education CV
   educationCV : any = [];
 
-  //Variable del Componente
-  title = "Educación";
+  //Array Sections CV
+  sectionsCV : any = [];
 
-  constructor (private developerService:DeveloperService) { }
+  //Inyección de Service
+    constructor (private povService:POVService) {
+    }
+    
+    ngOnInit(): void { 
+      //Almacenamiento de datos
+      this.povService.getData().subscribe(data => {
+        //Información a mostrar
+        this.educationCV = data.educationCV;
+        this.sectionsCV = data.sectionsCV;
+      })
+    }
 
-  ngOnInit(): void { 
-    //Almacenamiento de datos
-    this.developerService.getData().subscribe(data => {
-      //Información a mostrar
-      this.educationCV = data.educationCV;
-    })
   }
-
-}
-
+  

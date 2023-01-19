@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-samples-intro',
@@ -7,18 +7,19 @@ import { AudiovisualService } from 'src/assets/services/audiovisual.service';
   styleUrls: ['./samples-intro.component.css']
 })
 export class SamplesIntroComponent implements OnInit {
-  //Declaración de Array
-  samples : any = [];
+
+  //Array Samples Page
+  samplesPage : any = [];
   
   //Inyección de Service
-    constructor (private audiovisualService:AudiovisualService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.samples = data.samples;
+        this.samplesPage = data.samplesPage;
       })
     }
   

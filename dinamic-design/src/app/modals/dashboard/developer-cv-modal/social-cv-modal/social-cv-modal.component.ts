@@ -1,9 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-social-cv-modal',
   templateUrl: './social-cv-modal.component.html'
 })
-export class SocialCvModalComponent {
+export class SocialCvModalComponent implements OnInit {
 
-}
+  //Array Sections CV
+  sectionsCV : any = [];
+
+  //Array Social CV
+  socialCV : any = [];
+
+  //Array Buttons
+  buttons : any = [];
+
+  //Inyección de Service
+    constructor (private povService:POVService) {
+    }
+    
+    ngOnInit(): void { 
+      //Almacenamiento de datos
+      this.povService.getData().subscribe(data => {
+        //Información a mostrar
+        this.sectionsCV = data.sectionsCV;
+        this.socialCV = data.socialCV;
+        this.buttons = data.buttons;
+      })
+    }
+
+  }
+  

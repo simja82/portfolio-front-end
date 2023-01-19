@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
 import { LongshotsService } from 'src/assets/services/contents/longshots.service';
 
 @Component({
@@ -8,26 +7,23 @@ import { LongshotsService } from 'src/assets/services/contents/longshots.service
   templateUrl: './projects-longshots.component.html'
 })
 export class ProjectsLongshotsComponent  implements OnInit {
-  //Declaración de Array
+
+  //Array Longshots del Servicio Longshots
   longshots : any = [];
   
-  //Inyección de Service completo, Service de Series y Router para acceso a detalle
-    constructor (private audiovisualService:AudiovisualService, longshotsService:LongshotsService, private router: Router) 
-    { 
+  //Inyección de Service de Longshots y Router para acceso a detalle
+    constructor (private longshotsService:LongshotsService, private router: Router) 
+    {
+      //Información a mostrar
       this.longshots = longshotsService.getLongshots();
     }
 
+    //Ruta a Detalle
     showLongshot(id: number) {
-      this.router.navigate(['audiovisual/projects/longshots/longshot', id]);
+      this.router.navigate(['audiovisual/projects/longshots/longshot', id-1]);
     }
 
-    ngOnInit(): void { 
-      //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
-        //Información a mostrar
-        this.longshots = data.longshots;
-      })
-    }
+    ngOnInit(): void { }
   
   }
   

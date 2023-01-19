@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-profile',
   templateUrl: './audiovisual-profile.component.html'
 })
 export class AudiovisualProfileComponent implements OnInit {
-//Declaración de Array
-profile : any = [];
+
+//Array Audiovisual Profile
+audiovisualProfile : any = [];
 
 //Inyección de Service
-  constructor (private audiovisualService:AudiovisualService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.audiovisualService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.profile = data.profile;
+      this.audiovisualProfile = data.audiovisualProfile;
     })
   }
 

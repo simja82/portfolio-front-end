@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DashboardService } from 'src/assets/services/dashboard.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-dashboard-audiovisual',
@@ -7,19 +7,20 @@ import { DashboardService } from 'src/assets/services/dashboard.service';
   styleUrls: ['./dashboard-audiovisual.component.css']
 })
 export class DashboardAudiovisualComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Audiovisual
   audiovisual : any = [];
   
   //Variable del Componente
   title = "Audiovisual";
 
   //Inyección de Service
-  constructor (private dashboardService:DashboardService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.dashboardService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.audiovisual = data.audiovisual;
     })

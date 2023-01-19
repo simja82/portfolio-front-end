@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-i-want',
@@ -7,18 +7,22 @@ import { AudiovisualService } from 'src/assets/services/audiovisual.service';
   styleUrls: ['./i-want.component.css']
 })
 export class IWantComponent implements OnInit {
-  //Declaración de Array
-  iwant : any = [];
+
+  //Array I Want
+  iWant : any = [];
+
+  //Array Buttons
+  buttons : any = [];
   
   //Inyección de Service
-    constructor (private audiovisualService:AudiovisualService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.iwant = data.iwant;
+        this.iWant = data.iWant;
       })
     }
   

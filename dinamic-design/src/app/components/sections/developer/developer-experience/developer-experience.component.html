@@ -1,6 +1,6 @@
 <section class="experience mt-5 pt-5">
     <div class="container w-75">
-        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-wrench"></i> <span class="text-orange text-center ms-3"> {{title}}</span></h3>
+        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-wrench"></i> <span class="text-orange text-center ms-3"> {{sections.experiences}}</span></h3>
         <div *ngFor="let job of experiences" class="card ms-auto me-auto my-3">          
             <div class="row">
                 <div class="col-md-5">
@@ -17,9 +17,9 @@
                         <p class="card-text">{{job.textDescription}}</p>
                         <h6>{{job.tasks}}</h6>
                         <ul class="list-group mt-4 pt-2">
-                            <li class="list-group-item">{{job.one}}</li>
-                            <li class="list-group-item">{{job.two}}</li>
-                            <li class="list-group-item">{{job.three}}</li>
+                            <li class="list-group-item">{{job.taskOne}}</li>
+                            <li class="list-group-item">{{job.taskTwo}}</li>
+                            <li class="list-group-item">{{job.taskThree}}</li>
                         </ul>
                     </div>
                 </div>  

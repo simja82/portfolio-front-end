@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-three',
   templateUrl: './audiovisual-three.component.html'
 })
 export class AudiovisualThreeComponent implements OnInit {
-  //Declaración de Array
-  three : any = [];
+
+  //Array Divisors
+  divisors : any = [];
   
   //Inyección de Service
-  constructor (private audiovisualService:AudiovisualService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.audiovisualService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.three = data.three;
+      this.divisors = data.divisors;
     })
   }
   

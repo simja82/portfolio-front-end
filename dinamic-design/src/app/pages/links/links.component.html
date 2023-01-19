@@ -1,4 +1,4 @@
-<section class="background" [class.links] = "photo">
+<section class="background" [ngStyle]="{'background-image': 'url(' + banners[4].image + ')'}"> 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -7,7 +7,7 @@
     
     <!-- Plus -->
     <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+        <a class="plus" [attr.data-tooltip]="banners[4].description">
             <app-white-plus></app-white-plus>
         </a>   
     </div>
@@ -15,27 +15,27 @@
     <!-- Enlace -->
     <div class="text-center pt-5 text-white">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 *ngFor="let title of links" class="hero pt-5">{{title.hero}}</h1>
+            <h1 class="hero pt-5">{{heroes[4].hero}}</h1>
         </div>
         <div class="col-6 m-auto mb-5">
-            <h5 *ngFor="let subtitle of links" class="hero">{{subtitle.subhero}}</h5>
+            <h5 class="hero">{{heroes[4].subhero}}</h5>
         </div>
         <a routerLink="/audiovisual/projects">
-            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg me-5">{{button.projects}}</button>
+            <button type="button" class="btn btn-outline-white btn-lg me-5">{{buttons.projects}}</button>
         </a>   
         <a routerLink="/audiovisual/samples">
-            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg ms-5 me-5">{{button.samples}}</button>
+            <button type="button" class="btn btn-outline-white btn-lg ms-5 me-5">{{buttons.samples}}</button>
         </a>      
         <a routerLink="/audiovisual/data">
-            <button *ngFor="let button of links" type="button" class="btn btn-outline-white btn-lg ms-5">{{button.data}}</button>
+            <button type="button" class="btn btn-outline-white btn-lg ms-5">{{buttons.data}}</button>
         </a>   
     </div>
 
-    <p *ngFor="let line of links" class="container w-75 m-auto pt-3 text-white text-center">
-        {{line.one}}<br>
-        {{line.two}}<br>
-        {{line.three}}<br>
-        {{line.four}}
+    <p class="container w-75 m-auto pt-3 text-white text-center">
+        {{phrases.linksOne}}<br>
+        {{phrases.linksTwo}}<br>
+        {{phrases.linksThree}}<br>
+        {{phrases.linksFour}}
     </p>
 
     <!-- Redes -->

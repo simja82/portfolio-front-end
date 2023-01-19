@@ -1,29 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-developer-references',
   templateUrl: './developer-references.component.html'
 })
 export class DeveloperReferencesComponent implements OnInit {
-  //Declaración de Array
+
+  //Array References
   references : any = [];
 
-  //Variable del Componente
-  title = "Dicen de mí..."
-  
+  //Array Sections
+  sections : any = [];
+
   //Inyección de Service
-    constructor (private developerService:DeveloperService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.developerService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
         this.references = data.references;
+        this.sections = data.sections;
       })
     }
 
   }
   
-

@@ -10,117 +10,78 @@
                     <div class="container border">
                         <div class="row">
                             <div class="col-4 border-end bg-light pb-4 text-center">
-                                <img src="./../assets/img/developer/profile/profile.jpg" class="rounded-circle w-75 mt-4 mb-3">
-                                <h5><i class="fa-solid fa-feather-pointed"></i> Sobre mí</h5>
-                                <span>"Si tienes un sueño,<br>debes conservarlo.<br>Si quieres algo<br>sal a buscarlo,<br>y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>
+                                <img [src]="profileCV.photo" class="rounded-circle w-75 mt-4 mb-3">
+                                <h5><i class="fa-solid fa-feather-pointed"></i> {{sectionsCV.about}}</h5>
+                                <span>{{profileCV.phraseOne}}<br>{{profileCV.phraseTwo}}<br>{{profileCV.phraseThree}}<br>{{profileCV.phraseFour}}<br>{{profileCV.phraseFive}}<br><i>{{profileCV.author}}</i><br>{{profileCV.credit}}</span>
                                 <hr>
-                                <h5>Educación <i class="fa-solid fa-graduation-cap"></i></h5>
-                                <div>
-                                    <span>yyyy</span> - <span>yyyy</span><br>
-                                    <strong>TÍTULO</strong>
-                                    <p>Institución</p> 
-                                </div>
-                                <div>
-                                    <span>yyyy</span> - <span>yyyy</span><br>
-                                    <strong>TÍTULO</strong>
-                                    <p>Institución</p> 
-                                </div>
-                                <div>
-                                    <span>yyyy</span> - <span>yyyy</span><br>
-                                    <strong>TÍTULO</strong>
-                                    <p>Institución</p> 
+                                <h5>{{sectionsCV.education}} <i class="fa-solid fa-graduation-cap"></i></h5>
+                                <div *ngFor="let education of educationCV">
+                                    <span>{{education.starting}}</span> - <span>{{education.ending}}</span><br>
+                                    <strong>{{education.title}}</strong>
+                                    <p>{{education.institution}}</p> 
                                 </div>
                                 <hr>
-                                <h5 class="pb-2">Habilidades</h5>
-                                <p><i class="fa-brands fa-bootstrap"></i> Bootstrap</p>
-                                <p><i class="fa-brands fa-angular"></i> Angular</p>
-                                <p><i class="fa-brands fa-html5"></i> HTML</p>
-                                <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
-                                <p><i class="fa-solid fa-leaf"></i> SpringBoot</p>
-                                <p><i class="fa-brands fa-java"></i> Java</p>
+                                <h5 class="pb-2">{{sectionsCV.skills}}</h5>
+                                <p *ngFor="let technical of technicalsCV"><i [class]="technical.icon"></i> {{technical.technology}}</p>
                                 <hr class="w-50 m-auto">
                                 <div class="pt-3">
-                                    <p>Liderazgo</p>
-                                    <p>Proactividad</p>
-                                    <p>Comunicación</p>
+                                    <p *ngFor="let skill of softsCV">{{skill.skill}}</p>
                                 </div>
                                 <hr>
-                                <h5>Idiomas <i class="fa-solid fa-earth-americas"></i></h5>
-                                <p>Francés C1</p>
-                                <p>Inglés B1</p>
+                                <h5>{{sectionsCV.languages}} <i class="fa-solid fa-earth-americas"></i></h5>
+                                <p *ngFor="let language of languagesCV">{{language.language}} {{language.level}}</p>
                                 <hr>
-                                <h5 class="pt-2">Hobbies</h5>
-                                <i class="fa-solid fa-volleyball mx-1"></i>
-                                <i class="fa-solid fa-bicycle mx-1"></i>
-                                <i class="fa-solid fa-chess-queen mx-1"></i>
-                                <i class="fa-solid fa-train mx-1"></i>
+                                <h5 class="pt-2">{{sectionsCV.hobbies}}</h5>
+                                <i *ngFor="let hobby of hobbiesCV" [class]="hobby.icon" class="mx-1"></i>
                             </div>
                             <div class="col-8">
                                 <div class="m-3 pt-3">
-                                    <h2>Nombre y Apellido</h2>
-                                    <h4>Puesto</h4>
+                                    <h2>{{profileCV.fullname}}</h2>
+                                    <h4>{{profileCV.position}}</h4>
                                     <div class="pt-4">
-                                        <h5>Contacto</h5>
-                                        <p><i class="fa-solid fa-phone"></i> Teléfono</p>
-                                        <p><i class="fa-solid fa-envelope"></i> E-mail</p>
-                                        <p><i class="fa-solid fa-user-clock"></i> Disponibilidad</p>
+                                        <h5>{{sectionsCV.contact}}</h5>
+                                        <p *ngFor="let info of contactCV"><i [class]="info.icon"></i> {{info.data}}</p>
+                                    
                                     </div>
                                     <hr>
                                     <div class="pt-2 pb-3">
-                                        <h5 class="pb-3">Redes</h5>
-                                        <h5 class="text-center">
-                                            <i class="fa-brands fa-github"></i> /simja82 &nbsp;&nbsp;
-                                            <i class="fa-brands fa-codepen"></i> /simja82 &nbsp;&nbsp;
-                                            <i class="fa-brands fa-linkedin-in"></i> /simja82 &nbsp;
-                                        </h5>
+                                        <h5 class="pb-3">{{sectionsCV.social}}</h5>
+                                        <div class="row">
+                                            <div *ngFor="let social of socialCV" class="col-4">
+                                                <h5 class="text-center"><i [class]="social.icon"></i> {{social.user}}</h5>
+                                            </div>
+                                        </div>
                                     </div>
                                     <hr>
                                     <div class="pt-2">
-                                        <h5>Experiencia</h5>
-                                        <strong>Lugar</strong>, <span>Puesto</span>
-                                        <p>MES de yyyy - MES de yyyy</p>
-                                        <span>Descripción Breve</span>
-                                        <p>
-                                            Tareas:
-                                            <br>
-                                            Comunicación Interna, Construcción de Documentación General no específica
-                                            de Áreas para todos los Integrantes Proveeduría de Formación Grupal en
-                                            General, Toma de Decisiones de Nivel Superior y Coordinación de todas las
-                                            Áreas en su conjunto.
-                                        </p>
-                                        <strong>Lugar</strong>, <span>Puesto</span>
-                                        <p>MES de yyyy - MES de yyyy</p>
-                                        <span>Descripción Breve</span>
-                                        <p>
-                                            Tareas:
-                                            <br>
-                                            Comunicación Interna, Construcción de Documentación General no específica
-                                            de Áreas para todos los Integrantes Proveeduría de Formación Grupal en
-                                            General, Toma de Decisiones de Nivel Superior y Coordinación de todas las
-                                            Áreas en su conjunto.
-                                        </p>
+                                        <h5>{{sectionsCV.experience}}</h5>
+                                        <div *ngFor="let experience of experienceCV" class="experience">
+                                            <strong>{{experience.place}}</strong>, <span>{{experience.position}}</span>
+                                            <p>{{experience.starting}} - {{experience.ending}}</p>
+                                            <span>{{experience.description}}</span>
+                                            <p>
+                                                {{experience.taskTitle}}
+                                                <br>
+                                                {{experience.tasks}}
+                                            </p>    
+                                        </div>
                                     </div>
                                     <hr>
                                     <div class="pt-2">
-                                        <h5>Proyectos</h5>
-                                        <strong>Lugar</strong>, <span>Puesto</span>
-                                        <p>MES de yyyy - MES de yyyy</p>
-                                        <span>Descripción Breve</span>
+                                        <h5>{{sectionsCV.projects}}</h5>
+                                        <strong>{{projectsCV.place}}</strong>, <span>{{projectsCV.position}}</span>
+                                        <p>{{projectsCV.starting}} - {{projectsCV.ending}}</p>
+                                        <span>{{projectsCV.description}}</span>
                                         <p>
-                                            Tareas:
+                                            {{projectsCV.tasksTitle}}
                                             <br>
-                                            Comunicación Interna, Construcción de Documentación General no específica
-                                            de Áreas para todos los Integrantes Proveeduría de Formación Grupal en
-                                            General, Toma de Decisiones de Nivel Superior y Coordinación de todas las
-                                            Áreas en su conjunto.
+                                            {{projectsCV.tasks}}
                                         </p>
                                     </div>
                                     <hr>
                                     <div class="pt-2">
-                                        <h5 class="pb-3">Referencias</h5>
-                                        <p><i class="fa-solid fa-user"></i> Nombre y Apellido</p>
-                                        <p><i class="fa-solid fa-phone"></i> Teléfono</p>
-                                        <p><i class="fa-solid fa-envelope"></i> E-mail</p>
+                                        <h5 class="pb-3">{{sectionsCV.references}}</h5>
+                                        <p *ngFor="let item of referencesCV"><i [class]="item.icon"></i> {{item.data}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -128,18 +89,18 @@
                     </div>
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                <button class="btn btn-black-mini" data-bs-target="#photoCVModal" data-bs-toggle="modal">Foto</button>
-                <button class="btn btn-black-mini" data-bs-target="#infoCVModal" data-bs-toggle="modal">Info</button>
-                <button class="btn btn-black-mini" data-bs-target="#educationCVModal" data-bs-toggle="modal">Educación</button>
-                <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal">Skills</button>
-                <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal">Hobbies</button>
-                <button class="btn btn-black-mini" data-bs-target="#nameCVModal" data-bs-toggle="modal">Nombre</button>
-                <button class="btn btn-black-mini" data-bs-target="#positionCVModal" data-bs-toggle="modal">Puesto</button>
-                <button class="btn btn-black-mini" data-bs-target="#contactCVModal" data-bs-toggle="modal">Contacto</button>
-                <button class="btn btn-black-mini" data-bs-target="#socialCVModal" data-bs-toggle="modal">Redes</button>
-                <button class="btn btn-black-mini" data-bs-target="#experienceCVModal" data-bs-toggle="modal">Experiencia</button>
-                <button class="btn btn-black-mini" data-bs-target="#projectsCVModal" data-bs-toggle="modal">Proyectos</button>
-                <button class="btn btn-black-mini" data-bs-target="#referencesCVModal" data-bs-toggle="modal">Referencias</button>
+                <button class="btn btn-black-mini" data-bs-target="#photoCVModal" data-bs-toggle="modal">{{sectionsCV.photo}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#infoCVModal" data-bs-toggle="modal">{{sectionsCV.info}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#educationCVModal" data-bs-toggle="modal">{{sectionsCV.education}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal">{{sectionsCV.skills}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal">{{sectionsCV.hobbies}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#nameCVModal" data-bs-toggle="modal">{{sectionsCV.name}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#positionCVModal" data-bs-toggle="modal">{{sectionsCV.position}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#contactCVModal" data-bs-toggle="modal">{{sectionsCV.contact}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#socialCVModal" data-bs-toggle="modal">{{sectionsCV.social}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#experienceCVModal" data-bs-toggle="modal">{{sectionsCV.experience}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#projectsCVModal" data-bs-toggle="modal">{{sectionsCV.projects}}</button>
+                <button class="btn btn-black-mini" data-bs-target="#referencesCVModal" data-bs-toggle="modal">{{sectionsCV.references}}</button>
                 </div>
             </div>
         </div>

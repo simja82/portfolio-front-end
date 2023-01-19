@@ -12,32 +12,32 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">  
-                                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Presentación</span></h4>
+                                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{audiovisualPresentation.title}}</span></h4>
                                         <p class="w-75 text-center m-auto mb-3">
-                                            Antes te conté que no tenemos un CV como tal... así de los tradicionales... 
+                                            {{audiovisualPresentation.lineOne}} 
                                             <br><br>
-                                            Para mostrar quiénes somos, en la Industria Audiovisual, se usan documentos...
+                                            {{audiovisualPresentation.lineTwo}}
                                             <br><br>
-                                            En los enlaces pueden verse los míos...
+                                            {{audiovisualPresentation.lineThree}}
                                         </p>
                                         <div class="container mt-2 pt-5 pb-2 w-75 m-auto">
                                             <div class="row d-flex justify-content-center">
                                                 <div class="col-4 text-center">
-                                                    <i class="fa-solid fa-file-lines fa-3x mb-3"></i>
-                                                    <h4>Minibio</h4>
+                                                    <i [class]="minibio.icon" class="fa-3x mb-3"></i>
+                                                    <h4>{{minibio.title}}</h4>
                                                 </div>
                                                 <div class="col-4 text-center">
-                                                    <i class="fa-solid fa-file fa-3x mb-3"></i>
-                                                    <h4>My Work</h4>
+                                                    <i [class]="myWork.icon" class="fa-3x mb-3"></i>
+                                                    <h4>{{myWork.title}}</h4>
                                                 </div>
                                                 <div class="col-4 text-center">
-                                                    <i class="fa-solid fa-fire-flame-curved fa-3x mb-3"></i>
-                                                    <h4>I Want</h4>
+                                                    <i [class]="iWant.icon" class="fa-3x mb-3"></i>
+                                                    <h4>{{iWant.title}}</h4>
                                                 </div>
                                             </div>     
                                         </div>   
-                                        <h6 class="w-75 text-center m-auto pt-4 mb-2">Por convención tienen nombre en inglés...</h6>
-                                        <p class="w-75 text-center m-auto mb-2">Y son los únicos que se usan para una presentación...</p>                
+                                        <h6 class="w-75 text-center m-auto pt-4 mb-2">{{audiovisualPresentation.subtitle}}</h6>
+                                        <p class="w-75 text-center m-auto mb-2">{{audiovisualPresentation.paragraph}}</p>                
                                     </div>
                                 </div>
                             </div>
@@ -50,16 +50,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <h4 class="text-center">Minibio</h4>
+                                <h4 class="text-center">{{minibio.title}}</h4>
                                 <div class="card">
                                     <div class="card-body">      
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
+                                        <p class="card-text">{{minibio.paragraphOne}}</p>
+                                        <p class="card-text">{{minibio.paragraphTwo}}</p>
+                                        <p class="card-text">{{minibio.paragraphThree}}</p>
+                                        <p class="card-text">{{minibio.paragraphFour}}</p>
+                                        <p class="card-text">{{minibio.paragraphFive}}</p>
+                                        <p class="card-text">{{minibio.paragraphSix}}</p>
+                                        <p class="card-text">{{minibio.paragraphSeven}}</p>
                                     </div>
                                     <div class="d-flex justify-content-center mb-3">
                                         <button class="btn btn-black-mini"><i class="fa-solid fa-download"></i></button>
@@ -75,16 +75,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <h4 class="text-center">My Work</h4>
+                                <h4 class="text-center">{{myWork.title}}</h4>
                                 <div class="card">
                                     <div class="card-body">      
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
+                                        <p class="card-text">{{myWork.paragraphOne}}</p>
+                                        <p class="card-text">{{myWork.paragraphTwo}}</p>
+                                        <p class="card-text">{{myWork.paragraphThree}}</p>
+                                        <p class="card-text">{{myWork.paragraphFour}}</p>
+                                        <p class="card-text">{{myWork.paragraphFive}}</p>
+                                        <p class="card-text">{{myWork.paragraphSix}}</p>
+                                        <p class="card-text">{{myWork.paragraphSeven}}</p>
                                     </div>
                                     <div class="d-flex justify-content-center mb-3">
                                         <button class="btn btn-black-mini"><i class="fa-solid fa-download"></i></button>
@@ -100,16 +100,16 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
-                                <h4 class="text-center">I Want</h4>
+                                <h4 class="text-center">{{iWant.title}}</h4>
                                 <div class="card">
                                     <div class="card-body">      
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
-                                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!</p>
+                                        <p class="card-text">{{iWant.paragraphOne}}</p>
+                                        <p class="card-text">{{iWant.paragraphTwo}}</p>
+                                        <p class="card-text">{{iWant.paragraphThree}}</p>
+                                        <p class="card-text">{{iWant.paragraphFour}}</p>
+                                        <p class="card-text">{{iWant.paragraphFive}}</p>
+                                        <p class="card-text">{{iWant.paragraphSix}}</p>
+                                        <p class="card-text">{{iWant.paragraphSeven}}</p>
                                     </div>
                                     <div class="d-flex justify-content-center mb-3">
                                         <button class="btn btn-black-mini"><i class="fa-solid fa-download"></i></button>
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-
+    
     <!-- CRUD Modals -->
     <app-edit-audiovisual-presentation-modal></app-edit-audiovisual-presentation-modal>
     <app-edit-audiovisual-minibio-modal></app-edit-audiovisual-minibio-modal>

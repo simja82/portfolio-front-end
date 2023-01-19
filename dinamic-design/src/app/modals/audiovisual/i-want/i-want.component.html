@@ -8,19 +8,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h4 *ngFor="let description of iwant" class="text-center">{{description.description}}</h4>
+                            <h4 class="text-center">{{iWant.title}}</h4>
                             <div class="card">
                                 <div class="card-body">      
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.one}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.two}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.three}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.four}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.five}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.six}}</p>
-                                    <p *ngFor="let paragraph of iwant" class="card-text">{{paragraph.seven}}</p>
+                                    <p class="card-text">{{iWant.paragraphOne}}</p>
+                                    <p class="card-text">{{iWant.paragraphTwo}}</p>
+                                    <p class="card-text">{{iWant.paragraphThree}}</p>
+                                    <p class="card-text">{{iWant.paragraphFour}}</p>
+                                    <p class="card-text">{{iWant.paragraphFive}}</p>
+                                    <p class="card-text">{{iWant.paragraphSix}}</p>
+                                    <p class="card-text">{{iWant.paragraphSeven}}</p>
                                 </div>
                                 <div class="d-flex justify-content-center mb-3">
-                                    <a href="./../assets/files/iwant.pdf" class="btn btn-black-mini" download="I Want.pdf"><i class="fa-solid fa-download"></i></a>
+                                    <a [href]="iWant.document" target="_blank" class="btn btn-black-mini" download="I Want.pdf"><i class="fa-solid fa-download"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
             </div>
         </div>
     </div>

@@ -1,4 +1,4 @@
-<audio src="./../../../assets/audio/synapse.mp3" autoplay="autoplay"></audio>
+<audio [src]="music.synapse" autoplay="autoplay"></audio>
 
 <section class="background credits">
     <!-- Navbar -->
@@ -11,21 +11,21 @@
     <app-white-general></app-white-general>
 
     <!--Credits -->
-    <div *ngFor="let item of credits" class="wrapper bg-black text-white">
+    <div class="wrapper bg-black text-white">
         <div class='credit'>
             <div class="row mb-5 pb-5">
-                <div class='title text-700'>{{item.title}}</div>
+                <div class='title text-700'>{{credits.title}}</div>
                 <div class="col-12 pb-5">
                     <div class='quote'>
-                        <blockquote class='text-700'>{{item.type}}</blockquote>
-                        <h5 class='text-700'>{{item.based}}</h5>
+                        <blockquote class='text-700'>{{credits.type}}</blockquote>
+                        <h5 class='text-700'>{{credits.based}}</h5>
                     </div>
                 </div>
             </div>
-            <div class='feedback text-700'>{{item.saying}}</div>
+            <div class='feedback text-700'>{{credits.saying}}</div>
             <div class="container mb-5 pb-5">
                 <app-audiovisual-credits></app-audiovisual-credits>
-                <div class='name text-uppercase pb-5'><i class="fa-regular fa-copyright text-700"></i> {{item.rights}}</div>
+                <div class='name text-uppercase pb-5'><i [class]="credits.copyright" class="text-700"></i> {{credits.register}}</div>
             </div>
         </div>
     </div>

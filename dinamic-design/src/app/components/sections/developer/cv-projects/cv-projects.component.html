@@ -1,13 +1,11 @@
 <div class="pt-2">
-    <h5 class="text-orange text-uppercase">{{title}}</h5>
+    <h5 class="text-orange text-uppercase">{{sectionsCV.projects}}</h5>
 </div>
-<div *ngFor="let info of projectsCV">
-    <strong>{{info.place}}</strong>, <span>{{info.position}}</span>
-    <p>{{info.starting}} - {{info.ending}}</p>
-    <span>{{info.description}}</span>
-    <p>
-        {{info.tasksTitle}}
-        <br>
-        {{info.tasks}}
-    </p>
-</div>
+<strong>{{projectsCV.place}}</strong>, <span>{{projectsCV.position}}</span>
+<p>{{projectsCV.starting}} - {{projectsCV.ending}}</p>
+<span>{{projectsCV.description}}</span>
+<p>
+    {{projectsCV.tasksTitle}}
+    <br>
+    {{projectsCV.tasks}}
+</p>

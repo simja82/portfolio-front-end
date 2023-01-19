@@ -1,4 +1,4 @@
-<section class="background" [class.more] = "photo">
+<section class="background" [ngStyle]="{'background-image': 'url(' + banners[5].image + ')'}">  
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-black-logo></app-black-logo>
@@ -7,7 +7,7 @@
 
     <!-- Plus -->
     <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+        <a class="plus" [attr.data-tooltip]="banners[5].description">
             <app-black-plus></app-black-plus>
         </a>         
     </div>
@@ -15,13 +15,14 @@
     <!-- Enlace -->
     <div class="text-center pt-5">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 *ngFor="let title of plus" class="hero text-top">{{title.hero}}</h1>
+            <h1 class="hero text-top">{{heroes[5].hero}}</h1>
         </div>
         <div class="col-12 mb-5">
-            <h4 *ngFor="let subtitle of plus" class="hero">{{subtitle.subhero}}</h4>
+            <h4 class="hero">{{heroes[5].subhero}}</h4>
         </div>
+        <!-- Llamar a Modal de Mensaje -->
         <a routerLink="/">
-            <button *ngFor="let button of plus" type="button" class="btn btn-outline-black btn-lg btn-width">{{button.return}}</button>
+            <button type="button" class="btn btn-outline-black btn-lg btn-width">{{buttons.message}}</button>
         </a>         
     </div>
 

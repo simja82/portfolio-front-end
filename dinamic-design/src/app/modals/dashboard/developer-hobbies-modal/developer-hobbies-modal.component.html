@@ -9,90 +9,10 @@
                 <div class="modal-body">
                     <div class="card mb-3">
                         <div class="row g-4">
-                            <div class="col-4 mt-4">
+                            <div *ngFor="let hobby of hobbies" class="col-4 mt-4">
                                 <div class="text-center">
-                                    <h6><i class="fa-solid fa-feather-pointed fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Escribir</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-book fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Leer</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-film fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Cine</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-glasses fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Aprender</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-earth-americas fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Idiomas</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-train fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Viajar</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-chess-queen fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Ajedrez</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-volleyball fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Volley</h6>       
-                                    <div class="d-flex justify-content-center my-3">
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="col-4 mt-4">
-                                <div class="text-center">
-                                    <h6><i class="fa-solid fa-person-biking fa-3x mt-4 pt-s"></i></h6>
-                                    <h6 class="mt-1">Bici</h6>       
+                                    <h6><i [class]="hobby.icon" class="fa-3x mt-4 pt-s"></i></h6>
+                                    <h6 class="mt-1">{{hobby.description}}</h6>       
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperHobbyModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
@@ -107,7 +27,7 @@
                     <button class="btn btn-black-extra-mini" data-bs-target="#createDeveloperHobbyModal" data-bs-toggle="modal" aria-label="Create"><i class="fa-solid fa-circle-plus"></i></button>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
                 </div>
             </div>
         </div>

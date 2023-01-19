@@ -3,23 +3,20 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="projectsCVModal">Proyectos</h1>
+                    <h1 class="modal-title fs-5" id="projectsCVModal">{{sectionsCV.projects}} CV</h1>
                     <i class="fa-solid fa-rotate-left" data-bs-target="#developerCVModal" data-bs-toggle="modal" aria-label="Back"></i>
                 </div>
                 <div class="modal-body">
                     <div class="card mb-3">
                         <div class="row g-4">
                             <div class="col-12 px-5 pt-4 pb-2">
-                                <strong>Lugar</strong>, <span>Puesto</span>
-                                <p>MES de yyyy - MES de yyyy</p>
-                                <span>Descripción Breve</span>
+                                <strong>{{projectsCV.place}}</strong>, <span>{{projectsCV.position}}</span>
+                                <p>{{projectsCV.starting}} - {{projectsCV.ending}}</p>
+                                <span>{{projectsCV.description}}</span>
                                 <p>
-                                    Tareas:
+                                    {{projectsCV.tasksTitle}}
                                     <br>
-                                    Comunicación Interna, Construcción de Documentación General no específica
-                                    de Áreas para todos los Integrantes Proveeduría de Formación Grupal en
-                                    General, Toma de Decisiones de Nivel Superior y Coordinación de todas las
-                                    Áreas en su conjunto.
+                                    {{projectsCV.tasks}}
                                 </p>
                             </div>
                         </div>
@@ -29,7 +26,7 @@
                     </div>    
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#developerCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
+                    <button class="btn btn-black-mini" data-bs-target="#developerCVModal" data-bs-toggle="modal" aria-label="Back">{{buttons.cancel}}</button>
                 </div>
             </div>
         </div>

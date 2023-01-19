@@ -1,12 +1,12 @@
 <section class="quotes d-flex justify-content-center w-75 m-auto text-center mb-5">
     <div class="container">
-        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Quotes</span></h3>                                    
-        <h6 *ngFor="let line of quotes">
-            {{line.one}}
+        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{quotesIntro.title}}</span></h3>                                    
+        <h6>
+            {{quotesIntro.lineOne}}
             <br><br>
-            {{line.two}}
+            {{quotesIntro.lineTwo}}
             <br><br>    
-            {{line.three}}
+            {{quotesIntro.lineThree}}
         </h6>
     </div>        
 </section>
@@ -14,11 +14,11 @@
 <section>
     <div class="container">
         <div class="row">
-            <div *ngFor="let phrase of phrases" class="col-12 mt-2 mb-1">
+            <div *ngFor="let quote of quotes" class="col-12 mt-2 mb-1">
                 <div class="card">
-                    <h4 class="d-flex justify-content-center mt-4"><i [class]="phrase.icon"></i></h4>                                                                     
+                    <h4 class="d-flex justify-content-center mt-4"><i [class]="quote.icon" class="fa-2x"></i></h4>                                                                     
                     <div class="text-center mb-2">
-                        <span class="text-center">{{phrase.one}}<br>{{phrase.two}}<br><i>{{phrase.author}}</i><br>{{phrase.credit}}</span>    
+                        <span class="text-center">{{quote.one}}<br>{{quote.two}}<br><i>{{quote.author}}</i><br>{{quote.credit}}</span>    
                     </div>
                 </div>
             </div>

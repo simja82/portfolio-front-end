@@ -3,7 +3,7 @@
         <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="audiovisualModalLabel">Cierre</h1>
+                    <h1 class="modal-title fs-5" id="audiovisualModalLabel">{{closing.title}}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -14,13 +14,13 @@
                                     <div class="card-body">  
                                         <div class="container text-center">
                                             <p class="mt-5 mb-5">
-                                                Si querés trabajar conmigo podés contactarme...  
+                                                {{closing.lineOne}}  
                                                 <br><br>
-                                                Al alcance de unos pocos clicks, estoy en las redes sociales... 
+                                                {{closing.lineTwo}}
                                                 <br><br>
-                                                Gracias por visitarme!!!
+                                                {{closing.lineThree}}
                                                 <br><br>
-                                                <i class="fa-solid fa-signature fa-4x"></i>
+                                                <i [class]="closing.icon" class="fa-4x"></i>
                                             </p>
                                         </div>  
                                     </div>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
                 </div>
             </div>
         </div>

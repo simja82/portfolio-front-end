@@ -7,52 +7,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="text-center mb-3">Index</h5>
-                    <img src="./../assets/img/background/index.jpg" alt="index" title="index" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    <div *ngFor="let banner of banners" class="section-banner">
+                        <h5 class="text-center mb-3">{{banner.banner}}</h5>
+                        <img [src]="banner.image" alt="index" title="index" class="w-25 d-flex item-align-center m-auto">
+                        <p class="mt-3 mx-5 text-center">{{banner.description}}</p>
+                        <div class="d-flex justify-content-center mt-2 mb-3">
+                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+                        <hr class="w-75 m-auto mb-3">  
                     </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Intro</h5>
-                    <img src="./../assets/img/background/intro.jpg" alt="intro" title="intro" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div><hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Error</h5>
-                    <img src="./../assets/img/background/error.png" alt="error" title="error" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Login</h5>
-                    <img src="./../assets/img/background/login.jpg" alt="login" title="login" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Register</h5>
-                    <img src="./../assets/img/background/register.jpg" alt="register" title="register" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Links</h5>
-                    <img src="./../assets/img/background/links.jpg" alt="links" title="links" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Plus</h5>
-                    <img src="./../assets/img/background/plus.jpg" alt="plus" title="plus" class="w-25 d-flex item-align-center m-auto">
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-black-extra-mini" data-bs-target="#createBannerModal" data-bs-toggle="modal"><i class="fa-solid fa-circle-plus"></i></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -62,5 +27,6 @@
         </div>
     </div>
 
-    <!-- CRUD Modals -->
+    <!-- CRUD -->
+    <app-create-banner-modal></app-create-banner-modal>
     <app-edit-banner-modal></app-edit-banner-modal>

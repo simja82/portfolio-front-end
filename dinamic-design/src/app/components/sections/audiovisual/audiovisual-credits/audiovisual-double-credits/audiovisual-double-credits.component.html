@@ -1,8 +1,8 @@
 <div class="row">
-    <div *ngFor="let item of doubles" class="col-6">
+    <div *ngFor="let feedback of doubleCredits" class="col-6">
         <div class='quote'>
-            <blockquote class='text-700'>{{item.feedback}}</blockquote>
+            <blockquote class='text-700'>{{feedback.feedback}}</blockquote>
         </div>
-        <div class='name text-uppercase text-700'>{{item.name}}</div>
+        <div class='name text-uppercase text-700'>{{feedback.name}}</div>
     </div>
 </div>

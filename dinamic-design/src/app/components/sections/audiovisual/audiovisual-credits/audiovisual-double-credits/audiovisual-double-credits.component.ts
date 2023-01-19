@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { DoublesService } from 'src/assets/services/credits/doubles.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-double-credits',
   templateUrl: './audiovisual-double-credits.component.html'
 })
 export class AudiovisualDoubleCreditsComponent implements OnInit {
-  //Declaración de Array
-  doubles : any = [];
-  
+
+  //Array Double Credits
+  doubleCredits : any = [];
+
   //Inyección de Service
-    constructor (private doublesService:DoublesService) 
-    { 
-      this.doubles = doublesService.getDoubles();
-    }
+  constructor (private povService: POVService) { }
 
-    ngOnInit(): void { }
-  
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.povService.getData().subscribe(data => {
+      //Información a mostrar
+      this.doubleCredits = data.singleCredits;
+    })
   }
-  
 
+}

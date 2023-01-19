@@ -1,4 +1,4 @@
-<audio src="./../../../assets/audio/synapse.mp3" autoplay="autoplay"></audio>
+<audio [src]="music.synapse" autoplay="autoplay"></audio>
 
 <section class="background bloopers">
     <!-- Navbar -->
@@ -12,52 +12,52 @@
 
     <!-- Bloopers -->
     <div class="wrapper bg-black text-white">
-        <div *ngFor="let line of bloopers" class='credit'>
+        <div class='credit'>
             <div class="row mb-5 pb-5">
                 <div class='title text-700'>
-                    {{line.one}}
+                    {{bloopers.lineOne}}
                     <br>
-                    {{line.two}}
+                    {{bloopers.lineTwo}}
                 </div>
             </div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{line.three}}
+                {{bloopers.lineThree}}
                 <br>
-                {{line.four}}
+                {{bloopers.lineFour}}
             </div>
             <app-audiovisual-bloopers></app-audiovisual-bloopers>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{line.five}}
+                {{bloopers.lineFive}}
                 <br>
-                {{line.six}}
+                {{bloopers.lineSix}}
             </div>
             <div class="silence"></div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{line.seven}} 
+                {{bloopers.lineSeven}} 
                 <br>
-                {{line.eight}}
+                {{bloopers.lineEight}}
             </div>
             <div class="silence"></div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{line.nine}} 
+                {{bloopers.lineNine}} 
                 <br>
-                {{line.ten}}
+                {{bloopers.lineTen}}
             </div>
             <div class="cut"></div>
             <div class="row mt-5 pt-5 mb-5 pb-5">
                 <div class="bloopers">
                     <div class='feedback text-700 mt-5 pt-5'>
-                        {{line.thanks}}
+                        {{bloopers.thanks}}
                     </div>
                     <div class="col-12">
                         <div class='quote'>
-                            <span><i class="fa-solid fa-signature fa-3x text-white"></i></span>
+                            <span><i [class]="bloopers.signature" class="fa-3x text-white"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="ending"></div>
-            <div class='name text-uppercase pb-5'><i class="fa-regular fa-copyright text-700"></i> {{line.rights}}</div>
+            <div class='name text-uppercase pb-5'><i [class]="bloopers.rights" class="text-700"></i> {{bloopers.register}}</div>
         </div>
     </div>
 

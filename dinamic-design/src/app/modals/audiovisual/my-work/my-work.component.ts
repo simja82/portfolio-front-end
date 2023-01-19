@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-my-work',
@@ -7,18 +7,23 @@ import { AudiovisualService } from 'src/assets/services/audiovisual.service';
   styleUrls: ['./my-work.component.css']
 })
 export class MyWorkComponent implements OnInit {
-  //Declaración de Array
-  mywork : any = [];
+  
+  //Array My Work
+  myWork : any = [];
+
+  //Array Buttons
+  buttons : any = [];
   
   //Inyección de Service
-    constructor (private audiovisualService:AudiovisualService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.mywork = data.mywork;
+        this.myWork = data.myWork;
+        this.buttons = data.buttons;
       })
     }
   

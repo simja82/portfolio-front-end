@@ -1,10 +1,10 @@
 <section class="comments mt-5 pt-5">
     <div class="container w-75">
-        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-comments"></i> <span class="text-orange text-center ms-3"> {{title}}</span></h3>
+        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-comments"></i> <span class="text-orange text-center ms-3"> {{sections.references}}</span></h3>
         <div class="row">
             <div *ngFor="let reference of references" class="col-12 mb-3">
                 <div class="card">
-                    <h4 class="d-flex justify-content-center mt-4"><i [class]="reference.icon"></i></h4>                                                                     
+                    <h4 class="d-flex justify-content-center mt-4"><i [class]="reference.icon" class="fa-2x"></i></h4>                                                                     
                     <div class="text-center mb-4">
                         <span class="text-center">{{reference.one}}<br>{{reference.two}}<br><i>{{reference.fullname}}</i><br>{{reference.position}}</span>    
                     </div>

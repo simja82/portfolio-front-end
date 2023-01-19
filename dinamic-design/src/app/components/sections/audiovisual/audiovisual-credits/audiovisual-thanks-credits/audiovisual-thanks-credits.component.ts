@@ -1,25 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { ThanksService } from 'src/assets/services/credits/thanks.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-thanks-credits',
   templateUrl: './audiovisual-thanks-credits.component.html'
 })
 export class AudiovisualThanksCreditsComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Thanks
   thanks : any = [];
 
-  //Variable de Título
-  title = "Agradecimientos"
-  
-  //Inyección de Service
-    constructor (private thanksService:ThanksService) 
-    { 
-      this.thanks = thanksService.getThanks();
-    }
+  //Array Credits
+  credits : any = [];
 
-    ngOnInit(): void { }
-  
+  //Inyección de Service
+  constructor (private povService: POVService) { }
+
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.povService.getData().subscribe(data => {
+      //Información a mostrar
+      this.thanks = data.thanks;
+      this.credits = data.credits;
+    })
   }
-  
- 
+
+}

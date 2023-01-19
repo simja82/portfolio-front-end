@@ -7,7 +7,9 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./audiovisual.component.css']
 })
 export class AudiovisualComponent implements OnInit {
+  //Inyección de Title
   constructor (private title:Title) {
+    //Seteo de Title
     title.setTitle('Audiovisual Intro | Point of View')
   }
 

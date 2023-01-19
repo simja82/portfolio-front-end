@@ -1,23 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-data-list',
   templateUrl: './data-list.component.html'
 })
 export class DataListComponent implements OnInit {
-  //Declaración de Array
-  data : any = [];
+
+  //Array Data List
+  dataList : any = [];
   
   //Inyección de Service
-    constructor (private audiovisualService:AudiovisualService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.data = data.data;
+        this.dataList = data.dataList;
       })
     }
   

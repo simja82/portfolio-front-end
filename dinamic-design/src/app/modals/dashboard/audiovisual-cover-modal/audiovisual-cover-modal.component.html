@@ -1,0 +1,38 @@
+    <!-- Modal Cover -->
+    <div class="modal fade" id="audiovisualCoverModal" tabindex="-1" aria-labelledby="audiovisualCoverModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="audiovisualCoverModalLabel">Cover</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">      
+                                        <h3 class="text-center mt-5"><b>{{cover.title}}</b></h3>
+                                        <h6 class="text-center">{{cover.based}}</h6>
+                                        <h4 class="text-center pt-5">{{cover.draft}}</h4>
+                                        <div class="container w-75 m-auto pb-3">
+                                            <h6 class="mt-5"><b>{{cover.to}}</b></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button class="btn btn-black-extra-mini" data-bs-target="#editAudiovisualCoverModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-edit-audiovisual-cover-modal></app-edit-audiovisual-cover-modal>

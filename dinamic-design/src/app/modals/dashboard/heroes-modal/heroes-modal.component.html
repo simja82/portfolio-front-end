@@ -7,39 +7,17 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h5 class="text-center mb-3">Index</h5>
-                    <h6 class="text-center mb-3">Hero</h6>
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroesModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    <div *ngFor="let hero of heroes" class="section-banner">
+                        <h5 class="text-center mt-2 mb-3">{{hero.title}}</h5>
+                        <h5 class="text-center mb-3">{{hero.hero}}</h5>
+                        <p class="mt-3 mx-5 text-center">{{hero.subhero}}</p>
+                        <div class="d-flex justify-content-center mt-2 mb-3">
+                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                        </div>
+                        <hr class="w-75 m-auto mb-3">  
                     </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Intro</h5>
-                    <h6 class="text-center mb-3">Hero</h6>
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroesModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Error</h5>
-                    <h6 class="text-center mb-3">Hero</h6>
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroesModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Links</h5>
-                    <h6 class="text-center mb-3">Hero</h6>
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroesModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                    </div>
-                    <hr class="w-75 m-auto">
-                    <h5 class="text-center my-3">Plus</h5>
-                    <h6 class="text-center mb-3">Hero</h6>
-                    <p class="mt-3 mx-5 text-center">Lorem ipsum dolor</p>
-                    <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editHeroesModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-black-extra-mini" data-bs-target="#createHeroModal" data-bs-toggle="modal"><i class="fa-solid fa-circle-plus"></i></button>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -49,5 +27,6 @@
         </div>
     </div>
 
-    <!-- CRUD Modals -->
-    <app-edit-heroes-modal></app-edit-heroes-modal>
+    <!-- CRUD Modals's-->
+    <app-create-hero-modal></app-create-hero-modal>
+    <app-edit-hero-modal></app-edit-hero-modal>

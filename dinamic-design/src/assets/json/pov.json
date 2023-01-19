@@ -1,0 +1,1511 @@
+{
+    "logo" :
+    {
+        "image" : "https://i.ibb.co/bQkTZb2/logo.png",
+        "alt" : "Argentina Programa"
+    },
+    "banners" :
+    [
+        {
+            "id" : 1,
+            "banner" : "Index",
+            "image" : "https://i.ibb.co/sP8hFWX/index.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 2,
+            "banner" : "Intro",
+            "image" : "https://i.ibb.co/MDJPmXs/intro.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 3,
+            "banner" : "Error",
+            "image" : "https://i.ibb.co/DRsGvBG/error.png",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 4,
+            "banner" : "Register",
+            "image" : "https://i.ibb.co/rHd3Hgt/register.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 5,
+            "banner" : "Links",
+            "image" : "https://i.ibb.co/JR1q02h/links.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 6,
+            "banner" : "Plus",
+            "image" : "https://i.ibb.co/tPk0dMj/plus.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        },
+        {
+            "id" : 7,
+            "banner" : "Login",
+            "image" : "https://i.ibb.co/z5Ynqvh/login.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+        }
+    ],
+    "heroes" : 
+    [
+        {
+            "id" : 1,
+            "title" : "Index",
+            "hero" : "Hola!!!",
+            "subhero" : "Me ves?"
+        },
+        {
+            "id" : 2,
+            "title" : "Intro",
+            "hero" : "Llegaste!!!",
+            "subhero" : "Te invito a recorrer mi historia de acuerdo a como te interese conocerme... Te animás?"
+        },
+        {
+            "id" : 3,
+            "title" : "Error",
+            "hero" : "Oops!!!",
+            "subhero":"Algo no salió bien..."
+        },
+        {
+            "id" : 4,
+            "title" : "Register",
+            "hero" : "Próximamente",
+            "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles..."
+        },
+        {
+            "id" : 5,
+            "title" : "Links",
+            "hero" : "Epa...",
+            "subhero" :"Parece que encontraste un atajo... Adonde te gustaría ir?"
+        },
+        {
+            "id" : 6,
+            "title" : "Plus",
+            "hero" :"¿Le diste click al ícono de más?",
+            "subhero" :"Escribime y dejame saber qué puedo ofrecerte..."
+        }
+    ],
+    "buttons" : 
+    {
+        "enter" : "Entrar",
+        "return" : "Volver",
+        "projects" : "Proyectos",
+        "samples" : "Muestras",
+        "data" : "Data",
+        "audiovisual" : "Audiovisual",
+        "developer" : "Developer",
+        "close" : "Cerrar",
+        "message" : "Mensaje",
+        "logout" : "Logout",
+        "cancel" : "Cancelar"
+    },
+    "phrases" :
+    {
+        "linksOne" : "En Proyectos vas a poder ver mis Proyectos, ",
+        "linksTwo" : "en Muestras descargar archivos que son parte de Proyectos ",
+        "linksThree" : "y en Data vas a encontrar documentos de Presentación y Muestras ",
+        "linksFour" : "-esto es algo así como un CV pero de la Industria Audiovisual-",
+        "more" : "Más."
+    },
+    "helpers" :    
+    {
+        "emailHelp" : "Tu email no será compartido con nadie jamás.",
+        "registerHelp" : "Aún no tienes una cuenta?"
+    },
+    "forms" :
+    {
+       "message" : "Mensaje",
+       "email" : "Email",
+       "password" : "Password"
+    },
+    "socialGeneral" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-facebook-f",
+            "link" : "https://facebook.com"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-linkedin-in",
+            "link" : "https://linkedin.com"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-twitter",
+            "link" : "https://twitter.com"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-brands fa-instagram",
+            "link" : "https://instagram.com"
+        }
+    ],
+    "socialAudiovisual" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-imdb",
+            "link" : "https://www.imdb.com"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-twitter",
+            "link" : "https://www.twitter.com"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-facebook-f",
+            "link" : "https://www.facebook.com"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-brands fa-linkedin-in",
+            "link" : "https://www.linkedin.com"
+        }
+    ],
+    "socialDeveloper" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-github",
+            "link" : "https://github.com"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-codepen",
+            "link" : "https://codepen.com"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-linkedin-in",
+            "link" : "https://linkedin.com"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-brands fa-instagram",
+            "link" : "https://instagram.com"
+        }
+    ],
+    "cover" :
+    {
+        "title" : "Point of View",
+        "based" : "basado en una historia real",
+        "draft" : "Primer Borrador",
+        "to" : "AL VISITANTE"
+    },
+    "divisors" :
+    [
+        {
+            "id" : 1,
+            "order" : "Divisor Uno",
+            "lineOne" : "Y sí, ésta es la historia de mi vida aunque...",
+            "lineTwo" : "¿Por qué contarla de ésta forma y no como tradicionalmente se cuenta por medio de una \"hoja de vida\" o \"CV\"?",
+            "lineThree" : "Un secreto... En la Industria Audiovisual no usamos nada de eso... En general...",
+            "lineFour" : "Es cierto que puede haber listados de créditos que se parecen a una \"hoja de vida\" pero, no es lo mismo...",
+            "lineFive" : "Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de la Industria Audiovisual...",
+            "target" : "editAudiovisualDivisorOneModal"
+        },
+        {
+            "id" : 2,
+            "order" : "Divisor Dos",
+            "lineOne" : "Es verdaderamente difícil contar acerca de uno mismo...",
+            "lineTwo" : "Dicen que todos vestimos una máscara y que la cambiamos de acuerdo a frente a quién, o qué, estamos...",
+            "lineThree" : "Bueno, quienes somos parte de la Industria Audiovisual nos \"escondemos\" detrás de ellas...",
+            "lineFour" : "Para esclarecer esto... Estar de este lado, detrás de nuestro Arte, es más \"seguro\" para nuestros sentimientos, que estar descubiertos...",
+            "lineFive" : "Te habrás dado cuenta que no sabés cómo me llamo... ¿O sí?...",
+            "target" : "editAudiovisualDivisorTwoModal"
+        },
+        {
+            "id" : 3,
+            "order" : "Divisor Tres",
+            "lineOne" : "Otra cosa que, al principio más que nada, es muy difícil, es el mostrar qué hacemos...",
+            "lineTwo" : "Sucede que en cada parte de Arte que se deja plasmada hay un poco de uno mismo...",
+            "lineThree" : "Indistintamente del género que se elija trabajar, todos, en la Industria Audiovisual, ponemos mucho de nosotros...",
+            "lineFour" : "Y... ¿cómo le explicamos a otro qué sentimos cuando hacemos lo que nos dictan las Musas?",
+            "lineFive" : "Todo muy lindo... Cuando ya pasamos por los primeros filtros es un poco más fácil...",
+            "target" : "editAudiovisualDivisorThreeModal"
+        },
+        {
+            "id" : 4,
+            "order" : "Divisor Cuatro",
+            "lineOne" : "Ahora bien, llegar a poder presentar qué es lo que se hace requiere de muchos factores...",
+            "lineTwo" : "La primera vez pueden pasar muchas cosas que no siempre son buenas...",
+            "lineThree" : "Ya cuando se logra dar con las personas un poco más correctas es más sencillo...",
+            "lineFour" : "Eso no quiere decir que se pueda mostrar cualquier cosa... Al contrario...",
+            "lineFive" : "A medida que subimos la escalera las exigencias que nos autoimponemos son mayores porque ya no nos debemos solo a nosotros sino a quienes nos respaldan...",
+            "target" : "editAudiovisualDivisorFourModal"
+        },
+        {
+            "id" : 5,
+            "order" : "Divisor Cinco",
+            "lineOne" : "No estaría completa mi historia si no te diera algo que puedas llevarte...",
+            "lineTwo" : "¿Por qué? Bueno, porque la forma de comunicarnos que tenemos en esta Industria es así...",
+            "lineThree" : "Llegaste hasta acá, me diste tu tiempo, y por ello te agradezco abriéndote las puertas, solo un poquito, a mi mundo...",
+            "lineFour" : "Por este Arte que me eligió -o elegí- leo y escribo, vuelvo a leer y vuelvo a escribir, mucho...",
+            "lineFive" : "Viajar entre mundos y personajes que, a veces, se vuelven casi personas deja lugar no solo a emociones sino a conocimientos de infinitas dimensiones...",
+            "target" : "editAudiovisualDivisorFiveModal"
+        }
+    ],
+    "audiovisualProfile" :
+    {
+        "title" : "Sobre mí",
+        "intro" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "photo" : "https://images.pexels.com/photos/14994568/pexels-photo-14994568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "one" : "\"Si tienes un sueño, debes conservarlo.",
+        "two" : "Si quieres algo sal a buscarlo, y punto.\"",
+        "author" : "Chris Gardner",
+        "credit" : "En busca de la Felicidad"
+    },
+    "audiovisualPresentation" :
+    {
+        "title" : "Presentación",
+        "lineOne" : "Antes te conté que no tenemos un CV como tal... así de los tradicionales...",
+        "lineTwo" : "Para mostrar quiénes somos, en la Industria Audiovisual, se usan documentos...",
+        "lineThree" : "En los enlaces pueden verse los míos...",
+        "subtitle" : "Por convención tienen nombre en inglés...",
+        "paragraph" : "Y son los únicos que se usan para una presentación..."
+    },
+    "minibio" :
+    {
+        "icon" : "fa-solid fa-file-lines",
+        "title" : "Minibio",
+        "paragraphOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphTwo" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphThree" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFour" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFive" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSix" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSeven" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "document" : "https://drive.google.com/file/d/1kADhVff8hEwMHqdTRgfroM4-oqwAr0Fl/view?usp=share_link"
+    },
+    "myWork" :
+    {
+        "icon" : "fa-solid fa-file",
+        "title" : "My Work",
+        "paragraphOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphTwo" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphThree" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFour" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFive" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSix" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSeven" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "document" : "https://drive.google.com/file/d/1XnytooZno2YKjPcCZvj7QfQlgGwhVK9U/view?usp=share_link"
+    },
+    "iWant" :
+    {
+        "icon" : "fa-solid fa-fire-flame-curved",
+        "title" : "I Want",
+        "paragraphOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphTwo" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphThree" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFour" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphFive" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSix" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "paragraphSeven" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "document" : "https://drive.google.com/file/d/1xpnXtw560TzRBzJhWb4MaiFitaxqys88/view?usp=share_link"
+    },
+    "projectsIntro" :
+    {
+        "title" : "Proyectos",
+        "lineOne" : "Esta parte sería una mezcla entre Experiencia Laboral y Conocimientos Técnicos...",
+        "lineTwo" : "Lo que podés encontrar a continuación es todo producción propia...",
+        "lineThree" : "Y está, en este caso, diferenciada por formatos...",
+        "series" : "Series",
+        "iconSeries" : "fa-solid fa-display",
+        "longshots" : "Largometrajes",
+        "iconLongshots" : "fa-solid fa-film",
+        "others" : "Otros",
+        "iconOthers" : "fa-solid fa-plus",
+        "oneSamples" : "Las ",
+        "twoSamples" : "muestras de trabajo ",
+        "threeSamples" : "también son parte del todo..."
+    },
+    "projectsPage" : 
+    {
+        "title" : "Proyectos",
+        "lineOne" : "Me gustaría que conozcas todo lo posible de mí por medio de este pedacito de \"mundo\"",
+        "lineTwo" : "En la Industria Audiovisual estoy \"above the line\" (soy de los Creativos)", 
+        "lineThree" : "En \"des\"orden escribo Guión, hago Dirección y Producción -digo en desorden porque no es el orden en el cual se realizan las actividades....-",
+        "lineFour" : "Los que siguen son todos Proyectos que tengo preparados, en diferentes etapas de Producción..."
+    },
+    "samplesPage" :
+    {
+        "title" : "Muestras",
+        "lineOne" : "Así como tengo Proyectos en distintas etapas de desarrollo también tengo Muestras que se pueden compartir...",
+        "lineTwo" : "Esto sirve para sumar a la parte de Presentación, para dar a conocer acerca de los estilos con los cuales se trabaja...",
+        "lineThree" : "Algo muy particular dentro de la Industria Audiovisual es que podemos elegir qué hacer y qué no hacer...",
+        "lineFour" : "En mi caso hay Géneros que no trabajo porque no son lo mío..."
+    },
+    "dataPage" :
+    {
+        "title" : "Data",
+        "lineOne" : "Esta es una parte que resume un poco todo lo que hay en una sola carpeta de presentación...",
+        "lineTwo" : "Contiene Minibio, My Work, Proyectos, Muestras, Certificados de Registro y Contacto",
+        "lineThree" : "Está en formato digital... Aunque no lo creas, mi Arte va sobre muchos papeles pero si puedo no imprimir no lo hago...",
+        "lineFour" : "Espero que te guste lo que vas a encontrar... Tené en cuenta que periódicamente actualizo todo esto así que siempre está cambiando..."
+    },
+    "dataList" : 
+    [        
+        {
+            "id" : 1,
+            "title" : "Documentos",
+            "file" : "https://drive.google.com/file/d/1lpywaVuL8xI4EzuGmQbzRVXH3J0is_ka/view?usp=share_link",
+            "register" : "2020"
+        },
+        {
+            "id" : 2,
+            "title" : "Proyectos",
+            "file" : "https://drive.google.com/file/d/1_i-hLzu-huEvFLUxwPnP7wmDMb0cUGEL/view?usp=share_link",
+            "register" : "2020"
+        },
+        {
+            "id" : 3,
+            "title" : "Muestras",
+            "file" : "https://drive.google.com/file/d/1b6wXbGPhEF1-c__VQ-FpvlUL0oCulEgk/view?usp=share_link",
+            "register" : "2020"
+        }
+    ],
+    "feedbackIntro" :
+    {
+        "title" : "Feedback",
+        "lineOne" : "En una presentación de la convencionales podrías encontrar algo como Referencias...",
+        "lineTwo" : "Yo no tengo... No existe tampoco para alguien de la Industria Audiovisual...",
+        "lineThree" : "En su reemplazo cuento con más documentos que se conocen como Feedbacks...",
+        "subtitle" : "Si hacés click en cada tarjeta podrías ver quienes son...",
+        "paragraph" : "Eso es lo valioso de cada feedback..."
+    },
+    "saying" :
+    [
+        {
+            "id" : 1,
+            "name" : "Andrew W.",
+            "lastname" : "Marlowe",
+            "holding" : "Creative",
+            "link" : "https://www.imdb.com",
+            "feedback" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "photo": "https://images.pexels.com/photos/15011879/pexels-photo-15011879.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            "id" : 2,
+            "name" : "Jason",
+            "lastname" : "Schwartzman",
+            "holding" : "Actor / Producer",
+            "link" : "https://www.imdb.com",
+            "feedback" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "photo": "https://images.pexels.com/photos/15011881/pexels-photo-15011881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            "id" : 3,
+            "name" : "Mitchell",
+            "lastname" : "Block",
+            "holding" : "Creative",
+            "link" : "https://www.imdb.com",
+            "feedback" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "photo": "https://images.pexels.com/photos/15011880/pexels-photo-15011880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        {
+            "id" : 4,
+            "name" : "Thomas",
+            "lastname" : "Waters",
+            "holding" : "Actor / Producer",
+            "link" : "https://www.imdb.com",
+            "feedback" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "photo": "https://images.pexels.com/photos/15011882/pexels-photo-15011882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        }
+    ], 
+    "quotesIntro" :
+    {
+        "title" : "Quotes",
+        "lineOne" : "Entonces... para cerrar esta brevísima introducción a la historia de mi vida...",
+        "lineTwo" : "Te dejo algunas frases de la Industria Audiovisual que me gustan...",
+        "lineThree" : "Espero que te gusten también y que hayas podido conocerme..."
+    },
+    "quotes" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-feather-pointed",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" : "Si quieres algo sal a buscarlo, y punto.\"",
+            "author" :"Chris Gardner",
+            "credit" :"En busca de la Felicidad"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-feather-pointed fa-2x",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" : "Si quieres algo sal a buscarlo, y punto.\"",
+            "author" :"Chris Gardner",
+            "credit" :"En busca de la Felicidad"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-feather-pointed fa-2x",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" : "Si quieres algo sal a buscarlo, y punto.\"",
+            "author" :"Chris Gardner",
+            "credit" :"En busca de la Felicidad"
+        }
+    ],
+    "closing" :
+    {
+        "title" : "Cierre",
+        "lineOne" : "Si querés trabajar conmigo podés contactarme...",
+        "lineTwo" : "Al alcance de unos pocos clicks, estoy en las redes sociales...",
+        "lineThree" : "Gracias por visitarme!!!",
+        "icon" : "fa-solid fa-signature"
+    },
+    "music" :
+    {
+        "synapse" : "./../../../assets/audio/synapse.mp3"
+    },
+    "credits" :
+    {
+        "title" : "Point of View",
+        "type" : "Portfolio Creativo",
+        "based" : "Basado en una historia real",
+        "saying" : "Dicen de mí...",
+        "thanks" : "Agradecimientos",
+        "made" : "Hecho con",
+        "more" : "Y muchísimas",
+        "copyright" :"fa-regular fa-copyright",
+        "register" : "2022"
+    },
+    "singleCredits" : 
+    [
+        {
+            "id" : 1,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 2,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        }
+    ],
+    "doubleCredits" : 
+    [
+        {
+            "id" : 1,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 2,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 3,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 4,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 5,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 6,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        }
+    ],
+    "tripleCredits" : 
+    [
+        {
+            "id" : 1,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 2,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 3,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 4,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 5,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 6,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 7,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 8,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        },
+        {
+            "id" : 9,
+            "feedback" : "Some quick example text to build on the card title.",
+            "name" : "Full Name"
+        }
+    ],
+    "thanks" : 
+    [
+        {
+            "id" : 1,
+            "to" : "A mi mamá, María",
+            "because" : "Por haberme dado todo lo que estuvo a su alcance y más, muchísimo más."
+        },
+        {
+            "id" : 2,
+            "to" : "A mis hermosos hijos",
+            "because" : "Porque sin las horas, días y semanas que me tuvieron con poca disponibilidad esto no podría haberse hecho."
+        },
+        {
+            "id" : 3,
+            "to" : "A mi Tío Rodolfo Q.E.P.D.",
+            "because" : "Por haberme mostrado cuánto vale el educar a los hijos en valores."
+        },
+        {
+            "id" : 4,
+            "to" : "A la Bibliotecaria Cora Céspedes Q.E.P.D.",
+            "because" : "Por haberme enseñado que a los niños no se los debe condicionar al momento de elegir cómo dejar volar su imaginación con los libros."
+        }
+    ],
+    "made" : 
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-html5",
+            "tool" : "HTML"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-bootstrap",
+            "tool" : "Bootstrap"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-java",
+            "tool" : "Java"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-brands fa-css3-alt",
+            "tool" : "CSS"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-brands fa-angular",
+            "tool" : "Angular"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-leaf",
+            "tool" : "SpringBoot"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-font-awesome",
+            "tool" : "Fontawesome"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-coins",
+            "tool" : "Base de Datos"
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-brands fa-github",
+            "tool" : "GitHub"
+        }
+    ],
+    "more" : 
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-comments",
+            "thing" : "Opiniones"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-book",
+            "thing" : "Lecturas"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-clock",
+            "thing" : "Horas"
+        }
+    ],
+    "musicCredits" :
+    {
+        "title" : "Música",
+        "copyright" : "fa-regular fa-copyright",
+        "song" : "Synapse",
+        "author" : "佐空 saku. | beats",
+        "icon" : "fa-brands fa-soundcloud",
+        "link" : "https://soundcloud.com/notsaku"
+    },
+    "bloopersCredits" :
+    {
+        "see" : "¿Ya viste los bloopers?",
+        "icon" : "fa-solid fa-bug",
+        "closing" : "Dale click al ícono que está al pie..."
+    },
+    "bloopers" :
+    {
+        "lineOne" : "Hay que reconocer",
+        "lineTwo" : "que no se es perfecto...",
+        "lineThree" : "Todo lo que puede fallar...",
+        "lineFour" : "falla...",
+        "lineFive" : "La vida es un carnaval...",
+        "lineSix" : "Por eso ¡¡¡no hay que llorar!!!",
+        "lineSeven" : "A imposible conmigo...",
+        "lineEight" : "le están sobrando dos letras...",
+        "lineNine" : "Yo pude...",
+        "lineTen" : "vos también podés...",
+        "thanks" : "Muchas gracias por haberme visitado!!!",
+        "signature" : "fa-solid fa-signature",
+        "rights" : "fa-regular fa-copyright",
+        "register" : "2022"
+    },
+    "blooperOne" : 
+    {
+        "blooper" : "Estuve casi dos semanas sin encontrarle la vuelta al routing de Angular...",
+        "mistake" : "Al final era parecido a las rutas de CodeIgniter 4",
+        "icon" : "fa-solid fa-route"
+    },
+    "lineBe" : 
+    {
+        "one" : "No será frustrante...",
+        "two" : "decían..."
+    },
+    "blooperTwo" :
+    {
+        "blooper" : "Al llegar a Java estuve no solo días sino más de un mes tratando de entender algo...",
+        "mistake" : "Creo que en ningún momento supe cómo buscar las cosas o posiblemente no sabía qué debía buscar...",
+        "icon" : "fa-solid fa-burst"
+    },
+    "lineBreak" :
+    {
+        "one" : "Tomate un descanso,",
+        "two" : "vas a ver que es sencillo..."
+    },    
+    "blooperThree" :
+    {
+        "blooper" : "Todo bien con Stackoverflow... Jamás voy a entender cómo es que a algunos les funciona eso de preguntar cosas...",
+        "mistake" : "Me quedo con GitHub y Codepen que son más amigables...",
+        "icon" : "fa-brands fa-stack-overflow"
+    },    
+    "lineTime" :
+    {
+        "one" : "Es cuestión de dedicarle tiempo...",
+        "two" : "¿más tiempo?"
+    },    
+    "blooperFour" :
+    {
+        "blooper" : "Cerca de diez días pasé intentando saber cómo era el tema de rutas dinámicas con slug...",
+        "mistake" : "Me dí por vencida... Me ganó Angular...",
+        "icon" : "fa-solid fa-pause"
+    },   
+    "lineWin" : 
+    {
+        "one" : "¡¡¡Pero no te des por vencida!!!",
+        "two" : "Hasta en ruso busqué respuestas... (no es broma)"
+    },
+    "blooperFive" : 
+    {
+        "blooper" : "¿Pueden creer que no recuerdo un tema importante de Base de Datos que era eliminación lógica?",
+        "mistake" : "Me parece que SQL y yo no nos estamos llevando del todo bien últimamente...",
+        "icon" : "fa-solid fa-xmark"
+    },
+    "lineMemory" :
+    {
+        "one" : "No es por escasez de memoria mía...",
+        "two" : "Creo que ya estoy quemada..."
+    },
+    "blooperSix" : 
+    {
+        "blooper" : "NetBeans... Delicado NetBeans... Lo quiero tanto como lo detesto... Creo que no existe nada más sensible que NetBeans...",
+        "mistake" : "Horas estuve demorada por un espacio... Sí por un espacio...",
+        "icon" : "fa-solid fa-calendar"
+    },
+    "lineSpaces" :
+    {
+        "one" : "Siempre hay que estar atento a todo...",
+        "two" : "O escribir sin espacios entre palabras..."
+    },    
+    "blooperSeven" :
+    {
+        "blooper" : "Es posible que muchos ya lo sepan... Yo no sé JS... No lo puse en los créditos...",
+        "mistake" : "En su reemplazo utilicé CSS3 para hacer animaciones...",
+        "icon" : "fa-solid fa-box-tissue"
+    },
+    "intro" :
+    {
+        "title" : "Intro",
+        "overview" : "En el mundo",
+        "industry" : "IT",
+        "story" : "esta es mi historia...",
+        "lineOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "lineTwo" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!"
+    },
+    "profile" :
+    {
+        "icon" : "fa-solid fa-feather-pointed",
+        "title" : "Sobre mí",
+        "nameIntro" : "Mi nombre es",
+        "fullname" : "Gabriela García de la Mata",
+        "lineOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
+        "photo" : "https://i.ibb.co/VttzbX8/profile.jpg",
+        "phraseOne" : "\"Si tienes un sueño, debes conservarlo.",
+        "phraseTwo" : "Si quieres algo sal a buscarlo, y punto.\"",
+        "author" : "Chris Gardner",
+        "credit" : "En busca de la Felicidad"
+    },
+    "sections" :
+    {
+        "about" : "Sobre mí",
+        "studies" :"Estudié y lo sigo haciendo...",
+        "experiences" : "Trabajos que hice y hago...",
+        "projects" : "Proyectos que tengo...",
+        "skills" : "Habilidades con las que cuento...",
+        "technicals" : "Técnicas",
+        "softs" : "y Blandas",
+        "languages" : "Idiomas que más domino...",
+        "hobbies" : "Cosas que me gustan...",
+        "references" : "Dicen de mí...",
+        "contact" : "Info para ponernos en contacto..."
+    },
+    "studies" :
+    [
+        {
+            "id" : 1,
+            "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
+            "alt" : "...",
+            "title" : "Título",
+            "institution" : "Institución",
+            "starting" : "Inicio",
+            "ending" : "Fin"
+        },
+        {
+            "id" : 2,
+            "image" : "https://i.ibb.co/M1PFk4q/borde.png",
+            "alt" : "...",
+            "title" : "Título",
+            "institution" : "Institución",
+            "starting" : "Inicio",
+            "ending" : "Fin"
+        },
+        {
+            "id" : 3,
+            "image" : "https://i.ibb.co/QKG9WH0/cards.png",
+            "alt" : "...",
+            "title" : "Título",
+            "institution" : "Institución",
+            "starting" : "Inicio",
+            "ending" : "Fin"
+        }
+    ],
+    "experiences" :
+    [
+        {
+            "id" : 1,
+            "image" : "https://i.ibb.co/HDQSpy6/overlay.png",
+            "alt" : "...",
+            "position" : "Puesto",
+            "place" : "Lugar",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Descripción",
+            "textDescription" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "tasks" : "Tareas",
+            "taskOne" : "An item este item",
+            "taskTwo" : "A second item",
+            "taskThree" : "A third item"     
+        },
+        {
+            "id" : 2,
+            "image" : "https://i.ibb.co/xsTp1GD/zazimut.png",
+            "alt" : "...",
+            "position" : "Puesto",
+            "place" : "Lugar",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Descripción",
+            "textDescription" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "tasks" : "Tareas",
+            "taskOne" : "An item este item",
+            "taskTwo" : "A second item",
+            "taskThree" : "A third item"     
+        },
+        {
+            "id" : 3,
+            "image" : "https://i.ibb.co/9HkbSXC/login.png",
+            "alt" : "...",
+            "position" : "Puesto",
+            "place" : "Lugar",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Descripción",
+            "textDescription" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "tasks" : "Tareas",
+            "taskOne" : "An item este item",
+            "taskTwo" : "A second item",
+            "taskThree" : "A third item"     
+        }
+    ],
+    "developerProjects" :
+    [
+        {
+            "id" : 1,
+            "image" : "https://i.ibb.co/YQdsFQD/selector.png",
+            "alt" : "...",
+            "title" : "Título",
+            "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "icon" : "fa-solid fa-link",
+            "link" : "https://github.com"
+        },
+        {
+            "id" : 2,
+            "image" : "https://i.ibb.co/qWtnDdx/spoiler.png",
+            "alt" : "...",
+            "title" : "Título",
+            "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "icon" : "fa-solid fa-link",
+            "link" : "https://github.com"
+        },
+        {
+            "id" : 3,
+            "image" : "https://i.ibb.co/QKG9WH0/cards.png",
+            "alt" : "...",
+            "title" : "Título",
+            "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "icon" : "fa-solid fa-link",
+            "link" : "https://github.com"
+        },
+        {
+            "id" : 4,
+            "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
+            "alt" : "...",
+            "title" : "Título",
+            "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
+            "icon" : "fa-solid fa-link",
+            "link" : "https://github.com"
+        }
+    ],
+    "technicals" :
+    [
+        {
+            "id" : 1,
+            "progress" : "progress-95",
+            "icon" : "fa-brands fa-html5",
+            "technology" : "HTML",
+            "percentage" : 95
+        },
+        {
+            "id" : 2,
+            "progress" : "progress-95",
+            "icon" : "fa-brands fa-bootstrap",
+            "technology" : "Bootstrap",
+            "percentage" : 95
+        },
+        {
+            "id" : 3,
+            "progress" : "progress-60",
+            "icon" : "fa-brands fa-java",
+            "technology" : "Java",
+            "percentage" : 60
+        },
+        {
+            "id" : 4,
+            "progress" : "progress-85",
+            "icon" : "fa-brands fa-css3",
+            "technology" : "CSS",
+            "percentage" : 85
+        },
+        {
+            "id" : 5,
+            "progress" : "progress-70",
+            "icon" : "fa-brands fa-angular",
+            "technology" : "Angular",
+            "percentage" : 70
+        },
+        {
+            "id" : 6,
+            "progress" : "progress-60",
+            "icon" : "fa-solid fa-leaf",
+            "technology" : "SpringBoot",
+            "percentage" : 60
+        },
+        {
+            "id" : 7,
+            "progress" : "progress-40",
+            "icon" : "fa-brands fa-js-square",
+            "technology" : "JavaScript",
+            "percentage" : 40
+        },
+        {
+            "id" : 8,
+            "progress" : "progress-90",
+            "icon" : "fa-solid fa-coins",
+            "technology" : "Base de Datos",
+            "percentage" : 90
+        },
+        {
+            "id" : 9,
+            "progress" : "progress-80",
+            "icon" : "fa-brands fa-github",
+            "technology" : "GitHub",
+            "percentage" : 80
+        }
+    ],
+    "softs" :
+    [
+        {
+            "id" : 1,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Liderazgo",
+            "percentage" : 90
+        },
+        {
+            "id" : 2,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Innovación",
+            "percentage" : 95
+        },
+        {
+            "id" : 3,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Colaboratividad",
+            "percentage" : 75
+        },
+        {
+            "id" : 4,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Toma de Decisiones",
+            "percentage" : 80
+        },
+        {
+            "id" : 5,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Análisis Cuantitativo",
+            "percentage" : 85
+        },
+        {
+            "id" : 6,
+            "badge" : "badge text-bg-dark",
+            "soft" : "Creatividad",
+            "percentage" : 95
+        }
+    ],
+    "languages" :
+    [
+        {
+            "id" : 1,
+            "animation" : "progress-bar bg-dark progress-bar-animated",
+            "language" : "Inglés",
+            "level" : "B1",
+            "percentage" : 75
+        },
+        {
+            "id" : 2,
+            "animation" : "progress-bar bg-dark progress-bar-animated",
+            "language" : "Francés",
+            "level" : "C1",
+            "percentage" : 95
+        }
+    ],
+    "hobbies" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-feather-pointed",
+            "description" : "Escribir"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-book",
+            "description" : "Leer"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-film",
+            "description" : "Cine"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-glasses",
+            "description" : "Aprender"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-earth-americas",
+            "description" : "Idiomas"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-train",
+            "description" : "Viajar"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-chess-queen",
+            "description" : "Ajedrez"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-volleyball",
+            "description" : "Volley"
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-solid fa-person-biking",
+            "description" : "Bici"
+        }
+    ],
+    "references" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-regular fa-comment",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" :"Si quieres algo sal a buscarlo, y punto.\"",
+            "fullname" : "Chris Gardner",
+            "position" : "En busca de la Felicidad"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-regular fa-comment",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" :"Si quieres algo sal a buscarlo, y punto.\"",
+            "fullname" : "Chris Gardner",
+            "position" : "En busca de la Felicidad"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-regular fa-comment",
+            "one" : "\"Si tienes un sueño, debes conservarlo.",
+            "two" :"Si quieres algo sal a buscarlo, y punto.\"",
+            "fullname" : "Chris Gardner",
+            "position" : "En busca de la Felicidad"
+        }
+    ],
+    "contact" :
+    {
+        "iconPhone" : "fa-solid fa-phone",
+        "phone" : 5492342546373,
+        "iconEmail" : "fa-solid fa-envelope",
+        "email" : "info@gocode.ar",
+        "iconAvailability" : "fa-solid fa-user-clock",
+        "availability" : "Availability"
+    },
+    "toCV" :
+    {
+        "text" : "De esto tengo una versión más corta...",
+        "icon" : "fa-solid fa-eye"
+    },
+    "cv" :
+    {
+        "intro" : "Este es mi CV dentro de IT...",
+        "print" : "Imprimir",
+        "download" : "Descargar",
+        "please" : "Por favor, si no es necesario, ",
+        "dont" : "no imprimas",
+        "fileCV" : "https://google.com"
+    },
+    "sectionsCV" : 
+    {
+        "about" : "Sobre mí",
+        "photo" : "Foto",
+        "name" : "Nombre",
+        "position" : "Puesto",
+        "info" : "Info",
+        "education" : "Educación",
+        "skills" : "Habilidades",
+        "languages" : "Idiomas",
+        "hobbies" : "Hobbies",
+        "contact" : "Contacto",
+        "social" : "Redes",
+        "experience" : "Experiencia",
+        "projects" : "Proyectos",
+        "references" : "Referencias"
+    },
+    "profileCV" :
+    {
+        "photo" : "https://i.ibb.co/VttzbX8/profile.jpg",
+        "phraseOne" : "\"Si tienes un sueño,",
+        "phraseTwo" :  "debes conservarlo.",
+        "phraseThree" : "Si quieres algo", 
+        "phraseFour" : "sal a buscarlo,",
+        "phraseFive" : "y punto.\"",
+        "author" : "Chris Gardner",
+        "credit" : "En busca de la Felicidad",
+        "position" : "Puesto",
+        "fullname" :"Gabriela García de la Mata"
+    },
+    "educationCV" :
+    [
+        {
+            "id" : 1,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        },
+        {
+            "id" : 2,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        },
+        {
+            "id" : 3,
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "title" : "Título",
+            "institution" : "Institución"
+        }
+    ],
+    "technicalsCV" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-bootstrap",
+            "technology" : "Bootstrap"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-angular",
+            "technology" : "Angular"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-html5",
+            "technology" : "HTML"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-brands fa-css3",
+            "technology" : "CSS"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-leaf",
+            "technology" : "SpringBoot"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-brands fa-java",
+            "technology" : "Java"
+        }
+    ],
+    "softsCV" :
+    [
+        {
+            "id" : 1,
+            "skill" : "Liderazgo"
+        },
+        {
+            "id" : 2,
+            "skill" : "Proactividad"
+        },
+        {
+            "id" : 3,
+            "skill" : "Comunicación"
+        }
+    ],
+    "languagesCV" :
+    [
+        {
+            "id" : 1,
+            "language" : "Francés",
+            "level" : "C1"
+        },
+        {
+            "id" : 2,
+            "language" : "Inglés",
+            "level" : "B1"
+        }
+    ],
+    "hobbiesCV" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-volleyball"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-bicycle"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-chess-queen"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-train"
+        }
+    ],
+    "contactCV" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-phone",
+            "data" : "+5492342546373"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-envelope",
+            "data" : "info@gocode.ar"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-user-clock",
+            "data" : "Availability"
+        }
+    ],
+    "socialCV" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-brands fa-linkedin",
+            "user" : "/simja82"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-brands fa-codepen",
+            "user" : "/simja82"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-brands fa-github",
+            "user" : "/simja82"
+        }
+    ],
+    "experienceCV" :
+    [
+        {
+            "id" : 1,
+            "place" : "Lugar",
+            "position" : "Puesto",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Some quick example text to build on the card title",
+            "tasksTitle" : "Tareas:",
+            "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+        },
+        {
+            "id" : 2,
+            "place" : "Lugar",
+            "position" : "Puesto",
+            "starting" : "Inicio",
+            "ending" : "Fin",
+            "description" : "Some quick example text to build on the card title",
+            "tasksTitle" : "Tareas:",
+            "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+        }
+    ],
+    "projectsCV" :
+    {
+        "place" : "Lugar",
+        "position" : "Puesto",
+        "starting" : "Inicio",
+        "ending" : "Fin",
+        "description" : "Some quick example text to build on the card title",
+        "tasksTitle" : "Tareas:",
+        "tasks" : "Comunicación Interna, Construcción de Documentación General no específica de Áreas para todos los Integrantes Proveeduría de Formación Grupal en General, Toma de Decisiones de Nivel Superior y Coordinación de todas las Áreas en su conjunto."
+    },
+    "referencesCV" : 
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-user",
+            "data" : "Nombre y Apellido"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-phone",
+            "data" : "+0000000000000"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-envelope",
+            "data" : "email@domain.com"
+        }
+    ],
+    "general" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-share-nodes",
+            "section" : "Social",
+            "target" : "socialModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-images",
+            "section" : "Banners",
+            "target" : "bannersModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-align-center",
+            "section" : "Heroes",
+            "target" : "heroesModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-comments",
+            "section" : "Credits",
+            "target" : "creditsModal"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-bug",
+            "section" : "Bloopers",
+            "target" : "bloopersModal"
+        }
+    ],
+    "audiovisual" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-align-center",
+            "section" : "Cover",
+            "target" : "audiovisualCoverModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-user",
+            "section" : "Perfil",
+            "target" : "audiovisualProfileModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-file-lines",
+            "section" : "Divisores",
+            "target" : "audiovisualDivisorsModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-file",
+            "section" : "Presentación",
+            "target" : "audiovisualPresentationModal"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-film",
+            "section" : "Proyectos",
+            "target" : "audiovisualProjectsModal"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-link",
+            "section" : "Links",
+            "target" : "audiovisualLinksModal"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-signature",
+            "section" : "Feedback",
+            "target" : "audiovisualFeedbackModal"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-quote-right",
+            "section" : "Quotes",
+            "target" : "audiovisualQuotesModal"
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-solid fa-stop",
+            "section" : "Closing",
+            "target" : "audiovisualClosingModal"
+        }
+    ],
+    "developer" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-align-center",
+            "section" : "Intro",
+            "target" : "developerIntroModal"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-user",
+            "section" : "Perfil",
+            "target" : "developerProfileModal"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-code",
+            "section" : "Proyectos",
+            "target" : "developerProjectsModal"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-graduation-cap",
+            "section" : "Educación",
+            "target" : "developerEducationModal"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-wrench",
+            "section" : "Experiencia",
+            "target" : "developerExperienceModal"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-cogs",
+            "section" : "Skills",
+            "target" : "developerSkillsModal"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-star",
+            "section" : "Hobbies",
+            "target" : "developerHobbiesModal"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa-solid fa-comment",
+            "section" : "Comentarios",
+            "target" : "developerCommentsModal"
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-solid fa-file",
+            "section" : "CV",
+            "target" : "developerCVModal"
+        }
+    ],
+    "logout" : 
+    {
+        "icon" : "fa-solid fa-circle-exclamation",
+        "text" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    }    
+}

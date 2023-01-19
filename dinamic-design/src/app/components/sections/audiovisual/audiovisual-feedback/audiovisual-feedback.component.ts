@@ -1,24 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-feedback',
   templateUrl: './audiovisual-feedback.component.html'
 })
 export class AudiovisualFeedbackComponent implements OnInit {
-  //Declaración de Array
-  feedback : any = [];
+
+  //Array Feedback Intro
+  feedbackIntro : any = [];
+
+  //Array Saying
   saying : any = [];
   
   //Inyección de Service
-  constructor (private audiovisualService:AudiovisualService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.audiovisualService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.feedback = data.feedback;
+      this.feedbackIntro = data.feedbackIntro;
       this.saying = data.saying;
     })
   }

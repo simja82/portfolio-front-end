@@ -1,24 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { MadeService } from 'src/assets/services/credits/made.services';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-made-credits',
   templateUrl: './audiovisual-made-credits.component.html'
 })
 export class AudiovisualMadeCreditsComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Made
   made : any = [];
 
-  //Variable de Título
-  title = "Hecho con"
-  
-  //Inyección de Service
-    constructor (private madeService:MadeService) 
-    { 
-      this.made = madeService.getMade();
-    }
+  //Array Credits
+  credits : any = [];
 
-    ngOnInit(): void { }
-  
+  //Inyección de Service
+  constructor (private povService: POVService) { }
+
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.povService.getData().subscribe(data => {
+      //Información a mostrar
+      this.made = data.made;
+      this.credits = data.credits;
+    })
   }
-  
+
+}
+ 

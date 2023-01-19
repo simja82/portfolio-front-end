@@ -1,24 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-cv-soft-skills',
   templateUrl: './cv-soft-skills.component.html'
 })
 export class CvSoftSkillsComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Softs CV
   softsCV : any = [];
 
-  constructor (private developerService:DeveloperService) { }
+  //Inyección de Service
+    constructor (private povService:POVService) {
+    }
+    
+    ngOnInit(): void { 
+      //Almacenamiento de datos
+      this.povService.getData().subscribe(data => {
+        //Información a mostrar
+        this.softsCV = data.softsCV;
+      })
+    }
 
-  ngOnInit(): void { 
-    //Almacenamiento de datos
-    this.developerService.getData().subscribe(data => {
-      //Información a mostrar
-      this.softsCV = data.softsCV;
-    })
   }
-
-}
-
-
+  

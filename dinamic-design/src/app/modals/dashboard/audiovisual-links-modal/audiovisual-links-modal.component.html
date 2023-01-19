@@ -14,20 +14,20 @@
                                     <div class="card-body">                                   
                                         <div class="container mt-2 pt-3 pb-3 d-flex justify-content-between">      
                                             <div class="col-4 text-center">
-                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Proyectos</button>
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">{{buttons.projects}}</button>
                                             </div>
                                             <div class="col-4 text-center">
-                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Muestras</button>
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">{{buttons.samples}}</button>
                                             </div>
                                             <div class="col-4 text-center">
-                                                <button class="btn btn-outline-black btn-width btn-lg arrow">Data</button>
+                                                <button class="btn btn-outline-black btn-width btn-lg arrow">{{buttons.data}}</button>
                                             </div>
                                         </div>   
                                         <p class="container w-75 m-auto pt-3 text-center">
-                                            En Proyectos vas a poder ver mis Proyectos, <br>
-                                            en Muestras descargar archivos que son parte de Proyectos <br>
-                                            y en Data vas a encontrar documentos de Presentación y Muestras <br>
-                                            -esto es algo así como un CV pero de la Industria Audiovisual-
+                                            {{phrases.linksOne}}<br>
+                                            {{phrases.linksTwo}}<br>
+                                            {{phrases.linksThree}}<br>
+                                            {{phrases.linksFour}}
                                         </p>
                                     </div>
                                 </div>
@@ -38,13 +38,13 @@
                                 <div class="card">
                                     <div class="container mt-2 pt-3 pb-3 d-flex justify-content-between">      
                                         <div class="col-4 text-center">
-                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal">Proyectos</button>
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal">{{buttons.projects}}</button>
                                         </div>
                                         <div class="col-4 text-center">
-                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal">Muestras</button>
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal">{{buttons.samples}}</button>
                                         </div>
                                         <div class="col-4 text-center">
-                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal">Data</button>
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal">{{buttons.data}}</button>
                                         </div>
                                     </div> 
                                 </div>

@@ -1,4 +1,4 @@
-<section class="background" [class.index] = "photo">
+<section class="background" [ngStyle]="{'background-image': 'url(' + banners[0].image + ')'}">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
         <app-white-logo></app-white-logo>
@@ -7,7 +7,7 @@
     
     <!-- Plus -->
     <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+        <a class="plus" [attr.data-tooltip]="banners[0].description">
             <app-white-plus></app-white-plus>
         </a>   
     </div>
@@ -15,14 +15,14 @@
     <!-- Enlace -->
     <div class="text-center pt-5 text-white">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 *ngFor="let title of index" class="hero text-top">{{title.hero}}</h1>
+            <h1 class="hero text-top">{{heroes[0].hero}}</h1>
         </div>
 
         <div class="col-12 mb-5">
-            <h4 *ngFor="let subtitle of index" class="hero">{{subtitle.subhero}}</h4>
+            <h4 class="hero">{{heroes[0].subhero}}</h4>
         </div>
         <a routerLink="/intro">
-            <button *ngFor="let button of index" type="button" class="btn btn-outline-white btn-lg">{{button.enter}}</button>
+            <button type="button" class="btn btn-outline-white btn-lg">{{buttons.enter}}</button>
         </a>  
     </div>
 

@@ -1,9 +1,9 @@
 <div class="row mt-5 pt-5 mb-5 pb-5">
-    <div class='feedback text-700'>{{title}}</div>
-    <div *ngFor="let item of thanks" class="col-12">
+    <div class='feedback text-700'>{{credits.thanks}}</div>
+    <div *ngFor="let thanks of thanks" class="col-12">
         <div class='quote'>
-            <blockquote class='text-700'>{{item.to}}</blockquote>
+            <blockquote class='text-700'>{{thanks.to}}</blockquote>
         </div>
-        <div class='name text-uppercase'>{{item.because}}</div>
+        <div class='name text-uppercase'>{{thanks.because}}</div>
     </div>
 </div>

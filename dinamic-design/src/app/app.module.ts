@@ -31,7 +31,7 @@ import { MinibioComponent } from './modals/audiovisual/minibio/minibio.component
 import { IWantComponent } from './modals/audiovisual/i-want/i-want.component';
 import { MyWorkComponent } from './modals/audiovisual/my-work/my-work.component';
 import { WhitePlusComponent } from './components/sidebars/left/plus/white/white.component';
-import { WhiteBackComponent } from './components/footer/left/white/back/back.component';
+import { WhiteBackComponent } from './components/footer/left/white/back/white-back.component';
 import { BlackSessionComponent } from './components/navbar/session/black/black.component';
 import { WhiteSessionComponent } from './components/navbar/session/white/white.component';
 import { BlackPlusComponent } from './components/sidebars/left/plus/black/black.component';
@@ -52,7 +52,6 @@ import { DeveloperReferencesComponent } from './components/sections/developer/de
 import { DeveloperContactComponent } from './components/sections/developer/developer-contact/developer-contact.component';
 import { DeveloperToCvComponent } from './components/sections/developer/developer-to-cv/developer-to-cv.component';
 import { BlackDeveloperComponent } from './components/sidebars/right/black/developer/black-developer/black-developer.component';
-import { OrangeSessionComponent } from './components/navbar/session/orange/orange-session/orange-session.component';
 import { CvEducationComponent } from './components/sections/developer/cv-education/cv-education.component';
 import { CvProfileComponent } from './components/sections/developer/cv-profile/cv-profile.component';
 import { CvExperienceComponent } from './components/sections/developer/cv-experience/cv-experience.component';
@@ -107,11 +106,10 @@ import { BannersModalComponent } from './modals/dashboard/banners-modal/banners-
 import { HeroesModalComponent } from './modals/dashboard/heroes-modal/heroes-modal.component';
 import { CreditsModalComponent } from './modals/dashboard/credits-modal/credits-modal.component';
 import { BloopersModalComponent } from './modals/dashboard/bloopers-modal/bloopers-modal.component';
-import { EditSocialModalComponent } from './modals/dashboard/social-modal/edit-social-modal/edit-social-modal.component';
-import { DeleteSocialModalComponent } from './modals/dashboard/social-modal/delete-social-modal/delete-social-modal.component';
-import { CreateSocialModalComponent } from './modals/dashboard/social-modal/create-social-modal/create-social-modal.component';
+import { EditGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-general-social-modal/edit-general-social-modal.component';
+import { DeleteGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-general-social-modal/delete-general-social-modal.component';
+import { CreateGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-general-social-modal/create-general-social-modal.component';
 import { EditBannerModalComponent } from './modals/dashboard/banners-modal/edit-banner-modal/edit-banner-modal.component';
-import { EditHeroesModalComponent } from './modals/dashboard/heroes-modal/edit-heroes-modal/edit-heroes-modal.component';
 import { EditTitleCreditModalComponent } from './modals/dashboard/credits-modal/edit-title-credit-modal/edit-title-credit-modal.component';
 import { EditCreditModalComponent } from './modals/dashboard/credits-modal/edit-credit-modal/edit-credit-modal.component';
 import { DeleteCreditModalComponent } from './modals/dashboard/credits-modal/delete-credit-modal/delete-credit-modal.component';
@@ -128,7 +126,7 @@ import { EditBlooperModalComponent } from './modals/dashboard/bloopers-modal/edi
 import { DeleteBlooperModalComponent } from './modals/dashboard/bloopers-modal/delete-blooper-modal/delete-blooper-modal.component';
 import { EditDivisorBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-divisor-blooper-modal/edit-divisor-blooper-modal.component';
 import { EditEndBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-end-blooper-modal/edit-end-blooper-modal.component';
-import { AudiovisualIntroModalComponent } from './modals/dashboard/audiovisual-intro-modal/audiovisual-intro-modal.component';
+import { AudiovisualCoverModalComponent } from './modals/dashboard/audiovisual-cover-modal/audiovisual-cover-modal.component';
 import { AudiovisualProfileModalComponent } from './modals/dashboard/audiovisual-profile-modal/audiovisual-profile-modal.component';
 import { AudiovisualDivisorsModalComponent } from './modals/dashboard/audiovisual-divisors-modal/audiovisual-divisors-modal.component';
 import { AudiovisualPresentationModalComponent } from './modals/dashboard/audiovisual-presentation-modal/audiovisual-presentation-modal.component';
@@ -137,7 +135,7 @@ import { AudiovisualFeedbackModalComponent } from './modals/dashboard/audiovisua
 import { AudiovisualQuotesModalComponent } from './modals/dashboard/audiovisual-quotes-modal/audiovisual-quotes-modal.component';
 import { AudiovisualClosingModalComponent } from './modals/dashboard/audiovisual-closing-modal/audiovisual-closing-modal.component';
 import { AudiovisualLinksModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-links-modal.component';
-import { EditAudiovisualIntroModalComponent } from './modals/dashboard/audiovisual-intro-modal/edit-audiovisual-intro-modal/edit-audiovisual-intro-modal.component';
+import { EditAudiovisualCoverModalComponent } from './modals/dashboard/audiovisual-cover-modal/edit-audiovisual-cover-modal/edit-audiovisual-cover-modal.component';
 import { EditAudiovisualProfileModalComponent } from './modals/dashboard/audiovisual-profile-modal/edit-audiovisual-profile-modal/edit-audiovisual-profile-modal.component';
 import { EditAudiovisualDivisorOneModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-one-modal/edit-audiovisual-divisor-one-modal.component';
 import { EditAudiovisualDivisorTwoModalComponent } from './modals/dashboard/audiovisual-divisors-modal/edit-audiovisual-divisor-two-modal/edit-audiovisual-divisor-two-modal.component';
@@ -245,9 +243,7 @@ import { EditSocialThreeCvModalComponent } from './modals/dashboard/developer-cv
 import { EditExperienceOneCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-one-cv-modal/edit-experience-one-cv-modal.component';
 import { EditExperienceTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-two-cv-modal/edit-experience-two-cv-modal.component';
 import { EditProjectsCvModalComponent } from './modals/dashboard/developer-cv-modal/projects-cv-modal/edit-projects-cv-modal/edit-projects-cv-modal.component';
-import { EditNameReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-name-references-cv-modal/edit-name-references-cv-modal.component';
-import { EditPhoneReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-phone-references-cv-modal/edit-phone-references-cv-modal.component';
-import { EditEmailReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-email-references-cv-modal/edit-email-references-cv-modal.component';
+import { EditDataReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-data-references-cv-modal/edit-data-references-cv-modal.component';
 import { WhiteAudiovisualComponent } from './components/sidebars/right/white/audiovisual/white-audiovisual/white-audiovisual.component';
 import { SerieComponent } from './components/sections/audiovisual/projects-series/serie/serie.component';
 import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
@@ -265,6 +261,17 @@ import { AudiovisualBloopersComponent } from './components/sections/audiovisual/
 import { DeveloperSkillsComponent } from './components/sections/developer/developer-skills/developer-skills.component';
 import { CvNameComponent } from './components/sections/developer/cv-profile/cv-name/cv-name.component';
 import { CvPositionComponent } from './components/sections/developer/cv-profile/cv-position/cv-position.component';
+import { CrudSocialComponent } from './modals/dashboard/social-modal/crud-social/crud-social.component';
+import { CreateAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-audiovisual-social-modal/create-audiovisual-social-modal.component';
+import { EditAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-audiovisual-social-modal/edit-audiovisual-social-modal.component';
+import { DeleteAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-audiovisual-social-modal/delete-audiovisual-social-modal.component';
+import { CreateDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-developer-social-modal/create-developer-social-modal.component';
+import { EditDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-developer-social-modal/edit-developer-social-modal.component';
+import { DeleteDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-developer-social-modal/delete-developer-social-modal.component';
+import { CreateBannerModalComponent } from './modals/dashboard/banners-modal/create-banner-modal/create-banner-modal.component';
+import { CreateHeroModalComponent } from './modals/dashboard/heroes-modal/create-hero-modal/create-hero-modal.component';
+import { EditHeroModalComponent } from './modals/dashboard/heroes-modal/edit-hero-modal/edit-hero-modal.component';
+import { WhiteOrangeSessionComponent } from './components/navbar/session/white-orange/white-orange.component';
 
 @NgModule({
     declarations: [
@@ -320,7 +327,6 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         DeveloperContactComponent,
         DeveloperToCvComponent,
         BlackDeveloperComponent,
-        OrangeSessionComponent,
         CvEducationComponent,
         CvProfileComponent,
         CvExperienceComponent,
@@ -375,11 +381,12 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         HeroesModalComponent,
         CreditsModalComponent,
         BloopersModalComponent,
-        EditSocialModalComponent,
-        DeleteSocialModalComponent,
-        CreateSocialModalComponent,
+        EditGeneralSocialModalComponent,
+        DeleteGeneralSocialModalComponent,
+        CreateGeneralSocialModalComponent,
         EditBannerModalComponent,
-        EditHeroesModalComponent,
+        EditHeroModalComponent,
+        CreateHeroModalComponent,
         EditTitleCreditModalComponent,
         EditCreditModalComponent,
         DeleteCreditModalComponent,
@@ -396,7 +403,7 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         DeleteBlooperModalComponent,
         EditDivisorBlooperModalComponent,
         EditEndBlooperModalComponent,
-        AudiovisualIntroModalComponent,
+        AudiovisualCoverModalComponent,
         AudiovisualProfileModalComponent,
         AudiovisualDivisorsModalComponent,
         AudiovisualPresentationModalComponent,
@@ -405,7 +412,7 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         AudiovisualQuotesModalComponent,
         AudiovisualClosingModalComponent,
         AudiovisualLinksModalComponent,
-        EditAudiovisualIntroModalComponent,
+        EditAudiovisualCoverModalComponent,
         EditAudiovisualProfileModalComponent,
         EditAudiovisualDivisorOneModalComponent,
         EditAudiovisualDivisorTwoModalComponent,
@@ -513,9 +520,7 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         EditExperienceOneCvModalComponent,
         EditExperienceTwoCvModalComponent,
         EditProjectsCvModalComponent,
-        EditNameReferencesCvModalComponent,
-        EditPhoneReferencesCvModalComponent,
-        EditEmailReferencesCvModalComponent,
+        EditDataReferencesCvModalComponent,
         SerieComponent,
         OtherComponent,
         LongshotComponent,
@@ -531,7 +536,16 @@ import { CvPositionComponent } from './components/sections/developer/cv-profile/
         AudiovisualBloopersComponent,
         DeveloperSkillsComponent,
         CvNameComponent,
-        CvPositionComponent
+        CvPositionComponent,
+        CrudSocialComponent,
+        CreateAudiovisualSocialModalComponent,
+        EditAudiovisualSocialModalComponent,
+        DeleteAudiovisualSocialModalComponent,
+        CreateDeveloperSocialModalComponent,
+        EditDeveloperSocialModalComponent,
+        DeleteDeveloperSocialModalComponent,
+        CreateBannerModalComponent,
+        WhiteOrangeSessionComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

@@ -3,27 +3,13 @@
         <div class="row g-4">
             <div class="col-10 m-auto">
                 <div class="card">
-                    <div *ngFor="let item of data" class="d-flex justify-content-between">
-                        <a [href]="item.fileDocuments" class="btn btn-black-medium download" target="_blank">
+                    <div class="d-flex justify-content-between">
+                        <a *ngFor="let item of dataList" [href]="item.file" class="btn btn-black-medium download" target="_blank">
                             <div class="d-flex justify-content-end">
                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                             </div>
-                            <h5 class="my-1">{{item.documents}}</h5>
-                            <small class="text-muted mb-4">{{item.rightsDocuments}} <i class="fa-regular fa-copyright"></i></small>
-                        </a>
-                        <a [href]="item.fileProjects" class="btn btn-black-medium download" target="_blank">
-                            <div class="d-flex justify-content-end">
-                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                            </div>
-                            <h5 class="my-1">{{item.projects}}</h5>
-                            <small class="text-muted mb-4">{{item.rightsProjects}} <i class="fa-regular fa-copyright"></i></small>
-                        </a>
-                        <a [href]="item.fileSamples" class="btn btn-black-medium download" target="_blank">
-                            <div class="d-flex justify-content-end">
-                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                            </div>
-                            <h5 class="my-1">{{item.samples}}</h5>
-                            <small class="text-muted mb-4">{{item.rightsSamples}} <i class="fa-regular fa-copyright"></i></small>
+                            <h5 class="my-1">{{item.title}}</h5>
+                            <small class="text-muted mb-4">{{item.register}} <i class="fa-regular fa-copyright"></i></small>
                         </a>
                     </div>
                 </div>

@@ -1,26 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-developer-experience',
   templateUrl: './developer-experience.component.html'
 })
 export class DeveloperExperienceComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Experiences
   experiences : any = [];
 
-  //Variable del Componente
-  title = "Trabajos que hice y hago..."
-  
+  //Array Sections
+  sections : any = [];
+
   //Inyección de Service
-    constructor (private developerService:DeveloperService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.developerService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
         this.experiences = data.experiences;
+        this.sections = data.sections;
       })
     }
 

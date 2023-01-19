@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-closing',
   templateUrl: './audiovisual-closing.component.html'
 })
 export class AudiovisualClosingComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Closing
   closing : any = [];
   
   //Inyección de Service
-  constructor (private audiovisualService:AudiovisualService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.audiovisualService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.closing = data.closing;
     })

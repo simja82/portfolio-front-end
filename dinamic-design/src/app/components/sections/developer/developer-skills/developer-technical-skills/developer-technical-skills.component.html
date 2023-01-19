@@ -1,10 +1,10 @@
 <div class="mb-3">
     <div class="row g-4">
-        <h4 class="text-center pt-4">{{title}}</h4>
+        <h4 class="text-center pt-4">{{sections.technicals}}</h4>
         <div *ngFor="let skill of technicals" class="col-4">
             <div class="text-center">
-                <div [class]="skill.progress">
-                    <span class="pt-1"><i [class]="skill.icon"></i></span>
+                <div [class]="skill.progress" class="progress-circle">
+                    <span class="pt-1"><i [class]="skill.icon" class="fa-2x mt-4 pt-s"></i></span>
                 </div> 
                 <h6 class="mt-1">{{skill.technology}}</h6>
                 <p>{{skill.percentage}}%</p>

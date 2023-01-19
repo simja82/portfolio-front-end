@@ -1,14 +1,14 @@
 <section class="data section-top d-flex justify-content-center pb-5">
     <div class="container">
-        <h3 *ngFor="let title of data" class="d-flex justify-content-center"><span class="text-orange text-center mb-3">{{title.title}}</span></h3>
-        <h5 *ngFor="let line of data" class="text-center pb-5">
-            {{line.one}}
+        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3">{{dataPage.title}}</span></h3>
+        <h5 class="text-center pb-5">
+            {{dataPage.lineOne}}
             <br><br>    
-            {{line.two}}
+            {{dataPage.lineTwo}}
             <br><br>
-            {{line.three}}
+            {{dataPage.lineThree}}
             <br><br>
-            {{line.four}}
+            {{dataPage.lineFour}}
         </h5>
     </div>
 </section>

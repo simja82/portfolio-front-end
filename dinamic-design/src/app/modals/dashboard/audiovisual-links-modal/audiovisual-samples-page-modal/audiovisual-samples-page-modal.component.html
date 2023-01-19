@@ -3,20 +3,20 @@
         <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="audiovisualSamplesPagesModalLabel">Samples</h1>
+                    <h1 class="modal-title fs-5" id="audiovisualSamplesPagesModalLabel">{{samplesPage.title}}</h1>
                     <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Back"></i>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Muestras</span></h4>
+                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{samplesPage.title}}</span></h4>
                         <p class="text-center">
-                            Así como tengo Proyectos en distintas etapas de desarrollo también tengo Muestras que se pueden compartir...
+                            {{samplesPage.lineOne}}
                             <br><br>    
-                            Esto sirve para sumar a la parte de Presentación, para dar a conocer acerca de los estilos con los cuales se trabaja...
+                            {{samplesPage.lineTwo}}
                             <br><br>
-                            Algo muy particular dentro de la Industria Audiovisual es que podemos elegir qué hacer y qué no hacer... 
+                            {{samplesPage.lineThree}} 
                             <br><br>
-                            En mi caso hay Géneros que no trabajo porque no son lo mío... 
+                            {{samplesPage.lineThree}}
                         </p>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
@@ -25,154 +25,38 @@
                     <hr class="w-75 m-auto mt-3 pb-3">
                     <div class="container text-center">
                         <div class="row g-4">
-                            <div class="col-6">
+                            <div *ngFor="let sample of samples" class="col-6">
                                 <div class="card">
-                                    <img src="./../assets/img/audiovisual/projects/loopholes-min.png" class="card-img-top" alt="...">
+                                    <img [src]="sample.card" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Título</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text text-muted">Formato - Género</p>
+                                        <h5 class="card-title">{{sample.title}}</h5>
+                                        <p class="card-text">{{sample.logline}}</p>
+                                        <p class="card-text text-muted">{{sample.format}} - {{sample.genre}}</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <a href="#" class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
-                                            <h5 class="my-1">Logline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
+                                            <h5 class="my-1">{{sample.typeLogline}}</h5>
+                                            <p class="mb-2">{{sample.draftLogline}}</p>
+                                            <small class="text-muted mb-4">{{sample.rightsLogline}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
                                         <a href="#" class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
-                                            <h5 class="my-1">Storyline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
+                                            <h5 class="my-1">{{sample.typeStoryline}}</h5>
+                                            <p class="mb-2">{{sample.draftStoryline}}</p>
+                                            <small class="text-muted mb-4">{{sample.rightsStoryline}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
                                         <a href="#" class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
-                                            <h5 class="my-1">Synopsis</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center my-3">
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                </div>
-                                <div class="card">
-                                    <img src="./../assets/img/audiovisual/projects/kala-min.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text text-muted">Formato - Género</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Logline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Storyline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Synopsis</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center my-3">
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="card">
-                                    <img src="./../assets/img/audiovisual/projects/gen-min.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text text-muted">Formato - Género</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Logline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Storyline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Synopsis</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center my-3">
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteAudiovisualSampleModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                                </div>
-                                <div class="card">
-                                    <img src="./../assets/img/audiovisual/projects/broken-min.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Título</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text text-muted">Formato - Género</p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Logline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Storyline</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
-                                        </a>
-                                        <a href="#" class="btn btn-black-medium download">
-                                            <div class="d-flex justify-content-end">
-                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
-                                            </div>
-                                            <h5 class="my-1">Synopsis</h5>
-                                            <p class="mb-2">Blue Draft</p>
-                                            <small class="text-muted mb-4">2016 <i class="fa-regular fa-copyright"></i></small>
+                                            <h5 class="my-1">{{sample.typeSynopsis}}</h5>
+                                            <p class="mb-2">{{sample.draftSynopsis}}</p>
+                                            <small class="text-muted mb-4">{{sample.rightsSynopsis}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
                                     </div>
                                 </div>
@@ -189,7 +73,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
+                    <button class="btn btn-black-mini" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Back">{{buttons.cancel}}</button>
                 </div>
             </div>
         </div>

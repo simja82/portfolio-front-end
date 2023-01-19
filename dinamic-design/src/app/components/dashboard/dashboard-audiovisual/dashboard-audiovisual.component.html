@@ -7,7 +7,7 @@
         <div class="row pt-4">
             <div *ngFor="let button of audiovisual" class="col-6 col-md-3 col-lg-4 pb-5">
                 <button type="button" class="btn btn-black" data-bs-toggle="modal" [attr.data-bs-target]="'#'+button.target">
-                    <i [class]="button.icon"></i>
+                    <i [class]="button.icon" class="fa-2x text-white"></i>
                 </button>
                 <h5 class="mt-3">{{button.section}}</h5>
             </div>
@@ -16,7 +16,7 @@
 </section>
 
 <!-- Overview Modals -->
-<app-audiovisual-intro-modal></app-audiovisual-intro-modal>
+<app-audiovisual-cover-modal></app-audiovisual-cover-modal>
 <app-audiovisual-profile-modal></app-audiovisual-profile-modal>
 <app-audiovisual-divisors-modal></app-audiovisual-divisors-modal>
 <app-audiovisual-presentation-modal></app-audiovisual-presentation-modal>

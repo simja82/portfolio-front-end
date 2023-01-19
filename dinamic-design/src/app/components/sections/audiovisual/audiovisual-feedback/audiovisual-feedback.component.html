@@ -1,12 +1,12 @@
 <section class="feedback d-flex justify-content-center w-75 m-auto text-center">
     <div class="container">
-        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Feedback</span></h3>                                    
-        <h6 *ngFor="let line of feedback">
-            {{line.one}} 
+        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{feedbackIntro.title}}</span></h3>                                    
+        <h6>
+            {{feedbackIntro.lineOne}} 
             <br><br>
-            {{line.two}}
+            {{feedbackIntro.lineTwo}}
             <br><br>    
-            {{line.three}} 
+            {{feedbackIntro.lineThree}} 
         </h6>
     </div>        
 </section>
@@ -17,7 +17,7 @@
             <div class="row g-2">
                 <!-- Start Say -->
                 <div *ngFor="let say of saying" class="col-6 col-sm-12 col-md-6 col-lg-6">
-                    <a href="{{say.link}}" target="_blank">
+                    <a [href]="say.link" target="_blank">
                         <div class="card">
                             <div class="card-body d-flex justify-content-center">      
                                 <img [src]="say.photo" class="rounded-circle w-50 mb-2">
@@ -33,6 +33,6 @@
             </div>
         </div>
     </div>  
-    <h5 *ngFor="let subtitle of feedback" class="w-75 text-center m-auto pt-4 mb-2">{{subtitle.subtitle}}</h5>
-    <p *ngFor="let paragraph of feedback" class="w-75 text-center m-auto mb-2">{{paragraph.paragraph}}</p>
+    <h5 class="w-75 text-center m-auto pt-4 mb-2">{{feedbackIntro.subtitle}}</h5>
+    <p class="w-75 text-center m-auto mb-2">{{feedbackIntro.paragraph}}</p>
 </section>

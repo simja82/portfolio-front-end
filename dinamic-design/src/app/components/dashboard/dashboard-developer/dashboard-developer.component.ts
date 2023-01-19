@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DashboardService } from 'src/assets/services/dashboard.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-dashboard-developer',
@@ -7,19 +7,20 @@ import { DashboardService } from 'src/assets/services/dashboard.service';
   styleUrls: ['./dashboard-developer.component.css']
 })
 export class DashboardDeveloperComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Developer
   developer : any = [];
   
   //Variable del Componente
   title = "Developer";
 
   //Inyección de Service
-  constructor (private dashboardService:DashboardService) {
+  constructor (private povService:POVService) {
   }
   
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.dashboardService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.developer = data.developer;
     })

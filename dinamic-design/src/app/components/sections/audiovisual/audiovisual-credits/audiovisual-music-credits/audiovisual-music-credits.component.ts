@@ -1,14 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-music-credits',
   templateUrl: './audiovisual-music-credits.component.html'
 })
-export class AudiovisualMusicCreditsComponent {
-  //Variables de Componente
-  music = "Música";
-  title = "Synapse";
-  author = "佐空 saku. | beats";
-  icon = "fa-brands fa-soundcloud fa-3x text-white";
-  link = "https://soundcloud.com/notsaku";
+export class AudiovisualMusicCreditsComponent implements OnInit {
+
+  //Array Music Credits
+  musicCredits : any = [];
+
+  //Inyección de Service
+  constructor (private povService: POVService) { }
+
+  ngOnInit(): void { 
+    //Almacenamiento de datos
+    this.povService.getData().subscribe(data => {
+      //Información a mostrar
+      this.musicCredits = data.musicCredits;
+    })
+  }
+
 }
+ 

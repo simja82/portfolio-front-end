@@ -7,89 +7,35 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="./../assets/img/developer/projects/login.png" class="img-fluid rounded-start" alt="...">
-                                <div class="text-center mt-4">
-                                    <h5>Puesto</h5>
-                                    <h6>Lugar</h6>
-                                    <p>Inicio - Fin</p>      
+                    <div *ngFor="let experience of experiences" class="experience">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img [src]="experience.image" class="img-fluid rounded-start" [alt]="experience.alt">
+                                    <div class="text-center mt-4">
+                                        <h5>{{experience.position}}</h5>
+                                        <h6>{{experience.place}}</h6>
+                                        <p>{{experience.starting}} - {{experience.ending}}</p>      
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body ms-2 mt-2">
-                                    <h6>Descripción:</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <h6>Tareas:</h6>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                    </ul>
-                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body ms-2 mt-2">
+                                        <h6>{{experience.description}}:</h6>
+                                        <p class="card-text">{{experience.textDescription}}</p>
+                                        <h6>{{experience.tasks}}</h6>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">{{experience.taskOne}}</li>
+                                            <li class="list-group-item">{{experience.taskTwo}}</li>
+                                            <li class="list-group-item">{{experience.taskThree}}</li>
+                                        </ul>
+                                    </div>
+                                </div>  
                             </div>  
-                        </div>  
-                    </div>              
-                    <div class="d-flex justify-content-center my-3">
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="./../assets/img/developer/projects/selector.png" class="img-fluid rounded-start" alt="...">
-                                <div class="text-center mt-4">
-                                    <h5>Puesto</h5>
-                                    <h6>Lugar</h6>
-                                    <p>Inicio - Fin</p>      
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body ms-2 mt-2">
-                                    <h6>Descripción:</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <h6>Tareas:</h6>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                    </ul>
-                                </div>
-                            </div>  
-                        </div>  
-                    </div>              
-                    <div class="d-flex justify-content-center my-3">
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="./../assets/img/developer/projects/overlay.png" class="img-fluid rounded-start" alt="...">
-                                <div class="text-center mt-4">
-                                    <h5>Puesto</h5>
-                                    <h6>Lugar</h6>
-                                    <p>Inicio - Fin</p>      
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body ms-2 mt-2">
-                                    <h6>Descripción:</h6>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <h6>Tareas:</h6>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">An item</li>
-                                        <li class="list-group-item">A second item</li>
-                                        <li class="list-group-item">A third item</li>
-                                    </ul>
-                                </div>
-                            </div>  
-                        </div>  
-                    </div>              
-                    <div class="d-flex justify-content-center my-3">
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                        </div>              
+                        <div class="d-flex justify-content-center my-3">
+                            <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperExperienceModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                        </div>
                     </div>
                 </div>
                 <hr class="w-75 my-2 m-auto">
@@ -97,7 +43,7 @@
                     <button class="btn btn-black-extra-mini" data-bs-target="#createDeveloperExperienceModal" data-bs-toggle="modal" aria-label="Create"><i class="fa-solid fa-circle-plus"></i></button>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
                 </div>
             </div>
         </div>

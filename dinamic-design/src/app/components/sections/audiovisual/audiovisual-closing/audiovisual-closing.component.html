@@ -1,11 +1,11 @@
 <section class="signature d-flex justify-content-center w-75 m-auto text-center mt-5 pt-5">
-    <h5 *ngFor="let line of closing" class="mt-5 mb-5 pb-5">
-        {{line.one}}
+    <h5 class="mt-5 mb-5 pb-5">
+        {{closing.lineOne}}
         <br><br>
-        {{line.two}}
+        {{closing.lineTwo}}
         <br><br>
-        {{line.three}}
+        {{closing.lineThree}}
         <br><br>
-        <i [class]="line.icon"></i>
+        <i [class]="closing.icon" class="fa-7x"></i>
     </h5>
 </section>

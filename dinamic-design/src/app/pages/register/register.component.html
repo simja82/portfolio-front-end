@@ -1,5 +1,4 @@
-
-<section class="background" [class.register] = "photo">   
+<section class="background" [ngStyle]="{'background-image': 'url(' + banners[3].image + ')'}">  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
@@ -7,23 +6,23 @@
         <app-black-session></app-black-session>
     </nav>
 
-    <!-- Plus -->
-    <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+   <!-- Plus -->
+   <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
+        <a class="plus" [attr.data-tooltip]="banners[3].description">
             <app-black-plus></app-black-plus>
-        </a>         
+        </a>   
     </div>
 
     <!-- Enlace -->
     <div class="text-center pt-5">
         <div class="col-12 mt-5 pt-5 mb-4">
-            <h1 *ngFor="let title of register" class="hero text-black mt-5 pt-5">{{title.hero}}</h1>
+            <h1 class="hero text-black mt-5 pt-5">{{heroes[3].hero}}</h1>
         </div>
         <div class="col-12 mb-5">
-            <h4 *ngFor="let subtitle of register" class="hero text-black">{{subtitle.subhero}}</h4>
+            <h4 class="hero text-black">{{heroes[3].subhero}}</h4>
         </div>
         <a routerLink="/">
-            <button *ngFor="let button of register" type="button" class="btn btn-outline-black btn-width btn-lg">{{button.return}}</button>
+            <button type="button" class="btn btn-outline-black btn-width btn-lg">{{buttons.return}}</button>
         </a>         
     </div>
 

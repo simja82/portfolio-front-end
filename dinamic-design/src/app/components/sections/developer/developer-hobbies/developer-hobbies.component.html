@@ -1,11 +1,11 @@
 <section class="hobbies mt-5 pt-5">
     <div class="container w-75">
-        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-star"></i> <span class="text-orange text-center ms-3"> {{title}}</span></h3>
+        <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-star"></i> <span class="text-orange text-center ms-3"> {{sections.hobbies}}</span></h3>
         <div class="mb-3">
             <div class="row g-0 container">
                 <div *ngFor="let hobby of hobbies" class="col-4 mt-4">
                     <div class="text-center">
-                        <h6><i [class]="hobby.icon"></i></h6>
+                        <h6><i [class]="hobby.icon" class="fa-3x mt-4"></i></h6>
                         <h6 class="mt-1">{{hobby.description}}</h6>          
                     </div>
                 </div>

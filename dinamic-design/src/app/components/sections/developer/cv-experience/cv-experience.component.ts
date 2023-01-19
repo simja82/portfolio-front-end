@@ -1,26 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-cv-experience',
   templateUrl: './cv-experience.component.html'
 })
 export class CvExperienceComponent implements OnInit {
-  //Declaración de Array
-  experiencesCV : any = [];
 
-  //Variable del Componente
-  title = "Experiencia";
-  
-  constructor (private developerService:DeveloperService) { }
+  //Array Experiences CV
+  experienceCV : any = [];
 
-  ngOnInit(): void { 
-    //Almacenamiento de datos
-    this.developerService.getData().subscribe(data => {
-      //Información a mostrar
-      this.experiencesCV = data.experiencesCV;
-    })
+  //Array Sections CV
+  sectionsCV : any = [];
+
+  //Inyección de Service
+    constructor (private povService:POVService) {
+    }
+    
+    ngOnInit(): void { 
+      //Almacenamiento de datos
+      this.povService.getData().subscribe(data => {
+        //Información a mostrar
+        this.experienceCV = data.experienceCV;
+        this.sectionsCV = data.sectionsCV;
+      })
+    }
+
   }
-
-}
-

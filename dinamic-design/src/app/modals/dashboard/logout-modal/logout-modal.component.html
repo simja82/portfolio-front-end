@@ -7,13 +7,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <i class="fa-solid fa-circle-exclamation justify-content-center d-flex fa-2x pt-3"></i>
+                    <i [class]="logout.icon" class="justify-content-center d-flex fa-2x pt-3"></i>
                     <br>
-                    <p class="justify-content-center d-flex">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="justify-content-center d-flex">{{logout.text}}</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
-                    <button type="button" class="btn btn-black-mini">Logout</button>
+                    <button type="button" class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
+                    <button type="button" class="btn btn-black-mini">{{buttons.logout}}</button>
                 </div>
             </div>
         </div>

@@ -1,26 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-developer-hobbies',
   templateUrl: './developer-hobbies.component.html'
 })
 export class DeveloperHobbiesComponent implements OnInit {
-  //Declaración de Array
+
+  //Array Hobbies
   hobbies : any = [];
 
-  //Variable del Componente
-  title = "Cosas que me gustan..."
-  
+  //Array Sections
+  sections : any = [];
+
   //Inyección de Service
-    constructor (private developerService:DeveloperService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.developerService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
         this.hobbies = data.hobbies;
+        this.sections = data.sections;
       })
     }
 

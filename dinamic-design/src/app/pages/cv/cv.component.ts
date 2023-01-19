@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { DeveloperService } from 'src/assets/services/developer.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-cv',
@@ -8,19 +8,21 @@ import { DeveloperService } from 'src/assets/services/developer.service';
   styleUrls: ['./cv.component.css']
 })
 export class CVComponent implements OnInit {
-  //Declaración de Array
+
+  //Array CV
   cv : any = [];
 
-  constructor (private title:Title, private developerService:DeveloperService) {
-    title.setTitle('Developer CV | Point of View')
-  }
+  //Inyección de Service
+    constructor (private povService:POVService) {
+    }
+    
+    ngOnInit(): void { 
+      //Almacenamiento de datos
+      this.povService.getData().subscribe(data => {
+        //Información a mostrar
+        this.cv = data.cv;
+      })
+    }
 
-  ngOnInit(): void { 
-    //Almacenamiento de datos
-    this.developerService.getData().subscribe(data => {
-      //Información a mostrar
-      this.cv = data.cv;
-    })
   }
-
-}
+  

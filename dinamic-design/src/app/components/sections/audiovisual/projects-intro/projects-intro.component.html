@@ -1,14 +1,14 @@
 <section class="projects section-top d-flex justify-content-center pb-5">
     <div class="container">
-        <h3 *ngFor="let title of projects" class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{title.title}}</span></h3>
-        <h5 *ngFor="let line of projects" class="text-center pb-5">
-            {{line.four}}
+        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{projectsPage.title}}</span></h3>
+        <h5 class="text-center pb-5">
+            {{projectsPage.lineOne}}
             <br><br>    
-            {{line.five}}
+            {{projectsPage.lineTwo}}
             <br><br>
-            {{line.six}}
+            {{projectsPage.lineThree}}
             <br><br>
-            {{line.seven}}
+            {{projectsPage.lineFour}}
         </h5>
     </div>
 </section>

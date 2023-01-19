@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class SamplesService {
+
+    //Array Samples
     samples : any[] =
     [
         {
@@ -90,6 +92,7 @@ export class SamplesService {
 
     constructor() {}
 
+    //Samples
     getSamples() {
       return this.samples;
     }

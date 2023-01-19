@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { GeneralService } from 'src/assets/services/general.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-links',
@@ -8,23 +8,33 @@ import { GeneralService } from 'src/assets/services/general.service';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent implements OnInit {
-//Array Index
-links : any = [];
+ 
+//Array Banners
+banners : any = [];
 
-//Image Background
-photo = true;
+//Array Heroes
+heroes : any = [];
+
+//Array Buttons
+buttons : any = [];
+
+//Array Phrases
+phrases : any = [];
 
 //Inyección de Title y Service
-  constructor (private title:Title, private generalService:GeneralService) {
+  constructor (private title:Title, private povService:POVService) {
     //Seteo de Title
     title.setTitle('Audiovisual Links | Point of View')
   }
 
   ngOnInit(): void { 
     //Almacenamiento de datos
-    this.generalService.getData().subscribe(data => {
+    this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.links = data.links;
+      this.banners = data.banners;
+      this.heroes = data.heroes;
+      this.buttons = data.buttons;
+      this.phrases = data.phrases;
     })
   }
 

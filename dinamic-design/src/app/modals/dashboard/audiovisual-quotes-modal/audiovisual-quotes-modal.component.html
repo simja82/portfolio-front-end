@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="audiovisualModalLabel">Quotes</h1>
+                <h1 class="modal-title fs-5" id="audiovisualModalLabel">{{quotesIntro.title}}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -13,13 +13,13 @@
                             <div class="card">
                                 <div class="card-body">  
                                     <div class="container text-center">
-                                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> Quotes</span></h4>
+                                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{quotesIntro.title}}</span></h4>
                                         <p>
-                                            Entonces... para cerrar esta brevísima introducción a la historia de mi vida...    
+                                            {{quotesIntro.lineOne}}
                                             <br><br>
-                                            Te dejo algunas frases de la Industria Audiovisual que me gustan...
+                                            {{quotesIntro.lineTwo}}
                                             <br><br>    
-                                            Espero que te gusten también y que hayas podido conocerme...
+                                            {{quotesIntro.lineThree}}
                                         </p>
                                     </div>  
                                 </div>
@@ -32,35 +32,11 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div *ngFor="let quote of quotes" class="col-12 mb-3">
                             <div class="card">
-                                <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
+                                <h4 class="d-flex justify-content-center mt-4"><i [class]="quote.icon" class="fa-2x"></i></h4>                                                                     
                                 <div class="text-center mb-4">
-                                    <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center mt-3">
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editAudiovisualQuoteModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteAudiovisualQuoteModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="card">
-                                <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
-                                <div class="text-center mb-4">
-                                    <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center mt-3">
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editAudiovisualQuoteModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteAudiovisualQuoteModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="card">
-                                <h4 class="d-flex justify-content-center mt-4"><i class="fa-solid fa-feather-pointed fa-2x"></i></h4>                                                                     
-                                <div class="text-center mb-4">
-                                    <span class="text-center">"Si tienes un sueño, debes conservarlo.<br>Si quieres algo sal a buscarlo, y punto."<br><i>Chris Gardner</i><br>En busca de la Felicidad</span>    
+                                    <span class="text-center">{{quote.one}}<br>{{quote.two}}<br><i>{{quote.author}}</i><br>{{quote.credit}}</span>    
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center mt-3">
@@ -76,7 +52,7 @@
                 <button class="btn btn-black-extra-mini" data-bs-target="#createAudiovisualQuoteModal" data-bs-toggle="modal"><i class="fa-solid fa-circle-plus"></i></button>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
             </div>
         </div>
     </div>

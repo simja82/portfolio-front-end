@@ -302,3 +302,8 @@ a:hover {
 .fa-rotate {
     transform: rotateY(-180deg);
 }
+
+/* Margin Special */
+.pt-s {
+ padding-top: 0.75rem
+}

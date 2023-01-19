@@ -6,12 +6,14 @@ import { SamplesService } from 'src/assets/services/samples/samples.service';
   templateUrl: './samples-list.component.html'
 })
 export class SamplesListComponent implements OnInit {
-  //Declaración de Array
+
+  //Array de Samples del Servicio Samples
   samples : any = [];
   
   //Inyección de Service
     constructor (private samplesService:SamplesService)
     {
+      //Información a mostrar
       this.samples = samplesService.getSamples();
     }
     

@@ -1,29 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { AudiovisualService } from 'src/assets/services/audiovisual.service';
+import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-audiovisual-documents',
   templateUrl: './audiovisual-documents.component.html'
 })
 export class AudiovisualDocumentsComponent implements OnInit {
-  //Declaración de Array
-  presentation : any = [];
+
+  //Array Presentation
+  audiovisualPresentation : any = [];
+
+  //Array Minibio
   minibio : any = [];
-  mywork : any = [];
-  iwant : any = [];
+
+  //Array My Work
+  myWork : any = [];
+
+  //Array I Want
+  iWant : any = [];
   
   //Inyección de Service
-    constructor (private audiovisualService:AudiovisualService) {
+    constructor (private povService:POVService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.audiovisualService.getData().subscribe(data => {
+      this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.presentation = data.presentation;
+        this.audiovisualPresentation = data.audiovisualPresentation;
         this.minibio = data.minibio;
-        this.mywork = data.mywork;
-        this.iwant = data.iwant;
+        this.myWork = data.myWork;
+        this.iWant = data.iWant;
       })
     }
   
