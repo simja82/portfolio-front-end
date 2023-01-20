@@ -18,22 +18,22 @@ export class LoginComponent implements OnInit {
   //Botón Reactivo
   submitted = false;
  
-//Array Banners
-banners : any = [];
+  //Array Banners
+  banners : any = [];
 
-//Array Forms
-forms : any = [];
+  //Array Forms
+  forms : any = [];
 
-//Array Helpers
-helpers : any = [];
+  //Array Helpers
+  helpers : any = [];
 
-//Array Buttons
-buttons : any = [];
+  //Array Buttons
+  buttons : any = [];
 
-//Array Phrases
-phrases : any = [];
+  //Array Phrases
+  phrases : any = [];
 
-//Inyección de Title, Service y Constructor de Formularios
+  //Inyección de Title, Service y Constructor de Formularios
   constructor (private title:Title, private povService:POVService, private formBuilder: FormBuilder) {
     //Seteo de Title
     title.setTitle('Login | Point of View')

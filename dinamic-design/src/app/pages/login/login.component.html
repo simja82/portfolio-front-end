@@ -24,7 +24,7 @@
                     <div class="form-group mb-3">
                         <label for="inputEmail" class="form-label">{{forms.email}}</label>
                         <!-- Form Control Name and Validation -->
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
+                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors, 'is-valid': !f['email'].errors && f['email'].touched }">
                         <div id="emailHelp" class="form-text">{{helpers.emailHelp}}</div>
                         <!-- Validation Feedback -->
                         <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
@@ -35,7 +35,7 @@
                     <div class="form-group mb-3">
                         <label for="inputPassword" class="form-label">{{forms.password}}</label>
                         <!-- Form Control Name and Validation -->
-                        <input type="password" class="form-control" id="inputPassword" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors }">
+                        <input type="password" class="form-control" id="inputPassword" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors, 'is-valid': !f['password'].errors && f['password'].touched  }">
                         <!-- Validation Feedback -->
                         <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
                             <div *ngIf="f['password'].errors['required']">Debes ingresar una contraseña</div>
