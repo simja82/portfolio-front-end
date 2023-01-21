@@ -34,6 +34,9 @@ export class CreditsModalComponent implements OnInit {
   //Array Blooper Credits
   bloopersCredits : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -50,6 +53,7 @@ export class CreditsModalComponent implements OnInit {
       this.more = data.more;
       this.musicCredits = data.musicCredits;
       this.bloopersCredits = data.bloopersCredits;
+      this.buttons = data.buttons;
     })
   }
 

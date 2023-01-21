@@ -10,6 +10,9 @@ export class BannersModalComponent implements OnInit {
   //Array Banners
   banners : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -18,6 +21,7 @@ export class BannersModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.banners = data.banners;
+      this.buttons = data.buttons;
     })
   }
 

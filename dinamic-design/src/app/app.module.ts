@@ -107,13 +107,10 @@ import { BannersModalComponent } from './modals/dashboard/banners-modal/banners-
 import { HeroesModalComponent } from './modals/dashboard/heroes-modal/heroes-modal.component';
 import { CreditsModalComponent } from './modals/dashboard/credits-modal/credits-modal.component';
 import { BloopersModalComponent } from './modals/dashboard/bloopers-modal/bloopers-modal.component';
-import { EditGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-general-social-modal/edit-general-social-modal.component';
-import { DeleteGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-general-social-modal/delete-general-social-modal.component';
-import { CreateGeneralSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-general-social-modal/create-general-social-modal.component';
 import { EditBannerModalComponent } from './modals/dashboard/banners-modal/edit-banner-modal/edit-banner-modal.component';
 import { EditTitleCreditModalComponent } from './modals/dashboard/credits-modal/edit-title-credit-modal/edit-title-credit-modal.component';
-import { EditCreditModalComponent } from './modals/dashboard/credits-modal/edit-credit-modal/edit-credit-modal.component';
-import { DeleteCreditModalComponent } from './modals/dashboard/credits-modal/delete-credit-modal/delete-credit-modal.component';
+import { EditSingleCreditModalComponent } from './modals/dashboard/credits-modal/edit-single-credit-modal/edit-single-credit-modal.component';
+import { DeleteSingleCreditModalComponent } from './modals/dashboard/credits-modal/delete-single-credit-modal/delete-single-credit-modal.component';
 import { CreateSingleCreditModalComponent } from './modals/dashboard/credits-modal/create-single-credit-modal/create-single-credit-modal.component';
 import { CreateDoubleCreditModalComponent } from './modals/dashboard/credits-modal/create-double-credit-modal/create-double-credit-modal.component';
 import { CreateTripleCreditModalComponent } from './modals/dashboard/credits-modal/create-triple-credit-modal/create-triple-credit-modal.component';
@@ -262,17 +259,26 @@ import { AudiovisualBloopersComponent } from './components/sections/audiovisual/
 import { DeveloperSkillsComponent } from './components/sections/developer/developer-skills/developer-skills.component';
 import { CvNameComponent } from './components/sections/developer/cv-profile/cv-name/cv-name.component';
 import { CvPositionComponent } from './components/sections/developer/cv-profile/cv-position/cv-position.component';
-import { CrudSocialComponent } from './modals/dashboard/social-modal/crud-social/crud-social.component';
-import { CreateAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-audiovisual-social-modal/create-audiovisual-social-modal.component';
-import { EditAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-audiovisual-social-modal/edit-audiovisual-social-modal.component';
-import { DeleteAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-audiovisual-social-modal/delete-audiovisual-social-modal.component';
-import { CreateDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/create-developer-social-modal/create-developer-social-modal.component';
-import { EditDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/edit-developer-social-modal/edit-developer-social-modal.component';
-import { DeleteDeveloperSocialModalComponent } from './modals/dashboard/social-modal/crud-social/delete-developer-social-modal/delete-developer-social-modal.component';
 import { CreateBannerModalComponent } from './modals/dashboard/banners-modal/create-banner-modal/create-banner-modal.component';
 import { CreateHeroModalComponent } from './modals/dashboard/heroes-modal/create-hero-modal/create-hero-modal.component';
 import { EditHeroModalComponent } from './modals/dashboard/heroes-modal/edit-hero-modal/edit-hero-modal.component';
 import { WhiteOrangeSessionComponent } from './components/navbar/session/white-orange/white-orange.component';
+import { CreateAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/create-audiovisual-social-modal/create-audiovisual-social-modal.component';
+import { CreateDeveloperSocialModalComponent } from './modals/dashboard/social-modal/create-developer-social-modal/create-developer-social-modal.component';
+import { CreateGeneralSocialModalComponent } from './modals/dashboard/social-modal/create-general-social-modal/create-general-social-modal.component';
+import { DeleteAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/delete-audiovisual-social-modal/delete-audiovisual-social-modal.component';
+import { DeleteDeveloperSocialModalComponent } from './modals/dashboard/social-modal/delete-developer-social-modal/delete-developer-social-modal.component';
+import { DeleteGeneralSocialModalComponent } from './modals/dashboard/social-modal/delete-general-social-modal/delete-general-social-modal.component';
+import { EditAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/edit-audiovisual-social-modal/edit-audiovisual-social-modal.component';
+import { EditDeveloperSocialModalComponent } from './modals/dashboard/social-modal/edit-developer-social-modal/edit-developer-social-modal.component';
+import { EditGeneralSocialModalComponent } from './modals/dashboard/social-modal/edit-general-social-modal/edit-general-social-modal.component';
+import { EditDoubleCreditModalComponent } from './modals/dashboard/credits-modal/edit-double-credit-modal/edit-double-credit-modal.component';
+import { DeleteDoubleCreditModalComponent } from './modals/dashboard/credits-modal/delete-double-credit-modal/delete-double-credit-modal.component';
+import { EditTripleCreditModalComponent } from './modals/dashboard/credits-modal/edit-triple-credit-modal/edit-triple-credit-modal.component';
+import { DeleteTripleCreditModalComponent } from './modals/dashboard/credits-modal/delete-triple-credit-modal/delete-triple-credit-modal.component';
+import { DeleteThanksModalComponent } from './modals/dashboard/credits-modal/delete-thanks-modal/delete-thanks-modal.component';
+import { CreateMadeModalComponent } from './modals/dashboard/credits-modal/create-made-modal/create-made-modal.component';
+import { DeleteMadeModalComponent } from './modals/dashboard/credits-modal/delete-made-modal/delete-made-modal.component';
 
 @NgModule({
     declarations: [
@@ -385,12 +391,18 @@ import { WhiteOrangeSessionComponent } from './components/navbar/session/white-o
         EditGeneralSocialModalComponent,
         DeleteGeneralSocialModalComponent,
         CreateGeneralSocialModalComponent,
+        EditAudiovisualSocialModalComponent,
+        DeleteAudiovisualSocialModalComponent,
+        CreateAudiovisualSocialModalComponent,
+        EditDeveloperSocialModalComponent,
+        DeleteDeveloperSocialModalComponent,
+        CreateDeveloperSocialModalComponent,
         EditBannerModalComponent,
         EditHeroModalComponent,
         CreateHeroModalComponent,
         EditTitleCreditModalComponent,
-        EditCreditModalComponent,
-        DeleteCreditModalComponent,
+        EditSingleCreditModalComponent,
+        DeleteSingleCreditModalComponent,
         CreateSingleCreditModalComponent,
         CreateDoubleCreditModalComponent,
         CreateTripleCreditModalComponent,
@@ -538,15 +550,15 @@ import { WhiteOrangeSessionComponent } from './components/navbar/session/white-o
         DeveloperSkillsComponent,
         CvNameComponent,
         CvPositionComponent,
-        CrudSocialComponent,
-        CreateAudiovisualSocialModalComponent,
-        EditAudiovisualSocialModalComponent,
-        DeleteAudiovisualSocialModalComponent,
-        CreateDeveloperSocialModalComponent,
-        EditDeveloperSocialModalComponent,
-        DeleteDeveloperSocialModalComponent,
         CreateBannerModalComponent,
-        WhiteOrangeSessionComponent
+        WhiteOrangeSessionComponent,
+        EditDoubleCreditModalComponent,
+        DeleteDoubleCreditModalComponent,
+        EditTripleCreditModalComponent,
+        DeleteTripleCreditModalComponent,
+        DeleteThanksModalComponent,
+        CreateMadeModalComponent,
+        DeleteMadeModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

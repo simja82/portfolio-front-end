@@ -4,38 +4,35 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createHeroModal">Crear Hero</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#heroesModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#heroesModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <div class="modal-body">
-                    <form class="needs-validation">
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="validationCustom01" class="form-label">Hero</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Hero" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="hero" class="form-label">{{forms.hero}}</label>
+                                    <input type="text" class="form-control" id="hero" placeholder="Hero" formControlName="hero" [ngClass]="{ 'is-invalid': submitted && f['hero'].errors, 'is-valid': !f['hero'].errors && f['hero'].touched }">
+                                    <div id="heroHelp" class="form-text">{{helpers.heroHelp}}</div>
+                                    <div *ngIf="submitted && f['hero'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['hero'].errors['required']">Es preciso ingresar un hero</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 my-3">
+                                    <label for="subhero" class="form-label">{{forms.subhero}}</label>
+                                    <input type="text" class="form-control" id="subhero" placeholder="Subhero" formControlName="subhero" [ngClass]="{ 'is-invalid': submitted && f['subhero'].errors, 'is-valid': !f['subhero'].errors && f['subhero'].touched }">
+                                    <div id="subheroHelp" class="form-text">{{helpers.subheroHelp}}</div>
+                                    <div *ngIf="submitted && f['subhero'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['subhero'].errors['required']">Es preciso ingresar un subhero</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 my-3">
-                                <label for="validationCustom03" class="form-label">Descripción</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Descripción" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
+                            </div>    
+                        </div>    
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#heroesModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.save}}</button>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#heroesModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                    <button class="btn btn-black-mini">Actualizar</button>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

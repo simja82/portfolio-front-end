@@ -10,6 +10,9 @@ export class HeroesModalComponent implements OnInit {
   //Array Heroes
   heroes : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -18,6 +21,7 @@ export class HeroesModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.heroes = data.heroes;
+      this.buttons = data.buttons;
     })
   }
 

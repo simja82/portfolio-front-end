@@ -4,36 +4,33 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createDoubleCreditModal">Nuevo Crédito</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="validationCustom01" class="form-label">Crédito</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Crédito" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">                    
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="credit" class="form-label">{{forms.credit}}</label>
+                                    <input type="text" class="form-control" id="credit" placeholder="Crédito" formControlName="credit" [ngClass]="{ 'is-invalid': submitted && f['credit'].errors, 'is-valid': !f['credit'].errors && f['credit'].touched }">
+                                    <div id="creditHelp" class="form-text">{{helpers.creditHelp}}</div>
+                                    <div *ngIf="submitted && f['credit'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['credit'].errors['required']">Es preciso ingresar un crédito</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label for="validationCustom03" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Nombre" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 mt-3">
+                                    <label for="name" class="form-label">{{forms.name}}</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nombre" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors, 'is-valid': !f['name'].errors && f['name'].touched }">
+                                    <div id="nameHelp" class="form-text">{{helpers.nameHelp}}</div>
+                                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['name'].errors['required']">Es preciso ingresar un nombre</div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>                    
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.save}}</button>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
                     </div>
                 </form>
             </div>

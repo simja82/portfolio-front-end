@@ -307,3 +307,8 @@ a:hover {
 .pt-s {
  padding-top: 0.75rem
 }
+
+/* Buttons Sweet Alert */
+button.swal2-confirm.swal2-styled {
+    background: #000;
+}

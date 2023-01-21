@@ -100,7 +100,10 @@
         "close" : "Cerrar",
         "message" : "Mensaje",
         "logout" : "Logout",
-        "cancel" : "Cancelar"
+        "cancel" : "Cancelar",
+        "save" : "Guardar",
+        "delete" : "Eliminar",
+        "update" : "Actualizar"
     },
     "phrases" :
     {
@@ -113,13 +116,35 @@
     "helpers" :    
     {
         "emailHelp" : "Tu email no será compartido con nadie jamás.",
-        "registerHelp" : "Aún no tienes una cuenta?"
+        "registerHelp" : "Aún no tienes una cuenta?",
+        "iconHelp" : "Ingresar una clase de Fontawesome",
+        "urlHelp" : "Ingresar una URL",
+        "descriptionHelp" : "Ingresar una descripción",
+        "heroHelp" : "Ingresar un hero",
+        "subheroHelp" : "Ingresar un subhero",
+        "titleHelp" : "Ingresar un título",
+        "subtitleHelp" : "Ingresar un subtítulo",
+        "basedHelp" : "Ingresar basamiento",
+        "yearHelp" : "Ingresar año",
+        "creditHelp" : "Ingresar un crédito",
+        "nameHelp" : "Ingresar un nombre"
     },
     "forms" :
     {
        "message" : "Mensaje",
        "email" : "Email",
-       "password" : "Password"
+       "password" : "Password",
+       "icon" : "Ícono",
+       "url" : "Enlace",
+       "description" : "Descripción",
+       "hero" : "Hero",
+       "subhero" : "Subhero",
+       "title" : "Título",
+       "subtitle" : "Subtítulo",
+       "based" : "Basado",
+       "year" : "Año",
+       "credit" : "Crédito",
+       "name" : "Nombre"
     },
     "socialGeneral" :
     [
