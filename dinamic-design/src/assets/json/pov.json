@@ -127,7 +127,16 @@
         "basedHelp" : "Ingresar basamiento",
         "yearHelp" : "Ingresar año",
         "creditHelp" : "Ingresar un crédito",
-        "nameHelp" : "Ingresar un nombre"
+        "nameHelp" : "Ingresar un nombre",
+        "toHelp" : "Ingresar un destinatario",
+        "thanksHelp" : "Ingresar un agradecimiento",
+        "authorHelp" : "Ingresar un autor",
+        "trackHelp" : "Ingresar una pista",
+        "lineOneHelp" : "Ingresar la primera línea",
+        "lineTwoHelp" : "Ingresar la segunda línea",
+        "blooperHelp" : "Ingresar un blooper",
+        "mistakeHelp" : "Ingresar un error",
+        "closingHelp" : "Ingresar un cierre"
     },
     "forms" :
     {
@@ -144,7 +153,16 @@
        "based" : "Basado",
        "year" : "Año",
        "credit" : "Crédito",
-       "name" : "Nombre"
+       "name" : "Nombre",
+       "to" : "Destinatario",
+       "thanks" : "Agradecimiento",
+       "author" : "Autor",
+       "track" : "Pista",
+       "lineOne" : "Línea Uno",
+       "lineTwo" : "Línea Dos",
+       "blooper" : "Blooper",
+       "mistake" : "Error",
+       "closing" : "Cierre"
     },
     "socialGeneral" :
     [
@@ -486,7 +504,13 @@
     },
     "music" :
     {
-        "synapse" : "./../../../assets/audio/synapse.mp3"
+        "title" : "Música",
+        "copyright" : "fa-regular fa-copyright",
+        "song" : "Synapse",
+        "author" : "佐空 saku. | beats",
+        "icon" : "fa-brands fa-soundcloud",
+        "link" : "https://soundcloud.com/notsaku",
+        "track" : "./../../../assets/audio/synapse.mp3"
     },
     "credits" :
     {
@@ -683,15 +707,6 @@
             "thing" : "Horas"
         }
     ],
-    "musicCredits" :
-    {
-        "title" : "Música",
-        "copyright" : "fa-regular fa-copyright",
-        "song" : "Synapse",
-        "author" : "佐空 saku. | beats",
-        "icon" : "fa-brands fa-soundcloud",
-        "link" : "https://soundcloud.com/notsaku"
-    },
     "bloopersCredits" :
     {
         "see" : "¿Ya viste los bloopers?",
@@ -700,93 +715,114 @@
     },
     "bloopers" :
     {
-        "lineOne" : "Hay que reconocer",
-        "lineTwo" : "que no se es perfecto...",
-        "lineThree" : "Todo lo que puede fallar...",
-        "lineFour" : "falla...",
-        "lineFive" : "La vida es un carnaval...",
-        "lineSix" : "Por eso ¡¡¡no hay que llorar!!!",
-        "lineSeven" : "A imposible conmigo...",
-        "lineEight" : "le están sobrando dos letras...",
-        "lineNine" : "Yo pude...",
-        "lineTen" : "vos también podés...",
-        "thanks" : "Muchas gracias por haberme visitado!!!",
+        "thanks" : "¡¡¡Muchas gracias por haberme visitado!!!",
         "signature" : "fa-solid fa-signature",
         "rights" : "fa-regular fa-copyright",
         "register" : "2022"
     },
-    "blooperOne" : 
-    {
-        "blooper" : "Estuve casi dos semanas sin encontrarle la vuelta al routing de Angular...",
-        "mistake" : "Al final era parecido a las rutas de CodeIgniter 4",
-        "icon" : "fa-solid fa-route"
-    },
-    "lineBe" : 
-    {
-        "one" : "No será frustrante...",
-        "two" : "decían..."
-    },
-    "blooperTwo" :
-    {
-        "blooper" : "Al llegar a Java estuve no solo días sino más de un mes tratando de entender algo...",
-        "mistake" : "Creo que en ningún momento supe cómo buscar las cosas o posiblemente no sabía qué debía buscar...",
-        "icon" : "fa-solid fa-burst"
-    },
-    "lineBreak" :
-    {
-        "one" : "Tomate un descanso,",
-        "two" : "vas a ver que es sencillo..."
-    },    
-    "blooperThree" :
-    {
-        "blooper" : "Todo bien con Stackoverflow... Jamás voy a entender cómo es que a algunos les funciona eso de preguntar cosas...",
-        "mistake" : "Me quedo con GitHub y Codepen que son más amigables...",
-        "icon" : "fa-brands fa-stack-overflow"
-    },    
-    "lineTime" :
-    {
-        "one" : "Es cuestión de dedicarle tiempo...",
-        "two" : "¿más tiempo?"
-    },    
-    "blooperFour" :
-    {
-        "blooper" : "Cerca de diez días pasé intentando saber cómo era el tema de rutas dinámicas con slug...",
-        "mistake" : "Me dí por vencida... Me ganó Angular...",
-        "icon" : "fa-solid fa-pause"
-    },   
-    "lineWin" : 
-    {
-        "one" : "¡¡¡Pero no te des por vencida!!!",
-        "two" : "Hasta en ruso busqué respuestas... (no es broma)"
-    },
-    "blooperFive" : 
-    {
-        "blooper" : "¿Pueden creer que no recuerdo un tema importante de Base de Datos que era eliminación lógica?",
-        "mistake" : "Me parece que SQL y yo no nos estamos llevando del todo bien últimamente...",
-        "icon" : "fa-solid fa-xmark"
-    },
-    "lineMemory" :
-    {
-        "one" : "No es por escasez de memoria mía...",
-        "two" : "Creo que ya estoy quemada..."
-    },
-    "blooperSix" : 
-    {
-        "blooper" : "NetBeans... Delicado NetBeans... Lo quiero tanto como lo detesto... Creo que no existe nada más sensible que NetBeans...",
-        "mistake" : "Horas estuve demorada por un espacio... Sí por un espacio...",
-        "icon" : "fa-solid fa-calendar"
-    },
-    "lineSpaces" :
-    {
-        "one" : "Siempre hay que estar atento a todo...",
-        "two" : "O escribir sin espacios entre palabras..."
-    },    
-    "blooperSeven" :
-    {
-        "blooper" : "Es posible que muchos ya lo sepan... Yo no sé JS... No lo puse en los créditos...",
-        "mistake" : "En su reemplazo utilicé CSS3 para hacer animaciones...",
-        "icon" : "fa-solid fa-box-tissue"
-    },
+    "lineBloopers" :
+    [
+        {
+            "id" : 1,
+            "lineOne" : "Hay que reconocer",
+            "lineTwo" : "que no se es perfecto..."
+        },
+        {
+            "id" : 2,
+            "lineOne" : "Todo lo que puede fallar",
+            "lineTwo" : "falla"
+        },
+        {
+            "id" : 3,
+            "lineOne" : "No será frustrante",
+            "lineTwo" : "decían..."
+        },
+        {
+            "id" : 4,
+            "lineOne" : "Tomate un descanso",
+            "lineTwo" : "vas a ver que es sencillo"
+        },
+        {
+            "id" : 5,
+            "lineOne" : "Es cuestión de dedicarle tiempo...",
+            "lineTwo" : "más tiempo?"
+        },
+        {
+            "id" : 6,
+            "lineOne" : "¡¡¡Pero no te des por vencida!!!",
+            "lineTwo" : "Hasta en ruso busqué respuestas... (no es broma)"
+        },
+        {
+            "id" : 7,
+            "lineOne" : "No es por escasez de memoria mía...",
+            "lineTwo" : "Creo que ya estoy quemada..."
+        },
+        {
+            "id" : 8,
+            "lineOne" : "Siempre hay que estar atento a todo...",
+            "lineTwo" : "O escribir sin espacios entre palabras..."
+        },
+        {
+            "id" : 9,
+            "lineOne" : "La vida es un carnaval",
+            "lineTwo" : "Por eso, ¡¡¡no hay que llorar!!!"
+        },
+        {
+            "id" : 10,
+            "lineOne" : "A imposible conmigo",
+            "lineTwo" : "¡¡¡le están sobrando dos letras!!!"
+        },
+        {
+            "id" : 11,
+            "lineOne" : "Yo pude",
+            "lineTwo" : "¡¡¡Vos también podés!!!"
+        }
+    ],
+    "iconBloopers" :
+    [
+        {
+            "id" : 1,
+            "blooper" : "Estuve casi dos semanas sin encontrarle la vuelta al routing de Angular...",
+            "mistake" : "Al final era parecido a las rutas de CodeIgniter 4",
+            "icon" : "fa-solid fa-route"
+        },
+        {
+            "id" : 2,
+            "blooper" : "Al llegar a Java estuve no solo días sino más de un mes tratando de entender algo...",
+            "mistake" : "Creo que en ningún momento supe cómo buscar las cosas o posiblemente no sabía qué debía buscar...",
+            "icon" : "fa-solid fa-burst"
+        },
+        {
+            "id" : 3,
+            "blooper" : "Todo bien con Stackoverflow... Jamás voy a entender cómo es que a algunos les funciona eso de preguntar cosas...",
+            "mistake" : "Me quedo con GitHub y Codepen que son más amigables...",
+            "icon" : "fa-brands fa-stack-overflow"    
+        },
+        {
+            "id" : 4,
+            "blooper" : "Cerca de diez días pasé intentando saber cómo era el tema de rutas dinámicas con slug...",
+            "mistake" : "Me dí por vencida... Me ganó Angular...",
+            "icon" : "fa-solid fa-pause"   
+        },
+        {
+            "id" : 5,
+            "blooper" : "¿Pueden creer que no recuerdo un tema importante de Base de Datos que era eliminación lógica?",
+            "mistake" : "Me parece que SQL y yo no nos estamos llevando del todo bien últimamente...",
+            "icon" : "fa-solid fa-xmark"    
+        },
+        {
+            "id" : 6,
+            "blooper" : "NetBeans... Delicado NetBeans... Lo quiero tanto como lo detesto... Creo que no existe nada más sensible que NetBeans...",
+            "mistake" : "Horas estuve demorada por un espacio... Sí por un espacio...",
+            "icon" : "fa-solid fa-calendar"    
+        },
+        {
+            "id" : 7,
+            "blooper" : "Es posible que muchos ya lo sepan... Yo no sé JS... No lo puse en los créditos...",
+            "mistake" : "En su reemplazo utilicé CSS3 para hacer animaciones...",
+            "icon" : "fa-solid fa-box-tissue"    
+        }
+    ],
     "intro" :
     {
         "title" : "Intro",
@@ -872,7 +908,7 @@
         },
         {
             "id" : 2,
-            "image" : "https://i.ibb.co/xsTp1GD/zazimut.png",
+            "image" : "https://i.ibb.co/jhZSYvT/zazimut.png",
             "alt" : "...",
             "position" : "Puesto",
             "place" : "Lugar",

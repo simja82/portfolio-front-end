@@ -119,7 +119,6 @@ import { CreateThanksModalComponent } from './modals/dashboard/credits-modal/cre
 import { EditMadeModalComponent } from './modals/dashboard/credits-modal/edit-made-modal/edit-made-modal.component';
 import { EditMusicCreditModalComponent } from './modals/dashboard/credits-modal/edit-music-credit-modal/edit-music-credit-modal.component';
 import { EditBloopersCreditModalComponent } from './modals/dashboard/credits-modal/edit-bloopers-credit-modal/edit-bloopers-credit-modal.component';
-import { EditTitleBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-title-blooper-modal/edit-title-blooper-modal.component';
 import { EditBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-blooper-modal/edit-blooper-modal.component';
 import { DeleteBlooperModalComponent } from './modals/dashboard/bloopers-modal/delete-blooper-modal/delete-blooper-modal.component';
 import { EditDivisorBlooperModalComponent } from './modals/dashboard/bloopers-modal/edit-divisor-blooper-modal/edit-divisor-blooper-modal.component';
@@ -279,6 +278,9 @@ import { DeleteTripleCreditModalComponent } from './modals/dashboard/credits-mod
 import { DeleteThanksModalComponent } from './modals/dashboard/credits-modal/delete-thanks-modal/delete-thanks-modal.component';
 import { CreateMadeModalComponent } from './modals/dashboard/credits-modal/create-made-modal/create-made-modal.component';
 import { DeleteMadeModalComponent } from './modals/dashboard/credits-modal/delete-made-modal/delete-made-modal.component';
+import { CreateMoreModalComponent } from './modals/dashboard/credits-modal/create-more-modal/create-more-modal.component';
+import { EditMoreModalComponent } from './modals/dashboard/credits-modal/edit-more-modal/edit-more-modal.component';
+import { DeleteMoreModalComponent } from './modals/dashboard/credits-modal/delete-more-modal/delete-more-modal.component';
 
 @NgModule({
     declarations: [
@@ -411,7 +413,6 @@ import { DeleteMadeModalComponent } from './modals/dashboard/credits-modal/delet
         EditMadeModalComponent,
         EditMusicCreditModalComponent,
         EditBloopersCreditModalComponent,
-        EditTitleBlooperModalComponent,
         EditBlooperModalComponent,
         DeleteBlooperModalComponent,
         EditDivisorBlooperModalComponent,
@@ -558,7 +559,10 @@ import { DeleteMadeModalComponent } from './modals/dashboard/credits-modal/delet
         DeleteTripleCreditModalComponent,
         DeleteThanksModalComponent,
         CreateMadeModalComponent,
-        DeleteMadeModalComponent
+        DeleteMadeModalComponent,
+        CreateMoreModalComponent,
+        EditMoreModalComponent,
+        DeleteMoreModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

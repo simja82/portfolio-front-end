@@ -1,4 +1,4 @@
-<audio [src]="music.synapse" autoplay="autoplay"></audio>
+<audio [src]="music.track" autoplay="autoplay"></audio>
 
 <section class="background bloopers">
     <!-- Navbar -->
@@ -15,33 +15,33 @@
         <div class='credit'>
             <div class="row mb-5 pb-5">
                 <div class='title text-700'>
-                    {{bloopers.lineOne}}
+                    {{lineBloopers[0].lineOne}}
                     <br>
-                    {{bloopers.lineTwo}}
+                    {{lineBloopers[0].lineTwo}}
                 </div>
             </div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{bloopers.lineThree}}
+                {{lineBloopers[1].lineOne}}
                 <br>
-                {{bloopers.lineFour}}
+                {{lineBloopers[1].lineTwo}}
             </div>
             <app-audiovisual-bloopers></app-audiovisual-bloopers>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{bloopers.lineFive}}
+                {{lineBloopers[8].lineOne}}
                 <br>
-                {{bloopers.lineSix}}
+                {{lineBloopers[8].lineTwo}}
             </div>
             <div class="silence"></div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{bloopers.lineSeven}} 
+                {{lineBloopers[9].lineOne}} 
                 <br>
-                {{bloopers.lineEight}}
+                {{lineBloopers[9].lineTwo}}
             </div>
             <div class="silence"></div>
             <div class='feedback text-700 mt-5 pt-5'>
-                {{bloopers.lineNine}} 
+                {{lineBloopers[10].lineOne}} 
                 <br>
-                {{bloopers.lineTen}}
+                {{lineBloopers[10].lineTwo}}
             </div>
             <div class="cut"></div>
             <div class="row mt-5 pt-5 mb-5 pb-5">

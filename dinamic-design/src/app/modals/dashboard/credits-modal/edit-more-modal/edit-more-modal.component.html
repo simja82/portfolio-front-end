@@ -1,10 +1,10 @@
-    <!-- Modal Create Made Credits -->
-    <div class="modal fade" id="createMadeModal" aria-hidden="true" aria-labelledby="createMadeModal" tabindex="-1">
+    <!-- Modal Edit More -->
+    <div class="modal fade" id="editMoreModal" aria-hidden="true" aria-labelledby="editMoreModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="createMadeModal">Crear Hecho</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                    <h1 class="modal-title fs-5" id="editMoreModal">Editar Más</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Back"></i>
                 </div>
                 <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <div class="form-group">
@@ -29,7 +29,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.update}}</button>
                         </div>
                     </div>
                 </form>

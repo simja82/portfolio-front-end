@@ -3,10 +3,10 @@ import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-delete-single-credit-modal',
-  templateUrl: './delete-single-credit-modal.component.html'
+  selector: 'app-delete-more-modal',
+  templateUrl: './delete-more-modal.component.html'
 })
-export class DeleteSingleCreditModalComponent implements OnInit {
+export class DeleteMoreModalComponent implements OnInit {
 
   //Array Buttons
   buttons : any = [];
@@ -25,12 +25,12 @@ export class DeleteSingleCreditModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Muy bien!!!', 'El crédito ha sido eliminado', 'success')
+    Swal.fire('Muy bien!!!', 'El ítem ha sido eliminado', 'success')
   }
 
   //Sweet Alert Success
   alertWithCancel(){
-    Swal.fire('Bueno...', 'El crédito no ha sido eliminado', 'error')
+    Swal.fire('Bueno...', 'El ítem no ha sido eliminado', 'error')
   }
 
 }

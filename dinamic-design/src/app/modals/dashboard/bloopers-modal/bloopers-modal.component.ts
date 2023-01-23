@@ -7,23 +7,17 @@ import { POVService } from 'src/assets/services/pov.service';
 })
 export class BloopersModalComponent implements OnInit {
 
-  //Arrays Bloopers
+  //Array Bloopers
   bloopers : any = [];
-  blooperOne : any = [];
-  blooperTwo : any = [];
-  blooperThree : any = [];
-  blooperFour : any = [];
-  blooperFive : any = [];
-  blooperSix : any = [];
-  blooperSeven : any = [];
 
-  //Arrays Lines
-  lineBe : any = [];
-  lineBreak : any = [];
-  lineTime : any = [];
-  lineWin : any = [];
-  lineMemory : any = [];
-  lineSpaces : any = [];
+  //Arrays Icon Bloopers
+  iconBloopers : any = [];
+
+  //Arrays Line Bloopers
+  lineBloopers : any = [];
+
+  //Array Buttons
+  buttons : any = [];
 
   //Inyección de Service
   constructor (private povService:POVService) {
@@ -34,19 +28,9 @@ export class BloopersModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.bloopers = data.bloopers;
-      this.blooperOne = data.blooperOne;
-      this.lineBe = data.lineBe;
-      this.blooperTwo = data.blooperTwo;
-      this.lineBreak = data.lineBreak;
-      this.blooperThree = data.blooperThree;
-      this.lineTime = data.lineTime;
-      this.blooperFour = data.blooperFour;
-      this.lineWin = data.lineWin;
-      this.blooperFive = data.blooperFive;
-      this.lineMemory = data.lineMemory;
-      this.blooperSix = data.blooperSix;
-      this.lineSpaces = data.lineSpaces;
-      this.blooperSeven = data.blooperSeven;
+      this.iconBloopers = data.iconBloopers;
+      this.lineBloopers = data.lineBloopers;
+      this.buttons = data.buttons;
     })
   }
   

@@ -4,16 +4,15 @@ import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-edit-end-blooper-modal',
-  templateUrl: './edit-end-blooper-modal.component.html'
+  selector: 'app-create-more-modal',
+  templateUrl: './create-more-modal.component.html'
 })
-export class EditEndBlooperModalComponent implements OnInit {
+export class CreateMoreModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    closing: new FormControl(''),
     icon: new FormControl(''),
-    year: new FormControl(''),
+    description: new FormControl(''),
   });
   submitted = false;
 
@@ -33,9 +32,8 @@ export class EditEndBlooperModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        closing: ['', [Validators.required]],
         icon: ['', [Validators.required]],
-        year: ['', [Validators.required]],
+        description: ['', [Validators.required]],
       }
     );
         
@@ -74,12 +72,12 @@ export class EditEndBlooperModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'La sección ha sido actualizada', 'success')
+    Swal.fire('Sí!!!', 'El dato ha sido creado', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'La sección no ha sido actualizada', 'warning')
+    Swal.fire('Nope!!!', 'El dato no ha sido creado', 'warning')
   }
 
 }

@@ -11,11 +11,8 @@ export class CreateMadeModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    title: new FormControl(''),
-    subtitle: new FormControl(''),
-    based: new FormControl(''),
     icon: new FormControl(''),
-    year: new FormControl(''),
+    description: new FormControl(''),
   });
   submitted = false;
 
@@ -35,11 +32,8 @@ export class CreateMadeModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        title: ['', [Validators.required]],
-        subtitle: ['', [Validators.required]],
-        based: ['', [Validators.required]],
         icon: ['', [Validators.required]],
-        year: ['', [Validators.required]],
+        description: ['', [Validators.required]],
       }
     );
         
@@ -78,12 +72,12 @@ export class CreateMadeModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'La información ha sido actualizada', 'success')
+    Swal.fire('Sí!!!', 'El dato ha sido creado', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'La información no ha sido actualizada', 'warning')
+    Swal.fire('Nope!!!', 'El dato no ha sido creado', 'warning')
   }
 
 }

@@ -7,8 +7,8 @@ import { POVService } from 'src/assets/services/pov.service';
 })
 export class AudiovisualMusicCreditsComponent implements OnInit {
 
-  //Array Music Credits
-  musicCredits : any = [];
+  //Array Music
+  music : any = [];
 
   //Inyección de Service
   constructor (private povService: POVService) { }
@@ -17,7 +17,7 @@ export class AudiovisualMusicCreditsComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.musicCredits = data.musicCredits;
+      this.music = data.music;
     })
   }
 

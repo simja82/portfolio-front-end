@@ -28,8 +28,8 @@ export class CreditsModalComponent implements OnInit {
   //Array More
   more : any = [];
 
-  //Array Music Credits
-  musicCredits : any = [];
+  //Array Music
+  music : any = [];
 
   //Array Blooper Credits
   bloopersCredits : any = [];
@@ -51,7 +51,7 @@ export class CreditsModalComponent implements OnInit {
       this.thanks = data.thanks;
       this.made = data.made;
       this.more = data.more;
-      this.musicCredits = data.musicCredits;
+      this.music = data.music;
       this.bloopersCredits = data.bloopersCredits;
       this.buttons = data.buttons;
     })

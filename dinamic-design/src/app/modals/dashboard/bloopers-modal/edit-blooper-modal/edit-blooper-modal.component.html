@@ -4,46 +4,41 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editBlooperModal">Editar Blooper</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="validationCustom01" class="form-label">Ícono</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ícono" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
+                                    <div id="icon" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 mt-3">
+                                    <label for="blooper" class="form-label">{{forms.blooper}}</label>
+                                    <input type="text" class="form-control" id="blooper" placeholder="Blooper" formControlName="blooper" [ngClass]="{ 'is-invalid': submitted && f['blooper'].errors, 'is-valid': !f['blooper'].errors && f['blooper'].touched }">
+                                    <div id="blooper" class="form-text">{{helpers.blooperHelp}}</div>
+                                    <div *ngIf="submitted && f['blooper'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['blooper'].errors['required']">Es preciso ingresar un texto de blooper</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 mt-3">
-                                <label for="validationCustom03" class="form-label">Título</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Título" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-12 my-3">
-                                <label for="validationCustom03" class="form-label">Descripción</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Descripción" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 my-3">
+                                    <label for="mistake" class="form-label">{{forms.mistake}}</label>
+                                    <input type="text" class="form-control" id="mistake" placeholder="Error" formControlName="mistake" [ngClass]="{ 'is-invalid': submitted && f['mistake'].errors, 'is-valid': !f['mistake'].errors && f['mistake'].touched }">
+                                    <div id="mistake" class="form-text">{{helpers.mistakeHelp}}</div>
+                                    <div *ngIf="submitted && f['mistake'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['mistake'].errors['required']">Es preciso ingresar un texto de error</div>
+                                    </div>    
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.update}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>

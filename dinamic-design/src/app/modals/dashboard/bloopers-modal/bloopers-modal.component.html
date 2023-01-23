@@ -4,26 +4,32 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="bloopersModalLabel">Bloopers</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="text-center">
-                        <h5 class='text-700 pt-3 pb-3'>{{bloopers.lineOne}}<br>{{bloopers.lineTwo}}</h5>
-                        <h6 class='text-700'>{{bloopers.lineThree}}<br>{{bloopers.lineFour}}</h6>    
+                        <h5 class='text-700 pt-3 pb-3'>{{lineBloopers[0].lineOne}}<br>{{lineBloopers[0].lineTwo}}</h5>
                     </div>
                     <div class="d-flex justify-content-center mt-2 mb-3">
-                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editTitleBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                    </div>
+                    <hr class="w-75 m-auto">
+                    <div class="text-center">
+                        <h5 class='text-700 pt-3 pb-3'>{{lineBloopers[1].lineOne}}<br>{{lineBloopers[1].lineTwo}}</h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2 mb-3">
+                        <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                     </div>
                     <hr class="w-75 m-auto">
                     <div class="container col-8 m-auto">
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperOne.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperOne.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[0].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[0].mistake}}</p>
                             </div>                            
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperOne.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[0].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>
                         </div>
@@ -32,7 +38,7 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBe.one}} <br>{{lineBe.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[2].lineOne}}<br>{{lineBloopers[2].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
@@ -40,12 +46,12 @@
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperTwo.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[1].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>        
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperTwo.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperTwo.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[1].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[1].mistake}}</p>
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-2 mb-3">
@@ -53,19 +59,19 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBreak.one}} <br>{{lineBreak.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[3].lineOne}}<br>{{lineBloopers[3].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
                         <hr class="w-75 m-auto">                       
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperThree.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperThree.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[2].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[2].mistake}}</p>
                             </div>                            
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperThree.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[2].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +80,7 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineTime.one}} <br>{{lineTime.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[4].lineOne}}<br>{{lineBloopers[4].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
@@ -82,12 +88,12 @@
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperFour.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[3].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperFour.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperFour.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[3].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[3].mistake}}</p>
                             </div>                            
                         </div>
                         <div class="d-flex justify-content-center mt-2 mb-3">
@@ -95,19 +101,19 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineWin.one}} <br>{{lineWin.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[5].lineOne}}<br>{{lineBloopers[5].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
                         <hr class="w-75 m-auto">
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperFive.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperFive.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[4].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[4].mistake}}</p>
                             </div>
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperFive.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[4].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +122,7 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineMemory.one}} <br>{{lineMemory.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[6].lineOne}}<br>{{lineBloopers[6].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
@@ -124,12 +130,12 @@
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperSix.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[5].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>        
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperSix.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperSix.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[5].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[5].mistake}}</p>
                             </div>                            
                         </div>
                         <div class="d-flex justify-content-center mt-2 mb-3">
@@ -137,19 +143,19 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineSpaces.one}} <br>{{lineSpaces.two}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[7].lineOne}}<br>{{lineBloopers[7].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
                         <div class="row text-center mt-3 pt-3">
                             <div class="col-6">
-                                <h6 class='text-700'>{{blooperSeven.blooper}}</h6>
-                                <p class='text-uppercase text-700'>{{blooperSeven.mistake}}</p>
+                                <h6 class='text-700'>{{iconBloopers[6].blooper}}</h6>
+                                <p class='text-uppercase text-700'>{{iconBloopers[6].mistake}}</p>
                             </div>
                             <div class="col-6">
                                 <div class='d-flex justify-content-center'>
-                                    <i [class]="blooperSeven.icon" class="fa-4x mt-4 pt-1"></i>
+                                    <i [class]="iconBloopers[6].icon" class="fa-4x mt-4 pt-1"></i>
                                 </div>
                             </div>
                         </div>
@@ -158,17 +164,17 @@
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                         </div>
                         <hr class="w-75 m-auto">        
-                        <h5 class='text-center text-700 mt-3 pt-3'>{{bloopers.lineFive}} <br>{{bloopers.lineSix}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3'>{{lineBloopers[8].lineOne}} <br>{{lineBloopers[8].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>
                         <hr class="w-75 m-auto">
-                        <h5 class='text-center text-700 mt-3 pt-3 pb-3'>{{bloopers.lineSeven}} <br>{{bloopers.lineEight}}</h5> 
+                        <h5 class='text-center text-700 mt-3 pt-3 pb-3'>{{lineBloopers[9].lineOne}} <br>{{lineBloopers[9].lineTwo}}</h5> 
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>                         
                         <hr class="w-75 m-auto">
-                        <h5 class='text-center text-700 mt-3 pt-3 pb-3'>{{bloopers.lineNine}} <br>{{bloopers.lineTen}}</h5>
+                        <h5 class='text-center text-700 mt-3 pt-3 pb-3'>{{lineBloopers[10].lineOne}} <br>{{lineBloopers[10].lineTwo}}</h5>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDivisorBlooperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                         </div>                            
@@ -184,14 +190,13 @@
                     </div>                
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons.close}}</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- CRUD Modals -->
-    <app-edit-title-blooper-modal></app-edit-title-blooper-modal>
     <app-edit-blooper-modal></app-edit-blooper-modal>
     <app-delete-blooper-modal></app-delete-blooper-modal>
     <app-edit-divisor-blooper-modal></app-edit-divisor-blooper-modal>

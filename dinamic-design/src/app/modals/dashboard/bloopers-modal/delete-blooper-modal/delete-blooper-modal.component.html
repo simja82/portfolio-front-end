@@ -4,16 +4,16 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="deleteBlooperModal">Eliminar Blooper</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Volver"></i>
                 </div>
                 <div class="modal-body">
                     <i class="fa-solid fa-circle-exclamation justify-content-center d-flex fa-2x pt-3"></i>
                     <br>
-                    <p class="justify-content-center d-flex">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="justify-content-center d-flex">¿De verdad quieres eliminar este ítem?</p>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                    <button class="btn btn-black-mini">Eliminar</button>
+                    <button class="btn btn-black-mini" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Volver" (click)="alertWithCancel()">Cancelar</button>
+                    <button class="btn btn-black-mini" data-bs-target="#bloopersModal" data-bs-toggle="modal" aria-label="Volver" (click)="alertWithSuccess()">Eliminar</button>
                 </div>
             </div>
         </div>
