@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="audiovisualDivisorsModalLabel">Divisores</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
@@ -26,7 +26,7 @@
                                         </p>
                                     </div>
                                     <div class="d-flex justify-content-center mt-3 pb-3">
-                                        <button class="btn btn-black-extra-mini" [attr.data-bs-target]="'#'+divisor.target" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="btn btn-black-extra-mini" data-bs-target="#editAudiovisualDivisorModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -34,15 +34,11 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons.close}}</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- CRUD Modals -->
-    <app-edit-audiovisual-divisor-one-modal></app-edit-audiovisual-divisor-one-modal>
-    <app-edit-audiovisual-divisor-two-modal></app-edit-audiovisual-divisor-two-modal>
-    <app-edit-audiovisual-divisor-three-modal></app-edit-audiovisual-divisor-three-modal>
-    <app-edit-audiovisual-divisor-four-modal></app-edit-audiovisual-divisor-four-modal>
-    <app-edit-audiovisual-divisor-five-modal></app-edit-audiovisual-divisor-five-modal>
+    <!-- CRUD Modal -->
+    <app-edit-audiovisual-divisor-modal></app-edit-audiovisual-divisor-modal>

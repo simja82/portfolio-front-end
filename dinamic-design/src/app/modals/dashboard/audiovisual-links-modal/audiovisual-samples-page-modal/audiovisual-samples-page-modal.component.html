@@ -16,7 +16,7 @@
                             <br><br>
                             {{samplesPage.lineThree}} 
                             <br><br>
-                            {{samplesPage.lineThree}}
+                            {{samplesPage.lineFour}}
                         </p>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
@@ -27,14 +27,14 @@
                         <div class="row g-4">
                             <div *ngFor="let sample of samples" class="col-6">
                                 <div class="card">
-                                    <img [src]="sample.card" class="card-img-top" alt="...">
+                                    <img [src]="sample.card" class="card-img-top" [alt]="sample.alt">
                                     <div class="card-body">
                                         <h5 class="card-title">{{sample.title}}</h5>
                                         <p class="card-text">{{sample.logline}}</p>
                                         <p class="card-text text-muted">{{sample.format}} - {{sample.genre}}</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
-                                        <a href="#" class="btn btn-black-medium download">
+                                        <a class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
@@ -42,7 +42,7 @@
                                             <p class="mb-2">{{sample.draftLogline}}</p>
                                             <small class="text-muted mb-4">{{sample.rightsLogline}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
-                                        <a href="#" class="btn btn-black-medium download">
+                                        <a class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
@@ -50,7 +50,7 @@
                                             <p class="mb-2">{{sample.draftStoryline}}</p>
                                             <small class="text-muted mb-4">{{sample.rightsStoryline}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
-                                        <a href="#" class="btn btn-black-medium download">
+                                        <a class="btn btn-black-medium download">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>

@@ -10,6 +10,9 @@ export class AudiovisualDivisorsModalComponent implements OnInit {
   //Array Divisors
   divisors : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -18,6 +21,7 @@ export class AudiovisualDivisorsModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.divisors = data.divisors;
+      this.buttons = data.buttons;
     })
   }
 

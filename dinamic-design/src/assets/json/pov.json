@@ -2,7 +2,7 @@
     "logo" :
     {
         "image" : "https://i.ibb.co/bQkTZb2/logo.png",
-        "alt" : "Argentina Programa"
+        "alt" : "Logo Argentina Programa"
     },
     "banners" :
     [
@@ -134,9 +134,33 @@
         "trackHelp" : "Ingresar una pista",
         "lineOneHelp" : "Ingresar la primera línea",
         "lineTwoHelp" : "Ingresar la segunda línea",
+        "lineThreeHelp" : "Ingresar la tercera línea",
+        "lineFourHelp" : "Ingresar la cuarta línea",
+        "lineFiveHelp" : "Ingresar la quinta línea",
         "blooperHelp" : "Ingresar un blooper",
         "mistakeHelp" : "Ingresar un error",
-        "closingHelp" : "Ingresar un cierre"
+        "closingHelp" : "Ingresar un cierre",
+        "draftHelp" : "Ingresar una versión",
+        "imageHelp" : "Ingresar una imagen",
+        "phraseHelp" : "Ingresar una frase",
+        "limit150" : "Máx. 150 caracteres",
+        "limit200" : "Máx. 200 caracteres",
+        "limit250" : "Máx. 250 caracteres",
+        "introHelp" : "Ingresar una línea de intro",
+        "textHelp" : "Ingresar un texto",
+        "paragraphHelp" : "Ingresar un párrafo",
+        "genreHelp" : "Ingresar género",
+        "stageHelp" : "Ingresar estado",
+        "formatHelp" : "Ingresar formato",
+        "durationHelp" : "Ingresar duración",
+        "loglineHelp" : "Ingresar una Logline",
+        "detailHelp" : "Ingresar detalle",
+        "storylineHelp" : "Ingresar párrafo de Storyline",
+        "synopsisHelp" : "Ingresar párrafo de Sinopsis",
+        "documentHelp" : "Ingresar un documento",
+        "fileHelp" : "Ingresar un archivo",
+        "fullnameHelp" : "Ingresar el nombre completo",
+        "feedbackHelp" : "Ingresar el feedback"
     },
     "forms" :
     {
@@ -160,9 +184,50 @@
        "track" : "Pista",
        "lineOne" : "Línea Uno",
        "lineTwo" : "Línea Dos",
+       "lineThree" : "Línea Tres",
+       "lineFour" : "Línea Cuatro",
+       "lineFive" : "Línea Cinco",
        "blooper" : "Blooper",
        "mistake" : "Error",
-       "closing" : "Cierre"
+       "closing" : "Cierre",
+       "draft" : "Borrador",
+       "image" : "Imagen",
+       "phrase" : "Frase",
+       "introOne" : "Intro Uno",
+       "introTwo" : "Intro Dos",
+       "introThree" : "Intro Tres",
+       "iconMinibio" : "Ícono Minibio",
+       "textMinibio" : "Texto Minibio",       
+       "iconMyWork" : "Ícono My Work",
+       "textMyWork" : "Texto My Work",       
+       "iconIWant" : "Ícono I Want",
+       "textIWant" : "Texto I Want",
+       "iconSeries" : "Ícono Series",
+       "textSeries" : "Texto Series",
+       "iconLongshots" : "Ícono Longshots",
+       "textLongshots" : "Texto Longshots",
+       "iconOthers" : "Ícono Others",
+       "textOthers" : "Texto Others",
+       "one" : "Uno",
+       "two" : "Dos",
+       "three" : "Tres",
+       "four" : "Cuatro",
+       "five" : "Cinco",
+       "six" : "Seis",
+       "seven" : "Siete",
+       "paragraph" : "Párrafo",
+       "format" : "Formato",
+       "duration" : "Duración",
+       "stage" : "Estado",
+       "genre" : "Género",
+       "logline" : "Logline",
+       "detail" : "Detalle",
+       "storyline" : "Storyline",
+       "synopsis" : "Sinopsis",
+       "document" : "Documento",
+       "file" : "Archivo",
+       "fullname" : "Nombre y Apellido",
+       "feedback" : "Feedback"
     },
     "socialGeneral" :
     [
@@ -249,8 +314,7 @@
             "lineTwo" : "¿Por qué contarla de ésta forma y no como tradicionalmente se cuenta por medio de una \"hoja de vida\" o \"CV\"?",
             "lineThree" : "Un secreto... En la Industria Audiovisual no usamos nada de eso... En general...",
             "lineFour" : "Es cierto que puede haber listados de créditos que se parecen a una \"hoja de vida\" pero, no es lo mismo...",
-            "lineFive" : "Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de la Industria Audiovisual...",
-            "target" : "editAudiovisualDivisorOneModal"
+            "lineFive" : "Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de la Industria Audiovisual..."
         },
         {
             "id" : 2,
@@ -259,8 +323,7 @@
             "lineTwo" : "Dicen que todos vestimos una máscara y que la cambiamos de acuerdo a frente a quién, o qué, estamos...",
             "lineThree" : "Bueno, quienes somos parte de la Industria Audiovisual nos \"escondemos\" detrás de ellas...",
             "lineFour" : "Para esclarecer esto... Estar de este lado, detrás de nuestro Arte, es más \"seguro\" para nuestros sentimientos, que estar descubiertos...",
-            "lineFive" : "Te habrás dado cuenta que no sabés cómo me llamo... ¿O sí?...",
-            "target" : "editAudiovisualDivisorTwoModal"
+            "lineFive" : "Te habrás dado cuenta que no sabés cómo me llamo... ¿O sí?..."
         },
         {
             "id" : 3,
@@ -269,8 +332,7 @@
             "lineTwo" : "Sucede que en cada parte de Arte que se deja plasmada hay un poco de uno mismo...",
             "lineThree" : "Indistintamente del género que se elija trabajar, todos, en la Industria Audiovisual, ponemos mucho de nosotros...",
             "lineFour" : "Y... ¿cómo le explicamos a otro qué sentimos cuando hacemos lo que nos dictan las Musas?",
-            "lineFive" : "Todo muy lindo... Cuando ya pasamos por los primeros filtros es un poco más fácil...",
-            "target" : "editAudiovisualDivisorThreeModal"
+            "lineFive" : "Todo muy lindo... Cuando ya pasamos por los primeros filtros es un poco más fácil..."
         },
         {
             "id" : 4,
@@ -279,8 +341,7 @@
             "lineTwo" : "La primera vez pueden pasar muchas cosas que no siempre son buenas...",
             "lineThree" : "Ya cuando se logra dar con las personas un poco más correctas es más sencillo...",
             "lineFour" : "Eso no quiere decir que se pueda mostrar cualquier cosa... Al contrario...",
-            "lineFive" : "A medida que subimos la escalera las exigencias que nos autoimponemos son mayores porque ya no nos debemos solo a nosotros sino a quienes nos respaldan...",
-            "target" : "editAudiovisualDivisorFourModal"
+            "lineFive" : "A medida que subimos la escalera las exigencias que nos autoimponemos son mayores porque ya no nos debemos solo a nosotros sino a quienes nos respaldan..."
         },
         {
             "id" : 5,
@@ -289,8 +350,7 @@
             "lineTwo" : "¿Por qué? Bueno, porque la forma de comunicarnos que tenemos en esta Industria es así...",
             "lineThree" : "Llegaste hasta acá, me diste tu tiempo, y por ello te agradezco abriéndote las puertas, solo un poquito, a mi mundo...",
             "lineFour" : "Por este Arte que me eligió -o elegí- leo y escribo, vuelvo a leer y vuelvo a escribir, mucho...",
-            "lineFive" : "Viajar entre mundos y personajes que, a veces, se vuelven casi personas deja lugar no solo a emociones sino a conocimientos de infinitas dimensiones...",
-            "target" : "editAudiovisualDivisorFiveModal"
+            "lineFive" : "Viajar entre mundos y personajes que, a veces, se vuelven casi personas deja lugar no solo a emociones sino a conocimientos de infinitas dimensiones..."
         }
     ],
     "audiovisualProfile" :
@@ -396,18 +456,21 @@
         {
             "id" : 1,
             "title" : "Documentos",
+            "target" : "editAudiovisualDownloadableDocumentsModal",
             "file" : "https://drive.google.com/file/d/1lpywaVuL8xI4EzuGmQbzRVXH3J0is_ka/view?usp=share_link",
             "register" : "2020"
         },
         {
             "id" : 2,
             "title" : "Proyectos",
+            "target" : "editAudiovisualDownloadableProjectsModal",
             "file" : "https://drive.google.com/file/d/1_i-hLzu-huEvFLUxwPnP7wmDMb0cUGEL/view?usp=share_link",
             "register" : "2020"
         },
         {
             "id" : 3,
             "title" : "Muestras",
+            "target" : "editAudiovisualDownloadableSamplesModal",
             "file" : "https://drive.google.com/file/d/1b6wXbGPhEF1-c__VQ-FpvlUL0oCulEgk/view?usp=share_link",
             "register" : "2020"
         }
@@ -864,7 +927,7 @@
         {
             "id" : 1,
             "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
-            "alt" : "...",
+            "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
             "starting" : "Inicio",
@@ -873,7 +936,7 @@
         {
             "id" : 2,
             "image" : "https://i.ibb.co/M1PFk4q/borde.png",
-            "alt" : "...",
+            "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
             "starting" : "Inicio",
@@ -882,7 +945,7 @@
         {
             "id" : 3,
             "image" : "https://i.ibb.co/QKG9WH0/cards.png",
-            "alt" : "...",
+            "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
             "starting" : "Inicio",
@@ -894,7 +957,7 @@
         {
             "id" : 1,
             "image" : "https://i.ibb.co/HDQSpy6/overlay.png",
-            "alt" : "...",
+            "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
             "starting" : "Inicio",
@@ -909,7 +972,7 @@
         {
             "id" : 2,
             "image" : "https://i.ibb.co/jhZSYvT/zazimut.png",
-            "alt" : "...",
+            "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
             "starting" : "Inicio",
@@ -924,7 +987,7 @@
         {
             "id" : 3,
             "image" : "https://i.ibb.co/9HkbSXC/login.png",
-            "alt" : "...",
+            "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
             "starting" : "Inicio",
@@ -942,7 +1005,7 @@
         {
             "id" : 1,
             "image" : "https://i.ibb.co/YQdsFQD/selector.png",
-            "alt" : "...",
+            "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "icon" : "fa-solid fa-link",
@@ -951,7 +1014,7 @@
         {
             "id" : 2,
             "image" : "https://i.ibb.co/qWtnDdx/spoiler.png",
-            "alt" : "...",
+            "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "icon" : "fa-solid fa-link",
@@ -960,7 +1023,7 @@
         {
             "id" : 3,
             "image" : "https://i.ibb.co/QKG9WH0/cards.png",
-            "alt" : "...",
+            "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "icon" : "fa-solid fa-link",
@@ -969,7 +1032,7 @@
         {
             "id" : 4,
             "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
-            "alt" : "...",
+            "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "icon" : "fa-solid fa-link",
@@ -1567,6 +1630,6 @@
     "logout" : 
     {
         "icon" : "fa-solid fa-circle-exclamation",
-        "text" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-    }    
+        "text" : "Por favor, confirma que quieres cerrar la sesión."
+    }
 }

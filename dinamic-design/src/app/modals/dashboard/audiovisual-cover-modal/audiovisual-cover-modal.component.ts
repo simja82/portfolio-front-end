@@ -10,6 +10,9 @@ export class AudiovisualCoverModalComponent implements OnInit {
   //Array Cover
   cover : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -18,6 +21,7 @@ export class AudiovisualCoverModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.cover = data.cover;
+      this.buttons = data.buttons;
     })
   }
 

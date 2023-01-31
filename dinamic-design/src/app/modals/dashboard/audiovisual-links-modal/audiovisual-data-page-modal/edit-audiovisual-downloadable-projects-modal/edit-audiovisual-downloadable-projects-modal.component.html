@@ -4,36 +4,33 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editAudiovisualDownloadableProjectsModal">Editar Proyectos Data</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="validationCustom01" class="form-label">Archivo</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Archivo" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="file" class="form-label">{{forms.file}}</label>
+                                    <input type="text" class="form-control" id="file" placeholder="Año" formControlName="file" [ngClass]="{ 'is-invalid': submitted && f['file'].errors, 'is-valid': !f['file'].errors && f['file'].touched }">
+                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div *ngIf="submitted && f['file'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['file'].errors['required']">Es preciso ingresar el archivo correspondiente al documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 pt-3">
+                                    <label for="year" class="form-label">{{forms.year}}</label>
+                                    <input type="text" class="form-control" id="year" placeholder="Año" formControlName="year" [ngClass]="{ 'is-invalid': submitted && f['year'].errors, 'is-valid': !f['year'].errors && f['year'].touched }">
+                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div *ngIf="submitted && f['year'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['year'].errors['required']">Es preciso ingresar el año del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 pt-3">
-                                <label for="validationCustom01" class="form-label">Año</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Año" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                            </div>   
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualDataPageModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>

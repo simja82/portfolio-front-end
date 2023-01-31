@@ -4,196 +4,158 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createAudiovisualSampleModal">Nuevo Sample</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation mt-2 px-3">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <label for="validationCustom01" class="form-label">Título</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Título">
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="title" class="form-label">{{forms.title}}</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" [ngClass]="{ 'is-invalid': submitted && f['title'].errors, 'is-valid': !f['title'].errors && f['title'].touched }">
+                                    <div id="titleHelp" class="form-text">{{helpers.titleHelp}}</div>
+                                    <div *ngIf="submitted && f['title'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['title'].errors['required']">Es preciso ingresar un título</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 pt-3">
+                                    <label for="image" class="form-label">{{forms.image}}</label>
+                                    <input type="text" class="form-control" id="image" placeholder="URL Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
+                                    <div id="imageHelp" class="form-text">{{helpers.imageHelp}}</div>
+                                    <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
+                                    </div>    
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <label for="validationCustom03" class="form-label">Imagen</label>
-                                <input type="url" class="form-control" id="validationCustom03" placeholder="URL Imagen">
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="format" class="form-label">{{forms.format}}</label>
+                                    <input type="text" class="form-control" id="format" placeholder="Formato" formControlName="format" [ngClass]="{ 'is-invalid': submitted && f['format'].errors, 'is-valid': !f['format'].errors && f['format'].touched }">
+                                    <div id="formatHelp" class="form-text">{{helpers.formatHelp}}</div>
+                                    <div *ngIf="submitted && f['format'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['format'].errors['required']">Es preciso ingresar un formato</div>
+                                    </div>    
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="genre" class="form-label">{{forms.genre}}</label>
+                                    <input type="text" class="form-control" id="genre" placeholder="Género" formControlName="genre" [ngClass]="{ 'is-invalid': submitted && f['genre'].errors, 'is-valid': !f['genre'].errors && f['genre'].touched }">
+                                    <div id="genreHelp" class="form-text">{{helpers.genreHelp}}</div>
+                                    <div *ngIf="submitted && f['genre'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['genre'].errors['required']">Es preciso ingresar un género</div>
+                                    </div>    
+                                </div>                              
+                                <div class="col-md-12 pt-3">
+                                    <label for="logline" class="form-label">{{forms.logline}}</label>
+                                    <textarea type="text" class="form-control" id="logline" rows="2" placeholder="Logline" formControlName="logline" [ngClass]="{ 'is-invalid': submitted && f['logline'].errors, 'is-valid': !f['logline'].errors && f['logline'].touched }"></textarea>
+                                    <div class="d-flex justify-content-between">
+                                        <div id="loglineHelp" class="form-text">{{helpers.loglineHelp}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers.limit150}}</div>
+                                    </div> 
+                                    <div *ngIf="submitted && f['logline'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['logline'].errors['required']">Es preciso ingresar la Logline</div>
+                                    </div>        
                                 </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Formato</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Formato">
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="documentOne" class="form-label">{{forms.document}} {{forms.one}}</label>
+                                    <input type="text" class="form-control" id="documentOne" placeholder="Documento" formControlName="documentOne" [ngClass]="{ 'is-invalid': submitted && f['documentOne'].errors, 'is-valid': !f['documentOne'].errors && f['documentOne'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div *ngIf="submitted && f['documentOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['documentOne'].errors['required']">Es preciso ingresar el nombre del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="draftOne" class="form-label">{{forms.draft}} {{forms.one}}</label>
+                                    <input type="text" class="form-control" id="draftOne" placeholder="Draft" formControlName="draftOne" [ngClass]="{ 'is-invalid': submitted && f['draftOne'].errors, 'is-valid': !f['draftOne'].errors && f['draftOne'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div *ngIf="submitted && f['draftOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['draftOne'].errors['required']">Es preciso ingresar el borrador del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Género</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Género">
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="yearOne" class="form-label">{{forms.year}} {{forms.one}}</label>
+                                    <input type="text" class="form-control" id="yearOne" placeholder="Año" formControlName="yearOne" [ngClass]="{ 'is-invalid': submitted && f['yearOne'].errors, 'is-valid': !f['yearOne'].errors && f['yearOne'].touched }">
+                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div *ngIf="submitted && f['yearOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['yearOne'].errors['required']">Es preciso ingresar el año del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="fileOne" class="form-label">{{forms.file}} {{forms.one}}</label>
+                                    <input type="text" class="form-control" id="fileOne" placeholder="Archivo" formControlName="fileOne" [ngClass]="{ 'is-invalid': submitted && f['fileOne'].errors, 'is-valid': !f['fileOne'].errors && f['fileOne'].touched }">
+                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div *ngIf="submitted && f['fileOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['fileOne'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>   
-                        <div class="col-md-12 pt-3">
-                            <label for="validationCustom05" class="form-label">Logline</label>
-                            <textarea type="text" class="form-control" id="validationCustom05" placeholder="Logline"></textarea>
-                            <div class="valid-feedback">
-                                Parece correcto!!!
-                            </div>
-                            <div class="invalid-feedback">
-                                No puede quedar vacío!!!
-                            </div>
-                        </div>
-                        <div id="loglineHelp" class="form-text text-end">Máx. 150 caracteres</div>
-                        <div class="row pt-2">
-                            <div class="col-6">
-                                <label for="validationCustom01" class="form-label">Document</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Document" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="documentTwo" class="form-label">{{forms.document}} {{forms.two}}</label>
+                                    <input type="text" class="form-control" id="documentTwo" placeholder="Documento" formControlName="documentTwo" [ngClass]="{ 'is-invalid': submitted && f['documentTwo'].errors, 'is-valid': !f['documentTwo'].errors && f['documentTwo'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div *ngIf="submitted && f['documentTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['documentTwo'].errors['required']">Es preciso ingresar el nombre del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="draftTwo" class="form-label">{{forms.draft}} {{forms.two}}</label>
+                                    <input type="text" class="form-control" id="draftTwo" placeholder="Draft" formControlName="draftTwo" [ngClass]="{ 'is-invalid': submitted && f['draftTwo'].errors, 'is-valid': !f['draftTwo'].errors && f['draftTwo'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div *ngIf="submitted && f['draftTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['draftTwo'].errors['required']">Es preciso ingresar el borrador del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6">
-                                <label for="validationCustom03" class="form-label">Draft</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Draft" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="yearTwo" class="form-label">{{forms.year}} {{forms.two}}</label>
+                                    <input type="text" class="form-control" id="yearOne" placeholder="Año" formControlName="yearTwo" [ngClass]="{ 'is-invalid': submitted && f['yearTwo'].errors, 'is-valid': !f['yearTwo'].errors && f['yearTwo'].touched }">
+                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div *ngIf="submitted && f['yearTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['yearTwo'].errors['required']">Es preciso ingresar el año del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="fileTwo" class="form-label">{{forms.file}} {{forms.two}}</label>
+                                    <input type="text" class="form-control" id="fileTwo" placeholder="Archivo" formControlName="fileTwo" [ngClass]="{ 'is-invalid': submitted && f['fileTwo'].errors, 'is-valid': !f['fileTwo'].errors && f['fileTwo'].touched }">
+                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div *ngIf="submitted && f['fileTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['fileTwo'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Año</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Año" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-2">
+                                    <label for="documentThree" class="form-label">{{forms.document}} {{forms.three}}</label>
+                                    <input type="text" class="form-control" id="documentThree" placeholder="Documento" formControlName="documentThree" [ngClass]="{ 'is-invalid': submitted && f['documentThree'].errors, 'is-valid': !f['documentThree'].errors && f['documentThree'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div *ngIf="submitted && f['documentThree'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['documentThree'].errors['required']">Es preciso ingresar el nombre del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-2">
+                                    <label for="draftThree" class="form-label">{{forms.draft}} {{forms.three}}</label>
+                                    <input type="text" class="form-control" id="draftThree" placeholder="Draft" formControlName="draftThree" [ngClass]="{ 'is-invalid': submitted && f['draftThree'].errors, 'is-valid': !f['draftThree'].errors && f['draftThree'].touched }">
+                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div *ngIf="submitted && f['draftThree'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['draftThree'].errors['required']">Es preciso ingresar el borrador del documento</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Archivo</label>
-                                <input type="url" class="form-control" id="validationCustom02" placeholder="Archivo" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-6 pt-3">
+                                    <label for="yearThree" class="form-label">{{forms.year}} {{forms.three}}</label>
+                                    <input type="text" class="form-control" id="yearThree" placeholder="Año" formControlName="yearThree" [ngClass]="{ 'is-invalid': submitted && f['yearThree'].errors, 'is-valid': !f['yearThree'].errors && f['yearThree'].touched }">
+                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div *ngIf="submitted && f['yearThree'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['yearThree'].errors['required']">Es preciso ingresar el año del documento</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-6">
-                                <label for="validationCustom01" class="form-label">Document</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Document" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label for="validationCustom03" class="form-label">Draft</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Draft" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Año</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Año" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Archivo</label>
-                                <input type="url" class="form-control" id="validationCustom02" placeholder="Archivo" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row pt-3">
-                            <div class="col-6">
-                                <label for="validationCustom01" class="form-label">Document</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Document" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <label for="validationCustom03" class="form-label">Draft</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Draft" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Año</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Año" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6 pt-3">
-                                <label for="validationCustom02" class="form-label">Archivo</label>
-                                <input type="url" class="form-control" id="validationCustom02" placeholder="Archivo" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 pt-3">
+                                    <label for="fileThree" class="form-label">{{forms.file}} {{forms.three}}</label>
+                                    <input type="text" class="form-control" id="fileThree" placeholder="Archivo" formControlName="fileThree" [ngClass]="{ 'is-invalid': submitted && f['fileThree'].errors, 'is-valid': !f['fileThree'].errors && f['fileThree'].touched }">
+                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div *ngIf="submitted && f['fileThree'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['fileThree'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>
         </div>
     </div>
-

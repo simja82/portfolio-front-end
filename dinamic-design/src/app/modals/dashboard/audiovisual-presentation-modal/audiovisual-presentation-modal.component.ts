@@ -19,6 +19,9 @@ export class AudiovisualPresentationModalComponent implements OnInit {
   //Array I Want
   iWant : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -30,6 +33,7 @@ export class AudiovisualPresentationModalComponent implements OnInit {
       this.minibio = data.minibio;
       this.myWork = data.myWork;
       this.iWant = data.iWant;
+      this.buttons = data.buttons;
     })
   }
 

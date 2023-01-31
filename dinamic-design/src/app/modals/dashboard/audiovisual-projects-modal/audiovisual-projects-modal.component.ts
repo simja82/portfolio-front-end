@@ -9,7 +9,10 @@ export class AudiovisualProjectsModalComponent implements OnInit {
 
   //Array Projects Intro
   projectsIntro : any = [];
-  
+
+  //Array Buttons
+  buttons: any = [];
+
   //Inyección de Service
     constructor (private povService:POVService) {
   }
@@ -19,6 +22,7 @@ export class AudiovisualProjectsModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.projectsIntro = data.projectsIntro;
+      this.buttons = data.buttons;
     })
   }
   

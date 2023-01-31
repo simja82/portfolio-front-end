@@ -8,3 +8,7 @@
     width: 12rem;
     background: #000;
 }
+
+.arrow {
+    cursor: default;
+}

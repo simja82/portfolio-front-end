@@ -20,9 +20,11 @@ import { SamplesComponent } from './pages/samples/samples.component';
 import { SerieComponent } from './components/sections/audiovisual/projects-series/serie/serie.component';
 import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
 import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
+import { ProofreaderComponent } from './pages/proofreader/proofreader.component';
 
 const routes: Routes = [
   { path: '', component:IndexComponent },
+  { path: 'proofreader', component:ProofreaderComponent},
   { path: 'intro', component:IntroComponent },
   { path: 'login', component:LoginComponent },
   { path: 'register', component:RegisterComponent },

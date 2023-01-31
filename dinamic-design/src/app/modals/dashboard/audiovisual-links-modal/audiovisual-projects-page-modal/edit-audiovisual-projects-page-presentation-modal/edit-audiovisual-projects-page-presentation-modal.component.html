@@ -4,56 +4,49 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editAudiovisualProjectsPagePresentationModal">Editar Presentación Proyectos</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="validationCustom01" class="form-label">Línea Uno</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Línea Uno" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="lineOne" class="form-label">{{forms.lineOne}}</label>
+                                    <input type="text" class="form-control" id="lineOne" placeholder="Línea Uno" formControlName="lineOne" [ngClass]="{ 'is-invalid': submitted && f['lineOne'].errors, 'is-valid': !f['lineOne'].errors && f['lineOne'].touched }">
+                                    <div id="lineOneHelp" class="form-text">{{helpers.lineOneHelp}}</div>
+                                    <div *ngIf="submitted && f['lineOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['lineOne'].errors['required']">Es preciso ingresar la primera línea</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 pt-3">
+                                    <label for="lineTwo" class="form-label">{{forms.lineTwo}}</label>
+                                    <input type="text" class="form-control" id="lineTwo" placeholder="Línea Dos" formControlName="lineTwo" [ngClass]="{ 'is-invalid': submitted && f['lineTwo'].errors, 'is-valid': !f['lineTwo'].errors && f['lineTwo'].touched }">
+                                    <div id="lineTwoHelp" class="form-text">{{helpers.lineTwoHelp}}</div>
+                                    <div *ngIf="submitted && f['lineTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['lineTwo'].errors['required']">Es preciso ingresar la segunda línea</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 pt-3">
-                                <label for="validationCustom01" class="form-label">Línea Dos</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Línea Dos" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-12 pt-3">
+                                    <label for="lineThree" class="form-label">{{forms.lineThree}}</label>
+                                    <input type="text" class="form-control" id="lineThree" placeholder="Línea Tres" formControlName="lineThree" [ngClass]="{ 'is-invalid': submitted && f['lineThree'].errors, 'is-valid': !f['lineThree'].errors && f['lineThree'].touched }">
+                                    <div id="lineThreeHelp" class="form-text">{{helpers.lineThreeHelp}}</div>
+                                    <div *ngIf="submitted && f['lineThree'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['lineThree'].errors['required']">Es preciso ingresar la tercera línea</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 pt-3">
+                                    <label for="lineFour" class="form-label">{{forms.lineFour}}</label>
+                                    <input type="text" class="form-control" id="lineFour" placeholder="Línea Cuatro" formControlName="lineFour" [ngClass]="{ 'is-invalid': submitted && f['lineFour'].errors, 'is-valid': !f['lineFour'].errors && f['lineFour'].touched }">
+                                    <div id="lineFourHelp" class="form-text">{{helpers.lineFourHelp}}</div>
+                                    <div *ngIf="submitted && f['lineFour'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['lineFour'].errors['required']">Es preciso ingresar la cuarta línea</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 pt-3">
-                                <label for="validationCustom01" class="form-label">Línea Tres</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Línea Tres" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-12 pt-3">
-                                <label for="validationCustom01" class="form-label">Línea Cuatro</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Línea Cuatro" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>       
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                            </div>   
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualProjectsPageModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>

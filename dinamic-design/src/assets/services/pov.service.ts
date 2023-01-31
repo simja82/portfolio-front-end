@@ -12,4 +12,5 @@ export class POVService {
   getData():Observable<any> {
     return this.http.get('./assets/json/pov.json');
   }
+
 }

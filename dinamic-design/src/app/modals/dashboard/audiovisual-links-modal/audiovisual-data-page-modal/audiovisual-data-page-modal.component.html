@@ -4,7 +4,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="audiovisualDataPageModalLabel">{{dataPage.title}}</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Volver"></i>
                 </div>
                 <div class="modal-body">
                     <div class="container">
@@ -40,7 +40,7 @@
                                 <div class="container">
                                     <div class="mt-2 pt-3 pb-3 d-flex justify-content-between">      
                                         <div *ngFor="let button of dataList" class="col-4 text-center">
-                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableDocumentsModal" data-bs-toggle="modal">{{button.title}}</button>
+                                            <button type="button" class="btn btn-black-link btn-lg" [attr.data-bs-target]="'#'+button.target" data-bs-toggle="modal">{{button.title}}</button>
                                         </div>
                                     </div> 
                                 </div>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Close">{{buttons.cancel}}</button>
+                    <button class="btn btn-black-mini" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Cancelar">{{buttons.cancel}}</button>
                 </div>
             </div>
         </div>

@@ -10,6 +10,9 @@ export class AudiovisualProfileModalComponent implements OnInit {
   //Array Audiovisual Profile
   audiovisualProfile : any = [];
 
+  //Array Buttons
+  buttons : any = [];
+
   //Inyección de Service
   constructor (private povService:POVService) { }
 
@@ -18,6 +21,7 @@ export class AudiovisualProfileModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.audiovisualProfile = data.audiovisualProfile;
+      this.buttons = data.buttons;
     })
   }
 
