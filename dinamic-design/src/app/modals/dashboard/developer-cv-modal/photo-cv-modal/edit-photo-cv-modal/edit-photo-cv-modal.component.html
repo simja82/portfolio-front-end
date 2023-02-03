@@ -4,26 +4,25 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editPhotoCVModal">Editar Foto CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#photoCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#photoCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom01" class="form-label">Imagen</label>
-                                <input type="url" class="form-control" id="validationCustom01" placeholder="Imagen" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <label for="image" class="form-label">{{forms.image}}</label>
+                                    <input type="text" class="form-control" id="image" placeholder="Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
+                                    <div id="imageHelp" class="form-text">{{helpers.imageHelp}}</div>
+                                    <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#photoCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#photoCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>

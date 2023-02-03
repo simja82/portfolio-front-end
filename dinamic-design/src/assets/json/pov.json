@@ -160,7 +160,24 @@
         "documentHelp" : "Ingresar un documento",
         "fileHelp" : "Ingresar un archivo",
         "fullnameHelp" : "Ingresar el nombre completo",
-        "feedbackHelp" : "Ingresar el feedback"
+        "feedbackHelp" : "Ingresar el feedback",
+        "overviewHelp" : "Ingresar una apertura",
+        "industryHelp" : "Ingresar una industria",
+        "lineHelp" : "Ingresar una línea de texto",
+        "startingHelp" : "Ingresar una fecha de inicio",
+        "endingHelp" : "Ingresar una fecha de finalización",
+        "institutionHelp" : "Ingresar una Institución",
+        "positionHelp" : "Ingresar un puesto",
+        "placeHelp" : "Ingresar un lugar",
+        "taskHelp" : "Ingresar una tarea",
+        "skillHelp" : "Ingresar una habilidad",
+        "percentageHelp" : "Ingresar el porcentaje",
+        "languageHelp" : "Ingresar un idioma",
+        "levelHelp" : "Ingresar el nivel",
+        "hobbyHelp" : "Ingresar un hobby",
+        "behalfHelp" : "Ingresar una representación",
+        "phoneHelp" : "Ingresar un número de teléfono",
+        "availabilityHelp" : "Ingresar una disponibilidad"
     },
     "forms" :
     {
@@ -227,7 +244,25 @@
        "document" : "Documento",
        "file" : "Archivo",
        "fullname" : "Nombre y Apellido",
-       "feedback" : "Feedback"
+       "feedback" : "Feedback",
+       "overview" : "Apertura",
+       "industry" : "Industria",
+       "line" : "Línea",
+       "intro" : "Intro",
+       "starting" : "Inicio",
+       "ending" : "Fin",
+       "institution" : "Institución",
+       "position" : "Puesto",
+       "place" : "Lugar",
+       "task" : "Tarea",
+       "skill" : "Skill",
+       "percentage" : "Porcentaje",
+       "language" : "Idioma",
+       "level" : "Nivel",
+       "hobby" : "Hobby",
+       "behalf" : "Representación",
+       "phone" : "Teléfono",
+       "availability" : "Disponibilidad"
     },
     "socialGeneral" :
     [
@@ -1398,17 +1433,20 @@
         {
             "id" : 1,
             "icon" : "fa-solid fa-phone",
-            "data" : "+5492342546373"
+            "data" : "+5492342546373",
+            "target" : "editPhoneContactCVModal"
         },
         {
             "id" : 2,
             "icon" : "fa-solid fa-envelope",
-            "data" : "info@gocode.ar"
+            "data" : "info@gocode.ar",
+            "target" : "editEmailContactCVModal"
         },
         {
             "id" : 3,
             "icon" : "fa-solid fa-user-clock",
-            "data" : "Availability"
+            "data" : "Availability",
+            "target" : "editAvailabilityContactCVModal"
         }
     ],
     "socialCV" :

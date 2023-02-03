@@ -4,26 +4,25 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editNameCVModal">Editar Nombre CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#nameCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#nameCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom01" class="form-label">Nombre y Apellido</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre y Apellido" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <label for="fullname" class="form-label">{{forms.fullname}}</label>
+                                    <input type="text" class="form-control" id="fullname" placeholder="Nombre y Apellido" formControlName="fullname" [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors, 'is-valid': !f['fullname'].errors && f['fullname'].touched }">
+                                    <div id="fullnameHelp" class="form-text">{{helpers.fullnameHelp}}</div>
+                                    <div *ngIf="submitted && f['fullname'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['fullname'].errors['required']">Es preciso ingresar el nombre completo</div>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#nameCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
                         </div>    
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#nameCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
                     </div>
                 </form>
             </div>

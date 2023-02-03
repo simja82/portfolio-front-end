@@ -4,26 +4,25 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createHobbyCVModal">Crear Hobby CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom01" class="form-label">Ícono</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ícono" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
+                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
+                                    </div>
+                                </div>                         
+                            </div>    
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                        </div>
                     </div>
                 </form>
             </div>

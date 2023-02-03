@@ -76,12 +76,12 @@ export class EditAudiovisualCoverModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'El dato ha sido actualizado', 'success')
+    Swal.fire('Sí!!!', 'El cover ha sido actualizado', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'El dato no ha sido actualizado', 'warning')
+    Swal.fire('Nope!!!', 'El cover no ha sido actualizado', 'warning')
   }
 
 }

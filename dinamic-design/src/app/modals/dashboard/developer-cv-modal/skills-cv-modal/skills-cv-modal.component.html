@@ -15,7 +15,7 @@
                                     <h6 class="mt-1"><i [class]="technical.icon" class="fa-2x pt-s"></i> {{technical.technology}}</h6>
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editTechnicalSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteTechnicalSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>    
                                 </div>
                             </div>
@@ -35,7 +35,7 @@
                                     {{soft.skill}}
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editSoftSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteSoftSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>    
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                                     {{language.language}} - {{language.level}}
                                     <div class="d-flex justify-content-center mt-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editLanguageSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteLanguageSkillCVModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>          
                                 </div>
                             </div>
@@ -76,9 +76,11 @@
     <!-- CRUD Modals -->
     <app-create-technical-skill-cv-modal></app-create-technical-skill-cv-modal>
     <app-edit-technical-skill-cv-modal></app-edit-technical-skill-cv-modal>
+    <app-delete-technical-skill-cv-modal></app-delete-technical-skill-cv-modal>
     <app-create-soft-skill-cv-modal></app-create-soft-skill-cv-modal>
     <app-edit-soft-skill-cv-modal></app-edit-soft-skill-cv-modal>
+    <app-delete-soft-skill-cv-modal></app-delete-soft-skill-cv-modal>
     <app-create-language-skill-cv-modal></app-create-language-skill-cv-modal>
     <app-edit-language-skill-cv-modal></app-edit-language-skill-cv-modal>
-    <app-delete-skill-cv-modal></app-delete-skill-cv-modal>
+    <app-delete-language-skill-cv-modal></app-delete-language-skill-cv-modal>
     

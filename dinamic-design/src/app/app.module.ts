@@ -190,7 +190,6 @@ import { CreateDeveloperSoftSkillModalComponent } from './modals/dashboard/devel
 import { EditDeveloperSoftSkillModalComponent } from './modals/dashboard/developer-skills-modal/edit-developer-soft-skill-modal/edit-developer-soft-skill-modal.component';
 import { CreateDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/create-developer-language-skill-modal/create-developer-language-skill-modal.component';
 import { EditDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/edit-developer-language-skill-modal/edit-developer-language-skill-modal.component';
-import { DeleteDeveloperSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-skill-modal/delete-developer-skill-modal.component';
 import { CreateDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/create-developer-hobby-modal/create-developer-hobby-modal.component';
 import { EditDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/edit-developer-hobby-modal/edit-developer-hobby-modal.component';
 import { DeleteDeveloperHobbyModalComponent } from './modals/dashboard/developer-hobbies-modal/delete-developer-hobby-modal/delete-developer-hobby-modal.component';
@@ -220,7 +219,6 @@ import { CreateSoftSkillCvModalComponent } from './modals/dashboard/developer-cv
 import { EditSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/edit-soft-skill-cv-modal/edit-soft-skill-cv-modal.component';
 import { CreateLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/create-language-skill-cv-modal/create-language-skill-cv-modal.component';
 import { EditLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/edit-language-skill-cv-modal/edit-language-skill-cv-modal.component';
-import { DeleteSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-skill-cv-modal/delete-skill-cv-modal.component';
 import { CreateHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/create-hobby-cv-modal/create-hobby-cv-modal.component';
 import { EditHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/edit-hobby-cv-modal/edit-hobby-cv-modal.component';
 import { DeleteHobbyCvModalComponent } from './modals/dashboard/developer-cv-modal/hobbies-cv-modal/delete-hobby-cv-modal/delete-hobby-cv-modal.component';
@@ -229,9 +227,7 @@ import { EditPositionCvModalComponent } from './modals/dashboard/developer-cv-mo
 import { EditPhoneContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-phone-contact-cv-modal/edit-phone-contact-cv-modal.component';
 import { EditEmailContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-email-contact-cv-modal/edit-email-contact-cv-modal.component';
 import { EditAvailabilityContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-availability-contact-cv-modal/edit-availability-contact-cv-modal.component';
-import { EditSocialOneCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-one-cv-modal/edit-social-one-cv-modal.component';
-import { EditSocialTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-two-cv-modal/edit-social-two-cv-modal.component';
-import { EditSocialThreeCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-three-cv-modal/edit-social-three-cv-modal.component';
+import { EditSocialCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-cv-modal/edit-social-cv-modal.component';
 import { EditExperienceOneCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-one-cv-modal/edit-experience-one-cv-modal.component';
 import { EditExperienceTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-two-cv-modal/edit-experience-two-cv-modal.component';
 import { EditProjectsCvModalComponent } from './modals/dashboard/developer-cv-modal/projects-cv-modal/edit-projects-cv-modal/edit-projects-cv-modal.component';
@@ -284,6 +280,12 @@ import { CreateAudiovisualOthersModalComponent } from './modals/dashboard/audiov
 import { EditAudiovisualOthersModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/edit-audiovisual-others-modal/edit-audiovisual-others-modal.component';
 import { DeleteAudiovisualOthersModalComponent } from './modals/dashboard/audiovisual-links-modal/audiovisual-projects-page-modal/delete-audiovisual-others-modal/delete-audiovisual-others-modal.component';
 import { ProofreaderComponent } from './pages/proofreader/proofreader.component';
+import { DeleteDeveloperTechnicalSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-technical-skill-modal/delete-developer-technical-skill-modal.component';
+import { DeleteDeveloperSoftSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-soft-skill-modal/delete-developer-soft-skill-modal.component';
+import { DeleteDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-language-skill-modal/delete-developer-language-skill-modal.component';
+import { DeleteTechnicalSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-technical-skill-cv-modal/delete-technical-skill-cv-modal.component';
+import { DeleteSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-soft-skill-cv-modal/delete-soft-skill-cv-modal.component';
+import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-language-skill-cv-modal/delete-language-skill-cv-modal.component';
 
 @NgModule({
     declarations: [
@@ -487,7 +489,6 @@ import { ProofreaderComponent } from './pages/proofreader/proofreader.component'
         EditDeveloperSoftSkillModalComponent,
         CreateDeveloperLanguageSkillModalComponent,
         EditDeveloperLanguageSkillModalComponent,
-        DeleteDeveloperSkillModalComponent,
         CreateDeveloperHobbyModalComponent,
         EditDeveloperHobbyModalComponent,
         DeleteDeveloperHobbyModalComponent,
@@ -517,7 +518,6 @@ import { ProofreaderComponent } from './pages/proofreader/proofreader.component'
         EditSoftSkillCvModalComponent,
         CreateLanguageSkillCvModalComponent,
         EditLanguageSkillCvModalComponent,
-        DeleteSkillCvModalComponent,
         CreateHobbyCvModalComponent,
         EditHobbyCvModalComponent,
         DeleteHobbyCvModalComponent,
@@ -526,9 +526,7 @@ import { ProofreaderComponent } from './pages/proofreader/proofreader.component'
         EditPhoneContactCvModalComponent,
         EditEmailContactCvModalComponent,
         EditAvailabilityContactCvModalComponent,
-        EditSocialOneCvModalComponent,
-        EditSocialTwoCvModalComponent,
-        EditSocialThreeCvModalComponent,
+        EditSocialCvModalComponent,
         EditExperienceOneCvModalComponent,
         EditExperienceTwoCvModalComponent,
         EditProjectsCvModalComponent,
@@ -568,7 +566,13 @@ import { ProofreaderComponent } from './pages/proofreader/proofreader.component'
         CreateAudiovisualOthersModalComponent,
         EditAudiovisualOthersModalComponent,
         DeleteAudiovisualOthersModalComponent,
-        ProofreaderComponent
+        ProofreaderComponent,
+        DeleteDeveloperTechnicalSkillModalComponent,
+        DeleteDeveloperSoftSkillModalComponent,
+        DeleteDeveloperLanguageSkillModalComponent,
+        DeleteTechnicalSkillCvModalComponent,
+        DeleteSoftSkillCvModalComponent,
+        DeleteLanguageSkillCvModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

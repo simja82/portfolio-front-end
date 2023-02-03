@@ -4,68 +4,63 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editDeveloperIntroModal">Editar Intro</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">                
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom03" class="form-label">Apertura</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Apertura" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">                
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <label for="overview" class="form-label">{{forms.overview}}</label>
+                                    <input type="text" class="form-control" id="overview" placeholder="Apertura" formControlName="overview" [ngClass]="{ 'is-invalid': submitted && f['overview'].errors, 'is-valid': !f['overview'].errors && f['overview'].touched }">
+                                    <div id="overviewHelp" class="form-text">{{helpers.overviewHelp}}</div>
+                                    <div *ngIf="submitted && f['overview'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['overview'].errors['required']">Es preciso ingresar una apertura</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 mb-2">
+                                    <label for="industry" class="form-label">{{forms.industry}}</label>
+                                    <input type="text" class="form-control" id="industry" placeholder="Industria" formControlName="industry" [ngClass]="{ 'is-invalid': submitted && f['industry'].errors, 'is-valid': !f['industry'].errors && f['industry'].touched }">
+                                    <div id="industryHelp" class="form-text">{{helpers.industryHelp}}</div>
+                                    <div *ngIf="submitted && f['industry'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['industry'].errors['required']">Es preciso ingresar una industria</div>
+                                    </div>
+                                </div>                            
+                                <div class="col-12 mb-2">
+                                    <label for="closing" class="form-label">{{forms.closing}}</label>
+                                    <input type="text" class="form-control" id="closing" placeholder="Cierre" formControlName="closing" [ngClass]="{ 'is-invalid': submitted && f['closing'].errors, 'is-valid': !f['closing'].errors && f['closing'].touched }">
+                                    <div id="closingHelp" class="form-text">{{helpers.closingHelp}}</div>
+                                    <div *ngIf="submitted && f['closing'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['closing'].errors['required']">Es preciso ingresar un cierre</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom03" class="form-label">Industria</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Industria" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                                <div class="col-12 mb-2">
+                                    <label for="paragraphOne" class="form-label">{{forms.paragraph}} {{forms.one}}</label>
+                                    <textarea class="form-control" id="paragraphOne" rows="3" formControlName="paragraphOne" [ngClass]="{ 'is-invalid': submitted && f['paragraphOne'].errors, 'is-valid': !f['paragraphOne'].errors && f['paragraphOne'].touched }"></textarea>
+                                    <div class="d-flex justify-content-between">
+                                        <div id="paragraphOneHelp" class="form-text">{{helpers.paragraphHelp}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers.limit200}}</div>
+                                    </div> 
+                                    <div *ngIf="submitted && f['paragraphOne'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['paragraphOne'].errors['required']">Es preciso ingresar el primer párrafo</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom03" class="form-label">Cierre</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Cierre" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-12 mt-2 mb-2">          
-                                <label for="validationCustom03" class="form-label">Línea Uno</label>
-                                <textarea class="form-control" id="validationCustom03" rows="3"></textarea>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div id="introHelp" class="form-text text-end">Máx. 200 caracteres</div>
-                            <div class="col-12 mb-2">          
-                                <label for="validationCustom03" class="form-label">Línea Dos</label>
-                                <textarea class="form-control" id="validationCustom03" rows="3"></textarea>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-12 mb-2">          
+                                    <label for="paragraphTwo" class="form-label">{{forms.paragraph}} {{forms.two}}</label>
+                                    <textarea class="form-control" id="paragraphTwo" rows="3" formControlName="paragraphTwo" [ngClass]="{ 'is-invalid': submitted && f['paragraphTwo'].errors, 'is-valid': !f['paragraphTwo'].errors && f['paragraphTwo'].touched }"></textarea>
+                                    <div class="d-flex justify-content-between">
+                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers.limit200}}</div>
+                                    </div> 
+                                    <div *ngIf="submitted && f['paragraphTwo'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['paragraphTwo'].errors['required']">Es preciso ingresar el segundo párrafo</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="introHelp" class="form-text text-end">Máx. 200 caracteres</div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                        </div>    
                     </div>
                 </form>
             </div>

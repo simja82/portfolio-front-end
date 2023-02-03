@@ -3,39 +3,36 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="createLanguageSkillCVModal">Crear Skill CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <h1 class="modal-title fs-5" id="createLanguageSkillCVModal">Crear Idioma CV</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Idioma</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Idioma" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <label for="language" class="form-label">{{forms.language}}</label>
+                                    <input type="text" class="form-control" id="language" placeholder="Idioma" formControlName="language" [ngClass]="{ 'is-invalid': submitted && f['language'].errors, 'is-valid': !f['language'].errors && f['language'].touched }">
+                                    <div id="languageHelp" class="form-text">{{helpers.languageHelp}}</div>
+                                    <div *ngIf="submitted && f['language'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['language'].errors['required']">Es preciso ingresar un idioma</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
+                                <div class="col-6 mb-2">
+                                    <label for="level" class="form-label">{{forms.level}}</label>
+                                    <input type="text" class="form-control" id="level" placeholder="Nivel" formControlName="level" [ngClass]="{ 'is-invalid': submitted && f['level'].errors, 'is-valid': !f['level'].errors && f['level'].touched }">
+                                    <div id="levelHelp" class="form-text">{{helpers.levelHelp}}</div>
+                                    <div *ngIf="submitted && f['level'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['level'].errors['required']">Es preciso ingresar un nivel</div>
+                                    </div>
+                                </div>                   
                             </div>
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Nivel</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Nivel" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>                            
                         </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                        </div>    
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
-                    </div>
-                </form>
+                </form>  
             </div>
         </div>
     </div>

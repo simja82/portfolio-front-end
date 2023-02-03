@@ -19,7 +19,7 @@
                                     <p>{{technical.percentage}}%</p>            
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperTechnicalSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperTechnicalSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>    
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                                     {{soft.percentage}}%
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperSoftSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperSoftSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>    
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                     {{language.language}} - {{language.level}}
                                     <div class="d-flex justify-content-center mt-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperLanguageSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperLanguageSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                                     </div>          
                                 </div>
                             </div>
@@ -84,9 +84,11 @@
     <!-- CRUD Modals -->
     <app-create-developer-technical-skill-modal></app-create-developer-technical-skill-modal>
     <app-edit-developer-technical-skill-modal></app-edit-developer-technical-skill-modal>
+    <app-delete-developer-technical-skill-modal></app-delete-developer-technical-skill-modal>
     <app-create-developer-soft-skill-modal></app-create-developer-soft-skill-modal>
     <app-edit-developer-soft-skill-modal></app-edit-developer-soft-skill-modal>
+    <app-delete-developer-soft-skill-modal></app-delete-developer-soft-skill-modal>
     <app-create-developer-language-skill-modal></app-create-developer-language-skill-modal>
     <app-edit-developer-language-skill-modal></app-edit-developer-language-skill-modal>
-    <app-delete-developer-skill-modal></app-delete-developer-skill-modal>
+    <app-delete-developer-language-skill-modal></app-delete-developer-language-skill-modal>
     

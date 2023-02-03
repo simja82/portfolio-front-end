@@ -4,28 +4,27 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createSoftSkillCVModal">Crear Skill CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <label for="validationCustom01" class="form-label">Habilidad</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Habilidad" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">                
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <label for="skill" class="form-label">{{forms.skill}}</label>
+                                    <input type="text" class="form-control" id="skill" placeholder="Skill" formControlName="skill" [ngClass]="{ 'is-invalid': submitted && f['skill'].errors, 'is-valid': !f['skill'].errors && f['skill'].touched }">
+                                    <div id="skillHelp" class="form-text">{{helpers.skillHelp}}</div>
+                                    <div *ngIf="submitted && f['skill'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['skill'].errors['required']">Es preciso ingresar una habilidad</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>     
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                        </div>    
                     </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
-                    </div>
-                </form>
+                </form> 
             </div>
         </div>
     </div>

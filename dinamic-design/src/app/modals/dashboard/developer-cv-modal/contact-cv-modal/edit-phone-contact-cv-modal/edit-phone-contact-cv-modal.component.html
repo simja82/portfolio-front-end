@@ -4,36 +4,33 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editPhoneContactCVModal">Editar Contacto CV</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#contactCVModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#contactCVModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Ícono</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Ícono" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
+                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Teléfono</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Teléfono" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#contactCVModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Actualizar</button>
+                                <div class="col-6 mb-2">
+                                    <label for="phone" class="form-label">{{forms.phone}}</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Teléfono" formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f['phone'].errors, 'is-valid': !f['phone'].errors && f['phone'].touched }">
+                                    <div id="phoneHelp" class="form-text">{{helpers.phoneHelp}}</div>
+                                    <div *ngIf="submitted && f['phone'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['phone'].errors['required']">Es preciso ingresar un número de teléfono</div>
+                                    </div>
+                                </div>                          
+                            </div>    
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#contactCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                        </div>
                     </div>
                 </form>
             </div>

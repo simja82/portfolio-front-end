@@ -4,36 +4,33 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="createDeveloperSoftSkillModal">Crear Skill</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Back"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form class="needs-validation">
-                    <div class="modal-body">                
-                        <div class="row">
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Habilidad</label>
-                                <input type="text" class="form-control" id="validationCustom01" placeholder="Habilidad" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">                
+                            <div class="row">
+                                <div class="col-6 mb-2">
+                                    <label for="skill" class="form-label">{{forms.skill}}</label>
+                                    <input type="text" class="form-control" id="skill" placeholder="Skill" formControlName="skill" [ngClass]="{ 'is-invalid': submitted && f['skill'].errors, 'is-valid': !f['skill'].errors && f['skill'].touched }">
+                                    <div id="skillHelp" class="form-text">{{helpers.skillHelp}}</div>
+                                    <div *ngIf="submitted && f['skill'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['skill'].errors['required']">Es preciso ingresar una habilidad</div>
+                                    </div>
                                 </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
+                                <div class="col-6 mb-2">
+                                    <label for="percentage" class="form-label">{{forms.percentage}}</label>
+                                    <input type="text" class="form-control" id="percentage" placeholder="Porcentaje" formControlName="percentage" [ngClass]="{ 'is-invalid': submitted && f['percentage'].errors, 'is-valid': !f['percentage'].errors && f['percentage'].touched }">
+                                    <div id="percentageHelp" class="form-text">{{helpers.percentageHelp}}</div>
+                                    <div *ngIf="submitted && f['percentage'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['percentage'].errors['required']">Es preciso ingresar el porcentaje</div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 mb-2">
-                                <label for="validationCustom01" class="form-label">Porcentaje</label>
-                                <input type="url" class="form-control" id="validationCustom01" placeholder="Porcentaje" required>
-                                <div class="valid-feedback">
-                                    Parece correcto!!!
-                                </div>
-                                <div class="invalid-feedback">
-                                    No puede quedar vacío!!!
-                                </div>
-                            </div>                            
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-black-mini" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Back">Cancelar</button>
-                        <button class="btn btn-black-mini">Guardar</button>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                        </div>    
                     </div>
                 </form> 
             </div>
