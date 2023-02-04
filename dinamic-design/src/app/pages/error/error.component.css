@@ -3,6 +3,5 @@ html {
 }
 
 .error {
-	background-image: url('./../../../assets/img/background/error.png');
     padding-top: 5rem;
 }
