@@ -285,6 +285,7 @@ import { DeleteDeveloperLanguageSkillModalComponent } from './modals/dashboard/d
 import { DeleteTechnicalSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-technical-skill-cv-modal/delete-technical-skill-cv-modal.component';
 import { DeleteSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-soft-skill-cv-modal/delete-soft-skill-cv-modal.component';
 import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-language-skill-cv-modal/delete-language-skill-cv-modal.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
 
 @NgModule({
     declarations: [
@@ -570,7 +571,8 @@ import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/develope
         DeleteDeveloperLanguageSkillModalComponent,
         DeleteTechnicalSkillCvModalComponent,
         DeleteSoftSkillCvModalComponent,
-        DeleteLanguageSkillCvModalComponent
+        DeleteLanguageSkillCvModalComponent,
+        FeedbackComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

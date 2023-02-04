@@ -21,10 +21,10 @@ import { SerieComponent } from './components/sections/audiovisual/projects-serie
 import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
 import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
 import { ProofreaderComponent } from './pages/proofreader/proofreader.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
 
 const routes: Routes = [
   { path: '', component:IndexComponent },
-  { path: 'proofreader', component:ProofreaderComponent},
   { path: 'intro', component:IntroComponent },
   { path: 'login', component:LoginComponent },
   { path: 'register', component:RegisterComponent },
@@ -42,6 +42,8 @@ const routes: Routes = [
   { path: 'developer/intro', component:DeveloperComponent },
   { path: 'developer/cv', component:CVComponent },
   { path: 'admin/dashboard', component:DashboardComponent },
+  { path: 'proofreader', component:ProofreaderComponent},
+  { path: 'feedback', component:FeedbackComponent},
   { path: '**', component:ErrorComponent }
 ];
 
