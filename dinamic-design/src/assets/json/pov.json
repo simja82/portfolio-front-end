@@ -1,7 +1,7 @@
 {
     "logo" :
     {
-        "image" : "https://i.ibb.co/bQkTZb2/logo.png",
+        "image" : "https://images.pexels.com/photos/15435769/pexels-photo-15435769.png",
         "alt" : "Logo Argentina Programa"
     },
     "banners" :
@@ -45,7 +45,7 @@
         {
             "id" : 7,
             "banner" : "Login",
-            "image" : "https://i.ibb.co/z5Ynqvh/login.jpg",
+            "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
         }
     ],
@@ -944,7 +944,7 @@
         "nameIntro" : "Mi nombre es",
         "fullname" : "Gabriela García de la Mata",
         "lineOne" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel odio maxime voluptatum, suscipit, molestias repellendus perspiciatis modi porro natus aspernatur, velit officia sit nihil amet? Cum iure cupiditate beatae illo!",
-        "photo" : "https://i.ibb.co/VttzbX8/profile.jpg",
+        "photo" : "https://images.pexels.com/photos/15435771/pexels-photo-15435771.jpeg",
         "phraseOne" : "\"Si tienes un sueño, debes conservarlo.",
         "phraseTwo" : "Si quieres algo sal a buscarlo, y punto.\"",
         "author" : "Chris Gardner",
@@ -968,7 +968,7 @@
     [
         {
             "id" : 1,
-            "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
+            "image" : "https://images.pexels.com/photos/15435735/pexels-photo-15435735.png",
             "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
@@ -977,7 +977,7 @@
         },
         {
             "id" : 2,
-            "image" : "https://i.ibb.co/M1PFk4q/borde.png",
+            "image" : "https://images.pexels.com/photos/15435736/pexels-photo-15435736.png",
             "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
@@ -986,7 +986,7 @@
         },
         {
             "id" : 3,
-            "image" : "https://i.ibb.co/QKG9WH0/cards.png",
+            "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "alt" : "Certificado",
             "title" : "Título",
             "institution" : "Institución",
@@ -998,7 +998,7 @@
     [
         {
             "id" : 1,
-            "image" : "https://i.ibb.co/HDQSpy6/overlay.png",
+            "image" : "https://images.pexels.com/photos/15435742/pexels-photo-15435742.png",
             "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
@@ -1013,7 +1013,7 @@
         },
         {
             "id" : 2,
-            "image" : "https://i.ibb.co/jhZSYvT/zazimut.png",
+            "image" : "https://images.pexels.com/photos/15435741/pexels-photo-15435741.png",
             "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
@@ -1028,7 +1028,7 @@
         },
         {
             "id" : 3,
-            "image" : "https://i.ibb.co/9HkbSXC/login.png",
+            "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "alt" : "Experiencia",
             "position" : "Puesto",
             "place" : "Lugar",
@@ -1046,7 +1046,7 @@
     [
         {
             "id" : 1,
-            "image" : "https://i.ibb.co/YQdsFQD/selector.png",
+            "image" : "https://images.pexels.com/photos/15435738/pexels-photo-15435738.png",
             "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -1055,7 +1055,7 @@
         },
         {
             "id" : 2,
-            "image" : "https://i.ibb.co/qWtnDdx/spoiler.png",
+            "image" : "https://images.pexels.com/photos/15435737/pexels-photo-15435737.png",
             "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -1064,7 +1064,7 @@
         },
         {
             "id" : 3,
-            "image" : "https://i.ibb.co/QKG9WH0/cards.png",
+            "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
@@ -1073,7 +1073,7 @@
         },
         {
             "id" : 4,
-            "image" : "https://i.ibb.co/MpJ8n9F/bootstrap.png",
+            "image" : "https://images.pexels.com/photos/15435735/pexels-photo-15435735.png",
             "alt" : "Proyecto",
             "title" : "Título",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
