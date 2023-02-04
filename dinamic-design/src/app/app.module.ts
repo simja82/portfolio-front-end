@@ -228,8 +228,7 @@ import { EditPhoneContactCvModalComponent } from './modals/dashboard/developer-c
 import { EditEmailContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-email-contact-cv-modal/edit-email-contact-cv-modal.component';
 import { EditAvailabilityContactCvModalComponent } from './modals/dashboard/developer-cv-modal/contact-cv-modal/edit-availability-contact-cv-modal/edit-availability-contact-cv-modal.component';
 import { EditSocialCvModalComponent } from './modals/dashboard/developer-cv-modal/social-cv-modal/edit-social-cv-modal/edit-social-cv-modal.component';
-import { EditExperienceOneCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-one-cv-modal/edit-experience-one-cv-modal.component';
-import { EditExperienceTwoCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-two-cv-modal/edit-experience-two-cv-modal.component';
+import { EditExperienceCvModalComponent } from './modals/dashboard/developer-cv-modal/experience-cv-modal/edit-experience-cv-modal/edit-experience-cv-modal.component';
 import { EditProjectsCvModalComponent } from './modals/dashboard/developer-cv-modal/projects-cv-modal/edit-projects-cv-modal/edit-projects-cv-modal.component';
 import { EditDataReferencesCvModalComponent } from './modals/dashboard/developer-cv-modal/references-cv-modal/edit-data-references-cv-modal/edit-data-references-cv-modal.component';
 import { WhiteAudiovisualComponent } from './components/sidebars/right/white/audiovisual/white-audiovisual/white-audiovisual.component';
@@ -527,8 +526,7 @@ import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/develope
         EditEmailContactCvModalComponent,
         EditAvailabilityContactCvModalComponent,
         EditSocialCvModalComponent,
-        EditExperienceOneCvModalComponent,
-        EditExperienceTwoCvModalComponent,
+        EditExperienceCvModalComponent,
         EditProjectsCvModalComponent,
         EditDataReferencesCvModalComponent,
         SerieComponent,

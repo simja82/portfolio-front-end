@@ -143,6 +143,7 @@
         "draftHelp" : "Ingresar una versión",
         "imageHelp" : "Ingresar una imagen",
         "phraseHelp" : "Ingresar una frase",
+        "limit100" : "Más. 100 caracteres",
         "limit150" : "Máx. 150 caracteres",
         "limit200" : "Máx. 200 caracteres",
         "limit250" : "Máx. 250 caracteres",
@@ -177,7 +178,10 @@
         "hobbyHelp" : "Ingresar un hobby",
         "behalfHelp" : "Ingresar una representación",
         "phoneHelp" : "Ingresar un número de teléfono",
-        "availabilityHelp" : "Ingresar una disponibilidad"
+        "availabilityHelp" : "Ingresar una disponibilidad",
+        "userHelp" : "Ingresar un usuario",
+        "tasksHelp" : "Ingresar las tareas",
+        "infoHelp" : "Ingresar información de contacto"
     },
     "forms" :
     {
@@ -262,7 +266,10 @@
        "hobby" : "Hobby",
        "behalf" : "Representación",
        "phone" : "Teléfono",
-       "availability" : "Disponibilidad"
+       "availability" : "Disponibilidad",
+       "user" : "Usuario",
+       "tasks" : "Tareas",
+       "info" : "Información"
     },
     "socialGeneral" :
     [

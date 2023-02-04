@@ -4,10 +4,10 @@ import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-edit-projects-cv-modal',
-  templateUrl: './edit-projects-cv-modal.component.html'
+  selector: 'app-edit-experience-cv-modal',
+  templateUrl: './edit-experience-cv-modal.component.html'
 })
-export class EditProjectsCvModalComponent implements OnInit {
+export class EditExperienceCvModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
@@ -80,12 +80,12 @@ export class EditProjectsCvModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'El proyecto ha sido actualizado', 'success')
+    Swal.fire('Sí!!!', 'La experiencia ha sido actualizada', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'El proyecto no ha sido actualizado', 'warning')
+    Swal.fire('Nope!!!', 'La experiencia no ha sido actualizada', 'warning')
   }
 
 }

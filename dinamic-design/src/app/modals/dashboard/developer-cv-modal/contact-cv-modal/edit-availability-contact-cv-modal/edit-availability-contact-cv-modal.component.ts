@@ -12,7 +12,7 @@ export class EditAvailabilityContactCvModalComponent implements OnInit {
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
     icon: new FormControl(''),
-    phone: new FormControl(''),
+    availability: new FormControl(''),
   });
   submitted = false;
 
@@ -33,7 +33,7 @@ export class EditAvailabilityContactCvModalComponent implements OnInit {
     this.form = this.formBuilder.group(
       {
         icon: ['', [Validators.required]],
-        phone: ['', [Validators.required]],
+        availability: ['', [Validators.required]],
       }
     );
         
