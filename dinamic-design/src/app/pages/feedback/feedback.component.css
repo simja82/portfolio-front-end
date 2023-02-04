@@ -2,6 +2,12 @@
     overflow: hidden;
 }
 
+
+.carousel-item {
+    height: 100vh;
+    background-color: #000;
+}
+
 .centered {
     top: 30%;
 }
