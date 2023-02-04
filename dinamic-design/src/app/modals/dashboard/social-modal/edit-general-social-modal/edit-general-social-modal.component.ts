@@ -3,6 +3,7 @@ import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from
 import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
+
 @Component({
   selector: 'app-edit-general-social-modal',
   templateUrl: './edit-general-social-modal.component.html'
