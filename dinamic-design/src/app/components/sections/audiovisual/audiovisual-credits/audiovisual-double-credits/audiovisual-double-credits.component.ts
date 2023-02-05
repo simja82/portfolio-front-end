@@ -17,7 +17,7 @@ export class AudiovisualDoubleCreditsComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.doubleCredits = data.singleCredits;
+      this.doubleCredits = data.doubleCredits;
     })
   }
 
