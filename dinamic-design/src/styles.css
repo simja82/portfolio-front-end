@@ -225,8 +225,8 @@ a:hover {
 /* Credits */
 .wrapper {
     overflow: hidden;
-    height: 150rem;
-    margin-bottom: 10rem;
+    height: 100rem;
+    margin-bottom: 30rem;
     margin-top: 0rem;
 }
 
@@ -236,7 +236,7 @@ a:hover {
     text-align: center;
     margin: 0 auto;
     text-transform: uppercase;
-    animation: 200s credits linear infinite;
+    animation: 180s credits linear infinite;
     display: inline;
 }
 
@@ -278,7 +278,7 @@ a:hover {
 
 @keyframes credits {
     0% {
-        top: 100%;
+        top: 50%;
     }
     100% {
         top: -500%;
@@ -303,7 +303,7 @@ a:hover {
     transform: rotateY(-180deg);
 }
 
-/* Margin Special */
+/* Padding Special */
 .pt-s {
  padding-top: 0.75rem
 }

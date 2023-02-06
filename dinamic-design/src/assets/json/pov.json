@@ -10,80 +10,47 @@
             "id" : 1,
             "banner" : "Index",
             "image" : "https://i.ibb.co/sP8hFWX/index.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 2,
-            "banner" : "Intro",
-            "image" : "https://i.ibb.co/MDJPmXs/intro.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 3,
-            "banner" : "Error",
-            "image" : "https://i.ibb.co/DRsGvBG/error.png",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 4,
-            "banner" : "Register",
-            "image" : "https://i.ibb.co/rHd3Hgt/register.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 5,
-            "banner" : "Links",
-            "image" : "https://i.ibb.co/JR1q02h/links.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 6,
-            "banner" : "Plus",
-            "image" : "https://i.ibb.co/tPk0dMj/plus.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        },
-        {
-            "id" : 7,
-            "banner" : "Login",
-            "image" : "https://i.ibb.co/z5Ynqvh/login.jpg",
-            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit."
-        }
-    ],
-    "heroes" : 
-    [
-        {
-            "id" : 1,
-            "title" : "Index",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" : "Hola!!!",
             "subhero" : "Me ves?"
         },
         {
             "id" : 2,
-            "title" : "Intro",
+            "banner" : "Intro",
+            "image" : "https://i.ibb.co/MDJPmXs/intro.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" : "Llegaste!!!",
             "subhero" : "Te invito a recorrer mi historia de acuerdo a como te interese conocerme... Te animás?"
         },
         {
             "id" : 3,
-            "title" : "Error",
+            "banner" : "Error",
+            "image" : "https://i.ibb.co/DRsGvBG/error.png",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" : "Oops!!!",
             "subhero":"Algo no salió bien..."
         },
         {
             "id" : 4,
-            "title" : "Register",
+            "banner" : "Register",
+            "image" : "https://i.ibb.co/rHd3Hgt/register.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" : "Próximamente",
             "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles..."
         },
         {
             "id" : 5,
-            "title" : "Links",
+            "banner" : "Links",
+            "image" : "https://i.ibb.co/JR1q02h/links.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" : "Epa...",
             "subhero" :"Parece que encontraste un atajo... Adonde te gustaría ir?"
         },
         {
             "id" : 6,
-            "title" : "Plus",
+            "banner" : "Plus",
+            "image" : "https://i.ibb.co/tPk0dMj/plus.jpg",
+            "description" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
             "hero" :"¿Le diste click al ícono de más?",
             "subhero" :"Escribime y dejame saber qué puedo ofrecerte..."
         }
@@ -356,7 +323,7 @@
             "lineTwo" : "¿Por qué contarla de ésta forma y no como tradicionalmente se cuenta por medio de una \"hoja de vida\" o \"CV\"?",
             "lineThree" : "Un secreto... En la Industria Audiovisual no usamos nada de eso... En general...",
             "lineFour" : "Es cierto que puede haber listados de créditos que se parecen a una \"hoja de vida\" pero, no es lo mismo...",
-            "lineFive" : "Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de la Industria Audiovisual..."
+            "lineFive" : "Entonces, como lo anterior no existe, te invito a recorrer, en los apartados que siguen, un partecita de mi vida dentro de este maravilloso mundo..."
         },
         {
             "id" : 2,
@@ -371,8 +338,8 @@
             "id" : 3,
             "order" : "Divisor Tres",
             "lineOne" : "Otra cosa que, al principio más que nada, es muy difícil, es el mostrar qué hacemos...",
-            "lineTwo" : "Sucede que en cada parte de Arte que se deja plasmada hay un poco de uno mismo...",
-            "lineThree" : "Indistintamente del género que se elija trabajar, todos, en la Industria Audiovisual, ponemos mucho de nosotros...",
+            "lineTwo" : "Sucede que en cada parte de Arte que se crea se deja plasmado un poco de uno mismo...",
+            "lineThree" : "Indistintamente del género que se elija trabajar, todos, en esta Industria, ponemos mucho de nosotros...",
             "lineFour" : "Y... ¿cómo le explicamos a otro qué sentimos cuando hacemos lo que nos dictan las Musas?",
             "lineFive" : "Todo muy lindo... Cuando ya pasamos por los primeros filtros es un poco más fácil..."
         },
@@ -390,7 +357,7 @@
             "order" : "Divisor Cinco",
             "lineOne" : "No estaría completa mi historia si no te diera algo que puedas llevarte...",
             "lineTwo" : "¿Por qué? Bueno, porque la forma de comunicarnos que tenemos en esta Industria es así...",
-            "lineThree" : "Llegaste hasta acá, me diste tu tiempo, y por ello te agradezco abriéndote las puertas, solo un poquito, a mi mundo...",
+            "lineThree" : "Llegaste hasta acá, me diste tu tiempo, y por ello te agradezco abriéndote las puertas, solo un poquito, de este espacio en el que estoy...",
             "lineFour" : "Por este Arte que me eligió -o elegí- leo y escribo, vuelvo a leer y vuelvo a escribir, mucho...",
             "lineFive" : "Viajar entre mundos y personajes que, a veces, se vuelven casi personas deja lugar no solo a emociones sino a conocimientos de infinitas dimensiones..."
         }
@@ -519,9 +486,9 @@
     ],
     "feedbackIntro" :
     {
-        "title" : "Feedback",
-        "lineOne" : "En una presentación de la convencionales podrías encontrar algo como Referencias...",
-        "lineTwo" : "Yo no tengo... No existe tampoco para alguien de la Industria Audiovisual...",
+        "title" : "Feedbacks",
+        "lineOne" : "En una presentación de las convencionales podrías encontrar algo como Referencias...",
+        "lineTwo" : "Yo no tengo... No existe tampoco para alguien de esta Industria...",
         "lineThree" : "En su reemplazo cuento con más documentos que se conocen como Feedbacks...",
         "subtitle" : "Si hacés click en cada tarjeta podrías ver quienes son...",
         "paragraph" : "Eso es lo valioso de cada feedback..."
@@ -638,31 +605,31 @@
         },
         {
             "id" : 2,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Sos una gran persona con sabiduría. Podés ayudar e incluso enseñar a quien lo necesite,  ya sea en lo laboral como anímicamente. Te hace alguien admirable. Estoy en deuda porque me has ayudado como a tantos más y a los que vienen detrás!!! Gracias por tanto Gaby!!!",
+            "name" : "Walter Rafael Giménez - YoProgramo 3era Edición"
         }
     ],
     "doubleCredits" : 
     [
         {
             "id" : 1,
-            "feedback" : "Inmensa capacidad de creación, convocatoria, liderazgo y movilización. Muchas gracias por tu dedicación y por motivar + ayudar a miles de estudiantes hasta lograrlo! Tu trabajo quedará por siempre en las habilidades que adquirimos!",
+            "feedback" : "Inmensa capacidad de creación, convocatoria, liderazgo y movilización. Muchas gracias por tu dedicación y por motivar + ayudar a miles de estudiantes hasta lograrlo! Tu trabajo quedará por siempre en las habilidades que adquirimos!.",
             "name" : "Laura Álvarez - YoProgramo 3era Edición"
         },
         {
             "id" : 2,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Hermoso trabajo, ejemplo a seguir, demuestra que con constancia y dedicación se puede lograr lo propuesto, dejar volar la imaginación puede llegar a sorprendernos.",
+            "name" : "Denis Karina Gómez Ramírez - YoProgramo 3era Edición"
         },
         {
             "id" : 3,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Quisiera agradecerte todo el tiempo que te tomaste y te seguís tomando para explicarnos y ayudarnos. Lo que vos creaste no lo había visto nunca. Sos 100% colaborativa!!!",
+            "name" : "Roxana Palacio - YoProgramo 3era Edición"
         },
         {
             "id" : 4,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Eres una mujer que ama lo que hace, pone todo su empeño en hacer lo que se propone, no se queda con una sola cosa. Sabes de todo un poco y compartes tus conocimientos sin esperar nada a cambio",
+            "name" : "Josman Pérez - YoProgramo 3era Edición"
         },
         {
             "id" : 5,
@@ -1529,30 +1496,48 @@
     [
         {
             "id" : 1,
+            "icon" : "fa-solid fa-right-to-bracket",
+            "section" : "Login",
+            "target" : "loginModal"
+        },
+        {
+            "id" : 2,
             "icon" : "fa-solid fa-share-nodes",
             "section" : "Social",
             "target" : "socialModal"
         },
         {
-            "id" : 2,
+            "id" : 3,
             "icon" : "fa-solid fa-images",
             "section" : "Banners",
             "target" : "bannersModal"
         },
         {
-            "id" : 3,
-            "icon" : "fa-solid fa-align-center",
-            "section" : "Heroes",
-            "target" : "heroesModal"
+            "id" : 4,
+            "icon" : "fa-solid fa-pen-to-square",
+            "section" : "Forms",
+            "target" : "formsModal"
         },
         {
-            "id" : 4,
+            "id" : 5,
+            "icon" : "fa-solid fa-life-ring",
+            "section" : "Helpers",
+            "target" : "helpersModal"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-box-archive",
+            "section" : "Icons",
+            "target" : "iconsModal"
+        },
+        {
+            "id" : 7,
             "icon" : "fa-solid fa-comments",
             "section" : "Credits",
             "target" : "creditsModal"
         },
         {
-            "id" : 5,
+            "id" : 8,
             "icon" : "fa-solid fa-bug",
             "section" : "Bloopers",
             "target" : "bloopersModal"
