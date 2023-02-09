@@ -23,7 +23,7 @@
                     <hr class="w-75 m-auto my-3">    
                     <h5 class="text-center mt-2">{{credits.saying}}</h5>
                     <div *ngFor="let credit of singleCredits" class="single-credit">
-                        <h6 class="text-center mt-4">{{credit.feedback}}</h6>
+                        <h6 class="text-center mt-4 mx-5">{{credit.feedback}}</h6>
                         <p class="mx-5 text-center">{{credit.name}}</p>
                         <div class="d-flex justify-content-center mt-2 mb-3">
                             <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editSingleCreditModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Close">{{buttons.close}}</button>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons[7].value}}</button>
                 </div>
             </div>
         </div>

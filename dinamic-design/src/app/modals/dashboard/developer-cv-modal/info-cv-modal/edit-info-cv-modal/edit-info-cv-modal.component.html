@@ -11,39 +11,39 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="lineOne" class="form-label">{{forms.line}} {{forms.one}}</label>
+                                    <label for="lineOne" class="form-label">{{forms[17].value}} {{forms[18].value}}</label>
                                     <textarea class="form-control" id="lineOne" rows="1" placeholder="Línea Uno" formControlName="lineOne" [ngClass]="{ 'is-invalid': submitted && f['lineOne'].errors, 'is-valid': !f['lineOne'].errors && f['lineOne'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="lineOneHelp" class="form-text">{{helpers.lineHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit100}}</div>
+                                        <div id="lineOneHelp" class="form-text">{{helpers[45].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[24].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['lineOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['lineOne'].errors['required']">Es preciso ingresar la primera línea de la frase</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">          
-                                    <label for="lineTwo" class="form-label">{{forms.line}} {{forms.two}}</label>
+                                    <label for="lineTwo" class="form-label">{{forms[17].value}} {{forms[19].value}}</label>
                                     <textarea class="form-control" id="lineTwo" rows="1" placeholder="Línea Dos" formControlName="lineTwo" [ngClass]="{ 'is-invalid': submitted && f['lineTwo'].errors, 'is-valid': !f['lineTwo'].errors && f['lineTwo'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="lineTwoHelp" class="form-text">{{helpers.lineHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit100}}</div>
+                                        <div id="lineTwoHelp" class="form-text">{{helpers[45].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[24].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['lineTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['lineTwo'].errors['required']">Es preciso ingresar la segunda línea de la frase</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="author" class="form-label">{{forms.author}}</label>
+                                    <label for="author" class="form-label">{{forms[15].value}}</label>
                                     <input type="text" class="form-control" id="author" placeholder="Autor" formControlName="author" [ngClass]="{ 'is-invalid': submitted && f['author'].errors, 'is-valid': !f['author'].errors && f['author'].touched }">
-                                    <div id="authorHelp" class="form-text">{{helpers.authorHelp}}</div>
+                                    <div id="authorHelp" class="form-text">{{helpers[15].value}}</div>
                                     <div *ngIf="submitted && f['author'].errors" class="invalid-feedback">
                                         <div *ngIf="f['author'].errors['required']">Es preciso ingresar un autor</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="credit" class="form-label">{{forms.credit}}</label>
+                                    <label for="credit" class="form-label">{{forms[11].value}}</label>
                                     <input type="text" class="form-control" id="credit" placeholder="Crédito" formControlName="credit" [ngClass]="{ 'is-invalid': submitted && f['credit'].errors, 'is-valid': !f['credit'].errors && f['credit'].touched }">
-                                    <div id="creditHelp" class="form-text">{{helpers.creditHelp}}</div>
+                                    <div id="creditHelp" class="form-text">{{helpers[11].value}}</div>
                                     <div *ngIf="submitted && f['credit'].errors" class="invalid-feedback">
                                         <div *ngIf="f['credit'].errors['required']">Es preciso ingresar un crédito</div>
                                     </div>
@@ -51,7 +51,7 @@
                             </div>    
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#infoCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#infoCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

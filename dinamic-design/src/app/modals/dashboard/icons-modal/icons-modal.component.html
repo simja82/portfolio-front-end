@@ -1,0 +1,23 @@
+    <!--Modal Icons-->
+    <div class="modal fade" id="iconsModal" tabindex="-1" aria-labelledby="iconsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="iconsModalLabel">Icons</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div *ngFor="let icon of icons" class="col-2 text-center pt-3">
+                            <i [class]="icon.icon" class="fa-3x"></i>
+                            <p class="pt-3">{{icon.icon}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons[7].value}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+

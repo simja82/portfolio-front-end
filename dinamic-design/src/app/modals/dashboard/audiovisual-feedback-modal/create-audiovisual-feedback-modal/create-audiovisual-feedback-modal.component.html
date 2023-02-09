@@ -11,33 +11,33 @@
                         <div class="modal-body">                
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="fullname" class="form-label">{{forms.fullname}}</label>
+                                    <label for="fullname" class="form-label">{{forms[12].value}}</label>
                                     <input type="text" class="form-control" id="fullname" placeholder="Nombre y Apellido" formControlName="fullname" [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors, 'is-valid': !f['fullname'].errors && f['fullname'].touched }">
-                                    <div id="fullnameHelp" class="form-text">{{helpers.fullnameHelp}}</div>
+                                    <div id="fullnameHelp" class="form-text">{{helpers[41].value}}</div>
                                     <div *ngIf="submitted && f['fullname'].errors" class="invalid-feedback">
                                         <div *ngIf="f['fullname'].errors['required']">Es preciso ingresar el nombre completo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
-                                    <label for="image" class="form-label">{{forms.image}}</label>
+                                    <label for="image" class="form-label">{{forms[27].value}}</label>
                                     <input type="text" class="form-control" id="image" placeholder="URL Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
-                                    <div id="imageHelp" class="form-text">{{helpers.urlHelp}}</div>
+                                    <div id="imageHelp" class="form-text">{{helpers[3].value}}</div>
                                     <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
                                         <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
-                                    <label for="feedback" class="form-label">{{forms.feedback}}</label>
+                                    <label for="feedback" class="form-label">{{forms[49].value}}</label>
                                     <input type="text" class="form-control" id="feedback" placeholder="Feedback" formControlName="feedback" [ngClass]="{ 'is-invalid': submitted && f['feedback'].errors, 'is-valid': !f['feedback'].errors && f['feedback'].touched }">
-                                    <div id="feedbackHelp" class="form-text">{{helpers.feedbackHelp}}</div>
+                                    <div id="feedbackHelp" class="form-text">{{helpers[42].value}}</div>
                                     <div *ngIf="submitted && f['feedback'].errors" class="invalid-feedback">
                                         <div *ngIf="f['feedback'].errors['required']">Es preciso ingresar un feedback</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
-                                    <label for="url" class="form-label">{{forms.url}}</label>
+                                    <label for="url" class="form-label">{{forms[3].value}}</label>
                                     <input type="text" class="form-control" id="url" placeholder="Enlace" formControlName="url" [ngClass]="{ 'is-invalid': submitted && f['url'].errors, 'is-valid': !f['url'].errors && f['url'].touched }">
-                                    <div id="urlHelp" class="form-text">{{helpers.urlHelp}}</div>
+                                    <div id="urlHelp" class="form-text">{{helpers[3].value}}</div>
                                     <div *ngIf="submitted && f['url'].errors" class="invalid-feedback">
                                         <div *ngIf="f['url'].errors['required']">Es preciso ingresar un enlace</div>
                                     </div>
@@ -45,7 +45,7 @@
                             </div>   
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#audiovisualFeedbackModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualFeedbackModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
                         </div>    
                     </div>
                 </form>

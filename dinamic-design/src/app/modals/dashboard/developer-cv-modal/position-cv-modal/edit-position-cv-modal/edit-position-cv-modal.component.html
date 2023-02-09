@@ -11,9 +11,9 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12 mb-2">
-                                    <label for="position" class="form-label">{{forms.position}}</label>
+                                    <label for="position" class="form-label">{{forms[55].value}}</label>
                                     <input type="text" class="form-control" id="position" placeholder="Puesto" formControlName="position" [ngClass]="{ 'is-invalid': submitted && f['position'].errors, 'is-valid': !f['position'].errors && f['position'].touched }">
-                                    <div id="positionHelp" class="form-text">{{helpers.positionHelp}}</div>
+                                    <div id="positionHelp" class="form-text">{{helpers[49].value}}</div>
                                     <div *ngIf="submitted && f['position'].errors" class="invalid-feedback">
                                         <div *ngIf="f['position'].errors['required']">Es preciso ingresar el puesto</div>
                                     </div>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#positionCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#positionCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

@@ -11,46 +11,46 @@
                         <div class="modal-body">                
                             <div class="row">
                                 <div class="col-12 mb-2">
-                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <label for="icon" class="form-label">{{forms[2].value}}</label>
                                     <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
-                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div id="iconHelp" class="form-text">{{helpers[2].value}}</div>
                                     <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
                                         <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="author" class="form-label">{{forms.author}}</label>
+                                    <label for="author" class="form-label">{{forms[15].value}}</label>
                                     <input type="text" class="form-control" id="author" placeholder="Autor" formControlName="author" [ngClass]="{ 'is-invalid': submitted && f['author'].errors, 'is-valid': !f['author'].errors && f['author'].touched }">
-                                    <div id="authorHelp" class="form-text">{{helpers.authorHelp}}</div>
+                                    <div id="authorHelp" class="form-text">{{helpers[15].value}}</div>
                                     <div *ngIf="submitted && f['author'].errors" class="invalid-feedback">
                                         <div *ngIf="f['author'].errors['required']">Es preciso ingresar un autor</div>
                                     </div>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="credit" class="form-label">{{forms.credit}}</label>
+                                    <label for="credit" class="form-label">{{forms[11].value}}</label>
                                     <input type="text" class="form-control" id="credit" placeholder="Crédito" formControlName="credit" [ngClass]="{ 'is-invalid': submitted && f['credit'].errors, 'is-valid': !f['credit'].errors && f['credit'].touched }">
-                                    <div id="creditHelp" class="form-text">{{helpers.creditHelp}}</div>
+                                    <div id="creditHelp" class="form-text">{{helpers[11].value}}</div>
                                     <div *ngIf="submitted && f['credit'].errors" class="invalid-feedback">
                                         <div *ngIf="f['credit'].errors['required']">Es preciso ingresar un crédito</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="phraseOne" class="form-label">{{forms.phrase}} {{forms.one}}</label>
+                                    <label for="phraseOne" class="form-label">{{forms[28].value}} {{forms[18].value}}</label>
                                     <textarea class="form-control" id="phraseOne" rows="2" formControlName="phraseOne" [ngClass]="{ 'is-invalid': submitted && f['phraseOne'].errors, 'is-valid': !f['phraseOne'].errors && f['phraseOne'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="phraseHelp" class="form-text">{{helpers.phraseHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit100}}</div>
+                                        <div id="phraseHelp" class="form-text">{{helpers[23].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[24].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['phraseOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['phraseOne'].errors['required']">Es preciso ingresar la primera línea de la frase</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="phraseTwo" class="form-label">{{forms.phrase}} {{forms.two}}</label>
+                                    <label for="phraseTwo" class="form-label">{{forms[28].value}} {{forms[19].value}}</label>
                                     <textarea class="form-control" id="phraseTwo" rows="2" formControlName="phraseTwo" [ngClass]="{ 'is-invalid': submitted && f['phraseTwo'].errors, 'is-valid': !f['phraseTwo'].errors && f['phraseTwo'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="phraseHelp" class="form-text">{{helpers.phraseHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit100}}</div>
+                                        <div id="phraseHelp" class="form-text">{{helpers[23].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[24].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['phraseTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['phraseTwo'].errors['required']">Es preciso ingresar la segunda línea de la frase</div>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#audiovisualQuotesModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualQuotesModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

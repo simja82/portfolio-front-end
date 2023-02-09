@@ -104,7 +104,6 @@ import { DashboardAudiovisualComponent } from './components/dashboard/dashboard-
 import { DashboardDeveloperComponent } from './components/dashboard/dashboard-developer/dashboard-developer.component';
 import { SocialModalComponent } from './modals/dashboard/social-modal/social-modal.component';
 import { BannersModalComponent } from './modals/dashboard/banners-modal/banners-modal.component';
-import { HeroesModalComponent } from './modals/dashboard/heroes-modal/heroes-modal.component';
 import { CreditsModalComponent } from './modals/dashboard/credits-modal/credits-modal.component';
 import { BloopersModalComponent } from './modals/dashboard/bloopers-modal/bloopers-modal.component';
 import { EditBannerModalComponent } from './modals/dashboard/banners-modal/edit-banner-modal/edit-banner-modal.component';
@@ -249,8 +248,6 @@ import { DeveloperSkillsComponent } from './components/sections/developer/develo
 import { CvNameComponent } from './components/sections/developer/cv-profile/cv-name/cv-name.component';
 import { CvPositionComponent } from './components/sections/developer/cv-profile/cv-position/cv-position.component';
 import { CreateBannerModalComponent } from './modals/dashboard/banners-modal/create-banner-modal/create-banner-modal.component';
-import { CreateHeroModalComponent } from './modals/dashboard/heroes-modal/create-hero-modal/create-hero-modal.component';
-import { EditHeroModalComponent } from './modals/dashboard/heroes-modal/edit-hero-modal/edit-hero-modal.component';
 import { WhiteOrangeSessionComponent } from './components/navbar/session/white-orange/white-orange.component';
 import { CreateAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/create-audiovisual-social-modal/create-audiovisual-social-modal.component';
 import { CreateDeveloperSocialModalComponent } from './modals/dashboard/social-modal/create-developer-social-modal/create-developer-social-modal.component';
@@ -286,6 +283,19 @@ import { DeleteTechnicalSkillCvModalComponent } from './modals/dashboard/develop
 import { DeleteSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-soft-skill-cv-modal/delete-soft-skill-cv-modal.component';
 import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-language-skill-cv-modal/delete-language-skill-cv-modal.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { IconsModalComponent } from './modals/dashboard/icons-modal/icons-modal.component';
+import { HelpersModalComponent } from './modals/dashboard/helpers-modal/helpers-modal.component';
+import { FormsModalComponent } from './modals/dashboard/forms-modal/forms-modal.component';
+import { LoginModalComponent } from './modals/dashboard/login-modal/login-modal.component';
+import { ButtonsModalComponent } from './modals/dashboard/buttons-modal/buttons-modal.component';
+import { CreateButtonModalComponent } from './modals/dashboard/buttons-modal/create-button-modal/create-button-modal.component';
+import { EditButtonModalComponent } from './modals/dashboard/buttons-modal/edit-button-modal/edit-button-modal.component';
+import { DeleteButtonModalComponent } from './modals/dashboard/buttons-modal/delete-button-modal/delete-button-modal.component';
+import { EditHelperModalComponent } from './modals/dashboard/helpers-modal/edit-helper-modal/edit-helper-modal.component';
+import { CreateHelperModalComponent } from './modals/dashboard/helpers-modal/create-helper-modal/create-helper-modal.component';
+import { EditLoginModalComponent } from './modals/dashboard/login-modal/edit-login-modal/edit-login-modal.component';
+import { CreateFormModalComponent } from './modals/dashboard/forms-modal/create-form-modal/create-form-modal.component';
+import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form-modal/edit-form-modal.component';
 
 @NgModule({
     declarations: [
@@ -392,7 +402,6 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
         DashboardDeveloperComponent,
         SocialModalComponent,
         BannersModalComponent,
-        HeroesModalComponent,
         CreditsModalComponent,
         BloopersModalComponent,
         EditGeneralSocialModalComponent,
@@ -405,8 +414,6 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
         DeleteDeveloperSocialModalComponent,
         CreateDeveloperSocialModalComponent,
         EditBannerModalComponent,
-        EditHeroModalComponent,
-        CreateHeroModalComponent,
         EditTitleCreditModalComponent,
         EditSingleCreditModalComponent,
         DeleteSingleCreditModalComponent,
@@ -572,7 +579,20 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
         DeleteTechnicalSkillCvModalComponent,
         DeleteSoftSkillCvModalComponent,
         DeleteLanguageSkillCvModalComponent,
-        FeedbackComponent
+        FeedbackComponent,
+        IconsModalComponent,
+        HelpersModalComponent,
+        FormsModalComponent,
+        LoginModalComponent,
+        ButtonsModalComponent,
+        CreateButtonModalComponent,
+        EditButtonModalComponent,
+        DeleteButtonModalComponent,
+        EditHelperModalComponent,
+        CreateHelperModalComponent,
+        EditLoginModalComponent,
+        CreateFormModalComponent,
+        EditFormModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

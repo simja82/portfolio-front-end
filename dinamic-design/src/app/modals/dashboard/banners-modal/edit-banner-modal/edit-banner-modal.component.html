@@ -11,25 +11,41 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="url" class="form-label">{{forms.url}}</label>
-                                    <input type="url" class="form-control" id="url" placeholder="https://url.com" formControlName="url" [ngClass]="{ 'is-invalid': submitted && f['url'].errors, 'is-valid': !f['url'].errors && f['url'].touched }">
-                                    <div id="urlHelp" class="form-text">{{helpers.urlHelp}}</div>
+                                    <label for="url" class="form-label">{{forms[3].value}}</label>
+                                    <input type="text" class="form-control" id="url" placeholder="Banner URL" formControlName="url" [ngClass]="{ 'is-invalid': submitted && f['url'].errors, 'is-valid': !f['url'].errors && f['url'].touched }">
+                                    <div id="urlHelp" class="form-text">{{helpers[3].value}}</div>
                                     <div *ngIf="submitted && f['url'].errors" class="invalid-feedback">
                                         <div *ngIf="f['url'].errors['required']">Es preciso ingresar una URL</div>
                                     </div>
                                 </div>
-                                <div class="col-12 my-3">
-                                    <label for="description" class="form-label">{{forms.description}}</label>
+                                <div class="col-12 mt-3">
+                                    <label for="description" class="form-label">{{forms[4].value}}</label>
                                     <input type="text" class="form-control" id="description" placeholder="Descripción de la imagen" formControlName="description" [ngClass]="{ 'is-invalid': submitted && f['description'].errors, 'is-valid': !f['description'].errors && f['description'].touched }">
-                                    <div id="descriptionHelp" class="form-text">{{helpers.descriptionHelp}}</div>
+                                    <div id="descriptionHelp" class="form-text">{{helpers[4].value}}</div>
                                     <div *ngIf="submitted && f['description'].errors" class="invalid-feedback">
                                         <div *ngIf="f['description'].errors['required']">Es preciso agregar la descripción</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="hero" class="form-label">{{forms[5].value}}</label>
+                                    <input type="text" class="form-control" id="hero" placeholder="Hero" formControlName="hero" [ngClass]="{ 'is-invalid': submitted && f['hero'].errors, 'is-valid': !f['hero'].errors && f['hero'].touched }">
+                                    <div id="heroHelp" class="form-text">{{helpers[5].value}}</div>
+                                    <div *ngIf="submitted && f['hero'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['hero'].errors['required']">Es preciso ingresar un hero</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="subhero" class="form-label">{{forms[6].value}}</label>
+                                    <input type="text" class="form-control" id="subhero" placeholder="Subhero" formControlName="subhero" [ngClass]="{ 'is-invalid': submitted && f['subhero'].errors, 'is-valid': !f['subhero'].errors && f['subhero'].touched }">
+                                    <div id="subheroHelp" class="form-text">{{helpers[6].value}}</div>
+                                    <div *ngIf="submitted && f['subhero'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['subhero'].errors['required']">Es preciso ingresar un subhero</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#bannersModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#bannersModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

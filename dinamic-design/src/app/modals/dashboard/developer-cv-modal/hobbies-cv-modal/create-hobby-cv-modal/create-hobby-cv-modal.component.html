@@ -11,9 +11,9 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12 mb-2">
-                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <label for="icon" class="form-label">{{forms[2].value}}</label>
                                     <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
-                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div id="iconHelp" class="form-text">{{helpers[2].value}}</div>
                                     <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
                                         <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
                                     </div>
@@ -21,7 +21,7 @@
                             </div>    
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
                         </div>
                     </div>
                 </form>

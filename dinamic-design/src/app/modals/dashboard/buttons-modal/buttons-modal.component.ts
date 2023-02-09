@@ -2,13 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
-  selector: 'app-heroes-modal',
-  templateUrl: './heroes-modal.component.html'
+  selector: 'app-buttons-modal',
+  templateUrl: './buttons-modal.component.html'
 })
-export class HeroesModalComponent implements OnInit {
-  
-  //Array Heroes
-  heroes : any = [];
+export class ButtonsModalComponent implements OnInit {
 
   //Array Buttons
   buttons : any = [];
@@ -20,7 +17,6 @@ export class HeroesModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.heroes = data.heroes;
       this.buttons = data.buttons;
     })
   }

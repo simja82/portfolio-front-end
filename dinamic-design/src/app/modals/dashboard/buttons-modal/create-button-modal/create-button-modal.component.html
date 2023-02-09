@@ -1,0 +1,30 @@
+    <!-- Modal Create Button -->
+    <div class="modal fade" id="createButtonModal" aria-hidden="true" aria-labelledby="createButtonModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createButtonModal">Crear Botón</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#buttonsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="value" class="form-label">{{forms[69].value}}</label>
+                                    <input type="text" class="form-control" id="value" placeholder="Botón" formControlName="value" [ngClass]="{ 'is-invalid': submitted && f['value'].errors, 'is-valid': !f['value'].errors && f['value'].touched }">
+                                    <div id="valueHelp" class="form-text">{{helpers[63].value}}</div>
+                                    <div *ngIf="submitted && f['value'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['value'].errors['required']">Es preciso ingresar un botón</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#buttonsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

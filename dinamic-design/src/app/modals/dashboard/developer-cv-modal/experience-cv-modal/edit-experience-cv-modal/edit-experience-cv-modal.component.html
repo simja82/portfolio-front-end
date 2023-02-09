@@ -11,51 +11,51 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6 mb-2">
-                                    <label for="place" class="form-label">{{forms.place}}</label>
+                                    <label for="place" class="form-label">{{forms[56].value}}</label>
                                     <input type="text" class="form-control" id="place" placeholder="Lugar" formControlName="place" [ngClass]="{ 'is-invalid': submitted && f['place'].errors, 'is-valid': !f['place'].errors && f['place'].touched }">
-                                    <div id="placeHelp" class="form-text">{{helpers.placeHelp}}</div>
+                                    <div id="placeHelp" class="form-text">{{helpers[50].value}}</div>
                                     <div *ngIf="submitted && f['place'].errors" class="invalid-feedback">
                                         <div *ngIf="f['place'].errors['required']">Es preciso ingresar un lugar</div>
                                     </div>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="position" class="form-label">{{forms.position}}</label>
+                                    <label for="position" class="form-label">{{forms[55].value}}</label>
                                     <input type="text" class="form-control" id="position" placeholder="Puesto" formControlName="position" [ngClass]="{ 'is-invalid': submitted && f['position'].errors, 'is-valid': !f['position'].errors && f['position'].touched }">
-                                    <div id="positionHelp" class="form-text">{{helpers.positionHelp}}</div>
+                                    <div id="positionHelp" class="form-text">{{helpers[49].value}}</div>
                                     <div *ngIf="submitted && f['position'].errors" class="invalid-feedback">
                                         <div *ngIf="f['position'].errors['required']">Es preciso ingresar un puesto</div>
                                     </div>
                                 </div> 
                                 <div class="col-6 mb-2">
-                                    <label for="starting" class="form-label">{{forms.starting}}</label>
+                                    <label for="starting" class="form-label">{{forms[52].value}}</label>
                                     <input type="text" class="form-control" id="starting" placeholder="Año de Inicio" formControlName="starting" [ngClass]="{ 'is-invalid': submitted && f['starting'].errors, 'is-valid': !f['starting'].errors && f['starting'].touched }">
-                                    <div id="startingHelp" class="form-text">{{helpers.startingHelp}}</div>
+                                    <div id="startingHelp" class="form-text">{{helpers[46].value}}</div>
                                     <div *ngIf="submitted && f['starting'].errors" class="invalid-feedback">
                                         <div *ngIf="f['starting'].errors['required']">Es preciso ingresar un año de inicio</div>
                                     </div>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="ending" class="form-label">{{forms.ending}}</label>
+                                    <label for="ending" class="form-label">{{forms[53].value}}</label>
                                     <input type="text" class="form-control" id="ending" placeholder="Año de Fin o Actual" formControlName="ending" [ngClass]="{ 'is-invalid': submitted && f['ending'].errors, 'is-valid': !f['ending'].errors && f['ending'].touched }">
-                                    <div id="endingHelp" class="form-text">{{helpers.endingHelp}}</div>
+                                    <div id="endingHelp" class="form-text">{{helpers[47].value}}</div>
                                     <div *ngIf="submitted && f['ending'].errors" class="invalid-feedback">
                                         <div *ngIf="f['ending'].errors['required']">Es preciso ingresar un año de fin o actual</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="description" class="form-label">{{forms.description}}</label>
+                                    <label for="description" class="form-label">{{forms[4].value}}</label>
                                     <input type="text" class="form-control" id="description" placeholder="Descripción" formControlName="description" [ngClass]="{ 'is-invalid': submitted && f['description'].errors, 'is-valid': !f['description'].errors && f['description'].touched }">
-                                    <div id="descriptionHelp" class="form-text">{{helpers.descriptionHelp}}</div>
+                                    <div id="descriptionHelp" class="form-text">{{helpers[4].value}}</div>
                                     <div *ngIf="submitted && f['description'].errors" class="invalid-feedback">
                                         <div *ngIf="f['description'].errors['required']">Es preciso ingresar una descripción</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="tasks" class="form-label">{{forms.tasks}}</label>
+                                    <label for="tasks" class="form-label">{{forms[67].value}}</label>
                                     <textarea class="form-control" id="tasks" rows="2" placeholder="Tareas" formControlName="tasks" [ngClass]="{ 'is-invalid': submitted && f['tasks'].errors, 'is-valid': !f['tasks'].errors && f['tasks'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="tasksHelp" class="form-text">{{helpers.tasksHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit200}}</div>
+                                        <div id="tasksHelp" class="form-text">{{helpers[61].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[26].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['tasks'].errors" class="invalid-feedback">
                                         <div *ngIf="f['tasks'].errors['required']">Es preciso ingresar las tareas</div>
@@ -64,7 +64,7 @@
                             </div>    
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#experienceCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#experienceCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>
                     </div>
                 </form>

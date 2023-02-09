@@ -11,85 +11,85 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphOne" class="form-label">{{forms.paragraph}} {{forms.one}}</label>
+                                    <label for="paragraphOne" class="form-label">{{forms[39].value}} {{forms[18].value}}</label>
                                     <textarea class="form-control" id="paragraphOne" rows="3" formControlName="paragraphOne" [ngClass]="{ 'is-invalid': submitted && f['paragraphOne'].errors, 'is-valid': !f['paragraphOne'].errors && f['paragraphOne'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphOneHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphOneHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphOne'].errors['required']">Es preciso ingresar el primer párrafo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphTwo" class="form-label">{{forms.paragraph}} {{forms.two}}</label>
+                                    <label for="paragraphTwo" class="form-label">{{forms[39].value}} {{forms[19].value}}</label>
                                     <textarea class="form-control" id="paragraphTwo" rows="3" formControlName="paragraphTwo" [ngClass]="{ 'is-invalid': submitted && f['paragraphTwo'].errors, 'is-valid': !f['paragraphTwo'].errors && f['paragraphTwo'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphTwo'].errors['required']">Es preciso ingresar el segundo párrafo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphThree" class="form-label">{{forms.paragraph}} {{forms.three}}</label>
+                                    <label for="paragraphThree" class="form-label">{{forms[39].value}} {{forms[20].value}}</label>
                                     <textarea class="form-control" id="paragraphThree" rows="3" formControlName="paragraphThree" [ngClass]="{ 'is-invalid': submitted && f['paragraphThree'].errors, 'is-valid': !f['paragraphThree'].errors && f['paragraphThree'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphThree'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphThree'].errors['required']">Es preciso ingresar el tercer párrafo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphFour" class="form-label">{{forms.paragraph}} {{forms.four}}</label>
+                                    <label for="paragraphFour" class="form-label">{{forms[39].value}} {{forms[21].value}}</label>
                                     <textarea class="form-control" id="paragraphFour" rows="3" formControlName="paragraphFour" [ngClass]="{ 'is-invalid': submitted && f['paragraphFour'].errors, 'is-valid': !f['paragraphFour'].errors && f['paragraphFour'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphFour'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphFour'].errors['required']">Es preciso ingresar el cuarto párrafo</div>
                                     </div>    
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphFive" class="form-label">{{forms.paragraph}} {{forms.five}}</label>
+                                    <label for="paragraphFive" class="form-label">{{forms[39].value}} {{forms[22].value}}</label>
                                     <textarea class="form-control" id="paragraphFive" rows="3" formControlName="paragraphFive" [ngClass]="{ 'is-invalid': submitted && f['paragraphFive'].errors, 'is-valid': !f['paragraphFive'].errors && f['paragraphFive'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphFive'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphFive'].errors['required']">Es preciso ingresar el quinto párrafo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphSix" class="form-label">{{forms.paragraph}} {{forms.six}}</label>
+                                    <label for="paragraphSix" class="form-label">{{forms[39].value}} {{forms[37].value}}</label>
                                     <textarea class="form-control" id="paragraphSix" rows="3" formControlName="paragraphSix" [ngClass]="{ 'is-invalid': submitted && f['paragraphSix'].errors, 'is-valid': !f['paragraphSix'].errors && f['paragraphSix'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphSix'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphSix'].errors['required']">Es preciso ingresar el sexto párrafo</div>
                                     </div>     
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphSeven" class="form-label">{{forms.paragraph}} {{forms.seven}}</label>
+                                    <label for="paragraphSeven" class="form-label">{{forms[39].value}} {{forms[38].value}}</label>
                                     <textarea class="form-control" id="paragraphSeven" rows="3" formControlName="paragraphSeven" [ngClass]="{ 'is-invalid': submitted && f['paragraphSeven'].errors, 'is-valid': !f['paragraphSeven'].errors && f['paragraphSeven'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit250}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphSeven'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphSeven'].errors['required']">Es preciso ingresar el séptimo párrafo</div>
                                     </div></div>
                                 <div class="col-12 mb-2">
-                                    <label for="url" class="form-label">{{forms.url}}</label>
+                                    <label for="url" class="form-label">{{forms[3].value}}</label>
                                     <input type="text" class="form-control" id="url" placeholder="URL" formControlName="url" [ngClass]="{ 'is-invalid': submitted && f['url'].errors, 'is-valid': !f['url'].errors && f['url'].touched }">
-                                    <div id="urlHelp" class="form-text">{{helpers.urlHelp}}</div>
+                                    <div id="urlHelp" class="form-text">{{helpers[3].value}}</div>
                                     <div *ngIf="submitted && f['url'].errors" class="invalid-feedback">
                                         <div *ngIf="f['url'].errors['required']">Es preciso ingresar una URL</div>
                                     </div>

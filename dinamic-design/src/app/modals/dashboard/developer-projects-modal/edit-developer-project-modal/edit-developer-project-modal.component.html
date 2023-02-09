@@ -11,36 +11,36 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="image" class="form-label">{{forms.image}}</label>
+                                    <label for="image" class="form-label">{{forms[27].value}}</label>
                                     <input type="text" class="form-control" id="image" placeholder="Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
-                                    <div id="imageHelp" class="form-text">{{helpers.imageHelp}}</div>
+                                    <div id="imageHelp" class="form-text">{{helpers[22].value}}</div>
                                     <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
                                         <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <label for="title" class="form-label">{{forms.title}}</label>
+                                    <label for="title" class="form-label">{{forms[7].value}}</label>
                                     <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" [ngClass]="{ 'is-invalid': submitted && f['title'].errors, 'is-valid': !f['title'].errors && f['title'].touched }">
-                                    <div id="titleHelp" class="form-text">{{helpers.titleHelp}}</div>
+                                    <div id="titleHelp" class="form-text">{{helpers[7].value}}</div>
                                     <div *ngIf="submitted && f['title'].errors" class="invalid-feedback">
                                         <div *ngIf="f['title'].errors['required']">Es preciso ingresar un título</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">          
-                                    <label for="description" class="form-label">{{forms.description}}</label>
+                                    <label for="description" class="form-label">{{forms[4].value}}</label>
                                     <textarea class="form-control" id="description" rows="2" placeholder="Descripción" formControlName="description" [ngClass]="{ 'is-invalid': submitted && f['description'].errors, 'is-valid': !f['description'].errors && f['description'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="description" class="form-text">{{helpers.descriptionHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit150}}</div>
+                                        <div id="description" class="form-text">{{helpers[4].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[25].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['description'].errors" class="invalid-feedback">
                                         <div *ngIf="f['description'].errors['required']">Es preciso ingresar la primera línea de la frase</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
-                                    <label for="url" class="form-label">{{forms.url}}</label>
+                                    <label for="url" class="form-label">{{forms[3].value}}</label>
                                     <input type="text" class="form-control" id="url" placeholder="Enlace" formControlName="url" [ngClass]="{ 'is-invalid': submitted && f['url'].errors, 'is-valid': !f['url'].errors && f['url'].touched }">
-                                    <div id="urlHelp" class="form-text">{{helpers.urlHelp}}</div>
+                                    <div id="urlHelp" class="form-text">{{helpers[3].value}}</div>
                                     <div *ngIf="submitted && f['url'].errors" class="invalid-feedback">
                                         <div *ngIf="f['url'].errors['required']">Es preciso ingresar un enlace</div>
                                     </div>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerProjectsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#developerProjectsModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

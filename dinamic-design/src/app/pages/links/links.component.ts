@@ -12,14 +12,11 @@ export class LinksComponent implements OnInit {
 //Array Banners
 banners : any = [];
 
-//Array Heroes
-heroes : any = [];
-
 //Array Buttons
 buttons : any = [];
 
-//Array Phrases
-phrases : any = [];
+//Array Links
+links : any = [];
 
 //Inyección de Title y Service
   constructor (private title:Title, private povService:POVService) {
@@ -32,9 +29,8 @@ phrases : any = [];
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.banners = data.banners;
-      this.heroes = data.heroes;
       this.buttons = data.buttons;
-      this.phrases = data.phrases;
+      this.links = data.links;
     })
   }
 

@@ -13,39 +13,39 @@
                                 <div class="col-6 mb-2">
                                     <label for="icon" class="form-label">Ícono</label>
                                     <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
-                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div id="iconHelp" class="form-text">{{helpers[2].value}}</div>
                                     <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
                                         <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
                                     </div>                                    
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="fullname" class="form-label">{{forms.fullname}}</label>
+                                    <label for="fullname" class="form-label">{{forms[12].value}}</label>
                                     <input type="text" class="form-control" id="fullname" placeholder="Nombre Completo" formControlName="fullname" [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors, 'is-valid': !f['fullname'].errors && f['fullname'].touched }">
-                                    <div id="fullnameHelp" class="form-text">{{helpers.fullnameHelp}}</div>
+                                    <div id="fullnameHelp" class="form-text">{{helpers[41].value}}</div>
                                     <div *ngIf="submitted && f['fullname'].errors" class="invalid-feedback">
                                         <div *ngIf="f['fullname'].errors['required']">Es preciso ingresar el nombre completo</div>
                                     </div>                                    
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="lineOne" class="form-label">{{forms.line}} {{forms.one}}</label>
+                                    <label for="lineOne" class="form-label">{{forms[17].value}} {{forms[18].value}}</label>
                                     <input type="text" class="form-control" id="lineOne" placeholder="Línea Uno" formControlName="lineOne" [ngClass]="{ 'is-invalid': submitted && f['lineOne'].errors, 'is-valid': !f['lineOne'].errors && f['lineOne'].touched }">
-                                    <div id="lineOneHelp" class="form-text">{{helpers.lineOneHelp}}</div>
+                                    <div id="lineOneHelp" class="form-text">{{helpers[17].value}}</div>
                                     <div *ngIf="submitted && f['lineOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['lineOne'].errors['required']">Es preciso ingresar la primera línea del comentario</div>
                                     </div>                                    
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="lineTwo" class="form-label">{{forms.line}} {{forms.two}}</label>
+                                    <label for="lineTwo" class="form-label">{{forms[17].value}} {{forms[19].value}}</label>
                                     <input type="text" class="form-control" id="lineTwo" placeholder="Línea Dos" formControlName="lineTwo" [ngClass]="{ 'is-invalid': submitted && f['lineTwo'].errors, 'is-valid': !f['lineTwo'].errors && f['lineTwo'].touched }">
-                                    <div id="lineTwoHelp" class="form-text">{{helpers.lineTwoHelp}}</div>
+                                    <div id="lineTwoHelp" class="form-text">{{helpers[17].value}}</div>
                                     <div *ngIf="submitted && f['lineTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['lineTwo'].errors['required']">Es preciso ingresar la segunda línea del comentario</div>
                                     </div>                                    
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="behalf" class="form-label">{{forms.behalf}}</label>
+                                    <label for="behalf" class="form-label">{{forms[63].value}}</label>
                                     <input type="text" class="form-control" id="behalf" placeholder="Representación" formControlName="behalf" [ngClass]="{ 'is-invalid': submitted && f['behalf'].errors, 'is-valid': !f['behalf'].errors && f['behalf'].touched }">
-                                    <div id="behalfHelp" class="form-text">{{helpers.behalfHelp}}</div>
+                                    <div id="behalfHelp" class="form-text">{{helpers[57].value}}</div>
                                     <div *ngIf="submitted && f['behalf'].errors" class="invalid-feedback">
                                         <div *ngIf="f['behalf'].errors['required']">Es preciso ingresar una representación</div>
                                     </div>                                    
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerCommentsModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#developerCommentsModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>  

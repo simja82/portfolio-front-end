@@ -13,6 +13,8 @@ export class EditBannerModalComponent implements OnInit {
   form: FormGroup = new FormGroup({
     url: new FormControl(''),
     description: new FormControl(''),
+    hero: new FormControl(''),
+    subhero: new FormControl(''),
   });
   submitted = false;
 
@@ -34,6 +36,8 @@ export class EditBannerModalComponent implements OnInit {
       {
         url: ['', [Validators.required]],
         description: ['', [Validators.required]],
+        hero: ['', [Validators.required]],
+        subhero: ['', [Validators.required]],
       }
     );
         
@@ -72,13 +76,12 @@ export class EditBannerModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'El dato ha sido actualizado', 'success')
+    Swal.fire('Sí!!!', 'El banner ha sido actualizado', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'El dato no ha sido actualizado', 'warning')
+    Swal.fire('Nope!!!', 'El banner no ha sido actualizado', 'warning')
   }
 
 }
-

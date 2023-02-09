@@ -11,140 +11,140 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="title" class="form-label">{{forms.title}}</label>
+                                    <label for="title" class="form-label">{{forms[7].value}}</label>
                                     <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" [ngClass]="{ 'is-invalid': submitted && f['title'].errors, 'is-valid': !f['title'].errors && f['title'].touched }">
-                                    <div id="titleHelp" class="form-text">{{helpers.titleHelp}}</div>
+                                    <div id="titleHelp" class="form-text">{{helpers[7].value}}</div>
                                     <div *ngIf="submitted && f['title'].errors" class="invalid-feedback">
                                         <div *ngIf="f['title'].errors['required']">Es preciso ingresar un título</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
-                                    <label for="image" class="form-label">{{forms.image}}</label>
+                                    <label for="image" class="form-label">{{forms[27].value}}</label>
                                     <input type="text" class="form-control" id="image" placeholder="URL Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
-                                    <div id="imageHelp" class="form-text">{{helpers.imageHelp}}</div>
+                                    <div id="imageHelp" class="form-text">{{helpers[22].value}}</div>
                                     <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
                                         <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
                                     </div>    
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="format" class="form-label">{{forms.format}}</label>
+                                    <label for="format" class="form-label">{{forms[40].value}}</label>
                                     <input type="text" class="form-control" id="format" placeholder="Formato" formControlName="format" [ngClass]="{ 'is-invalid': submitted && f['format'].errors, 'is-valid': !f['format'].errors && f['format'].touched }">
-                                    <div id="formatHelp" class="form-text">{{helpers.formatHelp}}</div>
+                                    <div id="formatHelp" class="form-text">{{helpers[33].value}}</div>
                                     <div *ngIf="submitted && f['format'].errors" class="invalid-feedback">
                                         <div *ngIf="f['format'].errors['required']">Es preciso ingresar un formato</div>
                                     </div>    
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="genre" class="form-label">{{forms.genre}}</label>
+                                    <label for="genre" class="form-label">{{forms[43].value}}</label>
                                     <input type="text" class="form-control" id="genre" placeholder="Género" formControlName="genre" [ngClass]="{ 'is-invalid': submitted && f['genre'].errors, 'is-valid': !f['genre'].errors && f['genre'].touched }">
-                                    <div id="genreHelp" class="form-text">{{helpers.genreHelp}}</div>
+                                    <div id="genreHelp" class="form-text">{{helpers[31].value}}</div>
                                     <div *ngIf="submitted && f['genre'].errors" class="invalid-feedback">
                                         <div *ngIf="f['genre'].errors['required']">Es preciso ingresar un género</div>
                                     </div>    
                                 </div>                              
                                 <div class="col-md-12 pt-3">
-                                    <label for="logline" class="form-label">{{forms.logline}}</label>
+                                    <label for="logline" class="form-label">{{forms[44].value}}</label>
                                     <textarea type="text" class="form-control" id="logline" rows="2" placeholder="Logline" formControlName="logline" [ngClass]="{ 'is-invalid': submitted && f['logline'].errors, 'is-valid': !f['logline'].errors && f['logline'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="loglineHelp" class="form-text">{{helpers.loglineHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit150}}</div>
+                                        <div id="loglineHelp" class="form-text">{{helpers[35].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[25].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['logline'].errors" class="invalid-feedback">
                                         <div *ngIf="f['logline'].errors['required']">Es preciso ingresar la Logline</div>
                                     </div>        
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="documentOne" class="form-label">{{forms.document}} {{forms.one}}</label>
+                                    <label for="documentOne" class="form-label">{{forms[47].value}} {{forms[18].value}}</label>
                                     <input type="text" class="form-control" id="documentOne" placeholder="Documento" formControlName="documentOne" [ngClass]="{ 'is-invalid': submitted && f['documentOne'].errors, 'is-valid': !f['documentOne'].errors && f['documentOne'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[39].value}}</div>
                                     <div *ngIf="submitted && f['documentOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['documentOne'].errors['required']">Es preciso ingresar el nombre del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="draftOne" class="form-label">{{forms.draft}} {{forms.one}}</label>
+                                    <label for="draftOne" class="form-label">{{forms[26].value}} {{forms[18].value}}</label>
                                     <input type="text" class="form-control" id="draftOne" placeholder="Draft" formControlName="draftOne" [ngClass]="{ 'is-invalid': submitted && f['draftOne'].errors, 'is-valid': !f['draftOne'].errors && f['draftOne'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[21].value}}</div>
                                     <div *ngIf="submitted && f['draftOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['draftOne'].errors['required']">Es preciso ingresar el borrador del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="yearOne" class="form-label">{{forms.year}} {{forms.one}}</label>
+                                    <label for="yearOne" class="form-label">{{forms[10].value}} {{forms[18].value}}</label>
                                     <input type="text" class="form-control" id="yearOne" placeholder="Año" formControlName="yearOne" [ngClass]="{ 'is-invalid': submitted && f['yearOne'].errors, 'is-valid': !f['yearOne'].errors && f['yearOne'].touched }">
-                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div id="yearHelp" class="form-text">{{helpers[10].value}}</div>
                                     <div *ngIf="submitted && f['yearOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['yearOne'].errors['required']">Es preciso ingresar el año del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="fileOne" class="form-label">{{forms.file}} {{forms.one}}</label>
+                                    <label for="fileOne" class="form-label">{{forms[48].value}} {{forms[18].value}}</label>
                                     <input type="text" class="form-control" id="fileOne" placeholder="Archivo" formControlName="fileOne" [ngClass]="{ 'is-invalid': submitted && f['fileOne'].errors, 'is-valid': !f['fileOne'].errors && f['fileOne'].touched }">
-                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div id="fileHelp" class="form-text">{{helpers[40].value}}</div>
                                     <div *ngIf="submitted && f['fileOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['fileOne'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="documentTwo" class="form-label">{{forms.document}} {{forms.two}}</label>
+                                    <label for="documentTwo" class="form-label">{{forms[47].value}} {{forms[19].value}}</label>
                                     <input type="text" class="form-control" id="documentTwo" placeholder="Documento" formControlName="documentTwo" [ngClass]="{ 'is-invalid': submitted && f['documentTwo'].errors, 'is-valid': !f['documentTwo'].errors && f['documentTwo'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[39].value}}</div>
                                     <div *ngIf="submitted && f['documentTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['documentTwo'].errors['required']">Es preciso ingresar el nombre del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="draftTwo" class="form-label">{{forms.draft}} {{forms.two}}</label>
+                                    <label for="draftTwo" class="form-label">{{forms[26].value}} {{forms[19].value}}</label>
                                     <input type="text" class="form-control" id="draftTwo" placeholder="Draft" formControlName="draftTwo" [ngClass]="{ 'is-invalid': submitted && f['draftTwo'].errors, 'is-valid': !f['draftTwo'].errors && f['draftTwo'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[21].value}}</div>
                                     <div *ngIf="submitted && f['draftTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['draftTwo'].errors['required']">Es preciso ingresar el borrador del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="yearTwo" class="form-label">{{forms.year}} {{forms.two}}</label>
+                                    <label for="yearTwo" class="form-label">{{forms[10].value}} {{forms[19].value}}</label>
                                     <input type="text" class="form-control" id="yearOne" placeholder="Año" formControlName="yearTwo" [ngClass]="{ 'is-invalid': submitted && f['yearTwo'].errors, 'is-valid': !f['yearTwo'].errors && f['yearTwo'].touched }">
-                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div id="yearHelp" class="form-text">{{helpers[10].value}}</div>
                                     <div *ngIf="submitted && f['yearTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['yearTwo'].errors['required']">Es preciso ingresar el año del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="fileTwo" class="form-label">{{forms.file}} {{forms.two}}</label>
+                                    <label for="fileTwo" class="form-label">{{forms[48].value}} {{forms[19].value}}</label>
                                     <input type="text" class="form-control" id="fileTwo" placeholder="Archivo" formControlName="fileTwo" [ngClass]="{ 'is-invalid': submitted && f['fileTwo'].errors, 'is-valid': !f['fileTwo'].errors && f['fileTwo'].touched }">
-                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div id="fileHelp" class="form-text">{{helpers[40].value}}</div>
                                     <div *ngIf="submitted && f['fileTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['fileTwo'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-2">
-                                    <label for="documentThree" class="form-label">{{forms.document}} {{forms.three}}</label>
+                                    <label for="documentThree" class="form-label">{{forms[47].value}} {{forms[20].value}}</label>
                                     <input type="text" class="form-control" id="documentThree" placeholder="Documento" formControlName="documentThree" [ngClass]="{ 'is-invalid': submitted && f['documentThree'].errors, 'is-valid': !f['documentThree'].errors && f['documentThree'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.documentHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[39].value}}</div>
                                     <div *ngIf="submitted && f['documentThree'].errors" class="invalid-feedback">
                                         <div *ngIf="f['documentThree'].errors['required']">Es preciso ingresar el nombre del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-2">
-                                    <label for="draftThree" class="form-label">{{forms.draft}} {{forms.three}}</label>
+                                    <label for="draftThree" class="form-label">{{forms[26].value}} {{forms[20].value}}</label>
                                     <input type="text" class="form-control" id="draftThree" placeholder="Draft" formControlName="draftThree" [ngClass]="{ 'is-invalid': submitted && f['draftThree'].errors, 'is-valid': !f['draftThree'].errors && f['draftThree'].touched }">
-                                    <div id="draftHelp" class="form-text">{{helpers.draftHelp}}</div>
+                                    <div id="draftHelp" class="form-text">{{helpers[21].value}}</div>
                                     <div *ngIf="submitted && f['draftThree'].errors" class="invalid-feedback">
                                         <div *ngIf="f['draftThree'].errors['required']">Es preciso ingresar el borrador del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="yearThree" class="form-label">{{forms.year}} {{forms.three}}</label>
+                                    <label for="yearThree" class="form-label">{{forms[10].value}} {{forms[20].value}}</label>
                                     <input type="text" class="form-control" id="yearThree" placeholder="Año" formControlName="yearThree" [ngClass]="{ 'is-invalid': submitted && f['yearThree'].errors, 'is-valid': !f['yearThree'].errors && f['yearThree'].touched }">
-                                    <div id="yearHelp" class="form-text">{{helpers.yearHelp}}</div>
+                                    <div id="yearHelp" class="form-text">{{helpers[10].value}}</div>
                                     <div *ngIf="submitted && f['yearThree'].errors" class="invalid-feedback">
                                         <div *ngIf="f['yearThree'].errors['required']">Es preciso ingresar el año del documento</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="fileThree" class="form-label">{{forms.file}} {{forms.three}}</label>
+                                    <label for="fileThree" class="form-label">{{forms[48].value}} {{forms[20].value}}</label>
                                     <input type="text" class="form-control" id="fileThree" placeholder="Archivo" formControlName="fileThree" [ngClass]="{ 'is-invalid': submitted && f['fileThree'].errors, 'is-valid': !f['fileThree'].errors && f['fileThree'].touched }">
-                                    <div id="fileHelp" class="form-text">{{helpers.fileHelp}}</div>
+                                    <div id="fileHelp" class="form-text">{{helpers[40].value}}</div>
                                     <div *ngIf="submitted && f['fileThree'].errors" class="invalid-feedback">
                                         <div *ngIf="f['fileThree'].errors['required']">Es preciso ingresar el enlace del archivo del documento</div>
                                     </div>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#audiovisualSamplesPageModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
                         </div>    
                     </div>
                 </form>

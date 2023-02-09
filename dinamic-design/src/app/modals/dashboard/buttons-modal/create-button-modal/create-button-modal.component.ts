@@ -4,15 +4,14 @@ import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-edit-hero-modal',
-  templateUrl: './edit-hero-modal.component.html'
+  selector: 'app-create-button-modal',
+  templateUrl: './create-button-modal.component.html'
 })
-export class EditHeroModalComponent implements OnInit {
+export class CreateButtonModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    hero: new FormControl(''),
-    subhero: new FormControl(''),
+    value: new FormControl(''),
   });
   submitted = false;
 
@@ -32,8 +31,7 @@ export class EditHeroModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        hero: ['', [Validators.required]],
-        subhero: ['', [Validators.required]],
+        value: ['', [Validators.required]],
       }
     );
         
@@ -72,12 +70,12 @@ export class EditHeroModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'El dato ha sido actualizado', 'success')
+    Swal.fire('Sí!!!', 'El botón ha sido creado', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'El dato no ha sido actualizado', 'warning')
+    Swal.fire('Nope!!!', 'El botón no ha sido creado', 'warning')
   }
 
 }

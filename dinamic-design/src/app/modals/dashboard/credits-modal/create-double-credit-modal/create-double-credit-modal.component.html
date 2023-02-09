@@ -11,17 +11,17 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="credit" class="form-label">{{forms.credit}}</label>
+                                    <label for="credit" class="form-label">{{forms[11].value}}</label>
                                     <input type="text" class="form-control" id="credit" placeholder="Crédito" formControlName="credit" [ngClass]="{ 'is-invalid': submitted && f['credit'].errors, 'is-valid': !f['credit'].errors && f['credit'].touched }">
-                                    <div id="creditHelp" class="form-text">{{helpers.creditHelp}}</div>
+                                    <div id="creditHelp" class="form-text">{{helpers[11].value}}</div>
                                     <div *ngIf="submitted && f['credit'].errors" class="invalid-feedback">
                                         <div *ngIf="f['credit'].errors['required']">Es preciso ingresar un crédito</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <label for="name" class="form-label">{{forms.name}}</label>
+                                    <label for="name" class="form-label">{{forms[12].value}}</label>
                                     <input type="text" class="form-control" id="name" placeholder="Nombre" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors, 'is-valid': !f['name'].errors && f['name'].touched }">
-                                    <div id="nameHelp" class="form-text">{{helpers.nameHelp}}</div>
+                                    <div id="nameHelp" class="form-text">{{helpers[12].value}}</div>
                                     <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
                                         <div *ngIf="f['name'].errors['required']">Es preciso ingresar un nombre</div>
                                     </div>
@@ -29,7 +29,7 @@
                             </div>
                         </div>                    
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#creditsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons[11].value}}</button>
                         </div>
                     </div>
                 </form>

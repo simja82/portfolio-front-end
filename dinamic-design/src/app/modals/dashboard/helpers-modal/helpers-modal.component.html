@@ -1,0 +1,32 @@
+    <!--Modal Helpers-->
+    <div class="modal fade" id="helpersModal" tabindex="-1" aria-labelledby="helpersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="helpersModalLabel">Helpers</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center w-75 m-auto">
+                        <div *ngFor="let helper of helpers" class="row mb-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="pt-2">{{helper.value}}</p>
+                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#editHelperModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="w-75 m-auto mb-3">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-black-extra-mini" data-bs-target="#createHelperModal" data-bs-toggle="modal"><i class="fa-solid fa-circle-plus"></i></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons[7].value}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CRUD Modals -->
+    <app-create-helper-modal></app-create-helper-modal>
+    <app-edit-helper-modal></app-edit-helper-modal>

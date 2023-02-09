@@ -1,4 +1,4 @@
-<section class="background" [ngStyle]="{'background-image': 'url(' + banners[6].image + ')'}">  
+<section class="background" [ngStyle]="{'background-image': 'url(' + login.image + ')'}" alt="Teclado de computadora con una llave antigua sobre él" title="Login">  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
@@ -8,7 +8,7 @@
 
    <!-- Plus -->
    <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-        <a class="plus" [attr.data-tooltip]="banners[6].description">
+        <a class="plus" [attr.data-tooltip]="login.description">
             <app-white-plus></app-white-plus>
         </a>   
     </div>
@@ -16,36 +16,30 @@
     <!-- Form Login -->
     <div class="col-8 m-auto section-top">
         <div class="card text-bg-light text-center">
-            <div class="card-header">{{banners[6].banner}}</div>
+            <div class="card-header">{{login.title}}</div>
             <div class="card-body col-10 m-auto pb-4 mt-1">
-                <!-- Reactive Form -->
                 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-                    <!-- Form Group-->
                     <div class="form-group mb-3">
-                        <label for="inputEmail" class="form-label">{{forms.email}}</label>
-                        <!-- Form Control Name and Validation -->
+                        <label for="inputEmail" class="form-label">{{forms[0].value}}</label>
                         <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors, 'is-valid': !f['email'].errors && f['email'].touched }">
-                        <div id="emailHelp" class="form-text">{{helpers.emailHelp}}</div>
-                        <!-- Validation Feedback -->
+                        <div id="emailHelp" class="form-text">{{helpers[0].value}}</div>
                         <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
                             <div *ngIf="f['email'].errors['required']">Debes ingresar un email</div>
                             <div *ngIf="f['email'].errors['email']">El email ingresado es inválido</div>
                         </div>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="inputPassword" class="form-label">{{forms.password}}</label>
-                        <!-- Form Control Name and Validation -->
+                        <label for="inputPassword" class="form-label">{{forms[1].value}}</label>
                         <input type="password" class="form-control" id="inputPassword" formControlName="password" [ngClass]="{ 'is-invalid': submitted && f['password'].errors, 'is-valid': !f['password'].errors && f['password'].touched  }">
-                        <!-- Validation Feedback -->
                         <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
                             <div *ngIf="f['password'].errors['required']">Debes ingresar una contraseña</div>
                             <div *ngIf="f['password'].errors['minlength']">La contraseña debe tener un mínimo de 8 caracteres</div>
                             <div *ngIf="f['password'].errors['maxlength']">La contraseña no debe tener más de 20 caracteres</div>
                         </div>
                     </div>  
-                    <button type="submit" class="btn btn-outline-dark btn-width">{{buttons.enter}}</button>
+                    <button type="submit" class="btn btn-outline-dark btn-width">{{buttons[0].value}}</button>
                 </form>
-                <div id="registerHelp" class="form-text mt-4">{{helpers.registerHelp}} <a routerLink="/register">{{phrases.more}}</a></div>
+                <div id="registerHelp" class="form-text mt-4">{{helpers[1].value}} <a routerLink="/register">{{login.more}}</a></div>
             </div>
         </div>            
     </div>

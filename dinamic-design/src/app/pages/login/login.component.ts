@@ -15,11 +15,10 @@ export class LoginComponent implements OnInit {
     email: new FormControl(''),
     password: new FormControl(''),
   });
-  //Botón Reactivo
   submitted = false;
- 
-  //Array Banners
-  banners : any = [];
+
+  //Array Login
+  login : any = []; 
 
   //Array Forms
   forms : any = [];
@@ -29,9 +28,6 @@ export class LoginComponent implements OnInit {
 
   //Array Buttons
   buttons : any = [];
-
-  //Array Phrases
-  phrases : any = [];
 
   //Inyección de Title, Service y Constructor de Formularios
   constructor (private title:Title, private povService:POVService, private formBuilder: FormBuilder) {
@@ -44,25 +40,17 @@ export class LoginComponent implements OnInit {
     this.form = this.formBuilder.group(
       {
         email: ['', [Validators.required, Validators.email]],
-        password: [
-          '',
-          [
-            Validators.required,
-            Validators.minLength(8),
-            Validators.maxLength(20)
-          ]
-        ]
+        password: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(20)]],
       }
     );
     
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.banners = data.banners;
+      this.login = data.login;
       this.forms = data.forms;
       this.helpers = data.helpers;
       this.buttons = data.buttons;
-      this.phrases = data.phrases;
     })
   }
 
@@ -79,8 +67,6 @@ export class LoginComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-    //Valores en Consola
-    //console.log(JSON.stringify(this.form.value, null, 2));
   }
 
 }

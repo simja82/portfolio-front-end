@@ -11,46 +11,46 @@
                         <div class="modal-body">                
                             <div class="row">
                                 <div class="col-12 mb-2">
-                                    <label for="overview" class="form-label">{{forms.overview}}</label>
+                                    <label for="overview" class="form-label">{{forms[50].value}}</label>
                                     <input type="text" class="form-control" id="overview" placeholder="Apertura" formControlName="overview" [ngClass]="{ 'is-invalid': submitted && f['overview'].errors, 'is-valid': !f['overview'].errors && f['overview'].touched }">
-                                    <div id="overviewHelp" class="form-text">{{helpers.overviewHelp}}</div>
+                                    <div id="overviewHelp" class="form-text">{{helpers[43].value}}</div>
                                     <div *ngIf="submitted && f['overview'].errors" class="invalid-feedback">
                                         <div *ngIf="f['overview'].errors['required']">Es preciso ingresar una apertura</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="industry" class="form-label">{{forms.industry}}</label>
+                                    <label for="industry" class="form-label">{{forms[51].value}}</label>
                                     <input type="text" class="form-control" id="industry" placeholder="Industria" formControlName="industry" [ngClass]="{ 'is-invalid': submitted && f['industry'].errors, 'is-valid': !f['industry'].errors && f['industry'].touched }">
-                                    <div id="industryHelp" class="form-text">{{helpers.industryHelp}}</div>
+                                    <div id="industryHelp" class="form-text">{{helpers[44].value}}</div>
                                     <div *ngIf="submitted && f['industry'].errors" class="invalid-feedback">
                                         <div *ngIf="f['industry'].errors['required']">Es preciso ingresar una industria</div>
                                     </div>
                                 </div>                            
                                 <div class="col-12 mb-2">
-                                    <label for="closing" class="form-label">{{forms.closing}}</label>
+                                    <label for="closing" class="form-label">{{forms[25].value}}</label>
                                     <input type="text" class="form-control" id="closing" placeholder="Cierre" formControlName="closing" [ngClass]="{ 'is-invalid': submitted && f['closing'].errors, 'is-valid': !f['closing'].errors && f['closing'].touched }">
-                                    <div id="closingHelp" class="form-text">{{helpers.closingHelp}}</div>
+                                    <div id="closingHelp" class="form-text">{{helpers[20].value}}</div>
                                     <div *ngIf="submitted && f['closing'].errors" class="invalid-feedback">
                                         <div *ngIf="f['closing'].errors['required']">Es preciso ingresar un cierre</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="paragraphOne" class="form-label">{{forms.paragraph}} {{forms.one}}</label>
+                                    <label for="paragraphOne" class="form-label">{{forms[39].value}} {{forms[18].value}}</label>
                                     <textarea class="form-control" id="paragraphOne" rows="3" formControlName="paragraphOne" [ngClass]="{ 'is-invalid': submitted && f['paragraphOne'].errors, 'is-valid': !f['paragraphOne'].errors && f['paragraphOne'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphOneHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit200}}</div>
+                                        <div id="paragraphOneHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[26].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphOne'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphOne'].errors['required']">Es preciso ingresar el primer párrafo</div>
                                     </div>
                                 </div>
                                 <div class="col-12 mb-2">          
-                                    <label for="paragraphTwo" class="form-label">{{forms.paragraph}} {{forms.two}}</label>
+                                    <label for="paragraphTwo" class="form-label">{{forms[39].value}} {{forms[19].value}}</label>
                                     <textarea class="form-control" id="paragraphTwo" rows="3" formControlName="paragraphTwo" [ngClass]="{ 'is-invalid': submitted && f['paragraphTwo'].errors, 'is-valid': !f['paragraphTwo'].errors && f['paragraphTwo'].touched }"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">{{helpers.paragraphHelp}}</div>
-                                        <div id="limitHelp" class="form-text">{{helpers.limit200}}</div>
+                                        <div id="paragraphHelp" class="form-text">{{helpers[30].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[26].value}}</div>
                                     </div> 
                                     <div *ngIf="submitted && f['paragraphTwo'].errors" class="invalid-feedback">
                                         <div *ngIf="f['paragraphTwo'].errors['required']">Es preciso ingresar el segundo párrafo</div>
@@ -59,7 +59,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>

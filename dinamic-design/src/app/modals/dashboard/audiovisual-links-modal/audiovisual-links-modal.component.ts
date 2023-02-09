@@ -8,8 +8,8 @@ import { POVService } from 'src/assets/services/pov.service';
 })
 export class AudiovisualLinksModalComponent implements OnInit {
 
-  //Array Phrases
-  phrases : any = [];
+  //Array Links
+  links : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -22,7 +22,7 @@ export class AudiovisualLinksModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.phrases = data.phrases;
+      this.links = data.links;
       this.buttons = data.buttons;
     })
   }

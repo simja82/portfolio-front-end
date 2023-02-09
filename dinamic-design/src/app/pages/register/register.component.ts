@@ -12,9 +12,6 @@ export class RegisterComponent implements OnInit {
 //Array Banners
 banners : any = [];
 
-//Array Heroes
-heroes : any = [];
-
 //Array Buttons
 buttons : any = [];
 
@@ -29,7 +26,6 @@ buttons : any = [];
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.banners = data.banners;
-      this.heroes = data.heroes;
       this.buttons = data.buttons;
     })
   }

@@ -11,25 +11,25 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-4 mb-2">
-                                    <label for="language" class="form-label">{{forms.language}}</label>
+                                    <label for="language" class="form-label">{{forms[60].value}}</label>
                                     <input type="text" class="form-control" id="language" placeholder="Idioma" formControlName="language" [ngClass]="{ 'is-invalid': submitted && f['language'].errors, 'is-valid': !f['language'].errors && f['language'].touched }">
-                                    <div id="languageHelp" class="form-text">{{helpers.languageHelp}}</div>
+                                    <div id="languageHelp" class="form-text">{{helpers[54].value}}</div>
                                     <div *ngIf="submitted && f['language'].errors" class="invalid-feedback">
                                         <div *ngIf="f['language'].errors['required']">Es preciso ingresar un idioma</div>
                                     </div>
                                 </div>
                                 <div class="col-4 mb-2">
-                                    <label for="percentage" class="form-label">{{forms.percentage}}</label>
+                                    <label for="percentage" class="form-label">{{forms[59].value}}</label>
                                     <input type="text" class="form-control" id="percentage" placeholder="Porcentaje" formControlName="percentage" [ngClass]="{ 'is-invalid': submitted && f['percentage'].errors, 'is-valid': !f['percentage'].errors && f['percentage'].touched }">
-                                    <div id="percentageHelp" class="form-text">{{helpers.percentageHelp}}</div>
+                                    <div id="percentageHelp" class="form-text">{{helpers[53].value}}</div>
                                     <div *ngIf="submitted && f['percentage'].errors" class="invalid-feedback">
                                         <div *ngIf="f['percentage'].errors['required']">Es preciso ingresar el porcentaje</div>
                                     </div>
                                 </div>
                                 <div class="col-4 mb-2">
-                                    <label for="level" class="form-label">{{forms.level}}</label>
+                                    <label for="level" class="form-label">{{forms[61].value}}</label>
                                     <input type="text" class="form-control" id="level" placeholder="Nivel" formControlName="level" [ngClass]="{ 'is-invalid': submitted && f['level'].errors, 'is-valid': !f['level'].errors && f['level'].touched }">
-                                    <div id="levelHelp" class="form-text">{{helpers.levelHelp}}</div>
+                                    <div id="levelHelp" class="form-text">{{helpers[55].value}}</div>
                                     <div *ngIf="submitted && f['level'].errors" class="invalid-feedback">
                                         <div *ngIf="f['level'].errors['required']">Es preciso ingresar un nivel</div>
                                     </div>
@@ -37,7 +37,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons.save}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#developerSkillsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
                         </div>    
                     </div>
                 </form>  

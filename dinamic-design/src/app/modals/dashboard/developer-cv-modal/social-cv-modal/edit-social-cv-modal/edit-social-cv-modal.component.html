@@ -11,17 +11,17 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6 mb-2">
-                                    <label for="icon" class="form-label">{{forms.icon}}</label>
+                                    <label for="icon" class="form-label">{{forms[2].value}}</label>
                                     <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
-                                    <div id="iconHelp" class="form-text">{{helpers.iconHelp}}</div>
+                                    <div id="iconHelp" class="form-text">{{helpers[2].value}}</div>
                                     <div *ngIf="submitted && f['icon'].errors" class="invalid-feedback">
                                         <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
                                 <div class="col-6 mb-2">
-                                    <label for="user" class="form-label">{{forms.user}}</label>
+                                    <label for="user" class="form-label">{{forms[66].value}}</label>
                                     <input type="text" class="form-control" id="user" placeholder="Usuario" formControlName="user" [ngClass]="{ 'is-invalid': submitted && f['user'].errors, 'is-valid': !f['user'].errors && f['user'].touched }">
-                                    <div id="userHelp" class="form-text">{{helpers.userHelp}}</div>
+                                    <div id="userHelp" class="form-text">{{helpers[60].value}}</div>
                                     <div *ngIf="submitted && f['user'].errors" class="invalid-feedback">
                                         <div *ngIf="f['user'].errors['required']">Es preciso ingresar un usuario</div>
                                     </div>
@@ -29,7 +29,7 @@
                             </div>    
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#socialCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#socialCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>
                     </div>
                 </form>

@@ -11,9 +11,9 @@
                         <div class="modal-body">                
                             <div class="row">
                                 <div class="col-12 mb-2">
-                                    <label for="skill" class="form-label">{{forms.skill}}</label>
+                                    <label for="skill" class="form-label">{{forms[58].value}}</label>
                                     <input type="text" class="form-control" id="skill" placeholder="Skill" formControlName="skill" [ngClass]="{ 'is-invalid': submitted && f['skill'].errors, 'is-valid': !f['skill'].errors && f['skill'].touched }">
-                                    <div id="skillHelp" class="form-text">{{helpers.skillHelp}}</div>
+                                    <div id="skillHelp" class="form-text">{{helpers[52].value}}</div>
                                     <div *ngIf="submitted && f['skill'].errors" class="invalid-feedback">
                                         <div *ngIf="f['skill'].errors['required']">Es preciso ingresar una habilidad</div>
                                     </div>
@@ -21,7 +21,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons.update}}</button>
+                            <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal" aria-label="Actualizar">{{buttons[13].value}}</button>
                         </div>    
                     </div>
                 </form>
