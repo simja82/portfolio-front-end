@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
-  selector: 'app-icons-modal',
-  templateUrl: './icons-modal.component.html'
+  selector: 'app-brand-modal',
+  templateUrl: './brand-modal.component.html'
 })
-export class IconsModalComponent implements OnInit {
+export class BrandModalComponent implements OnInit {
 
-  //Array Icons
-  icons : any = [];
+  //Array Brand
+  brand : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -20,7 +20,7 @@ export class IconsModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.icons = data.icons;
+      this.brand = data.brand;
       this.buttons = data.buttons;
     })
   }

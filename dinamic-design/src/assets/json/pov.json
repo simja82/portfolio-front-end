@@ -1,8 +1,8 @@
 {
-    "logo" :
+    "brand" :
     {
         "image" : "https://images.pexels.com/photos/15435769/pexels-photo-15435769.png",
-        "alt" : "Logo Argentina Programa"
+        "alt" : "Logo de Argentina Programa"
     },
     "login" :
     {
@@ -119,6 +119,10 @@
         {
             "id" : 14,
             "value" : "Actualizar" 
+        },
+        {
+            "id" : 15,
+            "value" : "Enviar"
         }
     ],
     "links" :
@@ -413,6 +417,10 @@
         {
             "id" : 71,
             "value" : "Detalle"
+        },
+        {
+            "id" : 72,
+            "value" : "Mensaje"
         }
     ],
     "helpers" :
@@ -676,17 +684,10 @@
         {
             "id" : 65,
             "value" : "Ingresar un form"
-        }
-    ],
-    "icons" :
-    [
-        {
-            "id" : 1,
-            "icon" : "fa-brands fa-padlet"
         },
         {
-            "id" : 2,
-            "icon" : ""
+            "id" : 66,
+            "value" : "Ingresar un mensaje"
         }
     ],
     "socialGeneral" :
@@ -1102,8 +1103,8 @@
     [
         {
             "id" : 1,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Gracias y mil gracias por todo lo que nos brindás siempre, por estar y apoyarnos siempre, por hacernos entender que podíamos y tomarte el tiempo para explicarnos en cada momento, sos una persona única y con muy grandes valores.",
+            "name" : "Jesica Dabos - YoProgramo 3ra Edición"
         },
         {
             "id" : 2,
@@ -1952,39 +1953,39 @@
     [
         {
             "id" : 1,
+            "icon" : "fa-solid fa-check",
+            "section" : "Brand",
+            "target" : "brandModal"
+        },
+        {
+            "id" : 2,
             "icon" : "fa-solid fa-right-to-bracket",
             "section" : "Login",
             "target" : "loginModal"
         },
         {
-            "id" : 2,
+            "id" : 3,
             "icon" : "fa-solid fa-share-nodes",
             "section" : "Social",
             "target" : "socialModal"
         },
         {
-            "id" : 3,
+            "id" : 4,
             "icon" : "fa-solid fa-images",
             "section" : "Banners",
             "target" : "bannersModal"
         },
         {
-            "id" : 4,
+            "id" : 5,
             "icon" : "fa-solid fa-pen-to-square",
             "section" : "Forms",
             "target" : "formsModal"
         },
         {
-            "id" : 5,
+            "id" : 6,
             "icon" : "fa-solid fa-life-ring",
             "section" : "Helpers",
             "target" : "helpersModal"
-        },
-        {
-            "id" : 6,
-            "icon" : "fa-solid fa-box-archive",
-            "section" : "Icons",
-            "target" : "iconsModal"
         },
         {
             "id" : 7,

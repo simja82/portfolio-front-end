@@ -21,7 +21,7 @@ import { SamplesComponent } from './pages/samples/samples.component';
 import { PlusComponent } from './pages/plus/plus.component';
 import { LinksComponent } from './pages/links/links.component';
 import { DataComponent } from './pages/data/data.component';
-import { WhiteLogoComponent } from './components/navbar/logo/white/white.component';
+import { WhiteBrandComponent } from './components/navbar/brand/white/white.component';
 import { CameraComponent } from './components/sidebars/left/camera/camera.component';
 import { CodeComponent } from './components/sidebars/left/code/code.component';
 import { BlackBackComponent } from './components/footer/left/black/back/back.component';
@@ -36,7 +36,7 @@ import { WhiteBackComponent } from './components/footer/left/white/back/white-ba
 import { BlackSessionComponent } from './components/navbar/session/black/black.component';
 import { WhiteSessionComponent } from './components/navbar/session/white/white.component';
 import { BlackPlusComponent } from './components/sidebars/left/plus/black/black.component';
-import { BlackLogoComponent } from './components/navbar/logo/black/black.component';
+import { BlackBrandComponent } from './components/navbar/brand/black/black.component';
 import { BlackGeneralComponent } from './components/sidebars/right/black/general/black-general/black-general.component';
 import { WhiteGeneralComponent } from './components/sidebars/right/white/general/white-general/white-general.component';
 import { WhiteFooterPlusComponent } from './components/footer/right/white/plus/plus.component';
@@ -283,7 +283,6 @@ import { DeleteTechnicalSkillCvModalComponent } from './modals/dashboard/develop
 import { DeleteSoftSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-soft-skill-cv-modal/delete-soft-skill-cv-modal.component';
 import { DeleteLanguageSkillCvModalComponent } from './modals/dashboard/developer-cv-modal/skills-cv-modal/delete-language-skill-cv-modal/delete-language-skill-cv-modal.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
-import { IconsModalComponent } from './modals/dashboard/icons-modal/icons-modal.component';
 import { HelpersModalComponent } from './modals/dashboard/helpers-modal/helpers-modal.component';
 import { FormsModalComponent } from './modals/dashboard/forms-modal/forms-modal.component';
 import { LoginModalComponent } from './modals/dashboard/login-modal/login-modal.component';
@@ -296,6 +295,9 @@ import { CreateHelperModalComponent } from './modals/dashboard/helpers-modal/cre
 import { EditLoginModalComponent } from './modals/dashboard/login-modal/edit-login-modal/edit-login-modal.component';
 import { CreateFormModalComponent } from './modals/dashboard/forms-modal/create-form-modal/create-form-modal.component';
 import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form-modal/edit-form-modal.component';
+import { BrandModalComponent } from './modals/dashboard/brand-modal/brand-modal.component';
+import { EditBrandModalComponent } from './modals/dashboard/brand-modal/edit-brand-modal/edit-brand-modal.component';
+import { MessageModalComponent } from './modals/general/message-modal/message-modal.component';
 
 @NgModule({
     declarations: [
@@ -317,8 +319,8 @@ import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form
         LinksComponent,
         DataComponent,
         BlackSessionComponent,
-        WhiteLogoComponent,
-        BlackLogoComponent,
+        WhiteBrandComponent,
+        BlackBrandComponent,
         WhitePlusComponent,
         BlackPlusComponent,
         BlackGeneralComponent,
@@ -580,7 +582,6 @@ import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form
         DeleteSoftSkillCvModalComponent,
         DeleteLanguageSkillCvModalComponent,
         FeedbackComponent,
-        IconsModalComponent,
         HelpersModalComponent,
         FormsModalComponent,
         LoginModalComponent,
@@ -592,7 +593,10 @@ import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form
         CreateHelperModalComponent,
         EditLoginModalComponent,
         CreateFormModalComponent,
-        EditFormModalComponent
+        EditFormModalComponent,
+        BrandModalComponent,
+        EditBrandModalComponent,
+        MessageModalComponent
    ],
     providers: [],
     bootstrap: [AppComponent],

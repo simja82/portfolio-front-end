@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
-  selector: 'app-white-logo',
+  selector: 'app-white-brand',
   templateUrl: './white.component.html'
 })
-export class WhiteLogoComponent implements OnInit {
+export class WhiteBrandComponent implements OnInit {
   
-  //Array Logo
-  logo : any = [];
+  //Array Brand
+  brand : any = [];
 
   //Inyección de Service
   constructor (private povService:POVService) { }
@@ -17,7 +17,7 @@ export class WhiteLogoComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.logo = data.logo;
+      this.brand = data.brand;
     })
   }
 

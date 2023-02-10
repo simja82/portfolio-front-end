@@ -1,7 +1,7 @@
 <section class="background" [ngStyle]="{'background-image': 'url(' + banners[5].image + ')'}">  
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
-        <app-black-logo></app-black-logo>
+        <app-black-brand></app-black-brand>
         <app-black-session></app-black-session>
     </nav>
 
@@ -20,10 +20,8 @@
         <div class="col-12 mb-5">
             <h4 class="hero">{{banners[5].subhero}}</h4>
         </div>
-        <!-- Llamar a Modal de Mensaje -->
-        <a routerLink="/">
-            <button type="button" class="btn btn-outline-black btn-lg btn-width">{{buttons[8].value}}</button>
-        </a>         
+        <!-- Llamado a Modal de Mensaje -->
+        <button type="button" class="btn btn-outline-black btn-lg btn-width" data-bs-toggle="modal" data-bs-target="#messageModal">{{buttons[8].value}}</button>
     </div>
 
     <!-- Redes -->
@@ -35,3 +33,6 @@
         <div></div>
     </footer>
 </section>
+
+<!-- Message Modal -->
+<app-message-modal></app-message-modal>

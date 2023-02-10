@@ -1,0 +1,49 @@
+    <!-- Modal Message -->
+    <div class="modal fade" id="messageModal" aria-hidden="true" aria-labelledby="messageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="messageModal">Mensaje</h1>
+                    <i class="fa-solid fa-times" data-bs-dismiss="modal" aria-label="Cerrar" aria-label="Cerrar" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="name" class="form-label">{{forms[12].value}}</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nombre y Apellido" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f['name'].errors, 'is-valid': !f['name'].errors && f['name'].touched }">
+                                    <div id="nameHelp" class="form-text">{{helpers[12].value}}</div>
+                                    <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['name'].errors['required']">Es preciso ingresar el nombre completo</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="email" class="form-label">{{forms[0].value}}</label>
+                                    <input type="text" class="form-control" id="email" placeholder="email@dominio.com" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f['email'].errors, 'is-valid': !f['email'].errors && f['email'].touched }">
+                                    <div id="emailHelp" class="form-text">{{helpers[0].value}}</div>
+                                    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['email'].errors['required']">Es preciso ingresar una dirección de email</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pt-3">
+                                    <label for="message" class="form-label">{{forms[71].value}}</label>
+                                    <textarea type="text" class="form-control" id="message" rows="4" placeholder="Mensaje" formControlName="message" [ngClass]="{ 'is-invalid': submitted && f['message'].errors, 'is-valid': !f['message'].errors && f['message'].touched }"></textarea>
+                                    <div class="d-flex justify-content-between">
+                                        <div id="messageHelp" class="form-text">{{helpers[65].value}}</div>
+                                        <div id="limitHelp" class="form-text">{{helpers[27].value}}</div>
+                                    </div> 
+                                    <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['message'].errors['required']">Es preciso ingresar un mensaje</div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Enviar">{{buttons[14].value}}</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
