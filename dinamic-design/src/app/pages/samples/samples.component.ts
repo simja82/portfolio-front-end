@@ -7,10 +7,16 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./samples.component.css']
 })
 export class SamplesComponent implements OnInit {
+  //Inyección de Title
   constructor (private title:Title) {
-    title.setTitle('Audiovisual Samples | Point of View')
+    //Seteo de Title
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#000000";
+  }
+
+  ngOnDestroy(): void { }
 
 }

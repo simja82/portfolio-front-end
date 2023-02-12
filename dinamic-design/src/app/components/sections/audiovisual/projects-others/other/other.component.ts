@@ -25,6 +25,9 @@ export class OtherComponent implements OnInit {
       });
     }
 
-  ngOnInit(): void { }
+    ngOnInit(): void {
+      //Color del Ícono de Accesibilidad
+      (window as any).interdeal.btnStyle.color.second = "#000000"; 
+    }
 
 }

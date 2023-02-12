@@ -12,17 +12,24 @@ export class CVComponent implements OnInit {
   //Array CV
   cv : any = [];
 
-  //Inyección de Service
-    constructor (private povService:POVService) {
+  //Inyección de Title y Services
+    constructor (private title:Title, private povService:POVService) {
+      //Seteo de Title
+      title.setTitle('Developer CV | Point of View');
     }
     
-    ngOnInit(): void { 
-      //Almacenamiento de datos
-      this.povService.getData().subscribe(data => {
-        //Información a mostrar
-        this.cv = data.cv;
+    ngOnInit(): void {
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#000000"; 
+
+    //Almacenamiento de datos
+    this.povService.getData().subscribe(data => {
+      //Información a mostrar
+      this.cv = data.cv;
       })
     }
+
+    ngOnDestroy(): void { }    
 
   }
   

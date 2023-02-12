@@ -21,10 +21,13 @@ export class BloopersComponent implements OnInit {
   //Inyección de Title y Service
   constructor (private title:Title, private povService:POVService) {
     //Seteo de Title
-    title.setTitle('Bloopers | Point of View')
+    title.setTitle('Bloopers | Point of View');
   }
 
   ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#ffffff"; 
+
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
@@ -33,5 +36,7 @@ export class BloopersComponent implements OnInit {
       this.music = data.music;
     })
   }
+
+  ngOnDestroy(): void { }
 
 }

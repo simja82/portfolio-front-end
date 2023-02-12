@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { POVService } from 'src/assets/services/pov.service';
 
@@ -18,10 +18,13 @@ buttons : any = [];
 //Inyección de Title y Service
   constructor (private title:Title, private povService:POVService) {
     //Seteo de Title
-    title.setTitle('Index | Point of View')
+    title.setTitle('Index | Point of View');
   }
-
+  
   ngOnInit(): void {
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#ffffff"; 
+
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
@@ -30,4 +33,6 @@ buttons : any = [];
     });
   }
 
+  ngOnDestroy(): void { }
+  
 }

@@ -18,10 +18,13 @@ buttons : any = [];
 //Inyección de Title y Service
   constructor (private title:Title, private povService:POVService) {
     //Seteo de Title
-    title.setTitle('Register | Point of View')
+    title.setTitle('Register | Point of View');
   }
 
   ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#000000";
+
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
@@ -29,5 +32,7 @@ buttons : any = [];
       this.buttons = data.buttons;
     })
   }
+
+  ngOnDestroy(): void { }
 
 }

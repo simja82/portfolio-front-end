@@ -17,7 +17,6 @@
         <div class="col-12 mt-5 pt-5 mb-4">
             <h1 class="hero text-top">{{banners[0].hero}}</h1>
         </div>
-
         <div class="col-12 mb-5">
             <h4 class="hero">{{banners[0].subhero}}</h4>
         </div>
@@ -34,4 +33,32 @@
         <div></div>
         <app-white-fast-forward></app-white-fast-forward>
     </footer>
+  
+    <!-- Instrucciones -->
+    <input type="checkbox" id="close">
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row text-center m-5">
+                    <h3 class="modal-title col-12">Instrucciones</h3>                
+                    <div class="col-11 mx-auto mt-4">
+                        <h5 class="mb-3">
+                            Este Portfolio tiene herramientas de accesibilidad disponibles sobre el costado izquierdo de la pantalla.
+                        </h5> 
+                        <h5 class="mb-3">
+                            Si, en algún momento del recorrido las necesitara y no las encuentra por favor recargue la página en la que se encuentra y las podrá ver nuevamente.
+                        </h5> 
+                        <h5 class="mb-3">
+                            Estas instrucciones podrán ser consultada cuantas veces sea necesario volviendo a esta página dando click en el logo ubicado arriba a la izquierda en cualquiera de las páginas.
+                        </h5>
+                    </div>
+                    <label for="close" id="btn-close" class="d-flex justify-content-center mt-4 pb-4">
+                        <span type="button" class="btn btn-outline-black btn-lg btn-width">{{buttons[7].value}}</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>

@@ -18,10 +18,13 @@ export class CreditsComponent implements OnInit {
   //Inyección de Title y Service
   constructor (private title:Title, private povService: POVService) {
     //Seteo de Title
-    title.setTitle('Credits | Point of View')
+    title.setTitle('Credits | Point of View');
   }
 
   ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#ffffff"; 
+
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
@@ -29,5 +32,7 @@ export class CreditsComponent implements OnInit {
       this.music = data.music;
     })
   }
+
+  ngOnDestroy(): void {  }  
 
 }

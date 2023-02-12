@@ -21,10 +21,13 @@ links : any = [];
 //Inyección de Title y Service
   constructor (private title:Title, private povService:POVService) {
     //Seteo de Title
-    title.setTitle('Audiovisual Links | Point of View')
+    title.setTitle('Audiovisual Links | Point of View');
   }
 
   ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#ffffff"; 
+
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
@@ -33,5 +36,7 @@ links : any = [];
       this.links = data.links;
     })
   }
+
+  ngOnDestroy(): void { }  
 
 }

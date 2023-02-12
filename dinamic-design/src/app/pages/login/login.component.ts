@@ -9,7 +9,6 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
     email: new FormControl(''),
@@ -32,10 +31,13 @@ export class LoginComponent implements OnInit {
   //Inyección de Title, Service y Constructor de Formularios
   constructor (private title:Title, private povService:POVService, private formBuilder: FormBuilder) {
     //Seteo de Title
-    title.setTitle('Login | Point of View')
+    title.setTitle('Login | Point of View');
   }
 
   ngOnInit(): void { 
+    //Color del Ícono de Accesibilidad
+    (window as any).interdeal.btnStyle.color.second = "#ffffff"; 
+      
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
@@ -51,8 +53,10 @@ export class LoginComponent implements OnInit {
       this.forms = data.forms;
       this.helpers = data.helpers;
       this.buttons = data.buttons;
-    })
+    });
   }
+  
+  ngOnDestroy(): void { }
 
   //Traer Formulario
   get f(): { [key: string]: AbstractControl } {
