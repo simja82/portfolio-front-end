@@ -26,11 +26,12 @@ footer {
 
 /* Imágenes en Background */
 section.background {
-    position: relative;
+    /*position: relative;*/
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
+    background-repeat: no-repeat;
 }
 
 section.index {
@@ -72,7 +73,9 @@ ul.social-listing li {
 /* Plus */
 .plus {
     position: relative;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/ /* POR QUE SACO LA TRANSICION? */
+    top: 50%;
+    left: 2%;
 }
 
 .plus:after {
@@ -83,14 +86,14 @@ ul.social-listing li {
     color: #fff;
     background: #2828285e;
     padding: 1.5rem 2.5rem;
-    width: 50rem;
+    width: 18rem;
     opacity: 0;
     pointer-events: none;
-    left: 850%;
-    top: 775%;
     border-radius: 4px;
     transition: all 0.3s ease;
     transition-delay: .2s;
+    top: 1070%; /* Parece funcionar con 770% */
+    /* left: 850%; */ /* Por que saca este left? */ 
 }
 
 .plus:hover:after {

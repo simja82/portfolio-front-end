@@ -1,0 +1,66 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .text-top {
+        margin-top: 3rem;
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        width: 30rem;
+        left: 425%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .text-top {
+        margin-top: 2rem;
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        width: 40rem;
+        left: 600%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .text-top {
+        margin-top: 7rem;
+    }
+
+    .index-button {
+        margin-top: 3rem;
+    }
+
+    .plus::after{
+        width: 48rem;
+        left: 650%;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .text-top {
+        margin-top: 4rem;
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        width: 60rem;
+        left: 700%;
+    }
+}
+/*
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/

@@ -29,27 +29,28 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media.css">
     <!-- Title -->
     <title>Index | Point of View</title>
 </head>
 <body>
-    <section class="background index">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="./assets/img/logo.png" alt="Argentina Programa" width="150">
-            </a>
-            <a href="/login.html">
-                <i class="fa fa-lock fa-2x text-white me-4"></i>
-            </a>
-        </nav>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="./assets/img/logo.png" alt="Argentina Programa" width="150">
+        </a>
+        <a href="/login.html">
+            <i class="fa fa-lock fa-2x text-white me-4"></i>
+        </a>
+    </nav>
+
+    <!-- Section -->
+    <section class="background index">   
         <!-- Plus -->
-        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-            <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-                <i class="fa fa-plus fa-2x text-white"></i>
-            </a>         
-        </div>
+        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+            <i class="fa fa-plus fa-2x text-white"></i>
+        </a>         
+
 
         <!-- Enlace -->
         <div class="text-center pt-5 text-white">
@@ -60,7 +61,7 @@
                 <h4 class="hero">Me ves?</h4>
             </div>
             <a href="/intro.html">
-                <button type="button" class="btn btn-outline-white btn-lg">Entrar</button>
+                <button type="button" class="btn btn-outline-white btn-lg index-button">Entrar</button>
             </a>         
         </div>
     
@@ -93,7 +94,7 @@
         </div>
     
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid">
+        <footer class="footer d-flex justify-content-between container-fluid mt-5">
             <div></div>
             <a href="/credits.html">
                 <i class="fa-solid fa-angles-right fa-2x text-white me-4"></i>
