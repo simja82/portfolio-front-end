@@ -1,0 +1,491 @@
+/* XSmall Devices Portrait Max Width 575px*/
+
+/* iPhone XS, X */
+@media (min-height: 375px) and (max-height: 375px) and (min-width: 812px) and (max-width: 812px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -6rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 450% !important;
+        width: 50rem;
+        left: 15%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* iPhone XR, XS Max */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 450% !important;
+        width: 50rem;
+        left: 15%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* iPhone 8 Plus, 7 Plus, 6S Plus */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 736px) and (max-width: 736px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: 0;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 450% !important;
+        width: 45rem;
+        left: 9%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* iPhone 8, 7, 6S, 6 */
+@media (min-height: 375px) and (max-height: 375px) and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 45rem;
+        left: 9%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* Galaxy S9 Plus, S8 Plus */
+@media (min-height: 412px) and (max-height: 412px) and (min-width: 846px) and (max-width: 846px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -4rem !important;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 50rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* Galaxy Note 9 */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 846px) and (max-width: 846px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -4rem !important;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 50rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* Galaxy S5 */
+@media (min-height: 360px) and (max-height: 360px) and (min-width: 640px) and (max-width: 640px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -3rem;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 40rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* Galaxy S9/S9+ */
+@media (min-height: 360px) and (max-height: 360px) and (min-width: 740px) and (max-width: 740px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2.5rem;
+    }
+
+    .index-button {
+        margin-top: -2.5rem;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 40rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* LG Optimus L70 */
+/* Microsoft Lumia 550 */
+/* Microsoft Lumia 950 */
+@media (min-height: 384px) and (max-height: 384px) and (min-width: 640px) and (max-width: 640px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2.5rem;
+    }
+
+    .index-button {
+        margin-top: -2.5rem;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 40rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+}
+
+/* Nexus 5X */
+/* Nexus 6P */
+@media (min-height: 412px) and (max-height: 412px) and (min-width: 732px) and (max-width: 732px) and (orientation: landscape) {
+    .text-top {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400% !important;
+        width: 45rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }    
+}
+
+/* Nokia 8110 4G */
+@media (min-height: 240px) and (max-height: 240px) and (min-width: 320px) and (max-width: 320px) and (orientation: landscape) { 
+    i.fa,
+    i.fa-solid {
+        font-size: 1.25rem;
+    }
+
+    i.fa-brands {
+        margin: -0.2rem;
+        font-size: 1.25rem;
+    }
+
+    .login-button {
+        padding-right: 1% !important;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .text-top {
+        font-size: 2rem !important ;
+        margin-top: -7rem;
+    }
+
+    h4.hero {
+        font-size: 1.25rem !important;
+        margin-top: -6rem;
+
+    }
+
+    img.logo {
+        width: 7rem;
+    }
+
+    .index-button {
+        width: 7rem !important;
+        margin-top: -5rem;
+        height: 2rem;
+        font-size: 0.75rem;
+        padding: 0 auto;
+    }
+
+    .plus::after{
+        top: 175%;
+        width: 18rem !important;
+        left: -2% !important;
+        font-size: 0.75rem;
+        padding: auto;
+    }
+
+    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
+        margin-top: 1.25rem;
+    }
+
+    footer {
+        top: 55% !important;
+        left: 5%
+    }
+}
+
+/* Pixel 2 */
+@media (min-height: 411px) and (max-height: 411px) and (min-width: 731px) and (max-width: 731px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    .plus{
+        left: 3% !important;
+    }
+
+    .plus::after{
+        top: 450%;
+        width: 42.5rem !important;
+        left: 2% !important;
+    }
+
+    footer {
+        left: 1.5%
+    }
+}
+
+/* Pixel 2 XL */
+@media (min-height: 411px) and (max-height: 411px) and (min-width: 823px) and (max-width: 823px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    .plus{
+        left: 3% !important;
+    }
+
+    .plus::after{
+        top: 450%;
+        width: 50rem !important;
+        left: 2% !important;
+    }
+
+    footer {
+        left: 1.5%
+    }
+}
+
+/* iPhone 5/SE */
+@media (min-height: 320px) and (max-height: 320px) and (min-width: 568px) and (max-width: 568px) and (orientation: landscape) { 
+    i.fa,
+    i.fa-solid {
+        font-size: 1.6rem;
+    }
+
+    i.fa-brands {
+        margin: -0.2rem;
+        font-size: 1.6rem;
+    }
+
+    .plus {
+        left: 1.5rem;
+    }
+
+    .text-top {
+        font-size: 2.5rem !important ;
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        font-size: 1.5rem !important;
+        margin-top: -3rem;
+
+    }
+
+    img.logo {
+        width: 9rem;
+    }
+
+    .index-button {
+        width: 10rem !important;
+        margin-top: -3rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0 auto;
+    }
+
+    .plus::after{
+        top: 350%;
+        width: 32.5rem !important;
+        left: -2% !important;
+        font-size: 0.75rem;
+        padding: auto;
+    }
+
+    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
+        margin-top: 1.25rem;
+    }
+
+    footer {
+        top: 62.5% !important;
+        left: 2%;
+    }
+}
+
+/* iPhone 6/7/8 */
+@media (min-height: 375px) and (max-height: 375px) and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) { 
+    .plus::after{
+        width: 40rem !important;
+    }
+}
+
+/* iPhone XR */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) { 
+    .plus::after{
+        width: 40rem !important;
+        left: 7rem;
+    }
+}

@@ -1,0 +1,71 @@
+/* Large Devices Landscape min 992px*/
+/* iPad Pro (12.9-inch) */
+@media (min-height: 1024px) and (max-height: 1024px) and (min-width: 1366px) and (max-width: 1366px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: 10rem;
+    }
+
+    h4.hero {
+        margin-top: 4rem;
+
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        top: 1500%;
+        width: 45rem !important;
+        left: 17.5rem !important;
+    }
+}
+
+/* Laptop 2 */
+@media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) { 
+/*...*/
+}
+
+/* Laptop 3 */
+@media (min-height: 950px) and (max-height: 950px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: 10rem;
+    }
+
+    h4.hero {
+        margin-top: 4rem;
+
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        top: 1250%;
+        width: 45rem !important;
+        left: 17.5rem !important;
+    }
+}
+
+/* Laptop 1 */
+@media (min-height: 900px) and (max-height: 900px) and (min-width: 1440px) and (max-width: 1440px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: 7rem;
+    }
+
+    h4.hero {
+        margin-top: 4rem;
+
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        top: 1250%;
+        width: 45rem !important;
+        left: 21rem !important;
+    }
+}

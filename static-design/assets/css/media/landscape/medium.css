@@ -1,0 +1,55 @@
+/* Medium Devices Landscape min 768px max 991px*/
+/* Kindle Fire HDX */
+/* Nexus 10 */
+@media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: 5rem;
+    }
+
+    h4.hero {
+        margin-top: 3rem;
+
+    }
+
+    .index-button {
+        margin-top: 3rem;
+    }
+
+    .plus::after{
+        top: 1000%;
+        width: 45rem !important;
+        left: 17.5rem !important;
+    }
+}
+
+/* iPad */
+/* iPad Mini */
+@media (min-height: 768px) and (max-height: 768px) and (min-width: 1024px) and (max-width: 1024px) and (orientation: landscape) { 
+    .plus::after{
+        top: 1000%;
+        width: 45rem !important;
+        left: 7.5rem !important;
+    }
+}
+
+/* iPad Pro (10.5-inch) */
+@media (min-height: 834px) and (max-height: 834px) and (min-width: 1112px) and (max-width: 1112px) and (orientation: landscape) { 
+    .text-top {
+        margin-top: 6rem;
+    }
+
+    h4.hero {
+        margin-top: 4rem;
+
+    }
+
+    .index-button {
+        margin-top: 4rem;
+    }
+
+    .plus::after{
+        top: 1200%;
+        width: 45rem !important;
+        left: 10rem !important;
+    }
+}

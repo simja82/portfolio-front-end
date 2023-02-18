@@ -29,42 +29,53 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/large.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/medium.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/small.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/xsmall.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/large.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/medium.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/small.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/xsmall.css">
     <!-- Title -->
     <title>Intro | Point of View</title>
 </head>
 <body>
-    <section class="background intro">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="./assets/img/logo.png" alt="Argentina Programa" width="150">
-            </a>
-            <a href="/login.html">
-                <i class="fa fa-lock fa-2x text-white me-4"></i>
-            </a>
-        </nav>
-    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid fixed-top">
+        <a class="navbar-brand" href="/">
+            <img src="./assets/img/logo.png" alt="Argentina Programa" width="150">
+        </a>
+        <a href="/login.html">
+            <i class="fa fa-lock fa-2x text-white me-4"></i>
+        </a>
+    </nav>
+
+    <section class="background intro">    
         <!-- Plus -->
-        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-            <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-                <i class="fa fa-plus fa-2x text-white"></i>
-            </a>         
-        </div>
+        <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+            <i class="fa fa-plus fa-2x text-white"></i>
+        </a>
 
         <!-- Enlace -->
         <div class="text-center pt-5 text-white">
-            <div class="col-12 mt-5 pt-5 mb-4">
-                <h1 class="hero">Llegaste</h1>
+            <div class="col-12 mt-5 pt-5 mb-5">
+                <h1 class="hero hero-intro">Llegaste</h1>
             </div>
             <div class="col-6 m-auto mb-5">
-                <h5 class="hero">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla cum illum maxime et error doloribus excepturi quae minima ipsum similique ratione voluptatibus magnam deleniti, odio voluptatum quaerat magni quis laborum?</h5>
+                <h5 class="hero">Te invito a recorrer mi historia de acuerdo a como te interese conocerme... Te animás?</h5>
             </div>
-            <a href="/audiovisual/intro.html">
-                <button type="button" class="btn btn-outline-white btn-lg">Audiovisual</button>
-            </a>   
-            <a href="/developer/intro.html">
-                <button type="button" class="btn btn-outline-white btn-lg">Developer</button>
-            </a>      
+            <div class="col-12 col-md-6 p-2">
+                <a href="/audiovisual/intro.html">
+                    <button type="button" class="btn btn-outline-white btn-lg">Audiovisual</button>
+                </a>       
+            </div>
+            <div class="col-12 col-md-6 p-2">
+                <a href="/developer/intro.html">
+                    <button type="button" class="btn btn-outline-white btn-lg">Developer</button>
+                </a>                          
+            </div>
         </div>
     
         <!-- Redes -->
@@ -96,7 +107,7 @@
         </div>
     
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid">
+        <footer class="footer d-flex justify-content-between container-fluid mt-5">
             <a href="/">
                 <i class="fa-solid fa-angle-left fa-2x text-white ms-4"></i>
             </a>
@@ -105,6 +116,48 @@
             </a>
         </footer>
     </section>
+
+    <!-- Accessibility Code -->
+    <script>
+        window.interdeal = {
+            "sitekey": "95860715fec693ab8fc6e7095363a63d",
+            "Position": "Left",
+            "Menulang": "ES",
+            "domains": {
+                "js": "https://cdn.equalweb.com/",
+                "acc": "https://access.equalweb.com/"
+            },
+            "btnStyle": {
+                "vPosition": [
+                    "70%",
+                    null
+                ],
+                "scale": [
+                    "0.8",
+                    "0.8"
+                ],
+                "color": {
+                    "main": "#aarrggbb",
+                    "second": "#ffffff"
+                },
+                "icon": {
+                    "type": 4,
+                    "shape": "circle",
+                    "outline": false
+                }
+            }
+        };
+        (function(doc, head, body){
+            var coreCall             = doc.createElement('script');
+            coreCall.src             = interdeal.domains.js + 'core/4.4.1/accessibility.js';
+            coreCall.defer           = true;
+            coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
+            coreCall.crossOrigin     = 'anonymous';
+            coreCall.setAttribute('data-cfasync', true );
+            body? body.appendChild(coreCall) : head.appendChild(coreCall);
+        })(document, document.head, document.body);
+    </script>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

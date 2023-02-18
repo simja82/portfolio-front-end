@@ -1,0 +1,72 @@
+/* Small Devices Portrait min 576px max 767px*/
+/* Nexus 7 */
+@media (min-height: 960px) and (max-height: 960px) and (min-width: 600px) and (max-width: 600px) and (orientation: portrait) { 
+    .plus {
+        left: 1.5rem;
+    }
+
+    .text-top {
+        margin-top: 4rem;
+    }
+
+    h4.hero {
+        margin-top: 5rem;
+
+    }
+
+    img.logo {
+        width: 10rem;
+        left: 3%;
+        top: 3%;
+    }
+
+    .index-button {
+        margin-top: 5rem;
+    }
+
+    .plus::after{
+        top: 1000%;
+        width: 30rem !important;
+        left: 3rem !important;
+    }
+
+    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
+        margin-top: 1.25rem;
+    }
+
+    footer {
+        top: 85% !important;
+        left: 1%
+    }
+}
+
+/* Large Screen */
+@media (min-height: 1031px) and (max-height: 1031px) and (min-width: 688px) and (max-width: 688px) and (orientation: portrait) { 
+    .plus {
+        left: 2rem;
+    }
+
+    .text-top {
+        margin-top: 9rem;
+    }
+
+    h4.hero {
+        margin-top: 7rem;
+
+    }
+
+    .index-button {
+        margin-top: 7rem;
+    }
+
+    .plus::after{
+        top: 1650%;
+        width: 32.5rem !important;
+        left: 3rem !important;
+    }
+
+    footer {
+        top: 85% !important;
+        left: 1%
+    }
+}
