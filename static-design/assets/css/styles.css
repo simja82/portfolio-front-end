@@ -118,9 +118,9 @@ h4.hero {
 .btn.btn-outline-white:hover,
 .btn.btn-outline-black,
 .btn.btn-outline-black:hover {
-padding: 0.5rem 1.5rem;
-border-radius: 0.25rem;
-width: 12rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+    width: 12rem;
 }
 
 /* Button White */
