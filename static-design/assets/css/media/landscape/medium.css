@@ -18,7 +18,7 @@
     .plus::after{
         top: 1000%;
         width: 45rem !important;
-        left: 17.5rem !important;
+        left: 15rem !important;
     }
 }
 
@@ -29,6 +29,26 @@
         top: 1000%;
         width: 45rem !important;
         left: 7.5rem !important;
+    }
+
+    h1.h1-intro {
+        margin-top: 2rem !important;
+        font-size: 4rem;
+        left: -5rem;
+    }
+
+    h5.h5-intro {
+        margin-top: 1rem !important;
+        font-size: 2rem;
+    }
+
+    .buttons-intro {
+        margin-top: 1rem !important;
+        margin-left: 7% !important;
+    }
+
+    .group-two {
+        display: none;
     }
 }
 
@@ -49,7 +69,22 @@
 
     .plus::after{
         top: 1200%;
-        width: 45rem !important;
+        width: 47rem !important;
         left: 10rem !important;
+    }
+
+    h1.h1-intro {
+        margin-top: 3rem !important;
+        font-size: 4rem;
+    }
+
+    h5.h5-intro {
+        margin-top: 3rem !important;
+        font-size: 1.75rem;
+    }
+
+    .buttons-intro {
+        margin-top: 2rem !important;
+        margin-left: 7% !important;
     }
 }

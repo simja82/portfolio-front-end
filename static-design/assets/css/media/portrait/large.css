@@ -19,16 +19,32 @@
     }
 
     .plus::after{
-        top: 1500%;
-        width: 45rem !important;
+        top: 1600%;
+        width: 47.5rem !important;
         left: 7rem !important;
+    }
+
+    h1.h1-intro {
+        margin-top: 13rem !important;
+        font-size: 4rem;
+    }
+
+    h5.h5-intro {
+        margin-top: 3rem !important;
+        font-size: 2.5rem;
+    }
+
+    .buttons-intro {
+        margin-top: 4rem !important;
+        margin-left: 8% !important;
     }
 }
 
 /* Laptop 2 */
-@media (min-height: 1280px) and (max-height: 1280px) and (min-width: 800px) and (max-width: 800px) and (orientation: portrait) { 
+@media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: portrait) { 
 /*...*/
 }
+
 
 /* Laptop 3 */
 @media (min-height: 1280px) and (max-height: 1280px) and (min-width: 950px) and (max-width: 950px) and (orientation: portrait) { 
@@ -49,6 +65,21 @@
         top: 1750%;
         width: 45rem !important;
         left: 6rem !important;
+    }
+
+    h1.h1-intro {
+        font-size: 5rem !important;
+        margin-top: 15rem !important;
+    }
+
+    h5.h5-intro {
+        margin-top: 4rem !important;
+        font-size: 2rem;
+    }
+
+    .buttons-intro {
+        margin-top: 5rem !important;
+        margin-left: 8% !important;
     }
 }
 
@@ -71,5 +102,20 @@
         top: 2000%;
         width: 45rem !important;
         left: 5rem !important;
+    }
+
+    h1.h1-intro {
+        font-size: 5rem !important;
+        margin-top: 15rem !important;
+    }
+
+    h5.h5-intro {
+        margin-top: 4rem !important;
+        font-size: 2rem;
+    }
+
+    .buttons-intro {
+        margin-top: 5rem !important;
+        margin-left: 8% !important;
     }
 }

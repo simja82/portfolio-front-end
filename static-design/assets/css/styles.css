@@ -24,6 +24,11 @@ footer {
     filter:invert(1) !important;
 }
 
+/* Buttons Intro */
+.buttons-intro {
+    margin-left: 9% !important;
+}
+
 /* Imágenes en Background */
 section.background {
     /*position: relative;*/

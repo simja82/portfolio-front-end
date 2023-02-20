@@ -38,6 +38,21 @@
         top: 77.5% !important;
         left: 1%
     }
+
+    h1.h1-intro {
+        margin-top: 1rem !important;
+        font-size: 3rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -1.5rem !important;
+        font-size: 1.5rem;
+    }
+
+    .buttons-intro {
+        margin-top: -1.25rem !important;
+        margin-left: 7% !important;
+    }
 }
 
 /* Large Screen */
@@ -64,5 +79,20 @@
     footer {
         top: 77.5% !important;
         left: 1%
+    }
+
+    h1.h1-intro {
+        margin-top: 2rem !important;
+        font-size: 3.5rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -1rem !important;
+        font-size: 1.75rem;
+    }
+
+    .buttons-intro {
+        margin-top: -1rem !important;
+        margin-left: 7% !important;
     }
 }
