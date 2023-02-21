@@ -115,7 +115,6 @@ Microsoft Lumia 550
 Microsoft Lumia 950
 Nexus 5X
 Nexus 6P
-Nokia 8110 4G
 Pixel 2
 Pixel 2 XL
 iPhone 5/SE

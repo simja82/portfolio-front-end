@@ -46,6 +46,10 @@
     .button-intro {
         width: 10rem !important;
     }
+
+    .login-form {
+        margin-top: 5rem !important;
+    }
 }
 
 /* Large Screen */
@@ -80,5 +84,9 @@
 
     .buttons-intro {
         margin-left: 4% !important;
+    }
+
+    .login-form {
+        margin-top: 8rem !important;
     }
 }

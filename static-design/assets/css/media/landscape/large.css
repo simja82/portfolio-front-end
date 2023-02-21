@@ -7,7 +7,6 @@
 
     h4.hero {
         margin-top: 4rem;
-
     }
 
     .index-button {
@@ -34,6 +33,10 @@
         margin-top: 2rem !important;
         margin-left: 8% !important;
     }
+
+    .login-form {
+        margin-top: 8rem !important;
+    }    
 }
 
 /* Laptop 2 */
@@ -88,6 +91,10 @@
         margin-top: 2rem !important;
         margin-left: 8% !important;
     }
+
+    .login-form {
+        margin-top: 7rem !important;
+    }
 }
 
 /* Laptop 1 */
@@ -124,5 +131,9 @@
     .buttons-intro {
         margin-top: 2rem !important;
         margin-left: 8% !important;
+    }
+
+    .login-form {
+        margin-top: 5rem !important;
     }
 }

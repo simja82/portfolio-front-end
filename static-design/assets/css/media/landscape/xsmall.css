@@ -19,6 +19,8 @@
 
     .plus::after{
         top: 450% !important;
+        width: 43rem !important;
+        left: 5rem;
     }
 
     footer {
@@ -38,6 +40,11 @@
     .buttons-intro {
         margin-top: -2rem !important;
         margin-left: 5% !important;
+    }
+
+    .login-form {
+        margin-top: -10rem !important;
+        transform: scale(0.65);
     }
 }
 
@@ -82,6 +89,11 @@
     .buttons-intro {
         margin-top: -2.5rem !important;
         margin-left: 5% !important;
+    }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
     }
 }
 
@@ -130,6 +142,11 @@
 
     .fa-angle-left {
         left: -1%;
+    }
+
+    .login-form {
+        margin-top: -10rem !important;
+        transform: scale(0.65);
     }
 }
 
@@ -184,6 +201,11 @@
     .fa-angle-left {
         margin-left: -1.5rem;
     }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.55);
+    }
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -232,6 +254,11 @@
     .fa-angle-left {
         margin-left: -2rem;
     }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
+    }
 }
 
 /* Galaxy S9, Note 8, S8 */
@@ -257,6 +284,11 @@
 
     .fa-angle-left {
         margin-left: -2rem;
+    }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.55);
     }
 }
 
@@ -305,6 +337,11 @@
 
     .fa-angle-left {
         margin-left: 0.75rem !important;
+    }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
     }
 }
 
@@ -356,6 +393,11 @@
 
     .fa-angle-left {
         margin-left: 0.75rem !important;
+    }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.65);
     }
 }
 
@@ -415,6 +457,11 @@
 
     .fa-angle-left {
         margin-left: 0.75rem !important;
+    }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.55);
     }
 }
 
@@ -502,6 +549,11 @@
     .fa-angle-left {
         margin-left: 0.75rem !important;
     }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
+    }
 }
 
 /* Nexus 5X */
@@ -555,87 +607,10 @@
     .fa-angle-left {
         margin-left: -2rem;
     }
-}
 
-/* Nokia 8110 4G */
-@media (min-height: 240px) and (max-height: 240px) and (min-width: 320px) and (max-width: 320px) and (orientation: landscape) { 
-    i.fa,
-    i.fa-solid {
-        font-size: 1.25rem;
-    }
-
-    i.fa-brands {
-        margin: -0.2rem;
-        font-size: 1.25rem;
-    }
-
-    .login-button {
-        padding-right: 1% !important;
-    }
-
-    .plus,
-    .plus::after {
-        display: none;
-    }
-
-    .text-top {
-        font-size: 2rem !important ;
-        margin-top: -7rem;
-    }
-
-    h4.hero {
-        font-size: 1.25rem !important;
-        margin-top: -6rem;
-
-    }
-
-    img.logo {
-        width: 7rem;
-    }
-
-    .index-button {
-        width: 7rem !important;
-        margin-top: -5rem;
-        height: 2rem;
-        font-size: 0.75rem;
-        padding: 0 auto;
-    }
-
-    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
-        margin-top: 1.25rem;
-    }
-
-    footer {
-        top: 55% !important;
-        left: 0.25rem;
-    }
-
-    h1.h1-intro {
-        margin-top: -5rem !important;
-        font-size: 1.5rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -6rem !important;
-        font-size: 0.75rem;
-        width: 12rem;
-        padding-bottom: 2.5rem !important;
-        margin-left: -1rem !important;
-    }
-
-    .buttons-intro {
-        margin: -6rem auto 0 -0.5rem !important;
-    }
-    
-    .button-intro {
-        width: 6rem !important;
-        padding: 0.5rem auto;
-        font-size: 0.6rem;
-        text-align: center;
-    }
-
-    .fa-angle-left {
-        margin-left: -2rem;
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.65);
     }
 }
 
@@ -685,6 +660,11 @@
     .fa-angle-left {
         margin-left: -2rem;
     }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.65);
+    }
 }
 
 /* Pixel 2 XL */
@@ -733,6 +713,11 @@
     .fa-angle-left {
         margin-left: -2rem;
     }
+
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.65);
+    }
 }
 
 /* iPhone 5/SE */
@@ -759,7 +744,6 @@
     h4.hero {
         font-size: 1.5rem !important;
         margin-top: -3rem;
-
     }
 
     img.logo {
@@ -816,20 +800,16 @@
     .fa-angle-left {
         margin-left: -2rem;
     }
+
+    .login-form {
+        margin-top: -11.5rem !important;
+        transform: scale(0.5);
+    }
 }
 
 /* iPhone 6/7/8 */
 @media (min-height: 375px) and (max-height: 375px) and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) { 
     .plus::after{
         width: 36rem !important;
-    }
-}
-
-/* iPhone XR */
-/* iPhone XS Max */
-@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) { 
-    .plus::after{
-        width: 43rem !important;
-        left: 5rem;
     }
 }

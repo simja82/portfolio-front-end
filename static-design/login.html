@@ -29,30 +29,41 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css">
+    <!-- Responsive -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/large.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/medium.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/small.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/xsmall.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/large.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/medium.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/small.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/xsmall.css">    
     <!-- Title -->
     <title>Login | Point of View</title>
 </head>
 <body>
-    <section class="background login">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+        <div>
             <a class="navbar-brand" href="/">
-                <img src="./assets/img/logo.png" alt="Argentina Programa" width="150">
+                <img src="./assets/img/logo.png" alt="Argentina Programa" class="logo" width="150">
             </a>
-            <a href="/login.html">
-                <i class="fa fa-lock fa-2x text-white me-4"></i>
-            </a>
-        </nav>
-    
-        <!-- Plus -->
-        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-            <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-                <i class="fa fa-plus fa-2x text-white"></i>
-            </a>         
         </div>
+        <div class="login-button">
+            <a href="/login.html">
+                <i class="fa fa-lock fa-2x text-white me-4 end-100"></i>
+            </a>    
+        </div>
+    </nav>
+
+    <section class="background login">    
+        <!-- Plus -->
+        <a class="plus" data-tooltip="Teclado de computadora con llave antigua sobre él">
+            <i class="fa fa-plus fa-2x text-white"></i>
+        </a>
 
         <!-- Form Login -->
-        <div class="col-8 m-auto section-top">
+        <div class="col-8 m-auto section-top login-form">
             <div class="card text-bg-light text-center">
                 <div class="card-header">Login</div>
                 <div class="card-body col-10 m-auto pb-4 mt-1">
@@ -60,13 +71,13 @@
                         <div class="mb-3">
                             <label for="inputEmail" class="form-label">Email</label>
                             <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Tu email no será compartido con nadie jamás.</div>
+                            <div id="emailHelp" class="form-text">Tu email no será compartido jamás.</div>
                         </div>
                         <div class="mb-3">
                             <label for="inputPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="inputPassword">
                         </div>
-                        <button type="submit" class="btn btn-outline-dark  btn-width">Entrar</button>
+                        <button type="submit" class="btn btn-outline-dark btn-width">Entrar</button>
                     </form>
                     <div id="registerHelp" class="form-text mt-4">Aún no tienes una cuenta? <a href="/register.html">Más.</a></div>
                 </div>
@@ -102,15 +113,56 @@
         </div>
     
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid">
+        <footer class="footer d-flex justify-content-between container-fluid mt-5">
             <a href="/">
-                <i class="fa-solid fa-angle-left fa-2x text-white ms-4"></i>
+                <i class="fa-solid fa-angle-left fa-2x text-white ms-3"></i>
             </a>
             <a href="/credits.html">
-                <i class="fa-solid fa-angles-right fa-2x text-white me-4"></i>
+                <i class="fa-solid fa-angles-right fa-2x text-white me-3"></i>
             </a>
         </footer>
     </section>
+
+    <!-- Accessibility Code -->
+    <script>
+        window.interdeal = {
+            "sitekey": "95860715fec693ab8fc6e7095363a63d",
+            "Position": "Left",
+            "Menulang": "ES",
+            "domains": {
+                "js": "https://cdn.equalweb.com/",
+                "acc": "https://access.equalweb.com/"
+            },
+            "btnStyle": {
+                "vPosition": [
+                    "70%",
+                    null
+                ],
+                "scale": [
+                    "0.8",
+                    "0.8"
+                ],
+                "color": {
+                    "main": "#aarrggbb",
+                    "second": "#ffffff"
+                },
+                "icon": {
+                    "type": 4,
+                    "shape": "circle",
+                    "outline": false
+                }
+            }
+        };
+        (function(doc, head, body){
+            var coreCall             = doc.createElement('script');
+            coreCall.src             = interdeal.domains.js + 'core/4.4.1/accessibility.js';
+            coreCall.defer           = true;
+            coreCall.integrity       = 'sha512-tq2wb4PBHqpUqBTfTG32Sl7oexERId9xGHX2O3yF91IYLII2OwM1gJVBXGbEPaLmfSQrIE+uAOzNOuEUZHHM+g==';
+            coreCall.crossOrigin     = 'anonymous';
+            coreCall.setAttribute('data-cfasync', true );
+            body? body.appendChild(coreCall) : head.appendChild(coreCall);
+        })(document, document.head, document.body);
+    </script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

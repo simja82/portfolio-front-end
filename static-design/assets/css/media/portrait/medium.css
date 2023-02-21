@@ -39,6 +39,10 @@
         margin-top: 2rem !important;
         margin-left: 5% !important;
     }
+
+    .login-form {
+        margin-top: 15rem !important;
+    }
 }
 
 /* iPad */
@@ -81,6 +85,10 @@
         margin-top: 2rem !important;
         margin-left: 5% !important;
     }
+
+    .login-form {
+        margin-top: 8rem !important;
+    }
 }
 
 /* iPad Pro (10.5-inch) */
@@ -121,5 +129,9 @@
     .buttons-intro {
         margin-top: 2rem !important;
         margin-left: 5% !important;
+    }
+
+    .login-form {
+        margin-top: 9rem !important;
     }
 }
