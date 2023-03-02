@@ -29,6 +29,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/message.css">
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/large.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/medium.css">
@@ -42,35 +43,36 @@
     <title>Plus | Point of View</title>
 </head>
 <body>
-    <section class="background plus">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
+        <div>
             <a class="navbar-brand" href="/">
-                <img src="./assets/img/logo.png" alt="Argentina Programa" width="150" class="img-black">
+                <img src="./assets/img/logo.png" alt="Argentina Programa" class="logo img-black" width="150">
             </a>
-            <a href="/login.html">
-                <i class="fa fa-lock fa-2x me-4"></i>
-            </a>
-        </nav>
-    
-        <!-- Plus -->
-        <div class="position-absolute top-50 start-0 translate-middle-y ms-4 d-flex align-items-center">
-            <a class="plus" data-tooltip="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
-                <i class="fa fa-plus fa-2x"></i>
-            </a>         
         </div>
+        <div class="login-button">
+            <a href="/login.html">
+                <i class="fa fa-lock fa-2x text-black me-4 end-100"></i>
+            </a>    
+        </div>
+    </nav>
+
+    <section class="background more">    
+        <!-- Plus -->
+        <a class="plus" data-tooltip="Hojas de papel con leyenda 'I can do anything not everything'">
+            <i class="fa fa-plus fa-2x text-black"></i>
+        </a>
 
         <!-- Enlace -->
         <div class="text-center pt-5">
             <div class="col-12 mt-5 pt-5 mb-4">
-                <h1 class="hero text-top">¿Le diste click al ícono de más?</h1>
+                <h1 class="hero text-black plus-title">¿Le diste click al ícono de más?</h1>
             </div>
             <div class="col-12 mb-5">
-                <h4 class="hero">Escribime y dejame saber qué puedo ofrecerte...</h4>
+                <h4 class="hero text-black plus-text">Escribime y dejame saber qué puedo ofrecerte..</h4>
             </div>
-            <a href="/">
-                <button type="button" class="btn btn-outline-black btn-lg btn-width">Volver</button>
-            </a>         
+            <!-- Llamado a Modal de Mensaje -->
+            <button type="button" class="btn btn-outline-black btn-lg btn-width" data-bs-toggle="modal" data-bs-target="#messageModal">Mensaje</button>         
         </div>
     
         <!-- Redes -->
@@ -79,22 +81,22 @@
                 <ul class="social-listing list-unstyled">
                     <li>
                         <a href="https://facebook.com" target="_blank">
-                            <i class="fa-brands fa-facebook-f fa-2x"></i>
+                            <i class="fa-brands fa-facebook-f fa-2x text-black"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://linkedin.com" target="_blank">
-                            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                            <i class="fa-brands fa-linkedin-in fa-2x text-black"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com" target="_blank">
-                            <i class="fa-brands fa-twitter fa-2x"></i>
+                            <i class="fa-brands fa-twitter fa-2x text-black"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram fa-2x"></i>
+                            <i class="fa-brands fa-instagram fa-2x text-black"></i>
                         </a>
                     </li>
                 </ul>
@@ -102,13 +104,56 @@
         </div>
     
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid">
+        <footer class="footer d-flex justify-content-between container-fluid mt-5">
             <a href="/">
-                <i class="fa-solid fa-angles-left fa-2x ms-4"></i>
+                <i class="fa-solid fa-angle-left fa-2x ms-3 text-black"></i>
             </a>
-            <div></div>
+            <a href="/credits.html">
+                <i class="fa-solid fa-angles-right fa-2x me-3 text-black"></i>
+            </a>
         </footer>
     </section>
+
+    <!-- Modal Message -->
+    <div class="modal fade" id="messageModal" aria-hidden="true" aria-labelledby="messageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="messageModal">Mensaje</h1>
+                    <i class="fa-solid fa-times" data-bs-dismiss="modal" aria-label="Cerrar" aria-label="Cerrar"></i>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="name" class="form-label">Nombre y Apellido</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Nombre y Apellido">
+                                    <div id="nameHelp" class="form-text">Ingresar un nombre</div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="email@dominio.com">
+                                    <div id="emailHelp" class="form-text">Tu email no será compartido jamás.</div>
+                                </div>
+                                <div class="col-md-12 pt-3">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea type="text" class="form-control" id="message" rows="4" placeholder="Mensaje"></textarea>
+                                    <div class="d-flex justify-content-between">
+                                        <div id="messageHelp" class="form-text">Ingresar un mensaje</div>
+                                        <div id="limitHelp" class="form-text">Máx. 250 caracteres</div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Enviar">Enviar</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Accessibility Code -->
     <script>

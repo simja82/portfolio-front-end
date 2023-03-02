@@ -2,136 +2,189 @@
 /* Kindle Fire HDX */
 /* Nexus 10 */
 @media (min-height: 1280px) and (max-height: 1280px) and (min-width: 800px) and (max-width: 800px) and (orientation: portrait) { 
-    .text-top {
-        margin-top: 15rem;
-    }
-
-    h4.hero {
-        margin-top: 7rem;
-
-    }
-
-    .index-button {
-        margin-top: 7rem;
-    }
-
+    /* General */
     .plus {
         left: 1.25rem;
     }
 
     .plus::after{
         top: 1800%;
-        width: 40rem !important;
-        left: 3rem !important;
+        width: 40rem;
+        left: 3rem;
     }
 
-    h1.h1-intro {
-        margin-top: 13rem !important;
-        font-size: 4rem;
+    /* Index */
+    .text-top {
+        margin-top: 15rem;
     }
 
-    h5.h5-intro {
-        margin-top: 3rem !important;
-        font-size: 2.5rem;
+    h4.hero {
+        margin-top: 7rem;
+    }
+
+    .index-button {
+        margin-top: 7rem;
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: 15rem !important;
+        font-size: 4rem !important;
+    }
+
+    .h5-intro {
+        margin-top: 5rem !important;
+        font-size: 2rem !important;
     }
 
     .buttons-intro {
-        margin-top: 2rem !important;
-        margin-left: 5% !important;
+        margin-top: 5rem !important;
     }
 
+    .button-intro {
+        width: 15rem !important;
+    }
+
+    /* Login */
     .login-form {
         margin-top: 15rem !important;
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: 22.5rem;
+    }
+
+    h4.register-text {
+        margin: auto;
+        width: 30rem;
     }
 }
 
 /* iPad */
 /* iPad Mini */
 @media (min-height: 1024px) and (max-height: 1024px) and (min-width: 768px) and (max-width: 768px) and (orientation: portrait) { 
+    /* General */
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 1700%;
+        width: 40rem;
+        left: 3rem;
+    }
+
+    /* Index */
     .text-top {
         margin-top: 11rem;
     }
 
     h4.hero {
         margin-top: 4rem;
-
     }
 
     .index-button {
         margin-top: 4rem;
     }
 
+    /* Intro */
+    .hero-intro {
+        margin-top: 10rem !important;
+        font-size: 4rem !important;
+    }
+
+    .h5-intro {
+        margin-top: 5rem !important;
+        font-size: 2rem !important;
+    }
+
+    .buttons-intro {
+        margin-top: 5rem !important;
+    }
+
+    .button-intro {
+        width: 15rem !important;
+    }
+
+    .buttons-intro {
+        margin-top: 2rem;
+        margin-left: 5%;
+    }
+
+    /* Login */
+    .login-form {
+        margin-top: 8rem !important;
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: 12.5rem;
+    }
+
+    h4.register-text {
+        margin: auto;
+        width: 30rem;
+    }
+}
+
+/* iPad Pro (10.5-inch) */
+@media (min-height: 1112px) and (max-height: 1112px) and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) { 
+    /* General */
     .plus {
         left: 1.5rem;
     }
 
     .plus::after{
         top: 1700%;
-        width: 40rem !important;
-        left: 3rem !important;
+        width: 43rem;
+        left: 3rem;
     }
 
-    h1.h1-intro {
-        margin-top: 7rem !important;
-        font-size: 4rem;
-    }
-
-    h5.h5-intro {
-        margin-top: 3rem !important;
-        font-size: 2rem;
-    }
-
-    .buttons-intro {
-        margin-top: 2rem !important;
-        margin-left: 5% !important;
-    }
-
-    .login-form {
-        margin-top: 8rem !important;
-    }
-}
-
-/* iPad Pro (10.5-inch) */
-@media (min-height: 1112px) and (max-height: 1112px) and (min-width: 834px) and (max-width: 834px) and (orientation: portrait) { 
+    /* Index */
     .text-top {
         margin-top: 13rem;
     }
 
     h4.hero {
         margin-top: 6rem;
-
     }
 
     .index-button {
         margin-top: 6rem;    
     }
 
-    .plus {
-        left: 1.5rem;
+    /* Intro */
+    .hero-intro {
+        margin-top: 10rem !important;
+        font-size: 4rem !important;
     }
 
-    .plus::after{
-        top: 1700%;
-        width: 43rem !important;
-        left: 3rem !important;
-    }
-
-    h1.h1-intro {
-        margin-top: 9rem !important;
-        font-size: 4rem;
-    }
-
-    h5.h5-intro {
-        margin-top: 3rem !important;
-        font-size: 2rem;
+    .h5-intro {
+        margin-top: 5rem !important;
+        font-size: 2rem !important;
     }
 
     .buttons-intro {
-        margin-top: 2rem !important;
-        margin-left: 5% !important;
+        margin-top: 5rem !important;
     }
 
+    .button-intro {
+        width: 15rem !important;
+    }
+
+    /* Login */
     .login-form {
         margin-top: 9rem !important;
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: 12.5rem;
+    }
+
+    h4.register-text {
+        margin: auto;
+        width: 30rem;
     }
 }

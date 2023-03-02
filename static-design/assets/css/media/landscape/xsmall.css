@@ -1,57 +1,24 @@
 /* XSmall Devices Portrait Max Width 575px*/
-/* iPhone XR, XS Max */
-@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -5rem !important;
-    }
-
-    h4.hero {
-        margin-top: -1rem;
-    }
-
-    .index-button {
-        margin-top: -1rem;
-    }
-
+/* iPhone XS, X */
+@media (min-height: 375px) and (max-height: 375px) and (min-width: 812px) and (max-width: 812px) and (orientation: landscape) {
+    /* General */
     .plus {
         left: 1.5rem;
     }
 
     .plus::after{
-        top: 450% !important;
-        width: 43rem !important;
-        left: 5rem;
+        top: 450%;
+        width: 47rem;
+        left: 15%;
     }
 
     footer {
         left: 0.25rem;
     }
 
-    h1.h1-intro {
-        margin-top: -5rem !important;
-        font-size: 2.75rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -3rem !important;
-        font-size: 1.25rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 5% !important;
-    }
-
-    .login-form {
-        margin-top: -10rem !important;
-        transform: scale(0.65);
-    }
-}
-
-/* iPhone XS, X */
-@media (min-height: 375px) and (max-height: 375px) and (min-width: 812px) and (max-width: 812px) and (orientation: landscape) {
+    /* Index */
     .text-top {
-        margin-top: -6rem !important;
+        margin-top: -6rem;
     }
 
     h4.hero {
@@ -62,45 +29,74 @@
         margin-top: -1rem;
     }
 
+    /* Intro */
+    .hero-intro {
+        margin-top: -3rem !important;
+        font-size: 2.5rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1rem !important;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 9rem !important;
+        font-size: 1rem !important;
+    }
+
+    /* Login */
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -5.5rem;
+        font-size: 2.5rem;
+    }
+
+    h4.register-text {
+        width: 40rem;
+        margin: auto;
+        margin-top: -3rem;
+        font-size: 1.5rem;
+    }
+
+    .register-btn {
+        margin-top: -4rem;
+    }
+}
+
+/* iPhone 6S Plus, 7/8 Plus */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 736px) and (max-width: 736px) and (orientation: landscape) {
+    /* General */
     .plus {
-        left: 1.5rem;
+        left: 1.25rem;
     }
 
     .plus::after{
-        top: 450% !important;
-        width: 47rem;
-        left: 15%;
+        top: 550%;
+        width: 42.5rem;
+        left: 9%;
     }
 
     footer {
         left: 0.25rem;
     }
 
-    h1.h1-intro {
-        margin-top: -6rem !important;
-        font-size: 2.5rem;
+    .fa-angle-left {
+        left: -1%;
     }
 
-    h5.h5-intro {
-        margin-top: -4.75rem !important;
-        font-size: 1.25rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2.5rem !important;
-        margin-left: 5% !important;
-    }
-
-    .login-form {
-        margin-top: -10.5rem !important;
-        transform: scale(0.6);
-    }
-}
-
-/* iPhone 8 Plus, 7 Plus, 6S Plus */
-@media (min-height: 414px) and (max-height: 414px) and (min-width: 736px) and (max-width: 736px) and (orientation: landscape) {
+    /* Index */
     .text-top {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
     }
 
     h4.hero {
@@ -111,107 +107,220 @@
         margin-top: 0;
     }
 
-    .plus {
-        left: 1.25rem;
+    /* Intro */
+    .hero-intro {
+        margin-top: -3rem !important;
+        font-size: 2.5rem !important;
     }
 
-    .plus::after{
-        top: 450% !important;
-        width: 42.5rem;
-        left: 9%;
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1rem !important;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 12rem !important;
+        font-size: 1rem !important;
+    }
+
+    /*  Login */
+    .login-form {
+        margin-top: -10rem !important;
+        transform: scale(0.65);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -5rem;
+        font-size: 2.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -2rem;
+        font-size: 1.5rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
+    }
+}
+
+/* iPhone XR, XS Max */
+@media (min-height: 414px) and (max-height: 414px) and (min-width: 896px) and (max-width: 896px) and (orientation: landscape) {
+    /* General */
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after {
+        top: 450%;
+        width: 43rem;
+        left: 5rem;
     }
 
     footer {
         left: 0.25rem;
     }
 
-    h1.h1-intro {
-        margin-top: -5rem !important;
-        font-size: 3rem;
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
     }
 
-    h5.h5-intro {
-        margin-top: -4rem !important;
-        font-size: 1.25rem;
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -1.5rem !important;
+        font-size: 3rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1.25rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2.5rem !important;
-        margin-left: 5% !important;
+        margin-top: -2rem !important;
     }
 
-    .fa-angle-left {
-        left: -1%;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10rem !important;
         transform: scale(0.65);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -3.5rem;
+        font-size: 2rem;
+    }
+
+    h4.register-text {
+        width: 40rem;
+        margin: auto;
+        margin-top: -1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* iPhone 8, 7, 6S, 6 */
 @media (min-height: 375px) and (max-height: 375px) and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -5rem !important;
-    }
-
-    h4.hero {
-        margin-top: -2rem;
-    }
-
-    .index-button {
-        margin-top: -2rem;
-    }
-
+    /* General */
     .plus {
         left: 1.25rem;
     }
 
     .plus::after{
-        top: 400% !important;
+        top: 450%;
+        width: 36rem;
     }
 
     footer {
         left: 0.25rem;
-    }
-
-    h1.h1-intro {
-        margin-top: -6rem !important;
-        font-size: 2.75rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -5rem !important;
-        font-size: 1rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 3% !important;
-    }
-
-    .button-intro {
-        width: 10rem !important;
-        margin: auto;
-        padding: 0.5rem auto;
-        font-size: 1.25rem;
     }
 
     .fa-angle-left {
         margin-left: -1.5rem;
     }
 
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
+    }
+
+    .buttons-intro {
+        margin-top: -3rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
+    }
+
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.55);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 2.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -2rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* Galaxy S9 Plus, S8 Plus */
 @media (min-height: 412px) and (max-height: 412px) and (min-width: 846px) and (max-width: 846px) and (orientation: landscape) {
+    /* General */
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 500%;
+        width: 49rem;
+        left: 30%;;
+    }
+
+    footer {
+        left: 0.25rem;
+    }
+
+    .fa-angle-left {
+        margin-left: -2rem;
+    }
+
+    /* Index */
     .text-top {
-        margin-top: -4rem !important;
+        margin-top: -4rem;
     }
 
     h4.hero {
@@ -222,13 +331,132 @@
         margin-top: -2rem;
     }
 
+    /* Intro */
+    h1.h1-intro {
+        margin-top: -5rem;
+        font-size: 3rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -4rem;
+        font-size: 1.25rem;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem;
+        margin-left: 4.5%;
+    }
+
+    /* Login */
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
+    }
+}
+
+/* Galaxy S9/S9+ */
+/* Galaxy S9, Note 8, S8 */
+@media (min-height: 360px) and (max-height: 360px) and (min-width: 740px) and (max-width: 740px) and (orientation: landscape) {
+    /* General */
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 400%;
+        width: 42rem;
+        left: 30%;
+    }
+
+    footer {
+        left: 1.5%;
+    }
+
+    .fa-angle-left {
+        margin-left: -2rem;
+    }
+
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
+        font-size: 3rem;
+    }
+
+    h4.hero {
+        margin-top: -2.5rem;
+    }
+
+    .index-button {
+        margin-top: -2.5rem;
+    }
+
+    /* Intro */
+    h1.h1-intro {
+        margin-top: -6rem;
+        font-size: 2.5rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -5rem;
+        font-size: 1rem;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem;
+        margin-left: 5.5%;
+    }
+
+    /* Login */
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.55);
+    }  
+
+    /* Register */
+    h1.register-title {
+        margin-top: -6rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -3rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3.5rem;
+    }
+}
+
+/* Pixel 3, 3 XL */
+@media (min-height: 393px) and (max-height: 393px) and (min-width: 786px) and (max-width: 786px) and (orientation: landscape) {
+    /* General */
     .plus {
         left: 1.25rem;
     }
 
     .plus::after{
-        top: 400% !important;
-        width: 42rem;
+        top: 400%;
+        width: 45rem;
         left: 28%;
     }
 
@@ -236,66 +464,13 @@
         left: 0.25rem;
     }
 
-    h1.h1-intro {
-        margin-top: -5rem !important;
-        font-size: 3rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -4rem !important;
-        font-size: 1.25rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 4.5% !important;
-    }
-
     .fa-angle-left {
-        margin-left: -2rem;
+        margin-left: 0.75rem;
     }
 
-    .login-form {
-        margin-top: -10.5rem !important;
-        transform: scale(0.6);
-    }
-}
-
-/* Galaxy S9, Note 8, S8 */
-@media (min-height: 360px) and (max-height: 360px) and (min-width: 740px) and (max-width: 740px) and (orientation: landscape) {
-    footer {
-        left: 0.25rem !important;
-    }
-
-    h1.h1-intro {
-        margin-top: -6rem !important;
-        font-size: 2.5rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -5rem !important;
-        font-size: 1rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 5.5% !important;
-    }
-
-    .fa-angle-left {
-        margin-left: -2rem;
-    }
-
-    .login-form {
-        margin-top: -10.5rem !important;
-        transform: scale(0.55);
-    }
-}
-
-/* Pixel 3, 3 XL */
-@media (min-height: 393px) and (max-height: 393px) and (min-width: 786px) and (max-width: 786px) and (orientation: landscape) {
+    /* Index */
     .text-top {
-        margin-top: -4rem !important;
+        margin-top: -4rem;
     }
 
     h4.hero {
@@ -306,65 +481,55 @@
         margin-top: -2rem;
     }
 
-    .plus {
-        left: 1.25rem;
-    }
-
-    .plus::after{
-        top: 400% !important;
-        width: 45rem;
-        left: 28%;
-    }
-
-    footer {
-        left: 0.25rem !important;
-    }
-
+    /* Intro */
     h1.h1-intro {
-        margin-top: -6rem !important;
+        margin-top: -6rem;
         font-size: 2.5rem;
     }
 
     h5.h5-intro {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
         font-size: 1rem;
     }
 
     .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 5.5% !important;
+        margin-top: -2rem;
+        margin-left: 5.5%;
     }
 
-    .fa-angle-left {
-        margin-left: 0.75rem !important;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.6);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* Galaxy Note 9 */
 @media (min-height: 414px) and (max-height: 414px) and (min-width: 846px) and (max-width: 846px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -4rem !important;
-    }
-
-    h4.hero {
-        margin-top: -1rem;
-    }
-
-    .index-button {
-        margin-top: -2rem;
-    }
-
+    /* General */
     .plus {
         left: 1.25rem;
     }
 
     .plus::after{
-        top: 400% !important;
+        top: 400%;
         width: 50rem;
         left: 30%;
     }
@@ -373,31 +538,145 @@
         left: 0.25rem;
     }
 
+    .fa-angle-left {
+        margin-left: 0.75rem;
+    }
+
+    /* Index */
+    .text-top {
+        margin-top: -4rem;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    /* Intro */
     h1.h1-intro {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
         font-size: 3rem;
     }
 
     h5.h5-intro {
-        margin-top: -3rem !important;
-        padding-bottom: 2.5rem !important;
-        margin-left: -3.5rem !important;
+        margin-top: -3rem;
+        padding-bottom: 2.5rem;
+        margin-left: -3.5rem;
         font-size: 1.25rem;
         width: 35rem;
     }
 
     .buttons-intro {
-        margin-top: -5rem !important;
-        margin-left: 5% !important;
+        margin-top: -5rem;
+        margin-left: 5%;
     }
 
-    .fa-angle-left {
-        margin-left: 0.75rem !important;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.65);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
+    }
+}
+
+/* LG Optimus L70 */
+@media (min-height: 384px) and (max-height: 384px) and (min-width: 640px) and (max-width: 640px) and (orientation: landscape) {
+    /* General */
+    .plus {
+        left: 1.5rem;
+    }
+
+    .plus::after{
+        top: 450%;
+        width: 36rem;
+        left: 28%;
+    }
+
+    footer {
+        left: 0.25rem;
+    }
+
+    .fa-angle-left {
+        margin-left: 0.75rem;
+    }
+
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
+        font-size: 3rem;
+    }
+
+    h4.hero {
+        margin-top: -2.5rem;
+    }
+
+    .index-button {
+        margin-top: -2.5rem;
+    }
+
+    /* Intro */
+    h1.h1-intro {
+        margin-top: -6rem;
+        font-size: 2.5rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -5rem;
+        font-size: 1rem;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem;
+        margin-left: 3%;
+    }
+
+    .button-intro {
+        width: 10rem;
+        margin: auto;
+        padding: 0.5rem auto;
+        font-size: 1.25rem;
+    }
+
+    /* Login */
+    .login-form {
+        margin-top: -10.5rem !important;
+        transform: scale(0.6);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 2.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
@@ -406,9 +685,29 @@
 /* Microsoft Lumia 550 */
 /* Microsoft Lumia 950 */
 @media (min-height: 360px) and (max-height: 360px) and (min-width: 640px) and (max-width: 640px) and (orientation: landscape) {
+    /* General */
+    .plus {
+        left: 1.25rem;
+    }
+
+    .plus::after{
+        top: 400%;
+        width: 36.5rem;
+        left: 28%;
+    }
+
+    footer {
+        left: 0.25rem;
+    }
+
+    .fa-angle-left {
+        margin-left: 0.75rem;
+    }
+
+    /* Index */
     .text-top {
-        margin-top: -5rem !important;
-        font-size: 3rem !important;
+        margin-top: -5rem;
+        font-size: 3rem;
     }
 
     h4.hero {
@@ -419,165 +718,137 @@
         margin-top: -3rem;
     }
 
-    .plus {
-        left: 1.25rem;
-    }
-
-    .plus::after{
-        top: 400% !important;
-        width: 36.5rem !important;
-        left: 28%;
-    }
-
-    footer {
-        left: 0.25rem;
-    }
-
+    /* Intro */
     h1.h1-intro {
-        margin-top: -6rem !important;
+        margin-top: -6rem;
         font-size: 2.5rem;
     }
 
     h5.h5-intro {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
         font-size: 1rem;
     }
 
     .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 3% !important;
+        margin-top: -2rem;
+        margin-left: 3%;
     }
 
     .button-intro {
-        width: 10rem !important;
+        width: 10rem;
         margin: auto;
         padding: 0.5rem auto;
         font-size: 1.25rem;
     }
 
-    .fa-angle-left {
-        margin-left: 0.75rem !important;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.55);
     }
-}
 
-/* Galaxy S9/S9+ */
-@media (min-height: 360px) and (max-height: 360px) and (min-width: 740px) and (max-width: 740px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -5rem !important;
-        font-size: 3rem !important;
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 2.5rem;
     }
 
-    h4.hero {
-        margin-top: -2.5rem;
-    }
-
-    .index-button {
-        margin-top: -2.5rem;
-    }
-
-    .plus {
-        left: 1.5rem;
-    }
-
-    .plus::after{
-        top: 400% !important;
-        width: 40rem;
-        left: 30%;
-    }
-
-    footer {
-        left: 1.5%;
-    }
-}
-
-/* LG Optimus L70 */
-@media (min-height: 384px) and (max-height: 384px) and (min-width: 640px) and (max-width: 640px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -5rem !important;
-        font-size: 3rem !important;
-    }
-
-    h4.hero {
-        margin-top: -2.5rem;
-    }
-
-    .index-button {
-        margin-top: -2.5rem;
-    }
-
-    .plus {
-        left: 1.5rem;
-    }
-
-    .plus::after{
-        top: 400% !important;
+    h4.register-text {
         width: 35rem;
-        left: 28%;
+        margin: auto;
+        margin-top: -3rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
+    }
+}
+
+/* Pixel 2 */
+@media (min-height: 411px) and (max-height: 411px) and (min-width: 731px) and (max-width: 731px) and (orientation: landscape) { 
+    /* General */
+    .plus{
+        left: 3%;
+    }
+
+    .plus::after{
+        top: 450%;
+        width: 42.5rem;
+        left: 2%;
     }
 
     footer {
         left: 0.25rem;
     }
 
+    .fa-angle-left {
+        margin-left: -2rem;
+    }
+
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        margin-top: -1rem;
+    }
+
+    .index-button {
+        margin-top: -1rem;
+    }
+
+    /* Intro */
     h1.h1-intro {
-        margin-top: -6rem !important;
-        font-size: 2.5rem;
+        margin-top: -5rem;
+        font-size: 3rem;
     }
 
     h5.h5-intro {
-        margin-top: -5rem !important;
-        font-size: 1rem;
-    }
-
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 3% !important;
-    }
-
-    .button-intro {
-        width: 10rem !important;
-        margin: auto;
-        padding: 0.5rem auto;
+        margin-top: -4rem;
         font-size: 1.25rem;
     }
 
-    .fa-angle-left {
-        margin-left: 0.75rem !important;
+    .buttons-intro {
+        margin-top: -2rem;
+        margin-left: 4.5%;
     }
 
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
-        transform: scale(0.6);
+        transform: scale(0.65);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* Nexus 5X */
 /* Nexus 6P */
 @media (min-height: 412px) and (max-height: 412px) and (min-width: 732px) and (max-width: 732px) and (orientation: landscape) {
-    .text-top {
-        margin-top: -5rem !important;
-        font-size: 3rem !important;
-    }
-
-    h4.hero {
-        margin-top: -2rem;
-    }
-
-    .index-button {
-        margin-top: -2rem;
-    }
-
+    /* General */
     .plus {
         left: 1.25rem;
     }
 
     .plus::after{
-        top: 400% !important;
+        top: 400%;
         width: 42rem;
         left: 28%;
     }
@@ -586,89 +857,89 @@
         left: 0.25rem;
     }    
 
+    .fa-angle-left {
+        margin-left: -2rem;
+    }
+
+    /* Index */
+    .text-top {
+        margin-top: -5rem;
+        font-size: 3rem;
+    }
+
+    h4.hero {
+        margin-top: -2rem;
+    }
+
+    .index-button {
+        margin-top: -2rem;
+    }
+
+    /* Intro */
     h1.h1-intro {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
         font-size: 3rem;
     }
 
     h5.h5-intro {
-        margin-top: -3rem !important;
-        padding-bottom: 2.5rem !important;
-        margin-left: -6rem !important;
+        margin-top: -3rem;
+        padding-bottom: 2.5rem;
+        margin-left: -6rem;
         font-size: 1.25rem;
         width: 35rem;
     }
 
     .buttons-intro {
-        margin-top: -5rem !important;
-        margin-left: 6% !important;
+        margin-top: -5rem;
+        margin-left: 6%;
     }
 
-    .fa-angle-left {
-        margin-left: -2rem;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.65);
     }
-}
 
-/* Pixel 2 */
-@media (min-height: 411px) and (max-height: 411px) and (min-width: 731px) and (max-width: 731px) and (orientation: landscape) { 
-    .text-top {
-        margin-top: -5rem;
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
     }
 
-    h4.hero {
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
         margin-top: -1rem;
-    }
-
-    .index-button {
-        margin-top: -1rem;
-    }
-
-    .plus{
-        left: 3% !important;
-    }
-
-    .plus::after{
-        top: 450%;
-        width: 42.5rem !important;
-        left: 2% !important;
-    }
-
-    footer {
-        left: 0.25rem;
-    }
-
-    h1.h1-intro {
-        margin-top: -5rem !important;
-        font-size: 3rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -4rem !important;
         font-size: 1.25rem;
     }
 
-    .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 4.5% !important;
-    }
-
-    .fa-angle-left {
-        margin-left: -2rem;
-    }
-
-    .login-form {
-        margin-top: -10.5rem !important;
-        transform: scale(0.65);
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* Pixel 2 XL */
 @media (min-height: 411px) and (max-height: 411px) and (min-width: 823px) and (max-width: 823px) and (orientation: landscape) { 
+    /* General */
+    .plus{
+        left: 3%;
+    }
+
+    .plus::after{
+        top: 450%;
+        width: 47.5rem;
+        left: 2%;
+    }
+
+    footer {
+        left: 0.25rem;
+    }
+
+    .fa-angle-left {
+        margin-left: -2rem;
+    }
+
+    /* Index */
     .text-top {
         margin-top: -5rem;
     }
@@ -681,47 +952,49 @@
         margin-top: -1rem;
     }
 
-    .plus{
-        left: 3% !important;
-    }
-
-    .plus::after{
-        top: 450%;
-        width: 47.5rem !important;
-        left: 2% !important;
-    }
-
-    footer {
-        left: 0.25rem;
-    }
-
+    /* Intro */
     h1.h1-intro {
-        margin-top: -5rem !important;
+        margin-top: -5rem;
         font-size: 3rem;
     }
 
     h5.h5-intro {
-        margin-top: -4rem !important;
+        margin-top: -4rem;
         font-size: 1.25rem;
     }
 
     .buttons-intro {
-        margin-top: -2rem !important;
-        margin-left: 4.5% !important;
+        margin-top: -2rem;
+        margin-left: 4.5%;
     }
 
-    .fa-angle-left {
-        margin-left: -2rem;
-    }
-
+    /* Login */
     .login-form {
         margin-top: -10.5rem !important;
         transform: scale(0.65);
+    }
+
+    /* Register */
+    h1.register-title {
+        margin-top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    h4.register-text {
+        width: 35rem;
+        margin: auto;
+        margin-top: -1rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
     }
 }
 
 /* iPhone 5/SE */
 @media (min-height: 320px) and (max-height: 320px) and (min-width: 568px) and (max-width: 568px) and (orientation: landscape) { 
+    /* General */
     i.fa,
     i.fa-solid {
         font-size: 1.6rem;
@@ -732,36 +1005,18 @@
         font-size: 1.6rem;
     }
 
-    .plus {
-        left: 1.5rem;
-    }
-
-    .text-top {
-        font-size: 2.5rem !important ;
-        margin-top: -5rem;
-    }
-
-    h4.hero {
-        font-size: 1.5rem !important;
-        margin-top: -3rem;
-    }
-
     img.logo {
         width: 9rem;
     }
 
-    .index-button {
-        width: 10rem !important;
-        margin-top: -3rem;
-        height: 2.5rem;
-        font-size: 1rem;
-        padding: 0 auto;
+    .plus {
+        left: 1.5rem;
     }
 
     .plus::after{
         top: 350%;
-        width: 32.5rem !important;
-        left: -2% !important;
+        width: 32.5rem;
+        left: -2%;
         font-size: 0.75rem;
         padding: auto;
     }
@@ -771,45 +1026,77 @@
     }
 
     footer {
-        top: 62.5% !important;
+        top: 62.5%;
         left: 0.25rem;
-    }
-
-    h1.h1-intro {
-        margin-top: -7rem !important;
-        font-size: 2.5rem;
-    }
-
-    h5.h5-intro {
-        margin-top: -6rem !important;
-        font-size: 1rem;
-    }
-
-    .buttons-intro {
-        margin-top: -3rem !important;
-        margin-left: 3% !important;
-    }
-
-    .button-intro {
-        width: 10rem !important;
-        padding: 0.5rem auto;
-        font-size: 0.75rem;
-        text-align: center;
     }
 
     .fa-angle-left {
         margin-left: -2rem;
     }
 
+    /* Index */
+    .text-top {
+        font-size: 2.5rem;
+        margin-top: -5rem;
+    }
+
+    h4.hero {
+        font-size: 1.5rem;
+        margin-top: -3rem;
+    }
+
+    .index-button {
+        width: 10rem;
+        margin-top: -3rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        padding: 0 auto;
+    }
+
+    /* Intro */
+    h1.h1-intro {
+        margin-top: -7rem;
+        font-size: 2.5rem;
+    }
+
+    h5.h5-intro {
+        margin-top: -6rem;
+        font-size: 1rem;
+    }
+
+    .buttons-intro {
+        margin-top: -3rem;
+        margin-left: 3%;
+    }
+
+    .button-intro {
+        width: 10rem;
+        padding: 0.5rem auto;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    /* Login */
     .login-form {
         margin-top: -11.5rem !important;
         transform: scale(0.5);
     }
-}
 
-/* iPhone 6/7/8 */
-@media (min-height: 375px) and (max-height: 375px) and (min-width: 667px) and (max-width: 667px) and (orientation: landscape) { 
-    .plus::after{
-        width: 36rem !important;
+    /* Register */
+    h1.register-title {
+        margin-top: -6rem;
+        font-size: 2rem;
+    }
+
+    h4.register-text {
+        width: 25rem;
+        margin: auto;
+        margin-top: -5rem;
+        font-size: 1.25rem;
+    }
+
+    .register-btn {
+        margin-top: -3rem;
+        width: 10rem;
     }
 }
