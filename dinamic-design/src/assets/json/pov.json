@@ -1057,14 +1057,20 @@
         },
         {
             "id" : 2,
-            "feedback" : "Sos una gran persona con sabiduría. Podés ayudar e incluso enseñar a quien lo necesite,  ya sea en lo laboral como anímicamente. Te hace alguien admirable. Estoy en deuda porque me has ayudado como a tantos más y a los que vienen detrás!!! Gracias por tanto Gaby!!!",
-            "name" : "Walter Rafael Giménez - YoProgramo 3era Edición"
+            "feedback" : "No me queda sino decirte wow! quedó espectacular, y el tema de la accesibilidad estuve jugando así que me gustó. Es un excelente trabajo el que has hecho y es sólo un reflejo de la calidad de persona y profesional que eres. No me queda sino agradecerte por tu tiempo y a donde vaya siempre programatk será un ejemplo de aprendizaje y trabajo en equipo. Obvio, sin olvidar como GoCode nos ha dado la oportunidad de hacer algunos proyectos.",
+            "name" : "Marie Meléndez - YoProgramo 3era Edición"
         },
         {
             "id" : 3,
+            "feedback" : "Una persona admirable en todos los sentidos. Transmite y enseña divirtiéndose. Me ayudó muchísimo no solo a mi, sino también a todos mis compañeros, sin ella hubiera sido muy difícil como para no decir imposible seguir con el proyecto. Una vocación y corazón enorme",
+            "name" : "Nicolás Angeletti - YoProgramo 3era Edición"
+        },
+        {
+            "id" : 4,
             "feedback" : "Líder nata, pocas personas he conocido que se echen todo un equipo al hombro y mantengan la calma y la buena onda, siempre respetuosa y cuidadosa de conservar un ambiente íntegro de estudio que si bien descontracturado (porque nunca faltó el humor) siempre preservó el compañerismo, el orden y sobre todo el respeto para que nadie pudiese sentirse tocado o maltratado en ningún sentido, basto conocimiento de herramientas de programación y una gran capacidad para transmitirlos, resaltó más que cualquier cosa el constante apoyo a cada persona del equipo sin importar que tan atrás estuviese de la meta, buena actitud ante las dificiltades, paciencia y amor por lo que hace, incluido el amor por su familia, la delicadeza en el trato con los seres que la rodean, mil gracias Gaby. Dios te recompense",
             "name" : "Margarita Durango - YoProgramo 3era Edición"
         }
+
     ],
     "doubleCredits" : 
     [
@@ -1075,76 +1081,47 @@
         },
         {
             "id" : 2,
-            "feedback" : "Hermoso trabajo, ejemplo a seguir, demuestra que con constancia y dedicación se puede lograr lo propuesto, dejar volar la imaginación puede llegar a sorprendernos.",
-            "name" : "Denis Karina Gómez Ramírez - YoProgramo 3era Edición"
+            "feedback" : "Por tu dedicación, tu estrategia, tu idea colectiva, tu generosidad, por eso -entre otras muchas bondades- fuimos muchos los entusiasmados en seguir con el “código”. Muchas gracias y adelante con tu proyecto: lindisimo, completo, diverso y rico!",
+            "name" : "Celina Jure - YoProgramo 3era Edición"
         },
         {
             "id" : 3,
-            "feedback" : "Quisiera agradecerte todo el tiempo que te tomaste y te seguís tomando para explicarnos y ayudarnos. Lo que vos creaste no lo había visto nunca. Sos 100% colaborativa!!!",
-            "name" : "Roxana Palacio - YoProgramo 3era Edición"
+            "feedback" : "Sos una gran persona con sabiduría. Podés ayudar e incluso enseñar a quien lo necesite,  ya sea en lo laboral como anímicamente. Te hace alguien admirable. Estoy en deuda porque me has ayudado como a tantos más y a los que vienen detrás!!! Gracias por tanto Gaby!!!",
+            "name" : "Walter Rafael Giménez - YoProgramo 3era Edición"
         },
         {
             "id" : 4,
-            "feedback" : "Eres una mujer que ama lo que hace, pone todo su empeño en hacer lo que se propone, no se queda con una sola cosa. Sabes de todo un poco y compartes tus conocimientos sin esperar nada a cambio",
-            "name" : "Josman Pérez - YoProgramo 3era Edición"
-        },
-        {
-            "id" : 5,
-            "feedback" : "Gabriela es una líder, cuando se propone hacer algo lo hace. Es incondicional a la hora de ayudar y eso es digno de admirar",
-            "name" : "Lenin Quintero - YoProgramo 3era Edición"
-        },
-        {
-            "id" : 6,
-            "feedback" : "Una persona admirable en todos los sentidos. Transmite y enseña divirtiéndose. Me ayudó muchísimo no solo a mi, sino también a todos mis compañeros, sin ella hubiera sido muy difícil como para no decir imposible seguir con el proyecto. Una vocación y corazón enorme",
-            "name" : "Nicolás Angeletti - YoProgramo 3era Edición"
-        }
-    ],
-    "tripleCredits" : 
-    [
-        {
-            "id" : 1,
             "feedback" : "Gracias y mil gracias por todo lo que nos brindás siempre, por estar y apoyarnos siempre, por hacernos entender que podíamos y tomarte el tiempo para explicarnos en cada momento, sos una persona única y con muy grandes valores.",
             "name" : "Jesica Dabos - YoProgramo 3ra Edición"
         },
         {
-            "id" : 2,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
-        },
-        {
-            "id" : 3,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
-        },
-        {
-            "id" : 4,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
-        },
-        {
             "id" : 5,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Gabi, quiero saludarte y felicitarte principalmente  por tu compromiso con la causa de la educación que hoy nos une. Ojalá que hagamos de la programacion un arte digno de orgullo. Te abrazo fuerte digitalmente y tal vez algún día en persona. Gracias!",
+            "name" : "Mariano d'Hiriart - YoProgramo 3era Edición"
         },
         {
             "id" : 6,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "feedback" : "Quisiera agradecerte todo el tiempo que te tomaste y te seguís tomando para explicarnos y ayudarnos. Lo que vos creaste no lo había visto nunca. Sos 100% colaborativa!!!",
+            "name" : "Roxana Palacio - YoProgramo 3era Edición"
+        }
+    ],
+    "tripleCredits" : 
+    [
+
+        {
+            "id" : 1,
+            "feedback" : "Hermoso trabajo, ejemplo a seguir, demuestra que con constancia y dedicación se puede lograr lo propuesto, dejar volar la imaginación puede llegar a sorprendernos.",
+            "name" : "Denis Karina Gómez Ramírez - YoProgramo 3era Edición"
         },
         {
-            "id" : 7,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "id" : 2,
+            "feedback" : "Eres una mujer que ama lo que hace, pone todo su empeño en hacer lo que se propone, no se queda con una sola cosa. Sabes de todo un poco y compartes tus conocimientos sin esperar nada a cambio",
+            "name" : "Josman Pérez - YoProgramo 3era Edición"
         },
         {
-            "id" : 8,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
-        },
-        {
-            "id" : 9,
-            "feedback" : "Some quick example text to build on the card title.",
-            "name" : "Full Name"
+            "id" : 3,
+            "feedback" : "Gabriela es una líder, cuando se propone hacer algo lo hace. Es incondicional a la hora de ayudar y eso es digno de admirar",
+            "name" : "Lenin Quintero - YoProgramo 3era Edición"
         }
     ],
     "thanks" : 
