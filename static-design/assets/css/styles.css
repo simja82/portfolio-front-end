@@ -145,7 +145,7 @@ h4.hero {
     width: 12rem;
 }
 
-/* Button White */
+/* Button Outline White */
 .btn.btn-outline-white,
 .btn.btn-outline-white:hover {
     color: #fff;
@@ -159,6 +159,28 @@ h4.hero {
     color: #000;
     border: 0.05rem solid #000;
 }
+
+.btn.btn-outline-black-mini,
+.btn.btn-outline-black-mini:hover {
+    color: #000;
+    border: 0.05rem solid #000;
+    padding: 0.35rem 1rem;
+    border-radius: 0.25rem;
+    width: 5rem;
+    text-align: center !important;
+}
+
+/* Button Black Mini */
+.btn.btn-black-mini,
+.btn.btn-black-mini:hover {
+    color: #fff;
+    background: #000;
+    border: 0.05rem solid #000;
+    padding: 0.35rem 1rem;
+    border-radius: 0.25rem;
+    width: 5rem;
+}
+
 
 /* Button Sizes */
 .btn-lg {
@@ -220,4 +242,35 @@ section.developer {
 /* Width */
 .w-65 {
     width: 65%;
+}
+
+/* Blinking */
+.blinking {
+    animation-name: blinking;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:blinking;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+  
+@-moz-keyframes blinking {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+  
+@-webkit-keyframes blinking {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+  
+@keyframes blinking {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }

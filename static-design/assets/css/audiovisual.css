@@ -55,7 +55,7 @@ section.empty-footer {
 .btn.btn-black-medium:first-child:active, 
 :not(.btn-check)+.btn.btn-black-medium:active {
     color: #fff;
-    background-color: rgb(238, 231, 231);
+    background-color: #eee7e7;
     border-color: transparent;
 }
 

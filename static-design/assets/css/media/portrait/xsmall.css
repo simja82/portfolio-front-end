@@ -12,15 +12,54 @@
         left: 2.5%;
     } 
 
+    .compare,
+    .video {
+        left: 0.75rem;
+    }    
+    
+    .top-50 {
+        z-index: 9;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        width: 12rem;
+        margin: auto;
+    }
+
+    .section-text,
+    .card-text,
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .fa-project {
+        font-size: 1.75rem;
+    }
+
     /* Index */
     .index-button {
         margin-top: 7rem;
     }
 
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
     h5.accessibility.mb-4 {
-        font-size: 1.15rem;
-        margin-left: 0rem !important;
-        margin-right: -1rem !important;
+        font-size: 0.95rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -46,7 +85,10 @@
     /* Plus */
     h1.plus-title {
         margin-top: 4rem;
-        font-size: 2.5rem;
+        font-size: 2.15rem;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h4.plus-text {
@@ -55,17 +97,176 @@
         font-size: 1.5rem;
     }
 
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+    color: #000;
+    border: 0.05rem solid #000;
+    padding: 0.35rem 1rem;
+    border-radius: 0.25rem;
+    width: 7rem !important;
+}
+
     /* Error */
     .error-title {
         margin-top: -7rem;
+        font-size: 3.5rem !important;
     }
 
     .error-subtitle {
-        margin-top: -2rem !important;
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
     }
 
     .error-button {
         margin-top: 18rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 1150% !important;
+    } 
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem;
+    }
+
+    .links-text {
+        font-size: 1.4rem !important;
+        margin: -1rem 2rem auto 2rem;
+    }
+
+    .links-buttons {
+        margin-top: -2rem !important;
+    }
+
+    .info-links::after {
+        top: 1400% !important
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 150%;
+        z-index: 9;
+    }
+
+    .cover-title {
+        font-size: 2rem;
+    }
+
+    .based {
+        font-size: 1.5rem;
+    }
+
+    .to-visitors {
+        margin-top: 7.5rem !important;
+        font-size: 1.5rem;
+    }
+
+    h5.divisor-text {
+        font-size: 1.35rem;
+        margin: auto 3rem; 
+    }
+
+    .fa-signature {
+        font-size: 5rem; /* Agregar !important*/
+        color: #000;
+    }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.05rem;
+    }
+
+    /* Audiovisual Project */
+    span.badge {
+        font-size: 1.25rem;
+    }
+
+    .project-image {
+        width: 15rem;
+        margin: auto;
+    }
+
+    /* Audiovisual Data */
+    .data-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Audiovisual Samples */
+    .samples-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    /* Developer Intro */
+    .developer-intro {
+        width: 15rem;
+        text-align: center;
+    }
+
+    .empty-footer {
+        height: 7rem;
+    }
+
+    /* Credits */
+    .social {
+        top: 50% !important;
+    }
+
+    .credits-title {
+        font-size: 2rem;
+    }
+
+    .credits-type {
+        font-size: 1.35rem;
+    }
+
+    .credits-based {
+        font-size: 1.05rem;
+        width: 10rem;
+        margin: auto;
+    }
+
+    .feedback {
+        font-size: 1.75rem;
+    }
+
+    /* Bloopers */
+    .bloopers-title {
+        font-size: 2rem;
+        width: 12rem;
+        margin: auto;
+    }
+
+    .everything {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .blinking {
+        font-size: 2.5rem;
+    }
+
+    /* Admin Dashboard */
+    .dashboard-signature {
+        font-size: 2.5rem;
     }
 }
 
