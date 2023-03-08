@@ -33,10 +33,6 @@
         font-size: 1.25rem;
     }
 
-    .photo-intro {
-        width: 10rem !important;
-    }
-
     .fa-project {
         font-size: 1.75rem;
     }
@@ -60,6 +56,11 @@
         margin-top: -1rem !important;
         width: 7rem;
         font-size: 1rem;
+    }
+
+    /* Intro */
+    .buttons-intro {
+        margin-top: -2rem !important;
     }
 
     /* Login */
@@ -168,6 +169,10 @@
         margin: auto 3rem; 
     }
 
+    .photo-intro {
+        width: 10rem !important;
+    }
+
     .fa-signature {
         font-size: 5rem; /* Agregar !important*/
         color: #000;
@@ -268,6 +273,10 @@
     .dashboard-signature {
         font-size: 2.5rem;
     }
+
+    .photo-profile {
+        width: 10rem !important;
+    }
 }
 
 /* iPhone 8 Plus, 7 Plus, 6S Plus */
@@ -279,7 +288,7 @@
     }
 
     .plus::after{
-        top: 1000%;
+        top: 1100%;
         width: 21rem;
         left: 0.75rem;
     }
@@ -301,10 +310,34 @@
         margin-top: 2rem;
     }
 
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
     h5.accessibility.mb-4 {
-        font-size: 1.125rem;
-        margin-left: 0rem !important;
-        margin-right: -1rem !important;
+        font-size: 0.95rem;
+        margin-left: -1.5rem !important;
+        margin-right: -2.5rem !important;
+        margin-top: -0.5rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: 2rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -2rem;
+    }
+
+    .buttons-intro {
+        margin-top: -2rem !important;
     }
 
     /* Login */
@@ -445,6 +478,10 @@
     .error-button {
         margin-top: 20rem !important;
     }
+
+    .info-box::after{
+        top: 1350% !important;
+    }     
 }
 
 /* iPhone 8, 7, 6S, 6 */
@@ -469,14 +506,19 @@
         margin-top: 2rem;
     }
 
+    .accesibility-title {
+        margin-top: 0rem !important;
+    }
+
     h5.accessibility.mb-4 {
-        font-size: 1rem;
-        margin-left: 0rem !important;
-        margin-right: -1rem !important;
+        font-size: 0.85rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+        margin-top: -0.5rem;
     }
 
     .accessibility-btn {
-        margin-top: -1rem !important;
+        margin-top: -1.25rem !important;
         width: 7rem;
         font-size: 1rem;
     }
@@ -530,6 +572,25 @@
         width: 12rem;
         font-size: 1.5rem;
     } 
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 12rem !important;
+    }
+
+    .info-box::after{
+        top: 950% !important;
+    }     
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -540,15 +601,31 @@
     }
     
     .plus::after{
-        top: 1100%;
+        top: 1400%;
         width: 21rem;
         left: 1rem;
     }
 
     /* Index */
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
     h5.accessibility.mb-4 {
-        margin-left: 0rem !important;
-        margin-right: -1rem !important;
+        font-size: 0.95rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
+    /* Intro */
+    .buttons-intro {
+        margin-top: -1rem !important;
     }
 
     /* Register */
@@ -574,6 +651,26 @@
         margin: auto;
         width: 12rem;
         font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 18rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 1150% !important;
     }     
 }
 
@@ -600,15 +697,22 @@
         margin-top: 4rem;
     }    
 
+    .accesibility-title {
+        margin-top: 0rem !important;
+    }
+
     h5.accessibility.mb-4 {
-        font-size: 1.05rem;
-        margin-left: 0rem !important;
-        margin-right: -1rem !important;
+        font-size: 0.9rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+        margin-top: -0.25rem;
     }
 
     .accessibility-btn {
-        margin-top: -1rem !important;
-    } 
+        margin-top: -1.25rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
 
     /* Intro */
     .hero-intro {
@@ -645,6 +749,35 @@
         width: 12rem;
         font-size: 1.5rem;
     }   
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 15rem !important;
+        margin-bottom: -5rem !important;
+    }  
 }
 
 /* Pixel 3, 3 XL */
@@ -655,7 +788,7 @@
     }
 
     .plus::after{
-        top: 1000%;
+        top: 1350%;
         width: 22rem;
         left: 7%;
     }
@@ -673,13 +806,12 @@
         margin-left: -1rem !important;
         margin-right: -2rem !important;
     }
-/* 
-    .accessibility-btn {
-        margin-top: -1rem !important;
-        width: 7rem;
-        font-size: 1rem;
+
+    /* Intro */
+    .hero-intro {
+        margin-top: 1rem !important;
     }
-*/
+
     /* Register */
     h1.register-title {
         font-size: 2.5rem;
@@ -691,6 +823,39 @@
         width: 12rem;
         font-size: 1.5rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }  
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 18rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 1150% !important;
+    } 
 }
 
 /* Galaxy Note 9 */
@@ -701,9 +866,26 @@
     }
     
     .plus::after{
-        top: 1100%;
+        top: 1400%;
         width: 21rem;
         left: 1rem;
+    }
+
+    /* Index */
+    .accesibility-title {
+        margin-top: 1rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.95rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 0rem !important;
+        width: 7rem;
+        font-size: 1rem;
     }
 
     /* Register */
@@ -715,6 +897,39 @@
         margin: auto;
         width: 10rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 18rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 1150% !important;
+    }     
 }
 
 /* LG Optimus L70 */
@@ -725,9 +940,9 @@
     }
 
     .plus::after{
-        top: 1050%;
+        top: 950%;
         width: 19rem;
-        left: 7%;
+        left: 1rem !important;
     }
 
     /* Index */
@@ -735,6 +950,23 @@
         margin-top: 2rem;
     }
     
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.85rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+        margin-top: -1rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -1.25rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
     /* Intro */
     .hero-intro {
         margin-top: -2rem !important;
@@ -770,6 +1002,40 @@
         width: 12rem;
         font-size: 1.5rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 2.75rem;
+        width: 20rem;
+        margin: auto;
+        margin-top: -2rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 10rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 850% !important;
+    }     
 }
 /* Galaxy Note 3 */
 /* Galaxy S5 */
@@ -782,7 +1048,7 @@
     }
 
     .plus::after{
-        top: 1000%;
+        top: 950%;
         width: 19rem;
         left: 7%;
     }
@@ -790,6 +1056,23 @@
     /* Index */
     .text-top {
         margin-top: 2rem;
+    }
+
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.85rem;
+        margin-left: -1.25rem !important;
+        margin-right: -2.25rem !important;
+        margin-top: -1rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
     }
     
     /* Intro */
@@ -827,6 +1110,40 @@
         width: 12rem;
         font-size: 1.5rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 2.5rem;
+        width: 20rem;
+        margin: auto;
+        margin-top: -2.5rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 10rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 800% !important;
+    }     
 }
 
 /* Pixel 2 */
@@ -850,6 +1167,23 @@
     .index-button {
         margin-top: 2rem;
     } 
+
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.95rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+        margin-top: -0.5rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
 
     /* Intro */
     .hero-intro {
@@ -881,6 +1215,36 @@
         margin: auto;
         width: 10rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+        margin-top: -2rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 14rem !important;
+        margin-bottom: -5rem !important;
+    }   
 }
 
 /* Nexus 5X */
@@ -905,6 +1269,23 @@
     .index-button {
         margin-top: 3rem;
     } 
+
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.95rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+        margin-top: -0.5rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
 
     /* Intro */
     .hero-intro {
@@ -936,6 +1317,35 @@
         margin: auto;
         width: 10rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 14rem !important;
+        margin-bottom: -5rem !important;
+    }  
 }
 
 /* Pixel 2 XL */
@@ -951,6 +1361,23 @@
         top: 1300%;
     }
 
+    /* Index */
+    .accesibility-title {
+        margin-top: 0.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1rem;
+        margin-left: -1rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
+
     /* Register */
     h1.register-title {
         font-size: 3rem;
@@ -959,6 +1386,39 @@
     h4.register-text {
         margin: auto;
         width: 10rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -2.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .error-button {
+        margin-top: 18rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box::after{
+        top: 1150% !important;
     }
 }
 
@@ -971,8 +1431,8 @@
 
     .plus::after {
         top: 750%;
-        width: 17rem;
-        left: 8%;
+        width: 19.5rem;
+        left: -1rem;
     }
 
     footer {
@@ -997,6 +1457,23 @@
         margin-top: 1rem;
         width: 7rem;
     } 
+
+    .accesibility-title {
+        margin-top: -0.75rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 0.775rem;
+        margin-left: -1.5rem !important;
+        margin-right: -2.5rem !important;
+        margin-top: -1rem;
+    }
+
+    .accessibility-btn {
+        margin-top: -2rem !important;
+        width: 7rem;
+        font-size: 1rem;
+    }
 
     /* Intro */
     .hero-intro {
@@ -1036,5 +1513,38 @@
         margin: auto;
         width: 12rem;
         font-size: 1.5rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 2.25rem;
+        width: 16rem;
+        margin: auto;
+        margin-top: -3rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 12rem;
+        font-size: 1.25rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -9rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -6.5rem !important;
+        font-size: 1.25rem !important;
+    }
+
+    .error-button {
+        margin-top: 10rem !important;
+    } 
+
+    .info-box::after{
+        top: 700% !important;
     }
 }

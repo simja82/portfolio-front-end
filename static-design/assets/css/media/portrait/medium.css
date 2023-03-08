@@ -26,6 +26,22 @@
         margin-top: 7rem;
     }
 
+    .accesibility-title {
+        margin-top: 2rem !important;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1.5rem;
+        margin-left: 1.25rem !important;
+        margin-right: -1.5rem !important;
+        margin-top: 1.25rem;
+    }
+
+    .accessibility-btn {
+        margin-top: 2.5rem !important;
+    }
+
     /* Intro */
     .hero-intro {
         margin-top: 15rem !important;
@@ -59,6 +75,39 @@
         margin: auto;
         width: 30rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 4rem;
+        width: 30rem;
+        margin: auto;
+        margin-top: 15rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: 1rem;
+        font-size: 4rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: 1rem !important;
+        font-size: 2rem !important;
+    }
+
+    .error-button {
+        margin-top: 30rem !important;
+    }
+
+    .info-box::after{
+        top: 1850% !important;
+    }
 }
 
 /* iPad */
@@ -86,6 +135,20 @@
 
     .index-button {
         margin-top: 4rem;
+    }
+
+    .accesibility-title {
+        margin-top: 1.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1.5rem;
+        margin-left: 1rem !important;
+        margin-right: -1rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 1rem !important;
     }
 
     /* Intro */
@@ -126,6 +189,39 @@
         margin: auto;
         width: 30rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 4rem;
+        width: 30rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+        font-size: 4rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+        font-size: 2rem !important;
+    }
+
+    .error-button {
+        margin-top: 22rem !important;
+    }
+
+    .info-box::after{
+        top: 1650% !important;
+    }        
 }
 
 /* iPad Pro (10.5-inch) */
@@ -152,6 +248,21 @@
 
     .index-button {
         margin-top: 6rem;    
+    }
+
+    .accesibility-title {
+        margin-top: 2rem !important;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1.5rem;
+        margin-left: 1rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 1rem !important;
     }
 
     /* Intro */
@@ -186,5 +297,38 @@
     h4.register-text {
         margin: auto;
         width: 30rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 4rem;
+        width: 30rem;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+        font-size: 4rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+        font-size: 2rem !important;
+    }
+
+    .error-button {
+        margin-top: 27rem !important;
+    }
+
+    .info-box::after{
+        top: 1650% !important;
     }
 }

@@ -34,11 +34,26 @@
 
     h4.hero {
         margin-top: 5rem;
-
     }
 
     .index-button {
         margin-top: 5rem;
+    }
+
+    .accesibility-title {
+        margin-top: 1rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1.25rem;
+        margin-left: 0rem !important;
+        margin-right: -2rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: -1rem !important;
+        width: 9rem;
+        font-size: 1.25rem;
     }
 
     /* Intro */
@@ -74,6 +89,39 @@
         margin: auto;
         width: 20rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3.5rem;
+        width: 30rem;
+        margin: auto;
+        margin-top: 6rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 25rem;
+        font-size: 2.25rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+        font-size: 4rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+        font-size: 2rem !important;
+    }
+
+    .error-button {
+        margin-top: 20rem !important;
+    }
+
+    .info-box::after{
+        top: 1450% !important;
+    }     
 }
 
 /* Large Screen */
@@ -105,6 +153,21 @@
 
     .index-button {
         margin-top: 7rem;
+    }
+
+    .accesibility-title {
+        margin-top: 1.5rem !important;
+    }
+
+    h5.accessibility.mb-4 {
+        font-size: 1.35rem;
+        margin-left: 0.5rem !important;
+        margin-right: -2rem !important;
+        margin-top: 0.5rem;
+    }
+
+    .accessibility-btn {
+        margin-top: 1rem !important;
     }
 
     /* Intro */
@@ -140,4 +203,37 @@
         margin: auto;
         width: 25rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        font-size: 3.5rem;
+        width: 30rem;
+        margin: auto;
+        margin-top: 7rem;
+    }
+
+    h4.plus-text {
+        margin: auto;
+        width: 25rem;
+        font-size: 2.5rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+        font-size: 4rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+        font-size: 2rem !important;
+    }
+
+    .error-button {
+        margin-top: 22rem !important;
+    }
+
+    .info-box::after{
+        top: 1450% !important;
+    }    
 }
