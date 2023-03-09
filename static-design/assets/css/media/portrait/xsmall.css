@@ -1,22 +1,11 @@
 /* XSmall Devices Portrait Max Width 575px*/
-/* iPhone XS, X */
-@media (min-height: 812px) and (max-height: 812px) and (min-width: 375px) and (max-width: 375px) and (orientation: portrait) {
-    /* General */
-    .plus {
-        left: 1.3rem;
-    }
-
-    .plus::after{
-        top: 1300%;
-        width: 20rem;
-        left: 2.5%;
-    } 
-
+    /* All */
+@media (min-width: 321px) and (orientation: portrait) {     
     .compare,
     .video {
         left: 0.75rem;
     }    
-    
+
     .top-50 {
         z-index: 9;
     }
@@ -36,6 +25,60 @@
     .fa-project {
         font-size: 1.75rem;
     }
+
+    .top-80 {
+        z-index: 9;
+    }
+
+    .cover-title {
+        font-size: 2rem;
+    }
+
+    .based {
+        font-size: 1.5rem;
+    }
+
+    .to-visitors {
+        margin-top: 7.5rem !important;
+        font-size: 1.5rem;
+    }
+
+    h5.divisor-text {
+        font-size: 1.35rem;
+        margin: auto 3rem; 
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .fa-signature {
+        font-size: 5rem; 
+        color: #000;
+    }  
+}
+
+/* iPhone XS, X */
+@media (min-height: 812px) and (max-height: 812px) and (min-width: 375px) and (max-width: 375px) and (orientation: portrait) {
+    /* General */
+    .plus {
+        left: 1.3rem;
+    }
+
+    .plus::after{
+        top: 1300%;
+        width: 20rem;
+        left: 2.5%;
+    } 
 
     /* Index */
     .index-button {
@@ -98,15 +141,6 @@
         font-size: 1.5rem;
     }
 
-    .btn.btn-outline-black-mini,
-    .btn.btn-outline-black-mini:hover {
-    color: #000;
-    border: 0.05rem solid #000;
-    padding: 0.35rem 1rem;
-    border-radius: 0.25rem;
-    width: 7rem !important;
-}
-
     /* Error */
     .error-title {
         margin-top: -7rem;
@@ -148,34 +182,6 @@
     /* Audiovisual Intro */
     .top-80 {
         margin-top: 150%;
-        z-index: 9;
-    }
-
-    .cover-title {
-        font-size: 2rem;
-    }
-
-    .based {
-        font-size: 1.5rem;
-    }
-
-    .to-visitors {
-        margin-top: 7.5rem !important;
-        font-size: 1.5rem;
-    }
-
-    h5.divisor-text {
-        font-size: 1.35rem;
-        margin: auto 3rem; 
-    }
-
-    .photo-intro {
-        width: 10rem !important;
-    }
-
-    .fa-signature {
-        font-size: 5rem; /* Agregar !important*/
-        color: #000;
     }
 
     /* Audiovisual Projects */
@@ -292,10 +298,6 @@
         width: 21rem;
         left: 0.75rem;
     }
-    
-    footer {
-        left: 3%;
-    }
 
     /* Index */
     .text-top {
@@ -382,7 +384,34 @@
 
     .error-button {
         margin-top: 13rem !important;
-    }    
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -1rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1rem !important;
+    }
+
+    .info-links::after {
+        top: 1250% !important
+    }
+    
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 120%;
+    }
 }
 
 /* iPhone XR, XS Max */
@@ -481,7 +510,12 @@
 
     .info-box::after{
         top: 1350% !important;
-    }     
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 150%;
+    }         
 }
 
 /* iPhone 8, 7, 6S, 6 */
@@ -590,7 +624,35 @@
 
     .info-box::after{
         top: 950% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -6rem;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -3.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1250% !important
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 120%;
+    }
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -671,7 +733,30 @@
 
     .info-box::after{
         top: 1150% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: 2rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -1rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 1rem !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 150%;
+    }      
 }
 
 /* Galaxy S9, Note 8, S8 */
@@ -777,7 +862,35 @@
     .error-button {
         margin-top: 15rem !important;
         margin-bottom: -5rem !important;
-    }  
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -2.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1rem !important;
+    }
+
+    .info-links::after {
+        top: 1250% !important
+    } 
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 150%;
+    }    
 }
 
 /* Pixel 3, 3 XL */
@@ -855,7 +968,30 @@
 
     .info-box::after{
         top: 1150% !important;
-    } 
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -1rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1rem !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 140%;
+    }  
 }
 
 /* Galaxy Note 9 */
@@ -929,7 +1065,30 @@
 
     .info-box::after{
         top: 1150% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -4rem;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: 0rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -2rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 0rem !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 140%;
+    }    
 }
 
 /* LG Optimus L70 */
@@ -1035,7 +1194,35 @@
 
     .info-box::after{
         top: 850% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -6.75rem !important;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -4.25rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3.75rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1.75rem !important;
+    }
+
+    .info-links::after {
+        top: 1150% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 110%;
+    }  
 }
 /* Galaxy Note 3 */
 /* Galaxy S5 */
@@ -1143,7 +1330,35 @@
 
     .info-box::after{
         top: 800% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -7rem !important;
+        font-size: 2.75rem !important;
+    }
+
+    .links-text {
+        font-size: 1.25rem !important;
+        margin: -5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3.75rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1.75rem !important;
+    }
+
+    .info-links::after {
+        top: 1150% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 115%;
+    }  
 }
 
 /* Pixel 2 */
@@ -1244,7 +1459,35 @@
     .error-button {
         margin-top: 14rem !important;
         margin-bottom: -5rem !important;
-    }   
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -3rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -3rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1200% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 125%;
+    }    
 }
 
 /* Nexus 5X */
@@ -1345,7 +1588,35 @@
     .error-button {
         margin-top: 14rem !important;
         margin-bottom: -5rem !important;
-    }  
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: -5rem !important;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -3rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -2.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -1.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1150% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 120%;
+    }    
 }
 
 /* Pixel 2 XL */
@@ -1420,6 +1691,34 @@
     .info-box::after{
         top: 1150% !important;
     }
+
+    /* Links */
+    .links-title {
+        margin-top: -2rem !important;
+        font-size: 3rem !important;
+    }
+
+    .links-text {
+        font-size: 1.3rem !important;
+        margin: -1rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -1rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 0rem !important;
+    }
+
+    .info-links::after {
+        top: 1450% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 145%;
+    }      
 }
 
 /* iPhone 5/SE */
@@ -1435,13 +1734,34 @@
         left: -1rem;
     }
 
-    footer {
-        left: 5%;
-    }
-
     i.fa-angle-left {
         margin-left: 0rem;
     }
+
+    .compare,
+    .video {
+        left: 0.75rem;
+    }    
+
+    .top-50 {
+        z-index: 9;
+    }
+
+    .section-title {
+        font-size: 1.5rem !important;
+        width: 12rem !important;
+        margin: auto;
+    }
+
+    .section-text,
+    .card-text,
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .fa-project {
+        font-size: 1.75rem;
+    }    
 
     /* Index */
     .text-top {
@@ -1547,4 +1867,77 @@
     .info-box::after{
         top: 700% !important;
     }
+
+    /* Links */
+    .links-title {
+        margin-top: -6.75rem !important;
+        font-size: 2rem !important;
+    }
+
+    .links-text {
+        font-size: 1rem !important;
+        margin: -6rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: -4.5rem !important;
+        transform: scale(0.75);
+    }
+
+    .links-paragraph {
+        margin-top: -2rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    .info-links::after {
+        top: 950% !important;
+    }
+
+    /* Audiovisual Intro */
+    .top-80 {
+        margin-top: 115%;
+        z-index: 9;
+    }
+
+    .cover-title {
+        font-size: 1.5rem;
+        margin-top: -4rem;
+    }
+
+    .based,
+    .drafted {
+        font-size: 1.25rem;
+    }
+
+    .drafted {
+        margin-top: 0rem !important;
+    }
+
+    .to-visitors {
+        margin-top: 5rem !important;
+        font-size: 1.25rem;
+    }
+
+    h5.divisor-text {
+        font-size: 1.25rem;
+        margin: auto 3rem; 
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .fa-signature {
+        font-size: 5rem; 
+        color: #000;
+    }    
 }

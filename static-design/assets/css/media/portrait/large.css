@@ -106,7 +106,30 @@
 
     .info-box::after{
         top: 2000% !important;
-    }    
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 20rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.2);
+    }
+
+    .links-paragraph {
+        margin-top: 1.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 1600% !important;
+    }      
 }
 
 /* Laptop 2 */
@@ -218,7 +241,30 @@
 
     .info-box::after{
         top: 2000% !important;
-    }     
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.2);
+    }
+
+    .links-paragraph {
+        margin-top: 1.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 2000% !important;
+    }    
 }
 
 /* Laptop 1 */
@@ -324,5 +370,28 @@
 
     .info-box::after{
         top: 2000% !important;
-    }    
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 10rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.2);
+    }
+
+    .links-paragraph {
+        margin-top: 1.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 2000% !important;
+    }      
 }

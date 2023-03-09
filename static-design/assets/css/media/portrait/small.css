@@ -16,11 +16,6 @@
         margin-top: 1.25rem;
     }
 
-    footer {
-        top: 85%;
-        left: 1%
-    }
-
     img.logo {
         width: 10rem;
         left: 3%;
@@ -121,7 +116,16 @@
 
     .info-box::after{
         top: 1450% !important;
-    }     
+    }
+
+    /* Links */
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .info-links::after {
+        top: 1500% !important;
+    }      
 }
 
 /* Large Screen */
@@ -135,11 +139,6 @@
         top: 1650%;
         width: 34rem;
         left: 3rem;
-    }
-
-    footer {
-        top: 85%;
-        left: 1%
     }
 
     /* Index */
@@ -235,5 +234,14 @@
 
     .info-box::after{
         top: 1450% !important;
+    }
+
+    /* Links */
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .info-links::after {
+        top: 1500% !important;
     }    
 }

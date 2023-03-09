@@ -108,6 +108,29 @@
     .info-box::after{
         top: 1850% !important;
     }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 5rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.25);
+    }
+
+    .links-paragraph {
+        margin-top: 3.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 1500% !important;
+    }
 }
 
 /* iPad */
@@ -221,7 +244,30 @@
 
     .info-box::after{
         top: 1650% !important;
-    }        
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.2);
+    }
+
+    .links-paragraph {
+        margin-top: 1.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 1600% !important;
+    }            
 }
 
 /* iPad Pro (10.5-inch) */
@@ -331,4 +377,27 @@
     .info-box::after{
         top: 1650% !important;
     }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    .links-text {
+        margin: auto 7rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(1.2);
+    }
+
+    .links-paragraph {
+        margin-top: 1.5rem !important;
+        font-size: 1.25rem;
+    }
+
+    .info-links::after {
+        top: 1600% !important;
+    }    
 }
