@@ -1,4 +1,52 @@
 /* Large Devices Portrait min 992px*/
+/* All */
+@media (min-width: 992px) and (orientation: portrait) { 
+    .compare,
+    .video {
+        left: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+    }
+
+    .section-text,
+    .feedback-name {
+        font-size: 1.5rem;
+    }
+
+    .photo-intro {
+        width: 13.5rem !important;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 45rem;
+        margin: auto;
+    }
+
+    .format-genre {
+        font-size: 1.25rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        width: 12rem;
+        margin: auto;
+    }
+
+    /* Audiovisual Data */
+    .data-intro {
+        width: 45rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium {
+        width: 100%;
+        height: auto;
+    }    
+}
+
 /* iPad Pro (12.9-inch) */
 @media (min-height: 1366px) and (max-height: 1366px) and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) { 
     /* General */
@@ -129,14 +177,88 @@
 
     .info-links::after {
         top: 1600% !important;
-    }      
-}
+    }
 
-/* Laptop 2 */
-@media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: portrait) { 
-/* ESTILOS GENERALES */
-}
+    /* Audiovisual Intro */
+    .cover-title {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
 
+    .based {
+        margin-top: 3rem;
+        font-size: 1.75rem;
+    }
+
+    .to-visitors {
+        margin-top: 10.5rem !important;
+        margin-bottom: 9rem;
+        font-size: 1.75rem;
+    }
+
+    .top-80 {
+        margin-top: 100%;
+        z-index: 9;
+    }
+
+    h5.divisor-text {
+        font-size: 1.5rem;
+        margin: auto 3rem; 
+    }
+
+    .presentation-modal {
+        top: 5rem;
+        font-size: 1.25rem;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-card {
+        font-size: 1.5rem;
+    }
+
+    h5.signature {
+        margin: 8rem auto 20rem auto;
+        font-size: 1.75rem;
+    }
+
+    .fa-signature {
+        font-size: 9rem; 
+        color: #000;
+        margin: 12rem auto;
+    }
+
+    /* Audiovisual Project */
+    .w-85 {
+        transform: scale(0.9);
+    }
+
+    .card.img-top {
+        border: none;
+        transform: scale(0.65);
+        margin-top: -12rem;
+        z-index: -2;
+    }
+
+    .card-img-top {
+        border-radius: 0px;
+    }
+
+    .card.logline {
+        margin-top: -4rem;
+    }
+
+    .section-copyright {
+        margin-top: -4rem;
+    }
+}
 
 /* Laptop 3 */
 @media (min-height: 1280px) and (max-height: 1280px) and (min-width: 950px) and (max-width: 950px) and (orientation: portrait) { 
@@ -264,7 +386,89 @@
 
     .info-links::after {
         top: 2000% !important;
+    }
+
+    /* Audiovisual Intro */
+    .cover-title {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+
+    .based {
+        margin-top: 3rem;
+        font-size: 1.75rem;
+    }
+
+    .to-visitors {
+        margin-top: 10.5rem !important;
+        margin-bottom: 9rem;
+        font-size: 1.75rem;
+    }
+
+    .top-80 {
+        margin-top: 100%;
+        z-index: 9;
+    }
+
+    h5.divisor-text {
+        font-size: 1.5rem;
+        margin: auto 3rem; 
+    }
+
+    .presentation-modal {
+        transform: scale(1.35);
+        top: 25rem;
+        font-size: 1.1rem;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.75);
+        margin: -2.75rem auto;
     }    
+
+    .feedback-card {
+        font-size: 2rem;
+    }
+
+    h5.signature {
+        margin: 15rem auto 16rem auto;
+        font-size: 1.75rem;
+    }
+
+    .fa-signature {
+        font-size: 7rem; 
+        color: #000;
+        margin: 12rem auto;
+    }
+
+    /* Audiovisual Project */
+    .card.img-top {
+        border: none;
+        transform: scale(2) !important;
+        margin-top: -1.5rem !important;
+        padding-bottom: 2rem !important;
+        z-index: -2;
+    }
+
+    .card.storyline {
+        margin-top: 0rem !important;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.15);
+        margin: 2rem auto;
+    }
 }
 
 /* Laptop 1 */
@@ -393,5 +597,67 @@
 
     .info-links::after {
         top: 2000% !important;
-    }      
+    }
+
+    /* Audiovisual Intro */
+    .cover-title {
+        font-size: 3rem;
+        margin-top: 15rem;
+    }
+
+    .based {
+        margin-top: 3rem;
+        font-size: 1.75rem;
+    }
+
+    .to-visitors {
+        margin-top: 12.5rem !important;
+        margin-bottom: 10rem;
+        font-size: 1.75rem;
+    }
+
+    .top-80 {
+        margin-top: 100%;
+        z-index: 9;
+    }
+
+    h5.divisor-text {
+        font-size: 1.5rem;
+        margin: auto 3rem; 
+    }
+
+    .presentation-modal {
+        transform: scale(1.35);
+        top: 25rem;
+        font-size: 1.1rem;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.65);
+        margin: -5rem auto;
+    }    
+
+    .feedback-card {
+        font-size: 2rem;
+    }
+
+    h5.signature {
+        margin: 15rem auto 16rem auto;
+        font-size: 1.75rem;
+    }
+
+    .fa-signature {
+        font-size: 9rem; 
+        color: #000;
+        margin: 12rem auto;
+    }    
 }

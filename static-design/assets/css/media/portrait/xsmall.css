@@ -1,6 +1,6 @@
 /* XSmall Devices Portrait Max Width 575px*/
     /* All */
-@media (min-width: 321px) and (orientation: portrait) {     
+@media (min-width: 321px) and (max-width: 575px) and (orientation: portrait) {     
     .compare,
     .video {
         left: 0.75rem;
@@ -64,7 +64,124 @@
     .fa-signature {
         font-size: 5rem; 
         color: #000;
-    }  
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.05rem;
+    }
+
+    .w-85 {
+        transform: scale(0.8);
+    }    
+
+    .card.img-top {
+        border: none;
+        transform: scale(1.05);
+        margin-top: -18rem;
+        z-index: -2;
+    }
+
+    .card.logline {
+        margin-top: -9rem;
+    }
+
+    span.badge {
+        font-size: 1.25rem;
+    }
+
+    .project-image {
+        width: 15rem;
+        margin: auto;
+    }
+
+    .section-copyright {
+        margin-top: -13.5rem;
+    }
+
+    /* Audiovisual Data */
+    .data-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Audiovisual Samples */
+    .samples-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    /* Developer Intro */
+    .developer-intro {
+        width: 15rem;
+        text-align: center;
+    }
+
+    .empty-footer {
+        height: 7rem;
+    }
+
+    /* Credits */
+    .social {
+        top: 50% !important;
+    }
+
+    .credits-title {
+        font-size: 2rem;
+    }
+
+    .credits-type {
+        font-size: 1.35rem;
+    }
+
+    .credits-based {
+        font-size: 1.05rem;
+        width: 10rem;
+        margin: auto;
+    }
+
+    .feedback {
+        font-size: 1.75rem;
+    }
+
+    /* Bloopers */
+    .bloopers-title {
+        font-size: 2rem;
+        width: 12rem;
+        margin: auto;
+    }
+
+    .everything {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .blinking {
+        font-size: 2.5rem;
+    }
+
+    .photo-profile {
+        width: 10rem !important;
+    }
+
+    /* Admin Dashboard */
+    .dashboard-signature {
+        font-size: 2.5rem;
+    }
 }
 
 /* iPhone XS, X */
@@ -182,106 +299,6 @@
     /* Audiovisual Intro */
     .top-80 {
         margin-top: 150%;
-    }
-
-    /* Audiovisual Projects */
-    .projects-intro,
-    .project-intro {
-        width: 12rem;
-        margin: auto;
-    }
-
-    .project-title {
-        font-size: 1.5rem;
-    }
-
-    .format-genre {
-        font-size: 1.05rem;
-    }
-
-    /* Audiovisual Project */
-    span.badge {
-        font-size: 1.25rem;
-    }
-
-    .project-image {
-        width: 15rem;
-        margin: auto;
-    }
-
-    /* Audiovisual Data */
-    .data-intro {
-        width: 12rem;
-        margin: auto;
-    }
-
-    .btn.btn-black-medium{
-        width: 100%;
-        height: auto;
-    }
-
-    /* Audiovisual Samples */
-    .samples-intro {
-        width: 12rem;
-        margin: auto;
-    }
-
-    /* Developer Intro */
-    .developer-intro {
-        width: 15rem;
-        text-align: center;
-    }
-
-    .empty-footer {
-        height: 7rem;
-    }
-
-    /* Credits */
-    .social {
-        top: 50% !important;
-    }
-
-    .credits-title {
-        font-size: 2rem;
-    }
-
-    .credits-type {
-        font-size: 1.35rem;
-    }
-
-    .credits-based {
-        font-size: 1.05rem;
-        width: 10rem;
-        margin: auto;
-    }
-
-    .feedback {
-        font-size: 1.75rem;
-    }
-
-    /* Bloopers */
-    .bloopers-title {
-        font-size: 2rem;
-        width: 12rem;
-        margin: auto;
-    }
-
-    .everything {
-        width: 12rem;
-        margin: auto;
-    }
-
-    .blinking {
-        font-size: 2.5rem;
-    }
-
-    /* Admin Dashboard */
-    .dashboard-signature {
-        font-size: 2.5rem;
-    }
-
-    .photo-profile {
-        width: 10rem !important;
     }
 }
 
@@ -1939,5 +1956,125 @@
     .fa-signature {
         font-size: 5rem; 
         color: #000;
+    }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.05rem;
+    }
+
+    /* Audiovisual Project */
+    .w-85 {
+        transform: scale(0.75);
     }    
+
+    .card.img-top {
+        border: none;
+        transform: scale(1.05);
+        margin-top: -30rem;
+        z-index: -2;
+    }
+
+    .card.logline {
+        margin-top: -20.5rem;
+    }
+
+    span.badge {
+        font-size: 1.25rem;
+    }
+
+    .project-image {
+        width: 15rem;
+        margin: auto;
+    }
+
+    .section-copyright {
+        margin-top: -20rem;
+        transform: scale(0.925);
+    }
+
+    /* Audiovisual Data */
+    .data-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Audiovisual Samples */
+    .samples-intro {
+        width: 12rem;
+        margin: auto;
+    }
+
+    /* Developer Intro */
+    .developer-intro {
+        width: 15rem;
+        text-align: center;
+    }
+
+    .empty-footer {
+        height: 7rem;
+    }
+
+    /* Credits */
+    .social {
+        top: 50% !important;
+    }
+
+    .credits-title {
+        font-size: 2rem;
+    }
+
+    .credits-type {
+        font-size: 1.35rem;
+    }
+
+    .credits-based {
+        font-size: 1.05rem;
+        width: 10rem;
+        margin: auto;
+    }
+
+    .feedback {
+        font-size: 1.75rem;
+    }
+
+    /* Bloopers */
+    .bloopers-title {
+        font-size: 2rem;
+        width: 12rem;
+        margin: auto;
+    }
+
+    .everything {
+        width: 12rem;
+        margin: auto;
+    }
+
+    .blinking {
+        font-size: 2.5rem;
+    }
+
+    .photo-profile {
+        width: 10rem !important;
+    }
+
+    /* Admin Dashboard */
+    .dashboard-signature {
+        font-size: 2.5rem;
+    }
 }
