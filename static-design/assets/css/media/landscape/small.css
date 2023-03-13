@@ -182,6 +182,10 @@
         font-size: 1rem;
     }
 
+    .to-visitors {
+        margin-left: 0 !important;
+    }    
+
     .drafted,
     .section-title {
         font-size: 1.35rem;
@@ -363,6 +367,10 @@
 
     .item-social {
         margin: -0.25rem auto;
+    }
+
+    .to-visitors {
+        margin-left: 0 !important;
     }
 
     .section-title {
