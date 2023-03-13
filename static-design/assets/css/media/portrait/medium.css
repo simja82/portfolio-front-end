@@ -62,6 +62,7 @@
 
     span.badge {
         font-size: 1.25rem;
+        width: 15rem;
     }
 
     .project-image {
@@ -79,9 +80,74 @@
         margin: auto;
     }
 
-    .btn.btn-black-medium {
+    .btn.btn-black-medium.data {
         width: 100%;
         height: auto;
+    }
+
+    /* Audiovisual Samples */
+    .samples-intro {
+        width: 35rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium.samples {
+        width: 300%;
+        height: auto;
+    }
+
+    /* Developer Intro */
+    .developer-intro,
+    section.cv {
+        width: 35rem;
+        text-align: center;
+        margin: auto;
+        font-size: 1.45rem;
+    }
+
+    .developer-section {
+        font-size: 1.75rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    .experience-card {
+        margin: 2rem auto;
+    }
+
+    .empty-footer {
+        height: 7rem;
+    }
+
+    /* Admin Dashboard */
+    .dashboard-signature {
+        font-size: 2.5rem !important;
+        margin-top: 1.5rem;
+    }
+
+    .fa-signature.modal-signature {
+        margin-bottom: 0rem;
+    }
+
+    .edit-signature {
+        margin-top: -12rem;
+    }
+
+    .presentation-text {
+        font-size: 0.95rem;
+    }
+
+    .photo-dashboard {
+        width: 9rem !important;
+    }
+    
+    .content-text {
+        font-size: 0.85rem;
+    }
+
+    span.badge.badge-skill {
+        font-size: 1.05rem;
+        width: 12rem;
     }    
 }
 

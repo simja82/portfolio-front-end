@@ -307,3 +307,34 @@ section.developer {
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
 }
+
+/* Audiovisual Intro */
+.compare {
+    left: 1.25rem;
+}
+
+.top-80 {
+    margin-top: 35%;
+}
+
+.to-visitors {
+    margin-left: -60% !important;
+}
+
+.btn.btn-outline-black-mini.document-button,
+.btn.btn-outline-black-mini.document-button:hover {
+    color: #000;
+    border: 0.05rem solid #000;
+    padding: 0.35rem 1rem;
+    border-radius: 0.25rem;
+    width: 7rem;
+    text-align: center !important;
+}
+
+.feedback-div {
+    transform: scale(0.9);
+}
+
+.signature {
+    margin-top: 15rem !important;
+}

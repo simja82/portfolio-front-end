@@ -18,21 +18,38 @@
         left: 4rem;
     }
 
-    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
-        margin-top: 1.25rem;
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
     }
 
     /* Index */
     .text-top {
-        margin-top: -1rem;
+        margin-top: -2rem;
+        font-size: 5rem !important;
     }
 
     h4.hero {
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .index-button {
-        margin-top: 1rem;
+        margin-top: 2rem;
+    }
+
+    .accesibility-title {
+        margin-top: -1.5rem auto 4rem auto !important;
+        font-size: 1.75rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -0.75rem -5rem 1rem -2.5rem !important;
+        transform: scale(0.95);
+    }
+
+    .accessibility-btn {
+        margin-top: -1.25rem !important;
+        transform: scale(0.85);
     }
 
     /* Intro */
@@ -71,6 +88,154 @@
 
     .register-btn {
         margin-top: -2rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -2rem !important;
+        font-size: 3.5rem;
+        width: 50rem !important;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: 1rem !important;
+        width: 40rem;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    .plus-button {
+        margin-top: 1rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.9);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-button {
+        transform: scale(0.75);
+        margin-top: 8rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 40%;
+    }
+
+    .info-box::after{
+        top: 950% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 3rem !important;
+        margin-top: -2.5rem;
+    }
+
+    .links-text {
+        font-size: 1.5rem !important;
+        margin: -1rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.75);
+        margin-top: -4rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -3rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    .info-links::after {
+        top: 850%;
+        transform: scale(0.85);
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 37.5%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        margin-top: -3rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.5);
+        margin: -8rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.5rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.45rem;
+    }
+
+    .signature {
+        margin-bottom: 17.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -115,7 +280,6 @@
         width: 15rem !important;
     }
 
-
     /* Login */
     .login-form {
         margin-top: -5rem !important;
@@ -130,4 +294,124 @@
         width: 50rem;
         margin: auto;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: 1rem !important;
+        font-size: 3.5rem;
+        width: 50rem !important;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: 3rem !important;
+        width: 40rem;
+        margin: -0.5rem auto;
+        font-size: 2rem;
+    }
+
+    .plus-button {
+        transform: scale(0.95);
+        margin-top: 1.5rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.95);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-button {
+        transform: scale(0.75);
+        margin-top: 12rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 40%;
+    }
+
+    .info-box::after{
+        top: 1250% !important;
+    }
+
+    /* Links */
+    .links-text {
+        margin: 1rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        margin-top: 5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 0.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1100%;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 45%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.15rem;
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.15rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.05rem;
+    }
+
+    .signature {
+        margin-bottom: 17.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }    
 }

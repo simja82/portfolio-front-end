@@ -96,7 +96,8 @@
     }
 
     span.badge {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
+        width: 12rem;
     }
 
     .project-image {
@@ -126,9 +127,11 @@
     }
 
     /* Developer Intro */
-    .developer-intro {
+    .developer-intro,
+    section.cv {
         width: 15rem;
         text-align: center;
+        margin: auto;
     }
 
     .empty-footer {
@@ -181,6 +184,10 @@
     /* Admin Dashboard */
     .dashboard-signature {
         font-size: 2.5rem;
+    }
+
+    .presentation-text {
+        font-size: 0.95rem;
     }
 }
 
@@ -1990,7 +1997,8 @@
     }
 
     span.badge {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
+        width: 12rem;
     }
 
     .project-image {
@@ -2021,9 +2029,11 @@
     }
 
     /* Developer Intro */
-    .developer-intro {
-        width: 15rem;
+    .developer-intro,
+    section.cv {
+        width: 14rem;
         text-align: center;
+        margin: auto;
     }
 
     .empty-footer {
@@ -2076,5 +2086,9 @@
     /* Admin Dashboard */
     .dashboard-signature {
         font-size: 2.5rem;
+    }
+
+    .presentation-text {
+        font-size: 0.95rem !important;
     }
 }

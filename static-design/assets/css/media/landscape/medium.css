@@ -1,6 +1,7 @@
 /* Medium Devices Landscape min 768px max 991px*/
 /* Kindle Fire HDX */
 /* Nexus 10 */
+/* Laptop 2 */
 @media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) { 
     /* General*/
     .plus::after{
@@ -21,6 +22,89 @@
     .index-button {
         margin-top: 3rem;
     }
+
+    /* Error */
+    .error-button {
+        margin-top: 17.5rem !important;
+    }
+
+    .info-box {
+        top: 40%;
+    }
+
+    .info-box::after{
+        top: 1500% !important;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 45%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        margin-top: 3rem;
+        font-size: 2.5rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1.5rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.35rem;
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.5rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.25rem;
+    }
+
+    .signature {
+        margin-bottom: 17.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }    
 }
 
 /* iPad */
@@ -54,6 +138,87 @@
     h1.register-title {
         margin-top: 6rem;
     }
+
+    /* Error */
+    .error-button {
+        margin-top: 16rem !important;
+    }
+
+    .info-box {
+        top: 40%;
+    }
+
+    .info-box::after{
+        top: 1400% !important;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 50%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        font-size: 2.5rem !important;
+        margin-top: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.25rem;
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.9);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.15rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.05rem;
+    }
+
+    .signature {
+        margin-bottom: 20% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }    
 }
 
 /* iPad Pro (10.5-inch) */
@@ -78,6 +243,19 @@
         margin-top: 4rem;
     }
 
+    .accesibility-title {
+        margin-top: 2rem auto 2.5rem auto !important;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: 1rem -2rem 1rem 1.5rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 1rem !important;
+    }    
+
     /* Intro */
     .hero-intro {
         margin-top: 5rem !important;
@@ -100,4 +278,87 @@
     h1.register-title {
         margin-top: 8rem;
     }
+
+    /* Error */
+    .error-button {
+        margin-top: 20rem !important;
+    }
+
+    .info-box {
+        top: 40%;
+    }
+
+    .info-box::after{
+        top: 1500% !important;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 50%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        margin-top: 5rem;
+        font-size: 2.5rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1.5rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.25rem;
+    }
+
+    .photo-intro {
+        width: 10rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.05rem;
+    }
+
+    .signature {
+        margin-top: 7%;
+        margin-bottom: 22.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: 1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }    
 }

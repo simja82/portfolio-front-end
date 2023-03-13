@@ -21,6 +21,22 @@
         margin-top: 4rem;
     }
 
+    .accesibility-title {
+        margin-top: 4rem !important;
+        margin-bottom: -1rem;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: 2.5rem -2rem 1rem 1.5rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 3rem !important;
+        transform: scale(1.2);
+    }      
+
     /* Intro */
     .hero-intro {
         margin-top: 10rem !important;
@@ -49,32 +65,131 @@
     h1.register-title {
         margin-top: 12.5rem;
     }
-}
 
-/* Laptop 2 */
-@media (min-height: 800px) and (max-height: 800px) and (min-width: 1280px) and (max-width: 1280px) and (orientation: landscape) { 
-    /* Intro */
-    .hero-intro {
+    /* Plus */
+    h1.plus-title {
+        margin-top: 7rem !important;
+    }
+
+    h4.plus-text {
         margin-top: 5rem !important;
-        font-size: 4rem !important;
     }
 
-    .h5-intro {
+    .plus-button {
+        margin-top: 4rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+    }
+
+    .error-button {
+        margin-top: 20rem !important;
+    }
+
+    .info-box {
+        top: 45%;
+    }
+
+    .info-box::after{
+        top: 1900% !important;
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: 4rem;
+    }
+
+    .links-text {
         margin-top: 4rem !important;
-        font-size: 2rem !important;
     }
 
-    .buttons-intro {
-        margin-top: 3rem !important;
+    .links-buttons {
+        margin-top: 5rem !important;
     }
 
-    .button-intro {
-        width: 15rem !important;
+    .links-paragraph {
+        margin-top: 0.5rem !important;
     }
 
-    /* Register */
-    h1.register-title {
+    .info-links::after {
+        top: 1400%;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 50%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
         margin-top: 7rem;
+        font-size: 3.5rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        margin-top: 4rem;
+        font-size: 1.75rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.5rem;
+    }
+
+    .photo-intro {
+        width: 12rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.5rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.45rem;
+    }
+
+    .signature {
+        margin-top: 7%;
+        margin-bottom: 25% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -99,6 +214,20 @@
     .index-button {
         margin-top: 4rem;
     }
+
+    .accesibility-title {
+        margin-top: 4rem !important;
+        margin-bottom: -1rem;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: 2rem -2rem 1rem 1.5rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 3rem !important;
+    }      
 
     /* Intro */
     .hero-intro {
@@ -128,6 +257,132 @@
     h1.register-title {
         margin-top: 10rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: 5rem !important;
+    }
+
+    h4.plus-text {
+        margin-top: 4rem !important;
+    }
+
+    .plus-button {
+        margin-top: 3rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -1rem;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+    }
+
+    .error-button {
+        margin-top: 17rem !important;
+    }
+
+    .info-box {
+        top: 45%;
+    }
+
+    .info-box::after{
+        top: 1700% !important;
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: 4rem;
+    }
+
+    .links-text {
+        margin-top: 4rem !important;
+    }
+
+    .links-buttons {
+        margin-top: 5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 0.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1400%;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 50%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        margin-top: 5rem;
+        font-size: 3.5rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1.75rem;
+    }
+
+    .drafted,
+    .section-title {
+        margin-top: 4rem;
+        font-size: 2.25rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.5rem;
+    }
+
+    .photo-intro {
+        width: 12rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.5rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.45rem;
+    }
+
+    .signature {
+        margin-top: 7%;
+        margin-bottom: 25% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* Laptop 1 */
@@ -151,6 +406,20 @@
     .index-button {
         margin-top: 4rem;
     }
+
+    .accesibility-title {
+        margin-top: 4rem !important;
+        margin-bottom: -1rem;
+        font-size: 2.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: 1.5rem -2rem 1rem 1.5rem !important;
+    }
+
+    .accessibility-btn {
+        margin-top: 2rem !important;
+    }      
 
     /* Intro */
     .hero-intro {
@@ -179,5 +448,122 @@
     /* Register */
     h1.register-title {
         margin-top: 10rem;
+    }
+
+    /* Plus */
+    .plus-button {
+        margin-top: 2rem;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -4rem;
+    }
+
+    .error-subtitle {
+        margin-top: -1rem !important;
+    }
+
+    .error-button {
+        margin-top: 18rem !important;
+    }
+
+    .info-box {
+        top: 45%;
+    }
+
+    .info-box::after{
+        top: 1600% !important;
+    }
+
+    /* Links */
+    .links-title {
+        margin-top: 4rem;
+    }
+
+    .links-text {
+        margin-top: 4rem !important;
+    }
+
+    .links-buttons {
+        margin-top: 5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: 0.5rem !important;
+    }
+
+    .info-links::after {
+        top: 1400%;
+    }
+
+    /* Audiovisual Intro */
+    .compare {
+        left: 0.75rem;
+    }
+
+    .top-80 {
+        margin-top: 45%;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    .cover-title {
+        margin-top: 4.5rem;
+        font-size: 3.5rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1.5rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 2.25rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 1.25rem;
+    }
+
+    .photo-intro {
+        width: 12rem !important;
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-name {
+        font-size: 1.35rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.25rem;
+    }
+
+    .signature {
+        margin-top: 9%;
+        margin-bottom: 22.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }

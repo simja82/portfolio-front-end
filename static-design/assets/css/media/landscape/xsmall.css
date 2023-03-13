@@ -14,7 +14,8 @@
 
     /* Index */
     .text-top {
-        margin-top: -6rem;
+        margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
@@ -22,7 +23,28 @@
     }
 
     .index-button {
-        margin-top: -1rem;
+        margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.5rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -3rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
@@ -67,6 +89,189 @@
     .register-btn {
         margin-top: -4rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.8);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.625);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 550% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -7.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -6.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -6rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 450%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 22.5%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -5rem;
+        font-size: 1.75rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 3.5% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* iPhone 6S Plus, 7/8 Plus */
@@ -89,14 +294,36 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .index-button {
-        margin-top: 0;
+        margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: 1rem auto 4rem auto !important;
+        font-size: 1.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
@@ -141,6 +368,188 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -2.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.95);
+        margin-top: -2rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.65);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -11rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -9rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.6);
+        margin-top: 5.75rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 35%;
+    }
+
+    .info-box::after{
+        top: 550% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 29.5%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 5% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* iPhone XR, XS Max */
@@ -168,6 +577,21 @@
     .index-button {
         margin-top: -1rem;
     }
+
+    .accesibility-title {
+        margin-top: -0.75rem !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -8rem 1rem -5rem !important;
+        transform: scale(0.8);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.7);
+    }    
 
     /* Intro */
     .hero-intro {
@@ -206,6 +630,188 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.75rem;
+        width: 40rem !important;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -1rem !important;
+        width: 35rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.95);
+        margin-top: -1rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.7);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 7rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 675% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 22.5%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3.5rem;
+        font-size: 2rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.8);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* iPhone 8, 7, 6S, 6 */
@@ -227,6 +833,7 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
@@ -235,6 +842,27 @@
 
     .index-button {
         margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.75rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -3rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
@@ -279,6 +907,189 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.8);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.6);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 4.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 550% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -6.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -5.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -6rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 500%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -15% !important;
+    }
+
+    .top-80 {
+        margin-top: 27.5%;
+        transform: scale(0.75) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -5rem;
+        font-size: 1.75rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 4% !important;
+    }
+
+    .fa-signature {
+        margin-top: -2rem;
+        transform: scale(0.6);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -300,31 +1111,57 @@
 
     /* Index */
     .text-top {
-        margin-top: -4rem;
+        margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .index-button {
         margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: 1rem auto 4rem auto !important;
+        font-size: 1.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -5rem;
-        font-size: 3rem;
+    .hero-intro {
+        margin-top: -2rem !important;
+        font-size: 3rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -4rem;
-        font-size: 1.25rem;
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1.25rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 4.5%;
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -348,6 +1185,188 @@
 
     .register-btn {
         margin-top: -3rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.75rem;
+        width: 40rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -2.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.65);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 6.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 650% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -3.5rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 25.5%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3.5rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.8);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -372,7 +1391,7 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
-        font-size: 3rem;
+        font-size: 3.5rem !important;
     }
 
     h4.hero {
@@ -381,22 +1400,47 @@
 
     .index-button {
         margin-top: -2.5rem;
+        transform: scale(0.85) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.5rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -6rem;
-        font-size: 2.5rem;
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -5rem;
-        font-size: 1rem;
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 5.5%;
+        margin-top: -3rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -421,6 +1465,189 @@
     .register-btn {
         margin-top: -3.5rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.8);
+        margin-top: -4rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.5);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 3.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 500% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -7rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -6rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -6rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4.25rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 475%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 23.5%;
+        transform: scale(0.7) !important;
+    }
+
+    .item-social {
+        margin: -0.5rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -5rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 1% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.6);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* Pixel 3, 3 XL */
@@ -442,31 +1669,57 @@
 
     /* Index */
     .text-top {
-        margin-top: -4rem;
+        margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .index-button {
         margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -6rem;
-        font-size: 2.5rem;
+    .hero-intro {
+        margin-top: -2rem !important;
+        font-size: 3rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -5rem;
-        font-size: 1rem;
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1.25rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 5.5%;
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -490,6 +1743,188 @@
 
     .register-btn {
         margin-top: -3rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.65);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 5.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 600% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -6.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -5.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 25%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.5rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -4rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 3% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.65);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -523,23 +1958,39 @@
         margin-top: -2rem;
     }
 
-    /* Intro */
-    h1.h1-intro {
-        margin-top: -5rem;
-        font-size: 3rem;
+    .accesibility-title {
+        margin-top: -0.75rem !important;
+        font-size: 1.25rem;
     }
 
-    h5.h5-intro {
-        margin-top: -3rem;
-        padding-bottom: 2.5rem;
-        margin-left: -3.5rem;
-        font-size: 1.25rem;
-        width: 35rem;
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -8rem 1rem -5rem !important;
+        transform: scale(0.8);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.7);
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -2rem !important;
+        font-size: 3rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1.25rem !important;
     }
 
     .buttons-intro {
-        margin-top: -5rem;
-        margin-left: 5%;
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -564,6 +2015,188 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.75rem;
+        width: 40rem !important;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -1rem !important;
+        width: 35rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.95);
+        margin-top: -1rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.7);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 7rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 700% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -6rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 25%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3.5rem;
+        font-size: 2rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.8);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* LG Optimus L70 */
@@ -586,38 +2219,56 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -2.5rem;
+        margin-top: -2rem;
     }
 
     .index-button {
-        margin-top: -2.5rem;
+        margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.5rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -3rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -6rem;
-        font-size: 2.5rem;
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -5rem;
-        font-size: 1rem;
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 3%;
+        margin-top: -3rem !important;
     }
 
     .button-intro {
-        width: 10rem;
-        margin: auto;
-        padding: 0.5rem auto;
-        font-size: 1.25rem;
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -642,6 +2293,189 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.25rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.6);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 4.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 550% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -7rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -5.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 500%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 29.5%;
+        transform: scale(0.75) !important;
+    }
+
+    .item-social {
+        margin: -0.75rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -4rem;
+        font-size: 1.95rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.7);
+        margin-top: -2rem;
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* Galaxy Note 3 */
@@ -664,10 +2498,15 @@
         margin-left: 0.75rem;
     }
 
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem;
+    }
+
     /* Index */
     .text-top {
         margin-top: -5rem;
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
@@ -676,29 +2515,42 @@
 
     .index-button {
         margin-top: -3rem;
+        transform: scale(0.85);
     }
+
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
+        font-size: 1.25rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.75rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -3rem !important;
+        transform: scale(0.65);
+    }     
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -6rem;
-        font-size: 2.5rem;
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -5rem;
-        font-size: 1rem;
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
     }
 
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 3%;
+        margin-top: -3rem !important;
     }
 
     .button-intro {
-        width: 10rem;
-        margin: auto;
-        padding: 0.5rem auto;
-        font-size: 1.25rem;
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -723,6 +2575,187 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -5rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -3.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.8);
+        margin-top: -4rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.5);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 3.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 500% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -7.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -6.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -6rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 450%;
+    }
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 26%;
+        transform: scale(0.7) !important;
+    }
+
+    .item-social {
+        margin: -0.75rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -5rem;
+        font-size: 1.75rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 3% !important;
+    }
+
+    .fa-signature {
+        margin-top: -2rem;
+        transform: scale(0.6);
+    }
+
+    .empty-footer {
+        display: none;
+    }
 }
 
 /* Pixel 2 */
@@ -745,30 +2778,56 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .index-button {
-        margin-top: -1rem;
+        margin-top: -2rem;
+        transform: scale(0.9) !important;
     }
 
-    /* Intro */
-    h1.h1-intro {
-        margin-top: -5rem;
-        font-size: 3rem;
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -4rem;
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
         font-size: 1.25rem;
     }
 
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.65);
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
+    }
+
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 4.5%;
+        margin-top: -3rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -792,6 +2851,189 @@
 
     .register-btn {
         margin-top: -3rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -2.5rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.6);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 6rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 650% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 27.5%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.75rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3.5rem;
+        font-size: 2rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -816,7 +3058,7 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
-        font-size: 3rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
@@ -825,25 +3067,47 @@
 
     .index-button {
         margin-top: -2rem;
+        transform: scale(0.9) !important;
+    }
+
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
+    }
+
+    .accesibility-title {
+        margin-top: 0rem auto 4rem auto !important;
+        font-size: 1.5rem;
+    }
+
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2rem !important;
+        transform: scale(0.65);
     }
 
     /* Intro */
-    h1.h1-intro {
-        margin-top: -5rem;
-        font-size: 3rem;
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -3rem;
-        padding-bottom: 2.5rem;
-        margin-left: -6rem;
-        font-size: 1.25rem;
-        width: 35rem;
+    .h5-intro {
+        margin-top: -3rem !important;
+        font-size: 1rem !important;
     }
 
     .buttons-intro {
-        margin-top: -5rem;
-        margin-left: 6%;
+        margin-top: -3rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -868,6 +3132,188 @@
     .register-btn {
         margin-top: -3rem;
     }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -2.5rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.6);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 6rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 650% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 25%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.75rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3rem;
+        font-size: 2rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 4% !important;
+    }
+
+    .fa-signature {
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
+    }    
 }
 
 /* Pixel 2 XL */
@@ -890,30 +3336,56 @@
     /* Index */
     .text-top {
         margin-top: -5rem;
+        font-size: 3rem !important;
     }
 
     h4.hero {
-        margin-top: -1rem;
+        margin-top: -2rem;
     }
 
     .index-button {
-        margin-top: -1rem;
+        margin-top: -2rem;
+        transform: scale(0.9) !important;
     }
 
-    /* Intro */
-    h1.h1-intro {
-        margin-top: -5rem;
-        font-size: 3rem;
+    .items-social {
+        transform: scale(0.95) !important;
+        margin-top: -5.5rem !important;
     }
 
-    h5.h5-intro {
-        margin-top: -4rem;
+    .accesibility-title {
+        margin-top: -1rem auto 4rem auto !important;
         font-size: 1.25rem;
     }
 
+    h5.accessibility.mb-4 {
+        margin: -1.25rem -13rem 1rem -11rem !important;
+        transform: scale(0.6);
+    }
+
+    .accessibility-btn {
+        margin-top: -2.5rem !important;
+        transform: scale(0.65);
+    }
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -2rem !important;
+        font-size: 3rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -2rem !important;
+        font-size: 1.25rem !important;
+    }
+
     .buttons-intro {
-        margin-top: -2rem;
-        margin-left: 4.5%;
+        margin-top: -2rem !important;
+    }
+
+    .button-intro {
+        width: 10rem !important;
+        font-size: 1rem;
     }
 
     /* Login */
@@ -937,6 +3409,189 @@
 
     .register-btn {
         margin-top: -3rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -4rem !important;
+        font-size: 2.5rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -2.25rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.9);
+        margin-top: -3rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.65);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 6.5rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 650% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -5.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -4.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.55);
+        margin-top: -5.5rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4rem !important;
+        font-size: 0.6rem !important;
+    }
+
+    .info-links::after {
+        top: 550%;
+        transform: scale(0.75);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 4rem;
+    }
+
+    .logo {
+        transform: scale(0.75);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -12% !important;
+    }
+
+    .top-80 {
+        margin-top: 25%;
+        transform: scale(0.8) !important;
+    }
+
+    .item-social {
+        margin: -0.75rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -3.5rem;
+        font-size: 2rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(0.8);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-div {
+        transform: scale(0.6);
+        margin: -5rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.25rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.35rem;
+    }
+
+    .signature {
+        margin-bottom: 7% !important;
+    }
+
+    .fa-signature {
+        margin-top: -1rem;
+        transform: scale(0.7);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }
 
@@ -969,8 +3624,9 @@
         padding: auto;
     }
 
-    .position-absolute.top-50.end-0.translate-middle-y.me-4.d-flex.align-items-center {
-        margin-top: 1.25rem;
+    .items-social {
+        margin-top: -4.25rem;
+        transform: scale(0.9) !important;
     }
 
     .fa-angle-left {
@@ -979,7 +3635,7 @@
 
     /* Index */
     .text-top {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
         margin-top: -5rem;
     }
 
@@ -996,27 +3652,44 @@
         padding: 0 auto;
     }
 
-    /* Intro */
-    h1.h1-intro {
-        margin-top: -7rem;
-        font-size: 2.5rem;
+    .accesibility-title {
+        margin-top: -1rem !important;
+        font-size: 1.05rem;
     }
 
-    h5.h5-intro {
-        margin-top: -6rem;
-        font-size: 1rem;
+    h5.accessibility.mb-4 {
+        margin: -2rem -14rem 0.75rem -12rem !important;
+        transform: scale(0.525);
+    }
+
+    .accessibility-btn {
+        margin-top: -3rem !important;
+        transform: scale(0.65);
+    }  
+
+    /* Intro */
+    .hero-intro {
+        margin-top: -4rem !important;
+        font-size: 2rem !important;
+    }
+
+    .h5-intro {
+        margin-top: -4.5rem !important;
+        font-size: 1rem !important;
+        width: 150%;
+        margin-left: -4rem;
     }
 
     .buttons-intro {
-        margin-top: -3rem;
-        margin-left: 3%;
+        margin-top: -2.25rem !important;
+        transform: scale(0.95);
     }
 
     .button-intro {
-        width: 10rem;
-        padding: 0.5rem auto;
-        font-size: 0.75rem;
-        text-align: center;
+        width: 10rem !important;
+        font-size: 1rem;
+        transform: scale(0.95) !important;
+        margin-top: -0.75rem;
     }
 
     /* Login */
@@ -1041,5 +3714,187 @@
     .register-btn {
         margin-top: -3rem;
         width: 10rem;
+    }
+
+    /* Plus */
+    h1.plus-title {
+        margin-top: -6rem !important;
+        font-size: 2rem;
+        width: 35rem;
+        margin: 0 auto;
+    }
+
+    h4.plus-text {
+        margin-top: -4.5rem !important;
+        width: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    .plus-button {
+        transform: scale(0.75);
+        margin-top: -4rem;
+    }
+
+    .plus-modal {
+        transform: scale(0.5);
+        margin: -8rem auto;
+    }
+
+    /* Error */
+    .error-title {
+        margin-top: -12rem;
+        font-size: 2.5rem !important;
+    }
+
+    .error-subtitle {
+        margin-top: -10rem !important;
+        font-size: 1rem !important;
+    }
+
+    .error-button {
+        transform: scale(0.5);
+        margin-top: 1rem !important;
+        margin-bottom: -5rem !important;
+    }
+
+    .info-box {
+        top: 30%;
+    }
+
+    .info-box::after{
+        top: 350% !important;
+    }
+
+    /* Links */
+    .links-title {
+        font-size: 1.75rem !important;
+        margin-top: -7.5rem;
+    }
+
+    .links-text {
+        font-size: 1.05rem !important;
+        margin: -6.5rem 2rem -2rem 2rem !important;
+    }
+
+    .links-buttons {
+        transform: scale(0.525);
+        margin-top: -6.25rem !important;
+    }
+
+    .links-paragraph {
+        margin-top: -4.25rem !important;
+        font-size: 0.55rem !important;
+    }
+
+    .info-links::after {
+        top: 450%;
+        transform: scale(0.85);
+    }
+
+    /* Audiovisual Intro */
+    .navbar,
+    footer {
+        height: 3rem;
+    }
+
+    .logo {
+        transform: scale(0.7);
+        margin-left: -1rem;
+    }
+
+    .fa-lock,
+    .fa-code-compare,
+    .fa-angles-left,
+    .fa-angles-right {
+        transform: scale(0.8);
+    }
+
+    .compare {
+        left: 0.75rem;
+    }
+
+    .items-social {
+        transform: scale(0.8) !important;
+        margin-top: -15% !important;
+    }
+
+    .top-80 {
+        margin-top: 27.5%;
+        transform: scale(1.2) !important;
+    }
+
+    .item-social {
+        margin: -0.25rem auto;
+    }
+
+    h3.footer-left,
+    h3.footer-right {
+        margin-top: -0.5rem;
+    }
+
+    .cover-title {
+        margin-top: -7rem;
+        font-size: 1.75rem !important;
+    }
+
+    .based,
+    .to-visitors {
+        font-size: 1rem;
+    }
+
+    .drafted,
+    .section-title {
+        font-size: 1.35rem;
+    }
+    
+    .divisor-text,
+    .section-text,
+    .card-text,
+    .signature {
+        font-size: 0.95rem;
+    }
+
+    .photo-intro {
+        width: 8rem !important;
+    }
+
+    .presentation-icon,
+    .content-icon {
+        transform: scale(1.15);
+    }
+
+    .btn.btn-outline-black-mini,
+    .btn.btn-outline-black-mini:hover {
+        color: #000;
+        border: 0.05rem solid #000;
+        padding: 0.35rem 1rem;
+        border-radius: 0.25rem;
+        width: 7rem !important;
+    }
+
+    .feedback-card {
+        transform: scale(0.75);
+        margin: -3rem auto;
+    }
+
+    .feedback-name {
+        font-size: 1.05rem;
+    }
+
+    .card-text.feedback-text {
+        font-size: 1.15rem;
+    }
+
+    .signature {
+        margin-bottom: 6% !important;
+    }
+
+    .fa-signature {
+        transform: scale(2);
+    }
+
+    .empty-footer {
+        display: none;
     }
 }

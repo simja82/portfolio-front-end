@@ -35,6 +35,11 @@
         margin: auto;
     }
 
+    span.badge {
+        font-size: 1.25rem;
+        width: 15rem;
+    }    
+
     /* Audiovisual Data */
     .data-intro {
         width: 45rem;
@@ -44,6 +49,40 @@
     .btn.btn-black-medium {
         width: 100%;
         height: auto;
+    }
+
+    /* Audiovisual Samples */
+    .samples-intro {
+        width: 45rem;
+        margin: auto;
+    }
+
+    .btn.btn-black-medium.samples {
+        width: 300%;
+        height: auto;
+    }
+
+    /* Developer Intro */
+    .developer-intro,
+    section.cv {
+        width: 45rem;
+        text-align: center;
+        margin: auto;
+        font-size: 1.45rem;
+    }
+
+    .developer-section {
+        font-size: 1.75rem;
+        width: 20rem;
+        margin: auto;
+    }
+
+    .experience-card {
+        margin: 2rem auto;
+    }
+
+    .empty-footer {
+        height: 7rem;
     }    
 }
 
