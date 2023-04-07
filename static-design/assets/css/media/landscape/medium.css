@@ -104,7 +104,62 @@
 
     .empty-footer {
         display: none;
-    }    
+    }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 60rem;
+        margin: auto;
+        font-size: 1.25rem;
+    }
+
+    .section-share {
+        margin-bottom: 10rem !important;
+    }
+
+    /*Audiovisual Project */
+    .project-intro {
+        margin: 2rem auto 1rem auto;
+    }
+
+    .badge-project {
+        margin-bottom: 3rem;
+    }
+
+    .image-detail {
+        transform: scale(0.5);
+        border-radius: 0;
+        border: none;
+    }
+
+    div.card.img-top.project-img {
+        --bs-card-border-color: transparent;
+        margin: -9rem auto auto auto;
+        z-index: -3;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(0.9);
+    }
+
+    .card.logline{
+        margin-top: -7rem;
+    }
+
+    .card.synopsis {
+        margin-top: -1.5rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }
+
+    .copyright-text {
+        font-size: 1.05rem;
+    }
 }
 
 /* iPad */
@@ -218,6 +273,88 @@
 
     .empty-footer {
         display: none;
+    } 
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.75rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 45rem;
+        margin: auto;
+        font-size: 1.25rem;
+    }
+
+    .section-title.content-section { 
+        margin-bottom: 2rem !important;
+    }
+
+    .project-card {
+        transform: scale(0.95);
+        margin-top: 0.75rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    .section-share {
+        margin-bottom: 10rem !important;
+    }
+
+    /*Audiovisual Project */
+    .project-intro {
+        margin: 4rem auto;
+    }
+
+    .badge-project {
+        margin-bottom: 3rem;
+    }
+
+    .image-detail {
+        transform: scale(0.5);
+        border-radius: 0;
+        border: none;
+    }
+
+    div.card.img-top.project-img {
+        --bs-card-border-color: transparent;
+        margin: -9rem auto auto auto;
+        z-index: -3;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(0.9);
+    }
+
+    .card.logline{
+        margin-top: -7rem;
+    }
+
+    .card.synopsis {
+        margin-top: -1.5rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }
+
+    .copyright-text {
+        font-size: 1.05rem;
     }    
 }
 
@@ -360,5 +497,60 @@
 
     .empty-footer {
         display: none;
+    }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 50rem;
+        margin: auto;
+        font-size: 1.25rem;
+    }
+
+    .section-share {
+        margin-bottom: 10rem !important;
+    }
+
+    /*Audiovisual Project */
+    .project-intro {
+        margin: 4rem auto 1rem auto;
+    }
+
+    .badge-project {
+        margin-bottom: 3rem;
+    }
+
+    .image-detail {
+        transform: scale(0.5);
+        border-radius: 0;
+        border: none;
+    }
+
+    div.card.img-top.project-img {
+        --bs-card-border-color: transparent;
+        margin: -9rem auto auto auto;
+        z-index: -3;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(0.9);
+    }
+
+    .card.logline{
+        margin-top: -7rem;
+    }
+
+    .card.synopsis {
+        margin-top: -1.5rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }
+
+    .copyright-text {
+        font-size: 1.05rem;
     }    
 }

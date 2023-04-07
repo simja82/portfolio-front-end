@@ -338,3 +338,16 @@ section.developer {
 .signature {
     margin-top: 15rem !important;
 }
+
+/* Audiovisual Project */
+.image-detail {
+    transform: scale(0.5);
+    border-radius: 0;
+    border: none;
+}
+
+div.card.img-top.project-img {
+    --bs-card-border-color: transparent;
+    margin: -11rem auto -8rem auto;
+    z-index: -3;
+}

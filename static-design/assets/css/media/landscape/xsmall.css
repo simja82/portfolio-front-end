@@ -1,4 +1,68 @@
-/* XSmall Devices Portrait Max Width 575px*/
+/* XSmall Devices Landscape Max Width 575px*/
+/* All */
+@media (min-width: 320px) and (max-width: 896px) and (orientation: landscape) {
+    section.section-contents {
+        margin-top: -1rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 25rem;
+        margin: auto;
+    }
+    
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .format-genre {
+        font-size: 0.85rem;
+    }
+    
+    .w-85 {
+        transform: scale(0.7);
+    }
+
+    .project-card {
+        transform: scale(0.85);
+        margin-top: -2rem;
+    }
+
+    .content-section {
+        margin-bottom: 4rem !important;
+    }
+    
+    .card.img-top {
+        border: none;
+        transform: scale(0.75);
+        margin-top: -18rem;
+        z-index: -2;
+    }
+    
+    .section-share {
+        margin-top: -4rem;
+        margin-bottom: 5rem;
+    }
+
+    .card.logline {
+        margin-top: -9rem;
+    }
+    
+    span.badge {
+        font-size: 0.95rem;
+        width: 20rem;
+    }
+    
+    .project-image {
+        width: 12rem;
+        margin: auto;
+    }
+    
+    .section-copyright {
+        margin-top: -13.5rem;
+    }
+}
+
 /* iPhone XS, X */
 @media (min-height: 375px) and (max-height: 375px) and (min-width: 812px) and (max-width: 812px) and (orientation: landscape) {
     /* General */
@@ -276,6 +340,70 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 40rem;
+        margin: auto;
+    }
+
+    .project-card {
+        transform: scale(0.95);
+        margin-top: -0.5rem;
+    }
+
+    .content-section {
+        margin-bottom: 2rem !important;
+    }
+
+    /* Audiovisual Project */
+    .project-intro {
+        margin-top: -7rem;
+        font-size: 1.05rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .badge-project {
+        width: 12rem !important;
+        margin: auto;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        border-radius: 0;
+        margin: -5rem auto auto auto;
+    }
+
+    .card.logline{
+        margin-top: -1rem;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }
 }
 
 /* iPhone 6S Plus, 7/8 Plus */
@@ -285,7 +413,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 550%;
         width: 42.5rem;
         left: 9%;
@@ -558,6 +686,89 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 35rem;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .section-title.content-section { 
+        margin-bottom: 7rem !important;
+    }
+
+    .project-card {
+        transform: scale(0.6);
+        margin-top: -12rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.95rem;
+    }
+
+    .project-text {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.35rem;
+    }
+
+    /* Audiovisual Project */
+    .project-intro {
+        margin-top: -6rem;
+        margin-left: -5%;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .badge-project {
+        width: 12rem !important;
+        margin: auto;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        border-radius: 0;
+        margin: -10rem auto auto auto;
+    }
+
+    .card.logline{
+        margin-top: -3rem;
+    }
+
+    .card.storyline {
+        margin-top: 7rem;
+    }
+
+    .card.synopsis {
+        margin-top: 12.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.3);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }       
 }
 
 /* iPhone XR, XS Max */
@@ -685,7 +896,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 675% !important;
     }
 
@@ -823,6 +1034,74 @@
 
     .empty-footer {
         display: none;
+    }
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.75rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 45rem;
+        margin: auto;
+        font-size: 1.15rem;
+    }
+
+    .project-card {
+        margin-top: -1rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -6rem;
+    }
+
+    .image-detail {
+        transform: scale(4);
+        margin: -4rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline{
+        margin-top: 3rem;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
     }
 }
 
@@ -1106,6 +1385,67 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .project-card {
+        transform: scale(0.65);
+        margin-top: -8rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -8rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -1115,7 +1455,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 500%;
         width: 49rem;
         left: 30%;;
@@ -1249,7 +1589,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 650% !important;
     }
 
@@ -1387,6 +1727,79 @@
 
     .empty-footer {
         display: none;
+    }
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 40rem;
+        margin: auto;
+        font-size: 1.15rem;
+    }
+
+    .project-card {
+        transform: scale(0.95);
+        margin-top: 0.75rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.25rem;
+    }
+
+    .project-text {
+        font-size: 1.15rem;
+    }
+
+    .format-genre {
+        font-size: 1rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -6rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -5rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: 0rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
     }
 }
 
@@ -1532,7 +1945,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 500% !important;
     }
 
@@ -1672,6 +2085,78 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 32.5rem;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .section-title.content-section { 
+        margin-bottom: 7rem !important;
+    }
+
+    .project-card {
+        transform: scale(0.6);
+        margin-top: -12rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.75rem;
+    }
+
+    .project-text {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.25rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -7rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Pixel 3, 3 XL */
@@ -1681,7 +2166,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 400%;
         width: 45rem;
         left: 28%;
@@ -1815,7 +2300,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 600% !important;
     }
 
@@ -1954,6 +2439,74 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 32.5rem;
+        margin: auto;
+        font-size: 1.15rem;
+    }
+
+    .project-card {
+        margin-top: -1rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.25rem;
+    }
+
+    .project-text {
+        font-size: 1rem;
+    }
+
+    .format-genre {
+        font-size: 0.95rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -7rem;
+        font-size: 1.025rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -5rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -1rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Galaxy Note 9 */
@@ -1963,7 +2516,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 400%;
         width: 50rem;
         left: 30%;
@@ -2090,7 +2643,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 700% !important;
     }
 
@@ -2229,6 +2782,61 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 40rem;
+        margin: auto;
+        font-size: 1.15rem;
+    }
+
+    .project-card {
+        transform: scale(0.95);
+        margin-top: 1rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -6.5rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -5rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -1rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* LG Optimus L70 */
@@ -2238,7 +2846,7 @@
         left: 1.5rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 450%;
         width: 36rem;
         left: 28%;
@@ -2512,6 +3120,67 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .project-card {
+        transform: scale(0.65);
+        margin-top: -8rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -7rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Galaxy Note 3 */
@@ -2524,7 +3193,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 400%;
         width: 36.5rem;
         left: 28%;
@@ -2796,16 +3465,83 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 30rem;
+        margin: auto;
+    }
+
+    .project-card {
+        transform: scale(0.65);
+        margin-top: -8rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -8rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.25);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Pixel 2 */
 @media (min-height: 411px) and (max-height: 411px) and (min-width: 731px) and (max-width: 731px) and (orientation: landscape) { 
     /* General */
-    .plus{
+    .plus {
         left: 3%;
     }
 
-    .plus::after{
+    .plus::after {
         top: 450%;
         width: 42.5rem;
         left: 2%;
@@ -2939,7 +3675,7 @@
         top: 30%;
     }
 
-    .info-box::after{
+    .info-box::after {
         top: 650% !important;
     }
 
@@ -3079,6 +3815,75 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .projects-intro,
+    .project-intro {
+        width: 32.5rem;
+        margin: auto;
+        font-size: 1.15rem;
+    }
+
+    .project-card {
+        transform: scale(0.65);
+        margin-top: -8rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.65rem;
+    }
+
+    .project-text {
+        font-size: 1.35rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -7rem;
+        font-size: 1.025rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 11rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.3);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }    
 }
 
 /* Nexus 5X */
@@ -3089,7 +3894,7 @@
         left: 1.25rem;
     }
 
-    .plus::after{
+    .plus::after {
         top: 400%;
         width: 42rem;
         left: 28%;
@@ -3361,17 +4166,90 @@
 
     .empty-footer {
         display: none;
+    }
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 32.5rem;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .project-card {
+        transform: scale(0.65);
+        margin-top: -8rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.75rem;
+    }
+
+    .project-text {
+        font-size: 1.5rem;
+    }
+
+    .format-genre {
+        font-size: 1.25rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -6rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -8.5rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -3rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5.5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 11rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.3);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
     }    
 }
 
 /* Pixel 2 XL */
 @media (min-height: 411px) and (max-height: 411px) and (min-width: 823px) and (max-width: 823px) and (orientation: landscape) { 
     /* General */
-    .plus{
+    .plus {
         left: 3%;
     }
 
-    .plus::after{
+    .plus::after {
         top: 450%;
         width: 47.5rem;
         left: 2%;
@@ -3645,6 +4523,79 @@
     .empty-footer {
         display: none;
     }
+
+    /* Audiovisual Projects */
+    .section-title {
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .projects-intro,
+    .project-intro {
+        width: 35rem;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    .project-card {
+        transform: scale(0.75);
+        margin-top: -4rem;
+    }
+
+    .project-title, 
+    .fa-project {
+        font-size: 1.5rem;
+    }
+
+    .project-text {
+        font-size: 1.25rem;
+    }
+
+    .format-genre {
+        font-size: 1.15rem;
+    }
+
+    /* Audiovisual Project */
+    .intro-text {
+        margin-top: -6rem;
+    }
+
+    .info-project {
+        font-size: 1rem;
+    }
+
+    .image-detail {
+        transform: scale(3.5);
+        margin: -5rem auto auto auto;
+        border-radius: 0;
+    }
+
+    .card.logline {
+        margin-top: -1rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.3);
+    }
+
+    .copyright-text {
+        font-size: 0.75rem;
+    }
+
+    .sharing {
+        margin-bottom: 7rem;
+    }        
 }
 
 /* iPhone 5/SE */
@@ -3952,5 +4903,54 @@
 
     .empty-footer {
         display: none;
+    }
+
+    /* Audiovisual Project */
+    .project-intro {
+        margin-top: -9rem;
+        font-size: 0.8rem;
+    }
+
+    .info-project {
+        font-size: 0.8rem;
+    }
+
+    .badge-project {
+        width: 12rem !important;
+        margin: auto;
+    }
+
+    .image-detail {
+        transform: scale(3);
+        border-radius: 0;
+        margin: -9rem auto 1rem auto;
+    }
+
+    .card.logline {
+        margin-top: -5rem !important;
+    }
+
+    .card.storyline {
+        margin-top: 5rem;
+    }
+
+    .card.synopsis {
+        margin-top: 9rem;
+        margin-bottom: 3rem;
+    }
+
+    .card.logline,
+    .card.storyline,
+    .card.synopsis {
+        transform: scale(1.15);
+    }
+
+    .copyright-text {
+        font-size: 0.8rem;
+        margin-top: -15rem;
+    }    
+
+    .sharing {
+        margin-bottom: 5rem;
     }
 }
