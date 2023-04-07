@@ -231,7 +231,19 @@
 
     .copyright-text {
         font-size: 1.25rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: 10% !important;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    } 
 }
 
 /* Laptop 3 */
@@ -470,7 +482,18 @@
 
     .copyright-text {
         font-size: 1.25rem;
-    }       
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }
 }
 
 /* Laptop 1 */
@@ -701,5 +724,17 @@
 
     .copyright-text {
         font-size: 1.25rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: 10% !important;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }   
 }

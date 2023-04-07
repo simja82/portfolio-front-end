@@ -160,6 +160,18 @@
     .copyright-text {
         font-size: 1.05rem;
     }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: -1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }    
 }
 
 /* iPad */
@@ -355,7 +367,19 @@
 
     .copyright-text {
         font-size: 1.05rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: -1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }  
 }
 
 /* iPad Pro (10.5-inch) */
@@ -552,5 +576,17 @@
 
     .copyright-text {
         font-size: 1.05rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: 5% !important;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }  
 }

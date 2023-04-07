@@ -351,3 +351,16 @@ div.card.img-top.project-img {
     margin: -11rem auto -8rem auto;
     z-index: -3;
 }
+
+/* Audiovisual Samples */
+.samples.download,
+.samples.download:hover {
+    width: 300% !important;
+} 
+
+.sample-text,
+.format-sample,
+.samples.download h5,
+.samples.download {
+    font-size: 1rem;
+}    

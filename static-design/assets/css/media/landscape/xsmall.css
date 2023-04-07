@@ -6,6 +6,7 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 25rem;
         margin: auto;
@@ -23,7 +24,8 @@
         transform: scale(0.7);
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.85);
         margin-top: -2rem;
     }
@@ -343,12 +345,14 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 40rem;
         margin: auto;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.95);
         margin-top: -0.5rem;
     }
@@ -403,6 +407,17 @@
 
     .sharing {
         margin-bottom: 7rem;
+    }
+
+    /* Audiovisual Samples */
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
     }
 }
 
@@ -694,6 +709,7 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 35rem;
         margin: auto;
@@ -704,7 +720,8 @@
         margin-bottom: 7rem !important;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.6);
         margin-top: -12rem;
     }
@@ -768,7 +785,22 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }       
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -13rem;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.5rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* iPhone XR, XS Max */
@@ -1043,13 +1075,15 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 45rem;
         margin: auto;
         font-size: 1.15rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         margin-top: -1rem;
     }
 
@@ -1103,6 +1137,28 @@
     .sharing {
         margin-bottom: 7rem;
     }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: 1rem;
+        transform: scale(0.95);
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .sample-title {
+        font-size: 1.15rem;
+    }
+
+    .sample-text,
+    .format-sample,
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
+    }    
 }
 
 /* iPhone 8, 7, 6S, 6 */
@@ -1387,7 +1443,8 @@
     }
 
     /* Audiovisual Projects */
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.65);
         margin-top: -8rem;
     }
@@ -1445,7 +1502,22 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+    
+    /* Audiovisual Samples */
+    .sample-card {
+        transform: scale(0.65);
+        margin-bottom: -10rem;
+    }
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.25rem;
+    }        
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* Galaxy S9 Plus, S8 Plus */
@@ -1736,13 +1808,15 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 40rem;
         margin: auto;
         font-size: 1.15rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.95);
         margin-top: 0.75rem;
     }
@@ -1801,6 +1875,17 @@
     .sharing {
         margin-bottom: 7rem;
     }
+
+    /* Audiovisual Samples */
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
+    } 
 }
 
 /* Galaxy S9/S9+ */
@@ -2088,6 +2173,7 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 32.5rem;
         margin: auto;
@@ -2098,7 +2184,8 @@
         margin-bottom: 7rem !important;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.6);
         margin-top: -12rem;
     }
@@ -2156,7 +2243,22 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        transform: scale(0.65);
+        margin-bottom: -10rem;
+    }
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.5rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* Pixel 3, 3 XL */
@@ -2442,13 +2544,15 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 32.5rem;
         margin: auto;
         font-size: 1.15rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         margin-top: -1rem;
     }
 
@@ -2506,7 +2610,23 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: 1rem;
+        transform: scale(0.95);
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
+    }
 }
 
 /* Galaxy Note 9 */
@@ -2785,13 +2905,15 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 40rem;
         margin: auto;
         font-size: 1.15rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.95);
         margin-top: 1rem;
     }
@@ -2836,6 +2958,22 @@
 
     .sharing {
         margin-bottom: 7rem;
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -2rem;
+        transform: scale(0.95);
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
     }    
 }
 
@@ -3122,7 +3260,8 @@
     }
 
     /* Audiovisual Projects */
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.65);
         margin-top: -8rem;
     }
@@ -3180,6 +3319,21 @@
 
     .sharing {
         margin-bottom: 7rem;
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -10rem;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.25rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
     }    
 }
 
@@ -3468,12 +3622,14 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 30rem;
         margin: auto;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.65);
         margin-top: -8rem;
     }
@@ -3531,7 +3687,18 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        transform: scale(0.75);
+        margin-bottom: -4rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* Pixel 2 */
@@ -3818,13 +3985,15 @@
 
     /* Audiovisual Projects */
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 32.5rem;
         margin: auto;
         font-size: 1.15rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.65);
         margin-top: -8rem;
     }
@@ -3883,7 +4052,23 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -12rem;
+        transform: scale(0.65);
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.3rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* Nexus 5X */
@@ -4175,13 +4360,15 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 32.5rem;
         margin: auto;
         font-size: 1rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.65);
         margin-top: -8rem;
     }
@@ -4239,7 +4426,22 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }    
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -12rem;
+    }
+
+    .samples.download h5,
+    .samples.download {
+        font-size: 1.5rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
+    }
 }
 
 /* Pixel 2 XL */
@@ -4531,13 +4733,15 @@
     }
 
     .projects-intro,
+    .samples-intro,
     .project-intro {
         width: 35rem;
         margin: auto;
         font-size: 1rem;
     }
 
-    .project-card {
+    .project-card,
+    .sample-card {
         transform: scale(0.75);
         margin-top: -4rem;
     }
@@ -4595,7 +4799,26 @@
 
     .sharing {
         margin-bottom: 7rem;
-    }        
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin: 0rem auto;
+        transform: scale(0.95);
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300% !important;
+    }
+
+    .sample-title,
+    .sample-text,
+    .format-sample,
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
+    }    
 }
 
 /* iPhone 5/SE */
@@ -4952,5 +5175,15 @@
 
     .sharing {
         margin-bottom: 5rem;
+    }
+
+    /* Audiovisual Samples */
+    .sample-card {
+        margin-bottom: -4rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 100% !important;
     }
 }

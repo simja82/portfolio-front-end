@@ -304,7 +304,28 @@
 
     .sharing {
         margin-bottom: 7rem;
-    } 
+    }
+    
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: -1rem;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }
+
+    .sample-title {
+        font-size: 1.15rem;
+    }
+
+    .sample-text,
+    .format-sample,
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
+    }    
 }
 
 /* Large Screen */
@@ -559,5 +580,28 @@
 
     .sharing {
         margin-bottom: 7rem;
+    }
+
+    /* Audiovisual Samples */
+    section.section-contents {
+        margin-top: -1rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .samples.download,
+    .samples.download:hover {
+        width: 300%;
+    }
+
+    .sample-title {
+        font-size: 1.15rem;
+    }
+
+    .sample-text,
+    .format-sample,
+    .samples.download h5,
+    .samples.download {
+        font-size: 1rem;
     }     
 }
