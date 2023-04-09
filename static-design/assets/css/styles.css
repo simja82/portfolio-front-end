@@ -364,3 +364,9 @@ div.card.img-top.project-img {
 .samples.download {
     font-size: 1rem;
 }    
+
+/* Audiovisual Data */
+.data.download,
+.data.download:hover {
+    width: 100% !important;
+}

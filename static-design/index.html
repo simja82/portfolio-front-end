@@ -31,14 +31,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/instructions.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css">
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/large.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/medium.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/small.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/xsmall.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/large.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/medium.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/small.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/xsmall.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/320-568.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/320-568.css">
     <!-- Title -->
     <title>Index | Point of View</title>
 </head>
@@ -65,12 +59,12 @@
         </a>
 
         <!-- Enlace -->
-        <div class="text-center pt-5 text-white">
+        <div class="text-center pt-5 text-white index-div">
             <div class="col-12 mt-5 pt-5 mb-4">
-                <h1 class="hero text-top">Hola!!!</h1>
+                <h1 class="hero index-hero">Hola!!!</h1>
             </div>
             <div class="col-12 mb-5">
-                <h4 class="hero">Me ves?</h4>
+                <h4 class="subhero index-subhero">Me ves?</h4>
             </div>
             <a href="/intro.html">
                 <button type="button" class="btn btn-outline-white btn-lg index-button">Entrar</button>
@@ -81,22 +75,22 @@
         <div class="position-absolute top-50 end-0 translate-middle-y me-4 d-flex align-items-center items-social">
             <div class="social-icons">
                 <ul class="social-listing list-unstyled">
-                    <li>
+                    <li class="item-social">
                         <a href="https://facebook.com" target="_blank">
                             <i class="fa-brands fa-facebook-f fa-2x text-white"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="item-social">
                         <a href="https://linkedin.com" target="_blank">
                             <i class="fa-brands fa-linkedin-in fa-2x text-white"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="item-social">
                         <a href="https://twitter.com" target="_blank">
                             <i class="fa-brands fa-twitter fa-2x text-white"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="item-social">
                         <a href="https://instagram.com" target="_blank">
                             <i class="fa-brands fa-instagram fa-2x text-white"></i>
                         </a>
@@ -106,12 +100,14 @@
         </div>
     
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid mt-5">
-            <div></div>
-            <a href="/credits.html">
-                <i class="fa-solid fa-angles-right fa-2x text-white me-3"></i>
-            </a>
-        </footer>
+        <footer>
+            <div class="d-flex justify-content-between ms-3 me-3">
+                <div></div>
+                <a href="/credits.html">
+                    <i class="fa-solid fa-angles-right fa-2x text-white"></i>
+                </a>
+            </div>
+        </footer>        
 
         <!-- Instrucciones -->
         <input type="checkbox" id="close">
@@ -139,6 +135,7 @@
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Accessibility Code -->

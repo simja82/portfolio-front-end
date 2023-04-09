@@ -30,14 +30,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/html.css"> 
     <!-- Responsive -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/large.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/medium.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/small.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/xsmall.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/large.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/medium.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/small.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/xsmall.css">    
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/landscape/320-568.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/media/portrait/320-568.css">    
     <!-- Title -->
     <title>Error | Point of View</title>
 </head>
@@ -58,31 +52,43 @@
 
     <section class="background error">   
         <!-- Plus -->
-        <a class="plus info-box" data-tooltip="Robot de piezas recicladas">
-            <i class="fa fa-plus fa-2x text-black"></i>
+        <a class="plus error-plus" data-tooltip="Robot de piezas recicladas">
+            <i class="fa fa-plus text-black fa-2x"></i>
         </a>
 
+        <!-- Enlace -->
+        <div class="text-center pt-5 text-black error-div">
+            <div class="col-12 mt-5 pt-5 mb-4">
+                <h1 class="hero error-hero">Oops!!!</h1>
+            </div>
+            <div class="col-12 mb-5">
+                <h4 class="subhero error-subhero">Algo no salió bien...</h4>
+            </div>
+            <a href="/">
+                <button type="button" class="btn btn-outline-black btn-lg error-button">Volver</button>
+            </a>         
+        </div>  
 
         <!-- Redes -->
         <div class="position-absolute top-50 end-0 translate-middle-y me-4 d-flex align-items-center items-social">
             <div class="social-icons">
                 <ul class="social-listing list-unstyled">
-                    <li>
+                    <li class="item-social">
                         <a href="https://facebook.com" target="_blank">
                             <i class="fa-brands fa-facebook-f fa-2x text-black"></i>
                         </a>
                     </li>
-                    <li>
+                    <li class="item-social">
                         <a href="https://linkedin.com" target="_blank">
                             <i class="fa-brands fa-linkedin-in fa-2x text-black"></i>
                         </a>
-                    </li>                    
-                    <li>
+                    </li>
+                    <li class="item-social">
                         <a href="https://twitter.com" target="_blank">
                             <i class="fa-brands fa-twitter fa-2x text-black"></i>
                         </a>
-                    </li>                    
-                    <li>
+                    </li>
+                    <li class="item-social">
                         <a href="https://instagram.com" target="_blank">
                             <i class="fa-brands fa-instagram fa-2x text-black"></i>
                         </a>
@@ -91,27 +97,16 @@
             </div>          
         </div>
 
-        <!-- Enlace -->
-        <div class="text-center pt-5">
-            <div class="col-12 mt-5 pt-5 mb-4">
-                <h1 class="hero error-title">Oops!!!</h1>
-            </div>
-            <div class="col-12 mb-5">
-                <h4 class="hero error-subtitle">Algo no salió bien...</h4>
-            </div>
-            <a href="/">
-                <button type="button" class="btn btn-outline-black btn-lg error-button">Volver</button>
-            </a>         
-        </div>
-
         <!-- Footer -->
-        <footer class="footer d-flex justify-content-between container-fluid mt-5">
-            <a href="/">
-                <i class="fa-solid fa-angle-left fa-2x text-black ms-3"></i>
-            </a>
-            <a href="/credits.html">
-                <i class="fa-solid fa-angles-right fa-2x text-black me-3"></i>
-            </a>
+        <footer>
+            <div class="d-flex justify-content-between ms-3 me-3">
+                <a href="/">
+                    <i class="fa-solid fa-angle-left fa-2x text-black"></i>
+                </a>
+                <a href="/credits.html">
+                    <i class="fa-solid fa-angles-right fa-2x text-black"></i>
+                </a>
+            </div>
         </footer>
     </section>
 

@@ -1,0 +1,246 @@
+@media (min-height: 320px) and (max-height: 320px) and (min-width: 568px) and (max-width: 568px) and (orientation: landscape) { 
+/* All */
+.fa, .fa-solid, .fa-brands, .logo {
+    transform: scale(0.8);
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    transform: scale(0.9);
+}
+
+.plus, .compare, .video {
+    left: 0.7rem;
+}
+
+.items-social {
+    margin-top: 2%;
+}
+
+.item-social {
+    margin: -0.25rem;
+}
+
+.plus::after{
+    top: 350%;
+    left: -5rem;
+    width: 43rem;
+    transform: scale(0.7);
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.btn-check:checked+.btn:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible, .btn:first-child:active:focus-visible, :not(.btn-check)+.btn:active:focus-visible {
+    border-color: transparent;
+}
+
+/* Index */
+.index-div {
+    margin-top: -6rem;
+    transform: scale(0.9);
+}
+
+.index-subhero, .index-button {
+    margin-top: -1.5rem;
+}
+
+.index-button {
+    transform: scale(0.8);
+}
+
+.accesibility-title {
+    margin-top: -1rem !important;
+    font-size: 1.05rem;
+}
+
+h5.accessibility.mb-4 {
+    margin: -1.8rem -13.75rem 0.75rem -12rem !important;
+    transform: scale(0.525);
+}
+
+.accessibility-btn {
+    margin-top: -3.25rem !important;
+    transform: scale(0.55);
+} 
+
+/* Intro */
+.intro-div {
+    margin-top: -7rem;
+    transform: scale(0.725);
+}
+
+.intro-subhero, .intro-button {
+    margin-top: -1rem;
+}
+
+.intro-buttons {
+    width: 80%;
+    margin: auto;
+}
+
+.intro-button {
+    transform: scale(0.8);
+}
+
+/* Login */
+.login-form {
+    margin-top: -12rem !important;
+    transform: scale(0.575);
+}
+
+/* Register */
+.register-div {
+    margin-top: -6rem;
+    transform: scale(0.75);
+}
+
+.register-subhero, .register-button {
+    margin-top: -1.5rem;
+}
+
+.register-button {
+    transform: scale(0.8);
+}
+
+/* Credits */
+.wrapper {
+    overflow: hidden;
+    height: 150rem;
+    margin-bottom: 10rem;
+    margin-top: 0rem;
+}
+
+.credit {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    animation: 180s credits linear infinite;
+    display: inline;
+}
+
+.credits-title {
+    transform: scale(0.75);
+}
+
+.credits-type, .credits-based, .feedback, .quote, .name {
+    transform: scale(0.8);
+}
+
+/* Bloopers */ 
+
+/* Plus */
+.plus-div {
+    margin-top: -6rem;
+    transform: scale(0.7);
+}
+
+.plus-hero {
+    transform: scale(0.7);
+    margin: auto -15rem;
+}
+
+.plus-subhero, .plus-button {
+    margin-top: -1rem;
+}
+
+.plus-button {
+    transform: scale(0.8);
+}
+
+.plus-modal {
+    transform: scale(0.5);
+    margin-top: -8rem;
+    overflow: hidden;
+}
+
+.modal-overflow {
+    overflow: hidden !important;
+}
+
+/* Audiovisual Intro */
+
+/* Audiovisual Projects */
+
+/* Audiovisual Project */
+
+/* Audiovisual Samples */
+
+/* Audiovisual Data */
+
+/* Audiovisual Links */
+.links-div {
+    margin-top: -8.5rem;
+    transform: scale(0.75);
+}
+
+.links-subhero {
+    margin-top: -1.25rem;
+}
+
+.links-buttons {
+    display: none;
+}
+
+.links-e {
+    margin-top: -2.5rem;
+}
+
+.links-button {
+    transform: scale(0.8);
+}
+
+.links-paragraph {
+    transform: scale(0.7);
+    margin: -3.75rem auto auto auto !important;
+}
+
+/* Developer Intro */
+
+/* Admin Dashboard */
+.btn-black, .modal.fade, .btn-lg {
+    transform: scale(0.85);
+}
+
+/* Only Dashboard */
+::-webkit-scrollbar {
+    margin-right: 0;
+}
+
+.audiovisual-photo, .feedback-photo, .developer-photo {
+    width: 35% !important;
+}
+
+.download.samples, .download.samples:hover {
+    width: 100% !important;
+}
+
+/* Error */
+.error-div {
+    margin-top: -15rem;
+    transform: scale(0.75);
+}
+
+.error-subhero {
+    margin-top: -2rem;
+}
+
+.error-button {
+    margin-top: 7rem !important;
+    transform: scale(0.8);
+}
+
+.error-plus {
+    top: 5rem !important;
+}
+
+.error-plus::after {
+    top: 350%;
+    left: -5rem;
+    width: 43rem;
+    transform: scale(0.7);
+}
+
+}

@@ -1,0 +1,256 @@
+@media (min-height: 568px) and (max-height: 568px) and (min-width: 320px) and (max-width: 320px) and (orientation: portrait) { 
+/* All */
+a:hover {
+    color: #fd7e14;
+    text-decoration: none;
+}
+
+.fa, .fa-solid, .fa-brands, .logo {
+    transform: scale(0.8);
+}
+
+h1, h2, h3, h4, h5, h6, span {
+    transform: scale(0.9);
+}
+
+.plus, .compare, .video {
+    left: 0.7rem;
+}
+
+.items-social {
+    margin-top: 2%;
+}
+
+.item-social {
+    margin: -0.25rem;
+}
+
+.plus::after{
+    top: 775%;
+    left: -3.25rem;
+    width: 25rem;
+    transform: scale(0.7);
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.btn-check:checked+.btn:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible, .btn:first-child:active:focus-visible, :not(.btn-check)+.btn:active:focus-visible {
+    border-color: transparent;
+}
+
+/* Index */
+.index-div {
+    margin-top: -2rem;
+    transform: scale(0.85);
+}
+
+.index-subhero, .index-button {
+    margin-top: 2rem;
+}
+
+.index-button {
+    transform: scale(0.8);
+}
+
+.accesibility-title {
+    margin-top: 0.5rem !important;
+    font-size: 1.05rem;
+}
+
+h5.accessibility.mb-4 {
+    margin: -1.8rem -8rem 0.75rem -7rem !important;
+    transform: scale(0.525);
+}
+
+.accessibility-btn {
+    margin-top: -3.25rem !important;
+    transform: scale(0.55);
+} 
+
+/* Intro */
+.intro-div {
+    margin-top: -3rem;
+    transform: scale(0.715);
+}
+
+.intro-subhero, .intro-button {
+    margin-top: 3rem;
+}
+
+.intro-buttons {
+    margin-left: -2rem !important;
+}
+
+.intro-button {
+    transform: scale(0.9);
+}
+
+/* Login */
+.login-form {
+    margin-top: -7.5rem !important;
+    transform: scale(0.925);
+}
+
+.btn-width {
+    transform: scale(0.8);
+    margin-left: -1.5rem;
+}
+
+/* Register */
+.register-div {
+    margin-top: -3rem;
+    transform: scale(0.75);
+}
+
+.register-hero {
+    transform: scale(0.75);
+    margin-left: -3rem;
+}
+
+.register-subhero, .register-button {
+    margin-top: 2rem;
+}
+
+.register-button {
+    transform: scale(0.8);
+}
+
+/* Credits */
+.wrapper {
+    overflow: hidden;
+    height: 150rem;
+    margin-bottom: 10rem;
+    margin-top: 0rem;
+}
+
+.credit {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    animation: 180s credits linear infinite;
+    display: inline;
+}
+
+.credits-title {
+    transform: scale(0.75);
+}
+
+.credits-type, .credits-based, .feedback, .quote, .name {
+    transform: scale(0.8);
+}
+
+/* Bloopers */ 
+
+/* Plus */
+.plus-div {
+    margin-top: -6rem;
+    transform: scale(0.7);
+}
+
+.plus-hero {
+    transform: scale(0.7);
+    margin: auto -4rem;
+}
+
+.plus-subhero {
+    margin-top: -1rem;
+}
+
+.plus-button {
+    transform: scale(0.8);
+    margin-top: 2rem;
+}
+
+.plus-modal {
+    transform: scale(0.85);
+    margin-top: -2rem;
+    overflow: hidden;
+}
+
+.modal-overflow {
+    overflow: hidden !important;
+}
+
+/* Audiovisual Intro */
+
+/* Audiovisual Projects */
+
+/* Audiovisual Project */
+
+/* Audiovisual Samples */
+
+/* Audiovisual Data */
+
+/* Audiovisual Links */
+.links-div {
+    margin-top: -6.25rem;
+    transform: scale(0.85);
+}
+
+.links-subhero {
+    margin-top: -1.25rem;
+}
+
+.links-buttons {
+    margin-top: -3.25rem;
+}
+
+.links-button {
+    transform: scale(0.8);
+}
+
+.links-paragraph {
+    transform: scale(0.7);
+    margin: -3.75rem auto auto auto !important;
+}
+
+.links-e {
+    display: none;
+}
+
+/* Developer Intro */
+
+/* Admin Dashboard */
+.btn-black, .modal.fade, .btn-lg {
+    transform: scale(0.85);
+}
+
+/* Only Dashboard */
+::-webkit-scrollbar {
+    margin-right: 0;
+}
+
+.download.samples, .download.samples:hover {
+    width: 100% !important;
+}
+
+/* Error */
+.error-div {
+    margin-top: -9rem;
+    transform: scale(0.75);
+}
+
+.error-subhero {
+    margin-top: -2rem;
+}
+
+.error-button {
+    margin-top: 13rem !important;
+    transform: scale(0.8);
+}
+
+.error-plus {
+    top: 12rem !important;
+}
+
+.error-plus::after {
+    top: 775%;
+    left: -3.25rem;
+    width: 25rem;
+    transform: scale(0.7);
+}
+}
