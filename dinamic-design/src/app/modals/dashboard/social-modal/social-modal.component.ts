@@ -8,13 +8,13 @@ import { POVService } from 'src/assets/services/pov.service';
 export class SocialModalComponent implements OnInit {
 
   //Arrays Social General
-  socialGeneral : any = [];
+  social_general : any = [];
 
   //Array Social Audiovisual
-  socialAudiovisual : any = [];
+  social_audiovisual : any = [];
 
   //Array Social Developer
-  socialDeveloper : any = [];
+  social_developer : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -26,9 +26,9 @@ export class SocialModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.socialGeneral = data.socialGeneral;
-      this.socialAudiovisual = data.socialAudiovisual;
-      this.socialDeveloper = data.socialDeveloper;
+      this.social_general = data.social_general;
+      this.social_audiovisual = data.social_audiovisual;
+      this.social_developer = data.social_developer;
       this.buttons = data.buttons;
     });
   }

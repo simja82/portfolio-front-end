@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class DeveloperProfileComponent implements OnInit {
 
   //Array Profile
-  profile : any = [];
+  developer_profile : any = [];
 
   //Array Sections
   sections : any = [];
@@ -21,7 +21,7 @@ export class DeveloperProfileComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.profile = data.profile;
+        this.developer_profile = data.developer_profile;
         this.sections = data.sections;
       })
     }

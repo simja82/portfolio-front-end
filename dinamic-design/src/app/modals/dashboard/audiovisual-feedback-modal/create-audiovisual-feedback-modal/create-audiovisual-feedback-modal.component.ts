@@ -12,6 +12,7 @@ export class CreateAudiovisualFeedbackModalComponent implements OnInit {
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
     fullname: new FormControl(''),
+    holding: new FormControl(''),
     image: new FormControl(''),
     feedback: new FormControl(''),
     url: new FormControl(''),
@@ -35,6 +36,7 @@ export class CreateAudiovisualFeedbackModalComponent implements OnInit {
     this.form = this.formBuilder.group(
       {
         fullname: ['', [Validators.required]],
+        holding: ['', [Validators.required]],
         image: ['', [Validators.required]],
         feedback: ['', [Validators.required]],
         url: ['', [Validators.required]],

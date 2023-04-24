@@ -4,13 +4,27 @@
             <div class="col-10 m-auto">
                 <div class="card">
                     <div class="d-flex justify-content-between">
-                        <a *ngFor="let item of dataList" [href]="item.file" class="btn btn-black-medium download" target="_blank">
+                        <a [href]="data_list[0].file" class="btn btn-black-medium download" target="_blank">
                             <div class="d-flex justify-content-end">
                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                             </div>
-                            <h5 class="my-1">{{item.title}}</h5>
-                            <small class="text-muted mb-4">{{item.register}} <i class="fa-regular fa-copyright"></i></small>
+                            <h5 class="my-1">Documentos</h5>
+                            <small class="text-muted mb-4">{{data_list[0].register}} <i class="fa-regular fa-copyright"></i></small>
                         </a>
+                        <a [href]="data_list[1].file" class="btn btn-black-medium download" target="_blank">
+                            <div class="d-flex justify-content-end">
+                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                            </div>
+                            <h5 class="my-1">Proyectos</h5>
+                            <small class="text-muted mb-4">{{data_list[1].register}} <i class="fa-regular fa-copyright"></i></small>
+                        </a>
+                        <a [href]="data_list[2].file" class="btn btn-black-medium download" target="_blank">
+                            <div class="d-flex justify-content-end">
+                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                            </div>
+                            <h5 class="my-1">Muestras</h5>
+                            <small class="text-muted mb-4">{{data_list[2].register}} <i class="fa-regular fa-copyright"></i></small>
+                        </a>                                                
                     </div>
                 </div>
             </div>

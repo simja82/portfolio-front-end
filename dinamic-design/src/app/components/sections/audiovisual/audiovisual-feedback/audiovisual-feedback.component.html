@@ -1,12 +1,12 @@
 <section class="feedback d-flex justify-content-center w-75 m-auto text-center">
     <div class="container">
-        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{feedbackIntro.title}}</span></h3>                                    
+        <h3 class="d-flex justify-content-center"><span class="text-orange text-center mb-3">Feedbacks</span></h3>                                    
         <h6>
-            {{feedbackIntro.lineOne}} 
+            {{feedback_intro.line_one}} 
             <br><br>
-            {{feedbackIntro.lineTwo}}
+            {{feedback_intro.line_two}}
             <br><br>    
-            {{feedbackIntro.lineThree}} 
+            {{feedback_intro.line_three}} 
         </h6>
     </div>        
 </section>
@@ -24,7 +24,8 @@
                             </div> 
                             <div class="card-body">
                                 <p class="card-text">{{say.feedback}}</p>
-                                <h6>{{say.name}} {{say.lastname}}</h6>
+                                <h6>{{say.fullname}}</h6>
+                                <h6>{{say.holding}}</h6>
                             </div>
                         </div>
                     </a>
@@ -33,6 +34,6 @@
             </div>
         </div>
     </div>  
-    <h5 class="w-75 text-center m-auto pt-4 mb-2">{{feedbackIntro.subtitle}}</h5>
-    <p class="w-75 text-center m-auto mb-2">{{feedbackIntro.paragraph}}</p>
+    <h5 class="w-75 text-center m-auto pt-4 mb-2">{{feedback_intro.subtitle}}</h5>
+    <p class="w-75 text-center m-auto mb-2">{{feedback_intro.paragraph}}</p>
 </section>

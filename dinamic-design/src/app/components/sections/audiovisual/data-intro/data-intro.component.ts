@@ -9,7 +9,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class DataIntroComponent implements OnInit {
 
   //Array Data Page
-  dataPage : any = [];
+  data_page : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -19,7 +19,7 @@ export class DataIntroComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.dataPage = data.dataPage;
+        this.data_page = data.data_page;
       })
     }
   

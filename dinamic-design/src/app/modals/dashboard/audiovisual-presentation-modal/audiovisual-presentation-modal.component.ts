@@ -8,16 +8,16 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualPresentationModalComponent implements OnInit {
   
   //Array Audiovisual Presentation
-  audiovisualPresentation : any = [];
+  audiovisual_presentation : any = [];
 
   //Array Minibio
   minibio : any = [];
 
   //Array My Work
-  myWork : any = [];
+  mywork : any = [];
 
   //Array I Want
-  iWant : any = [];
+  iwant : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -29,10 +29,10 @@ export class AudiovisualPresentationModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.audiovisualPresentation = data.audiovisualPresentation;
+      this.audiovisual_presentation = data.audiovisual_presentation;
       this.minibio = data.minibio;
-      this.myWork = data.myWork;
-      this.iWant = data.iWant;
+      this.mywork = data.mywork;
+      this.iwant = data.iwant;
       this.buttons = data.buttons;
     })
   }

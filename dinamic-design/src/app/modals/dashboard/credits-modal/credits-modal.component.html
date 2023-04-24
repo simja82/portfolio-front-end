@@ -22,7 +22,7 @@
                     </div>
                     <hr class="w-75 m-auto my-3">    
                     <h5 class="text-center mt-2">{{credits.saying}}</h5>
-                    <div *ngFor="let credit of singleCredits" class="single-credit">
+                    <div *ngFor="let credit of single_credits" class="single-credit">
                         <h6 class="text-center mt-4 mx-5">{{credit.feedback}}</h6>
                         <p class="mx-5 text-center">{{credit.name}}</p>
                         <div class="d-flex justify-content-center mt-2 mb-3">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="container">
                         <div class="row mt-5">
-                            <div *ngFor="let credit of doubleCredits" class="col-6">
+                            <div *ngFor="let credit of double_credits" class="col-6">
                                 <h6 class="text-center mt-4">{{credit.feedback}}</h6>
                                 <p class="mx-5 text-center">{{credit.name}}</p>
                                 <div class="d-flex justify-content-center my-3">
@@ -52,7 +52,7 @@
                     </div>
                     <div class="container">
                         <div class="row mt-5">
-                            <div *ngFor="let credit of tripleCredits" class="col-4">
+                            <div *ngFor="let credit of triple_credits" class="col-4">
                                 <h6 class="text-center mt-4">{{credit.feedback}}</h6>
                                 <p class="mx-5 text-center">{{credit.name}}</p>
                                 <div class="d-flex justify-content-center mt-1 mb-3">
@@ -112,7 +112,7 @@
                         <button class="btn btn-black-extra-mini" data-bs-target="#createMoreModal" data-bs-toggle="modal"><i class="fa-solid fa-circle-plus"></i></button>
                     </div>
                     <div class="row text-center mt-5">
-                        <h5 class='text-700'>{{music.title}}</h5>
+                        <h5 class='text-700'>Música</h5>
                         <div class="col-12 mb-3">
                             <blockquote class='text-700'>{{music.song}}</blockquote>
                             <div class='text-uppercase'>{{music.author}}</div>
@@ -126,10 +126,10 @@
                     </div>
                     <div class="row text-center mt-5">
                         <div class="bloopers">
-                            <h5 class='text-700'>{{bloopersCredits.see}}</h5>
+                            <h5 class='text-700'>{{blooper_credits.see}}</h5>
                             <div class="col-12 mb-3">
-                                <span><i [class]="bloopersCredits.icon" class="fa-3x"></i></span>
-                                <div class='text-uppercase text-700'>{{bloopersCredits.closing}}</div>
+                                <span><i [class]="blooper_credits.icon" class="fa-3x"></i></span>
+                                <div class='text-uppercase text-700'>{{blooper_credits.closing}}</div>
                             </div>                                        
                         </div>
                     </div>

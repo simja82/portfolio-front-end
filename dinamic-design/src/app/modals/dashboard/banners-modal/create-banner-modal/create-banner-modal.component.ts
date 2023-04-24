@@ -11,6 +11,7 @@ export class CreateBannerModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
+    title: new FormControl(''),
     url: new FormControl(''),
     description: new FormControl(''),
     hero: new FormControl(''),
@@ -34,6 +35,7 @@ export class CreateBannerModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
+        title: ['', [Validators.required]],
         url: ['', [Validators.required]],
         description: ['', [Validators.required]],
         hero: ['', [Validators.required]],

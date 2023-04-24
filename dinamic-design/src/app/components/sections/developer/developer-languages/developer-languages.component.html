@@ -6,7 +6,7 @@
                 <div *ngFor="let language of languages" class="col-12 my-3">
                     <div class="text-center mt-2">
                         <div class="progress height-progress mx-4">
-                            <div [class]="language.animation" role="progressbar" aria-valuemin="0" aria-valuemax="100" [style.width.%]="language.percentage"></div>
+                            <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100" [style.width.%]="language.percentage"></div>
                         </div>
                         <h5 class="mt-3">{{language.language}} - {{language.level}}</h5>
                     </div>

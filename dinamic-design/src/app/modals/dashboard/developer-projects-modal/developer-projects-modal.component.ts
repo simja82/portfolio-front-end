@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class DeveloperProjectsModalComponent implements OnInit {
 
   //Array Developer Projects
-  developerProjects : any = [];
+  developer_projects : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -20,7 +20,7 @@ export class DeveloperProjectsModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.developerProjects = data.developerProjects;
+      this.developer_projects = data.developer_projects;
       this.buttons = data.buttons;
     })
   }

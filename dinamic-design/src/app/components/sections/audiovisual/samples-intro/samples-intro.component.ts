@@ -9,7 +9,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class SamplesIntroComponent implements OnInit {
 
   //Array Samples Page
-  samplesPage : any = [];
+  samples_page : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -19,7 +19,7 @@ export class SamplesIntroComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.samplesPage = data.samplesPage;
+        this.samples_page = data.samples_page;
       })
     }
   

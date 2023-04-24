@@ -9,14 +9,14 @@
                 <div class="modal-body">
                     <div class="container text-center">
                         <div class="row g-4">
-                            <div *ngFor="let project of developerProjects" class="col-12 col-sm-12 col-md-12 col-lg-6">
+                            <div *ngFor="let project of developer_projects" class="col-12 col-sm-12 col-md-12 col-lg-6">
                                 <div class="card">
-                                    <img [src]="project.image" class="card-img-top" [alt]="project.alt">
+                                    <img [src]="project.image" class="card-img-top">
                                     <div class="card-body">
                                         <h5>{{project.title}}</h5>                                        
                                         <p class="card-text">{{project.description}}</p>
                                         <div class="mt-3">
-                                            <i [class]="project.icon"></i>
+                                            <i class="fa-solid fa-link orange"></i>
                                         </div>
                                     </div>
                                 </div>

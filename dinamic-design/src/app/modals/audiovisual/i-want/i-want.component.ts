@@ -9,7 +9,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class IWantComponent implements OnInit {
 
   //Array I Want
-  iWant : any = [];
+  iwant : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -22,7 +22,7 @@ export class IWantComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.iWant = data.iWant;
+        this.iwant = data.iwant;
       })
     }
   

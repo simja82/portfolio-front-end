@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualFeedbackComponent implements OnInit {
 
   //Array Feedback Intro
-  feedbackIntro : any = [];
+  feedback_intro : any = [];
 
   //Array Saying
   saying : any = [];
@@ -21,7 +21,7 @@ export class AudiovisualFeedbackComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.feedbackIntro = data.feedbackIntro;
+      this.feedback_intro = data.feedback_intro;
       this.saying = data.saying;
     })
   }

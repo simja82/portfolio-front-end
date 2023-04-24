@@ -1,25 +1,25 @@
 <section class="experience mt-5 pt-5">
     <div class="container w-75">
         <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-wrench"></i> <span class="text-orange text-center ms-3"> {{sections.experiences}}</span></h3>
-        <div *ngFor="let job of experiences" class="card ms-auto me-auto my-3">          
+        <div *ngFor="let experience of experiences" class="card ms-auto me-auto my-3">          
             <div class="row">
                 <div class="col-md-5">
-                    <img [src]="job.image" class="img-fluid rounded-start" [alt]="job.alt">
+                    <img [src]="experience.image" class="img-fluid rounded-start">
                     <div class="text-center mt-4">
-                        <h5>{{job.position}}</h5>
-                        <h6>{{job.place}}</h6>
-                        <p>{{job.starting}} - {{job.ending}}</p>      
+                        <h5>{{experience.position}}</h5>
+                        <h6>{{experience.place}}</h6>
+                        <p>{{experience.starting}} - {{experience.ending}}</p>      
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="card-body ms-2 mt-2">
-                        <h6>{{job.description}}</h6>
-                        <p class="card-text">{{job.textDescription}}</p>
-                        <h6>{{job.tasks}}</h6>
+                        <h6>Descripción</h6>
+                        <p class="card-text">{{experience.description}}</p>
+                        <h6>Tareas</h6>
                         <ul class="list-group mt-4 pt-2">
-                            <li class="list-group-item">{{job.taskOne}}</li>
-                            <li class="list-group-item">{{job.taskTwo}}</li>
-                            <li class="list-group-item">{{job.taskThree}}</li>
+                            <li class="list-group-item">{{experience.task_one}}</li>
+                            <li class="list-group-item">{{experience.task_two}}</li>
+                            <li class="list-group-item">{{experience.task_three}}</li>
                         </ul>
                     </div>
                 </div>  

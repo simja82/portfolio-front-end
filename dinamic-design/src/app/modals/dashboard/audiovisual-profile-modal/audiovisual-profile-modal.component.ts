@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualProfileModalComponent implements OnInit {
   
   //Array Audiovisual Profile
-  audiovisualProfile : any = [];
+  audiovisual_profile : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -20,7 +20,7 @@ export class AudiovisualProfileModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.audiovisualProfile = data.audiovisualProfile;
+      this.audiovisual_profile = data.audiovisual_profile;
       this.buttons = data.buttons;
     })
   }

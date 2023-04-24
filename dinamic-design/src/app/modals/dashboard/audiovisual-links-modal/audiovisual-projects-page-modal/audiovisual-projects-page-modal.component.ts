@@ -11,7 +11,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualProjectsPageModalComponent implements OnInit {
 
   //Array Projects Page
-  projectsPage : any = [];
+  projects_page : any = [];
 
   //Array Series del Servicio Series
   series: any [] = [];
@@ -38,7 +38,7 @@ export class AudiovisualProjectsPageModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.projectsPage = data.projectsPage;
+      this.projects_page = data.projects_page;
       this.buttons = data.buttons;
     })
   }

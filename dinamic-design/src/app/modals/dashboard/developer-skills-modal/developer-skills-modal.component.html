@@ -36,7 +36,7 @@
                             <h4 class="text-center">Blandas</h4>
                             <div *ngFor="let soft of softs" class="col-4 mt-3">
                                 <div class="text-center mt-2">
-                                    <h4><span [class]="soft.badge" class="px-3 py-2">{{soft.soft}}</span></h4>
+                                    <h4><span class="badge text-bg-dark px-3 py-2">{{soft.soft}}</span></h4>
                                     {{soft.percentage}}%
                                     <div class="d-flex justify-content-center my-3">
                                         <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperSoftSkillModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
@@ -58,7 +58,7 @@
                             <div *ngFor="let language of languages" class="col-12 my-3">
                                 <div class="text-center mt-2">
                                     <div class="progress mx-4">
-                                        <div [class]="language.animation" role="progressbar" aria-label="English" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="language.percentage"></div>
+                                        <div class="progress-bar bg-dark progress-bar-animated" role="progressbar" aria-label="English" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [style.width.%]="language.percentage"></div>
                                     </div>
                                     {{language.language}} - {{language.level}}
                                     <div class="d-flex justify-content-center mt-3">

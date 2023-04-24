@@ -1,20 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from '@angular/forms';
 import { POVService } from 'src/assets/services/pov.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-edit-info-cv-modal',
-  templateUrl: './edit-info-cv-modal.component.html'
+  selector: 'app-edit-developer-cv-modal',
+  templateUrl: './edit-developer-cv-modal.component.html',
+  styleUrls: ['./edit-developer-cv-modal.component.css']
 })
-export class EditInfoCvModalComponent implements OnInit {
+export class EditDeveloperCvModalComponent {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
     lineOne: new FormControl(''),
     lineTwo: new FormControl(''),
-    author: new FormControl(''),
-    credit: new FormControl(''),
+    lineThree: new FormControl(''),
+    lineFour: new FormControl(''),
+    firstIcon: new FormControl(''),
+    lineFive: new FormControl(''),
+    secondIcon: new FormControl(''),
+    lineSix: new FormControl(''),    
   });
   submitted = false;
 
@@ -36,8 +41,12 @@ export class EditInfoCvModalComponent implements OnInit {
       {
         lineOne: ['', [Validators.required]],
         lineTwo: ['', [Validators.required]],
-        author: ['', [Validators.required]],
-        credit: ['', [Validators.required]],
+        lineThree: ['', [Validators.required]],
+        lineFour: ['', [Validators.required]],
+        firstIcon: ['', [Validators.required]],
+        lineFive: ['', [Validators.required]],
+        secondIcon: ['', [Validators.required]],
+        lineSix: ['', [Validators.required]],
       }
     );
         
@@ -76,12 +85,13 @@ export class EditInfoCvModalComponent implements OnInit {
 
   //Sweet Alert Success  
   alertWithSuccess(){
-    Swal.fire('Sí!!!', 'La info ha sido actualizada', 'success')
+    Swal.fire('Sí!!!', 'La sección ha sido actualizada', 'success')
   }
 
   //Sweet Alert Warning
   alertWithWarning(){
-    Swal.fire('Nope!!!', 'La info no ha sido actualizada', 'warning')
+    Swal.fire('Nope!!!', 'La sección no ha sido actualizada', 'warning')
   }
 
 }
+ 

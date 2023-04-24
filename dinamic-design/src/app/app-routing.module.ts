@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AudiovisualComponent } from './pages/audiovisual/audiovisual.component';
 import { BloopersComponent } from './pages/bloopers/bloopers.component';
 import { CreditsComponent } from './pages/credits/credits.component';
-import { CVComponent } from './pages/cv/cv.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DataComponent } from './pages/data/data.component';
 import { DeveloperComponent } from './pages/developer/developer.component';
@@ -21,7 +20,6 @@ import { SerieComponent } from './components/sections/audiovisual/projects-serie
 import { LongshotComponent } from './components/sections/audiovisual/projects-longshots/longshot/longshot.component';
 import { OtherComponent } from './components/sections/audiovisual/projects-others/other/other.component';
 import { ProofreaderComponent } from './pages/proofreader/proofreader.component';
-import { FeedbackComponent } from './pages/feedback/feedback.component';
 
 const routes: Routes = [
   { path: '', component:IndexComponent },
@@ -40,10 +38,8 @@ const routes: Routes = [
   { path: 'audiovisual/data', component:DataComponent },
   { path: 'audiovisual/links', component:LinksComponent },
   { path: 'developer/intro', component:DeveloperComponent },
-  { path: 'developer/cv', component:CVComponent },
   { path: 'admin/dashboard', component:DashboardComponent },
   { path: 'proofreader', component:ProofreaderComponent},
-  { path: 'feedback', component:FeedbackComponent},
   { path: '**', component:ErrorComponent }
 ];
 

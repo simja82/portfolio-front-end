@@ -11,7 +11,7 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-5">
-                                    <img [src]="experience.image" class="img-fluid rounded-start" [alt]="experience.alt">
+                                    <img [src]="experience.image" class="img-fluid rounded-start">
                                     <div class="text-center mt-4">
                                         <h5>{{experience.position}}</h5>
                                         <h6>{{experience.place}}</h6>
@@ -20,13 +20,13 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="card-body ms-2 mt-2">
-                                        <h6>{{experience.description}}:</h6>
-                                        <p class="card-text">{{experience.textDescription}}</p>
-                                        <h6>{{experience.tasks}}</h6>
+                                        <h6>Descripción</h6>
+                                        <p class="card-text">{{experience.description}}</p>
+                                        <h6>Tareas</h6>
                                         <ul class="list-group">
-                                            <li class="list-group-item">{{experience.taskOne}}</li>
-                                            <li class="list-group-item">{{experience.taskTwo}}</li>
-                                            <li class="list-group-item">{{experience.taskThree}}</li>
+                                            <li class="list-group-item">{{experience.task_one}}</li>
+                                            <li class="list-group-item">{{experience.task_two}}</li>
+                                            <li class="list-group-item">{{experience.task_three}}</li>
                                         </ul>
                                     </div>
                                 </div>  

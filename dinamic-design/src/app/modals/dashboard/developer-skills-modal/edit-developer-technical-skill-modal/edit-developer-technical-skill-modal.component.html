@@ -10,7 +10,15 @@
                     <div class="form-group">
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-4 mb-2">
+                                <div class="col-6 mb-2">
+                                    <label for="progress" class="form-label">{{forms[72].value}}</label>
+                                    <input type="text" class="form-control" id="progress" placeholder="Progreso" formControlName="progress" [ngClass]="{ 'is-invalid': submitted && f['progress'].errors, 'is-valid': !f['progress'].errors && f['progress'].touched }">
+                                    <div id="progressHelp" class="form-text">{{helpers[66].value}}</div>
+                                    <div *ngIf="submitted && f['progress'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['progress'].errors['required']">Es preciso ingresar un progreso</div>
+                                    </div>
+                                </div>                                
+                                <div class="col-6 mb-2">
                                     <label for="icon" class="form-label">{{forms[2].value}}</label>
                                     <input type="text" class="form-control" id="icon" placeholder="Ícono" formControlName="icon" [ngClass]="{ 'is-invalid': submitted && f['icon'].errors, 'is-valid': !f['icon'].errors && f['icon'].touched }">
                                     <div id="iconHelp" class="form-text">{{helpers[2].value}}</div>
@@ -18,7 +26,7 @@
                                         <div *ngIf="f['icon'].errors['required']">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mb-2">
+                                <div class="col-6 mb-2">
                                     <label for="skill" class="form-label">{{forms[58].value}}</label>
                                     <input type="text" class="form-control" id="skill" placeholder="Skill" formControlName="skill" [ngClass]="{ 'is-invalid': submitted && f['skill'].errors, 'is-valid': !f['skill'].errors && f['skill'].touched }">
                                     <div id="skillHelp" class="form-text">{{helpers[52].value}}</div>
@@ -26,7 +34,7 @@
                                         <div *ngIf="f['skill'].errors['required']">Es preciso ingresar una habilidad</div>
                                     </div>
                                 </div>
-                                <div class="col-4 mb-2">
+                                <div class="col-6 mb-2">
                                     <label for="percentage" class="form-label">{{forms[59].value}}</label>
                                     <input type="text" class="form-control" id="percentage" placeholder="Porcentaje" formControlName="percentage" [ngClass]="{ 'is-invalid': submitted && f['percentage'].errors, 'is-valid': !f['percentage'].errors && f['percentage'].touched }">
                                     <div id="percentageHelp" class="form-text">{{helpers[53].value}}</div>

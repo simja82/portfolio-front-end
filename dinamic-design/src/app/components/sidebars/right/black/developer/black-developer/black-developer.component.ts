@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class BlackDeveloperComponent implements OnInit {
 
   //Array Social Developer
-  socialDeveloper : any = [];
+  social_developer : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -18,7 +18,7 @@ export class BlackDeveloperComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.socialDeveloper = data.socialDeveloper;
+        this.social_developer = data.social_developer;
       })
     }
   

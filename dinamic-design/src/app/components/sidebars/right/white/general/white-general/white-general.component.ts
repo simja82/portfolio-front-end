@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class WhiteGeneralComponent implements OnInit {
   
   //Array Social General
-  socialGeneral : any = [];
+  social_general : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -18,7 +18,7 @@ export class WhiteGeneralComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.socialGeneral = data.socialGeneral;
+        this.social_general = data.social_general;
       })
     }
   

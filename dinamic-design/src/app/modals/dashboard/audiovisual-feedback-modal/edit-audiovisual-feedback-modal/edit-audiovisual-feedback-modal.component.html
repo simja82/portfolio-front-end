@@ -19,6 +19,14 @@
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">
+                                    <label for="holding" class="form-label">{{forms[55].value}}</label>
+                                    <input type="text" class="form-control" id="holding" placeholder="Puesto" formControlName="holding" [ngClass]="{ 'is-invalid': submitted && f['holding'].errors, 'is-valid': !f['holding'].errors && f['holding'].touched }">
+                                    <div id="holdingHelp" class="form-text">{{helpers[49].value}}</div>
+                                    <div *ngIf="submitted && f['holding'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['holding'].errors['required']">Es preciso ingresar el puesto</div>
+                                    </div>
+                                </div>                                
+                                <div class="col-12 pt-3">
                                     <label for="image" class="form-label">{{forms[27].value}}</label>
                                     <input type="text" class="form-control" id="image" placeholder="URL Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
                                     <div id="imageHelp" class="form-text">{{helpers[3].value}}</div>

@@ -11,13 +11,13 @@ export class CreditsModalComponent implements OnInit {
   credits : any = [];
 
   //Array Single Credits
-  singleCredits : any = [];
+  single_credits : any = [];
 
   //Array Double Credits
-  doubleCredits : any = [];
+  double_credits : any = [];
 
   //Array Triple Credits
-  tripleCredits : any = [];
+  triple_credits : any = [];
 
   //Array Thanks
   thanks : any = [];
@@ -32,7 +32,7 @@ export class CreditsModalComponent implements OnInit {
   music : any = [];
 
   //Array Blooper Credits
-  bloopersCredits : any = [];
+  blooper_credits : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -45,14 +45,14 @@ export class CreditsModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.credits = data.credits;
-      this.singleCredits = data.singleCredits;
-      this.doubleCredits = data.doubleCredits;
-      this.tripleCredits = data.tripleCredits;
+      this.single_credits = data.single_credits;
+      this.double_credits = data.double_credits;
+      this.triple_credits = data.triple_credits;
       this.thanks = data.thanks;
       this.made = data.made;
       this.more = data.more;
       this.music = data.music;
-      this.bloopersCredits = data.bloopersCredits;
+      this.blooper_credits = data.blooper_credits;
       this.buttons = data.buttons;
     })
   }

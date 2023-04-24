@@ -1,4 +1,4 @@
-<section class="background" [ngStyle]="{'background-image': 'url(' + login.image + ')'}" alt="Teclado de computadora con una llave antigua sobre él" title="Login">  
+<section class="background" [ngStyle]="{'background-image': 'url(' + login.image + ')'}" title="Login">  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg d-flex justify-content-between container-fluid">
@@ -16,7 +16,7 @@
     <!-- Form Login -->
     <div class="col-8 m-auto section-top">
         <div class="card text-bg-light text-center">
-            <div class="card-header">{{login.title}}</div>
+            <div class="card-header">Login</div>
             <div class="card-body col-10 m-auto pb-4 mt-1">
                 <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <div class="form-group mb-3">
@@ -39,7 +39,7 @@
                     </div>  
                     <button type="submit" class="btn btn-outline-dark btn-width">{{buttons[0].value}}</button>
                 </form>
-                <div id="registerHelp" class="form-text mt-4">{{helpers[1].value}} <a routerLink="/register">{{login.more}}</a></div>
+                <div id="registerHelp" class="form-text mt-4">{{helpers[1].value}} <a routerLink="/register">Más.</a></div>
             </div>
         </div>            
     </div>

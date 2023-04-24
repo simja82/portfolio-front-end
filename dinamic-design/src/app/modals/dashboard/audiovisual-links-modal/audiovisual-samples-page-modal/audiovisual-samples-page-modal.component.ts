@@ -9,7 +9,7 @@ import { SamplesService } from 'src/assets/services/samples/samples.service';
 export class AudiovisualSamplesPageModalComponent implements OnInit {
 
   //Array Samples Page
-  samplesPage : any = [];
+  samples_page : any = [];
 
   //Array Samples del Servicio Samples
   samples: any [] = [];
@@ -28,7 +28,7 @@ export class AudiovisualSamplesPageModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.samplesPage = data.samplesPage;
+      this.samples_page = data.samples_page;
       this.buttons = data.buttons;
     })
   }

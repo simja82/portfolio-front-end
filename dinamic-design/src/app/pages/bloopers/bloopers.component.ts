@@ -13,7 +13,7 @@ export class BloopersComponent implements OnInit {
   bloopers : any = [];
 
   //Array Line Bloopers
-  lineBloopers : any = [];
+  line_bloopers : any = [];
 
   //Array Music
   music : any = [];
@@ -32,7 +32,7 @@ export class BloopersComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.bloopers = data.bloopers;
-      this.lineBloopers = data.lineBloopers;
+      this.line_bloopers = data.line_bloopers;
       this.music = data.music;
     })
   }

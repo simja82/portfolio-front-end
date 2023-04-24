@@ -11,9 +11,9 @@ export class EditAudiovisualClosingModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    lineOne: new FormControl(''),
-    lineTwo: new FormControl(''),
-    lineThree: new FormControl(''),
+    line_one: new FormControl(''),
+    line_two: new FormControl(''),
+    line_three: new FormControl(''),
     icon: new FormControl(''),
   });
   submitted = false;
@@ -34,9 +34,9 @@ export class EditAudiovisualClosingModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        lineOne: ['', [Validators.required]],
-        lineTwo: ['', [Validators.required]],
-        lineThree: ['', [Validators.required]],
+        line_one: ['', [Validators.required]],
+        line_two: ['', [Validators.required]],
+        line_three: ['', [Validators.required]],
         icon: ['', [Validators.required]],
       }
     );

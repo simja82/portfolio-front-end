@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class WhiteAudiovisualComponent implements OnInit {
 
   //Array Social Audiovisual
-  socialAudiovisual : any = [];
+  social_audiovisual : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -18,7 +18,7 @@ export class WhiteAudiovisualComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.socialAudiovisual = data.socialAudiovisual;
+        this.social_audiovisual = data.social_audiovisual;
       })
     }
   

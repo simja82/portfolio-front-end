@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class DataListComponent implements OnInit {
 
   //Array Data List
-  dataList : any = [];
+  data_list : any = [];
   
   //Inyección de Service
     constructor (private povService:POVService) {
@@ -18,7 +18,7 @@ export class DataListComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.dataList = data.dataList;
+        this.data_list = data.data_list;
       })
     }
   

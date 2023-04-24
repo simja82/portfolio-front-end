@@ -11,9 +11,9 @@ export class EditIntroAudiovisualFeedbackModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    lineOne: new FormControl(''),
-    lineTwo: new FormControl(''),
-    lineThree: new FormControl(''),
+    line_one: new FormControl(''),
+    line_two: new FormControl(''),
+    line_three: new FormControl(''),
     subtitle: new FormControl(''),
     paragraph: new FormControl(''),
   });
@@ -35,9 +35,9 @@ export class EditIntroAudiovisualFeedbackModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        lineOne: ['', [Validators.required]],
-        lineTwo: ['', [Validators.required]],
-        lineThree: ['', [Validators.required]],
+        line_one: ['', [Validators.required]],
+        line_two: ['', [Validators.required]],
+        line_three: ['', [Validators.required]],
         subtitle: ['', [Validators.required]],
         paragraph: ['', [Validators.required]],
       }

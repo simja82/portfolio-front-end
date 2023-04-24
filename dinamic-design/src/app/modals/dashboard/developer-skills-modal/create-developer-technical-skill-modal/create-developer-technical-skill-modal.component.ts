@@ -11,6 +11,7 @@ export class CreateDeveloperTechnicalSkillModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
+    progress: new FormControl(''),
     icon: new FormControl(''),
     skill: new FormControl(''),
     percentage: new FormControl(''),
@@ -33,6 +34,7 @@ export class CreateDeveloperTechnicalSkillModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
+        progress: ['', [Validators.required]],        
         icon: ['', [Validators.required]],
         skill: ['', [Validators.required]],
         percentage: ['', [Validators.required]],

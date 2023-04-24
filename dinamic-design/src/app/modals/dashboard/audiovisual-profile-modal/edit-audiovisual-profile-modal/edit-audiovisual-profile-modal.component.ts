@@ -12,10 +12,12 @@ export class EditAudiovisualProfileModalComponent implements OnInit {
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
     title: new FormControl(''),
-    image: new FormControl(''),
+    intro: new FormControl(''),
+    photo: new FormControl(''),
     author: new FormControl(''),
     credit: new FormControl(''),
-    phrase: new FormControl(''),
+    one: new FormControl(''),
+    two: new FormControl(''),
   });
   submitted = false;
 
@@ -36,10 +38,12 @@ export class EditAudiovisualProfileModalComponent implements OnInit {
     this.form = this.formBuilder.group(
       {
         title: ['', [Validators.required]],
-        image: ['', [Validators.required]],
+        intro: ['', [Validators.required]],
+        photo: ['', [Validators.required]],
         author: ['', [Validators.required]],
         credit: ['', [Validators.required]],
-        phrase: ['', [Validators.required]],
+        one: ['', [Validators.required]],
+        two: ['', [Validators.required]],
       }
     );
         

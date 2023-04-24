@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualDoubleCreditsComponent implements OnInit {
 
   //Array Double Credits
-  doubleCredits : any = [];
+  double_credits : any = [];
 
   //Inyección de Service
   constructor (private povService: POVService) { }
@@ -17,7 +17,7 @@ export class AudiovisualDoubleCreditsComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.doubleCredits = data.doubleCredits;
+      this.double_credits = data.double_credits;
     })
   }
 

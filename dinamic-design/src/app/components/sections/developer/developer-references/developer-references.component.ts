@@ -7,8 +7,8 @@ import { POVService } from 'src/assets/services/pov.service';
 })
 export class DeveloperReferencesComponent implements OnInit {
 
-  //Array References
-  references : any = [];
+  //Array Comments
+  comments : any = [];
 
   //Array Sections
   sections : any = [];
@@ -21,7 +21,7 @@ export class DeveloperReferencesComponent implements OnInit {
       //Almacenamiento de datos
       this.povService.getData().subscribe(data => {
         //Información a mostrar
-        this.references = data.references;
+        this.comments = data.comments;
         this.sections = data.sections;
       })
     }

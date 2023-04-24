@@ -3,20 +3,20 @@
         <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="audiovisualDataPageModalLabel">{{dataPage.title}}</h1>
+                    <h1 class="modal-title fs-5" id="audiovisualDataPageModalLabel">Data</h1>
                     <i class="fa-solid fa-rotate-left" data-bs-target="#audiovisualLinksModal" data-bs-toggle="modal" aria-label="Volver"></i>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3"> {{dataPage.title}}</span></h4>
+                        <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3">Data</span></h4>
                         <p class="text-center">
-                            {{dataPage.lineOne}}
+                            {{data_page.line_one}}
                             <br><br>    
-                            {{dataPage.lineTwo}}
+                            {{data_page.line_two}}
                             <br><br>
-                            {{dataPage.lineThree}}
+                            {{data_page.line_three}}
                             <br><br>
-                            {{dataPage.lineFour}}
+                            {{data_page.line_four}}
                         </p>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
@@ -28,20 +28,40 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="d-flex justify-content-between">
-                                        <a *ngFor="let data of dataList" class="btn btn-black-medium download arrow">
+                                        <a class="btn btn-black-medium download arrow">
                                             <div class="d-flex justify-content-end">
                                               <small class="text-muted"><i class="fa-solid fa-download"></i></small>
                                             </div>
-                                            <h5 class="my-1">{{data.title}}</h5>
-                                            <small class="text-muted mb-4">{{data.register}} <i class="fa-regular fa-copyright"></i></small>
+                                            <h5 class="my-1">Documentos</h5>
+                                            <small class="text-muted mb-4">{{data_list[0].register}} <i class="fa-regular fa-copyright"></i></small>
+                                        </a>
+                                        <a class="btn btn-black-medium download arrow">
+                                            <div class="d-flex justify-content-end">
+                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                                            </div>
+                                            <h5 class="my-1">Proyectos</h5>
+                                            <small class="text-muted mb-4">{{data_list[1].register}} <i class="fa-regular fa-copyright"></i></small>
+                                        </a>
+                                        <a class="btn btn-black-medium download arrow">
+                                            <div class="d-flex justify-content-end">
+                                              <small class="text-muted"><i class="fa-solid fa-download"></i></small>
+                                            </div>
+                                            <h5 class="my-1">Muestras</h5>
+                                            <small class="text-muted mb-4">{{data_list[2].register}} <i class="fa-regular fa-copyright"></i></small>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="container">
                                     <div class="mt-2 pt-3 pb-3 d-flex justify-content-between">      
-                                        <div *ngFor="let button of dataList" class="col-4 text-center">
-                                            <button type="button" class="btn btn-black-link btn-lg" [attr.data-bs-target]="'#'+button.target" data-bs-toggle="modal">{{button.title}}</button>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableDocumentsModal" data-bs-toggle="modal">Documentos</button>
                                         </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableProjectsModal" data-bs-toggle="modal">Proyectos</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button type="button" class="btn btn-black-link btn-lg" data-bs-target="#editAudiovisualDownloadableSamplesModal" data-bs-toggle="modal">Muestras</button>
+                                        </div>                                                                                
                                     </div> 
                                 </div>
                             </div>

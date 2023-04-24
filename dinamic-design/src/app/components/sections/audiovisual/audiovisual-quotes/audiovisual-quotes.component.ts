@@ -8,7 +8,7 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualQuotesComponent implements OnInit {
 
   //Array Quotes Intro
-  quotesIntro : any = [];
+  quotes_intro : any = [];
 
   //Array Quotes
   quotes : any = [];
@@ -21,7 +21,7 @@ export class AudiovisualQuotesComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.quotesIntro = data.quotesIntro;
+      this.quotes_intro = data.quotes_intro;
       this.quotes = data.quotes;
     })
   }

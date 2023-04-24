@@ -9,10 +9,10 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualDataPageModalComponent implements OnInit {
 
   //Array Data Page
-  dataPage : any = [];
+  data_page : any = [];
 
   //Array Data List
-  dataList : any = [];
+  data_list : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -24,8 +24,8 @@ export class AudiovisualDataPageModalComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.dataPage = data.dataPage;
-      this.dataList = data.dataList;
+      this.data_page = data.data_page;
+      this.data_list = data.data_list;
       this.buttons = data.buttons;
     })
   }

@@ -3,9 +3,9 @@
         <h3 class="d-flex justify-content-center mt-4 pb-4"><i class="fa-solid fa-code"></i> <span class="text-orange text-center ms-3"> {{sections.projects}}</span></h3>
         <div class="text-center">
             <div class="row g-4">
-                <div *ngFor="let project of developerProjects" class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div *ngFor="let project of developer_projects" class="col-12 col-sm-12 col-md-12 col-lg-6">
                     <div class="card">
-                        <img [src]="project.image" class="card-img-top" [alt]="project.alt">
+                        <img [src]="project.image" class="card-img-top">
                         <div class="card-body">
                             <h5>{{project.title}}</h5>                                        
                             <p class="card-text">{{project.description}}</p>

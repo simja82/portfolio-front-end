@@ -8,10 +8,10 @@ import { POVService } from 'src/assets/services/pov.service';
 export class AudiovisualBloopersComponent implements OnInit {
 
   //Arrays Icon Bloopers
-  iconBloopers : any = [];
+  icon_bloopers : any = [];
 
   //Arrays Line Bloopers
-  lineBloopers : any = [];
+  line_bloopers : any = [];
 
   //Inyección de Service
   constructor (private povService:POVService) {
@@ -21,8 +21,8 @@ export class AudiovisualBloopersComponent implements OnInit {
     //Almacenamiento de datos
     this.povService.getData().subscribe(data => {
       //Información a mostrar
-      this.iconBloopers = data.iconBloopers;
-      this.lineBloopers = data.lineBloopers;
+      this.icon_bloopers = data.icon_bloopers;
+      this.line_bloopers = data.line_bloopers;
     })
   }
   

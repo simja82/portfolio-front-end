@@ -3,7 +3,7 @@
         <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="audiovisualFeedbackModalLabel">{{feedbackIntro.title}}</h1>
+                    <h1 class="modal-title fs-5" id="audiovisualFeedbackModalLabel">{{feedback_intro.title}}</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
@@ -13,17 +13,17 @@
                                 <div class="card">
                                     <div class="card-body">  
                                         <div class="container text-center">
-                                            <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3">{{feedbackIntro.title}}</span></h4>
+                                            <h4 class="d-flex justify-content-center"><span class="text-orange text-center mb-3">Feedbacks</span></h4>
                                             <p>
-                                                {{feedbackIntro.lineOne}}   
+                                                {{feedback_intro.line_one}}   
                                                 <br><br>
-                                                {{feedbackIntro.lineTwo}}
+                                                {{feedback_intro.line_two}}
                                                 <br><br>    
-                                                {{feedbackIntro.lineThree}}
+                                                {{feedback_intro.line_three}}
                                             </p>
                                         </div>
-                                        <p class="w-75 text-center m-auto pt-4 mb-2">{{feedbackIntro.subtitle}}</p>
-                                        <p class="w-75 text-center m-auto mb-2">{{feedbackIntro.paragraph}}</p>
+                                        <p class="w-75 text-center m-auto pt-4 mb-2">{{feedback_intro.subtitle}}</p>
+                                        <p class="w-75 text-center m-auto mb-2">{{feedback_intro.paragraph}}</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center mt-3 mb-3">
@@ -41,7 +41,8 @@
                                     </div> 
                                     <div class="card-body">
                                         <p class="card-text">{{say.feedback}}</p>
-                                        <h6>{{say.name}} {{say.lastname}}</h6>
+                                        <h6>{{say.fullname}}</h6>
+                                        <h6>{{say.holding}}</h6>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center mt-3">

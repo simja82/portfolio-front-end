@@ -1,122 +1,40 @@
-    <!-- Modal CV -->
-    <div class="modal fade" id="developerCVModal" tabindex="-1" aria-labelledby="developerCVModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="developerCVModalLabel">CV</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container border">
-                        <div class="row">
-                            <div class="col-4 border-end bg-light pb-4 text-center">
-                                <img [src]="profileCV.photo" class="rounded-circle w-75 mt-4 mb-3">
-                                <h5><i class="fa-solid fa-feather-pointed"></i> {{sectionsCV.about}}</h5>
-                                <span>{{profileCV.phraseOne}}<br>{{profileCV.phraseTwo}}<br>{{profileCV.phraseThree}}<br>{{profileCV.phraseFour}}<br>{{profileCV.phraseFive}}<br><i>{{profileCV.author}}</i><br>{{profileCV.credit}}</span>
-                                <hr>
-                                <h5>{{sectionsCV.education}} <i class="fa-solid fa-graduation-cap"></i></h5>
-                                <div *ngFor="let education of educationCV">
-                                    <span>{{education.starting}}</span> - <span>{{education.ending}}</span><br>
-                                    <strong>{{education.title}}</strong>
-                                    <p>{{education.institution}}</p> 
+   <!-- Modal CV -->
+   <div class="modal fade" id="developerCVModal" tabindex="-1" aria-labelledby="developerCVModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="developerCVModalLabel">CV</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-12 mb-3">
+                            <div class="card p-4">
+                                <h4>{{developer_cv.line_one}}</h4>
+                                <h4>{{developer_cv.line_two}}</h4>
+                                <h4>{{developer_cv.line_three}}</h4>
+                                <div class="d-flex justify-content-center options">
+                                    <h4 class="mt-3 mx-3">{{developer_cv.line_four}}</h4>
                                 </div>
-                                <hr>
-                                <h5 class="pb-2">{{sectionsCV.skills}}</h5>
-                                <p *ngFor="let technical of technicalsCV"><i [class]="technical.icon"></i> {{technical.technology}}</p>
-                                <hr class="w-50 m-auto">
-                                <div class="pt-3">
-                                    <p *ngFor="let skill of softsCV">{{skill.skill}}</p>
+                                <div class="d-flex justify-content-center icons mt-3">
+                                    <h3><i [class]="developer_cv.first_icon" class="orange"></i></h3>
                                 </div>
-                                <hr>
-                                <h5>{{sectionsCV.languages}} <i class="fa-solid fa-earth-americas"></i></h5>
-                                <p *ngFor="let language of languagesCV">{{language.language}} {{language.level}}</p>
-                                <hr>
-                                <h5 class="pt-2">{{sectionsCV.hobbies}}</h5>
-                                <i *ngFor="let hobby of hobbiesCV" [class]="hobby.icon" class="mx-1"></i>
+                                <span class="my-3">{{developer_cv.line_five}} <i [class]="developer_cv.second_icon" class="text-success"></i> {{developer_cv.line_six}}</span>
                             </div>
-                            <div class="col-8">
-                                <div class="m-3 pt-3">
-                                    <h2>{{profileCV.fullname}}</h2>
-                                    <h4>{{profileCV.position}}</h4>
-                                    <div class="pt-4">
-                                        <h5>{{sectionsCV.contact}}</h5>
-                                        <p *ngFor="let info of contactCV"><i [class]="info.icon"></i> {{info.data}}</p>
-                                    
-                                    </div>
-                                    <hr>
-                                    <div class="pt-2 pb-3">
-                                        <h5 class="pb-3">{{sectionsCV.social}}</h5>
-                                        <div class="row">
-                                            <div *ngFor="let social of socialCV" class="col-4">
-                                                <h5 class="text-center"><i [class]="social.icon"></i> {{social.user}}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="pt-2">
-                                        <h5>{{sectionsCV.experience}}</h5>
-                                        <div *ngFor="let experience of experienceCV" class="experience">
-                                            <strong>{{experience.place}}</strong>, <span>{{experience.position}}</span>
-                                            <p>{{experience.starting}} - {{experience.ending}}</p>
-                                            <span>{{experience.description}}</span>
-                                            <p>
-                                                {{experience.taskTitle}}
-                                                <br>
-                                                {{experience.tasks}}
-                                            </p>    
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="pt-2">
-                                        <h5>{{sectionsCV.projects}}</h5>
-                                        <strong>{{projectsCV.place}}</strong>, <span>{{projectsCV.position}}</span>
-                                        <p>{{projectsCV.starting}} - {{projectsCV.ending}}</p>
-                                        <span>{{projectsCV.description}}</span>
-                                        <p>
-                                            {{projectsCV.tasksTitle}}
-                                            <br>
-                                            {{projectsCV.tasks}}
-                                        </p>
-                                    </div>
-                                    <hr>
-                                    <div class="pt-2">
-                                        <h5 class="pb-3">{{sectionsCV.references}}</h5>
-                                        <p *ngFor="let item of referencesCV"><i [class]="item.icon"></i> {{item.data}}</p>
-                                    </div>
-                                </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editDeveloperCVModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-black-mini" data-bs-target="#photoCVModal" data-bs-toggle="modal">{{sectionsCV.photo}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#infoCVModal" data-bs-toggle="modal">{{sectionsCV.info}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#educationCVModal" data-bs-toggle="modal">{{sectionsCV.education}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#skillsCVModal" data-bs-toggle="modal">{{sectionsCV.skills}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#hobbiesCVModal" data-bs-toggle="modal">{{sectionsCV.hobbies}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#nameCVModal" data-bs-toggle="modal">{{sectionsCV.name}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#positionCVModal" data-bs-toggle="modal">{{sectionsCV.position}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#contactCVModal" data-bs-toggle="modal">{{sectionsCV.contact}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#socialCVModal" data-bs-toggle="modal">{{sectionsCV.social}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#experienceCVModal" data-bs-toggle="modal">{{sectionsCV.experience}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#projectsCVModal" data-bs-toggle="modal">{{sectionsCV.projects}}</button>
-                    <button class="btn btn-black-mini" data-bs-target="#referencesCVModal" data-bs-toggle="modal">{{sectionsCV.references}}</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons[7].value}}</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Overview Modals -->
-    <app-photo-cv-modal></app-photo-cv-modal>
-    <app-info-cv-modal></app-info-cv-modal>
-    <app-education-cv-modal></app-education-cv-modal>
-    <app-skills-cv-modal></app-skills-cv-modal>
-    <app-hobbies-cv-modal></app-hobbies-cv-modal>
-    <app-name-cv-modal></app-name-cv-modal>
-    <app-position-cv-modal></app-position-cv-modal>
-    <app-contact-cv-modal></app-contact-cv-modal>
-    <app-social-cv-modal></app-social-cv-modal>
-    <app-experience-cv-modal></app-experience-cv-modal>
-    <app-projects-cv-modal></app-projects-cv-modal>
-    <app-references-cv-modal></app-references-cv-modal>
-    
+<!-- CRUD Modals -->
+<app-edit-developer-cv-modal></app-edit-developer-cv-modal>

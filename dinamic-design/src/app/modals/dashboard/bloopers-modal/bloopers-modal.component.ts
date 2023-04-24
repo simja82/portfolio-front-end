@@ -11,10 +11,10 @@ export class BloopersModalComponent implements OnInit {
   bloopers : any = [];
 
   //Arrays Icon Bloopers
-  iconBloopers : any = [];
+  icon_bloopers : any = [];
 
   //Arrays Line Bloopers
-  lineBloopers : any = [];
+  line_bloopers : any = [];
 
   //Array Buttons
   buttons : any = [];
@@ -28,8 +28,8 @@ export class BloopersModalComponent implements OnInit {
     this.povService.getData().subscribe(data => {
       //Información a mostrar
       this.bloopers = data.bloopers;
-      this.iconBloopers = data.iconBloopers;
-      this.lineBloopers = data.lineBloopers;
+      this.icon_bloopers = data.icon_bloopers;
+      this.line_bloopers = data.line_bloopers;
       this.buttons = data.buttons;
     })
   }
