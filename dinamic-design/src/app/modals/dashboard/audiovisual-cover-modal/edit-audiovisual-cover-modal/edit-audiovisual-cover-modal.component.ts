@@ -14,7 +14,7 @@ export class EditAudiovisualCoverModalComponent implements OnInit {
     title: new FormControl(''),
     based: new FormControl(''),
     draft: new FormControl(''),
-    to: new FormControl(''),
+    to_visitors: new FormControl(''),
   });
   submitted = false;
 
@@ -37,7 +37,7 @@ export class EditAudiovisualCoverModalComponent implements OnInit {
         title: ['', [Validators.required]],
         based: ['', [Validators.required]],
         draft: ['', [Validators.required]],
-        to: ['', [Validators.required]],
+        to_visitors: ['', [Validators.required]],
       }
     );
         

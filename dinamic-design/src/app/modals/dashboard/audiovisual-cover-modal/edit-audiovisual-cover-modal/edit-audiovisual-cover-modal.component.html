@@ -35,11 +35,11 @@
                                     </div>    
                                 </div>
                                 <div class="col-12 mb-2">
-                                    <label for="to" class="form-label">{{forms[13].value}}</label>
-                                    <input type="text" class="form-control" id="to" placeholder="Destinatario" formControlName="to" [ngClass]="{ 'is-invalid': submitted && f['to'].errors, 'is-valid': !f['to'].errors && f['to'].touched }">
+                                    <label for="to_visitors" class="form-label">{{forms[13].value}}</label>
+                                    <input type="text" class="form-control" id="to_visitors" placeholder="Destinatario" formControlName="to_visitors" [ngClass]="{ 'is-invalid': submitted && f['to_visitors'].errors, 'is-valid': !f['to_visitors'].errors && f['to_visitors'].touched }">
                                     <div id="toHelp" class="form-text">{{helpers[13].value}}</div>
-                                    <div *ngIf="submitted && f['to'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['to'].errors['required']">Es preciso ingresar un destinatario</div>
+                                    <div *ngIf="submitted && f['to_visitors'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['to_visitors'].errors['required']">Es preciso ingresar un destinatario</div>
                                     </div>    
                                 </div>
                             </div>

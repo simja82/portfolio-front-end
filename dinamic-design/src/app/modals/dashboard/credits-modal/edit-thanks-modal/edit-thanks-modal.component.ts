@@ -11,7 +11,7 @@ export class EditThanksModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
   form: FormGroup = new FormGroup({
-    to: new FormControl(''),
+    to_thank: new FormControl(''),
     thanks: new FormControl(''),
   });
   submitted = false;
@@ -32,7 +32,7 @@ export class EditThanksModalComponent implements OnInit {
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
-        to: ['', [Validators.required]],
+        to_thank: ['', [Validators.required]],
         thanks: ['', [Validators.required]],
       }
     );

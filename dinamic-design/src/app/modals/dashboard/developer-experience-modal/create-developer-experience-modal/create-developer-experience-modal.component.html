@@ -35,19 +35,19 @@
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="starting" class="form-label">{{forms[52].value}}</label>
-                                    <input type="text" class="form-control" id="starting" placeholder="Año de Inicio" formControlName="starting" [ngClass]="{ 'is-invalid': submitted && f['starting'].errors, 'is-valid': !f['starting'].errors && f['starting'].touched }">
+                                    <label for="start_date" class="form-label">{{forms[52].value}}</label>
+                                    <input type="text" class="form-control" id="start_date" placeholder="Año de Inicio" formControlName="start_date" [ngClass]="{ 'is-invalid': submitted && f['start_date'].errors, 'is-valid': !f['start_date'].errors && f['start_date'].touched }">
                                     <div id="startingHelp" class="form-text">{{helpers[46].value}}</div>
-                                    <div *ngIf="submitted && f['starting'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['starting'].errors['required']">Es preciso ingresar una fecha de inicio</div>
+                                    <div *ngIf="submitted && f['start_date'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['start_date'].errors['required']">Es preciso ingresar una fecha de inicio</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
-                                    <label for="ending" class="form-label">{{forms[53].value}}</label>
-                                    <input type="text" class="form-control" id="ending" placeholder="Año de Fin o Actual" formControlName="ending" [ngClass]="{ 'is-invalid': submitted && f['ending'].errors, 'is-valid': !f['ending'].errors && f['ending'].touched }">
+                                    <label for="end_date" class="form-label">{{forms[53].value}}</label>
+                                    <input type="text" class="form-control" id="end_date" placeholder="Año de Fin o Actual" formControlName="end_date" [ngClass]="{ 'is-invalid': submitted && f['end_date'].errors, 'is-valid': !f['end_date'].errors && f['end_date'].touched }">
                                     <div id="endingHelp" class="form-text">{{helpers[47].value}}</div>
-                                    <div *ngIf="submitted && f['ending'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['ending'].errors['required']">Es preciso ingresar una fecha de finalización</div>
+                                    <div *ngIf="submitted && f['end_date'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['end_date'].errors['required']">Es preciso ingresar una fecha de finalización</div>
                                     </div>
                                 </div>
                                 <div class="col-12 pt-3">

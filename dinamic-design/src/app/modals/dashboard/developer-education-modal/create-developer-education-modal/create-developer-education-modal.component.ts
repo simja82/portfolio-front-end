@@ -14,8 +14,8 @@ export class CreateDeveloperEducationModalComponent implements OnInit {
     image: new FormControl(''),
     title: new FormControl(''),
     institution: new FormControl(''),
-    starting: new FormControl(''),
-    ending: new FormControl(''),
+    start_date: new FormControl(''),
+    end_date: new FormControl(''),
   });
   submitted = false;
 
@@ -38,8 +38,8 @@ export class CreateDeveloperEducationModalComponent implements OnInit {
         image: ['', [Validators.required]],
         title: ['', [Validators.required]],
         institution: ['', [Validators.required]],
-        starting: ['', [Validators.required]],
-        ending: ['', [Validators.required]],
+        start_date: ['', [Validators.required]],
+        end_date: ['', [Validators.required]],
       }
     );
         

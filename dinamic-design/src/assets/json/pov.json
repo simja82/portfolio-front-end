@@ -770,7 +770,7 @@
         "title" : "Point of View",
         "based" : "basado en una historia real",
         "draft" : "Primer Borrador",
-        "to" : "AL VISITANTE"
+        "to_visitors" : "AL VISITANTE"
     },
     "divisors" :
     [
@@ -1119,22 +1119,22 @@
     [
         {
             "id" : 1,
-            "to" : "A mi mamá, María",
+            "to_thank" : "A mi mamá, María",
             "because" : "Por haberme dado todo lo que estuvo a su alcance y más, muchísimo más."
         },
         {
             "id" : 2,
-            "to" : "A mis hermosos hijos",
+            "to_thank" : "A mis hermosos hijos",
             "because" : "Porque sin las horas, días y semanas que me tuvieron con poca disponibilidad esto no podría haberse hecho."
         },
         {
             "id" : 3,
-            "to" : "A mi Tío Rodolfo Q.E.P.D.",
+            "to_thank" : "A mi Tío Rodolfo Q.E.P.D.",
             "because" : "Por haberme mostrado cuánto vale el educar a los hijos en valores."
         },
         {
             "id" : 4,
-            "to" : "A la Bibliotecaria Cora Céspedes Q.E.P.D.",
+            "to_thank" : "A la Bibliotecaria Cora Céspedes Q.E.P.D.",
             "because" : "Por haberme enseñado que a los niños no se los debe condicionar al momento de elegir cómo dejar volar su imaginación con los libros."
         }
     ],
@@ -1361,24 +1361,24 @@
             "image" : "https://images.pexels.com/photos/15435735/pexels-photo-15435735.png",
             "title" : "Título",
             "institution" : "Institución",
-            "starting" : "Inicio",
-            "ending" : "Fin"
+            "start_date" : "Inicio",
+            "end_date" : "Fin"
         },
         {
             "id" : 2,
             "image" : "https://images.pexels.com/photos/15435736/pexels-photo-15435736.png",
             "title" : "Título",
             "institution" : "Institución",
-            "starting" : "Inicio",
-            "ending" : "Fin"
+            "start_date" : "Inicio",
+            "end_date" : "Fin"
         },
         {
             "id" : 3,
             "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "title" : "Título",
             "institution" : "Institución",
-            "starting" : "Inicio",
-            "ending" : "Fin"
+            "start_date" : "Inicio",
+            "end_date" : "Fin"
         }
     ],
     "experiences" :
@@ -1388,8 +1388,8 @@
             "image" : "https://images.pexels.com/photos/15435742/pexels-photo-15435742.png",
             "position" : "Puesto",
             "place" : "Lugar",
-            "starting" : "Inicio",
-            "ending" : "Fin",
+            "start_date" : "Inicio",
+            "end_date" : "Fin",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "task_one" : "An item este item",
             "task_two" : "A second item",
@@ -1400,8 +1400,8 @@
             "image" : "https://images.pexels.com/photos/15435741/pexels-photo-15435741.png",
             "position" : "Puesto",
             "place" : "Lugar",
-            "starting" : "Inicio",
-            "ending" : "Fin",
+            "start_date" : "Inicio",
+            "end_date" : "Fin",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "task_one" : "An item este item",
             "task_two" : "A second item",
@@ -1412,8 +1412,8 @@
             "image" : "https://images.pexels.com/photos/15435740/pexels-photo-15435740.png",
             "position" : "Puesto",
             "place" : "Lugar",
-            "starting" : "Inicio",
-            "ending" : "Fin",
+            "start_date" : "Inicio",
+            "end_date" : "Fin",
             "description" : "Some quick example text to build on the card title and make up the bulk of the card's content.",
             "task_one" : "An item este item",
             "task_two" : "A second item",
