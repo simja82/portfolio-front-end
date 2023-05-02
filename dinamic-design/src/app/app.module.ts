@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from '../../../app-routing.module';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -158,7 +158,6 @@ import { DeveloperExperienceModalComponent } from './modals/dashboard/developer-
 import { DeveloperSkillsModalComponent } from './modals/dashboard/developer-skills-modal/developer-skills-modal.component';
 import { DeveloperCommentsModalComponent } from './modals/dashboard/developer-comments-modal/developer-comments-modal.component';
 import { DeveloperHobbiesModalComponent } from './modals/dashboard/developer-hobbies-modal/developer-hobbies-modal.component';
-import { EditDeveloperIntroModalComponent } from './modals/dashboard/developer-intro-modal/edit-developer-intro-modal/edit-developer-intro-modal.component';
 import { EditDeveloperProfileModalComponent } from './modals/dashboard/developer-profile-modal/edit-developer-profile-modal/edit-developer-profile-modal.component';
 import { CreateDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/create-developer-project-modal/create-developer-project-modal.component';
 import { EditDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/edit-developer-project-modal/edit-developer-project-modal.component';
@@ -245,6 +244,8 @@ import { EditBrandModalComponent } from './modals/dashboard/brand-modal/edit-bra
 import { MessageModalComponent } from './modals/general/message-modal/message-modal.component';
 import { DeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/developer-cv-modal.component';
 import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/edit-developer-cv-modal/edit-developer-cv-modal.component';
+
+import { InterceptorInterceptor } from './services/interceptor.interceptor';
 
 @NgModule({
     declarations: [
@@ -414,7 +415,6 @@ import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-m
         DeveloperSkillsModalComponent,
         DeveloperCommentsModalComponent,
         DeveloperHobbiesModalComponent,
-        EditDeveloperIntroModalComponent,
         EditDeveloperProfileModalComponent,
         CreateDeveloperProjectModalComponent,
         EditDeveloperProjectModalComponent,
@@ -492,7 +492,9 @@ import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-m
         DeveloperCvModalComponent,
         EditDeveloperCvModalComponent
    ],
-    providers: [],
+   providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorInterceptor, multi:true }
+],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
