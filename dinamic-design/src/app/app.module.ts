@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from '../../../app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -161,10 +161,10 @@ import { DeveloperHobbiesModalComponent } from './modals/dashboard/developer-hob
 import { EditDeveloperProfileModalComponent } from './modals/dashboard/developer-profile-modal/edit-developer-profile-modal/edit-developer-profile-modal.component';
 import { CreateDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/create-developer-project-modal/create-developer-project-modal.component';
 import { EditDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/edit-developer-project-modal/edit-developer-project-modal.component';
-import { DeleteDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/delete-developer-project-modal/delete-developer-project-modal.component';
-import { CreateDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/create-developer-education-modal/create-developer-education-modal.component';
-import { EditDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/edit-developer-education-modal/edit-developer-education-modal.component';
-import { DeleteDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/delete-developer-education-modal/delete-developer-education-modal.component';
+import { DeleteDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/delete-developer-project-modal/delete-developer-project-modal.component'
+//import { CreateDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/create-developer-education-modal/create-developer-education-modal.component';
+//import { EditDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/edit-developer-education-modal/edit-developer-education-modal.component';
+//import { DeleteDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/delete-developer-education-modal/delete-developer-education-modal.component';
 import { CreateDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/create-developer-experience-modal/create-developer-experience-modal.component';
 import { EditDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/edit-developer-experience-modal/edit-developer-experience-modal.component';
 import { DeleteDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/delete-developer-experience-modal/delete-developer-experience-modal.component';
@@ -419,9 +419,9 @@ import { InterceptorInterceptor } from './services/interceptor.interceptor';
         CreateDeveloperProjectModalComponent,
         EditDeveloperProjectModalComponent,
         DeleteDeveloperProjectModalComponent,
-        CreateDeveloperEducationModalComponent,
-        EditDeveloperEducationModalComponent,
-        DeleteDeveloperEducationModalComponent,
+        //CreateDeveloperEducationModalComponent,
+        //EditDeveloperEducationModalComponent,
+        //DeleteDeveloperEducationModalComponent,
         CreateDeveloperExperienceModalComponent,
         EditDeveloperExperienceModalComponent,
         DeleteDeveloperExperienceModalComponent,

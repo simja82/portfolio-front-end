@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { POVService } from 'src/assets/services/pov.service';
+import { Study } from 'src/app/models/study';
+import { StudyService } from 'src/app/services/study.service';
+//import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-developer-education',
@@ -8,21 +10,22 @@ import { POVService } from 'src/assets/services/pov.service';
 export class DeveloperEducationComponent implements OnInit {
 
   //Array Studies
-  studies : any = [];
+  //studies : any = [];
+  studies : Study [] = [];
 
   //Array Sections
-  sections : any = [];
+  //sections : any = [];
 
   //Inyección de Service
-    constructor (private povService:POVService) {
+    constructor (private studyService:StudyService) {
     }
     
     ngOnInit(): void { 
       //Almacenamiento de datos
-      this.povService.getData().subscribe(data => {
+      this.studyService.getStudies().subscribe(data => {
         //Información a mostrar
-        this.studies = data.studies;
-        this.sections = data.sections;
+        this.studies = data;
+        //this.sections = data.sections;
       })
     }
 

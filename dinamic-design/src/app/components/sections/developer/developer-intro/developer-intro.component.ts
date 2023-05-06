@@ -20,9 +20,13 @@ export class DeveloperIntroComponent implements OnInit {
   intro : any = [];
   */
 
-  //Intro Model
-  intro: Intro = new Intro("");
-  id?:number;
+  //Intro Model 
+  //intro: Intro = new Intro ("", "", "", "", "");
+
+  intro?: Intro [];
+
+  //Combinación de Modelos
+  blendedData: any;
 
   /*
   //Inyección de Service
@@ -39,24 +43,46 @@ export class DeveloperIntroComponent implements OnInit {
     }
   */
 
-    //Inyección de Services
-    constructor(private servicio:IntroService) { }
+    //Inyección de Service
+    constructor(private introService:IntroService) { }
 
     //Buscar Datos
-    ngOnInit(): void {
-      this.cargarItem();
+    ngOnInit() {
+      
+      this.introService.findIntro(1).subscribe((data) => {
+        this.intro = data;
+        this.dataPooling();
+      });
+
+//this.cargarItem();
+      
     }
-  
+
+    /*
     cargarItem(){
-      this.servicio.getById(1).subscribe({
+      this.introService.findIntro(1).subscribe({
           next: (data) => {
             this.intro=data;
+            //this.form.setValue(data);
           },
           error: (e) => console.error(e),
-          complete: () => console.info('complete')
+          complete: () => 
+console.info
+('complete')
         });
-      console.log("No carga");
-      }
+      console.log("Se cargó correctamente la intro");
+    } 
+*/
 
-  }
-  
+    
+    //Combinación de Datos
+    dataPooling() {
+      if (this.intro) {
+        // Combinación de datos
+        this.blendedData = {
+          intro: this.intro
+        };
+      }
+    }
+    
+}

@@ -15,30 +15,23 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-12 pt-4">
-                                                    <h4 class="text-center">{{intro.overview}}</h4>
-                                                </div>
-
-                                                <!--
-                                                <div class="col-12 pt-4">
-                                                    <h4 class="text-center">{{intro.overview}}</h4>
-                                                    <h1 class="text-center">{{intro.industry}}</h1>
-                                                    <h4 class="text-center">{{intro.history}}</h4>
+                                                    <h4 class="text-center">{{blendedData.intro.overview}}</h4>
+                                                    <h1 class="text-center">{{blendedData.intro.industry}}</h1>
+                                                    <h4 class="text-center">{{blendedData.intro.history}}</h4>
                                                     <div class="d-flex justify-content-center mt-5 pb-4">
                                                         <h3><i class="fa-solid fa-chevron-down orange"></i></h3>
                                                     </div>
                                                     <div class="pt-3 container px-2">
-                                                        <p class="card-text">{{intro.line_one}}</p>
-                                                        <p class="card-text">{{intro.line_two}}</p>
+                                                        <p class="card-text">{{blendedData.intro.line_one}}</p>
+                                                        <p class="card-text">{{blendedData.intro.line_two}}</p>
                                                     </div>
                                                 </div>
-                                                -->
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center mt-3">
-                                    <button class="btn btn-black-extra-mini" data-bs-target="#editDeveloperIntroModal" (click)="cargarItem()" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                    <button class="btn btn-black-extra-mini" data-bs-target="#editDeveloperIntroModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button> <!-- TENÍA (click)="item.id? cargarItem(item.id): null" DESPUÉS DE data-bs-toggle="modal" -->
                                 </div>
                             </div>
                         </div>
@@ -59,93 +52,80 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editDeveloperIntroModal">Editar Intro</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Volver" (click)="limpiar()"></i>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
                 </div>
-                <form [formGroup]="form">
+                <!-- VUELVO A PONERLE (ngSubmit)="onSubmit()" -->
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
                     <input type="hidden" name="" id="id">
-                  
-                        <div class="modal-body">                
-                            <div class="row">
-                                <div class="col-12 mb-2">
-                                    <label for="overview" class="form-label">Apertura</label>
-                                    <input type="text" class="form-control" id="overview" formControlName="overview" name="" [ngClass]="{'is-invalid': InvalidOverview, 'is-valid': Overview}">
-                                    <div id="overviewHelp" class="form-text">Ingresar una apertura</div>
-                                    <div *ngIf="Overview?.errors && Overview?.touched">
-                                        <p *ngIf="Overview?.hasError('required')" class="invalid-feedback">
-                                            Es preciso ingresar una apertura
-                                        </p>
-                                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 mb-2">
+                                <label for="overview" class="form-label">Apertura</label>
+                                <input type="text" class="form-control" id="overview"  formControlName="overview" name="" [ngClass]="{ 'is-invalid': submitted && f['overview'].errors, 'is-valid': !f['overview'].errors && f['overview'].touched }">
+                                <div id="overviewHelp" class="form-text">Ingresar una apertura</div>
+                                <div *ngIf="f['overview'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['overview'].errors['required']">Es preciso ingresar una apertura</div>
                                 </div>
-
-
-                            <!-- 
-                                <div class="col-12 mb-2">
-                                    <label for="industry" class="form-label">Industria</label>
-                                    <input type="text" class="form-control" id="industry" formControlName="industry" name="" [ngClass]="{ 'is-invalid': f['industry'].errors, 'is-valid': !f['industry'].errors && f['industry'].touched }">
-                                    <div id="industryHelp" class="form-text">Ingresar una industria</div>
-                                    <div *ngIf="f['industry'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['industry'].errors['required']">Es preciso ingresar una industria</div>
-                                    </div>
-                                </div>                            
-                                <div class="col-12 mb-2">
-                                    <label for="closing" class="form-label">Cierre</label>
-                                    <input type="text" class="form-control" id="closing" formControlName="closing" name="" [ngClass]="{ 'is-invalid': f['closing'].errors, 'is-valid': !f['closing'].errors && f['closing'].touched }">
-                                    <div id="closingHelp" class="form-text">Ingresar un cierre</div>
-                                    <div *ngIf="f['closing'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['closing'].errors['required']">Es preciso ingresar un cierre</div>
-                                    </div>
+                            </div>                             
+                            <div class="col-12 mb-2">
+                                <label for="industry" class="form-label">Industria</label>
+                                <input type="text" class="form-control" id="industry"formControlName="industry" name="" [ngClass]="{ 'is-invalid': submitted && f['industry'].errors, 'is-valid': !f['industry'].errors && f['industry'].touched }">
+                                <div id="industryHelp" class="form-text">Ingresar una industria</div>
+                                <div *ngIf="f['industry'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['industry'].errors['required']">Es preciso ingresar una industria</div>
+                                </div>                                
+                            </div>                        
+                            <div class="col-12 mb-2">
+                                <label for="history" class="form-label">Cierre</label>
+                                <input type="text" class="form-control" id="history"formControlName="history" name="" [ngClass]="{ 'is-invalid': submitted && f['history'].errors, 'is-valid': !f['history'].errors && f['history'].touched }">
+                                <div id="historyHelp" class="form-text">Ingresar un cierre</div>
+                                <div *ngIf="f['history'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['history'].errors['required']">Es preciso ingresar un cierre</div>
                                 </div>
-                                <div class="col-12 mb-2">
-                                    <label for="paragraphOne" class="form-label">Párrafo Uno</label>
-                                    <textarea class="form-control" id="paragraphOne" rows="3" formControlName="paragraphOne" name="" [ngClass]="{ 'is-invalid': f['paragraphOne'].errors, 'is-valid': !f['paragraphOne'].errors && f['paragraphOne'].touched }"></textarea>
-                                    <div class="d-flex justify-content-between">
-                                        <div id="paragraphOneHelp" class="form-text">Ingresar el primer párrafo</div>
-                                        <div id="limitHelp" class="form-text">Máx. 200 caracteres</div>
-                                    </div> 
-                                    <div *ngIf="f['paragraphOne'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['paragraphOne'].errors['required']">Es preciso ingresar el primer párrafo</div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mb-2">          
-                                    <label for="paragraphTwo" class="form-label">Párrafo Dos</label>
-                                    <textarea class="form-control" id="paragraphTwo" rows="3" formControlName="paragraphTwo" name="" [ngClass]="{ 'is-invalid': f['paragraphTwo'].errors, 'is-valid': !f['paragraphTwo'].errors && f['paragraphTwo'].touched }"></textarea>
-                                    <div class="d-flex justify-content-between">
-                                        <div id="paragraphHelp" class="form-text">Ingresar el segundo párrafo</div>
-                                        <div id="limitHelp" class="form-text">Máx. 200 caracteres</div>
-                                    </div> 
-                                    <div *ngIf="f['paragraphTwo'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['paragraphTwo'].errors['required']">Es preciso ingresar el segundo párrafo</div>
-                                    </div>
-                                </div>
-
-                            -->
                             </div>
+                            <div class="col-12 mb-2">
+                                <label for="line_one" class="form-label">Párrafo Uno</label> <!-- [(ngModel)]="intro?.line_one" DESPUÉS DE name="" NO FUNCIONA -->
+                                <textarea class="form-control" id="line_one" rows="3" formControlName="line_one" name="" [ngClass]="{ 'is-invalid': submitted && f['line_one'].errors, 'is-valid': !f['line_one'].errors && f['line_one'].touched }"></textarea>
+                                <div class="d-flex justify-content-between">
+                                    <div id="line_oneHelp" class="form-text">Ingresar elprimer párrafo</div>
+                                    <div id="limitHelp" class="form-text">Máx. 200 caracteres</div>
+                                </div> 
+                                <div *ngIf="f['line_one'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['line_one'].errors['required']">Es preciso ingresar el primer párrafo</div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">          
+                                <label for="line_two" class="form-label">Párrafo Dos</label>
+                                <textarea class="form-control" id="line_two" rows="3" formControlName="line_two" name="" [ngClass]="{ 'is-invalid': submitted && f['line_two'].errors, 'is-valid': !f['line_two'].errors && f['line_two'].touched }"></textarea>
+                                <div class="d-flex justify-content-between">
+                                    <div id="paragraphHelp" class="form-text">Ingresar el segundo párrafo</div>
+                                    <div id="limitHelp" class="form-text">Máx. 200 caracteres</div>
+                                </div> 
+                                <div *ngIf="f['line_two'].errors" class="invalid-feedback">
+                                    <div *ngIf="f['line_two'].errors['required']">Es preciso ingresar el segundo párrafo</div>
+                                </div>
+                            </div> 
                         </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerIntroModal" data-bs-toggle="modal" aria-label="Actualizar" (click)="guardarItem()" [disabled]="form.invalid">Actualizar</button>
-                        </div>    
-                  
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-black-mini" data-bs-target="#developerIntroModal"data-bs-toggle="modal" aria-label="Actualizar" [disabled]="form.invalid">Actualizar</button> <!-- TENÍA (click)="guardarItem()" ANTES DE [disabled]="form.invalid" -->
+                    </div>                  
                 </form>
             </div>
         </div>
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- 
-        ESTO PARA LA LÍNEA 34 DESPUÉS DE data-bs-toggle="modal"
-        
-    -->
-    
+                        <!--
+                        ESTO ES PARA LOS get QUE COMPRUEBAN SI ESTÁ O NO COMPLETO EL CAMPO UNO POR UNO...
+                            <div class="col-12 mb-2">
+                                <label for="overview" class="form-label">Apertura</label>
+                                <input type="text" class="form-control" id="overview"formControlName="overview" name="" [ngClass]="{'is-invalid':InvalidOverview, 'is-valid': Overview}">
+                                <div id="overviewHelp" class="form-text">Ingresar una apertura<div>
+                                <div *ngIf="Overview?.errors && Overview?.touched">
+                                    <p *ngIf="Overview?.hasError('required')"class="invalid-feedback">
+                                        Es preciso ingresar una apertura
+                                    </p>
+                                </div>
+                            </div>
+                        -->

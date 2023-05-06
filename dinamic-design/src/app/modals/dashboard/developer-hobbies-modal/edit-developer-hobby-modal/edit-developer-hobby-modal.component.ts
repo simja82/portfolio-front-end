@@ -46,7 +46,7 @@ export class EditDeveloperHobbyModalComponent implements OnInit {
     })
   }
 
-  //Traer Formulario
+  //Traer Formulario    ESTO
   get f(): { [key: string]: AbstractControl } {
     return this.form.controls;
   }
