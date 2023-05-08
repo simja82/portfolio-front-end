@@ -20,7 +20,7 @@ export class StudyService {
     return this.http.get<Study[]>(this.url + '/list');
   }
 
-  //Encontrar NOTAR QUE ACÁ VA Observable<Study[]> y no Observable<any>
+  //Encontrar
   public findStudy(id: number): Observable<any> {
     return this.http.get<Study>(this.url + `/find/${id}`); 
   }
@@ -30,12 +30,12 @@ export class StudyService {
     return this.http.post<any>(this.url + '/new', study); 
   } 
 
-  //Editar NOTAR QUE ACÁ VA put<any> Y NO put<Study> O put<Study[]>
+  //Editar
   public updateStudy(study: Study): Observable<any> {
     return this.http.put<any>(this.url + `/update`, study);    
   }
 
-  //Eliminar NOTAR QUE ACÁ VA delete<any> Y NO delete<Intro> O delete<Intro[]>
+  //Eliminar
   /*
   public deleteStudy(id: number): Observable<Study> {
     return this.http.delete<Study>(this.url + `/delete/${id}`); 

@@ -20,9 +20,6 @@ export class DeveloperEducationModalComponent implements OnInit {
   //Study Model
   studies : Study [] = [];
 
-  //Study Form
-  study_form : Study = new Study ("", "", "", "", "");
-
   //ID
   id? : number;
 
@@ -39,7 +36,7 @@ export class DeveloperEducationModalComponent implements OnInit {
   });
   submitted = false;  
 
-  //Inyección de Services, Constructor de Formularios y Cliente REST
+  //Inyección de Services, Constructor de Formularios y REST Client
     constructor (private studyService:StudyService, private formBuilder: FormBuilder, private http: HttpClient) 
     { 
       //Reglas de los Campos del Formulario
@@ -60,7 +57,7 @@ export class DeveloperEducationModalComponent implements OnInit {
     return this.form.controls;
   }
 
-  //Llamar a Cargar Tabla y Fila?
+  //Llamar a Cargar Tabla -- NO CARGA FILA --
   ngOnInit() { 
     //Almacenamiento de datos
     this.studyService.getStudies().subscribe(data => {
@@ -70,7 +67,7 @@ export class DeveloperEducationModalComponent implements OnInit {
     });
   }
 
-  //Llamar a Cargar Fila por ID
+  //Llamar a Cargar Fila por ID -- NO FUNCIONA --
   loadStudy(id: number){
     this.studyService.findStudy(id).subscribe({
         next: (data) => {
@@ -83,7 +80,7 @@ export class DeveloperEducationModalComponent implements OnInit {
     console.log("Se cargó correctamente el Estudio");
   }   
   
-  //Guardar o Actualizar
+  //Guardar o Actualizar -- FUNCIONA CREAR CON LO CUAL DEBERÍA FUNCIONAR EDITAR --
   saveStudy() {
     let item = this.form.value;
     if (item.id == '') {
@@ -126,7 +123,7 @@ export class DeveloperEducationModalComponent implements OnInit {
     this.ngOnInit();
   }
 
-  //Eliminar Dato
+  //Eliminar Dato -- NO FUNCIONA --
   /*
   onDelete(id: number){
     this.studyService.deleteStudy(id).subscribe({

@@ -20,7 +20,7 @@ export class IntroService {
     return this.http.get<Intro[]>(this.url + '/list');
   }
 
-  //Encontrar NOTAR QUE ACÁ VA Observable<any> y no Observable<Intro[]>, también va get<Intro> y no get<Intro[]>
+  //Encontrar
   public findIntro(id: number): Observable<any> {
     return this.http.get<Intro>(this.url + `/find/${id}`); 
   }
@@ -30,12 +30,12 @@ export class IntroService {
     return this.http.post<any>(this.url + '/new', intro); 
   } 
 
-  //Editar NOTAR QUE ACÁ VA put<Intro> Y NO put<any> O put<Intro[]>
+  //Editar
   public updateIntro(intro: Intro): Observable<any> {
     return this.http.put<Intro>(this.url + `/update`, intro);    
   }
 
-  //Eliminar NOTAR QUE ACÁ VA delete<any> Y NO delete<Intro> O delete<Intro[]>
+  //Eliminar
   public deleteIntro(id: number): Observable<Intro> {
     return this.http.delete<any>(this.url + `/delete/${id}`); 
   } 

@@ -31,7 +31,7 @@ export class DeveloperIntroModalComponent implements OnInit {
   //Intro Data
   intro_data: any;
 
-  //Inyección de Services, Constructor de Formularios y Cliente REST
+  //Inyección de Services, Constructor de Formularios y REST Client
   constructor(private introService: IntroService, private formBuilder: FormBuilder, private http: HttpClient) 
   {  
     //Reglas de los Campos del Formulario 
