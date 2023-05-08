@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center my-3">
-                                <button class="btn btn-black-extra-mini mx-1" (click)="item.id? cargarItem(item.id): null" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" (click)="study_data.id? loadStudy(study_data.id): null"><i class="fa-solid fa-pencil"></i></button>
                                 <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperEducationModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                             </div>        
                         </div>
@@ -28,7 +28,7 @@
                 </div>
                 <hr class="w-75 my-2 m-auto">
                 <div class="d-flex justify-content-center my-2">
-                    <button class="btn btn-black-extra-mini" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" aria-label="Create"><i class="fa-solid fa-circle-plus"></i></button>
+                    <button class="btn btn-black-extra-mini" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" aria-label="Crear"><i class="fa-solid fa-circle-plus"></i></button>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button>
@@ -44,7 +44,7 @@
     <app-delete-developer-education-modal></app-delete-developer-education-modal>
     -->
 
-        <!-- Modal Create Education Developer -->
+    <!-- Modal Create Education Developer -->
     <div class="modal fade" id="createDeveloperEducationModal" aria-hidden="true" aria-labelledby="createDeveloperEducationModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
@@ -54,9 +54,9 @@
                 </div>
                 <form [formGroup]="form">
                     <div class="form-group">
+                        <input type="hidden" name="" id="id">
                         <div class="modal-body">
                             <div class="row">
-                                <input type="hidden" id="id">                                
                                 <div class="col-12">
                                     <label for="image" class="form-label">Imagen</label>
                                     <input type="text" class="form-control" id="image" placeholder="Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button>
+                            <button class="btn btn-black-mini" (click)="saveStudy()" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar" [disabled]="form.invalid">Guardar</button>
                         </div>    
                     </div>
                 </form>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Cancelar" (click)="alertWithCancel()">Cancelar</button>
-                    <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Eliminar" (click)="alertWithSuccess()">Eliminar</button>
+                    <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Eliminar" (click)="study_data.id? onDelete(study_data.id): null">Eliminar</button>
                 </div>
             </div>
         </div>

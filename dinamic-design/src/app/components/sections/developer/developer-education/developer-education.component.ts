@@ -1,7 +1,11 @@
+//Modelo de Lógica para Datos Recorridos
 import { Component, OnInit } from '@angular/core';
+
+//Models
 import { Study } from 'src/app/models/study';
+
+//Services
 import { StudyService } from 'src/app/services/study.service';
-//import { POVService } from 'src/assets/services/pov.service';
 
 @Component({
   selector: 'app-developer-education',
@@ -9,24 +13,26 @@ import { StudyService } from 'src/app/services/study.service';
 })
 export class DeveloperEducationComponent implements OnInit {
 
-  //Array Studies
-  //studies : any = [];
+  //Studies Model
   studies : Study [] = [];
-
-  //Array Sections
-  //sections : any = [];
 
   //Inyección de Service
     constructor (private studyService:StudyService) {
     }
     
-    ngOnInit(): void { 
-      //Almacenamiento de datos
-      this.studyService.getStudies().subscribe(data => {
-        //Información a mostrar
-        this.studies = data;
-        //this.sections = data.sections;
-      })
+    //Traer Datos
+    ngOnInit(): void {
+      this.loadStudies();
+    } 
+
+    loadStudies() {
+      this.studyService.getStudies().subscribe({
+          next: (data) => {
+            this.studies=data;
+          },
+          error: (e) => console.error(e),
+          complete: () => console.info('complete')
+        });
     }
 
   }

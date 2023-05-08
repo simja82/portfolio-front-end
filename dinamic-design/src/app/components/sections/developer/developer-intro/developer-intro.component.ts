@@ -1,7 +1,5 @@
+//Modelo de Lógica para Datos Simples
 import { Component, OnInit } from '@angular/core';
-
-//Datos del JSON
-//import { POVService } from 'src/assets/services/pov.service';
 
 //Models
 import { Intro } from 'src/app/models/intro';
@@ -15,74 +13,25 @@ import { IntroService } from 'src/app/services/intro.service';
 })
 export class DeveloperIntroComponent implements OnInit {
 
-  /*
-  //Array Intro
-  intro : any = [];
-  */
-
   //Intro Model 
-  //intro: Intro = new Intro ("", "", "", "", "");
+  intro: Intro = new Intro ("", "", "", "", "");
 
-  intro?: Intro [];
-
-  //Combinación de Modelos
-  blendedData: any;
-
-  /*
   //Inyección de Service
-    constructor (private povService:POVService) {
-    }
-    
-  //ngOnInit con JSON  
-    ngOnInit(): void { 
-      //Almacenamiento de datos
-      this.povService.getData().subscribe(data => {
-        //Información a mostrar
-        this.intro = data.intro;
-      })
-    }
-  */
+    constructor (private introService:IntroService) { }
 
-    //Inyección de Service
-    constructor(private introService:IntroService) { }
+    //Traer Datos
+    ngOnInit(): void {
+      this.loadIntro();
+    }    
 
-    //Buscar Datos
-    ngOnInit() {
-      
-      this.introService.findIntro(1).subscribe((data) => {
-        this.intro = data;
-        this.dataPooling();
-      });
-
-//this.cargarItem();
-      
-    }
-
-    /*
-    cargarItem(){
+    loadIntro() {
       this.introService.findIntro(1).subscribe({
           next: (data) => {
             this.intro=data;
-            //this.form.setValue(data);
           },
           error: (e) => console.error(e),
-          complete: () => 
-console.info
-('complete')
+          complete: () => console.info('complete')
         });
-      console.log("Se cargó correctamente la intro");
-    } 
-*/
-
-    
-    //Combinación de Datos
-    dataPooling() {
-      if (this.intro) {
-        // Combinación de datos
-        this.blendedData = {
-          intro: this.intro
-        };
-      }
     }
-    
+
 }
