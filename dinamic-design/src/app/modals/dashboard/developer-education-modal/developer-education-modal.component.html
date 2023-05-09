@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center my-3">
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" (click)="study_data.id? loadStudy(study_data.id): null"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" (click)="study.id? loadStudy(study.id): null"><i class="fa-solid fa-pencil"></i></button>
                                 <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperEducationModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                             </div>        
                         </div>
@@ -39,8 +39,6 @@
 
     <!-- CRUD Modals -->
     <!--
-    <app-create-developer-education-modal></app-create-developer-education-modal>
-    <app-edit-developer-education-modal></app-edit-developer-education-modal>
     <app-delete-developer-education-modal></app-delete-developer-education-modal>
     -->
 
@@ -54,53 +52,53 @@
                 </div>
                 <form [formGroup]="form">
                     <div class="form-group">
-                        <input type="hidden" name="" id="id">
+                        <!--<input type="hidden" name="" id="id">-->
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
                                     <label for="image" class="form-label">Imagen</label>
-                                    <input type="text" class="form-control" id="image" placeholder="Imagen" formControlName="image" [ngClass]="{ 'is-invalid': submitted && f['image'].errors, 'is-valid': !f['image'].errors && f['image'].touched }">
+                                    <input type="text" class="form-control" id="image" formControlName="image" name="" [ngClass]="{ 'is-invalid': InvalidImage, 'is-valid': ValidImage }">
                                     <div id="imageHelp" class="form-text">Ingresar una imagen</div>
-                                    <div *ngIf="submitted && f['image'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['image'].errors['required']">Es preciso ingresar una imagen</div>
+                                    <div *ngIf="Image?.errors" class="invalid-feedback">
+                                        <div *ngIf="Image?.hasError('required')">Es preciso ingresar una imagen</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
                                     <label for="title" class="form-label">Título</label>
-                                    <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" [ngClass]="{ 'is-invalid': submitted && f['title'].errors, 'is-valid': !f['title'].errors && f['title'].touched }">
+                                    <input type="text" class="form-control" id="title" formControlName="title" name="" [ngClass]="{ 'is-invalid': InvalidTitle, 'is-valid': ValidTitle }">
                                     <div id="titleHelp" class="form-text">Ingresar un Título</div>
-                                    <div *ngIf="submitted && f['title'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['title'].errors['required']">Es preciso ingresar un título</div>
+                                    <div *ngIf="Title?.errors" class="invalid-feedback">
+                                        <div *ngIf="Title?.hasError('required')">Es preciso ingresar un Título</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
                                     <label for="institution" class="form-label">Institución</label>
-                                    <input type="text" class="form-control" id="institution" placeholder="Institución" formControlName="institution" [ngClass]="{ 'is-invalid': submitted && f['institution'].errors, 'is-valid': !f['institution'].errors && f['institution'].touched }">
+                                    <input type="text" class="form-control" id="institution" formControlName="institution" name="" [ngClass]="{ 'is-invalid': InvalidInstitution, 'is-valid': ValidInstitution }">
                                     <div id="institutionHelp" class="form-text">Ingresar una Institución</div>
-                                    <div *ngIf="submitted && f['institution'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['institution'].errors['required']">Es preciso ingresar una Institución</div>
+                                    <div *ngIf="Institution?.errors" class="invalid-feedback">
+                                        <div *ngIf="Institution?.hasError('required')">Es preciso ingresar una Institución</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
                                     <label for="start_date" class="form-label">Año de Inicio</label>
-                                    <input type="text" class="form-control" id="start_date" placeholder="Año de Inicio" formControlName="start_date" [ngClass]="{ 'is-invalid': submitted && f['start_date'].errors, 'is-valid': !f['start_date'].errors && f['start_date'].touched }">
+                                    <input type="text" class="form-control" id="start_date" formControlName="start_date" name="" [ngClass]="{ 'is-invalid': InvalidStartDate, 'is-valid': ValidStartDate }">
                                     <div id="startingHelp" class="form-text">Ingresar un año de inicio</div>
-                                    <div *ngIf="submitted && f['start_date'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['start_date'].errors['required']">Es preciso ingresar una fecha de inicio</div>
+                                    <div *ngIf="StartDate?.errors" class="invalid-feedback">
+                                        <div *ngIf="StartDate?.hasError('required')">Es preciso ingresar un año de inicio</div>
                                     </div>
                                 </div>
                                 <div class="col-6 pt-3">
                                     <label for="end_date" class="form-label">Año de Fin</label>
-                                    <input type="text" class="form-control" id="end_date" placeholder="Año de Fin" formControlName="end_date" [ngClass]="{ 'is-invalid': submitted && f['end_date'].errors, 'is-valid': !f['end_date'].errors && f['end_date'].touched }">
+                                    <input type="text" class="form-control" id="end_date" formControlName="end_date" name="" [ngClass]="{ 'is-invalid': InvalidEndDate, 'is-valid': ValidEndDate }">
                                     <div id="endingHelp" class="form-text">Ingresar un año de finalización</div>
-                                    <div *ngIf="submitted && f['end_date'].errors" class="invalid-feedback">
-                                        <div *ngIf="f['end_date'].errors['required']">Es preciso ingresar una fecha de finalización</div>
+                                    <div *ngIf="EndDate?.errors" class="invalid-feedback">
+                                        <div *ngIf="EndDate?.hasError('required')">Es preciso ingresar un año de fin</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" (click)="saveStudy()" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar" [disabled]="form.invalid">Guardar</button>
+                            <button class="btn btn-black-mini" (click)="saveStudy()" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button> <!-- SACO [disabled]="form.invalid" PARA QUE SE DISPAREN LAS ALERTAS -->
                         </div>    
                     </div>
                 </form>
@@ -116,16 +114,24 @@
                     <h1 class="modal-title fs-5" id="deleteDeveloperEducationModal">Eliminar Educación</h1>
                     <i class="fa-solid fa-rotate-left" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Volver"></i>
                 </div>
-                <div class="modal-body">
-                    <i class="fa-solid fa-circle-exclamation justify-content-center d-flex fa-2x pt-3"></i>
-                    <br>
-                    <p class="justify-content-center d-flex">¿De verdad querés eliminar esta educación?</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Cancelar" (click)="alertWithCancel()">Cancelar</button>
-                    <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Eliminar" (click)="study_data.id? onDelete(study_data.id): null">Eliminar</button>
-                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <i class="fa-solid fa-circle-exclamation justify-content-center d-flex fa-2x pt-3"></i>
+                            <br>
+                            <p class="justify-content-center d-flex">¿De verdad querés eliminar esta educación?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Cancelar" (click)="alertWithCancel()">Cancelar</button>
+                            <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Eliminar" (click)="study.id? onDelete(study.id): null">Eliminar</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
+
+
+
 

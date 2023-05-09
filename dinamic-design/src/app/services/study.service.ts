@@ -21,9 +21,10 @@ export class StudyService {
   }
 
   //Encontrar
-  public findStudy(id: number): Observable<any> {
+  public findStudy(id: number): Observable<Study> {
     return this.http.get<Study>(this.url + `/find/${id}`); 
   }
+ 
 
   //Crear
    public saveStudy(study: Study): Observable<any> {
@@ -31,9 +32,9 @@ export class StudyService {
   } 
 
   //Editar
-  public updateStudy(study: Study): Observable<any> {
-    return this.http.put<any>(this.url + `/update`, study);    
-  }
+  public updateStudy(id:number, study: Study): Observable<any> {
+    return this.http.put<any>(this.url + `/update/${id}`, study);    
+  }  
 
   //Eliminar
   /*
@@ -41,14 +42,15 @@ export class StudyService {
     return this.http.delete<Study>(this.url + `/delete/${id}`); 
   } 
   */
+ 
   /*
-  public deleteStudy(id: number): Observable<any> {
-    return this.http.delete(this.url + `/delete/${id}`);
-  }  
-  */
-
   public deleteStudy(id: number): Observable<any> {
     return this.http.delete<any>(this.url + `/delete/${id}`); 
   }   
+  */
+
+  public deleteStudy(id:number): Observable<any> {
+    return this.http.delete(this.url + `/delete/${id}`);    
+  } 
 
 }

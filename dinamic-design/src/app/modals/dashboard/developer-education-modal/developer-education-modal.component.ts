@@ -1,6 +1,6 @@
 //Modelo de Lógica para Datos Recorridos con CRUD
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators, AbstractControl } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
 
@@ -9,7 +9,6 @@ import { Study } from 'src/app/models/study';
 
 //Services
 import { StudyService } from 'src/app/services/study.service';
-
 
 @Component({
   selector: 'app-developer-education-modal',
@@ -20,21 +19,17 @@ export class DeveloperEducationModalComponent implements OnInit {
   //Study Model
   studies : Study [] = [];
 
+  //Form
+  form: FormGroup;
+  
   //ID
-  id? : number;
+  id?: number;
 
-  //Study Data
-  study_data : any;
+  //Submitted
+  submitted = false;
 
-  //Campos Reactivos del Formulario - Nótese que reemplaza a form: FormGroup;
-  form: FormGroup = new FormGroup({
-    image: new FormControl(''),
-    title: new FormControl(''),
-    institution: new FormControl(''),
-    start_date: new FormControl(''),
-    end_date: new FormControl(''),
-  });
-  submitted = false;  
+  //Study
+  study: any;
 
   //Inyección de Services, Constructor de Formularios y REST Client
     constructor (private studyService:StudyService, private formBuilder: FormBuilder, private http: HttpClient) 
@@ -42,7 +37,7 @@ export class DeveloperEducationModalComponent implements OnInit {
       //Reglas de los Campos del Formulario
       this.form = this.formBuilder.group(
         {
-          //id: [''],
+          id: [''],
           image: ['', [Validators.required]],
           title: ['', [Validators.required]],
           institution: ['', [Validators.required]],
@@ -51,54 +46,106 @@ export class DeveloperEducationModalComponent implements OnInit {
         }
       );
     }
-  
+
   //Traer y Comprobar Datos
-  get f(): { [key: string]: AbstractControl } {
-    return this.form.controls;
+  get Image() {
+    return this.form.get("image");
   }
+  get InvalidImage(){
+    return this.Image?.errors && this.Image?.touched;
+  }
+  get ValidImage(){
+    return !this.Image?.errors && this.Image?.touched;
+  } 
 
-  //Llamar a Cargar Tabla -- NO CARGA FILA --
+  get Title() {
+    return this.form.get("title");
+  }
+  get InvalidTitle(){
+    return this.Title?.errors && this.Title?.touched;
+  }
+  get ValidTitle(){
+    return !this.Title?.errors && this.Title?.touched;
+  }  
+
+  get Institution() {
+    return this.form.get("institution");
+  }
+  get InvalidInstitution(){
+    return this.Institution?.errors && this.Institution?.touched;
+  }
+  get ValidInstitution(){
+    return !this.Institution?.errors && this.Institution?.touched;
+  }   
+
+  get StartDate() {
+    return this.form.get("start_date");
+  }
+  get InvalidStartDate(){
+    return this.StartDate?.errors && this.StartDate?.touched;
+  }
+  get ValidStartDate(){
+    return !this.StartDate?.errors && this.StartDate?.touched;
+  }   
+
+  get EndDate() {
+    return this.form.get("end_date");
+  }
+  get InvalidEndDate(){
+    return this.EndDate?.errors && this.EndDate?.touched;
+  }
+  get ValidEndDate(){
+    return !this.EndDate?.errors && this.EndDate?.touched;
+  } 
+
+  //Cargar Tabla
   ngOnInit() { 
-    //Almacenamiento de datos
-    this.studyService.getStudies().subscribe(data => {
-      //Información a mostrar
-      this.studies = data;
-      //this.buttons = data.buttons;
-    });
+   this.loadStudies();
   }
 
-  //Llamar a Cargar Fila por ID -- NO FUNCIONA --
+  //Cargar Tabla
+  loadStudies() {
+    this.studyService.getStudies().subscribe({
+      next: (data) => {
+        this.studies=data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    })
+  }
+
+  //Cargar Formulario por ID
   loadStudy(id: number){
     this.studyService.findStudy(id).subscribe({
         next: (data) => {
-          this.study_data=data;
           this.form.setValue(data);
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-    console.log("Se cargó correctamente el Estudio");
   }   
   
-  //Guardar o Actualizar -- FUNCIONA CREAR CON LO CUAL DEBERÍA FUNCIONAR EDITAR --
+  //Guardar o Actualizar
   saveStudy() {
-    let item = this.form.value;
-    if (item.id == '') {
-      this.studyService.saveStudy(item).subscribe({
+    let study = this.form.value;
+    if (study.id == '') {
+      this.studyService.saveStudy(study).subscribe({
         next: (data) => {
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
+      this.alertWithSuccess();
       this.onSubmit();
       this.ngOnInit();
     } else {
-      this.studyService.updateStudy(item).subscribe({
+      this.studyService.updateStudy(study.id, study).subscribe({
         next: (data) => {
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
+      this.alertWithUpdate();
       this.onSubmit();
       this.ngOnInit();
     }
@@ -108,11 +155,9 @@ export class DeveloperEducationModalComponent implements OnInit {
   onSubmit(): void {
     //Válido
     this.submitted = true;
-    this.alertWithSuccess();
     //Inválido
     if (this.form.invalid) {
       this.onReset();
-      this.alertWithWarning();
     }
   }
 
@@ -123,12 +168,28 @@ export class DeveloperEducationModalComponent implements OnInit {
     this.ngOnInit();
   }
 
-  //Eliminar Dato -- NO FUNCIONA --
+  //Eliminar Dato por ID -- NO FUNCIONA --
+  onDelete(id: number){  
+    this.studyService.deleteStudy(id).subscribe({
+        next: (data) => { },
+        error: (e) => console.error(e),
+        complete: () => console.info('complete')
+    });
+    this.ngOnInit();
+    this.alertWithDelete();
+  }
+
   /*
-  onDelete(id: number){
+    this.studyService.deleteStudy(id).subscribe(data => {});
+    console.log("Se eliminó correctamente el item");
+    this.alertWithDelete();
+    this.ngOnInit();
+  */
+
+  /*
     this.studyService.deleteStudy(id).subscribe({
         next: (data) => {
-          //this.study_data=data;
+          //this.study=data;
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
@@ -136,12 +197,9 @@ export class DeveloperEducationModalComponent implements OnInit {
     console.log("Se eliminó correctamente el Estudio");
     this.alertWithDelete();
     this.ngOnInit();
-  }
   */
 
-  
-  onDelete(id: number) {
-    /*
+  /*
     this.studyService.deleteStudy(id).subscribe(
       data => {
         this.alertWithDelete();
@@ -149,24 +207,26 @@ export class DeveloperEducationModalComponent implements OnInit {
       error => console.log(error)
     );
     this.ngOnInit();
-    */
-    
+  */
+
+  /* 
     this.studyService.deleteStudy(id).subscribe({
         next: (data) => {
           this.alertWithDelete();
+          this.ngOnInit();
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
-      });
-    console.log("Se eliminó correctamente el Estudio");
-    this.ngOnInit();    
-
-  }  
-  
+    });  
+  */   
 
   //Sweet Alert Success  
   alertWithSuccess(){
     Swal.fire('Sí!!!', 'La educación ha sido creada', 'success')
+  }
+
+  alertWithUpdate(){
+    Swal.fire('Sí!!!', 'La educación ha sido actualizada', 'success')
   }
 
   //Sweet Alert Warning
