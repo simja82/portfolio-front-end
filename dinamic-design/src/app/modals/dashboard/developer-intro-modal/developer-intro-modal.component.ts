@@ -113,8 +113,8 @@ export class DeveloperIntroModalComponent implements OnInit {
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-  }
-  
+  } 
+
   //Guardar o Actualizar
   saveIntro() {
     let item = this.form.value;
@@ -135,16 +135,15 @@ export class DeveloperIntroModalComponent implements OnInit {
       this.onSubmit();
       this.ngOnInit();
     }
-  }  
+  }   
 
   //Enviar Formulario
   onSubmit(): void {
     //Válido
     this.submitted = true;
-    this.alertWithSuccess();
     //Inválido
     if (this.form.invalid) {
-      this.alertWithWarning();
+      this.onReset();
     }
   }
 
@@ -155,14 +154,8 @@ export class DeveloperIntroModalComponent implements OnInit {
     this.ngOnInit();
   }
 
-  //Sweet Alert Success  
-  alertWithSuccess(){
-    Swal.fire('Sí!!!', 'La intro ha sido actualizada', 'success')
-  }
-
-  //Sweet Alert Warning
-  alertWithWarning(){
-    Swal.fire('Nope!!!', 'La intro no ha sido actualizada', 'warning')
-  }
+  alertWithUpdate(){
+    Swal.fire('Sí!!!', 'La educación ha sido actualizada', 'success')
+  }  
 
 }

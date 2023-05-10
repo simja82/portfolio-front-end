@@ -4,24 +4,24 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="developerEducationModalLabel">Educación</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div *ngFor="let study of studies" class="col-4">
                             <div class="card">
-                                <img [src]="study.image" class="img-fluid">
+                                <img [src]="study.image" class="img-fluid w-25">
                                 <div class="card-body">
                                     <div class="text-center mt-4">
                                         <h5>{{study.title}}</h5>
                                         <h6>{{study.institution}}</h6>
-                                        <p>{{study.start_date}} - {{study.end_date}}</p>      
+                                        <p>{{ study.start_date | date:'yyyy'}} - {{ study.end_date | date:'yyyy'}}</p>      
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center my-3">
                                 <button class="btn btn-black-extra-mini mx-1" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" (click)="study.id? loadStudy(study.id): null"><i class="fa-solid fa-pencil"></i></button>
-                                <button class="btn btn-black-extra-mini mx-1" data-bs-target="#deleteDeveloperEducationModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                <button class="btn btn-black-extra-mini mx-1" (click)="onDelete(study.id)"><i class="fa-solid fa-trash"></i></button>
                             </div>        
                         </div>
                     </div>
@@ -30,17 +30,13 @@
                 <div class="d-flex justify-content-center my-2">
                     <button class="btn btn-black-extra-mini" data-bs-target="#createDeveloperEducationModal" data-bs-toggle="modal" aria-label="Crear"><i class="fa-solid fa-circle-plus"></i></button>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button>
+                <div class="modal-footer d-flex justify-content-between">
+                    <i class="fa-solid fa-circle-question fa-2x ms-1 text-black" data-bs-target="#infoDeleteModal" data-bs-toggle="modal"></i>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button>  
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- CRUD Modals -->
-    <!--
-    <app-delete-developer-education-modal></app-delete-developer-education-modal>
-    -->
+    </div>    
 
     <!-- Modal Create Education Developer -->
     <div class="modal fade" id="createDeveloperEducationModal" aria-hidden="true" aria-labelledby="createDeveloperEducationModal" tabindex="-1">
@@ -52,7 +48,6 @@
                 </div>
                 <form [formGroup]="form">
                     <div class="form-group">
-                        <!--<input type="hidden" name="" id="id">-->
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-12">
@@ -98,7 +93,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini" (click)="saveStudy()" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button> <!-- SACO [disabled]="form.invalid" PARA QUE SE DISPAREN LAS ALERTAS -->
+                            <button class="btn btn-black-mini" (click)="saveStudy()" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button>
                         </div>    
                     </div>
                 </form>
@@ -106,32 +101,22 @@
         </div>
     </div>
 
-    <!-- Modal Delete Developer Education -->
-    <div class="modal fade" id="deleteDeveloperEducationModal" aria-hidden="true" aria-labelledby="deleteDeveloperEducationModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Modal Info Delete -->
+    <div class="modal fade" id="infoDeleteModal" tabindex="-1" aria-labelledby="infoDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="deleteDeveloperEducationModal">Eliminar Educación</h1>
-                    <i class="fa-solid fa-rotate-left" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Volver"></i>
+                    <h1 class="modal-title fs-5" id="infoDeleteModalLabel">Información</h1>
+                    <button type="button" class="btn-close" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Volver"></button>
                 </div>
-                <form [formGroup]="form">
-                    <div class="form-group">
-                        <div class="modal-body">
-                            <i class="fa-solid fa-circle-exclamation justify-content-center d-flex fa-2x pt-3"></i>
-                            <br>
-                            <p class="justify-content-center d-flex">¿De verdad querés eliminar esta educación?</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Cancelar" (click)="alertWithCancel()">Cancelar</button>
-                            <button class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Eliminar" (click)="study.id? onDelete(study.id): null">Eliminar</button>
-                        </div>
-                    </div>
-                </form>
+                <div class="modal-body">
+                    <i class="justify-content-center d-flex fa-2x pt-3"></i>
+                    <br>
+                    <p class="text-center d-flex mx-2">Tomá nota: Si hacés click en un botón de eliminar se eliminará el dato al que corresponde sin solicitud de confirmación previa alguna y no podrá ser recuperado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-black-mini" data-bs-target="#developerEducationModal" data-bs-toggle="modal" aria-label="Entendido">Entendido</button>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-

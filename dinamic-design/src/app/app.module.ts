@@ -246,6 +246,7 @@ import { DeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal
 import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/edit-developer-cv-modal/edit-developer-cv-modal.component';
 
 import { InterceptorInterceptor } from './services/interceptor.interceptor';
+import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/info-delete-modal.component';
 
 @NgModule({
     declarations: [
@@ -490,7 +491,8 @@ import { InterceptorInterceptor } from './services/interceptor.interceptor';
         EditBrandModalComponent,
         MessageModalComponent,
         DeveloperCvModalComponent,
-        EditDeveloperCvModalComponent
+        EditDeveloperCvModalComponent,
+        InfoDeleteModalComponent
    ],
    providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorInterceptor, multi:true }

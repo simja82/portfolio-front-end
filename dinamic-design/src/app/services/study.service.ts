@@ -37,20 +37,8 @@ export class StudyService {
   }  
 
   //Eliminar
-  /*
-  public deleteStudy(id: number): Observable<Study> {
-    return this.http.delete<Study>(this.url + `/delete/${id}`); 
-  } 
-  */
- 
-  /*
   public deleteStudy(id: number): Observable<any> {
-    return this.http.delete<any>(this.url + `/delete/${id}`); 
+    return this.http.delete<any>(this.url + '/delete/' + id); 
   }   
-  */
-
-  public deleteStudy(id:number): Observable<any> {
-    return this.http.delete(this.url + `/delete/${id}`);    
-  } 
 
 }

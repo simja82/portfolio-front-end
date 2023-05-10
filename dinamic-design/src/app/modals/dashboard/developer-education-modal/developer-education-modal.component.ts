@@ -100,19 +100,19 @@ export class DeveloperEducationModalComponent implements OnInit {
 
   //Cargar Tabla
   ngOnInit() { 
-   this.loadStudies();
-  }
-
-  //Cargar Tabla
-  loadStudies() {
-    this.studyService.getStudies().subscribe({
-      next: (data) => {
-        this.studies=data;
-      },
-      error: (e) => console.error(e),
-      complete: () => console.info('complete')
-    })
-  }
+    this.loadStudies();
+   }
+ 
+   //Cargar Tabla
+   loadStudies() {
+     this.studyService.getStudies().subscribe({
+       next: (data) => {
+         this.studies=data;
+       },
+       error: (e) => console.error(e),
+       complete: () => console.info('complete')
+     })
+   }
 
   //Cargar Formulario por ID
   loadStudy(id: number){
@@ -123,7 +123,7 @@ export class DeveloperEducationModalComponent implements OnInit {
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-  }   
+  }  
   
   //Guardar o Actualizar
   saveStudy() {
@@ -149,7 +149,7 @@ export class DeveloperEducationModalComponent implements OnInit {
       this.onSubmit();
       this.ngOnInit();
     }
-  }  
+  }    
 
   //Enviar Formulario
   onSubmit(): void {
@@ -168,58 +168,19 @@ export class DeveloperEducationModalComponent implements OnInit {
     this.ngOnInit();
   }
 
-  //Eliminar Dato por ID -- NO FUNCIONA --
-  onDelete(id: number){  
-    this.studyService.deleteStudy(id).subscribe({
-        next: (data) => { },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-    });
-    this.ngOnInit();
-    this.alertWithDelete();
-  }
-
-  /*
-    this.studyService.deleteStudy(id).subscribe(data => {});
-    console.log("Se eliminó correctamente el item");
-    this.alertWithDelete();
-    this.ngOnInit();
-  */
-
-  /*
-    this.studyService.deleteStudy(id).subscribe({
-        next: (data) => {
-          //this.study=data;
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-    console.log("Se eliminó correctamente el Estudio");
-    this.alertWithDelete();
-    this.ngOnInit();
-  */
-
-  /*
-    this.studyService.deleteStudy(id).subscribe(
-      data => {
-        this.alertWithDelete();
+  //Eliminar Dato  
+  onDelete(id:any){
+    this.studyService.deleteStudy(id).subscribe({  
+      next: (data) => { 
       },
-      error => console.log(error)
-    );
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+  
+    this.alertWithDelete();
     this.ngOnInit();
-  */
-
-  /* 
-    this.studyService.deleteStudy(id).subscribe({
-        next: (data) => {
-          this.alertWithDelete();
-          this.ngOnInit();
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-    });  
-  */   
-
+  }    
+  
   //Sweet Alert Success  
   alertWithSuccess(){
     Swal.fire('Sí!!!', 'La educación ha sido creada', 'success')
@@ -229,19 +190,9 @@ export class DeveloperEducationModalComponent implements OnInit {
     Swal.fire('Sí!!!', 'La educación ha sido actualizada', 'success')
   }
 
-  //Sweet Alert Warning
-  alertWithWarning(){
-    Swal.fire('Nope!!!', 'La educación no ha sido creada', 'warning')
-  }
-
-  //Sweet Alert Cancel
-  alertWithCancel(){
-    Swal.fire('Bueno...', 'La educación no ha sido eliminada', 'error')
-  }  
-
   //Sweet Alert Delete
   alertWithDelete(){
     Swal.fire('De acuerdo...', 'La educación ha sido eliminada...', 'warning')
-  }  
+  } 
   
 }

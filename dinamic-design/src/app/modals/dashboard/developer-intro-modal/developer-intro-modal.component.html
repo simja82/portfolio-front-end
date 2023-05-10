@@ -84,7 +84,7 @@
                                 <label for="line_one" class="form-label">Párrafo Uno</label> 
                                 <textarea class="form-control" id="line_one" rows="3" formControlName="line_one" name="" [ngClass]="{ 'is-invalid': InvalidLineOne, 'is-valid': ValidLineOne }"></textarea>
                                 <div class="d-flex justify-content-between">
-                                    <div id="line_oneHelp" class="form-text">Ingresar elprimer párrafo</div>
+                                    <div id="line_oneHelp" class="form-text">Ingresar el primer párrafo</div>
                                     <div id="limitHelp" class="form-text">Máx. 200 caracteres</div>
                                 </div> 
                                 <div *ngIf="LineOne?.errors" class="invalid-feedback">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-black-mini" (click)="saveIntro()" data-bs-target="#developerIntroModal"data-bs-toggle="modal" aria-label="Actualizar" [disabled]="form.invalid">Actualizar</button>
+                        <button class="btn btn-black-mini" (click)="saveIntro()" data-bs-target="#developerIntroModal"data-bs-toggle="modal" aria-label="Actualizar">Actualizar</button>
                     </div>                  
                 </form>
             </div>
