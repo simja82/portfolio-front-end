@@ -1,7 +1,6 @@
-//Modelo de Lógica para Datos Recorridos con CRUD
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
 
 //Models
@@ -16,22 +15,16 @@ import { StudyService } from 'src/app/services/study.service';
 })
 export class DeveloperEducationModalComponent implements OnInit {
 
-  //Study Model
+  //Study Model -- ES DISTINTA LA FORMA SIN RECORRIDO --
   studies : Study [] = [];
 
   //Form
   form: FormGroup;
-  
-  //ID
-  id?: number;
 
   //Submitted
   submitted = false;
 
-  //Study
-  study: any;
-
-  //Inyección de Services, Constructor de Formularios y REST Client
+  //Inyección de Service, Constructor de Formularios y REST Client
     constructor (private studyService:StudyService, private formBuilder: FormBuilder, private http: HttpClient) 
     { 
       //Reglas de los Campos del Formulario
@@ -98,24 +91,24 @@ export class DeveloperEducationModalComponent implements OnInit {
     return !this.EndDate?.errors && this.EndDate?.touched;
   } 
 
-  //Cargar Tabla
-  ngOnInit() { 
-    this.loadStudies();
-   }
- 
-   //Cargar Tabla
-   loadStudies() {
-     this.studyService.getStudies().subscribe({
-       next: (data) => {
-         this.studies=data;
-       },
-       error: (e) => console.error(e),
-       complete: () => console.info('complete')
-     })
-   }
+  //Listar
+  loadStudies(): void {
+    this.studyService.getStudies().subscribe({
+      next: (data) => {
+      this.studies = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    })
+  }
 
-  //Cargar Formulario por ID
-  loadStudy(id: number){
+  //Al Inicio
+  ngOnInit(): void { 
+    this.loadStudies();
+  }  
+ 
+  //Encontrar
+  findStudy(id: number){
     this.studyService.findStudy(id).subscribe({
         next: (data) => {
           this.form.setValue(data);
@@ -123,41 +116,57 @@ export class DeveloperEducationModalComponent implements OnInit {
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-  }  
-  
-  //Guardar o Actualizar
+  } 
+
+  //Crear o Editar
   saveStudy() {
-    let study = this.form.value;
-    if (study.id == '') {
-      this.studyService.saveStudy(study).subscribe({
+    let item = this.form.value;
+    if (item.id == '') {
+      this.studyService.saveStudy(item).subscribe({
         next: (data) => {
+          this.onReset();
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-      this.alertWithSuccess();
       this.onSubmit();
-      this.ngOnInit();
-    } else {
-      this.studyService.updateStudy(study.id, study).subscribe({
+      this.onReset();
+      this.ngOnInit();;
+    } else { 
+      this.studyService.updateStudy(item.id, item).subscribe({
         next: (data) => {
+          this.onReset();
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-      this.alertWithUpdate();
       this.onSubmit();
+      this.onReset();
       this.ngOnInit();
     }
-  }    
+  }
+
+  //Eliminar -- PROBANDO CON FORMATO NUEVO
+  deleteStudy(id: any) {
+    this.studyService.deleteStudy(id).subscribe({
+      next: (data) => {
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.alertWithDelete();
+    this.ngOnInit();
+  }  
 
   //Enviar Formulario
   onSubmit(): void {
     //Válido
     this.submitted = true;
+    this.alertWithSuccess();
     //Inválido
     if (this.form.invalid) {
-      this.onReset();
+      this.form.reset();
+      this.alertWithWarning();
     }
   }
 
@@ -168,31 +177,29 @@ export class DeveloperEducationModalComponent implements OnInit {
     this.ngOnInit();
   }
 
-  //Eliminar Dato  
-  onDelete(id:any){
-    this.studyService.deleteStudy(id).subscribe({  
-      next: (data) => { 
-      },
-      error: (e) => console.error(e),
-      complete: () => console.info('complete')
-    });
-  
-    this.alertWithDelete();
-    this.ngOnInit();
-  }    
-  
   //Sweet Alert Success  
   alertWithSuccess(){
     Swal.fire('Sí!!!', 'La educación ha sido creada', 'success')
   }
 
+  //Sweet Alert Update
   alertWithUpdate(){
     Swal.fire('Sí!!!', 'La educación ha sido actualizada', 'success')
+  }
+
+  //Sweet Alert Warning
+  alertWithWarning(){
+    Swal.fire('Nope!!!', 'La educación no ha sido registrada', 'warning')
   }
 
   //Sweet Alert Delete
   alertWithDelete(){
     Swal.fire('De acuerdo...', 'La educación ha sido eliminada...', 'warning')
+  } 
+
+  //Sweet Alert With Error
+  alertWithError(){
+    Swal.fire('Ooops!!!', 'Ha habido un error', 'error')
   } 
   
 }

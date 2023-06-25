@@ -16,7 +16,7 @@ import { IntroService } from 'src/app/services/intro.service';
 })
 export class DeveloperIntroModalComponent implements OnInit {
 
-  //Intro Model
+  //Intro Model -- ES DISTINTA LA FORMA CON RECORRIDO --
   intro: Intro = new Intro("", "", "", "", "");
 
   //Form
@@ -28,10 +28,10 @@ export class DeveloperIntroModalComponent implements OnInit {
   //Submitted
   submitted = false;
 
-  //Intro Data
+  //Intro Data -- AL HTML --
   intro_data: any;
 
-  //Inyección de Services, Constructor de Formularios y REST Client
+  //Inyección de Service, Constructor de Formularios y REST Client
   constructor(private introService: IntroService, private formBuilder: FormBuilder, private http: HttpClient) 
   {  
     //Reglas de los Campos del Formulario 
@@ -98,16 +98,16 @@ export class DeveloperIntroModalComponent implements OnInit {
     return !this.LineTwo?.errors && this.LineTwo?.touched;
   }  
 
-  //Llamar a Cargar Fila
+  //Al Inicio
   ngOnInit() { 
     this.loadIntro();
   }
 
-  //Cargar Datos
+  //Cargar un Dato -- FIND --
   loadIntro(){
     this.introService.findIntro(1).subscribe({
         next: (data) => {
-          this.intro=data;
+          this.intro = data;
           this.form.setValue(data);
         },
         error: (e) => console.error(e),
@@ -141,9 +141,11 @@ export class DeveloperIntroModalComponent implements OnInit {
   onSubmit(): void {
     //Válido
     this.submitted = true;
+    this.alertWithUpdate();
     //Inválido
     if (this.form.invalid) {
       this.onReset();
+      this.alertWithError();
     }
   }
 
@@ -154,8 +156,14 @@ export class DeveloperIntroModalComponent implements OnInit {
     this.ngOnInit();
   }
 
+  //Sweet Alert With Success
   alertWithUpdate(){
     Swal.fire('Sí!!!', 'La educación ha sido actualizada', 'success')
   }  
+
+  //Sweet Alert With Error
+  alertWithError(){
+    Swal.fire('Ooops!!!', 'Ha habido un error', 'error')
+  }   
 
 }

@@ -93,7 +93,6 @@ import { SocialModalComponent } from './modals/dashboard/social-modal/social-mod
 import { BannersModalComponent } from './modals/dashboard/banners-modal/banners-modal.component';
 import { CreditsModalComponent } from './modals/dashboard/credits-modal/credits-modal.component';
 import { BloopersModalComponent } from './modals/dashboard/bloopers-modal/bloopers-modal.component';
-import { EditBannerModalComponent } from './modals/dashboard/banners-modal/edit-banner-modal/edit-banner-modal.component';
 import { EditTitleCreditModalComponent } from './modals/dashboard/credits-modal/edit-title-credit-modal/edit-title-credit-modal.component';
 import { EditSingleCreditModalComponent } from './modals/dashboard/credits-modal/edit-single-credit-modal/edit-single-credit-modal.component';
 import { DeleteSingleCreditModalComponent } from './modals/dashboard/credits-modal/delete-single-credit-modal/delete-single-credit-modal.component';
@@ -158,13 +157,9 @@ import { DeveloperExperienceModalComponent } from './modals/dashboard/developer-
 import { DeveloperSkillsModalComponent } from './modals/dashboard/developer-skills-modal/developer-skills-modal.component';
 import { DeveloperCommentsModalComponent } from './modals/dashboard/developer-comments-modal/developer-comments-modal.component';
 import { DeveloperHobbiesModalComponent } from './modals/dashboard/developer-hobbies-modal/developer-hobbies-modal.component';
-import { EditDeveloperProfileModalComponent } from './modals/dashboard/developer-profile-modal/edit-developer-profile-modal/edit-developer-profile-modal.component';
 import { CreateDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/create-developer-project-modal/create-developer-project-modal.component';
 import { EditDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/edit-developer-project-modal/edit-developer-project-modal.component';
 import { DeleteDeveloperProjectModalComponent } from './modals/dashboard/developer-projects-modal/delete-developer-project-modal/delete-developer-project-modal.component'
-//import { CreateDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/create-developer-education-modal/create-developer-education-modal.component';
-//import { EditDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/edit-developer-education-modal/edit-developer-education-modal.component';
-//import { DeleteDeveloperEducationModalComponent } from './modals/dashboard/developer-education-modal/delete-developer-education-modal/delete-developer-education-modal.component';
 import { CreateDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/create-developer-experience-modal/create-developer-experience-modal.component';
 import { EditDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/edit-developer-experience-modal/edit-developer-experience-modal.component';
 import { DeleteDeveloperExperienceModalComponent } from './modals/dashboard/developer-experience-modal/delete-developer-experience-modal/delete-developer-experience-modal.component';
@@ -195,17 +190,7 @@ import { AudiovisualMoreCreditsComponent } from './components/sections/audiovisu
 import { AudiovisualBloopersCreditsComponent } from './components/sections/audiovisual/audiovisual-credits/audiovisual-bloopers-credits/audiovisual-bloopers-credits.component';
 import { AudiovisualBloopersComponent } from './components/sections/audiovisual/audiovisual-bloopers/audiovisual-bloopers.component';
 import { DeveloperSkillsComponent } from './components/sections/developer/developer-skills/developer-skills.component';
-import { CreateBannerModalComponent } from './modals/dashboard/banners-modal/create-banner-modal/create-banner-modal.component';
 import { WhiteOrangeSessionComponent } from './components/navbar/session/white-orange/white-orange.component';
-import { CreateAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/create-audiovisual-social-modal/create-audiovisual-social-modal.component';
-import { CreateDeveloperSocialModalComponent } from './modals/dashboard/social-modal/create-developer-social-modal/create-developer-social-modal.component';
-import { CreateGeneralSocialModalComponent } from './modals/dashboard/social-modal/create-general-social-modal/create-general-social-modal.component';
-import { DeleteAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/delete-audiovisual-social-modal/delete-audiovisual-social-modal.component';
-import { DeleteDeveloperSocialModalComponent } from './modals/dashboard/social-modal/delete-developer-social-modal/delete-developer-social-modal.component';
-import { DeleteGeneralSocialModalComponent } from './modals/dashboard/social-modal/delete-general-social-modal/delete-general-social-modal.component';
-import { EditAudiovisualSocialModalComponent } from './modals/dashboard/social-modal/edit-audiovisual-social-modal/edit-audiovisual-social-modal.component';
-import { EditDeveloperSocialModalComponent } from './modals/dashboard/social-modal/edit-developer-social-modal/edit-developer-social-modal.component';
-import { EditGeneralSocialModalComponent } from './modals/dashboard/social-modal/edit-general-social-modal/edit-general-social-modal.component';
 import { EditDoubleCreditModalComponent } from './modals/dashboard/credits-modal/edit-double-credit-modal/edit-double-credit-modal.component';
 import { DeleteDoubleCreditModalComponent } from './modals/dashboard/credits-modal/delete-double-credit-modal/delete-double-credit-modal.component';
 import { EditTripleCreditModalComponent } from './modals/dashboard/credits-modal/edit-triple-credit-modal/edit-triple-credit-modal.component';
@@ -229,14 +214,12 @@ import { DeleteDeveloperSoftSkillModalComponent } from './modals/dashboard/devel
 import { DeleteDeveloperLanguageSkillModalComponent } from './modals/dashboard/developer-skills-modal/delete-developer-language-skill-modal/delete-developer-language-skill-modal.component';
 import { HelpersModalComponent } from './modals/dashboard/helpers-modal/helpers-modal.component';
 import { FormsModalComponent } from './modals/dashboard/forms-modal/forms-modal.component';
-import { LoginModalComponent } from './modals/dashboard/login-modal/login-modal.component';
 import { ButtonsModalComponent } from './modals/dashboard/buttons-modal/buttons-modal.component';
 import { CreateButtonModalComponent } from './modals/dashboard/buttons-modal/create-button-modal/create-button-modal.component';
 import { EditButtonModalComponent } from './modals/dashboard/buttons-modal/edit-button-modal/edit-button-modal.component';
 import { DeleteButtonModalComponent } from './modals/dashboard/buttons-modal/delete-button-modal/delete-button-modal.component';
 import { EditHelperModalComponent } from './modals/dashboard/helpers-modal/edit-helper-modal/edit-helper-modal.component';
 import { CreateHelperModalComponent } from './modals/dashboard/helpers-modal/create-helper-modal/create-helper-modal.component';
-import { EditLoginModalComponent } from './modals/dashboard/login-modal/edit-login-modal/edit-login-modal.component';
 import { CreateFormModalComponent } from './modals/dashboard/forms-modal/create-form-modal/create-form-modal.component';
 import { EditFormModalComponent } from './modals/dashboard/forms-modal/edit-form-modal/edit-form-modal.component';
 import { BrandModalComponent } from './modals/dashboard/brand-modal/brand-modal.component';
@@ -247,6 +230,11 @@ import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-m
 
 import { InterceptorInterceptor } from './services/interceptor.interceptor';
 import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/info-delete-modal.component';
+import { SectionsModalComponent } from './modals/dashboard/sections-modal/sections-modal.component';
+import { DivisorsModalComponent } from './modals/dashboard/sections-modal/divisors-modal/divisors-modal.component';
+import { TitlesModalComponent } from './modals/dashboard/sections-modal/titles-modal/titles-modal.component';
+import { IconsModalComponent } from './modals/dashboard/sections-modal/icons-modal/icons-modal.component';
+import { DashboardModalComponent } from './modals/dashboard/sections-modal/dashboard-modal/dashboard-modal.component';
 
 @NgModule({
     declarations: [
@@ -342,16 +330,6 @@ import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/inf
         BannersModalComponent,
         CreditsModalComponent,
         BloopersModalComponent,
-        EditGeneralSocialModalComponent,
-        DeleteGeneralSocialModalComponent,
-        CreateGeneralSocialModalComponent,
-        EditAudiovisualSocialModalComponent,
-        DeleteAudiovisualSocialModalComponent,
-        CreateAudiovisualSocialModalComponent,
-        EditDeveloperSocialModalComponent,
-        DeleteDeveloperSocialModalComponent,
-        CreateDeveloperSocialModalComponent,
-        EditBannerModalComponent,
         EditTitleCreditModalComponent,
         EditSingleCreditModalComponent,
         DeleteSingleCreditModalComponent,
@@ -416,13 +394,9 @@ import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/inf
         DeveloperSkillsModalComponent,
         DeveloperCommentsModalComponent,
         DeveloperHobbiesModalComponent,
-        EditDeveloperProfileModalComponent,
         CreateDeveloperProjectModalComponent,
         EditDeveloperProjectModalComponent,
         DeleteDeveloperProjectModalComponent,
-        //CreateDeveloperEducationModalComponent,
-        //EditDeveloperEducationModalComponent,
-        //DeleteDeveloperEducationModalComponent,
         CreateDeveloperExperienceModalComponent,
         EditDeveloperExperienceModalComponent,
         DeleteDeveloperExperienceModalComponent,
@@ -452,7 +426,6 @@ import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/inf
         AudiovisualBloopersCreditsComponent,
         AudiovisualBloopersComponent,
         DeveloperSkillsComponent,
-        CreateBannerModalComponent,
         WhiteOrangeSessionComponent,
         EditDoubleCreditModalComponent,
         DeleteDoubleCreditModalComponent,
@@ -477,14 +450,12 @@ import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/inf
         DeleteDeveloperLanguageSkillModalComponent,
         HelpersModalComponent,
         FormsModalComponent,
-        LoginModalComponent,
         ButtonsModalComponent,
         CreateButtonModalComponent,
         EditButtonModalComponent,
         DeleteButtonModalComponent,
         EditHelperModalComponent,
         CreateHelperModalComponent,
-        EditLoginModalComponent,
         CreateFormModalComponent,
         EditFormModalComponent,
         BrandModalComponent,
@@ -492,7 +463,12 @@ import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/inf
         MessageModalComponent,
         DeveloperCvModalComponent,
         EditDeveloperCvModalComponent,
-        InfoDeleteModalComponent
+        InfoDeleteModalComponent,
+        SectionsModalComponent,
+        DivisorsModalComponent,
+        TitlesModalComponent,
+        IconsModalComponent,
+        DashboardModalComponent
    ],
    providers: [
     { provide: HTTP_INTERCEPTORS, useClass: InterceptorInterceptor, multi:true }

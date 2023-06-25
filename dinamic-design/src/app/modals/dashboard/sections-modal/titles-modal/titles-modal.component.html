@@ -1,0 +1,24 @@
+    <!--Modal Titles-->
+    <div class="modal fade" id="titlesModal" tabindex="-1" aria-labelledby="titlesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="titlesModalLabel">Títulos</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center w-50 m-auto mt-3">
+                        <div *ngFor="let section of sections" class="row mb-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="pt-2"><i [class]="section.icon" class="me-3"></i> {{section.title}}</p>
+                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#editDivisorModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver">Volver</button><!--  {{buttons[7].value}}  -->
+                </div>
+            </div>
+        </div>
+    </div>

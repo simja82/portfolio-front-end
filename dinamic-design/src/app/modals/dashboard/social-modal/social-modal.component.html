@@ -4,24 +4,24 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="socialModalLabel">Social</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container text-center">
                         <div class="row g-4">
                             <div class="col-4">
                                 <h5>General</h5>
-                                <div *ngFor="let social of social_general">
+                                <div *ngFor="let general of generalsocial">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-2"></div>
                                         <div class="col-2">
-                                            <i [class]="social.icon" class="fa-2x pt-4 pb-3"></i>
+                                            <i [class]="general.icon" class="fa-2x pt-4 pb-3"></i>
                                         </div>
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editGeneralSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
-                                        </div>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="general.id? findGeneralSocial(general.id): null" data-bs-target="#createGeneralSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                        </div>                                           
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteGeneralSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="deleteGeneralSocial(general.id)"><i class="fa-solid fa-trash"></i></button>
                                         </div>
                                         <div class="col-2"></div>
                                     </div>
@@ -33,17 +33,17 @@
                             </div>
                             <div class="col-4">
                                 <h5>Audiovisual</h5>
-                                <div *ngFor="let social of social_audiovisual">
+                                <div *ngFor="let audiovisual of audiovisualsocial">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-2"></div>
                                         <div class="col-2">
-                                            <i [class]="social.icon" class="fa-2x pt-4 pb-3"></i>
+                                            <i [class]="audiovisual.icon" class="fa-2x pt-4 pb-3"></i>
                                         </div>
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editAudiovisualSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="audiovisual.id? findAudiovisualSocial(audiovisual.id): null" data-bs-target="#createAudiovisualSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                                         </div>
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteAudiovisualSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="deleteAudiovisualSocial(audiovisual.id)"><i class="fa-solid fa-trash"></i></button>
                                         </div>
                                         <div class="col-2"></div>
                                     </div>
@@ -55,17 +55,17 @@
                             </div>
                             <div class="col-4">
                                 <h5>Developer</h5>
-                                <div *ngFor="let social of social_developer">
+                                <div *ngFor="let developer of developersocial">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-2"></div>
                                         <div class="col-2">
-                                            <i [class]="social.icon" class="fa-2x pt-4 pb-3"></i>
+                                            <i [class]="developer.icon" class="fa-2x pt-4 pb-3"></i>
                                         </div>
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#editDeveloperSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="developer.id? findDeveloperSocial(developer.id): null" data-bs-target="#createDeveloperSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
                                         </div>
                                         <div class="col-3 mt-3">
-                                            <button class="btn btn-black-extra-mini mx-2" data-bs-target="#deleteDeveloperSocialModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
+                                            <button class="btn btn-black-extra-mini mx-2" (click)="deleteDeveloperSocial(developer.id)"><i class="fa-solid fa-trash"></i></button>
                                         </div>
                                         <div class="col-2"></div>
                                     </div>
@@ -78,22 +78,150 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{buttons[7].value}}</button>
+                <div class="modal-footer d-flex justify-content-between">
+                    <i class="fa-solid fa-circle-question fa-2x ms-1 text-black" data-bs-target="#infoDeleteModal" data-bs-toggle="modal"></i>
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button><!-- {{buttons[7].value}} -->  
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- CRUD Modals's -->
-    <app-create-general-social-modal></app-create-general-social-modal>
-    <app-edit-general-social-modal></app-edit-general-social-modal>
-    <app-delete-general-social-modal></app-delete-general-social-modal>
-    <app-create-audiovisual-social-modal></app-create-audiovisual-social-modal>
-    <app-edit-audiovisual-social-modal></app-edit-audiovisual-social-modal>
-    <app-delete-audiovisual-social-modal></app-delete-audiovisual-social-modal>
-    <app-create-developer-social-modal></app-create-developer-social-modal>
-    <app-edit-developer-social-modal></app-edit-developer-social-modal>
-    <app-delete-developer-social-modal></app-delete-developer-social-modal>
-    
+    <!-- Create / Edit General Social Modal -->
+    <div class="modal fade" id="createGeneralSocialModal" aria-hidden="true" aria-labelledby="createGeneralSocialModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createGeneralSocialModal">Redes Sociales</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <input type="hidden" name="" id="id">                    
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
+                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
+                                        <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
+                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
+                                        <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini"  (click)="saveGeneralSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <!-- Create / Edit Audiovisual Social Modal -->
+    <div class="modal fade" id="createAudiovisualSocialModal" aria-hidden="true" aria-labelledby="createAudiovisualSocialModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createAudiovisualSocialModal">Redes Sociales</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <input type="hidden" name="" id="id">                    
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
+                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
+                                        <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
+                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
+                                        <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini"  (click)="saveAudiovisualSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create / Edit Developer Social Modal -->
+    <div class="modal fade" id="createDeveloperSocialModal" aria-hidden="true" aria-labelledby="createDeveloperSocialModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createDeveloperSocialModal">Redes Sociales</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <input type="hidden" name="" id="id">                    
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
+                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
+                                        <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
+                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
+                                        <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini"  (click)="saveDeveloperSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Info Delete -->
+    <div class="modal fade" id="infoDeleteModal" tabindex="-1" aria-labelledby="infoDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infoDeleteModalLabel">Información</h1>
+                    <button type="button" class="btn-close" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Volver"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="justify-content-center d-flex fa-2x pt-3"></i>
+                    <br>
+                    <p class="text-center d-flex mx-2">Tomá nota: Si hacés click en un botón de eliminar se eliminará el dato al que corresponde sin solicitud de confirmación previa alguna y no podrá ser recuperado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-black-mini" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Entendido">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>

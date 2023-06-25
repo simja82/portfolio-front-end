@@ -8,38 +8,35 @@ import { Account } from '../models/account';
 })
 
 export class AccountService {
-  account: Account[]=[];
-  accountService: any;
 
-  url= 'http://localhost:8080/account/'; 
-  //url= 'https://pointofview.onrender.com/account/';
-
+  //url= 'http://localhost:8080/account/'; 
+  url= 'https://pointofview.onrender.com/account/';
 
   constructor(private http:HttpClient) { }
 
   //Listar
-  public getAccounts(): Observable<any> {
-    return this.http.get<Account[]>(this.url + 'list');
+  public getAccounts(): Observable<Account[]> {
+    return this.http.get<Account[]>(this.url + '/list');
   }
 
   //Encontrar
-  public findAccount(id: number): Observable<Account[]> {
-    return this.http.get<Account[]>(this.url + `find/${id}`); 
+  public findAccount(id: number): Observable<any> {
+    return this.http.get<Account>(this.url + `/find/${id}`); 
   }
 
   //Crear
    public saveAccount(account: Account): Observable<any> {
-    return this.http.post<any>(this.url + 'new', account); 
+    return this.http.post<any>(this.url + '/new', account); 
   } 
 
   //Editar
-  public updateAccount(id:number, account: Account): Observable<any> {
-    return this.http.put<any>(this.url + `update/${id}`, account);    
+  public updateAccount(account: Account): Observable<any> {
+    return this.http.put<Account>(this.url + `/update`, account);    
   }
 
   //Eliminar
   public deleteAccount(id: number): Observable<Account> {
-    return this.http.delete<Account>(this.url + `delete/` + id); 
-  } 
+    return this.http.delete<any>(this.url + `/delete/${id}`); 
+  }  
 
 }

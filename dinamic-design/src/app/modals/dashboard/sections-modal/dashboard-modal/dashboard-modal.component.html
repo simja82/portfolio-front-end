@@ -1,0 +1,61 @@
+    <!--Modal Dashboard-->
+    <div class="modal fade" id="dashboardModal" tabindex="-1" aria-labelledby="dashboardModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="dashboardModalLabel">Dashboard</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center my-4">
+                        <h5 class="col justify-content-center d-flex mb-3">General</h5>
+                        <div class="row g-4 container">
+                            <div *ngFor="let button of general" class="col-6 col-md-3 col-lg-4 pb-5">
+                                <button type="button" class="btn btn-black-section">
+                                    <i [class]="button.icon" class="fa-2x text-white"></i>
+                                </button>
+                                <h6 class="mt-3">{{button.section}}</h6>
+                                <div class="d-flex justify-content-center my-3">
+                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editIconModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>  <!--  (click)="study_data.id? loadStudy(study_data.id): null"  -->
+                                    <button class="btn btn-black-extra-mini mx-1"><i class="fa-solid fa-trash"></i></button>  <!--  (click)="onDelete(study_data.id)"  -->
+                                </div> 
+                            </div>                            
+                        </div>
+                    </div>   
+                    <div class="container text-center my-4">
+                        <h5 class="col justify-content-center d-flex mb-3">Audiovisual</h5>                        
+                        <div class="row g-4 container">
+                            <div *ngFor="let button of audiovisual" class="col-6 col-md-3 col-lg-4 pb-5">
+                                <button type="button" class="btn btn-black-section">
+                                    <i [class]="button.icon" class="fa-2x text-white"></i>
+                                </button>
+                                <h6 class="mt-3">{{button.section}}</h6>
+                                <div class="d-flex justify-content-center my-3">
+                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editIconModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>  <!--  (click)="study_data.id? loadStudy(study_data.id): null"  -->
+                                    <button class="btn btn-black-extra-mini mx-1"><i class="fa-solid fa-trash"></i></button>  <!--  (click)="onDelete(study_data.id)"  -->
+                                </div> 
+                            </div>                            
+                        </div>
+                    </div>   
+                    <div class="container text-center my-4">
+                        <h5 class="col justify-content-center d-flex mb-3">Developer</h5>                        
+                        <div class="row g-4 container">
+                            <div *ngFor="let button of developer" class="col-6 col-md-3 col-lg-4 pb-5">
+                                <button type="button" class="btn btn-black-section">
+                                    <i [class]="button.icon" class="fa-2x text-white"></i>
+                                </button>
+                                <h6 class="mt-3">{{button.section}}</h6>
+                                <div class="d-flex justify-content-center my-3">
+                                    <button class="btn btn-black-extra-mini mx-1" data-bs-target="#editIconModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>  <!--  (click)="study_data.id? loadStudy(study_data.id): null"  -->
+                                    <button class="btn btn-black-extra-mini mx-1"><i class="fa-solid fa-trash"></i></button>  <!--  (click)="onDelete(study_data.id)"  -->
+                                </div> 
+                            </div>                            
+                        </div>
+                    </div>   
+                </div>                
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver">Volver</button><!--  {{buttons[7].value}}  -->
+                </div>
+            </div>
+        </div>
+    </div>

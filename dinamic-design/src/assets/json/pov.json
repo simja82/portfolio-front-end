@@ -6,6 +6,7 @@
     },
     "login" :
     {
+        "title" : "Login",
         "image" : "https://i.ibb.co/z5Ynqvh/login.jpg",
         "description" : "Llave antigua sobre teclado de computadora"        
     },
@@ -17,7 +18,9 @@
             "image" : "https://i.ibb.co/sP8hFWX/index.jpg",
             "description" : "Cámara Canon - Efecto Droste",
             "hero" : "Hola!!!",
-            "subhero" : "Me ves?"
+            "subhero" : "Me ves?",
+            "alt" : "",
+            "title" : ""
         },
         {
             "id" : 2,
@@ -25,7 +28,9 @@
             "image" : "https://i.ibb.co/MDJPmXs/intro.jpg",
             "description" : "Bifurcación de vías de tren",
             "hero" : "Llegaste!!!",
-            "subhero" : "Te invito a recorrer mi historia de acuerdo a como te interese conocerme... Te animás?"
+            "subhero" : "Te invito a recorrer mi historia de acuerdo a como te interese conocerme... Te animás?",
+            "alt" : "",
+            "title" : ""
         },
         {
             "id" : 3,
@@ -33,7 +38,9 @@
             "image" : "https://i.ibb.co/DRsGvBG/error.png",
             "description" : "Robot de piezas recicladas",
             "hero" : "Oops!!!",
-            "subhero":"Algo no salió bien..."
+            "subhero":"Algo no salió bien...",
+            "alt" : "",
+            "title" : ""
         },
         {
             "id" : 4,
@@ -41,7 +48,9 @@
             "image" : "https://i.ibb.co/rHd3Hgt/register.jpg",
             "description" : "Señal artesanal de orientación",
             "hero" : "Próximamente",
-            "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles..."
+            "subhero" : "Vas a poder registrarte y hacer uso de varios servicios disponibles...",
+            "alt" : "",
+            "title" : ""
         },
         {
             "id" : 5,
@@ -49,7 +58,9 @@
             "image" : "https://i.ibb.co/JR1q02h/links.jpg",
             "description" : "Ruta cruzando un bosque",
             "hero" : "Epa...",
-            "subhero" :"Parece que encontraste un atajo... Adonde te gustaría ir?"
+            "subhero" :"Parece que encontraste un atajo... Adonde te gustaría ir?",
+            "alt" : "",
+            "title" : ""
         },
         {
             "id" : 6,
@@ -57,7 +68,9 @@
             "image" : "https://i.ibb.co/tPk0dMj/plus.jpg",
             "description" : "Hojas de papel con leyenda 'I can do anything not everything'",
             "hero" :"¿Le diste click al ícono de más?",
-            "subhero" :"Escribime y dejame saber qué puedo ofrecerte..."
+            "subhero" :"Escribime y dejame saber qué puedo ofrecerte...",
+            "alt" : "",
+            "title" : ""
         }
     ],
     "buttons" :
@@ -1341,19 +1354,108 @@
         "credit" : "En busca de la Felicidad"
     },
     "sections" :
-    {
-        "about" : "Sobre mí",
-        "studies" :"Estudié y lo sigo haciendo...",
-        "experiences" : "Trabajos que hice y hago...",
-        "projects" : "Proyectos que tengo...",
-        "skills" : "Habilidades con las que cuento...",
-        "technicals" : "Técnicas",
-        "softs" : "y Blandas",
-        "languages" : "Idiomas que más domino...",
-        "hobbies" : "Cosas que me gustan...",
-        "comments" : "Dicen de mí...",
-        "contact" : "Info para ponernos en contacto..."
-    },
+    [
+        {
+            "id" : 1,
+            "icon" :"fa-solid fa-feather-pointed",
+            "title" : "Sobre mí"
+        },        
+        {
+            "id" : 2,
+            "icon" :"fa-solid fa-graduation-cap",
+            "title" : "Estudié y lo sigo haciendo..."
+        },
+        {
+            "id" : 3,
+            "icon" :"fa-solid fa-wrench",
+            "title" : "Trabajos que hice y hago..."
+        },
+        {
+            "id" : 4,
+            "icon" :"fa-solid fa-code",
+            "title" : "Proyectos que tengo..."
+        },
+        {
+            "id" : 5,
+            "icon" :"fa-solid fa-cogs",
+            "title" : "Habilidades con las que cuento..."
+        },
+        {
+            "id" : 6,
+            "icon" :"fa-solid fa-earth-americas",
+            "title" : "Idiomas que más domino..."
+        },
+        {
+            "id" : 7,
+            "icon" :"fa-solid fa-star",
+            "title" : "Cosas que me gustan..."
+        },
+        {
+            "id" : 8,
+            "icon" :"fa-solid fa-comments",
+            "title" : "Dicen de mí..."
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-solid fa-info",
+            "title" : "Info para ponernos en contacto..."
+        }    
+    ],
+    "icons" :
+    [
+        {
+            "id" : 1,
+            "icon" : "fa-solid fa-video"
+        },
+        {
+            "id" : 2,
+            "icon" : "fa-solid fa-code-compare"
+        },
+        {
+            "id" : 3,
+            "icon" : "fa-solid fa-angle-left"
+        },
+        {
+            "id" : 4,
+            "icon" : "fa-solid fa-chevron-up"
+        },
+        {
+            "id" : 5,
+            "icon" : "fa-solid fa-chevron-down"
+        },
+        {
+            "id" : 6,
+            "icon" : "fa-solid fa-lock"
+        },
+        {
+            "id" : 7,
+            "icon" : "fa-solid fa-lock-open"
+        },
+        {
+            "id" : 8,
+            "icon" : "fa fa-plus"
+        },
+        {
+            "id" : 9,
+            "icon" : "fa-solid fa-angles-right"
+        },
+        {
+            "id" : 10,
+            "icon" : "fa-solid fa-angles-left"
+        },
+        {
+            "id" : 11,
+            "icon" : "fa-solid fa-route"
+        },
+        {
+            "id" : 12,
+            "icon" : "fa-solid fa-eye"
+        },
+        {
+            "id" : 13,
+            "icon" : "fa-solid fa-comment"
+        }
+    ],
     "studies" :
     [
         {
@@ -1670,9 +1772,9 @@
         },
         {
             "id" : 2,
-            "icon" : "fa-solid fa-right-to-bracket",
-            "section" : "Login",
-            "target" : "loginModal"
+            "icon" : "fa-solid fa-images",
+            "section" : "Banners",
+            "target" : "bannersModal"
         },
         {
             "id" : 3,
@@ -1682,9 +1784,9 @@
         },
         {
             "id" : 4,
-            "icon" : "fa-solid fa-images",
-            "section" : "Banners",
-            "target" : "bannersModal"
+            "icon" : "fa-solid fa-layer-group",
+            "section" : "Sections",
+            "target" : "sectionsModal"
         },
         {
             "id" : 5,
@@ -1716,7 +1818,7 @@
             "section" : "Bloopers",
             "target" : "bloopersModal"
         }
-    ],
+    ], 
     "audiovisual" :
     [
         {

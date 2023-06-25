@@ -1,0 +1,11 @@
+/* General Sections */
+.btn.btn-black-section,
+.btn.btn-black-section:hover {
+    color: #fff !important;
+    border: 0.05rem solid #000 !important;
+    padding: .5rem 1.5rem;
+    border-radius: 0.25rem;
+    width: 10rem;
+    height: 5.5rem;
+    background: #000;
+}

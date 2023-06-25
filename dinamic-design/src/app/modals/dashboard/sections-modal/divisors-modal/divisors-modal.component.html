@@ -1,0 +1,55 @@
+    <!--Modal Divisors-->
+    <div class="modal fade" id="divisorsModal" tabindex="-1" aria-labelledby="divisorsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="divisorsModalLabel">Divisores</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver"></i>
+                </div>
+                <div class="modal-body">
+                    <div class="container text-center w-50 m-auto">
+                        <div *ngFor="let divisor of divisors" class="row mb-3">
+                            <div class="d-flex justify-content-between">
+                                <p class="pt-2">{{divisor.title}}</p>
+                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#editDivisorModal" data-bs-toggle="modal" (click)="divisor_data.id? loadDivisor(divisor_data.id): null"><i class="fa-solid fa-pencil"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>               
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-target="#sectionsModal" data-bs-toggle="modal" aria-label="Volver">{{buttons[7].value}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Divisor -->
+    <div class="modal fade" id="editDivisorModal" aria-hidden="true" aria-labelledby="editDivisorModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editDivisorModal">Editar Divisor</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#divisorsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="title" class="form-label">{{forms[7].value}}</label>
+                                    <input type="text" class="form-control" id="title" placeholder="Título" formControlName="title" name="" [ngClass]="{ 'is-invalid': InvalidTitle, 'is-valid': ValidTitle }">
+                                    <div id="titleHelp" class="form-text">{{helpers[7].value}}</div>
+                                    <div *ngIf="Title?.errors" class="invalid-feedback">
+                                        <div *ngIf="Title?.hasError('required')">Es preciso ingresar un Título</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" (click)="saveDivisor()" data-bs-target="#divisorsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[13].value}}</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

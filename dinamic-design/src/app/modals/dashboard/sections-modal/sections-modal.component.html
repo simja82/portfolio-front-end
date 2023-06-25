@@ -1,0 +1,38 @@
+    <!--Modal Sections-->
+    <div class="modal fade" id="sectionsModal" tabindex="-1" aria-labelledby="sectionsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="sectionsModalLabel">Sections</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="container text-center my-4">
+                        <div class="row g-4 container">
+                            <div class="col-6">
+                                <button class="btn btn-black-sections btn-lg" data-bs-target="#divisorsModal" data-bs-toggle="modal">Divisores</button> <!--  {{buttons[2].value}}  -->
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-black-sections btn-lg" data-bs-target="#titlesModal" data-bs-toggle="modal">Títulos</button> <!--  {{buttons[3].value}}  -->
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-black-sections btn-lg" data-bs-target="#iconsModal" data-bs-toggle="modal">Íconos</button> <!-- {{buttons[4].value}}  -->
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-black-sections btn-lg" data-bs-target="#dashboardModal" data-bs-toggle="modal">Dashboard</button> <!--  {{buttons[4].value}} -->
+                            </div>                        
+                        </div>
+                    </div>                                
+                </div>                
+                <div class="modal-footer">
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button><!--  {{buttons[7].value}}  -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sections Modals -->
+    <app-divisors-modal></app-divisors-modal>
+    <app-titles-modal></app-titles-modal>
+    <app-icons-modal></app-icons-modal>
+    <app-dashboard-modal></app-dashboard-modal>

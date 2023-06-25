@@ -3,6 +3,7 @@ export class DeveloperProfile {
     id?: number;   
     icon: string;
     name_intro: string;
+    fullname: string;
     line_one: string;
     photo: string;
     phrase_one: string;
@@ -14,6 +15,7 @@ export class DeveloperProfile {
     (
         icon: string,
         name_intro: string,
+        fullname: string,
         line_one: string,
         photo: string,
         phrase_one: string,
@@ -25,6 +27,7 @@ export class DeveloperProfile {
     {
         this.icon=icon;
         this.name_intro=name_intro;
+        this.fullname=fullname;
         this.line_one=line_one;
         this.photo=photo;
         this.phrase_one=phrase_one;

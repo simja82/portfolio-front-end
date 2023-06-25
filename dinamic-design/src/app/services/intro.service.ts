@@ -10,32 +10,32 @@ import { Intro } from '../models/intro';
 
 export class IntroService {
 
-  url= 'http://localhost:8080/intro'; 
-  //url= 'https://pointofview.onrender.com/intro';
+  //url= 'http://localhost:8080/intro'; 
+  url= 'https://pointofview.onrender.com/intro';
 
   constructor(private http:HttpClient) { }
 
-  //Listar
+  //Listar -- FUNCIONA
   public getIntros(): Observable<Intro[]> {
     return this.http.get<Intro[]>(this.url + '/list');
   }
 
-  //Encontrar
+  //Encontrar -- FUNCIONA
   public findIntro(id: number): Observable<any> {
     return this.http.get<Intro>(this.url + `/find/${id}`); 
   }
 
-  //Crear
+  //Crear -- SIN USO
    public saveIntro(intro: Intro): Observable<any> {
     return this.http.post<any>(this.url + '/new', intro); 
   } 
 
-  //Editar
+  //Editar -- FUNCIONA
   public updateIntro(intro: Intro): Observable<any> {
     return this.http.put<Intro>(this.url + `/update`, intro);    
   }
 
-  //Eliminar
+  //Eliminar -- SIN USO
   public deleteIntro(id: number): Observable<Intro> {
     return this.http.delete<any>(this.url + `/delete/${id}`); 
   } 

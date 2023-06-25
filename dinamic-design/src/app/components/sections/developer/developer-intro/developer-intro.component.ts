@@ -20,14 +20,14 @@ export class DeveloperIntroComponent implements OnInit {
     constructor (private introService:IntroService) { }
 
     //Traer Datos
-    ngOnInit(): void {
+    ngOnInit() {
       this.loadIntro();
     }    
 
-    loadIntro() {
+    loadIntro(){
       this.introService.findIntro(1).subscribe({
           next: (data) => {
-            this.intro=data;
+            this.intro = data;
           },
           error: (e) => console.error(e),
           complete: () => console.info('complete')
