@@ -11,7 +11,7 @@ import { Form } from '../models/form';
 export class FormService {
 
   //url= 'http://localhost:8080/form'; 
-  url= 'https://pointofview-dy8a.onrender.com/form';
+  url= 'https://pointofview.onrender.com/form';
 
   constructor(private http:HttpClient) { }
 
