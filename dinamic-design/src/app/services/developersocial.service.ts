@@ -10,7 +10,7 @@ import { Injectable } from "@angular/core";
 export class DeveloperSocialService {
     
     //url= 'http://localhost:8080/developersocial';
-    url= 'https://pointofview.onrender.com/developersocial';
+    url= 'https://pointofview-dy8a.onrender.com/developersocial';
   
     constructor(private http:HttpClient) { }
         

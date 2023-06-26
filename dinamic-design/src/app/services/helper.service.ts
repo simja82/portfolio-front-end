@@ -11,7 +11,7 @@ import { Helper } from '../models/helper';
 export class HelperService {
 
   //url= 'http://localhost:8080/helper'; 
-  url= 'https://pointofview.onrender.com/helper';
+  url= 'https://pointofview-dy8a.onrender.com/helper';
 
   constructor(private http:HttpClient) { }
 

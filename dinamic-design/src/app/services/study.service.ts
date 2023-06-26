@@ -10,7 +10,7 @@ import { Injectable } from "@angular/core";
 export class StudyService {
     
     //url= 'http://localhost:8080/study';
-    url= 'https://pointofview.onrender.com/study';
+    url= 'https://pointofview-dy8a.onrender.com/study';
   
     constructor(private http:HttpClient) { }
         

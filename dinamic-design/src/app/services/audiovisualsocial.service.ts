@@ -10,7 +10,7 @@ import { Injectable } from "@angular/core";
 export class AudiovisualSocialService {
     
     //url= 'http://localhost:8080/audiovisualsocial';
-    url= 'https://pointofview.onrender.com/audiovisualsocial';
+    url= 'https://pointofview-dy8a.onrender.com/audiovisualsocial';
   
     constructor(private http:HttpClient) { }
         

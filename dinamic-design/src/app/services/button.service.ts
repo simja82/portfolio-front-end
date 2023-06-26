@@ -11,7 +11,7 @@ import { Button } from '../models/button';
 export class ButtonService {
 
   //url= 'http://localhost:8080/button'; 
-  url= 'https://pointofview.onrender.com/button';
+  url= 'https://pointofview-dy8a.onrender.com/button';
 
   constructor(private http:HttpClient) { }
 
