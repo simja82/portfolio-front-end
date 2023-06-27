@@ -11,7 +11,8 @@
                         <div *ngFor="let value of forms" class="row mb-3">
                             <div class="d-flex justify-content-between">
                                 <p class="pt-2">{{value.value}}</p>
-                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#editFormModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#createFormModal" data-bs-toggle="modal"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn btn-black-extra-mini mx-3" data-bs-target="#infoDeleteFormModal" data-bs-toggle="modal"><i class="fa-solid fa-trash"></i></button>
                             </div>
                         </div>
                     </div>
@@ -27,6 +28,57 @@
         </div>
     </div>
 
-    <!-- CRUD Modals -->
-    <app-create-form-modal></app-create-form-modal>
-    <app-edit-form-modal></app-edit-form-modal>
+    <!-- Create / Edit Form Modal -->
+    <!--
+    <div class="modal fade" id="createFormModal" aria-hidden="true" aria-labelledby="createFormModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="createFormModal">Crear Form</h1>
+                    <i class="fa-solid fa-rotate-left" data-bs-target="#formsModal" data-bs-toggle="modal" aria-label="Volver" (click)="onReset()"></i>
+                </div>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="value" class="form-label">{{forms[69].value}}</label>
+                                    <input type="text" class="form-control" id="value" placeholder="Form" formControlName="value" [ngClass]="{ 'is-invalid': submitted && f['value'].errors, 'is-valid': !f['value'].errors && f['value'].touched }">
+                                    <div id="valueHelp" class="form-text">{{helpers[64].value}}</div>
+                                    <div *ngIf="submitted && f['value'].errors" class="invalid-feedback">
+                                        <div *ngIf="f['value'].errors['required']">Es preciso ingresar un form</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-black-mini" data-bs-target="#formsModal" data-bs-toggle="modal" aria-label="Guardar">{{buttons[11].value}}</button>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Modal Info Delete -->
+    <!--
+    <div class="modal fade" id="infoDeleteFormModal" tabindex="-1" aria-labelledby="infoDeleteFormModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="infoDeleteFormModalLabel">Información</h1>
+                    <button type="button" class="btn-close" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Volver"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="justify-content-center d-flex fa-2x pt-3"></i>
+                    <br>
+                    <p class="text-center d-flex mx-2">Tomá nota: Si hacés click en un botón de eliminar se eliminará el form al que corresponde sin solicitud de confirmación previa alguna y no podrá ser recuperado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-black-mini" data-bs-target="#formsModal" data-bs-toggle="modal" aria-label="Entendido">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    -->

@@ -1,8 +1,7 @@
 export class DeveloperProfile {
 
     id?: number;   
-    icon: string;
-    name_intro: string;
+    overview: string;
     fullname: string;
     line_one: string;
     photo: string;
@@ -13,8 +12,7 @@ export class DeveloperProfile {
 
     constructor
     (
-        icon: string,
-        name_intro: string,
+        overview: string,
         fullname: string,
         line_one: string,
         photo: string,
@@ -25,8 +23,7 @@ export class DeveloperProfile {
     )
         
     {
-        this.icon=icon;
-        this.name_intro=name_intro;
+        this.overview=overview;
         this.fullname=fullname;
         this.line_one=line_one;
         this.photo=photo;

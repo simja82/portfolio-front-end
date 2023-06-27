@@ -13,4 +13,5 @@ export class AudiovisualSocial {
         this.icon = icon;
         this.link = link;
     }
+    
 }

@@ -80,7 +80,7 @@
                 </div>
                 <div class="modal-footer d-flex justify-content-between">
                     <i class="fa-solid fa-circle-question fa-2x ms-1 text-black" data-bs-target="#infoDeleteModal" data-bs-toggle="modal"></i>
-                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">Cerrar</button><!-- {{buttons[7].value}} -->  
+                    <button class="btn btn-black-mini" data-bs-dismiss="modal" aria-label="Cerrar">{{close_button.value}}</button><!-- Cerrar -->  
                 </div>
             </div>
         </div>
@@ -100,17 +100,17 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <label for="icon" class="form-label">{{icon_form.value}}</label><!-- Ícono -->
                                     <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
-                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div id="iconHelp" class="form-text">{{icon_helper.value}}</div><!-- Ingresar un ícono -->
                                     <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
                                         <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <label for="link" class="form-label">{{link_form.value}}</label><!-- Enlace -->
                                     <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
-                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div id="urlHelp" class="form-text">{{link_helper.value}}</div><!-- Ingresar un enlace -->
                                     <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
                                         <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
                                     </div>
@@ -118,7 +118,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini"  (click)="saveGeneralSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                            <button class="btn btn-black-mini"  (click)="saveGeneralSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">{{save_button.value}}</button><!-- Guardar -->
                         </div>    
                     </div>
                 </form>
@@ -140,17 +140,17 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <label for="icon" class="form-label">{{icon_form.value}}</label><!-- Ícono -->
                                     <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
-                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div id="iconHelp" class="form-text">{{icon_helper.value}}</div><!-- Ingresar un ícono -->
                                     <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
                                         <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <label for="link" class="form-label">{{link_form.value}}</label><!-- Enlace -->
                                     <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
-                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div id="urlHelp" class="form-text">{{link_helper.value}}</div><!-- Ingresar un enlace -->
                                     <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
                                         <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
                                     </div>
@@ -158,7 +158,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini"  (click)="saveAudiovisualSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                            <button class="btn btn-black-mini"  (click)="saveAudiovisualSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">{{save_button.value}}</button><!-- Guardar -->
                         </div>    
                     </div>
                 </form>
@@ -180,17 +180,17 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-6">
-                                    <label for="icon" class="form-label">Ícono</label><!-- {{forms[2].value}} -->
+                                    <label for="icon" class="form-label">{{icon_form.value}}</label><!-- Ícono -->
                                     <input type="text" class="form-control" id="icon" name="" formControlName="icon" [ngClass]="{'is-invalid':Icon?.errors && Icon?.touched, 'is-valid':!Icon?.errors && Icon?.touched}">
-                                    <div id="iconHelp" class="form-text">Ingresar un ícono</div><!-- {{helpers[2].value}} -->
+                                    <div id="iconHelp" class="form-text">{{icon_helper.value}}</div><!-- Ingresar un ícono -->
                                     <div *ngIf="Icon?.errors && Icon?.touched" class="invalid-feedback">
                                         <div *ngIf="Icon?.hasError('required')">Es preciso ingresar un ícono</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <label for="link" class="form-label">Enlace</label><!-- {{forms[3].value}} -->
+                                    <label for="link" class="form-label">{{link_form.value}}</label><!-- Enlace -->
                                     <input type="url" class="form-control" id="link" name="" formControlName="link" [ngClass]="{'is-invalid':Link?.errors && Link?.touched, 'is-valid':!Link?.errors && Link?.touched}">
-                                    <div id="urlHelp" class="form-text">Ingresar un enlace</div><!-- {{helpers[3].value}} -->
+                                    <div id="urlHelp" class="form-text">{{link_helper.value}}</div><!-- Ingresar un enlace -->
                                     <div *ngIf="Link?.errors && Link?.touched" class="invalid-feedback">
                                         <div *ngIf="Link?.hasError('required')">Es preciso ingresar una URL</div>
                                     </div>
@@ -198,7 +198,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button class="btn btn-black-mini"  (click)="saveDeveloperSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">Guardar</button><!-- {{buttons[11].value}} -->
+                            <button class="btn btn-black-mini"  (click)="saveDeveloperSocial()" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Guardar">{{save_button.value}}</button><!-- Guardar -->
                         </div>    
                     </div>
                 </form>
@@ -217,7 +217,7 @@
                 <div class="modal-body">
                     <i class="justify-content-center d-flex fa-2x pt-3"></i>
                     <br>
-                    <p class="text-center d-flex mx-2">Tomá nota: Si hacés click en un botón de eliminar se eliminará el dato al que corresponde sin solicitud de confirmación previa alguna y no podrá ser recuperado.</p>
+                    <p class="text-center d-flex mx-2">Nota: Al hacer click en un botón de eliminar se eliminará el dato al que corresponde sin solicitud de confirmación previa alguna y no podrá ser recuperado.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-black-mini" data-bs-target="#socialModal" data-bs-toggle="modal" aria-label="Entendido">Entendido</button>

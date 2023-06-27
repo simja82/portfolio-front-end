@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
 
 //Models
-import { DeveloperProfile } from 'src/app/models/developer_profile';
+import { DeveloperProfile } from 'src/app/models/developerprofile';
+import { Button } from 'src/app/models/button';
+import { Forms } from 'src/app/models/form';
+import { Helper } from 'src/app/models/helper';
 
 //Services
-import { AccountService } from 'src/app/services/account.service';
 import { DeveloperProfileService } from 'src/app/services/developer_profile.service';
+import { ButtonService } from 'src/app/services/button.service';
+import { FormService } from 'src/app/services/form.service';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Component({
   selector: 'app-developer-profile-modal',
@@ -17,7 +21,35 @@ import { DeveloperProfileService } from 'src/app/services/developer_profile.serv
 export class DeveloperProfileModalComponent implements OnInit {
 
   //Profile Model
-  developer_profile: DeveloperProfile = new DeveloperProfile ("", "", "", "", "", "", "", "", "");
+  developer_profile: DeveloperProfile = new DeveloperProfile ("", "", "", "", "", "", "", "");
+
+  //Title Model -- PROVISORIO PARA QUE NO TIRE ERROR
+  title: any; 
+
+  //Forms Model
+  overview_form : Forms = new Forms ("");
+  fullname_form : Forms = new Forms ("");
+  line_one_form : Forms = new Forms ("");
+  photo_form : Forms = new Forms ("");
+  phrase_form : Forms = new Forms ("");
+  one_form : Forms = new Forms ("");
+  two_form : Forms = new Forms ("");
+  author_form : Forms = new Forms ("");
+  credit_form : Forms = new Forms ("");
+
+  //Helpers
+  overview_helper : Helper = new Helper ("");
+  fullname_helper : Helper = new Helper ("");  
+  line_one_helper : Helper = new Helper ("");  
+  max_100_helper : Helper = new Helper ("");  
+  photo_helper : Helper = new Helper ("");  
+  phrase_helper : Helper = new Helper ("");
+  author_helper : Helper = new Helper (""); 
+  credit_helper : Helper = new Helper (""); 
+
+  //Buttons
+  close_button : Button = new Button ("");
+  save_button : Button = new Button ("");  
 
   //Form
   form: FormGroup;
@@ -28,59 +60,44 @@ export class DeveloperProfileModalComponent implements OnInit {
   //Submitted
   submitted = false;
 
-  //Profile -- ESTO VA EN EL HTML --
-  profile: any;  
+  //Profile Data -- AL HTML --
+  profile_data: any;  
   
   //Inyección de Services, Constructor de Formularios y REST Client
-  constructor(private accountService:AccountService, private developerprofileService:DeveloperProfileService, private formBuilder: FormBuilder, private http: HttpClient) 
+  constructor
+  (
+    private developerprofileService:DeveloperProfileService, 
+    private formsService:FormService, 
+    private helpersService:HelperService, 
+    private buttonsService:ButtonService,     
+    private formBuilder: FormBuilder
+  ) 
   { 
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
         id: [''],
-        icon: ['', [Validators.required]],
-        title: ['', [Validators.required]],
-        //name_intro: ['', [Validators.required]],
-        //fullname: ['', [Validators.required]],
-        //line_one: ['', [Validators.required]],
-        //photo: ['', [Validators.required]],
-        //phrase_one: ['', [Validators.required]],
-        //phrase_two: ['', [Validators.required]],
-        //author: ['', [Validators.required]],
-        //credit: ['', [Validators.required]],
+        overview: ['', [Validators.required]],
+        fullname: ['', [Validators.required]],
+        line_one: ['', [Validators.required]],
+        photo: ['', [Validators.required]],
+        phrase_one: ['', [Validators.required]],
+        phrase_two: ['', [Validators.required]],
+        author: ['', [Validators.required]],
+        credit: ['', [Validators.required]],
       }
     );
   }
   
   //Traer y Comprobar Datos
-  get Icon() {
-    return this.form.get("icon");
+  get Overview() {
+    return this.form.get("overview");
   }
-  get InvalidIcon(){
-    return this.Icon?.errors && this.Icon?.touched;
+  get InvalidOverview(){
+    return this.Overview?.errors && this.Overview?.touched;
   }
-  get ValidIcon(){
-    return !this.Icon?.errors && this.Icon?.touched;
-  }
-
-  get Title() {
-    return this.form.get("title");
-  }
-  get InvalidTitle(){
-    return this.Title?.errors && this.Title?.touched;
-  }
-  get ValidTitle(){
-    return !this.Title?.errors && this.Title?.touched;
-  }  
-
-  get NameIntro() {
-    return this.form.get("name_intro");
-  }
-  get InvalidNameIntro(){
-    return this.NameIntro?.errors && this.NameIntro?.touched;
-  }
-  get ValidNameIntro(){
-    return !this.NameIntro?.errors && this.NameIntro?.touched;
+  get ValidOverview(){
+    return !this.Overview?.errors && this.Overview?.touched;
   }  
 
   get Fullname() {
@@ -143,7 +160,6 @@ export class DeveloperProfileModalComponent implements OnInit {
     return !this.Author?.errors && this.Author?.touched;
   }
 
-  //Credit
   get Credit() {
     return this.form.get("credit");
   }
@@ -154,144 +170,208 @@ export class DeveloperProfileModalComponent implements OnInit {
     return !this.Credit?.errors && this.Credit?.touched;
   }
 
-  //Llamar a Cargar Datos -- READ --
-  ngOnInit(): void { 
-    this.loadProfileData();    
-  }
-
-  //Cargar Datos Developer Profile -- READ --
-  loadProfileData(){
+  //Listar
+  loadProfile(){
   this.developerprofileService.findDeveloperProfile(1).subscribe({
       next: (data) => {
         this.developer_profile = data;
+        this.form.setValue(data);
       },
       error: (e) => console.error(e),
       complete: () => console.info('complete')
     });
   }
 
-  //Llamar a Cargar Formulario Completo -- UPDATE --
-  /*
-  loadProfile(){
-    this.loadSection(id);
-    this.loadDeveloperProfile(id);
-  } 
+  loadComplements(): void{
+    this.formsService.findForm(50).subscribe({
+      next: (data) => {
+        this.overview_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });   
+    this.formsService.findForm(12).subscribe({
+      next: (data) => {
+        this.fullname_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(29).subscribe({
+      next: (data) => {
+        this.line_one_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(27).subscribe({
+      next: (data) => {
+        this.photo_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(17).subscribe({
+      next: (data) => {
+        this.phrase_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(18).subscribe({
+      next: (data) => {
+        this.one_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(19).subscribe({
+      next: (data) => {
+        this.two_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(15).subscribe({
+      next: (data) => {
+        this.author_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.formsService.findForm(11).subscribe({
+      next: (data) => {
+        this.credit_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });   
+    this.helpersService.findHelper(43).subscribe({
+      next: (data) => {
+        this.overview_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(41).subscribe({
+      next: (data) => {
+        this.fullname_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(28).subscribe({
+      next: (data) => {
+        this.line_one_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(24).subscribe({
+      next: (data) => {
+        this.max_100_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(22).subscribe({
+      next: (data) => {
+        this.photo_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(45).subscribe({
+      next: (data) => {
+        this.phrase_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(15).subscribe({
+      next: (data) => {
+        this.author_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(11).subscribe({
+      next: (data) => {
+        this.credit_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });    
+    this.buttonsService.findButton(7).subscribe({
+      next: (data) => {
+        this.close_button = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.buttonsService.findButton(11).subscribe({
+      next: (data) => {
+        this.save_button = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });    
+  }
 
-  //Cargar Formulario Section -- UPDATE --
-  loadSection(id: number){
-    this.sectionService.findSection(id).subscribe({
-        next: (data) => {
-          this.form.setValue(data);
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-  } 
- */
+  //Al Inicio
+  ngOnInit() { 
+    this.loadProfile(); 
+    this.loadComplements();     
+  }  
 
-  //Cargar Formulario Developer Profile -- UPDATE --
-  loadDeveloperProfile(id: number){
+  //Encontrar
+  findDeveloperProfile(id: number){
     this.developerprofileService.findDeveloperProfile(id).subscribe({
-        next: (data) => {
-          this.form.setValue(data);
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-  } 
+      next: (data) => {
+        this.form.setValue(data);
+      },
+      error: (e) => console.error(e),
+      complete: ()=> console.info('complete')
+    });
+  }  
 
-
-
-  loadProfile(id: number){
-      this.developerprofileService.findDeveloperProfile(id).subscribe({
-        next: (data) => {
-          this.form.setValue(data);
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-
-  }
-
-
-
-
-  saveProfile(){
-    this.saveDeveloperProfile();
-  }
- 
-
-
-
-  //Guardar o Actualizar Developer Profile -- CREATE / UPDATE --
+  //Crear o Editar
   saveDeveloperProfile() {
-    let developerprofile = this.form.value;
-    if (developerprofile.id == '') {
-      this.developerprofileService.saveDeveloperProfile(developerprofile).subscribe({
+    let item = this.form.value;
+    if (item.id == '') {
+      this.developerprofileService.saveDeveloperProfile(item).subscribe({
         next: (data) => {
+          this.onReset();
         },
         error: (e) => console.error(e),
         complete: () => console.info('complete')
       });
-    } else {
-      this.developerprofileService.updateDeveloperProfile(developerprofile).subscribe({
-        next: (data) => {
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-      this.alertWithUpdate();
       this.onSubmit();
+      this.onReset();
+      this.ngOnInit();
+    } else {
+      this.developerprofileService.updateDeveloperProfile(item).subscribe({
+        next: (data) => {
+          this.onReset();
+        },
+        error: (e) => console.error(e),
+        complete: () => console.info('complete')
+      });
+      this.onSubmit();
+      this.onReset();
       this.ngOnInit();
     }  
   }
-
-  /*
-  //MODELO -- CREATE / UPDATE --
-  saveDeveloperProfile2() {
-    let section = this.form.value;
-    if (section.id == '') {
-      this.developerprofileService.saveDeveloperProfile(section).subscribe({
-        next: (data) => {
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-      //VA DESDE ACÁ
-      this.sectionService.saveSection(section).subscribe({
-        next: (data) => {
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });      
-      //Y HASTA LA LÍNEA DE ARRIBA DE ESTA
-    } else {
-      this.sectionService.updateSection(section.id, section).subscribe({
-        next: (data) => {
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-      this.developerprofileService.updateDeveloperProfile(developerprofile).subscribe({
-        next: (data) => {
-        },
-        error: (e) => console.error(e),
-        complete: () => console.info('complete')
-      });
-      this.alertWithUpdate();
-      this.onSubmit();
-      this.ngOnInit();
-    }
-  }  
-  */
 
   //Enviar Formulario
   onSubmit(): void {
     //Válido
     this.submitted = true;
+    this.alertWithSuccess();
     //Inválido
     if (this.form.invalid) {
-      this.onReset();
+      this.form.reset();
+      this.alertWithWarning();
     }
   }
 
@@ -303,12 +383,13 @@ export class DeveloperProfileModalComponent implements OnInit {
   }
 
   //Sweet Alert Success  
-  alertWithUpdate(){
-    Swal.fire('Sí!!!', 'El perfil ha sido actualizado', 'success')
-  }  
+  alertWithSuccess(){
+    Swal.fire('Sí!!!', 'El perfil ha sido registrado', 'success')
+  }
 
-  alertWithError(){
-    Swal.fire('Ooops!!!', 'Ha habido un error', 'error')
+  //Sweet Alert Warning
+  alertWithWarning(){
+    Swal.fire('Nope!!!', 'El perfil no ha sido registrado', 'warning')
   }
   
 }

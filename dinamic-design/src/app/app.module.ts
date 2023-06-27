@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InterceptorInterceptor } from './services/interceptor.interceptor';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -227,8 +228,6 @@ import { EditBrandModalComponent } from './modals/dashboard/brand-modal/edit-bra
 import { MessageModalComponent } from './modals/general/message-modal/message-modal.component';
 import { DeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/developer-cv-modal.component';
 import { EditDeveloperCvModalComponent } from './modals/dashboard/developer-cv-modal/edit-developer-cv-modal/edit-developer-cv-modal.component';
-
-import { InterceptorInterceptor } from './services/interceptor.interceptor';
 import { InfoDeleteModalComponent } from './modals/general/info-delete-modal/info-delete-modal.component';
 import { SectionsModalComponent } from './modals/dashboard/sections-modal/sections-modal.component';
 import { DivisorsModalComponent } from './modals/dashboard/sections-modal/divisors-modal/divisors-modal.component';

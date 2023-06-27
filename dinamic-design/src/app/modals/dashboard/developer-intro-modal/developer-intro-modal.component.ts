@@ -1,7 +1,6 @@
 //Modelo de Lógica para Datos Simples con CRUD
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
 
 //Models
@@ -16,7 +15,7 @@ import { IntroService } from 'src/app/services/intro.service';
 })
 export class DeveloperIntroModalComponent implements OnInit {
 
-  //Intro Model -- ES DISTINTA LA FORMA CON RECORRIDO --
+  //Intro Model
   intro: Intro = new Intro("", "", "", "", "");
 
   //Form
@@ -31,8 +30,12 @@ export class DeveloperIntroModalComponent implements OnInit {
   //Intro Data -- AL HTML --
   intro_data: any;
 
-  //Inyección de Service, Constructor de Formularios y REST Client
-  constructor(private introService: IntroService, private formBuilder: FormBuilder, private http: HttpClient) 
+  //Inyección de Service, Constructor de Formularios
+  constructor
+  (
+    private introService: IntroService, 
+    private formBuilder: FormBuilder
+  ) 
   {  
     //Reglas de los Campos del Formulario 
     this.form = this.formBuilder.group(

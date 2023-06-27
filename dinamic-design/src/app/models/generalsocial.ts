@@ -13,4 +13,5 @@ export class GeneralSocial {
         this.icon = icon;
         this.link = link;
     }
+    
 }

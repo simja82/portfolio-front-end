@@ -1,4 +1,4 @@
-export class Form {
+export class Forms {
 
     id?: number;   
     value: string;

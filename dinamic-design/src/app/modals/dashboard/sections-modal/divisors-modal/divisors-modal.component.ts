@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 import { Button } from 'src/app/models/button';
 import { Divisor } from 'src/app/models/divisor';
 import { Helper } from 'src/app/models/helper';
-import { Form } from 'src/app/models/form';
+import { Forms } from 'src/app/models/form';
 
 //Services
 import { ButtonService } from 'src/app/services/button.service';
@@ -42,7 +42,7 @@ export class DivisorsModalComponent implements OnInit {
   divisors : Divisor [] = [];  
 
   //Form Model
-  forms : Form [] = []; 
+  forms : Forms [] = []; 
 
   //Helper Model
   helpers : Helper [] = []; 

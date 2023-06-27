@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 //Models
-import { Account } from 'src/app/models/account';
-import { DeveloperProfile } from 'src/app/models/developer_profile';
+import { DeveloperProfile } from 'src/app/models/developerprofile';
 
 //Services
-import { AccountService } from 'src/app/services/account.service';
 import { DeveloperProfileService } from 'src/app/services/developer_profile.service';
 
 @Component({
@@ -16,10 +14,10 @@ import { DeveloperProfileService } from 'src/app/services/developer_profile.serv
 export class DeveloperProfileComponent implements OnInit {
 
   //Profile Model
-  developer_profile: DeveloperProfile = new DeveloperProfile ("", "", "", "", "", "", "", "", "");
+  developer_profile: DeveloperProfile = new DeveloperProfile ("", "", "", "", "", "", "", "");
   
     //Inyección de Services
-    constructor(private accountService:AccountService, private developerprofileService:DeveloperProfileService) { }
+    constructor(private developerprofileService:DeveloperProfileService) { }
 
     //Traer Datos
     ngOnInit() {

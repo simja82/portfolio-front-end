@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { DeveloperProfile } from '../models/developer_profile';
+import { DeveloperProfile } from '../models/developerprofile';
 
 @Injectable({
   providedIn: 'root'
@@ -9,8 +9,8 @@ import { DeveloperProfile } from '../models/developer_profile';
 
 export class DeveloperProfileService {
 
-  //url= 'http://localhost:8080/developer_profile'; 
-  url= 'https://pointofview.onrender.com/developer_profile';
+  //url= 'http://localhost:8080/developerprofile'; 
+  url= 'https://pointofview.onrender.com/developerprofile';
 
   constructor(private http:HttpClient) { }
 
@@ -37,6 +37,6 @@ export class DeveloperProfileService {
   //Eliminar
   public deleteDeveloperProfile(id: number): Observable<DeveloperProfile> {
     return this.http.delete<any>(this.url + `/delete/${id}`); 
-  }  
+  } 
 
 }

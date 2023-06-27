@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
@@ -7,11 +6,17 @@ import Swal from 'sweetalert2';
 import { GeneralSocial } from 'src/app/models/generalsocial';
 import { AudiovisualSocial } from 'src/app/models/audiovisualsocial';
 import { DeveloperSocial } from 'src/app/models/developersocial';
+import { Forms } from 'src/app/models/form';
+import { Button } from 'src/app/models/button';
+import { Helper } from 'src/app/models/helper';
 
 //Services
 import { AudiovisualSocialService } from 'src/app/services/audiovisualsocial.service';
 import { DeveloperSocialService } from 'src/app/services/developersocial.service';
 import { GeneralSocialService } from 'src/app/services/generalsocial.service';
+import { FormService } from 'src/app/services/form.service';
+import { ButtonService } from 'src/app/services/button.service';
+import { HelperService } from 'src/app/services/helper.service';
 
 @Component({
   selector: 'app-social-modal',
@@ -29,26 +34,36 @@ export class SocialModalComponent implements OnInit {
   //Developer Social Model
   developersocial : DeveloperSocial [] = [];
 
-  /*
-  //Array Buttons
-  buttons : any = [];
-  */
+  //Forms Model
+  icon_form : Forms = new Forms ("");
+  link_form : Forms = new Forms ("");
+
+  //Helpers
+  icon_helper : Helper = new Helper ("");
+  link_helper : Helper = new Helper ("");  
+
+  //Buttons
+  close_button : Button = new Button ("");
+  save_button : Button = new Button ("");
 
   //Form Group
   form : FormGroup;
 
+  //Submitted
   submitted = false;
 
-  /*
-  //Array Forms
-  forms : any = [];
-
-  //Array Helpers
-  helpers : any = [];
-  */
-
   //Inyección de Service, Constructor de Formularios y REST Client
-  constructor (private generalsocialService:GeneralSocialService, private audiovisualsocialService:AudiovisualSocialService, private developersocialService:DeveloperSocialService, private formBuilder: FormBuilder, private http: HttpClient) { //private povService:POVService 
+  constructor 
+    (
+    private generalsocialService:GeneralSocialService, 
+    private audiovisualsocialService:AudiovisualSocialService, 
+    private developersocialService:DeveloperSocialService, 
+    private formsService:FormService, 
+    private helpersService:HelperService, 
+    private buttonsService:ButtonService, 
+    private formBuilder: FormBuilder 
+    ) 
+    { 
     //Reglas de los Campos del Formulario
     this.form = this.formBuilder.group(
       {
@@ -105,21 +120,55 @@ export class SocialModalComponent implements OnInit {
     })        
   }
 
-  //Al Inicio
-  ngOnInit() { 
-
-    /*
-    //Almacenamiento de datos
-    this.povService.getData().subscribe(data => {
-      //Información a mostrar
-      this.forms = data.forms;
-      this.helpers = data.helpers;      
-      this.buttons = data.buttons;
+  loadComplements(): void{
+    this.formsService.findForm(2).subscribe({
+      next: (data) => {
+        this.icon_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
     });
-    */
+    this.formsService.findForm(3).subscribe({
+      next: (data) => {
+        this.link_form = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });    
+    this.helpersService.findHelper(2).subscribe({
+      next: (data) => {
+        this.icon_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    }); 
+    this.helpersService.findHelper(3).subscribe({
+      next: (data) => {
+        this.link_helper = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });     
+    this.buttonsService.findButton(7).subscribe({
+      next: (data) => {
+        this.close_button = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    this.buttonsService.findButton(11).subscribe({
+      next: (data) => {
+        this.save_button = data;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });    
+  }  
 
+  //Al Inicio
+  ngOnInit() {
     this.loadSocials();
-
+    this.loadComplements();     
   }
 
   //Encontrar
@@ -282,6 +331,7 @@ export class SocialModalComponent implements OnInit {
   alertWithWarning(){
     Swal.fire('Nope!!!', 'La red social no ha sido registrada', 'warning')
   }
+  
   //Sweet Alert Delete
   alertWithDelete(){
     Swal.fire('Bueno...', 'Espero que no te arrepientas... Eliminaste la red social...', 'error')

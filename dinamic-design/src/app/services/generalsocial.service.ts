@@ -1,3 +1,4 @@
+//Modelo de Service para Datos Recorridos
 import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { GeneralSocial } from "../models/generalsocial";
