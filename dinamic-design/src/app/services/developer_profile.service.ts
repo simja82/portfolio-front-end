@@ -9,8 +9,8 @@ import { DeveloperProfile } from '../models/developerprofile';
 
 export class DeveloperProfileService {
 
-  //url= 'http://localhost:8080/developerprofile'; 
-  url= 'https://pointofview.onrender.com/developerprofile';
+  url= 'http://localhost:8080/developerprofile'; 
+  //url= 'https://pointofview.onrender.com/developerprofile';
 
   constructor(private http:HttpClient) { }
 

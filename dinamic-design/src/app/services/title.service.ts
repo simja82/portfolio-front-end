@@ -9,8 +9,8 @@ import { Title } from '../models/title';
 
 export class TitleService {
 
-  //url= 'http://localhost:8080/title'; 
-  url= 'https://pointofview.onrender.com/title';
+  url= 'http://localhost:8080/title'; 
+  //url= 'https://pointofview.onrender.com/title';
 
   constructor(private http:HttpClient) { }
 

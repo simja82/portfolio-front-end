@@ -10,8 +10,8 @@ import { Intro } from '../models/intro';
 
 export class IntroService {
 
-  //url= 'http://localhost:8080/intro'; 
-  url= 'https://pointofview.onrender.com/intro';
+  url= 'http://localhost:8080/intro'; 
+  //url= 'https://pointofview.onrender.com/intro';
 
   constructor(private http:HttpClient) { }
 

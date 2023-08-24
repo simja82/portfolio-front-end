@@ -10,8 +10,8 @@ import { Injectable } from "@angular/core";
 
 export class GeneralSocialService {
     
-    //url= 'http://localhost:8080/generalsocial';
-    url= 'https://pointofview.onrender.com/generalsocial';
+    url= 'http://localhost:8080/generalsocial';
+    //url= 'https://pointofview.onrender.com/generalsocial';
   
     constructor(private http:HttpClient) { }
         

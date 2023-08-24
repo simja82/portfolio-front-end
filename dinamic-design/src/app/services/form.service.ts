@@ -9,8 +9,8 @@ import { Injectable } from "@angular/core";
 
 export class FormService {
     
-    //url= 'http://localhost:8080/form';
-    url= 'https://pointofview.onrender.com/form';
+    url= 'http://localhost:8080/form';
+    //url= 'https://pointofview.onrender.com/form';
   
     constructor(private http:HttpClient) { }
         

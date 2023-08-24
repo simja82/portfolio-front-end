@@ -10,8 +10,8 @@ import { Divisor } from '../models/divisor';
 
 export class DivisorService {
 
-  //url= 'http://localhost:8080/divisor'; 
-  url= 'https://pointofview.onrender.com/divisor';
+  url= 'http://localhost:8080/divisor'; 
+  //url= 'https://pointofview.onrender.com/divisor';
 
   constructor(private http:HttpClient) { }
 

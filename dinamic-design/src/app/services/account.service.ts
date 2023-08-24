@@ -9,8 +9,8 @@ import { Account } from '../models/account';
 
 export class AccountService {
 
-  //url= 'http://localhost:8080/account/'; 
-  url= 'https://pointofview.onrender.com/account/';
+  url= 'http://localhost:8080/account/'; 
+  //url= 'https://pointofview.onrender.com/account/';
 
   constructor(private http:HttpClient) { }
 

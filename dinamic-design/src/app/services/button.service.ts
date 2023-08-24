@@ -9,8 +9,8 @@ import { Injectable } from "@angular/core";
 
 export class ButtonService {
     
-    //url= 'http://localhost:8080/button';
-    url= 'https://pointofview.onrender.com/button';
+    url= 'http://localhost:8080/button';
+    //url= 'https://pointofview.onrender.com/button';
   
     constructor(private http:HttpClient) { }
         

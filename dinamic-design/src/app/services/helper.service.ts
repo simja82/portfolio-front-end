@@ -9,8 +9,8 @@ import { Injectable } from "@angular/core";
 
 export class HelperService {
     
-    //url= 'http://localhost:8080/helper';
-    url= 'https://pointofview.onrender.com/helper';
+    url= 'http://localhost:8080/helper';
+    //url= 'https://pointofview.onrender.com/helper';
   
     constructor(private http:HttpClient) { }
         
