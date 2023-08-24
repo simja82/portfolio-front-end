@@ -5,8 +5,12 @@ import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-edit-audiovisual-projects-page-presentation-modal',
-  templateUrl: './edit-audiovisual-projects-page-presentation-modal.component.html',
+  templateUrl: './eapppm.component.html',
 })
+
+//Nombre Original del Template
+//edit-audiovisual-projects-page-presentation-modal',
+
 export class EditAudiovisualProjectsPagePresentationModalComponent implements OnInit {
 
   //Campos Reactivos del Formulario
